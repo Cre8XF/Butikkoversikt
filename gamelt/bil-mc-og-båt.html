@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <title>Bil, MC og Båt</title>
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+    <style>
+        .list-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border: none;
+            /* Fjern kantlinjen */
+            border-radius: 0;
+            /* Fjern avrundede hjørner */
+            height: auto;
+            /* Juster høyden etter behov */
+            width: 100%;
+            /* Juster bredden etter behov */
+            background-color: transparent;
+            /* Fjern bakgrunnsfargen */
+        }
+
+        .list-item a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .list-item:hover {
+            transform: scale(1.15);
+            /* Zoom inn litt ved hover */
+        }
+
+        .list-item img {
+            max-width: 150px;
+            /* Juster bredden etter behov */
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .text-box {
+            padding: 10px;
+            background-color: #b8b5b5f5;
+            /* Bakgrunnsfarge for tekstboksen */
+            border-radius: 5px;
+            /* Avrundede hjørner for tekstboksen */
+        }
+
+        .text-box h4 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .text-box p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .section-left {
+            flex: 0 0 auto;
+            margin-right: 20px;
+        }
+
+        .section-right {
+            flex: 1;
+        }
+
+        .section-left img {
+            max-width: 150px;
+            /* Juster bredden etter behov */
+            height: auto;
+        }
+    </style>
+
+    <script>
+        function loadContent(url) {
+            const contentFrame = document.getElementById('content-frame');
+            contentFrame.src = url;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/butikkoversikt_logo.png" alt="Butikkoversikt.no">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="index.html" class="active">Hjem</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">kategorier</a>
+                                <ul>
+                                    <li><a href="barn-og-baby.html" onclick="loadContent('barn-og-baby.html')">Baby og Barn</a></li>
+                                    <li><a href="bil-mc-og-båt.html" onclick="loadContent('bil-mc-og-båt.html')">Bil, MC og Båt</a></li>
+                                    <li><a href="data-og-elektronikk.html" onclick="loadContent('data-og-elektronikk.html')">Data og Elektronikk</a>
+                                    </li>
+                                    <li><a href="dyrebutikker.html" onclick="loadContent('dyrebutikker.html')">Dyrebutikker</a></li>
+                                    <li><a href="foto-og-video.html" onclick="loadContent('foto-og-video.html')">Foto og Video</a></li>
+                                    <li><a href="helse-og-velvære.html" onclick="loadContent('helse-og-velvære.html')">Helse og Velvære</a></li>
+                                    <li><a href="hobby-og-moro.html" onclick="loadContent('hobby-og-moro.html')">Hobby og Moro</a></li>
+                                    <li><a href="hus-og-hjem.html" onclick="loadContent('hus-og-hjem.html')">Hus og hjem</a></li>
+                                    <li><a href="klær-og-mote.html" onclick="loadContent('klær-og-mote.html')">Klær og Mote</a></li>
+                                    <li><a href="lekebutikker.html" onclick="loadContent('lekebutikker.html')">Lekebutikker</a></li>
+                                    <li><a href="mat-og-drikke.html" onclick="loadContent('mat-og-drikke.html')">Mat og Drikke</a></li>
+                                    <li><a href="reise-og-ferie.html" onclick="loadContent('reise-og-ferie.html')">Reise og Ferie</a></li>
+                                    <li><a href="sport-og-trening.html" onclick="loadContent('sport-og-trening.html')">Sport og Trening</a></li>
+                                    <li><a href="syn-linser-og-briller.html" onclick="loadContent('syn-linser-og-briller.html')">Syn, Linser &
+                                            Briller</a></li>
+                                    <li><a href="tjenester.html" onclick="loadContent('tjenester.html')">Tjenester</a></li>
+                                    <li><a href="utenlandske-sender-til-norge.html"
+                                            onclick="loadContent('utenlandske-sender-til-norge.html')">Utenlandske (sender til Norge)</a></li>
+                                    <li><a href="varehus.html" onclick="loadContent('varehus.html')">Varehus</a></li>
+                                    <li><a href="voksen.html" onclick="loadContent('voksen.html')">Voksen (18+)</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="javascript:;" title="Topp 25 Nettbutikker">Topp 25 Nettbutikker</a>
+                                <ul>
+                                    <li><a href="https://www.elkjop.no">Elkjøp</a></li>
+                                    <li><a href="https://www.komplett.no">Komplett</a></li>
+                                    <li><a href="https://www.oda.com">Oda</a></li>
+                                    <li><a href="https://www.apple.com/no">Apple</a></li>
+                                    <li><a href="https://www.zalando.no">Zalando</a></li>
+                                    <li><a href="https://www.finn.no">Finn</a></li>
+                                    <li><a href="https://www.amazon.com">Amazon</a></li>
+                                    <li><a href="https://www.ebay.com">eBay</a></li>
+                                    <!-- Legg til flere nettbutikker etter behov -->
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="index.html">Explore</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="page-heading" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="inner-content">
+                        <h2>Bil, MC og Båt</h2>
+                        <span>De beste nettbutikkene for bil, MC og båt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+    <!-- ***** Products Area Starts ***** -->
+    <section class="section" id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Våre Anbefalte Nettbutikker</h2>
+                        <span>Utforsk våre anbefalte nettbutikker for bil, MC og båt.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="list-container">
+                <div class="list-item">
+                    <a href="https://www.12bildeler.no/" rel="noopener" target="content-frame" class="item">
+                        <div class="section-left">
+                            <img alt="12 Bildeler" src="assets/images/Bil, MC og Båt/12bildeler_logo_200.jpg" />
+                        </div>
+                        <div class="section-right">
+                            <div class="text-box">
+                                <h4>12 Bildeler</h4>
+                                <p>Tilbyr et stort utvalg av bildeler.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="https://www.autodeler.co.no/" rel="noopener" target="content-frame" class="item">
+                        <div class="section-left">
+                            <img alt="Autodeler.co.no" src="assets/images/Bil, MC og Båt/autodeler_logo_200.jpg" />
+                        </div>
+                        <div class="section-right">
+                            <div class="text-box">
+                                <h4>Autodeler.co.no</h4>
+                                <p>Har et bredt utvalg av bildeler og tilbehør.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="https://www.autodoc.co.no/" rel="noopener" target="content-frame" class="item">
+                        <div class="section-left">
+                            <img alt="Autodoc" src="assets/images/Bil, MC og Båt/autodoc_logo_ny-200x200.jpg" />
+                        </div>
+                        <div class="section-right">
+                            <div class="text-box">
+                                <h4>Autodoc</h4>
+                                <p>Tilbyr bildeler og tilbehør.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="https://www.bildeler.no/" rel="noopener" target="content-frame" class="item">
+                        <div class="section-left">
+                            <img alt="Bildeler.no" src="assets/images/Bil, MC og Båt/bildeler-logony-200x200.jpg" />
+                        </div>
+                        <div class="section-right">
+                            <div class="text-box">
+                                <h4>Bildeler.no</h4>
+                                <p>Har et stort utvalg av bildeler.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="https://www.eurodel.no/" rel="noopener" target="content-frame" class="item">
+                        <div class="section-left">
+                            <img alt="Eurodel" src="assets/images/Bil, MC og Båt/Eurodel_logo_200.jpg" />
+                        </div>
+                        <div class="section-right">
+                            <div class="text-box">
+                                <h4>Eurodel</h4>
+                                <p>Tilbyr bildeler og tilbehør.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="https://www.mekonomen.no/" rel="noopener" target="content-frame" class="item">
+                        <div class="section-left">
+                            <img alt="Mekonomen" src="assets/images/Bil, MC og Båt/mekonomen_logo_200.jpg" />
+                        </div>
+                        <div class="section-right">
+                            <div class="text-box">
+                                <h4>Mekonomen</h4>
+                                <p>Har et bredt utvalg av bildeler og tilbehør.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="https://www.mister-auto.no/" rel="noopener" target="content-frame" class="item">
+                        <div class="section-left">
+                            <img alt="Mister Auto" src="assets/images/Bil, MC og Båt/misterauto_logo_200.jpg" />
+                        </div>
+                        <div class="section-right">
+                            <div class="text-box">
+                                <h4>Mister Auto</h4>
+                                <p>Tilbyr bildeler og tilbehør.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="https://www.sarpsborgmotor.no/" rel="noopener" target="content-frame" class="item">
+                        <div class="section-left">
+                            <img alt="Sarpsborg Motor" src="assets/images/Bil, MC og Båt/sm_logo_200.jpg" />
+                        </div>
+                        <div class="section-right">
+                            <div class="text-box">
+                                <h4>Sarpsborg Motor</h4>
+                                <p>Tilbyr bildeler og tilbehør.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="https://www.skruvat.no/" rel="noopener" target="content-frame" class="item">
+                        <div class="section-left">
+                            <img alt="Skruvat" src="assets/images/Bil, MC og Båt/skruvat_logo_ny_200.jpg" />
+                        </div>
+                        <div class="section-right">
+                            <div class="text-box">
+                                <h4>Skruvat</h4>
+                                <p>Har et stort utvalg av bildeler og tilbehør.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="https://www.thansen.no/" rel="noopener" target="content-frame" class="item">
+                        <div class="section-left">
+                            <img alt="Thansen" src="assets/images/Bil, MC og Båt/thansen_logo_200.jpg" />
+                        </div>
+                        <div class="section-right">
+                            <div class="text-box">
+                                <h4>Thansen</h4>
+                                <p>Tilbyr bildeler og tilbehør.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <!-- ***** Products Area End ***** -->
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-widget">
+                        <h4>Om Oss</h4>
+                        <p>Vi er dedikert til å gi deg de beste produktene og tjenestene. Følg oss på sosiale medier for
+                            oppdateringer og tilbud.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-widget">
+                        <h4>Kontaktinformasjon</h4>
+                        <ul>
+                            <li>Adresse: <span>1234 Gate, By, Land</span></li>
+                            <li>Telefon: <span>+47 123 456 789</span></li>
+                            <li>Email: <span>info@dittdomene.no</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-widget">
+                        <h4>Følg Oss</h4>
+                        <ul class="social-icons">
+                            <li><a href="https://www.facebook.com/dittdomene"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.twitter.com/dittdomene"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/dittdomene"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/dittdomene"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Copyright © 2025 Butikkoversikt.no. Alle Rettigheter Reservert.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Footer End ***** -->
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <!-- <script src="assets/js/accordions.js"></script>-->
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/isotope.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+
+        $(function () {
+            var selectedClass = "";
+            $("p").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("." + selectedClass).fadeOut();
+                setTimeout(function () {
+                    $("." + selectedClass).fadeIn();
+                    $("#portfolio").fadeTo(50, 1);
+                }, 500);
+
+            });
+        });
+
+    </script>
+    <!-- Include JavaScript File -->
+    <script src="assets/js/custom-scripts.js"></script>
+
+</body>
+
+</html>

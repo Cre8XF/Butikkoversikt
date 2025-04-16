@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ad-1",
+    "image": "https://via.placeholder.com/728x90?text=Annonse+1",
+    "link": "https://example.com/produkt-1",
+    "alt": "Produkt 1 - Kjøp nå og spar!"
+  },
+  {
+    "id": "ad-2",
+    "image": "https://via.placeholder.com/728x90?text=Annonse+2",
+    "link": "https://example.com/produkt-2",
+    "alt": "Produkt 2 - Begrenset tilbud!"
+  },
+  {
+    "id": "ad-3",
+    "image": "https://via.placeholder.com/728x90?text=Annonse+3",
+    "link": "https://example.com/produkt-3",
+    "alt": "Produkt 3 - Nyhet!"
+  }
+]

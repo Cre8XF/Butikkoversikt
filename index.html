@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Butikkoversikt.no</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome (ikoner) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Egendefinert stilark -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Butikkoversikt.no</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Hjem</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kategorier">Kategorier</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#anbefalte">Topp 25</a>
+            </li>
+            <li class="nav-item search-toggle">
+              <a class="nav-link" href="#" title="Søk"><i class="fas fa-search"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="search-bar" id="searchBar">
+      <div class="container d-flex align-items-center">
+        <input type="text" placeholder="Søk etter nettbutikker..." class="form-control" id="searchInput" />
+        <button class="btn btn-outline-secondary ms-2" id="closeSearch" title="Lukk søk">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Filter etter kategori (Plassér rett etter søkefeltet) -->
+<div class="filter-bar mt-3 mb-4 container">
+  <label for="categoryFilter" class="form-label">Velg en kategori:</label>
+  <select id="categoryFilter" class="form-select">
+    <option value="all">Alle kategorier</option>
+    <option value="barn">#Barn</option>
+    <option value="klær">#Klær</option>
+    <option value="elektronikk">#Elektronikk</option>
+    <option value="helse">#Helse</option>
+  </select>
+</div>
+  </header>
+<!-- Annonse-banner over hero -->
+<div class="ad-banner-top text-center py-3">
+  <a href="#" target="_blank">
+    <img src="https://via.placeholder.com/970x90?text=Annonse+-+970x90" alt="Annonse" class="img-fluid" />
+  </a>
+</div>
+  <section class="hero">
+    <div class="container">
+      <h1>Finn de beste nettbutikkene i Norge</h1>
+      <p>
+        Vi har samlet alt på ett sted – fra klær og elektronikk til hobby og
+        tjenester
+      </p>
+    </div>
+  </section>
+
+  <section class="section bg-light">
+    <div class="container text-center">
+      <h2>Populære kategorier</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-3">
+          <a href="kategorier/klaer-og-sko.html" class="category-icon-link d-block">
+            <img src="assets/icons/Klær og sko.png" alt="Klær og sko" class="img-fluid category-icon mb-2" />
+            <h6>Klær og sko</h6>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a href="kategorier/elektronikk.html" class="category-icon-link d-block">
+            <img src="assets/icons/elektronikk.png" alt="Elektronikk" class="img-fluid category-icon mb-2" />
+            <h6>Elektronikk</h6>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a href="kategorier/helse-og-skjonnhet.html" class="category-icon-link d-block">
+            <img src="assets/icons/helse og skjønnhet.png" alt="Helse og skjønnhet"
+              class="img-fluid category-icon mb-2" />
+            <h6>Helse og skjønnhet</h6>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a href="kategorier/sport-og-fritid.html" class="category-icon-link d-block">
+            <img src="assets/icons/sport og fritid.png" alt="Sport og fritid" class="img-fluid category-icon mb-2" />
+            <h6>Sport og fritid</h6>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a href="kategorier/barn-og-baby.html" class="category-icon-link d-block">
+            <img src="assets/icons/barn og baby.png" alt="Barn og baby" class="img-fluid category-icon mb-2" />
+            <h6>Barn og baby</h6>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a href="kategorier/boker-og-underholdning.html" class="category-icon-link d-block">
+            <img src="assets/icons/bøker og underholdning.png" alt="Bøker og underholdning"
+              class="img-fluid category-icon mb-2" />
+            <h6>Bøker og underholdning</h6>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a href="kategorier/mobler-og-interior.html" class="category-icon-link d-block">
+            <img src="assets/icons/møbler og interiør.png" alt="Møbler og interiør"
+              class="img-fluid category-icon mb-2" />
+            <h6>Møbler og interiør</h6>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <a href="kategorier/apotek.html" class="category-icon-link d-block">
+            <img src="assets/icons/apotek.png" alt="Apotek" class="img-fluid category-icon mb-2" />
+            <h6>Apotek</h6>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Annonse mellom seksjoner -->
+<div class="ad-banner-mid text-center my-4">
+  <a href="#" target="_blank">
+    <img src="https://www.elkjop.no/_next/image?url=%2Fresource%2Fresponsive-image%2F6224604%2Fhero%2Ftablet%2F2%2F1536%2F576%2Felkjop-2025-w13-17-eastersales-w16-intern-1600x600-norwegian.png&w=3840&q=75" alt="Kampanje" class="img-fluid" />
+  </a>
+</div>
+  <main>
+    <section class="section" id="anbefalte">
+      <div class="container">
+    <h2>Anbefalte nettbutikker</h2>
+    <div class="row g-4" id="storeGrid">
+      <!-- Butikk 1 -->
+      <div class="col-md-3">
+        <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
+          <img src="assets/images/barn-og-baby/babyshop_logo_200.jpg" class="img-fluid mb-2" alt="Babyshop" />
+          <h5>Babyshop</h5>
+          <p>Baby- og barneutstyr 0–10 år</p>
+          <span class="badge bg-info">#Barn</span>
+          <div class="mt-2">⭐⭐⭐⭐☆</div>
+
+          <!-- Kommentarboks flyttet inn her -->
+          <div class="comment-box mt-3">
+            <button class="btn btn-sm btn-outline-secondary toggle-comment">
+              Si din mening
+            </button>
+            <div class="comment-input mt-2 d-none">
+              <textarea class="form-control mb-2" rows="2" placeholder="Skriv din kommentar..."></textarea>
+              <button class="btn btn-primary btn-sm send-comment">
+                Send
+              </button>
+            </div>
+            <div class="user-comment mt-2 text-start small text-muted"></div>
+          </div>
+        </div>
+      </div>
+
+          <!-- Butikk 2 -->
+<div class="col-md-3 extra-store d-none">
+  <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
+    <img src="assets/images/Klær og sko/Boozt.png" class="img-fluid mb-2" alt="Boozt" />
+    <h5>Boozt</h5>
+    <p>Klær og mote for hele familien</p>
+    <span class="badge bg-warning text-dark">#Klær</span>
+    <div class="mt-2">⭐⭐⭐⭐⭐</div>
+
+    <!-- Kommentarboks -->
+    <div class="comment-box mt-3">
+      <button class="btn btn-sm btn-outline-secondary toggle-comment">
+        Si din mening
+      </button>
+      <div class="comment-input mt-2 d-none">
+        <textarea class="form-control mb-2" rows="2" placeholder="Skriv din kommentar..."></textarea>
+        <button class="btn btn-primary btn-sm send-comment">
+          Send
+        </button>
+      </div>
+      <div class="user-comment mt-2 text-start small text-muted"></div>
+    </div>
+  </div>
+</div>
+
+          <!-- Butikk 3 -->
+<div class="col-md-3 extra-store d-none">
+  <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
+    <img src="assets/images/elektronikk/elkjop.webp" class="img-fluid mb-2" alt="Elkjøp" />
+    <h5>Elkjøp</h5>
+    <p>Elektronikk og hvitevarer</p>
+    <span class="badge bg-primary">#Elektronikk</span>
+    <div class="mt-2">⭐⭐⭐⭐☆</div>
+
+    <!-- Kommentarboks -->
+    <div class="comment-box mt-3">
+      <button class="btn btn-sm btn-outline-secondary toggle-comment">
+        Si din mening
+      </button>
+      <div class="comment-input mt-2 d-none">
+        <textarea class="form-control mb-2" rows="2" placeholder="Skriv din kommentar..."></textarea>
+        <button class="btn btn-primary btn-sm send-comment">
+          Send
+        </button>
+      </div>
+      <div class="user-comment mt-2 text-start small text-muted"></div>
+    </div>
+  </div>
+</div>
+
+          <!-- Butikk 4 -->
+<div class="col-md-3 extra-store d-none">
+  <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
+    <img src="assets/images/apotek/Farmasiet.svg" class="img-fluid mb-2" alt="Farmasiet" />
+    <h5>Farmasiet</h5>
+    <p>Apotekvarer og helsekost</p>
+    <span class="badge bg-success">#Helse</span>
+    <div class="mt-2">⭐⭐⭐⭐☆</div>
+
+    <!-- Kommentarboks -->
+    <div class="comment-box mt-3">
+      <button class="btn btn-sm btn-outline-secondary toggle-comment">
+        Si din mening
+      </button>
+      <div class="comment-input mt-2 d-none">
+        <textarea class="form-control mb-2" rows="2" placeholder="Skriv din kommentar..."></textarea>
+        <button class="btn btn-primary btn-sm send-comment">
+          Send
+        </button>
+      </div>
+      <div class="user-comment mt-2 text-start small text-muted"></div>
+    </div>
+  </div>
+</div>
+<div class="container my-4">
+  <div id="ad-slot" class="ad-banner text-center"></div>
+</div>
+
+        <!-- Vis alle-knapp -->
+        <div class="text-center mt-4">
+          <button class="btn btn-outline-primary" id="toggleStoresBtn">
+            Vis alle
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dynamisk annonse her -->
+<div id="dynamicAds" class="ad-banner-mid text-center my-4"></div>
+
+  <footer class="footer">
+    &copy; 2025 Butikkoversikt.no – Alle rettigheter reservert.
+  </footer>
+
+  <!-- Søkefelt-funksjonalitet -->
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const searchToggle = document.querySelector(".search-toggle");
+      const searchBar = document.getElementById("searchBar");
+      const closeSearch = document.getElementById("closeSearch");
+
+      if (searchToggle && searchBar && closeSearch) {
+        searchToggle.addEventListener("click", (e) => {
+          e.preventDefault();
+          searchBar.classList.toggle("show");
+        });
+
+        closeSearch.addEventListener("click", () => {
+          searchBar.classList.remove("show");
+        });
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleBtn = document.getElementById("toggleStoresBtn");
+      const hiddenStores = document.querySelectorAll(".extra-store");
+
+      toggleBtn.addEventListener("click", () => {
+        hiddenStores.forEach((store) => store.classList.toggle("d-none"));
+        toggleBtn.textContent =
+          toggleBtn.textContent === "Vis færre" ? "Vis alle" : "Vis færre";
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".toggle-comment").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          btn.nextElementSibling.classList.toggle("d-none");
+        });
+      });
+
+      document.querySelectorAll(".send-comment").forEach((sendBtn) => {
+        sendBtn.addEventListener("click", () => {
+          const inputBox = sendBtn.previousElementSibling;
+          const comment = inputBox.value.trim();
+          if (comment) {
+            const display = sendBtn
+              .closest(".comment-box")
+              .querySelector(".user-comment");
+            display.textContent = comment;
+            sendBtn.closest(".comment-input").classList.add("d-none");
+            inputBox.value = "";
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const filterDropdown = document.getElementById("categoryFilter");
+    const storeCards = document.querySelectorAll("#storeGrid .col-md-3");
+
+    filterDropdown.addEventListener("change", () => {
+      const selectedCategory = filterDropdown.value.toLowerCase();
+
+      storeCards.forEach((card) => {
+        const badge = card.querySelector(".badge");
+        const category = badge ? badge.textContent.replace("#", "").toLowerCase() : "";
+
+        if (selectedCategory === "all" || category === selectedCategory) {
+          card.classList.remove("d-none");
+        } else {
+          card.classList.add("d-none");
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const adContainer = document.getElementById("adContainer");
+
+    fetch("assets/data/ads.json")
+      .then((res) => res.json())
+      .then((ads) => {
+        ads.forEach((ad) => {
+          const a = document.createElement("a");
+          a.href = ad.link;
+          a.target = "_blank";
+          a.innerHTML = `<img src="${ad.image}" alt="${ad.alt}" loading="lazy" />`;
+          a.dataset.adId = ad.id;
+
+          // 🧠 Tracking ved klikk
+          a.addEventListener("click", () => {
+            console.log("Annonse klikket:", ad.id); // eller bruk fetch() til å logge
+            // Her kan du sende til Google Analytics, affiliate tracking, etc.
+          });
+
+          adContainer.appendChild(a);
+        });
+      });
+  });
+</script>
+
+<div class="container my-4">
+  <div id="ad-slot" class="ad-banner text-center"></div>
+</div>
+
+
+  <!-- JavaScript: Kun nødvendig -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/load-ads.js"></script>
+
+
+<!-- Sticky annonse (kun på desktop) -->
+<div class="sticky-ad">
+  <a href="#">
+    <img src="https://via.placeholder.com/160x600?text=Annonse" alt="Annonse" />
+  </a>
+</div>
+
+</body>
+
+</html>
+<!-- End of index.html -->

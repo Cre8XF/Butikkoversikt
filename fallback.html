@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Butikk ikke tilgjengelig</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Poppins', sans-serif;
+    }
+    .fallback-container {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .fallback-container h1 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    .fallback-container p {
+      color: #666;
+      margin-bottom: 30px;
+    }
+    .store-suggestion {
+      margin-bottom: 20px;
+    }
+    .store-suggestion img {
+      max-width: 120px;
+      margin-bottom: 10px;
+    }
+    .btn-custom {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .btn-custom:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="fallback-container">
+    <h1>Beklager, denne nettbutikken er ikke tilgjengelig</h1>
+    <p>Butikken du prøvde å besøke er ikke lenger aktiv via vår oversikt. Her er noen gode alternativer:</p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-4 store-suggestion">
+        <img src="https://via.placeholder.com/120x80?text=Babyshop" alt="Babyshop">
+        <div><a href="#" class="btn-custom">Besøk Babyshop</a></div>
+      </div>
+      <div class="col-md-4 store-suggestion">
+        <img src="https://via.placeholder.com/120x80?text=Boozt" alt="Boozt">
+        <div><a href="#" class="btn-custom">Gå til Boozt</a></div>
+      </div>
+      <div class="col-md-4 store-suggestion">
+        <img src="https://via.placeholder.com/120x80?text=Farmasiet" alt="Farmasiet">
+        <div><a href="#" class="btn-custom">Farmasiet.no</a></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

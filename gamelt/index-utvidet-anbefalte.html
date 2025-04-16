@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Butikkoversikt.no</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Butikkoversikt.no</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Hjem</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kategorier">Kategorier</a></li>
+          <li class="nav-item"><a class="nav-link" href="#anbefalte">Topp 25</a></li>
+          <li class="nav-item search-toggle"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="search-bar" id="searchBar">
+    <div class="container d-flex align-items-center">
+      <input type="text" placeholder="Søk etter nettbutikker..." class="form-control" />
+      <button class="btn btn-outline-secondary ms-2" id="closeSearch" title="Lukk søk">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section" id="anbefalte">
+    <div class="container">
+      <h2>Anbefalte nettbutikker</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card text-center p-3">
+            <img src="assets/images/barn-og-baby/babyshop_logo_200.jpg" class="img-fluid mb-2" alt="Babyshop" />
+            <p>Baby- og barneutstyr 0–10 år</p>
+          </div>
+        </div>
+
+        <!-- Ekstra butikker (skjult) -->
+        <div class="col-md-3 extra-store d-none">
+          <div class="card text-center p-3">
+            <img src="assets/images/klær/boozt_logo_200.jpg" class="img-fluid mb-2" alt="Boozt" />
+            <p>Klær og mote for hele familien</p>
+          </div>
+        </div>
+        <div class="col-md-3 extra-store d-none">
+          <div class="card text-center p-3">
+            <img src="assets/images/elektronikk/elkjop_logo.jpg" class="img-fluid mb-2" alt="Elkjøp" />
+            <p>Elektronikk og hvitevarer</p>
+          </div>
+        </div>
+        <div class="col-md-3 extra-store d-none">
+          <div class="card text-center p-3">
+            <img src="assets/images/apotek/farmasiet_logo.png" class="img-fluid mb-2" alt="Farmasiet" />
+            <p>Apotekvarer og helsekost</p>
+          </div>
+        </div>
+        <div class="col-md-3 extra-store d-none">
+          <div class="card text-center p-3">
+            <img src="assets/images/mote/zalando_logo.png" class="img-fluid mb-2" alt="Zalando" />
+            <p>Internasjonal motebutikk</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vis alle-knapp -->
+      <div class="text-center mt-4">
+        <button class="btn btn-outline-primary" id="toggleStoresBtn">Vis alle</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer mt-5 py-4 bg-light text-center">
+  &copy; 2025 Butikkoversikt.no – Alle rettigheter reservert.
+</footer>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const searchToggle = document.querySelector(".search-toggle");
+    const searchBar = document.getElementById("searchBar");
+    const closeSearch = document.getElementById("closeSearch");
+
+    if (searchToggle && searchBar && closeSearch) {
+      searchToggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        searchBar.classList.toggle("show");
+      });
+
+      closeSearch.addEventListener("click", () => {
+        searchBar.classList.remove("show");
+      });
+    }
+
+    const toggleBtn = document.getElementById("toggleStoresBtn");
+    const hiddenStores = document.querySelectorAll(".extra-store");
+
+    toggleBtn.addEventListener("click", () => {
+      hiddenStores.forEach((store) => store.classList.toggle("d-none"));
+      toggleBtn.textContent =
+        toggleBtn.textContent === "Vis alle" ? "Vis færre" : "Vis alle";
+    });
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

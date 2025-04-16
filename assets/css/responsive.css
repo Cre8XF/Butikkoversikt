@@ -1,0 +1,141 @@
+/* === Tablet breakpoint (≤768px) === */
+@media (max-width: 768px) {
+  .col-lg-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* === Mobil breakpoint (≤576px) === */
+@media (max-width: 576px) {
+  .section {
+    padding: 20px 15px;
+  }
+  .hero h1 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  /* Kort og kolonner */
+  .col-md-3,
+  .col-6 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .card,
+  .anbefalt-card {
+    min-height: unset;
+    padding: 15px;
+  }
+
+  .anbefalt-card img,
+  .card img {
+    max-height: 80px;
+    margin-bottom: 12px;
+  }
+
+  .anbefalt-card h5,
+  .card h5 {
+    font-size: 1.1rem;
+  }
+
+  .anbefalt-card p,
+  .card p {
+    font-size: 0.95rem;
+  }
+
+  /* Knapper og input */
+  .btn {
+    padding: 6px 14px;
+    font-size: 0.95rem;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+  }
+
+  .search-bar .btn {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .navbar .nav-link {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+
+  /* Kategorikort */
+  .category-card {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .category-card h5 {
+    font-size: 1rem;
+  }
+
+  .category-card p {
+    font-size: 0.9rem;
+  }
+
+  .category-icon {
+    max-width: 50px;
+    margin-bottom: 10px;
+  }
+
+  .category-icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Grid og liste */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list-item img {
+    margin: 0 0 10px 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .text-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  /* Vis alle-knapp */
+  #toggleStoresBtn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* Justering av grid-rad */
+  .row.g-4.justify-content-center {
+    justify-content: center !important;
+  }
+}
+
+/* === Små laptops (≤992px) === */
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: left;
+  }
+  /* flere regler her */
+}
