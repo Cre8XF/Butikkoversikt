@@ -139,3 +139,11 @@
   }
   /* flere regler her */
 }
+
+/* === Logo === */
+@media (max-width: 576px) {
+  .navbar-brand img {
+    height: 60px;
+    padding: 5px 10px;
+  }
+}

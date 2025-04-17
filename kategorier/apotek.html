@@ -1,67 +1,130 @@
 <!DOCTYPE html>
 <html lang="no">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apotek – Butikkoversikt.no</title>
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 🔁 Tittel: endres per kategori -->
+  <title>Apotek – Nettbutikker samlet | Butikkoversikt.no</title>
+
+  <!-- 🔁 SEO-beskrivelse og nøkkelord -->
+  <meta name="description" content="Finn de beste nettapotekene i Norge for reseptfrie legemidler, helsekost og velvære." />
+  <meta name="keywords" content="apotek, nettapotek, legemidler, helsekost, helse, apotek på nett" />
+  <meta name="author" content="Butikkoversikt.no" />
+
+  <!-- 🔁 Open Graph (for Facebook, Messenger, osv.) -->
+  <meta property="og:title" content="Apotek – Nettbutikker samlet | Butikkoversikt.no" />
+  <meta property="og:description" content="Finn de beste nettapotekene i Norge for reseptfrie legemidler, helsekost og velvære." />
+  <meta property="og:image" content="https://butikkoversikt.no/assets/images/deling-apotek.jpg" />
+  <meta property="og:url" content="https://butikkoversikt.no/apotek.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- 🔁 Twitter-kort -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Apotek – Nettbutikker samlet | Butikkoversikt.no" />
+  <meta name="twitter:description" content="Se utvalgte apotek på nett for helse og velvære." />
+  <meta name="twitter:image" content="https://butikkoversikt.no/assets/images/deling-apotek.jpg" />
+
+  <!--favicon-->
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts og CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+</head>
   <body>
-    <header>
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h4>
-            <a href="../index.html" class="logo-link">Butikkoversikt.no</a>
-          </h4>
-          <nav>
-            <a href="../index.html" class="me-3">Hjem</a>
-            <a href="../index.html#kategorier" class="me-3">Kategorier</a>
-          </nav>
+    <header class="py-3 border-bottom">
+  <div class="container d-flex justify-content-between align-items-center">
+    <a href="../index.html" class="navbar-brand d-flex align-items-center">
+      <img src="../assets/images/logo.png" alt="Butikkoversikt.no" height="40" />
+    </a>
+    <nav>
+      <a href="../index.html" class="me-3">Hjem</a>
+      <a href="../index.html#kategorier" class="me-3">Kategorier</a>
+      <a href="../index.html#anbefalte" class="me-3">Topp 25</a>
+      <a href="../index.html#guider">Guider</a>
+    </nav>
+  </div>
+</header>
+
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>Apotek og helse</h1>
+          <p>Finn trygge og populære nettapotek for helse og velvære</p>
         </div>
-      </div>
-    </header>
+      </section>
 
-    <section class="hero">
-      <div class="container">
-        <h1>Apotek</h1>
-        <p>Finn trygge og populære apotek på nett for helse og velvære</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-md-3">
-            <a
-              href="https://www.farmasiet.no"
-              target="_blank"
-              rel="noopener"
-              class="text-decoration-none text-dark"
-            >
-              <div class="card">
-                <img
-                  src="../assets/images/apotek/Farmasiet.svg"
-                  alt="Farmasiet"
-                  class="img-fluid mb-2"
-                />
-                <h5>Farmasiet.no</h5>
-                <p>
-                  Stort nettapotek med alt fra reseptfrie legemidler til
-                  hudpleie.
-                </p>
-              </div>
-            </a>
+      <section class="section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-3">
+        <a href="https://www.farmasiet.no" target="_blank" rel="noopener sponsored"
+           class="text-decoration-none text-dark"
+           title="Farmasiet.no – Stort nettapotek med alt fra reseptfrie legemidler til hudpleie og kosttilskudd">
+          <div class="card category-card">
+            <img src="../assets/images/apotek/Farmasiet.svg" alt="Farmasiet – Norges største nettapotek" class="img-fluid mb-2" />
+            <h5>Farmasiet.no</h5>
+            <p>Stort nettapotek med alt fra reseptfrie legemidler til hudpleie og kosttilskudd.</p>
           </div>
-
-          <!-- Flere apotek kan legges til her ved å kopiere en .col-md-3 -->
-        </div>
+        </a>
       </div>
-    </section>
+
+      <div class="col-md-3">
+        <a href="https://www.apotek1.no" target="_blank" rel="noopener sponsored"
+           class="text-decoration-none text-dark"
+           title="Apotek1.no – Bredt utvalg av helseprodukter og reseptfrie legemidler">
+          <div class="card category-card">
+            <img src="../assets/images/apotek/Apotek1.svg" alt="Apotek 1 – Trygt nettapotek" class="img-fluid mb-2" />
+            <h5>Apotek1.no</h5>
+            <p>Apotek 1 tilbyr et bredt utvalg av helseprodukter og reseptfrie legemidler.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="https://www.apotekforeningen.no" target="_blank" rel="noopener sponsored"
+           class="text-decoration-none text-dark"
+           title="Apotekforeningen.no – Oversikt over apotek og tjenester i Norge">
+          <div class="card category-card">
+            <img src="../assets/images/apotek/Apotekforeningen.svg" alt="Apotekforeningen – Samlet oversikt over apotek" class="img-fluid mb-2" />
+            <h5>Apotekforeningen.no</h5>
+            <p>Samlet oversikt over alle apotek i Norge med informasjon om produkter og tjenester.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="https://www.apoteket.no" target="_blank" rel="noopener sponsored"
+           class="text-decoration-none text-dark"
+           title="Apoteket.no – Nettapotek med helseprodukter og legemidler">
+          <div class="card category-card">
+            <img src="../assets/images/apotek/Apoteket.svg" alt="Apoteket – Trygt nettapotek" class="img-fluid mb-2" />
+            <h5>Apoteket.no</h5>
+            <p>Apoteket tilbyr et bredt utvalg av helseprodukter og reseptfrie legemidler.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="https://www.apotek365.no" target="_blank" rel="noopener sponsored"
+           class="text-decoration-none text-dark"
+           title="Apotek365.no – Rask levering av helseprodukter og legemidler">
+          <div class="card category-card">
+            <img src="../assets/images/apotek/Apotek365.svg" alt="Apotek 365 – Rask levering av helseprodukter" class="img-fluid mb-2" />
+            <h5>Apotek365.no</h5>
+            <p>Rask levering av helseprodukter og reseptfrie legemidler.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
 
     <footer class="footer">
       &copy; 2025 Butikkoversikt.no – Alle rettigheter reservert.
