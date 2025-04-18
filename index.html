@@ -53,37 +53,38 @@
 
 
 <body>
-<!-- Header med responsiv navigasjon -->
 <header class="sticky-top bg-white shadow-sm py-2 border-bottom">
   <div class="container d-flex justify-content-between align-items-center">
     <a href="index.html" class="navbar-brand d-flex align-items-center">
-      <img src="assets/images/logo.png" alt="Butikkoversikt.no - Finn din nettbutikk" class="logo-img" height="40" />
+      <img src="assets/images/logo.png" alt="Butikkoversikt.no - Finn din nettbutikk" class="logo-img" />
     </a>
-
-    <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile"
-      aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Desktop-navigasjon -->
-    <nav class="d-none d-md-flex gap-4">
+    
+    <!-- Desktopmeny -->
+    <nav class="main-nav d-flex gap-4">
       <a href="index.html" class="nav-link">Hjem</a>
       <a href="kategori.html" class="nav-link">Kategorier</a>
-      <a href="#anbefalte" class="nav-link">Topp 25</a>
-      <a href="#guider" class="nav-link">Guider</a>
+      <a href="topp25.html" class="nav-link">Topp 25</a>
+      <a href="guider/main-guider.html">Guider</a>
+
     </nav>
+
+    <!-- Hamburger knapp for mobil -->
+    <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </div>
 
-  <!-- Mobilnavigasjon (med .navbar-collapse lagt til) -->
-  <div class="navbar-collapse collapse" id="navbarMobile">
+  <!-- Mobilmeny -->
+  <div class="collapse" id="navbarMobile">
     <div class="bg-white p-3 text-center border-top">
       <a href="index.html" class="d-block mb-2">Hjem</a>
       <a href="kategori.html" class="d-block mb-2">Kategorier</a>
-      <a href="#anbefalte" class="d-block mb-2">Topp 25</a>
-      <a href="#guider" class="d-block">Guider</a>
+      <a href="topp25.html" class="d-block mb-2">Topp 25</a>
+      <a href="guider/main-guider.html" class="d-block">Guider</a>
     </div>
   </div>
 </header>
+
 
 <!-- Annonse-banner over hero -->
 <div class="ad-banner-top text-center py-3">
@@ -190,7 +191,7 @@
     <h2>Anbefalte nettbutikker</h2>
     <div class="row g-4" id="storeGrid">
       <!-- Butikk 1 -->
-      <div class="col-md-3 extra-store d-none" data-category="Barn">
+      <div class="col-md-3 extra-store" data-category="Barn">
         <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
           <img src="assets/images/barn-og-baby/babyshop_logo_200.jpg" class="img-fluid mb-2" alt="Babyshop" />
           <h5>Babyshop</h5>
@@ -215,7 +216,7 @@
       </div>
 
           <!-- Butikk 2 -->
-<div class="col-md-3 extra-store d-none" data-category="Klær">
+<div class="col-md-3 extra-store" data-category="Klær">
   <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
     <img src="assets/images/Klær og sko/Boozt.png" class="img-fluid mb-2" alt="Boozt" />
     <h5>Boozt</h5>
@@ -240,7 +241,7 @@
 </div>
 
           <!-- Butikk 3 -->
-<div class="col-md-3 extra-store d-none" data-category="Elektronikk">
+<div class="col-md-3 extra-store" data-category="Elektronikk">
   <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
     <img src="assets/images/elektronikk/elkjop.webp" class="img-fluid mb-2" alt="Elkjøp" />
     <h5>Elkjøp</h5>
@@ -265,7 +266,7 @@
 </div>
 
           <!-- Butikk 4 -->
-<div class="col-md-3 extra-store d-none" data-category="helse">
+<div class="col-md-3 extra-store" data-category="helse">
   <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
     <img src="assets/images/apotek/Farmasiet.svg" class="img-fluid mb-2" alt="Farmasiet" />
     <h5>Farmasiet</h5>
@@ -289,8 +290,167 @@
   </div>
 </div>
 <div class="container my-4">
-  <div id="ad-slot" class="ad-banner text-center"></div>
+<div id="ad-slot" class="ad-banner text-center"></div>
 </div>
+  
+            <!-- Butikk 5 -->
+             <!-- Butikk: Zalando -->
+<div class="col-md-3 extra-store d-none" data-category="Klær">
+  <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
+    <img src="assets/images/Klær og sko/Zalando.png" class="img-fluid mb-2" alt="Zalando" />
+    <h5>Zalando</h5>
+    <p>Stort utvalg av mote for dame, herre og barn</p>
+    <span class="badge bg-warning text-dark">#Klær</span>
+    <div class="mt-2">⭐⭐⭐⭐⭐</div>
+    <div class="comment-box mt-3">
+      <button class="btn btn-sm btn-outline-secondary toggle-comment">Si din mening</button>
+      <div class="comment-input mt-2 d-none">
+        <textarea class="form-control mb-2" rows="2" placeholder="Skriv din kommentar..."></textarea>
+        <button class="btn btn-primary btn-sm send-comment">Send</button>
+      </div>
+      <div class="user-comment mt-2 text-start small text-muted"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Butikk: Komplett -->
+<div class="col-md-3 extra-store d-none" data-category="Elektronikk">
+  <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
+    <img src="assets/images/elektronikk/komplett.png" class="img-fluid mb-2" alt="Komplett" />
+    <h5>Komplett</h5>
+    <p>PC-er, komponenter og elektronikk</p>
+    <span class="badge bg-primary">#Elektronikk</span>
+    <div class="mt-2">⭐⭐⭐⭐☆</div>
+    <div class="comment-box mt-3">
+      <button class="btn btn-sm btn-outline-secondary toggle-comment">Si din mening</button>
+      <div class="comment-input mt-2 d-none">
+        <textarea class="form-control mb-2" rows="2" placeholder="Skriv din kommentar..."></textarea>
+        <button class="btn btn-primary btn-sm send-comment">Send</button>
+      </div>
+      <div class="user-comment mt-2 text-start small text-muted"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Butikk: Mimmis -->
+<div class="col-md-3 extra-store d-none" data-category="Barn">
+  <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
+    <img src="assets/images/barn-og-baby/mimmis_logo.png" class="img-fluid mb-2" alt="Mimmis" />
+    <h5>Mimmis</h5>
+    <p>Utstyr til baby og småbarn</p>
+    <span class="badge bg-info">#Barn</span>
+    <div class="mt-2">⭐⭐⭐⭐</div>
+    <div class="comment-box mt-3">
+      <button class="btn btn-sm btn-outline-secondary toggle-comment">Si din mening</button>
+      <div class="comment-input mt-2 d-none">
+        <textarea class="form-control mb-2" rows="2" placeholder="Skriv din kommentar..."></textarea>
+        <button class="btn btn-primary btn-sm send-comment">Send</button>
+      </div>
+      <div class="user-comment mt-2 text-start small text-muted"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Butikk: Kitch'n -->
+<div class="col-md-3 extra-store d-none" data-category="Møbler og interiør">
+  <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
+    <img src="assets/images/møbler-og-interiør/kitchen.png" class="img-fluid mb-2" alt="Kitch'n" />
+    <h5>Kitch'n</h5>
+    <p>Kjøkkenutstyr og interiør</p>
+    <span class="badge bg-danger">#Møbler og interiør</span>
+    <div class="mt-2">⭐⭐⭐⭐⭐</div>
+    <div class="comment-box mt-3">
+      <button class="btn btn-sm btn-outline-secondary toggle-comment">Si din mening</button>
+      <div class="comment-input mt-2 d-none">
+        <textarea class="form-control mb-2" rows="2" placeholder="Skriv din kommentar..."></textarea>
+        <button class="btn btn-primary btn-sm send-comment">Send</button>
+      </div>
+      <div class="user-comment mt-2 text-start small text-muted"></div>
+    </div>
+  </div>
+</div>
+<!-- Butikk 5 -->
+<div class="col-md-3 extra-store d-none" data-category="Sport">
+  <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
+    <img src="assets/images/sport-og-fritid/xxl_logo.png" class="img-fluid mb-2" alt="XXL" />
+    <h5>XXL</h5>
+    <p>Alt innen sport, fritid og friluft</p>
+    <span class="badge bg-dark">#Sport og fritid</span>
+    <div class="mt-2">⭐⭐⭐⭐☆</div>
+
+    <div class="comment-box mt-3">
+      <button class="btn btn-sm btn-outline-secondary toggle-comment">Si din mening</button>
+      <div class="comment-input mt-2 d-none">
+        <textarea class="form-control mb-2" rows="2" placeholder="Skriv din kommentar..."></textarea>
+        <button class="btn btn-primary btn-sm send-comment">Send</button>
+      </div>
+      <div class="user-comment mt-2 text-start small text-muted"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Butikk 6 -->
+<div class="col-md-3 extra-store d-none" data-category="Interiør">
+  <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
+    <img src="assets/images/mobler-og-interior/royaldesign_logo.png" class="img-fluid mb-2" alt="RoyalDesign" />
+    <h5>RoyalDesign</h5>
+    <p>Interiør og design for hjemmet</p>
+    <span class="badge bg-danger">#Møbler og interiør</span>
+    <div class="mt-2">⭐⭐⭐⭐⭐</div>
+
+    <div class="comment-box mt-3">
+      <button class="btn btn-sm btn-outline-secondary toggle-comment">Si din mening</button>
+      <div class="comment-input mt-2 d-none">
+        <textarea class="form-control mb-2" rows="2" placeholder="Skriv din kommentar..."></textarea>
+        <button class="btn btn-primary btn-sm send-comment">Send</button>
+      </div>
+      <div class="user-comment mt-2 text-start small text-muted"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Butikk 7 -->
+<div class="col-md-3 extra-store d-none" data-category="Bøker">
+  <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
+    <img src="assets/images/boker-og-underholdning/ark_logo.png" class="img-fluid mb-2" alt="ARK" />
+    <h5>ARK</h5>
+    <p>Bøker, kontor og underholdning</p>
+    <span class="badge bg-secondary">#Bøker og underholdning</span>
+    <div class="mt-2">⭐⭐⭐⭐☆</div>
+
+    <div class="comment-box mt-3">
+      <button class="btn btn-sm btn-outline-secondary toggle-comment">Si din mening</button>
+      <div class="comment-input mt-2 d-none">
+        <textarea class="form-control mb-2" rows="2" placeholder="Skriv din kommentar..."></textarea>
+        <button class="btn btn-primary btn-sm send-comment">Send</button>
+      </div>
+      <div class="user-comment mt-2 text-start small text-muted"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Butikk 8 -->
+<div class="col-md-3 extra-store d-none" data-category="Gadgets">
+  <div class="anbefalt-card text-center p-3 d-flex flex-column justify-content-between h-100">
+    <img src="assets/images/gadgets-og-gaver/bling_logo.png" class="img-fluid mb-2" alt="Bling" />
+    <h5>Bling</h5>
+    <p>Gadgets, gaver og smarte ting</p>
+    <span class="badge bg-info text-dark">#Gadgets og gaver</span>
+    <div class="mt-2">⭐⭐⭐⭐☆</div>
+
+    <div class="comment-box mt-3">
+      <button class="btn btn-sm btn-outline-secondary toggle-comment">Si din mening</button>
+      <div class="comment-input mt-2 d-none">
+        <textarea class="form-control mb-2" rows="2" placeholder="Skriv din kommentar..."></textarea>
+        <button class="btn btn-primary btn-sm send-comment">Send</button>
+      </div>
+      <div class="user-comment mt-2 text-start small text-muted"></div>
+    </div>
+  </div>
+</div>
+
+
+
 
         <!-- Vis alle-knapp -->
         <div class="text-center mt-4">
