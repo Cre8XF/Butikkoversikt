@@ -53,15 +53,19 @@
 
 
 <body>
-<!-- Header med forbedret responsivitet -->
+<!-- Header med responsiv navigasjon -->
 <header class="sticky-top bg-white shadow-sm py-2 border-bottom">
   <div class="container d-flex justify-content-between align-items-center">
     <a href="index.html" class="navbar-brand d-flex align-items-center">
-      <img src="assets/images/logo.png" alt="Butikkoversikt.no - Finn din nettbutikk" class="logo-img" />
+      <img src="assets/images/logo.png" alt="Butikkoversikt.no - Finn din nettbutikk" class="logo-img" height="40" />
     </a>
-    <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+
+    <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile"
+      aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- Desktop-navigasjon -->
     <nav class="d-none d-md-flex gap-4">
       <a href="index.html" class="nav-link">Hjem</a>
       <a href="kategori.html" class="nav-link">Kategorier</a>
@@ -69,7 +73,9 @@
       <a href="#guider" class="nav-link">Guider</a>
     </nav>
   </div>
-  <div class="collapse" id="navbarMobile">
+
+  <!-- Mobilnavigasjon (med .navbar-collapse lagt til) -->
+  <div class="navbar-collapse collapse" id="navbarMobile">
     <div class="bg-white p-3 text-center border-top">
       <a href="index.html" class="d-block mb-2">Hjem</a>
       <a href="kategori.html" class="d-block mb-2">Kategorier</a>
@@ -78,6 +84,7 @@
     </div>
   </div>
 </header>
+
 <!-- Annonse-banner over hero -->
 <div class="ad-banner-top text-center py-3">
   <a href="#" target="_blank">
