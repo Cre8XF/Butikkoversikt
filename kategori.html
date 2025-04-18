@@ -3,104 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kategorier – Butikkoversikt.no</title>
-  <meta name="description" content="Utforsk populære kategorier med nettbutikker i Norge – fra klær og elektronikk til helse og hjem. Finn din neste favorittbutikk!" />
-  <meta name="keywords" content="nettbutikk kategorier, klær, elektronikk, barn, helse, apotek, interiør, shopping" />
-  <meta name="author" content="Butikkoversikt.no" />
-  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <link rel="stylesheet" href="../assets/css/responsive.css" />
-
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H7E9JLM5J1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-H7E9JLM5J1');
-</script>
+  <title>Kategorier | Butikkoversikt.no</title>
+  <meta name="description" content="Utforsk nettbutikker etter kategori. Klær, elektronikk, apotek, interiør og mer samlet på ett sted." />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 <body>
-  <header class="sticky-top bg-white shadow-sm py-3 border-bottom">
+
+  <!-- Sticky Header -->
+  <header class="sticky-top bg-white shadow-sm py-2 border-bottom">
     <div class="container d-flex justify-content-between align-items-center">
-      <a href="../index.html" class="navbar-brand d-flex align-items-center">
-        <img src="../assets/images/logo.png" alt="Butikkoversikt.no" height="40" />
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="assets/images/logo.png" alt="Butikkoversikt.no" height="40" />
       </a>
-      <nav>
-        <a href="../index.html" class="me-3">Hjem</a>
-        <a href="../index.html#anbefalte" class="me-3">Topp 25</a>
-        <a href="../index.html#guider">Guider</a>
+      <nav class="d-none d-md-flex gap-4">
+        <a href="index.html" class="nav-link">Hjem</a>
+        <a href="kategori.html" class="nav-link active">Kategorier</a>
+        <a href="topp25.html" class="nav-link">Topp 25</a>
+        <a href="guider/main-guider.html" class="nav-link">Guider</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero py-5 text-center bg-light">
-    <div class="container">
-      <h1>Kategorier</h1>
-      <p class="lead">Utforsk våre mest populære nettbutikk-kategorier – finn klær, elektronikk, helse og mer på ett sted.</p>
-    </div>
-  </section>
+  <!-- Kategorioversikt -->
+  <section class="section bg-light py-5">
+    <div class="container text-center">
+      <h1 class="mb-4">Utforsk etter kategori</h1>
+      <p class="mb-5 text-muted">Klikk deg inn og se anbefalte nettbutikker innen hvert tema</p>
 
-  <section class="section bg-white">
-    <div class="container">
-      <div class="row g-4 text-center">
-        <div class="col-6 col-md-3">
-          <a href="barn-og-baby.html" class="category-icon-link d-block">
-            <img src="../assets/icons/barn.png" alt="Barn og baby" class="img-fluid category-icon mb-2" />
-            <h6>Barn og baby</h6>
-          </a>
-        </div>
+      <div class="row g-4">
         <div class="col-6 col-md-3">
           <a href="klaer-og-mote.html" class="category-icon-link d-block">
-            <img src="../assets/icons/klaer.png" alt="Klær og mote" class="img-fluid category-icon mb-2" />
-            <h6>Klær og mote</h6>
+            <img src="assets/icons/Klær og sko.png" alt="Klær og sko" class="img-fluid category-icon mb-2" />
+            <h6>Klær og sko</h6>
           </a>
         </div>
         <div class="col-6 col-md-3">
           <a href="elektronikk.html" class="category-icon-link d-block">
-            <img src="../assets/icons/elektronikk.png" alt="Elektronikk" class="img-fluid category-icon mb-2" />
+            <img src="assets/icons/elektronikk.png" alt="Elektronikk" class="img-fluid category-icon mb-2" />
             <h6>Elektronikk</h6>
           </a>
         </div>
         <div class="col-6 col-md-3">
-          <a href="helse-og-skjonnhet.html" class="category-icon-link d-block">
-            <img src="../assets/icons/helse.png" alt="Helse og skjønnhet" class="img-fluid category-icon mb-2" />
-            <h6>Helse og skjønnhet</h6>
-          </a>
-        </div>
-        <div class="col-6 col-md-3">
-          <a href="sport-og-fritid.html" class="category-icon-link d-block">
-            <img src="../assets/icons/sport.png" alt="Sport og fritid" class="img-fluid category-icon mb-2" />
-            <h6>Sport og fritid</h6>
-          </a>
-        </div>
-        <div class="col-6 col-md-3">
-          <a href="boker-og-underholdning.html" class="category-icon-link d-block">
-            <img src="../assets/icons/boker.png" alt="Bøker og underholdning" class="img-fluid category-icon mb-2" />
-            <h6>Bøker og underholdning</h6>
-          </a>
-        </div>
-        <div class="col-6 col-md-3">
-          <a href="mobler-og-interior.html" class="category-icon-link d-block">
-            <img src="../assets/icons/interior.png" alt="Møbler og interiør" class="img-fluid category-icon mb-2" />
-            <h6>Møbler og interiør</h6>
+          <a href="barn-og-baby.html" class="category-icon-link d-block">
+            <img src="assets/icons/Barn og baby.png" alt="Barn og baby" class="img-fluid category-icon mb-2" />
+            <h6>Barn og baby</h6>
           </a>
         </div>
         <div class="col-6 col-md-3">
           <a href="apotek.html" class="category-icon-link d-block">
-            <img src="../assets/icons/apotek.png" alt="Apotek" class="img-fluid category-icon mb-2" />
+            <img src="assets/icons/Apotek.png" alt="Apotek" class="img-fluid category-icon mb-2" />
             <h6>Apotek</h6>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="sport-og-fritid.html" class="category-icon-link d-block">
+            <img src="assets/icons/Sport og fritid.png" alt="Sport og fritid" class="img-fluid category-icon mb-2" />
+            <h6>Sport og fritid</h6>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="interior.html" class="category-icon-link d-block">
+            <img src="assets/icons/Møbler og interiør.png" alt="Møbler og interiør" class="img-fluid category-icon mb-2" />
+            <h6>Møbler og interiør</h6>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="boeker.html" class="category-icon-link d-block">
+            <img src="assets/icons/Bøker og underholdning.png" alt="Bøker og underholdning" class="img-fluid category-icon mb-2" />
+            <h6>Bøker og underholdning</h6>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="gadgets.html" class="category-icon-link d-block">
+            <img src="assets/icons/Gadgets og gaver.png" alt="Gadgets og gaver" class="img-fluid category-icon mb-2" />
+            <h6>Gadgets og gaver</h6>
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer mt-5 text-center">
-    <p>&copy; 2025 Butikkoversikt.no – Alle rettigheter reservert.</p>
+  <footer class="footer mt-5">
+    <div class="text-center">
+      &copy; 2025 Butikkoversikt.no – Alle rettigheter reservert.
+    </div>
   </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -118,3 +118,15 @@ badges.forEach(badge => {
       });
     });
 });
+
+// Affiliate-lenkeoppsett
+document.addEventListener("DOMContentLoaded", function () {
+  // Velg alle lenker med data-affiliate-attributt
+  const affiliateLinks = document.querySelectorAll('a[data-affiliate]');
+
+  affiliateLinks.forEach(link => {
+    link.setAttribute('rel', 'noopener sponsored');
+    link.setAttribute('target', '_blank');
+  });
+});
+
