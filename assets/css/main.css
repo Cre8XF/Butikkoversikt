@@ -492,6 +492,73 @@ header {
   font-weight: 500;
 }
 
+/* === FILTERKNAPPER === */
+.filter-buttons {
+  margin-bottom: 30px;
+}
+.filter-buttons .btn {
+  border-radius: 30px;
+  padding: 8px 22px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.filter-buttons .btn.active {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+}
+
+/* === SEKSJONSOVERSKRIFTER === */
+.filter-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 60px 0 30px;
+  color: #222;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* === BUTIKKORT LAYOUT === */
+.filter-section .category-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filter-section .category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.filter-section .category-card img {
+  max-height: 80px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.filter-section .category-card h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.filter-section .category-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+
 /* Sticky navbar + basic styling */
 .navbar {
   font-family: "Poppins", sans-serif;
@@ -799,5 +866,8 @@ header {
 section {
   scroll-margin-top: 300px;
 }
+
+
+
 
 

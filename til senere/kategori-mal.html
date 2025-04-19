@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Oppdag nettbutikker innen klær og mote for dame, herre og tilbehør.">
+  <title>Klær og mote – Nettbutikker</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+</head>
+<body>
+
+<!-- Hero / Intro -->
+<section class="hero text-center py-5 bg-light-blue">
+  <div class="container">
+    <h1>Klær og mote</h1>
+    <p>Her finner du norske og internasjonale nettbutikker innen klær, sko og tilbehør for alle stiler, størrelser og prisklasser.</p>
+    <p class="text-muted">Velg mellom underkategorier som <strong>Dame</strong>, <strong>Herre</strong> eller <strong>Tilbehør</strong> – eller bla gjennom hele listen.</p>
+  </div>
+</section>
+
+<!-- Underkategori Filter -->
+<div class="container my-4 text-center">
+  <div class="filter-buttons d-flex justify-content-center flex-wrap gap-2">
+    <button class="btn btn-outline-primary" data-filter="dame">Dame</button>
+    <button class="btn btn-outline-primary" data-filter="herre">Herre</button>
+    <button class="btn btn-outline-primary" data-filter="tilbehor">Tilbehør</button>
+    <button class="btn btn-outline-secondary" data-filter="alle">Alle</button>
+  </div>
+</div>
+
+<!-- Butikkort -->
+<section class="section">
+  <div class="container">
+    <div class="row g-4" id="categoryGrid">
+
+      <div class="col-md-3">
+        <a href="https://www.nelly.com/no" target="_blank" rel="noopener sponsored" class="text-decoration-none text-dark">
+          <div class="card category-card" data-subcategory="dame">
+            <img src="../assets/images/klær-og-mote/Nelly.png" alt="Nelly – Trendy mote for kvinner" class="img-fluid mb-2" />
+            <h5 class="fw-bold">Nelly.com</h5>
+            <p class="text-muted small">Populær nettbutikk med trendy klær og tilbehør for unge kvinner.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="https://www.bogartstore.no" target="_blank" rel="noopener sponsored" class="text-decoration-none text-dark">
+          <div class="card category-card" data-subcategory="herre">
+            <img src="../assets/images/klær-og-mote/Bogart.png" alt="Bogart – Klær for menn" class="img-fluid mb-2" />
+            <h5 class="fw-bold">Bogartstore.no</h5>
+            <p class="text-muted small">Eksklusiv norsk motebutikk med fokus på herreklær og design.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="https://www.zalando.no" target="_blank" rel="noopener sponsored" class="text-decoration-none text-dark">
+          <div class="card category-card" data-subcategory="dame herre">
+            <img src="../assets/images/klær-og-mote/Zalando.png" alt="Zalando – Klær for dame og herre" class="img-fluid mb-2" />
+            <h5 class="fw-bold">Zalando.no</h5>
+            <p class="text-muted small">Stort utvalg av klær og sko for både kvinner og menn fra kjente merkevarer.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="https://www.woohooshop.no" target="_blank" rel="noopener sponsored" class="text-decoration-none text-dark">
+          <div class="card category-card" data-subcategory="tilbehor">
+            <img src="../assets/images/klær-og-mote/woohoo.png" alt="Woohoo – Tilbehør og accessories" class="img-fluid mb-2" />
+            <h5 class="fw-bold">Woohoo.no</h5>
+            <p class="text-muted small">Stilig tilbehør og gaver – vesker, skjerf og smykker på nett.</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- JS -->
+<script src="../assets/js/main.js"></script>
+<script>
+  document.querySelectorAll('[data-filter]').forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+      const cards = document.querySelectorAll('.category-card');
+
+      cards.forEach(card => {
+        const subs = card.getAttribute('data-subcategory').split(" ");
+        const match = filter === 'alle' || subs.includes(filter);
+        card.closest('.col-md-3').style.display = match ? 'block' : 'none';
+      });
+
+      document.querySelectorAll('[data-filter]').forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
