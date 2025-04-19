@@ -9,9 +9,54 @@
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="stylesheet" href="../assets/css/responsive.css" />
+  <style>
+    .category-card {
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      padding: 16px;
+      background-color: #fff;
+      height: 100%;
+      position: relative;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    }
+
+    .category-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    .category-card img {
+      max-height: 60px;
+      object-fit: contain;
+      margin-bottom: 12px;
+    }
+
+    .badge-popular {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #ffc107;
+      color: #333;
+      font-weight: 600;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.5s ease-in-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body>
-
 <header class="sticky-top bg-white shadow-sm py-2 border-bottom">
   <div class="container d-flex justify-content-between align-items-center">
     <a href="/index.html" class="navbar-brand d-flex align-items-center">
@@ -92,14 +137,21 @@
 
   </div>
 </section>
-
-<footer class="footer mt-5">
-  <div class="text-center">
-    &copy; 2025 Butikkoversikt.no – Alle rettigheter reservert.
-  </div>
-</footer>
-
 <script src="../assets/js/main.js"></script>
 <script src="../assets/js/category-filter.js"></script>
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.category-card').forEach(el => {
+    el.classList.add('fade-in');
+    observer.observe(el);
+  });
+</script>
 </body>
 </html>
