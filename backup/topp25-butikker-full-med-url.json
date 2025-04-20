@@ -1,0 +1,227 @@
+[
+  {
+    "name": "Zalando",
+    "image": "assets/images/klaer-og-mote/Zalando.png",
+    "alt": "Zalando",
+    "category": "Klær og mote",
+    "url": "https://www.zalando.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Elkjøp",
+    "image": "assets/images/elektronikk/Elkjop.png",
+    "alt": "Elkjøp",
+    "category": "Elektronikk",
+    "url": "https://www.elkjop.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Power",
+    "image": "assets/images/elektronikk/Power.png",
+    "alt": "Power",
+    "category": "Elektronikk",
+    "url": "https://www.power.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Boozt",
+    "image": "assets/images/klaer-og-mote/boozt_logo_200.jpg",
+    "alt": "Boozt",
+    "category": "Klær og mote",
+    "url": "https://www.boozt.com",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Komplett",
+    "image": "assets/images/elektronikk/Komplett.png",
+    "alt": "Komplett",
+    "category": "Elektronikk",
+    "url": "https://www.komplett.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Apotek1",
+    "image": "assets/images/apotek/Apotek1.png",
+    "alt": "Apotek1",
+    "category": "Apotek",
+    "url": "https://www.apotek1.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Farmasiet",
+    "image": "assets/images/apotek/Farmasiet.svg",
+    "alt": "Farmasiet",
+    "category": "Apotek",
+    "url": "https://www.farmasiet.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Clas Ohlson",
+    "image": "assets/images/gadgets-og-gaver/ClasOhlson.png",
+    "alt": "Clas Ohlson",
+    "category": "Gadgets og gaver",
+    "url": "https://www.clasohlson.com/no/",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Jollyroom",
+    "image": "assets/images/barn-og-baby/Jollyroom.jpg",
+    "alt": "Jollyroom",
+    "category": "Barn og baby",
+    "url": "https://www.jollyroom.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Babyshop",
+    "image": "assets/images/barn-og-baby/babyshop_logo_200.jpg",
+    "alt": "Babyshop",
+    "category": "Barn og baby",
+    "url": "https://www.babyshop.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Vinmonopolet",
+    "image": "assets/images/gadgets-og-gaver/Vinmonopolet.png",
+    "alt": "Vinmonopolet",
+    "category": "Gadgets og gaver",
+    "url": "https://www.vinmonopolet.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Sport1",
+    "image": "assets/images/sport-og-fritid/Sport1.png",
+    "alt": "Sport1",
+    "category": "Sport og fritid",
+    "url": "https://www.sport1.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "XXL",
+    "image": "assets/images/sport-og-fritid/XXL.png",
+    "alt": "XXL",
+    "category": "Sport og fritid",
+    "url": "https://www.xxl.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Fjellsport",
+    "image": "assets/images/sport-og-fritid/Fjellsport.png",
+    "alt": "Fjellsport",
+    "category": "Sport og fritid",
+    "url": "https://www.fjellsport.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Rudo",
+    "image": "assets/images/barn-og-baby/Rudo.png",
+    "alt": "Rudo",
+    "category": "Barn og baby",
+    "url": "https://www.rudo.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Barnas Hus",
+    "image": "assets/images/barn-og-baby/BarnasHus_logo.png",
+    "alt": "Barnas Hus",
+    "category": "Barn og baby",
+    "url": "https://www.barnashus.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Ellos",
+    "image": "assets/images/barn-og-baby/ellos_logo.png",
+    "alt": "Ellos",
+    "category": "Barn og baby",
+    "url": "https://www.ellos.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "H&M",
+    "image": "assets/images/klaer-og-mote/HM.png",
+    "alt": "H&M",
+    "category": "Klær og mote",
+    "url": "https://www.hm.com/no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Cubus",
+    "image": "assets/images/barn-og-baby/cubus_logo_200.jpg",
+    "alt": "Cubus",
+    "category": "Barn og baby",
+    "url": "https://www.cubus.com/no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Guttelus",
+    "image": "assets/images/barn-og-baby/guttelus-logo--200x201.jpg",
+    "alt": "Guttelus",
+    "category": "Barn og baby",
+    "url": "https://www.guttelus.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "IKEA",
+    "image": "assets/images/mobler-og-interior/IKEA.png",
+    "alt": "IKEA",
+    "category": "Møbler og interiør",
+    "url": "https://www.ikea.com/no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Kid Interiør",
+    "image": "assets/images/mobler-og-interior/Kid.png",
+    "alt": "Kid Interiør",
+    "category": "Møbler og interiør",
+    "url": "https://www.kid.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Platekompaniet",
+    "image": "assets/images/boker-og-underholdning/Platekompaniet.png",
+    "alt": "Platekompaniet",
+    "category": "Bøker og underholdning",
+    "url": "https://www.platekompaniet.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "CDON",
+    "image": "assets/images/boker-og-underholdning/CDON.png",
+    "alt": "CDON",
+    "category": "Bøker og underholdning",
+    "url": "https://www.cdon.no",
+    "description": "",
+    "topp25": true
+  },
+  {
+    "name": "Lekia",
+    "image": "assets/images/barn-og-baby/Lekia.png",
+    "alt": "Lekia",
+    "category": "Barn og baby",
+    "url": "https://www.lekia.no",
+    "description": "",
+    "topp25": true
+  }
+]
