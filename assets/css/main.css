@@ -907,4 +907,63 @@ section {
 
 
 
+.menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 250px;
+  height: 100vh;
+  background: #f8f9fa;
+  padding: 2rem 1.5rem;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu.active {
+  left: 0;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu ul li {
+  margin-bottom: 1rem;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.side-menu ul li ul.submenu {
+  padding-left: 15px;
+  margin-top: 8px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  display: none;
+  z-index: 900;
+}
+
+.overlay.active {
+  display: block;
+}
 
