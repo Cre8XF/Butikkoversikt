@@ -1059,3 +1059,19 @@ h1, h2, h3, h4, h5 {
   display: block;
 }
 
+.card.recommended-store {
+  height: auto;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.card.recommended-store img {
+  max-height: 50px;
+  margin-bottom: 0.5rem;
+  object-fit: contain;
+}
+
+

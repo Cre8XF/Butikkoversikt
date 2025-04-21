@@ -11,14 +11,15 @@ document.addEventListener("DOMContentLoaded", () => {
         col.className = `col-6 col-md-3${index >= 8 ? " extra-store" : ""}`;
 
         col.innerHTML = `
-          <a href="${butikk.url}" target="_blank" rel="noopener" class="text-decoration-none text-dark">
-            <div class="card h-100 text-center p-3">
-              <img src="${butikk.image}" alt="${butikk.alt}" class="img-fluid mb-2" loading="lazy" onerror="this.src='assets/images/logo-mangler.png'" />
-              <h6>${butikk.name}</h6>
-              <p class="small text-muted">${butikk.description || ''}</p>
-            </div>
-          </a>
-        `;
+  <a href="${butikk.url}" target="_blank" rel="noopener" class="text-decoration-none text-dark">
+    <div class="card recommended-store text-center shadow-sm">
+      <img src="${butikk.image}" alt="${butikk.alt}" class="img-fluid mb-2" loading="lazy"
+        onerror="this.src='assets/images/logo-mangler.png'" />
+      <h6>${butikk.name}</h6>
+      <p class="small text-muted">${butikk.description || ''}</p>
+    </div>
+  </a>
+`;
         container.appendChild(col);
       });
 
