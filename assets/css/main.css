@@ -1012,5 +1012,35 @@ h1, h2, h3, h4, h5 {
   max-height: 90px;
   object-fit: contain;
 }
+/* 📢 anbefalte butikker */
+.featured-store-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  padding: 1.5rem;
+  height: 100%;
+}
 
+.featured-store-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.featured-store-card h5 {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.featured-store-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.featured-store-card .btn {
+  font-size: 0.875rem;
+  padding: 0.4rem 1.2rem;
+}
 
