@@ -1,5 +1,35 @@
 [
   {
+    "name": "Babyshop",
+    "image": "assets/images/barn-og-baby/babyshop_logo_200.jpg",
+    "alt": "Babyshop",
+    "category": "Barn og baby",
+    "url": "https://www.babyshop.no",
+    "description": "",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "Boozt",
+    "image": "assets/images/klær-og-mote/boozt.png",
+    "alt": "Boozt",
+    "category": "Klær og mote",
+    "url": "https://www.boozt.com",
+    "description": "",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "Elkjøp",
+    "image": "assets/images/elektronikk/Elkjop.png",
+    "alt": "Elkjøp",
+    "category": "Elektronikk",
+    "url": "https://www.elkjop.no",
+    "description": "",
+    "topp25": true,
+    "forside": true
+  },
+  {
     "category": "Klær og mote",
     "name": "Aboutyou.no",
     "description": "Stort utvalg av merker og mote.",
@@ -53,16 +83,6 @@
     "alt": "Askeladden",
     "url": "https://www.askeladdennavnelapper.no",
     "forside": false
-  },
-   {
-    "name": "Babyshop",
-    "image": "assets/images/barn-og-baby/babyshop_logo_200.jpg",
-    "alt": "Babyshop",
-    "category": "Barn og baby",
-    "url": "https://www.babyshop.no",
-    "description": "Sterk nisje innen barn og baby.",
-    "topp25": true,
-    "forside": true
   },
   {
     "name": "Barnas Hus",
@@ -120,16 +140,6 @@
     "forside": false
   },
   {
-    "name": "Boozt",
-    "image": "assets/images/klær-og-mote/Boozt.png",
-    "alt": "Boozt",
-    "category": "Klær og mote",
-    "url": "https://www.boozt.com",
-    "description": "Klær og mote for hele familien.",
-    "topp25": true,
-    "forside": true
-  },
-  {
     "category": "Klær og mote",
     "name": "Bubbleroom.com",
     "description": "Kjoler og festklær til dame.",
@@ -138,15 +148,15 @@
     "url": "https://www.bubbleroom.com",
     "forside": false
   },
-   {
-    "name": "CDON",
-    "image": "assets/images/elektronikk/cdon.png",
-    "alt": "CDON",
+  {
     "category": "Elektronikk",
-    "url": "https://cdon.no",
-    "description": "Alt fra elektronikk til underholdning.",
+    "name": "CDON.no",
+    "description": "TV-er, lydplanker og underholdning på nett.",
+    "image": "assets/images/elektronikk/CDON.png",
+    "alt": "CDON",
+    "url": "https://www.cdon.no",
     "topp25": true,
-    "forside": true
+    "forside": false
   },
   {
     "name": "Clas Ohlson",
@@ -196,14 +206,13 @@
     "forside": false
   },
   {
-    "name": "Elkjøp",
+    "category": "Elektronikk",
+    "name": "Elkjop.no",
+    "description": "Stort utvalg av TV-er og lydprodukter.",
     "image": "assets/images/elektronikk/Elkjop.png",
     "alt": "Elkjøp",
-    "category": "Elektronikk",
     "url": "https://www.elkjop.no",
-    "description": "Elektronikk, bred appell.",
-    "topp25": true,
-    "forside": true
+    "forside": false
   },
   {
     "name": "Ellos",
@@ -216,14 +225,14 @@
     "forside": false
   },
   {
-    "name": "Farmasiet",
-    "image": "assets/images/apotek/Farmasiet.svg",
-    "alt": "Farmasiet",
     "category": "Apotek",
+    "name": "Farmasiet.no",
+    "description": "Norges største nettapotek med raske leveranser og godt utvalg av helsekost og hygiene.",
+    "image": "assets/images/apotek/Farmasiet.png",
+    "alt": "Farmasiet",
     "url": "https://www.farmasiet.no",
-    "description": "Stor aktør innen apotek.",
     "topp25": true,
-    "forside": true
+    "forside": false
   },
   {
     "category": "Sport og fritid",
@@ -273,15 +282,15 @@
     "url": "https://www.hifiklubben.no",
     "forside": false
   },
-   {
+  {
     "name": "IKEA",
     "image": "assets/images/møbler-og-interiør/ikea.png",
     "alt": "IKEA",
     "category": "Møbler og interiør",
-    "url": "https://www.ikea.com/no/no",
-    "description": "Høyt gjenkjenningsnivå.",
+    "url": "https://www.ikea.com/no",
+    "description": "",
     "topp25": true,
-    "forside": true
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -330,15 +339,15 @@
     "url": "https://www.kjell.com",
     "forside": false
   },
-   {
-    "name": "Komplett",
-    "image": "assets/images/elektronikk/komplett.png",
-    "alt": "Komplett",
+  {
     "category": "Elektronikk",
+    "name": "Komplett.no",
+    "description": "Alt innen elektronikk, data og gaming.",
+    "image": "assets/images/elektronikk/Komplett.png",
+    "alt": "Komplett",
     "url": "https://www.komplett.no",
-    "description": "God dekning innen tech og gaming.",
     "topp25": true,
-    "forside": true
+    "forside": false
   },
   {
     "category": "Apotek",
@@ -450,14 +459,14 @@
     "forside": false
   },
   {
-    "name": "Platekompaniet",
-    "image": "assets/images/bøker-og-underholdning/platekompaniet.png",
-    "alt": "Platekompaniet",
-    "category": "Bøker og underholdning",
+    "category": "Boker og underholdning",
+    "name": "Platekompaniet.no",
+    "description": "Filmer, musikk, spill og bøker – stort utvalg.",
+    "image": "assets/images/bøker/Platekompaniet.png",
+    "alt": "Platekompaniet.no",
     "url": "https://www.platekompaniet.no",
-    "description": "Kultur og underholdning.",
     "topp25": true,
-    "forside": true
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -517,15 +526,14 @@
     "forside": false
   },
   {
-    "name": "Sportamore",
-    "image": "assets/images/sport-og-fritid/sportamore.png",
-    "alt": "Sportamore",
     "category": "Sport og fritid",
+    "name": "Sportamore.no",
+    "description": "Stort utvalg av sportsklær og utstyr.",
+    "image": "assets/images/sport-og-fritid/sportamor.png",
+    "alt": "Sportamore.no",
     "url": "https://www.sportamore.no",
-    "description": "Sport og klær.",
-    "topp25": true,
-    "forside": true
-  }
+    "forside": false
+  },
   {
     "category": "Sport og fritid",
     "name": "Sportshopen.no",
@@ -599,25 +607,25 @@
     "url": "https://www.voltfashion.com/no/",
     "forside": false
   },
-   {
-    "name": "XXL",
-    "image": "assets/images/sport-og-fritid/xxl_logo.png",
-    "alt": "XXL",
+  {
     "category": "Sport og fritid",
+    "name": "XXL.no",
+    "description": "Sportsklær, treningsutstyr og friluftsliv.",
+    "image": "assets/images/sport-og-fritid/XXL.png",
+    "alt": "XXL.no",
     "url": "https://www.xxl.no",
-    "description": "Sport og fritid, bred målgruppe.",
     "topp25": true,
-    "forside": true
+    "forside": false
   },
- {
-    "name": "Zalando",
+  {
+    "category": "Klær og mote",
+    "name": "Zalando.no",
+    "description": "Stort utvalg av klær og sko.",
     "image": "assets/images/klær-og-mote/Zalando.png",
     "alt": "Zalando",
-    "category": "Klær og mote",
     "url": "https://www.zalando.no",
-    "description": "Svært kjent for klær og sko.",
     "topp25": true,
-    "forside": true
+    "forside": false
   },
   {
     "category": "Møbler og interiør",
@@ -640,14 +648,14 @@
     "forside": false
   },
   {
-    "name": "CoolStuff",
-    "image": "assets/images/gadgets-og-gaver/coolstuff.png",
-    "alt": "CoolStuff",
     "category": "Gadgets og gaver",
+    "name": "CoolStuff.no",
+    "description": "Unike og morsomme gaver og gadgets.",
+    "image": "assets/images/gadgets-og-gaver/CoolStuff.png",
+    "alt": "CoolStuff",
     "url": "https://www.coolstuff.no",
-    "description": "Gadgets og gaver, klikkskapende.",
-    "topp25": true,
-    "forside": true
+    "topp25": false,
+    "forside": false
   },
   {
     "category": "Gadgets og gaver",
@@ -660,3 +668,165 @@
     "forside": false
   }
 ]
+
+
+None selected
+
+Skip to content
+Using Gmail with screen readers
+Conversations
+
+Important
+ 
+1–25 of 1,990
+ 
+
+Everything else
+ 
+1–50 of 8,721
+ 
+butikker-forside.json
+Inbox
+
+Roger Sørqvist <rogsor80@gmail.com>
+Attachments
+3:28 PM (41 minutes ago)
+to me
+
+ One attachment
+  •  Scanned by Gmail
+Gemini
+Hello, Roger
+How can I help you today?
+Summarize this email
+in more detail
+What can Gemini do
+in Gmail
+List action items
+from this email
+Gemini for Workspace can make mistakes, including about people, so double-check it. Learn more
+Suggestions updated
+[
+  {
+    "name": "Boozt",
+    "image": "assets/images/klær-og-mote/Boozt.png",
+    "alt": "Boozt",
+    "category": "Klær og mote",
+    "url": "https://www.boozt.com",
+    "description": "Klær og mote for hele familien.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "Zalando",
+    "image": "assets/images/klær-og-mote/Zalando.png",
+    "alt": "Zalando",
+    "category": "Klær og mote",
+    "url": "https://www.zalando.no",
+    "description": "Svært kjent for klær og sko.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "Babyshop",
+    "image": "assets/images/barn-og-baby/babyshop_logo_200.jpg",
+    "alt": "Babyshop",
+    "category": "Barn og baby",
+    "url": "https://www.babyshop.no",
+    "description": "Sterk nisje innen barn og baby.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "Elkjøp",
+    "image": "assets/images/elektronikk/Elkjop.png",
+    "alt": "Elkjøp",
+    "category": "Elektronikk",
+    "url": "https://www.elkjop.no",
+    "description": "Elektronikk, bred appell.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "Komplett",
+    "image": "assets/images/elektronikk/komplett.png",
+    "alt": "Komplett",
+    "category": "Elektronikk",
+    "url": "https://www.komplett.no",
+    "description": "God dekning innen tech og gaming.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "CDON",
+    "image": "assets/images/elektronikk/cdon.png",
+    "alt": "CDON",
+    "category": "Elektronikk",
+    "url": "https://cdon.no",
+    "description": "Alt fra elektronikk til underholdning.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "Farmasiet",
+    "image": "assets/images/apotek/Farmasiet.svg",
+    "alt": "Farmasiet",
+    "category": "Apotek",
+    "url": "https://www.farmasiet.no",
+    "description": "Stor aktør innen apotek.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "IKEA",
+    "image": "assets/images/møbler-og-interiør/ikea.png",
+    "alt": "IKEA",
+    "category": "Møbler og interiør",
+    "url": "https://www.ikea.com/no/no",
+    "description": "Høyt gjenkjenningsnivå.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "XXL",
+    "image": "assets/images/sport-og-fritid/xxl_logo.png",
+    "alt": "XXL",
+    "category": "Sport og fritid",
+    "url": "https://www.xxl.no",
+    "description": "Sport og fritid, bred målgruppe.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "Platekompaniet",
+    "image": "assets/images/bøker-og-underholdning/platekompaniet.png",
+    "alt": "Platekompaniet",
+    "category": "Bøker og underholdning",
+    "url": "https://www.platekompaniet.no",
+    "description": "Kultur og underholdning.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "CoolStuff",
+    "image": "assets/images/gadgets-og-gaver/coolstuff.png",
+    "alt": "CoolStuff",
+    "category": "Gadgets og gaver",
+    "url": "https://www.coolstuff.no",
+    "description": "Gadgets og gaver, klikkskapende.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "Sportamore",
+    "image": "assets/images/sport-og-fritid/sportamore.png",
+    "alt": "Sportamore",
+    "category": "Sport og fritid",
+    "url": "https://www.sportamore.no",
+    "description": "Sport og klær.",
+    "topp25": true,
+    "forside": true
+  }
+]
+butikker-forside.json
+Displaying butikker-forside.json.
