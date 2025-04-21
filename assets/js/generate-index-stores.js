@@ -1,16 +1,14 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   fetch("butikker.json")
     .then(response => response.json())
     .then(data => {
-      console.log("Butikker lastet inn:", data);  // 🔍 legg til denne
-      
       const container = document.getElementById("forsideAnbefalte");
       const anbefalte = data.filter(butikk => butikk.forside === true);
 
-
-      anbefalte.forEach(butikk => {
+      anbefalte.forEach((butikk, index) => {
         const col = document.createElement("div");
-        col.className = "col-6 col-md-3";
+        col.className = `col-6 col-md-3${index >= 8 ? " extra-store" : ""}`;
 
         col.innerHTML = `
           <a href="${butikk.url}" target="_blank" rel="noopener" class="text-decoration-none text-dark">
@@ -23,8 +21,17 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
         container.appendChild(col);
       });
+
+      // Toggle-knapp for å vise/fjerne ekstra kort
+      const toggleBtn = document.getElementById("toggleStoresBtn");
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function () {
+          container.classList.toggle("show-all");
+          this.textContent = this.textContent === "Vis alle" ? "Vis færre" : "Vis alle";
+        });
+      }
     })
     .catch(error => {
-      console.error("Feil ved lasting av butikkdata:", error);  // 🔍 og denne
+      console.error("Feil ved lasting av butikkdata:", error);
     });
 });

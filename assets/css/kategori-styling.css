@@ -1,0 +1,20 @@
+
+/* Hover-effekt på kategori-ikoner */
+.category-icon-link:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* Visuelle kort for underkategorier */
+.underkategori-kort {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Ekstra margin under underkategori-seksjon */
+.kategori-seksjon {
+  margin-bottom: 3rem;
+}

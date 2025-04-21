@@ -1052,4 +1052,10 @@ h1, h2, h3, h4, h5 {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
+.extra-store {
+  display: none;
+}
+.show-all .extra-store {
+  display: block;
+}
 
