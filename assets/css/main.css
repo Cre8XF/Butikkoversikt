@@ -919,12 +919,15 @@ section {
   top: 0;
   left: -280px;
   width: 250px;
-  height: 100vh;
-  background: #f8f9fa;
+  max-height: 90vh; /* Stopper før hele høyden */
+  background: linear-gradient(180deg, #ffffff 0%, #f1f3f5 100%);
   padding: 2rem 1.5rem;
-  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
   transition: left 0.3s ease;
   z-index: 1000;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  overflow-y: auto;
 }
 
 .side-menu.active {
@@ -942,15 +945,20 @@ section {
 }
 
 .side-menu ul li a {
+  display: block;
+  padding: 0.4rem 0.8rem;
   text-decoration: none;
   color: #333;
   font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.2s;
 }
 
-.side-menu ul li ul.submenu {
-  padding-left: 15px;
-  margin-top: 8px;
+.side-menu ul li a:hover {
+  background-color: #e2e6ea;
+  color: #000;
 }
+
 
 .overlay {
   position: fixed;
@@ -966,4 +974,42 @@ section {
 .overlay.active {
   display: block;
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  color: #212529;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+.anbefalt-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s;
+}
+
+.anbefalt-card:hover {
+  transform: translateY(-4px);
+}
+
+.anbefalt-card img {
+  max-height: 90px;
+  object-fit: contain;
+}
+
 

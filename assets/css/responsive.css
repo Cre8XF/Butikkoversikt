@@ -225,3 +225,25 @@
     display: flex !important;
   }
 }
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .anbefalt-card h5 {
+    font-size: 1rem;
+  }
+
+  .anbefalt-card p {
+    font-size: 0.9rem;
+  }
+
+  .anbefalt-card {
+    padding: 1rem;
+  }
+}
