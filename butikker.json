@@ -5,7 +5,8 @@
     "description": "Stort utvalg av merker og mote.",
     "image": "assets/images/klær-og-mote/About you.png",
     "alt": "About You",
-    "url": "https://www.aboutyou.no"
+    "url": "https://www.aboutyou.no",
+    "forside": false
   },
   {
     "category": "Apotek",
@@ -14,7 +15,8 @@
     "image": "assets/images/apotek/Apotek1.png",
     "alt": "Apotek 1",
     "url": "https://www.apotek1.no",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Apotek",
@@ -22,7 +24,8 @@
     "description": "Spesialisert apotek med hjemmelevering og fokus på eldre og kronikere.",
     "image": "assets/images/apotek/Apotekhjem.png",
     "alt": "Apotekhjem",
-    "url": "https://www.apotekhjem.no"
+    "url": "https://www.apotekhjem.no",
+    "forside": false
   },
   {
     "category": "Apotek",
@@ -30,7 +33,8 @@
     "description": "Nytt nettapotek med stort fokus på pris og brukervennlighet.",
     "image": "assets/images/apotek/Apotera.png",
     "alt": "Apotera",
-    "url": "https://www.apotera.no"
+    "url": "https://www.apotera.no",
+    "forside": false
   },
   {
     "category": "Boker og underholdning",
@@ -38,7 +42,8 @@
     "description": "Bestselgere, barnebøker, lydbøker og e-bøker.",
     "image": "assets/images/bøker/Ark.png",
     "alt": "Ark.no",
-    "url": "https://www.ark.no"
+    "url": "https://www.ark.no",
+    "forside": false
   },
   {
     "category": "Barn og baby",
@@ -46,7 +51,8 @@
     "description": "Praktiske navnelapper for klær og utstyr.",
     "image": "assets/images/barn-og-baby/Askeladden.png",
     "alt": "Askeladden",
-    "url": "https://www.askeladdennavnelapper.no"
+    "url": "https://www.askeladdennavnelapper.no",
+    "forside": false
   },
   {
     "name": "Babyshop",
@@ -55,7 +61,8 @@
     "category": "Barn og baby",
     "url": "https://www.babyshop.no",
     "description": "",
-    "topp25": true
+    "topp25": true,
+    "forside": true
   },
   {
     "name": "Barnas Hus",
@@ -64,7 +71,8 @@
     "category": "Barn og baby",
     "url": "https://www.barnashus.no",
     "description": "",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Barn og baby",
@@ -72,7 +80,8 @@
     "description": "Barnevogner og alt til trilletur og reise.",
     "image": "assets/images/barn-og-baby/Barnevognhuset.png",
     "alt": "Barnevognhuset",
-    "url": "https://www.barnevognhuset.no"
+    "url": "https://www.barnevognhuset.no",
+    "forside": false
   },
   {
     "category": "Klær og mote",
@@ -80,7 +89,8 @@
     "description": "Mote for unge kvinner.",
     "image": "assets/images/klær-og-mote/Bik Bok.png",
     "alt": "Bik Bok",
-    "url": "https://www.bikbok.com"
+    "url": "https://www.bikbok.com",
+    "forside": false
   },
   {
     "category": "Sport og fritid",
@@ -88,7 +98,8 @@
     "description": "Arbeidsklær og fritidsklær for aktive mennesker.",
     "image": "assets/images/sport-og-fritid/Bjornklader.png",
     "alt": "Bjørnklær.no",
-    "url": "https://www.bjornklader.no"
+    "url": "https://www.bjornklader.no",
+    "forside": false
   },
   {
     "category": "Helse og egenpleie",
@@ -96,7 +107,8 @@
     "description": "Skjønnhetsprodukter og hudpleie på nett.",
     "image": "assets/images/helse/Blivakker.png",
     "alt": "Blivakker",
-    "url": "https://www.blivakker.no"
+    "url": "https://www.blivakker.no",
+    "forside": false
   },
   {
     "category": "Klær og mote",
@@ -104,7 +116,8 @@
     "description": "Klassisk og moderne herremote.",
     "image": "assets/images/klær-og-mote/Bogart.png",
     "alt": "Bogart",
-    "url": "https://www.bogartstore.no"
+    "url": "https://www.bogartstore.no",
+    "forside": false
   },
   {
     "name": "Boozt",
@@ -113,7 +126,8 @@
     "category": "Klær og mote",
     "url": "https://www.boozt.com",
     "description": "",
-    "topp25": true
+    "topp25": true,
+    "forside": true
   },
   {
     "category": "Klær og mote",
@@ -121,7 +135,8 @@
     "description": "Kjoler og festklær til dame.",
     "image": "assets/images/klær-og-mote/Bubbleroom.png",
     "alt": "Bubbleroom",
-    "url": "https://www.bubbleroom.com"
+    "url": "https://www.bubbleroom.com",
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -130,7 +145,8 @@
     "image": "assets/images/elektronikk/CDON.png",
     "alt": "CDON",
     "url": "https://www.cdon.no",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "name": "Clas Ohlson",
@@ -139,7 +155,8 @@
     "category": "Gadgets og gaver",
     "url": "https://www.clasohlson.com/no/",
     "description": "",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -147,7 +164,8 @@
     "description": "Praktiske løsninger for hjemmet – også hodetelefoner og lyd.",
     "image": "assets/images/elektronikk/ClasOhlson.png",
     "alt": "Clas Ohlson",
-    "url": "https://www.clasohlson.no"
+    "url": "https://www.clasohlson.no",
+    "forside": false
   },
   {
     "category": "Barn og baby",
@@ -156,7 +174,8 @@
     "image": "assets/images/barn-og-baby/Cubus.png",
     "alt": "Cubus",
     "url": "https://cubus.com/no/",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Klær og mote",
@@ -164,7 +183,8 @@
     "description": "Basisplagg og formelle klær.",
     "image": "assets/images/klær-og-mote/Dressmann.png",
     "alt": "Dressmann",
-    "url": "https://www.dressmann.com"
+    "url": "https://www.dressmann.com",
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -172,7 +192,8 @@
     "description": "Stort utvalg av datautstyr og tilbehør.",
     "image": "assets/images/elektronikk/Dustin.png",
     "alt": "Dustin",
-    "url": "https://www.dustinhome.no/"
+    "url": "https://www.dustinhome.no/",
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -180,7 +201,8 @@
     "description": "Stort utvalg av TV-er og lydprodukter.",
     "image": "assets/images/elektronikk/Elkjop.png",
     "alt": "Elkjøp",
-    "url": "https://www.elkjop.no"
+    "url": "https://www.elkjop.no",
+    "forside": false
   },
   {
     "name": "Elkjøp",
@@ -189,7 +211,8 @@
     "category": "Elektronikk",
     "url": "https://www.elkjop.no",
     "description": "",
-    "topp25": true
+    "topp25": true,
+    "forside": true
   },
   {
     "name": "Ellos",
@@ -198,7 +221,8 @@
     "category": "Barn og baby",
     "url": "https://www.ellos.no",
     "description": "",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Apotek",
@@ -207,7 +231,8 @@
     "image": "assets/images/apotek/Farmasiet.png",
     "alt": "Farmasiet",
     "url": "https://www.farmasiet.no",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Sport og fritid",
@@ -216,7 +241,8 @@
     "image": "assets/images/sport-og-fritid/Fjellsport.png",
     "alt": "Fjellsport.no",
     "url": "https://www.fjellsport.no",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Klær og mote",
@@ -224,7 +250,8 @@
     "description": "Smykker og hårtilbehør.",
     "image": "assets/images/klær-og-mote/glitter.png",
     "alt": "Glitter",
-    "url": "https://www.glitter.no"
+    "url": "https://www.glitter.no",
+    "forside": false
   },
   {
     "name": "Guttelus",
@@ -233,7 +260,8 @@
     "category": "Barn og baby",
     "url": "https://www.guttelus.no",
     "description": "",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "name": "H&M",
@@ -242,7 +270,8 @@
     "category": "Klær og mote",
     "url": "https://www.hm.com/no",
     "description": "",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -250,7 +279,8 @@
     "description": "Høyttalere, forsterkere og lydprodukter i toppklasse.",
     "image": "assets/images/elektronikk/HiFiKlubben.png",
     "alt": "HiFi Klubben",
-    "url": "https://www.hifiklubben.no"
+    "url": "https://www.hifiklubben.no",
+    "forside": false
   },
   {
     "name": "IKEA",
@@ -259,7 +289,8 @@
     "category": "Møbler og interiør",
     "url": "https://www.ikea.com/no",
     "description": "",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -267,7 +298,8 @@
     "description": "Apple-produkter og tilbehør.",
     "image": "assets/images/elektronikk/iTech.png",
     "alt": "iTech",
-    "url": "https://www.itech.no"
+    "url": "https://www.itech.no",
+    "forside": false
   },
   {
     "category": "Klær og mote",
@@ -275,7 +307,8 @@
     "description": "Moderne herremote for menn.",
     "image": "assets/images/klær-og-mote/JackJones.png",
     "alt": "Jack & Jones",
-    "url": "https://www.jackjones.com"
+    "url": "https://www.jackjones.com",
+    "forside": false
   },
   {
     "name": "Jollyroom",
@@ -284,7 +317,8 @@
     "category": "Barn og baby",
     "url": "https://www.jollyroom.no",
     "description": "",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "name": "Kid Interiør",
@@ -293,7 +327,8 @@
     "category": "Møbler og interiør",
     "url": "https://www.kid.no",
     "description": "",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -301,7 +336,8 @@
     "description": "Smarthus, kabler og småelektronikk.",
     "image": "assets/images/elektronikk/Kjell.png",
     "alt": "Kjell & Company",
-    "url": "https://www.kjell.com"
+    "url": "https://www.kjell.com",
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -310,7 +346,8 @@
     "image": "assets/images/elektronikk/Komplett.png",
     "alt": "Komplett",
     "url": "https://www.komplett.no",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Apotek",
@@ -318,7 +355,8 @@
     "description": "Digitalt apotek med lave priser og reseptbestilling rett på nett.",
     "image": "assets/images/apotek/Komplettapotek.png",
     "alt": "Komplett Apotek",
-    "url": "https://www.komplettapotek.no"
+    "url": "https://www.komplettapotek.no",
+    "forside": false
   },
   {
     "category": "Barn og baby",
@@ -326,7 +364,8 @@
     "description": "Leker som stimulerer barns utvikling og læring.",
     "image": "assets/images/barn-og-baby/Lekeakademiet.png",
     "alt": "Lekeakademiet",
-    "url": "https://www.lekeakademiet.no"
+    "url": "https://www.lekeakademiet.no",
+    "forside": false
   },
   {
     "name": "Lekia",
@@ -335,7 +374,8 @@
     "category": "Barn og baby",
     "url": "https://www.lekia.no",
     "description": "",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Helse og egenpleie",
@@ -343,7 +383,8 @@
     "description": "Helsekost og naturlig velvære.",
     "image": "assets/images/helse/Life.png",
     "alt": "Life",
-    "url": "https://www.life.no"
+    "url": "https://www.life.no",
+    "forside": false
   },
   {
     "category": "Klær og mote",
@@ -351,7 +392,8 @@
     "description": "Klær og undertøy til dame og barn.",
     "image": "assets/images/klær-og-mote/Lindex.png",
     "alt": "Lindex",
-    "url": "https://www.lindex.no"
+    "url": "https://www.lindex.no",
+    "forside": false
   },
   {
     "category": "Helse og egenpleie",
@@ -359,7 +401,8 @@
     "description": "Naturlige helseprodukter og sunn livsstil.",
     "image": "assets/images/helse/Livsstil.png",
     "alt": "Livsstil.no",
-    "url": "https://www.livsstil.no"
+    "url": "https://www.livsstil.no",
+    "forside": false
   },
   {
     "category": "Barn og baby",
@@ -367,7 +410,8 @@
     "description": "Bilstoler, vogner, bæreseler og babyutstyr.",
     "image": "assets/images/barn-og-baby/Mimmis.png",
     "alt": "Mimmis",
-    "url": "https://www.mimmis.no"
+    "url": "https://www.mimmis.no",
+    "forside": false
   },
   {
     "category": "Klær og mote",
@@ -375,7 +419,8 @@
     "description": "Vesker, lommebøker og reisetilbehør.",
     "image": "assets/images/klær-og-mote/Morris.png",
     "alt": "Morris",
-    "url": "https://morrisstockholm.com/sv"
+    "url": "https://morrisstockholm.com/sv",
+    "forside": false
   },
   {
     "category": "Barn og baby",
@@ -383,7 +428,8 @@
     "description": "Moderne barneklær og mammaklær.",
     "image": "assets/images/barn-og-baby/NameIt.png",
     "alt": "Name It",
-    "url": "https://www.nameit.com/no-no/home"
+    "url": "https://www.nameit.com/no-no/home",
+    "forside": false
   },
   {
     "category": "Klær og mote",
@@ -391,7 +437,8 @@
     "description": "Trendklær og kjoler for damer.",
     "image": "assets/images/klær-og-mote/Nelly.png",
     "alt": "Nelly",
-    "url": "https://www.nelly.com"
+    "url": "https://www.nelly.com",
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -399,7 +446,8 @@
     "description": "Direkte fra lageret – PC og skjermer.",
     "image": "assets/images/elektronikk/Netonnet.png",
     "alt": "NetOnNet",
-    "url": "https://www.netonnet.no"
+    "url": "https://www.netonnet.no",
+    "forside": false
   },
   {
     "category": "Sport og fritid",
@@ -407,7 +455,8 @@
     "description": "Friluftsliv og turprodukter av høy kvalitet.",
     "image": "assets/images/sport-og-fritid/Outnorth.png",
     "alt": "Outnorth.no",
-    "url": "https://www.outnorth.no"
+    "url": "https://www.outnorth.no",
+    "forside": false
   },
   {
     "category": "Boker og underholdning",
@@ -416,7 +465,8 @@
     "image": "assets/images/bøker/Platekompaniet.png",
     "alt": "Platekompaniet.no",
     "url": "https://www.platekompaniet.no",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -425,7 +475,8 @@
     "image": "assets/images/elektronikk/Power.png",
     "alt": "Power",
     "url": "https://www.power.no",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Barn og baby",
@@ -433,7 +484,8 @@
     "description": "Kvalitetsleker og babyleker for alle aldre.",
     "image": "assets/images/barn-og-baby/sprell.png",
     "alt": "Riktige Leker",
-    "url": "https://www.riktigeleker.no"
+    "url": "https://www.riktigeleker.no",
+    "forside": false
   },
   {
     "name": "Rudo",
@@ -442,7 +494,8 @@
     "category": "Barn og baby",
     "url": "https://www.rudo.no",
     "description": "",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -450,7 +503,8 @@
     "description": "Hi-fi og hjemmekino for entusiaster.",
     "image": "assets/images/elektronikk/Soundgarden.png",
     "alt": "Soundgarden",
-    "url": "https://www.soundgarden.no"
+    "url": "https://www.soundgarden.no",
+    "forside": false
   },
   {
     "category": "Klær og mote",
@@ -458,7 +512,8 @@
     "description": "Briller, solbriller og tilbehør.",
     "image": "assets/images/klær-og-mote/Specsavers.png",
     "alt": "Specsavers",
-    "url": "https://www.specsavers.no"
+    "url": "https://www.specsavers.no",
+    "forside": false
   },
   {
     "category": "Sport og fritid",
@@ -467,7 +522,8 @@
     "image": "assets/images/sport-og-fritid/Sport1.png",
     "alt": "Sport1.no",
     "url": "https://www.sport1.no",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Sport og fritid",
@@ -475,7 +531,8 @@
     "description": "Stort utvalg av sportsklær og utstyr.",
     "image": "assets/images/sport-og-fritid/sportamor.png",
     "alt": "Sportamore.no",
-    "url": "https://www.sportamore.no"
+    "url": "https://www.sportamore.no",
+    "forside": false
   },
   {
     "category": "Sport og fritid",
@@ -483,7 +540,8 @@
     "description": "Utstyr for sport og fritid til gode priser.",
     "image": "assets/images/sport-og-fritid/Sportshopen.png",
     "alt": "Sportshopen.no",
-    "url": "https://www.sportshopen.no"
+    "url": "https://www.sportshopen.no",
+    "forside": false
   },
   {
     "category": "Sport og fritid",
@@ -491,7 +549,8 @@
     "description": "Sportsmaster er en spesialforretning og leverer alt av treningsapparater direkte fra fabrikk uten fordyrende mellomledd. \n               Vi har et bredt og godt utvalg av treningsutstyr til hjemmetrening, bedrifter og treningssentre til svært gunstige priser.",
     "image": "assets/images/sport-og-fritid/sportsmaster.png",
     "alt": "Sport24.no",
-    "url": "https://www.sportsmaster.no"
+    "url": "https://www.sportsmaster.no",
+    "forside": false
   },
   {
     "category": "Helse og egenpleie",
@@ -499,7 +558,8 @@
     "description": "Kosttilskudd, vitaminer og naturlig egenpleie.",
     "image": "assets/images/helse/Sunkost.png",
     "alt": "Sunkost",
-    "url": "https://www.sunkost.no"
+    "url": "https://www.sunkost.no",
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -507,7 +567,8 @@
     "description": "Teknologinyheter og produktanbefalinger.",
     "image": "assets/images/elektronikk/Tek.png",
     "alt": "Tek.no",
-    "url": "https://www.tek.no"
+    "url": "https://www.tek.no",
+    "forside": false
   },
   {
     "category": "Elektronikk",
@@ -515,7 +576,8 @@
     "description": "Gadgets, gaming og duppeditter.",
     "image": "assets/images/elektronikk/Teknikmagasinet.png",
     "alt": "Teknikmagasinet",
-    "url": "https://www.teknikmagasinet.no"
+    "url": "https://www.teknikmagasinet.no",
+    "forside": false
   },
   {
     "name": "Vinmonopolet",
@@ -524,7 +586,8 @@
     "category": "Gadgets og gaver",
     "url": "https://www.vinmonopolet.no",
     "description": "",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Apotek",
@@ -532,7 +595,8 @@
     "description": "Trygt apotek på nett med legemidler, vitaminer, egenpleie og resepttjenester.",
     "image": "assets/images/apotek/Vitusapotek.png",
     "alt": "Vitusapotek",
-    "url": "https://www.vitusapotek.no"
+    "url": "https://www.vitusapotek.no",
+    "forside": false
   },
   {
     "category": "Klær og mote",
@@ -540,7 +604,8 @@
     "description": "Nordisk herremote med stil.",
     "image": "assets/images/klær-og-mote/Volt.png",
     "alt": "Volt",
-    "url": "https://www.voltfashion.com/no/"
+    "url": "https://www.voltfashion.com/no/",
+    "forside": false
   },
   {
     "category": "Sport og fritid",
@@ -549,7 +614,8 @@
     "image": "assets/images/sport-og-fritid/XXL.png",
     "alt": "XXL.no",
     "url": "https://www.xxl.no",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
     "category": "Klær og mote",
@@ -558,45 +624,47 @@
     "image": "assets/images/klær-og-mote/Zalando.png",
     "alt": "Zalando",
     "url": "https://www.zalando.no",
-    "topp25": true
+    "topp25": true,
+    "forside": false
   },
   {
-  "category": "Møbler og interiør",
-  "name": "JYSK",
-  "description": "Skandinavisk interiør og møbler til gode priser.",
-  "image": "assets/images/møbler-og-interiør/JYSK.png",
-  "alt": "JYSK",
-  "url": "https://jysk.no/",
-  "topp25": false
-},
-{
-  "category": "Møbler og interiør",
-  "name": "Skeidar",
-  "description": "Kvalitetsmøbler og interiør til hjemmet.",
-  "image": "assets/images/møbler-og-interiør/skeidar.png",
-  "alt": "Skeidar",
-  "url": "https://www.skeidar.no",
-  "topp25": false
-},
-{
-  "category": "Gadgets og gaver",
-  "name": "CoolStuff.no",
-  "description": "Unike og morsomme gaver og gadgets.",
-  "image": "assets/images/gadgets-og-gaver/CoolStuff.png",
-  "alt": "CoolStuff",
-  "url": "https://www.coolstuff.no",
-  "topp25": false
-},
-{
-  "category": "Gadgets og gaver",
-  "name": "Firebox",
-  "description": "Oppfinnsomme og morsomme gadgets og gaver.",
-  "image": "assets/images/gadgets-og-gaver/Firebox.png",
-  "alt": "Firebox",
-  "url": "https://www.firebox.com",
-  "topp25": false
-}
-
-
-  
+    "category": "Møbler og interiør",
+    "name": "JYSK",
+    "description": "Skandinavisk interiør og møbler til gode priser.",
+    "image": "assets/images/møbler-og-interiør/JYSK.png",
+    "alt": "JYSK",
+    "url": "https://jysk.no/",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "category": "Møbler og interiør",
+    "name": "Skeidar",
+    "description": "Kvalitetsmøbler og interiør til hjemmet.",
+    "image": "assets/images/møbler-og-interiør/skeidar.png",
+    "alt": "Skeidar",
+    "url": "https://www.skeidar.no",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "category": "Gadgets og gaver",
+    "name": "CoolStuff.no",
+    "description": "Unike og morsomme gaver og gadgets.",
+    "image": "assets/images/gadgets-og-gaver/CoolStuff.png",
+    "alt": "CoolStuff",
+    "url": "https://www.coolstuff.no",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "category": "Gadgets og gaver",
+    "name": "Firebox",
+    "description": "Oppfinnsomme og morsomme gadgets og gaver.",
+    "image": "assets/images/gadgets-og-gaver/Firebox.png",
+    "alt": "Firebox",
+    "url": "https://www.firebox.com",
+    "topp25": false,
+    "forside": false
+  }
 ]
