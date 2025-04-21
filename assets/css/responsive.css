@@ -247,3 +247,8 @@
     padding: 1rem;
   }
 }
+@media (max-width: 400px) {
+  .side-menu {
+    width: 220px;
+  }
+}

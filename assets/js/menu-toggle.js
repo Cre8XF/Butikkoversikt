@@ -14,3 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     overlay.classList.remove('active');
   });
 });
+document.getElementById('closeMenu').addEventListener('click', () => {
+  document.getElementById('sideMenu').classList.remove('active');
+  document.getElementById('overlay').classList.remove('active');
+});

@@ -922,7 +922,8 @@ section {
   max-height: 90vh; /* Stopper før hele høyden */
   background: linear-gradient(180deg, #ffffff 0%, #f1f3f5 100%);
   padding: 2rem 1.5rem;
-  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0 20px 20px 0;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
   transition: left 0.3s ease;
   z-index: 1000;
   border-top-right-radius: 12px;
