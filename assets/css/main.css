@@ -1043,4 +1043,13 @@ h1, h2, h3, h4, h5 {
   font-size: 0.875rem;
   padding: 0.4rem 1.2rem;
 }
+.anbefalt-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.anbefalt-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
 
