@@ -47,13 +47,30 @@
       </div>
     </div>
   </header>
- <!-- Kategorioversikt med underkategorier -->
+  <!-- Hero-seksjon -->
+  <section class="hero bg-primary text-white py-5">
+    <div class="container text-center">
+      <h1 class="display-4">Finn din nettbutikk</h1>
+      <p class="lead">Utforsk et bredt utvalg av nettbutikker innen ulike kategorier.</p>
+    </div>
+  </section>
+  <!-- Søkefelt -->
+  <section class="search-section py-4">
+    <div class="container text-center">
+      <form class="d-flex justify-content-center">
+        <input class="form-control me-2" type="search" placeholder="Søk etter butikker..." aria-label="Search" />
+        <button class="btn btn-outline-light" type="submit">Søk</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Kategorioversikt med underkategorier -->
   <section class="section bg-light py-5">
     <div class="container">
       <h1 class="mb-4 text-center">Utforsk etter kategori</h1>
       <p class="text-muted text-center mb-5">Klikk på en hovedkategori for å se butikker innen hvert tema</p>
       <div class="row g-4">
-        
+
         <!-- Klær og mote -->
         <div class="col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm">
@@ -62,12 +79,21 @@
                 <img src="assets/icons/Klær og sko.png" alt="Klær og mote" class="me-2" style="height: 40px;">
                 <h5 class="mb-0">Klær og mote</h5>
               </div>
-              <ul class="list-unstyled ms-4">
-                <li><a href="kategori-mal.html?kategori=Herreklær">Herreklær</a></li>
-                <li><a href="kategori-mal.html?kategori=Dameklær">Dameklær</a></li>
-                <li><a href="kategori-mal.html?kategori=Barneklær">Barneklær</a></li>
-                <li><a href="kategori-mal.html?kategori=Sko">Sko</a></li>
-              </ul>
+              <p class="text-muted small">Utforsk klær, sko og mote for hele familien – både kjente merker og budsjettvalg.</p>
+              <div class="row">
+                <div class="col-6">
+                  <ul class="list-unstyled ms-3">
+                    <li><a href="kategori-mal.html?kategori=Herreklær"><span class="subcat-icon">👔</span>Herreklær</a></li>
+                    <li><a href="kategori-mal.html?kategori=Dameklær"><span class="subcat-icon">👗</span>Dameklær</a></li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul class="list-unstyled ms-3">
+                    <li><a href="kategori-mal.html?kategori=Barneklær"><span class="subcat-icon">🧒</span>Barneklær</a></li>
+                    <li><a href="kategori-mal.html?kategori=Sko"><span class="subcat-icon">👟</span>Sko</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -80,70 +106,107 @@
                 <img src="assets/icons/elektronikk.png" alt="Elektronikk" class="me-2" style="height: 40px;">
                 <h5 class="mb-0">Elektronikk</h5>
               </div>
-              <ul class="list-unstyled ms-4">
-                <li><a href="kategori-mal.html?kategori=Mobil og nettbrett">Mobil og nettbrett</a></li>
-                <li><a href="kategori-mal.html?kategori=Data og PC">Data og PC</a></li>
-                <li><a href="kategori-mal.html?kategori=TV og lyd">TV og lyd</a></li>
-                <li><a href="kategori-mal.html?kategori=Smarthus">Smarthus</a></li>
-              </ul>
+              <p class="text-muted small">Elektronikk for hjem, jobb og underholdning – smart og oppdatert.</p>
+              <div class="row">
+                <div class="col-6">
+                  <ul class="list-unstyled ms-3">
+                    <li><a href="kategori-mal.html?kategori=Mobil og nettbrett"><span class="subcat-icon">📱</span>Mobil og nettbrett</a></li>
+                    <li><a href="kategori-mal.html?kategori=Data og PC"><span class="subcat-icon">💻</span>Data og PC</a></li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul class="list-unstyled ms-3">
+                    <li><a href="kategori-mal.html?kategori=TV og lyd"><span class="subcat-icon">📺</span>TV og lyd</a></li>
+                    <li><a href="kategori-mal.html?kategori=Smarthus"><span class="subcat-icon">🏠</span>Smarthus</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Barn og baby -->
-<div class="col-md-6 col-lg-4">
-  <div class="card h-100 shadow-sm">
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-3">
-        <img src="assets/icons/Barn og baby.png" alt="Barn og baby" class="me-2" style="height: 40px;">
-        <h5 class="mb-0">Barn og baby</h5>
-      </div>
-      <ul class="list-unstyled ms-4">
-        <li><a href="kategori-mal.html?kategori=Barneklær">Barneklær</a></li>
-        <li><a href="kategori-mal.html?kategori=Leker">Leker</a></li>
-        <li><a href="kategori-mal.html?kategori=Babyutstyr">Babyutstyr</a></li>
-        <li><a href="kategori-mal.html?kategori=Barnevogner og bilstoler">Barnevogner og bilstoler</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+         <!-- Barn og baby -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/icons/Barn og baby.png" alt="Barn og baby" class="me-2" style="height: 40px;">
+                <h5 class="mb-0">Barn og baby</h5>
+              </div>
+              <p class="text-muted small">Produkter og utstyr for baby, småbarn og foreldre – trygt og praktisk.</p>
+              <div class="row">
+                <div class="col-6">
+                  <ul class="list-unstyled ms-3">
+                    <li><a href="kategori-mal.html?kategori=Barnevogner"><span class="subcat-icon">🛒</span>Barnevogner</a></li>
+                    <li><a href="kategori-mal.html?kategori=Leketøy"><span class="subcat-icon">🧸</span>Leketøy</a></li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul class="list-unstyled ms-3">
+                    <li><a href="kategori-mal.html?kategori=Barnemøbler"><span class="subcat-icon">🛏️</span>Barnemøbler</a></li>
+                    <li><a href="kategori-mal.html?kategori=Klær til barn"><span class="subcat-icon">👶</span>Klær til barn</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- Apotek -->
-<div class="col-md-6 col-lg-4">
-  <div class="card h-100 shadow-sm">
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-3">
-        <img src="assets/icons/Apotek.png" alt="Apotek" class="me-2" style="height: 40px;">
-        <h5 class="mb-0">Apotek</h5>
-      </div>
-      <ul class="list-unstyled ms-4">
-        <li><a href="kategori-mal.html?kategori=Medisin og helse">Medisin og helse</a></li>
-        <li><a href="kategori-mal.html?kategori=Hud og hårpleie">Hud og hårpleie</a></li>
-        <li><a href="kategori-mal.html?kategori=Allergi og kosttilskudd">Allergi og kosttilskudd</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+          <!-- Apotek -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/icons/Apotek.png" alt="Apotek" class="me-2" style="height: 40px;">
+                <h5 class="mb-0">Apotek</h5>
+              </div>
+              <p class="text-muted small">Alt du trenger av apotekvarer og egenpleieprodukter – trygt og godkjent.</p>
+              <div class="row">
+                <div class="col-6">
+                  <ul class="list-unstyled ms-3">
+                    <li><a href="kategori-mal.html?kategori=Medisin og helse"><span class="subcat-icon">💊</span>Medisin og helse</a></li>
+                    <li><a href="kategori-mal.html?kategori=Hudpleie"><span class="subcat-icon">🧴</span>Hudpleie</a></li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul class="list-unstyled ms-3">
+                    <li><a href="kategori-mal.html?kategori=Vitaminer og kosttilskudd"><span class="subcat-icon">🍊</span>Vitaminer</a></li>
+                    <li><a href="kategori-mal.html?kategori=Hygieneprodukter"><span class="subcat-icon">🧻</span>Hygieneprodukter</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- Sport og fritid -->
-<div class="col-md-6 col-lg-4">
-  <div class="card h-100 shadow-sm">
-    <div class="card-body">
-      <div class="d-flex align-items-center mb-3">
-        <img src="assets/icons/Sport og fritid.png" alt="Sport og fritid" class="me-2" style="height: 40px;">
-        <h5 class="mb-0">Sport og fritid</h5>
-      </div>
-      <ul class="list-unstyled ms-4">
-        <li><a href="kategori-mal.html?kategori=Trening og klær">Trening og klær</a></li>
-        <li><a href="kategori-mal.html?kategori=Friluft og fiske">Friluft og fiske</a></li>
-        <li><a href="kategori-mal.html?kategori=Treningsutstyr">Treningsutstyr</a></li>
-        <li><a href="kategori-mal.html?kategori=Sykler og utstyr">Sykler og utstyr</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+        <!-- Sport og fritid -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img src="assets/icons/Sport og fritid.png" alt="Sport og fritid" class="me-2" style="height: 40px;">
+                <h5 class="mb-0">Sport og fritid</h5>
+              </div>
+              <p class="text-muted small">Trening, friluftsliv og hobbyer for hele familien – hold deg aktiv!</p>
+              <div class="row">
+                <div class="col-6">
+                  <ul class="list-unstyled ms-3">
+                    <li><a href="kategori-mal.html?kategori=Treningsklær og sko"><span class="subcat-icon">🏃</span>Treningsklær</a></li>
+                    <li><a href="kategori-mal.html?kategori=Treningsutstyr"><span class="subcat-icon">🏋️</span>Treningsutstyr</a></li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul class="list-unstyled ms-3">
+                    <li><a href="kategori-mal.html?kategori=Tur og friluft"><span class="subcat-icon">🥾</span>Tur og friluft</a></li>
+                    <li><a href="kategori-mal.html?kategori=Sykkel og ski"><span class="subcat-icon">🚲</span>Sykkel og ski</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- Møbler og interiør -->
+        <!-- Møbler og interiør -->
 <div class="col-md-6 col-lg-4">
   <div class="card h-100 shadow-sm">
     <div class="card-body">
@@ -151,12 +214,21 @@
         <img src="assets/icons/Møbler og interiør.png" alt="Møbler og interiør" class="me-2" style="height: 40px;">
         <h5 class="mb-0">Møbler og interiør</h5>
       </div>
-      <ul class="list-unstyled ms-4">
-        <li><a href="kategori-mal.html?kategori=Møbler">Møbler</a></li>
-        <li><a href="kategori-mal.html?kategori=Kjøkken og oppbevaring">Kjøkken og oppbevaring</a></li>
-        <li><a href="kategori-mal.html?kategori=Lys og dekor">Lys og dekor</a></li>
-        <li><a href="kategori-mal.html?kategori=Tekstiler">Tekstiler</a></li>
-      </ul>
+      <p class="text-muted small">Alt til hjem og innredning – fra moderne design til praktiske løsninger.</p>
+      <div class="row">
+        <div class="col-6">
+          <ul class="list-unstyled ms-3">
+            <li><a href="kategori-mal.html?kategori=Møbler"><span class="subcat-icon">🪑</span>Møbler</a></li>
+            <li><a href="kategori-mal.html?kategori=Interiør og dekor"><span class="subcat-icon">🖼️</span>Interiør</a></li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul class="list-unstyled ms-3">
+            <li><a href="kategori-mal.html?kategori=Kjøkken og bad"><span class="subcat-icon">🍽️</span>Kjøkken og bad</a></li>
+            <li><a href="kategori-mal.html?kategori=Soverom og tekstiler"><span class="subcat-icon">🛏️</span>Soverom</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -169,11 +241,21 @@
         <img src="assets/icons/Bøker og underholdning.png" alt="Bøker og underholdning" class="me-2" style="height: 40px;">
         <h5 class="mb-0">Bøker og underholdning</h5>
       </div>
-      <ul class="list-unstyled ms-4">
-        <li><a href="kategori-mal.html?kategori=Bøker og lydbøker">Bøker og lydbøker</a></li>
-        <li><a href="kategori-mal.html?kategori=Spill og film">Spill og film</a></li>
-        <li><a href="kategori-mal.html?kategori=Musikk">Musikk</a></li>
-      </ul>
+      <p class="text-muted small">Oppdag bøker, filmer og hobbyartikler som gir glede og inspirasjon.</p>
+      <div class="row">
+        <div class="col-6">
+          <ul class="list-unstyled ms-3">
+            <li><a href="kategori-mal.html?kategori=Bøker og lydbøker"><span class="subcat-icon">📚</span>Bøker</a></li>
+            <li><a href="kategori-mal.html?kategori=Film og serier"><span class="subcat-icon">🎬</span>Film og serier</a></li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul class="list-unstyled ms-3">
+            <li><a href="kategori-mal.html?kategori=Spill og gaming"><span class="subcat-icon">🎮</span>Gaming</a></li>
+            <li><a href="kategori-mal.html?kategori=Musikk og vinyl"><span class="subcat-icon">🎵</span>Musikk</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -186,20 +268,27 @@
         <img src="assets/icons/Gadgets og gaver.png" alt="Gadgets og gaver" class="me-2" style="height: 40px;">
         <h5 class="mb-0">Gadgets og gaver</h5>
       </div>
-      <ul class="list-unstyled ms-4">
-        <li><a href="kategori-mal.html?kategori=Morsomme gaver">Morsomme gaver</a></li>
-        <li><a href="kategori-mal.html?kategori=Gadgets til hjem og jobb">Gadgets til hjem og jobb</a></li>
-        <li><a href="kategori-mal.html?kategori=Personlige gaver">Personlige gaver</a></li>
-      </ul>
+      <p class="text-muted small">Morsomme og nyttige dingser – perfekt til gaver og overraskelser.</p>
+      <div class="row">
+        <div class="col-6">
+          <ul class="list-unstyled ms-3">
+            <li><a href="kategori-mal.html?kategori=Gadgets og tech"><span class="subcat-icon">🔌</span>Gadgets</a></li>
+            <li><a href="kategori-mal.html?kategori=Morsomme gaver"><span class="subcat-icon">🎁</span>Morsomme gaver</a></li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul class="list-unstyled ms-3">
+            <li><a href="kategori-mal.html?kategori=Personlige gaver"><span class="subcat-icon">💝</span>Personlige</a></li>
+            <li><a href="kategori-mal.html?kategori=Interiørgaver"><span class="subcat-icon">🏠</span>Interiørgaver</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-        
-
         <!-- Flere kategorier kan legges til på samme måte -->
-
-    </div>
+  </div>
   </div>
 </section>
 
