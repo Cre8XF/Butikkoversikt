@@ -475,12 +475,11 @@ a:hover {
   margin: 4px 0;
 }
 
-.footer {
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #777;
+footer {
+  background-color: var(--bg-dark);
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .logo-link {

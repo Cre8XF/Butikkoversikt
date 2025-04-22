@@ -118,11 +118,10 @@
 
     <h2 class="text-center mb-4">✨ Anbefalte butikker</h2>
     <div class="row g-4" id="forsideAnbefalte"></div>
-  </div>
-   <div class="text-center mt-4">
-      <button class="btn btn-outline-primary" id="toggleStoresBtn">Vis alle</button>
-    </div>
-  </div>
+<div class="text-center mt-4">
+  <button class="btn btn-outline-primary" id="toggleStoresBtn">Vis alle</button>
+</div>
+</div>
 </section>
 
 
@@ -185,7 +184,7 @@
     </section>
 
     <!-- SEO-tekst -->
-    <section class="seo-text container my-5">
+    <section class="seo-text bg-light-section container my-5">
       <h2>Butikkoversikt for norske nettbutikker</h2>
       <p>
         Butikkoversikt.no gjør det enkelt å finne anbefalte nettbutikker i Norge. Enten du ser etter klær og mote,
@@ -195,7 +194,7 @@
     </section>
   </main>
   <!-- Guider -->
-  <section class="section" id="guider">
+  <section class="section bg-section" id="guider">
     <div class="container">
       <h2>Tips og guider</h2>
       <p class="mb-4 text-muted">
@@ -283,28 +282,32 @@
           </ul>
         </div>
         <!-- Nyhetsbrev -->
-        <div class="col-md-4">
-          <h6>Nyhetsbrev</h6>
-          <p class="small text-muted">
-            Meld deg på for å få nyttige guider og tilbud på e-post.
-          </p>
-          <form action="#" method="post">
-            <div class="input-group">
-              <input class="form-control" placeholder="Din e-postadresse" required="" type="email" />
-              <button class="btn btn-primary" type="submit">Meld på</button>
-            </div>
-          </form>
-        </div>
+<div class="col-md-4 bg-muted p-4 rounded">
+  <h6 class="text-dark">📬 Nyhetsbrev</h6>
+  <p class="small text-muted">
+    Meld deg på for å få nyttige guider og tilbud på e-post.
+  </p>
+  <form action="#" method="post">
+    <div class="input-group">
+      <input class="form-control" placeholder="Din e-postadresse" required type="email" />
+      <button class="btn btn-primary" type="submit">Meld på</button>
+    </div>
+  </form>
+</div>
       </div>
       <hr class="my-4" />
-      <div class="text-center small text-muted">
-        © 2025 Butikkoversikt.no – Alle rettigheter reservert.
-      </div>
-    </div>
-  </footer>
-  <div class="container my-4">
-    <div class="ad-banner text-center" id="ad-slot"></div>
-  </div>
+<div class="text-center small text-light">
+  © 2025 Butikkoversikt.no – Alle rettigheter reservert.
+</div>
+</div> <!-- slutt på .container -->
+</footer>
+
+<!-- Reklameboks -->
+<div class="container my-4">
+  <div class="ad-banner text-center" id="ad-slot"></div>
+</div>
+
+
   <!-- JavaScript: Kun nødvendig -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
