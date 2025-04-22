@@ -315,7 +315,7 @@ header {
 }
 
 .hero {
-  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  background: linear-gradient(to right, #afd1d5, #ffffff);
   padding: 60px 20px;
   text-align: center;
 }
@@ -1204,7 +1204,7 @@ a:hover {
 
 /* Bakgrunn og generell stil */
 body {
-  background-color: #f4f7fa;
+  background-color: #3998a7;
   font-size: 1.1rem;
   line-height: 1.8;
   color: #222;
