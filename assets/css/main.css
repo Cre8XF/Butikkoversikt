@@ -1344,3 +1344,31 @@ a:hover {
     display: none;
   }
 }
+
+/* ========== GUIDE-KORT ========== */
+.guide-card {
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  height: 100%;
+  color: var(--text-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: left;
+}
+
+.guide-card:hover {
+  background-color: var(--card-hover);
+  transform: translateY(-5px);
+}
+
+.guide-card h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.guide-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
