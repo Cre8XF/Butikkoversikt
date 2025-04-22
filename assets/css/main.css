@@ -1,13 +1,14 @@
-  :root {
-  --bg-color: #f7f9fc;
-  --bg-dark: #2e3a59;
-  --text-color: #333;
-  --text-muted: #555;
-  --card-bg: #ffffff;
-  --card-hover: #f1f1f1;
-  --btn-primary: #0d6efd;
-  --btn-hover: #084298;
+:root {
+  --bg-color: #f4f6f9;       /* Lys og dempet bakgrunn, litt mykere enn hvit */
+  --bg-dark: #1e2a38;        /* Dyp blågrå til header og footer */
+  --text-color: #222;        /* Nesten svart, veldig god lesbarhet */
+  --text-muted: #666;        /* Brukes til sekundær tekst og hint */
+  --card-bg: #ffffff;        /* Kortbakgrunn holdes hvit for kontrast */
+  --card-hover: #eef1f5;     /* Subtil hover-effekt for kort */
+  --btn-primary: #0077cc;    /* Klar blå som skiller seg ut */
+  --btn-hover: #005fa3;      /* Mørkere variant for hover på knapper */
 }
+
 
 /* === Main CSS background color === */
 
