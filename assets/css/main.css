@@ -1,16 +1,31 @@
 /* ========== ROOT & GRUNNSTIL ========== */
 
 :root {
-  --bg-color: #6790cd;          /* Lys grå bakgrunn (ikke helt hvit) */
-  --bg-dark: #4a6185;           /* Mørkere blågrå for header/footer */
-  --text-color: #2b2b2b;        /* Nesten svart, men mildere */
-  --text-muted: #666;           /* For sekundær tekst */
-  --section-bg: #6790cd;        /* Kort og seksjonsbakgrunner */
-  --card-bg: #6790cd;           /* Kortbakgrunn (lik som seksjoner) */
-  --card-hover: #f1f4f8;        /* Lett hover-effekt */
-  --btn-primary: #0d6efd;       /* Bootstrap-blå for CTA */
-  --btn-hover: #084298;         /* Dypere variant ved hover */
-  --hero-bg: linear-gradient(to right, #dbe9f4, #f2f3f5); /* Myk gradient i hero */
+  /* --- Grunnleggende Bakgrunner --- */
+  --bg-color: #f8f9fa;       /* En veldig lys grå, nesten hvit, for generell bakgrunn */
+  --section-bg: #ffffff;    /* Hvit bakgrunn for seksjoner (gir lett kontrast mot --bg-color) */
+  --card-bg: #ffffff;       /* Hvit bakgrunn for kort */
+  --bg-dark: #e9ecef;       /* En litt mørkere, men fortsatt lys, grå for header/footer, eller en mørkere variant som #343a40 hvis du vil ha mer kontrast */
+
+  /* --- Tekstfarger --- */
+  --text-color: #212529;     /* Mørk gråsvart for god lesbarhet */
+  --text-muted: #6c757d;     /* Standard mellomgrå for sekundær tekst */
+
+  /* --- Kort og Interaksjon --- */
+  --card-border: #dee2e6;   /* En lys grå kantlinje for kort og seksjoner (bruk etter behov) */
+  /* Alternativt, eller i tillegg, en subtil skygge: */
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
+  --card-hover: #f1f3f5;     /* En veldig lett grå/blåaktig tone ved hover på kort/elementer */
+
+  /* --- Knapper og Aksenter (Call-to-Action) --- */
+  --btn-primary: #0d6efd;    /* Behold gjerne standard Bootstrap-blå for knapper, den er gjenkjennelig */
+  --btn-hover: #0b5ed7;      /* Standard mørkere blå ved hover */
+  --link-color: #0d6efd;     /* Bruk samme blå for lenker */
+
+  /* --- Hero Seksjon (Valgfritt) --- */
+  /* Kan være en ren farge, en gradient eller et bilde */
+  /* --hero-bg: linear-gradient(to right, #e0eafc, #f8f9fa); /* Forslag: myk gradient fra lys blå til hovedbakgrunn */
+  --hero-bg: var(--bg-dark); /* Eller bruk header/footer-fargen for enkelhet */
 }
 
 
