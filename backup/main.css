@@ -756,12 +756,49 @@ header {
   border-radius: 8px;
 }
 /* ==========LOGO===================== */
-.navbar-brand img {
-  height: 150px;
-  max-height: 200px;
-  padding: 5px 15px;
+.navbar-brand {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
+
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+@media (min-width: 768px) {
+  .navbar-brand img {
+    height: 80px;
+  }
+}
+/* ========== Header bakgrunn og logo forbedring ========== */
+.navbar {
+  background-color: #e6f3fb; /* Lys blå bakgrunn */
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand img {
+  height: 60px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #333;
+  margin-right: 1rem;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
 
 
 /* =============================== */
@@ -869,5 +906,186 @@ section {
 
 
 
+
+.menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 250px;
+  max-height: 90vh; /* Stopper før hele høyden */
+  background: linear-gradient(180deg, #ffffff 0%, #f1f3f5 100%);
+  padding: 2rem 1.5rem;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  overflow-y: auto;
+}
+
+.side-menu.active {
+  left: 0;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu ul li {
+  margin-bottom: 1rem;
+}
+
+.side-menu ul li a {
+  display: block;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.side-menu ul li a:hover {
+  background-color: #e2e6ea;
+  color: #000;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  display: none;
+  z-index: 900;
+}
+
+.overlay.active {
+  display: block;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  color: #212529;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+.anbefalt-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s;
+}
+
+.anbefalt-card:hover {
+  transform: translateY(-4px);
+}
+
+.anbefalt-card img {
+  max-height: 90px;
+  object-fit: contain;
+}
+/* 📢 anbefalte butikker */
+.featured-store-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.featured-store-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.featured-store-card h5 {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.featured-store-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.featured-store-card .btn {
+  font-size: 0.875rem;
+  padding: 0.4rem 1.2rem;
+}
+.anbefalt-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.anbefalt-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.extra-store {
+  display: none;
+}
+.show-all .extra-store {
+  display: block;
+}
+
+.card.recommended-store {
+  height: auto;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.card.recommended-store img {
+  max-height: 50px;
+  margin-bottom: 0.5rem;
+  object-fit: contain;
+}
+.recommended-store:hover {
+  cursor: pointer;
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+.card.recommended-store h6 {
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+#toggleStoresBtn {
+  font-size: 0.9rem;
+  padding: 0.4rem 1.4rem;
+  border-radius: 0.5rem;
+}
 
 

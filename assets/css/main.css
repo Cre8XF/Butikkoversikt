@@ -976,13 +976,7 @@ section {
   display: block;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.05rem;
-  color: #212529;
-  background-color: #f8f9fa;
-  line-height: 1.6;
-}
+
 
 h1, h2, h3, h4, h5 {
   font-weight: 600;
@@ -1088,4 +1082,27 @@ h1, h2, h3, h4, h5 {
   border-radius: 0.5rem;
 }
 
+/* === FORBEDRET LAYOUT FOR STØRRE SKJERM OG BEDRE LESBARHET === */
 
+body {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+.card h5 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.section h2 {
+  font-size: 2rem;
+}
