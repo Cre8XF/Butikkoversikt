@@ -61,6 +61,11 @@ header.bg-header {
 .bg-hero {
   background: var(--hero-bg);
 }
+.bg-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+
 
 
 
