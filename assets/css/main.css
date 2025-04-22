@@ -324,11 +324,13 @@ a:hover {
 }
 
 
-header {
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #ddd;
+.bg-header {
+  background-color: var(--bg-dark);
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1rem 0;
 }
+
 
 .hero {
   background: linear-gradient(to right, #afd1d5, #ffffff);
