@@ -384,6 +384,19 @@ a:hover {
   display: block;
   margin: 0 auto 10px;
 }
+.subcat-icon {
+  margin-right: 6px;
+}
+
+.list-unstyled a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.list-unstyled a:hover {
+  color: var(--btn-primary);
+}
 
 
 .bg-
