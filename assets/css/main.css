@@ -1441,3 +1441,50 @@ a:hover {
   font-size: 0.95rem;
   color: var(--text-muted);
 }
+
+/* === Forbedret desktop-navbar i XXL-stil === */
+.desktop-navbar {
+  background-color: #fff;
+  color: var(--text-color);
+  border-bottom: 1px solid #ddd;
+  padding: 1.2rem 0;
+  z-index: 1050;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.desktop-navbar .navbar-brand img {
+  height: 70px;
+}
+
+.desktop-navbar .navbar-brand span {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.desktop-navbar .nav-link {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-color);
+  padding: 0.8rem 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.desktop-navbar .nav-link:hover,
+.desktop-navbar .dropdown-item:hover {
+  color: var(--btn-primary);
+  background-color: transparent;
+}
+
+.desktop-navbar .dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.desktop-navbar .dropdown-item {
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: var(--text-color);
+}
+
