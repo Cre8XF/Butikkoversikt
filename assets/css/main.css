@@ -1061,7 +1061,7 @@ h1, h2, h3, h4, h5 {
 
 .card.recommended-store {
   height: auto;
-  min-height: 220px;
+  min-height: 240px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
