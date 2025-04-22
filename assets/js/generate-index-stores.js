@@ -23,15 +23,17 @@ document.addEventListener("DOMContentLoaded", () => {
         container.appendChild(col);
       });
 
-     // Toggle-knapp for å vise/fjerne ekstra kort
+    // Toggle-knapp for å vise/fjerne ekstra kort
 const toggleBtn = document.getElementById("toggleStoresBtn");
 const container = document.getElementById("forsideAnbefalte");
 
-if (toggleBtn && toggleContainer) {
+if (toggleBtn && container) {
   toggleBtn.addEventListener("click", function () {
-    toggleContainer.classList.toggle("show-all");
-    toggleBtn.textContent = toggleContainer.classList.contains("show-all") ? "Vis færre" : "Vis alle";
+    container.classList.toggle("show-all");
+    toggleBtn.textContent = container.classList.contains("show-all") ? "Vis færre" : "Vis alle";
   });
+}
+
 }
 
     })
