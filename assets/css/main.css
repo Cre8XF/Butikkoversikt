@@ -9,6 +9,7 @@
   --card-hover: #31383f;     /* Litt lysere hover-effekt */
   --btn-primary: #3498db;    /* Moderne blå for knapper */
   --btn-hover: #2980b9;      /* Dypere hover-effekt */
+  --hero-bg: linear-gradient(to right, #afd1d5, #ffffff); /* Bakgrunn for hero-seksjon */
 }
 
 
@@ -43,6 +44,10 @@ header.bg-header {
 .bg-muted {
   background-color: #e9eef5;
 }
+.bg-hero {
+  background: var(--hero-bg);
+}
+
 
 
 
@@ -377,10 +382,11 @@ a:hover {
 
 
 .hero {
-  background: linear-gradient(to right, #afd1d5, #ffffff);
+  background: var(--hero-bg);
   padding: 60px 20px;
   text-align: center;
 }
+
 
 .hero h1 {
   font-size: 2.5rem;
