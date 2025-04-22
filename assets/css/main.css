@@ -1073,5 +1073,19 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 0.5rem;
   object-fit: contain;
 }
+.recommended-store:hover {
+  cursor: pointer;
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+.card.recommended-store h6 {
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+#toggleStoresBtn {
+  font-size: 0.9rem;
+  padding: 0.4rem 1.4rem;
+  border-radius: 0.5rem;
+}
 
 
