@@ -1,8 +1,8 @@
 /* ========== ROOT & GRUNNSTIL ========== */
 
 :root {
-  --bg-color: #1b1f24;       /* Mørk bakgrunn for hele siden */
-  --bg-dark: #13161a;        /* Enda dypere for header/footer */
+  --bg-color: #7e9bbe;       /* Mørk bakgrunn for hele siden */
+  --bg-dark: #6882a5;        /* Enda dypere for header/footer */
   --text-color: #f5f5f5;     /* Lys kontrasttekst */
   --text-muted: #cccccc;     /* Lysere grå for sekundærtekst */
   --card-bg: #262d34;        /* Mørk kortbakgrunn */
@@ -10,6 +10,7 @@
   --btn-primary: #3498db;    /* Moderne blå for knapper */
   --btn-hover: #2980b9;      /* Dypere hover-effekt */
   --hero-bg: linear-gradient(to right, #afd1d5, #ffffff); /* Bakgrunn for hero-seksjon */
+  --section-bg: #b4c5dd; /* Lys bakgrunn for seksjoner */
 }
 
 
@@ -1270,7 +1271,7 @@ a:hover {
 
 
 .section {
-  background-color: #ffffff;
+  background-color: var(--section-bg); 
   border-radius: 12px;
   padding: 4rem 2rem;
   margin-bottom: 2rem;
