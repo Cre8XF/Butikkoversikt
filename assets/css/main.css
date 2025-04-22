@@ -1,31 +1,28 @@
 /* ========== ROOT & GRUNNSTIL ========== */
 
 :root {
-  /* --- Grunnleggende Bakgrunner --- */
-  --bg-color: #f8f9fa;       /* En veldig lys grå, nesten hvit, for generell bakgrunn */
-  --section-bg: #ffffff;    /* Hvit bakgrunn for seksjoner (gir lett kontrast mot --bg-color) */
-  --card-bg: #ffffff;       /* Hvit bakgrunn for kort */
-  --bg-dark: #e9ecef;       /* En litt mørkere, men fortsatt lys, grå for header/footer, eller en mørkere variant som #343a40 hvis du vil ha mer kontrast */
+  /* --- Grunnleggende Bakgrunner (justert mørkere) --- */
+  --bg-color: #e9ecef;       /* Litt mørkere grå base (denne var --bg-dark i forrige) */
+  --section-bg: #f8f9fa;    /* Veldig lys grå for seksjoner (denne var --bg-color i forrige) */
+  --card-bg: #f8f9fa;       /* Samme for kort, fortsatt lysere enn --bg-color */
+  --bg-dark: #ced4da;       /* En tydeligere mørk grå for header/footer. Alternativt: #adb5bd for enda mer dybde */
 
-  /* --- Tekstfarger --- */
-  --text-color: #212529;     /* Mørk gråsvart for god lesbarhet */
-  --text-muted: #6c757d;     /* Standard mellomgrå for sekundær tekst */
+  /* --- Tekstfarger (forblir de samme for kontrast) --- */
+  --text-color: #212529;     /* Mørk gråsvart */
+  --text-muted: #6c757d;     /* Mellomgrå */
 
-  /* --- Kort og Interaksjon --- */
-  --card-border: #dee2e6;   /* En lys grå kantlinje for kort og seksjoner (bruk etter behov) */
-  /* Alternativt, eller i tillegg, en subtil skygge: */
-  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
-  --card-hover: #f1f3f5;     /* En veldig lett grå/blåaktig tone ved hover på kort/elementer */
+  /* --- Kort og Interaksjon (justert til nye bakgrunner) --- */
+  --card-border: #ced4da;   /* Litt mørkere kantlinje som matcher --bg-dark eller er tydelig mot --bg-color */
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.07); /* Litt mørkere skygge kan vurderes */
+  --card-hover: #dee2e6;     /* Hover-effekt som er litt mørkere enn kortbakgrunnen */
 
-  /* --- Knapper og Aksenter (Call-to-Action) --- */
-  --btn-primary: #0d6efd;    /* Behold gjerne standard Bootstrap-blå for knapper, den er gjenkjennelig */
-  --btn-hover: #0b5ed7;      /* Standard mørkere blå ved hover */
-  --link-color: #0d6efd;     /* Bruk samme blå for lenker */
+  /* --- Knapper og Aksenter (forblir de samme) --- */
+  --btn-primary: #0d6efd;    /* Behold blåfargen for gjenkjennelighet */
+  --btn-hover: #0b5ed7;      /* Mørkere blå ved hover */
+  --link-color: #0d6efd;     /* Blå for lenker */
 
   /* --- Hero Seksjon (Valgfritt) --- */
-  /* Kan være en ren farge, en gradient eller et bilde */
-  /* --hero-bg: linear-gradient(to right, #e0eafc, #f8f9fa); /* Forslag: myk gradient fra lys blå til hovedbakgrunn */
-  --hero-bg: var(--bg-dark); /* Eller bruk header/footer-fargen for enkelhet */
+  --hero-bg: var(--bg-dark); /* Bruk den oppdaterte mørkere grå, eller en annen passende farge/gradient */
 }
 
 
