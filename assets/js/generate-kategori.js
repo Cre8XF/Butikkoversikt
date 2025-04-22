@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const kategori = urlParams.get("kategori");
   const tittelEl = document.getElementById("kategori-tittel");
-  const container = document.getElementById("butikk-container");
+  const container = document.getElementById("kategori-container");
+
 
   if (!kategori) {
     tittelEl.innerText = "Ingen kategori valgt.";
