@@ -728,6 +728,34 @@ footer {
   padding: 0.75rem 1.5rem;
   font-size: 1.1rem;
 }
+.desktop-navbar {
+  background-color: var(--bg-dark);
+  color: #fff;
+  z-index: 1050;
+}
+
+.desktop-navbar .nav-link {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.desktop-navbar .nav-link:hover,
+.desktop-navbar .dropdown-item:hover {
+  color: #0d6efd;
+  background-color: transparent;
+}
+
+.desktop-navbar .dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.desktop-navbar .dropdown-item {
+  color: #333;
+}
+
 
 /* Justerer menyens visning på mobil */
 .navbar-collapse {

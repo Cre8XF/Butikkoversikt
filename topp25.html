@@ -24,6 +24,50 @@
 </head>
 
 <body>
+
+  <body>
+
+  <!-- ✅ Ny desktopmeny -->
+  <!-- Desktop-meny (vises kun på skjermbredde > 992px) -->
+  <header class="desktop-navbar d-none d-lg-block sticky-top shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center py-2">
+      <!-- Logo -->
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="assets/images/logo.png" alt="Butikkoversikt.no" height="50" class="me-2">
+        <span class="h5 mb-0">Butikkoversikt.no</span>
+      </a>
+
+      <!-- Navigasjon -->
+      <nav class="main-nav">
+        <ul class="nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="kategoriDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kategorier
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="kategoriDropdown">
+              <li><a class="dropdown-item" href="kategori-mal.html?kategori=Kl%C3%A6r">Klær og mote</a></li>
+              <li><a class="dropdown-item" href="kategori-mal.html?kategori=Helse">Helse</a></li>
+              <li><a class="dropdown-item" href="kategori-mal.html?kategori=Barn">Barn og baby</a></li>
+              <li><a class="dropdown-item" href="kategori-mal.html?kategori=Data">Data</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="topp25.html">Topp 25</a></li>
+          <li class="nav-item"><a class="nav-link" href="guider/main-guider.html">Guider</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Om oss</a></li>
+        </ul>
+      </nav>
+
+      <!-- Søkefelt -->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Søk..." aria-label="Søk">
+        <button class="btn btn-outline-primary" type="submit">Søk</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- Din nåværende mobil-header under her -->
+  <header class="header bg-header shadow-sm py-3">
+
   <!-- Header -->
   <header class="header bg-header shadow-sm py-3">
     <div class="container d-flex justify-content-between align-items-center">
