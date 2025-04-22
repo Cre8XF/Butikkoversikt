@@ -755,6 +755,11 @@ footer {
 .desktop-navbar .dropdown-item {
   color: #333;
 }
+@media (min-width: 992px) {
+  .header.bg-header {
+    display: none !important;
+  }
+}
 
 
 /* Justerer menyens visning på mobil */
