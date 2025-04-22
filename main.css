@@ -1,51 +1,13 @@
-/* ========== ROOT & GRUNNSTIL ========== */
-
 :root {
-  --bg-color: #f5f7fa;
-  --bg-dark: #1e2a38;
-  --text-color: #222;
-  --text-muted: #666;
-  --card-bg: #fff;
-  --card-hover: #f0f2f5;
-  --btn-primary: #0d6efd;
-  --btn-hover: #084298;
+  --bg-color: #f4f6f9;       /* Lys og dempet bakgrunn, litt mykere enn hvit */
+  --bg-dark: #1e2a38;        /* Dyp blågrå til header og footer */
+  --text-color: #222;        /* Nesten svart, veldig god lesbarhet */
+  --text-muted: #666;        /* Brukes til sekundær tekst og hint */
+  --card-bg: #ffffff;        /* Kortbakgrunn holdes hvit for kontrast */
+  --card-hover: #eef1f5;     /* Subtil hover-effekt for kort */
+  --btn-primary: #0077cc;    /* Klar blå som skiller seg ut */
+  --btn-hover: #005fa3;      /* Mørkere variant for hover på knapper */
 }
-
-
-body {
-  background-color: var(--bg-color);
-  font-family: 'Inter', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: var(--text-color);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-header.bg-header {
-  background-color: var(--bg-dark);
-  color: white;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1rem 0;
-}
-
-.bg-section {
-  background-color: var(--bg-color);
-}
-
-.bg-light-section {
-  background-color: #f4f6f9;
-}
-
-.bg-muted {
-  background-color: #e9eef5;
-}
-
-
-
 
 
 /* === Main CSS background color === */
@@ -362,7 +324,12 @@ a:hover {
 }
 
 
-.bg-
+.bg-header {
+  background-color: var(--bg-dark);
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
+}
 .bg-section {
   background-color: var(--bg-color);
 }
@@ -1125,7 +1092,10 @@ section {
 
 
 /* ========== TYPOGRAFI & BASISSTIL ========== */
-
+body {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
 
 h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
@@ -1262,7 +1232,12 @@ a:hover {
    ========================================== */
 
 /* Bakgrunn og generell stil */
-
+body {
+  background-color: #3998a7;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #222;
+}
 
 .section {
   background-color: #ffffff;
