@@ -38,31 +38,45 @@
 </head>
 
 <body>
- <header class="sticky-top bg-white shadow-sm py-2 border-bottom">
-  <div class="container d-flex justify-content-between align-items-center">
-    <a href="/index.html" class="navbar-brand d-flex align-items-center">
-      <img src="/assets/images/logo.png" alt="Butikkoversikt.no - Finn din nettbutikk" class="logo-img" height="40" />
-    </a>
-    <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile"
-      aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <nav class="d-none d-md-flex gap-4">
-      <a href="/index.html" class="nav-link">Hjem</a>
-      <a href="/kategori.html" class="nav-link">Kategorier</a>
-      <a href="/topp25.html" class="nav-link">Topp 25</a>
-      <a href="/guider/main-guider.html" class="nav-link">Guider</a>
-    </nav>
-  </div>
+   <!-- Desktop-meny (vises kun på skjermbredde > 992px) -->
+<header class="desktop-navbar d-none d-lg-block sticky-top shadow-sm">
+  <div class="container d-flex justify-content-between align-items-center py-2">
 
-  <!-- Mobilmeny -->
-  <div class="collapse" id="navbarMobile">
-    <div class="bg-white p-3 text-center border-top">
-      <a href="/index.html" class="d-block mb-2">Hjem</a>
-      <a href="/kategori.html" class="d-block mb-2">Kategorier</a>
-      <a href="/topp25.html" class="d-block mb-2">Topp 25</a>
-      <a href="/guider/main-guider.html" class="d-block">Guider</a>
-    </div>
+    <!-- Logo -->
+    <a href="index.html" class="navbar-brand d-flex align-items-center">
+      <img src="assets/images/logo.png" alt="Butikkoversikt.no" height="50" class="me-2">
+      <span class="h5 mb-0">Butikkoversikt.no</span>
+    </a>
+
+    <!-- Navigasjon -->
+    <nav class="main-nav">
+      <ul class="nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="kategoriDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Kategorier
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="kategoriDropdown">
+            <li><a class="dropdown-item" href="kategori-mal.html?kategori=Kl%C3%A6r%20og%20mote">Klær og mote</a></li>
+            <li><a class="dropdown-item" href="kategori-mal.html?kategori=Helse%20og%20egenpleie">Helse og egenpleie</a></li>
+            <li><a class="dropdown-item" href="kategori-mal.html?kategori=Barn%20og%20baby">Barn og baby</a></li>
+            <li><a class="dropdown-item" href="kategori-mal.html?kategori=Elektronikk">Elektronikk</a></li>
+            <li><a class="dropdown-item" href="kategori-mal.html?kategori=Møbler%20og%20interiør">Møbler og interiør</a></li>
+            <li><a class="dropdown-item" href="kategori-mal.html?kategori=Bøker%20og%20underholdning">Bøker og underholdning</a></li>
+            <li><a class="dropdown-item" href="kategori-mal.html?kategori=Apotek">Apotek</a></li>
+            <li><a class="dropdown-item" href="kategori-mal.html?kategori=Sport%20og%20fritid">Sport og fritid</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="topp25.html">Topp 25</a></li>
+        <li class="nav-item"><a class="nav-link" href="guider/main-guider.html">Guider</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Om oss</a></li>
+      </ul>
+    </nav>
+
+    <!-- Søkefelt -->
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Søk..." aria-label="Søk">
+      <button class="btn btn-outline-primary" type="submit">Søk</button>
+    </form>
   </div>
 </header>
 
