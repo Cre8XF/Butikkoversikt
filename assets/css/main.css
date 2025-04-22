@@ -757,9 +757,12 @@ footer {
 }
 @media (min-width: 992px) {
   .header.bg-header {
-    display: none !important;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
   }
 }
+
 
 
 /* Justerer menyens visning på mobil */
