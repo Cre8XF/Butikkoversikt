@@ -1,24 +1,16 @@
-  :root {
-  --bg-color: #f7f9fc;
-  --bg-dark: #2e3a59;
-  --text-color: #333;
+root {
+  --bg-primary: #f2f4f8;
+  --bg-secondary: #e6ecf1;
+  --bg-light: #ffffff;
+  --bg-highlight: #d6e0ea;
+  --accent-color: #0077cc;
+  --accent-dark: #005fa3;
+  --text-color: #222;
   --text-muted: #555;
-  --card-bg: #ffffff;
-  --card-hover: #f1f1f1;
-  --btn-primary: #0d6efd;
-  --btn-hover: #084298;
+  --text-light: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.06);
 }
 
-/* === Main CSS background color === */
-
-
-
-/* === Combined Main CSS === */
-font & reset css
---------------------------------------------- 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
-/* --- Start: Custom Styles --- */
 img {
   width: 200px;
   /* Sett ønsket bredde */
@@ -26,38 +18,10 @@ img {
   /* Beholder bildeforholdet */
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .col-lg-6 {
   width: 48%;
   margin-bottom: 20px;
   box-sizing: border-box;
-}
-
-.item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.thumb img {
-  width: 100%;
-  height: auto;
 }
 
 .down-content {
@@ -72,16 +36,6 @@ img {
   color: inherit;
 }
 
-/* Responsive Design */
-
-/* Enhanced Hover Effects */
-.item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  background-color: #f0f0f0;
-}
-
-/* Consistent Image Sizes */
 .thumb img {
   width: 100%;
   height: 200px;
@@ -90,13 +44,6 @@ img {
   /* Ensure the image covers the area */
 }
 
-/* Accessibility */
-.item:focus {
-  outline: 2px solid #007bff;
-  outline-offset: 4px;
-}
-
-/* Add your custom CSS here */
 .elkjop-iframe {
   width: 100%;
   height: 600px;
@@ -169,11 +116,6 @@ img {
   /* Juster marginen etter behov */
 }
 
-.col-lg-4:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -204,70 +146,14 @@ img {
   color: #666;
 }
 
-/* === Manuelle forbedringer === */
-
-
-/* Lenker */
-a {
-  text-decoration: none;
-  color: #0077cc;
-}
-
-a:hover {
-  color: #005fa3;
-  text-decoration: underline;
-}
-
-/* Knapper */
-.btn {
-  background-color: #0077cc;
-  color: #fff;
-  border: none;
-  font-size: 1rem;
-  padding: 0.6rem 1.5rem;
-  border-radius: 0.5rem;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  background-color: #005fa3;
-}
-
-/* === Forbedret tekstkontrast og synlighet === */
-
-/* Produktbeskrivelser */
-.down-content span,
 .down-content p {
   color: #444 !important;
 }
 
-/* Info under seksjonstitler */
-.section h2 + p {
-  color: #666;
-  font-weight: 400;
-}
-
-/* Tydeligere bannertekst (Butikkoversikt.no) */
-.main-banner h1,
 .main-banner h2 {
   color: #222 !important;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-
-/* Seksjonstitler */
-.section h2 {
-  color: #222 !important;
-  font-weight: 600;
-}
-
-/* Undertekst under hver seksjonstittel */
-.section h2 + p {
-  color: #666 !important;
-  font-weight: 400;
-}
-
-/* === Produktkort design === */
 
 .item {
   border: 1px solid #ddd;
@@ -288,41 +174,6 @@ a:hover {
   margin-top: 10px;
 }
 
-.card {
-  border: 1px solid #ddd;
-  padding: 20px;
-  text-align: center;
-  transition: box-shadow 0.3s, transform 0.2s, border-color 0.2s;
-  min-width: 200px;
-  max-width: 100%;
-}
-
-.card:hover {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  transform: translateY(-4px);
-  border-color: #007bff;
-  cursor: pointer;
-}
-
-.card p {
-  color: #555;
-  font-size: 0.95rem;
-  white-space: normal;
-  /* Viktig: tillat linjebryting */
-  word-break: normal;
-  max-width: 100%;
-  margin: 0 auto;
-  color: #444;
-}
-
-.card img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px;
-}
-
-
 header {
   background-color: #f8f8f8;
   border-bottom: 1px solid #ddd;
@@ -332,26 +183,6 @@ header {
 .hero {
   background: linear-gradient(to right, #afd1d5, #ffffff);
   padding: 60px 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  color: #666;
-}
-
-.section {
-  padding: 40px 20px;
-}
-
-.section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -368,18 +199,6 @@ header {
   transition: box-shadow 0.3s, transform 0.2s;
 }
 
-.card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.card p {
-  white-space: normal;
-  word-break: normal;
-  max-width: 100%;
-  margin: 0 auto;
-  color: #444;
-}
-
 .card img {
   max-width: 100%;
   max-height: 80px;
@@ -392,8 +211,7 @@ header {
   color: inherit;
 }
 
-/* Sørg for at kolonner strekker seg jevnt i høyden */
-.row.g-4 {
+.g-4 {
   display: flex;
   flex-wrap: wrap;
 }
@@ -402,7 +220,7 @@ header {
   display: flex;
 }
 
-.card.text-center {
+.text-center {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -416,16 +234,6 @@ header {
   font-size: 1rem;
   color: #ffc107;
   /* gul for stjerner */
-}
-
-.category-tag {
-  display: inline-block;
-  background-color: #eee;
-  color: #333;
-  font-size: 12px;
-  padding: 2px 8px;
-  border-radius: 20px;
-  margin: 4px 0;
 }
 
 .footer {
@@ -452,21 +260,6 @@ header {
   height: 100%;
 }
 
-.category-card:hover {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  transform: translateY(-3px);
-  cursor: pointer;
-  border-color: #007bff;
-}
-
-.category-icon {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  margin: auto;
-  display: block;
-}
-
 .category-icon-link {
   text-decoration: none;
   color: inherit;
@@ -476,11 +269,6 @@ header {
   display: block;
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.category-icon-link:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 .category-icon {
@@ -495,10 +283,10 @@ header {
   font-weight: 500;
 }
 
-/* === FILTERKNAPPER === */
 .filter-buttons {
   margin-bottom: 30px;
 }
+
 .filter-buttons .btn {
   border-radius: 30px;
   padding: 8px 22px;
@@ -507,13 +295,6 @@ header {
   transition: all 0.2s ease;
 }
 
-.filter-buttons .btn.active {
-  background-color: #0056b3;
-  color: #fff;
-  border: none;
-}
-
-/* === SEKSJONSOVERSKRIFTER === */
 .filter-section h2 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -524,7 +305,6 @@ header {
   padding-bottom: 10px;
 }
 
-/* === BUTIKKORT LAYOUT === */
 .filter-section .category-card {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -536,11 +316,6 @@ header {
   align-items: center;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.filter-section .category-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
 
 .filter-section .category-card img {
@@ -561,46 +336,15 @@ header {
   margin-bottom: 0;
 }
 
-
-/* Sticky navbar + basic styling */
-.navbar {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  padding: 0.8rem 1rem;
-  background-color: #fff;
-  border-bottom: 1px solid #eaeaea;
-  z-index: 1000;
-}
-
-.navbar-nav .nav-link {
-  padding: 0.5rem 1rem;
-  color: #333;
-  transition: color 0.2s ease-in-out;
-}
-
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:focus {
-  color: #007bff;
-}
-
 .navbar-toggler {
   border: none;
 }
 
-.navbar-toggler:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.fas.fa-search {
+.fa-search {
   font-size: 1.1rem;
   margin-left: 0.5rem;
   color: #333;
   transition: color 0.2s;
-}
-
-.fas.fa-search:hover {
-  color: #007bff;
 }
 
 .navbar .nav-link i {
@@ -609,17 +353,12 @@ header {
   font-size: 1.1rem;
 }
 
-.navbar .nav-link i:hover {
-  color: #007bff;
-  /* Blåfarge ved hover */
-}
-
-.navbar .nav-link i:focus {
+focus {
   outline: none;
   box-shadow: none;
 }
 
-.navbar .nav-link i:active {
+active {
   color: #0056b3;
   /* Mørkere blåfarge ved klikk */
 }
@@ -631,39 +370,19 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
-.search-bar.show {
+.show {
   display: block;
 }
 
-.search-bar input[type="text"] {
-  flex: 1;
-   padding: 0.75rem;
-  font-size: 1.1rem;
-}
 .search-bar .btn {
   padding: 0.75rem 1.5rem;
   font-size: 1.1rem;
 }
 
-/* Justerer menyens visning på mobil */
-.navbar-collapse {
-  background-color: #fff;
-  padding: 1rem;
-  z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-
-  .navbar-nav .nav-item {
+.navbar-nav .nav-item {
     margin-bottom: 0.5rem;
   }
 
-  .navbar-nav .nav-link {
-    padding: 0.5rem 1rem;
-  }
-
-
-/* Fix for navbar collapse position on mobile */
 .navbar-collapse {
   position: static !important;
   top: auto !important;
@@ -672,14 +391,10 @@ header {
   z-index: 999;
 }
 
-
-/* === Anbefalte nettbutikker / rating og kommentarer === */
-
 .comment-box {
   margin-top: 1rem;
 }
 
-.comment-box .btn,
 .comment-input .btn {
   width: 100%;
 }
@@ -728,10 +443,6 @@ header {
   cursor: pointer;
 }
 
-.comment-input button:hover {
-  background-color: #0056b3;
-}
-
 .btn-rating {
   position: absolute;
   top: -10px;
@@ -743,7 +454,7 @@ header {
   border: none;
   border-radius: 8px;
 }
-/* ==========LOGO===================== */
+
 .navbar-brand {
   background-color: #fff;
   padding: 10px 20px;
@@ -752,18 +463,6 @@ header {
   transition: all 0.3s ease;
 }
 
-
-.navbar-brand img:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-}
-
-@media (min-width: 768px) {
-  .navbar-brand img {
-    height: 80px;
-  }
-}
-/* ========== Header bakgrunn og logo forbedring ========== */
 .navbar {
   background-color: #e6f3fb; /* Lys blå bakgrunn */
   border-bottom: 1px solid #ccc;
@@ -788,16 +487,6 @@ header {
   padding: 0.75rem 1.25rem;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #007bff;
-}
-
-
-
-/* =============================== */
-/* 📢 Annonseplasser / Ads         */
-/* =============================== */
-.ad-banner-top,
 .ad-banner-mid {
   background-color: #f9f9f9;
   padding: 10px 0;
@@ -809,6 +498,7 @@ header {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
+
 .ad-banner {
   background-color: #fdfdfd;
   border: 1px solid #eee;
@@ -817,16 +507,6 @@ header {
   text-align: center;
   margin-bottom: 30px;
 }
-/* Sticky annonse på høyre side (desktop) */
-.sticky-ad {
- position: fixed;
-  right: 30px;         /* mer luft fra kanten */
-  top: 300px;          /* senket fra toppen */
-  width: 160px;
-  z-index: 9999;
-  background-color: transparent;
-  transition: top 0.3s ease, opacity 0.3s ease;
-}
 
 .sticky-ad img {
   width: 100%;
@@ -834,6 +514,7 @@ header {
   border: 1px solid #ddd;
   border-radius: 8px;
 }
+
 #ad-slot img {
   max-width: 100%;
   height: auto;
@@ -841,6 +522,7 @@ header {
   border: 1px solid #ddd;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
+
 #adContainer {
   display: flex;
   flex-direction: column;
@@ -861,11 +543,6 @@ header {
   transition: transform 0.2s;
 }
 
-#adContainer img:hover {
-  transform: scale(1.02);
-}
-
-/* 📢 Filter og søkefunksjoner  */
 .filter-badge {
   cursor: pointer;
   margin: 0 5px 10px;
@@ -873,32 +550,14 @@ header {
   font-size: 0.9rem;
 }
 
-.filter-badge.active {
-  box-shadow: 0 0 0 2px #007bff inset;
-}
-
-/* 📢 guides */
 .guide-img {
-  max-height: 120px;
-  width: auto;
-  margin-bottom: 15px;
-  object-fit: contain;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.guide-card img.guide-img {
   border-radius: 6px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-
 section {
   scroll-margin-top: 300px;
 }
-
-
-
 
 .menu-toggle {
   font-size: 1.5rem;
@@ -924,10 +583,6 @@ section {
   overflow-y: auto;
 }
 
-.side-menu.active {
-  left: 0;
-}
-
 .side-menu ul {
   list-style: none;
   padding: 0;
@@ -948,12 +603,6 @@ section {
   transition: background-color 0.2s;
 }
 
-.side-menu ul li a:hover {
-  background-color: #e2e6ea;
-  color: #000;
-}
-
-
 .overlay {
   position: fixed;
   top: 0;
@@ -965,10 +614,9 @@ section {
   z-index: 900;
 }
 
-.overlay.active {
+.active {
   display: block;
 }
-/* 📢 Hovedbanner */
 
 .hero h1 {
   font-size: 3rem;
@@ -978,24 +626,12 @@ section {
   font-size: 1.25rem;
 }
 
-.anbefalt-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  border: 1px solid #e1e1e1;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-  transition: transform 0.2s;
-}
-
-.anbefalt-card:hover {
-  transform: translateY(-4px);
-}
-
 .anbefalt-card img {
   max-height: 80px;
   object-fit: contain;
   margin-bottom: 1rem;
 }
-/* 📢 anbefalte butikker */
+
 .featured-store-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: none;
@@ -1004,11 +640,6 @@ section {
   background: #fff;
   padding: 1.5rem;
   height: 100%;
-}
-
-.featured-store-card:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .featured-store-card h5 {
@@ -1026,42 +657,6 @@ section {
   font-size: 0.875rem;
   padding: 0.4rem 1.2rem;
 }
-.anbefalt-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #ffffff;
-}
-
-.anbefalt-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-.extra-store {
-  display: none;
-}
-.show-all .extra-store {
-  display: block;
-}
-
-.recommended-store:hover {
-  cursor: pointer;
-  transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
-}
-
-#toggleStoresBtn {
-  font-size: 0.9rem;
-  padding: 0.4rem 1.4rem;
-  border-radius: 0.5rem;
-}
-
-/* === FORBEDRET LAYOUT FOR STØRRE SKJERM OG BEDRE LESBARHET === */
-
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1320px;
-  }
-}
 
 .card p {
   font-size: 1rem;
@@ -1076,148 +671,51 @@ section {
   font-size: 2rem;
 }
 
-
-/* ========== TYPOGRAFI & BASISSTIL ========== */
-body {
-  font-size: 1.15rem;
-  line-height: 1.7;
+h6 {
+  color: var(--text-color);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
 }
 
 h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
-h4 { font-size: 1.5rem; }
 
-h5, h6 {
-  font-size: 1.25rem;
-}
-h1, h2, h3, h4 {
-  color: #111;
-  letter-spacing: -0.5px;
-}
-.text-muted {
-  color: #777 !important;
-}
+h2 { font-size: 2rem; }
+
+h3 { font-size: 1.5rem; }
 
 p {
-  color: #555;
-}
-
-/* ========== ANBEFALTE BUTIKKER KORT ========== */
-.anbefalt-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s;
-}
-
-.anbefalt-card:hover {
-  transform: scale(1.03);
-}
-
-.card.recommended-store {
-  height: auto;
-  min-height: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1,5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fff;
-}
-
-.card.recommended-store:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-}
-
-.card.recommended-store img {
-  max-height: 50px;
-  object-fit: contain;
-  margin-bottom: 0.75rem;
-}
-
-.card.recommended-store h6 {
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.card.recommended-store p {
+  color: var(--text-muted);
   font-size: 1rem;
-  color: #444;
 }
 
-.card.recommended-store .btn {
+.recommended-store .btn {
   margin-top: auto;
   font-size: 0.875rem;
   padding: 0.4rem 1.2rem;
 }
-.card, .category-card, .anbefalt-card {
+
+.anbefalt-card {
   padding: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
 .category-card .category-icon {
   margin-bottom: 1rem;
 }
 
-/* ========== KORTKNAPP & TOGGLE-VISNING ========== */
-.extra-store {
-  display: none;
-}
-.show-all .extra-store {
-  display: block;
-}
-
-#toggleStoresBtn {
-  font-size: 0.9rem;
-  padding: 0.4rem 1.4rem;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-#toggleStoresBtn:hover {
-  transform: translateY(-2px);
-  background-color: #0d6efd;
-  color: #fff;
-}
-
-/* ========== SEKSJONSOPPSETT ========== */
-.section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .container {
-  max-width: 1440px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-/* ========== LENKER OG IKONER ========== */
 a {
-  color: #0d6efd;
+  color: var(--accent-color);
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* ==========================================
-   📐 Forbedret layout og stil (forside)
-   ========================================== */
-
-/* Bakgrunn og generell stil */
 body {
   background-color: #3998a7;
   font-size: 1.1rem;
@@ -1232,71 +730,64 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Sentrer og begrens kortlayout */
 #forsideAnbefalte {
   max-width: 1140px;
   margin: 0 auto;
   justify-content: center;
 }
 
-/* Kortstil for anbefalte butikker */
-.card.recommended-store {
-  min-height: 240px;
-  padding: 1.5rem;
+.recommended-store {
+  background-color: var(--bg-light);
+  border: 1px solid #ddd;
   border-radius: 1rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-  background-color: #ffffff;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
 }
 
-.card.recommended-store:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-}
-
-.card.recommended-store img {
+.recommended-store img {
   max-height: 50px;
   object-fit: contain;
   margin-bottom: 0.75rem;
 }
 
-.card.recommended-store h6 {
+.recommended-store h6 {
   font-size: 1.1rem;
   font-weight: 600;
 }
 
-.card.recommended-store p {
+.recommended-store p {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-muted);
 }
 
-/* Knapp-stil og toggle */
+.btn {
+  background-color: var(--accent-color);
+  color: var(--text-light);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.6rem 1.4rem;
+  transition: background-color 0.3s ease;
+}
+
+.extra-store {
+  display: none;
+}
+
+.show-all .extra-store {
+  display: block;
+}
+
 #toggleStoresBtn {
   transition: background-color 0.3s ease, transform 0.2s ease;
-  font-size: 0.95rem;
-  padding: 0.5rem 1.5rem;
 }
 
-#toggleStoresBtn:hover {
+hover {
   transform: translateY(-2px);
-  background-color: #0d6efd;
+  background-color: var(--accent-dark);
   color: #fff;
 }
 
-/* Sidebanner / sticky annonser */
 .sticky-ad {
-  position: fixed;
-  top: 150px;
-  right: 30px;
-  width: 160px;
-  z-index: 1000;
-}
-
-@media (max-width: 1200px) {
-  .sticky-ad {
     display: none;
-  }
-}
