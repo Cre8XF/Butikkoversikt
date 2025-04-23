@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
       resultContainer.innerHTML = treff.map(butikk => `
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100">
-            <img src="\${butikk.image}" class="card-img-top" alt="\${butikk.name}">
+            <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}">
             <div class="card-body">
-              <h5 class="card-title">\${butikk.name}</h5>
-              <p class="card-text">\${butikk.description || ""}</p>
-              <a href="\${butikk.url}" target="_blank" class="btn btn-primary" rel="noopener">Besøk butikk</a>
+              <h5 class="card-title">${butikk.name}</h5>
+              <p class="card-text">${butikk.description || ""}</p>
+              <a href="${butikk.url}" target="_blank" class="btn btn-primary" rel="noopener">Besøk butikk</a>
             </div>
           </div>
         </div>
