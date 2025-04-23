@@ -659,4 +659,59 @@
     "topp25": false,
     "forside": false
   }
+  {
+  "name": "MaxGaming",
+  "image": "assets/images/gaming-og-gadgets/maxgaming.png",
+  "alt": "MaxGaming",
+  "category": "Gaming og gadgets",
+  "url": "https://www.maxgaming.no",
+  "description": "Spesialist på gamingtilbehør, mus, tastatur og utstyr for e-sport.",
+  "forside": false
+},
+{
+  "name": "Proshop",
+  "image": "assets/images/gaming-og-gadgets/proshop.png",
+  "alt": "Proshop",
+  "category": "Gaming og gadgets",
+  "url": "https://www.proshop.no",
+  "description": "Et bredt sortiment av datadeler, skjermer og gamingprodukter.",
+  "forside": false
+},
+{
+  "name": "NetOnNet",
+  "image": "assets/images/gaming-og-gadgets/netonnet.png",
+  "alt": "NetOnNet",
+  "category": "Gaming og gadgets",
+  "url": "https://www.netonnet.no",
+  "description": "Lagerpriser på skjermer, PC-utstyr og gaming gear.",
+  "forside": false
+},
+{
+  "name": "SteelSeries",
+  "image": "assets/images/gaming-og-gadgets/steelseries.png",
+  "alt": "SteelSeries",
+  "category": "Gaming og gadgets",
+  "url": "https://steelseries.com",
+  "description": "Verdenskjent merke for profesjonelle gaming-headset, tastatur og mus.",
+  "forside": false
+},
+{
+  "name": "Razer",
+  "image": "assets/images/gaming-og-gadgets/razer.png",
+  "alt": "Razer",
+  "category": "Gaming og gadgets",
+  "url": "https://www.razer.com/eu-no",
+  "description": "Razer tilbyr premium spillutstyr og tilbehør for gamere.",
+  "forside": false
+},
+{
+  "name": "HyperX",
+  "image": "assets/images/gaming-og-gadgets/hyperx.png",
+  "alt": "HyperX",
+  "category": "Gaming og gadgets",
+  "url": "https://www.hyperxgaming.com",
+  "description": "HyperX leverer hodetelefoner, gaming-stoler og annet tilbehør for spillere.",
+  "forside": false
+}
+
 ]
