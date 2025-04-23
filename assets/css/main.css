@@ -1552,4 +1552,45 @@ a:hover {
   background-color: var(--accent-hover, #004c99);
 }
 
+.store-showcase {
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  background: transparent;
+  border: none;
+}
+
+.store-showcase:hover {
+  transform: translateY(-4px);
+}
+
+.store-showcase img {
+  max-height: 100px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.store-showcase h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.store-showcase p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.store-showcase a {
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.store-showcase a:hover {
+  color: var(--accent-hover, #004c99);
+  text-decoration: underline;
+}
 
