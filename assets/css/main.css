@@ -25,11 +25,11 @@
   --hero-bg: var(--bg-dark); /* Bruk den oppdaterte mørkere grå, eller en annen passende farge/gradient */
 
   /* --- Footer --- */
-  --footer-bg: #1c1c1c;
-  --footer-text: #f1f1f1;
-  --footer-heading: #ffffff;
-  --footer-muted: #cccccc;
-  --footer-border: #2e2e2e;
+  --footer-bg: #ced4da; /* Samme som --bg-dark for konsistens */
+  --footer-text: #f1f1f1; /* Lysere tekstfarge for kontrast */
+  --footer-heading: #ffffff; /* Hvit for overskrifter */
+  --footer-muted: #cccccc; /* Lys grå for mindre viktig tekst */
+  --footer-border: #2e2e2e; /* Mørkere grå for skillelinjer */
 }
 
 
