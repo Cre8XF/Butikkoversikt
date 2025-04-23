@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(response => response.json())
     .then(data => {
       const container = document.getElementById("gaming-container");
-      const gamingButikker = data.filter(b => b.gaming === true);
+      const gamingButikker = data.filter(b => 
+        b.category?.toLowerCase() === "gaming og gadgets"
+      );
 
       gamingButikker.forEach(butikk => {
         const card = document.createElement("div");
