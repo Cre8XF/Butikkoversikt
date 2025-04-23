@@ -11,7 +11,7 @@
   {
     "category": "Apotek",
     "name": "Apotek1.no",
-    "description": "Apotek1.no tilbyr et bredt utvalg av medisiner, egenpleieprodukter og apotektjenester – alt levert rett hjem.",
+    "description": "Stort utvalg av reseptfrie og reseptbelagte medisiner. Rask levering og apotekstøtte.",
     "image": "assets/images/apotek/Apotek1.png",
     "alt": "Apotek 1",
     "url": "https://www.apotek1.no",
@@ -54,13 +54,13 @@
     "url": "https://www.askeladdennavnelapper.no",
     "forside": false
   },
-  {
+   {
     "name": "Babyshop",
     "image": "assets/images/barn-og-baby/babyshop_logo_200.jpg",
     "alt": "Babyshop",
     "category": "Barn og baby",
     "url": "https://www.babyshop.no",
-    "description": "Babyshop tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
+    "description": "Sterk nisje innen barn og baby.",
     "topp25": true,
     "forside": true
   },
@@ -70,7 +70,7 @@
     "alt": "Barnas Hus",
     "category": "Barn og baby",
     "url": "https://www.barnashus.no",
-    "description": "Barnas Hus tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
+    "description": "",
     "topp25": true,
     "forside": false
   },
@@ -125,7 +125,7 @@
     "alt": "Boozt",
     "category": "Klær og mote",
     "url": "https://www.boozt.com",
-    "description": "Boozt tilbyr moderne og tidløse klær for alle anledninger – både til dame, herre og barn.",
+    "description": "Klær og mote for hele familien.",
     "topp25": true,
     "forside": true
   },
@@ -138,13 +138,13 @@
     "url": "https://www.bubbleroom.com",
     "forside": false
   },
-  {
+   {
     "name": "CDON",
     "image": "assets/images/elektronikk/cdon.png",
     "alt": "CDON",
     "category": "Elektronikk",
     "url": "https://cdon.no",
-    "description": "CDON tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
+    "description": "Alt fra elektronikk til underholdning.",
     "topp25": true,
     "forside": true
   },
@@ -154,7 +154,7 @@
     "alt": "Clas Ohlson",
     "category": "Gadgets og gaver",
     "url": "https://www.clasohlson.com/no/",
-    "description": "Clas Ohlson tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
+    "description": "",
     "topp25": true,
     "forside": false
   },
@@ -170,7 +170,7 @@
   {
     "category": "Barn og baby",
     "name": "Cubus.no",
-    "description": "Cubus.no tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
+    "description": "Klær til barn og baby – prisgunstig og fargerikt.",
     "image": "assets/images/barn-og-baby/Cubus.png",
     "alt": "Cubus",
     "url": "https://cubus.com/no/",
@@ -201,7 +201,7 @@
     "alt": "Elkjøp",
     "category": "Elektronikk",
     "url": "https://www.elkjop.no",
-    "description": "Elkjøp tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
+    "description": "Elektronikk, bred appell.",
     "topp25": true,
     "forside": true
   },
@@ -211,7 +211,7 @@
     "alt": "Ellos",
     "category": "Barn og baby",
     "url": "https://www.ellos.no",
-    "description": "Ellos tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
+    "description": "",
     "topp25": true,
     "forside": false
   },
@@ -221,14 +221,14 @@
     "alt": "Farmasiet",
     "category": "Apotek",
     "url": "https://www.farmasiet.no",
-    "description": "Farmasiet tilbyr et bredt utvalg av medisiner, egenpleieprodukter og apotektjenester – alt levert rett hjem.",
+    "description": "Stor aktør innen apotek.",
     "topp25": true,
     "forside": true
   },
   {
     "category": "Sport og fritid",
     "name": "Fjellsport.no",
-    "description": "Fjellsport.no tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
+    "description": "Alt innen tur, friluft og klatring.",
     "image": "assets/images/sport-og-fritid/Fjellsport.png",
     "alt": "Fjellsport.no",
     "url": "https://www.fjellsport.no",
@@ -250,7 +250,7 @@
     "alt": "Guttelus",
     "category": "Barn og baby",
     "url": "https://www.guttelus.no",
-    "description": "Guttelus tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
+    "description": "",
     "topp25": true,
     "forside": false
   },
@@ -260,7 +260,7 @@
     "alt": "H&M",
     "category": "Klær og mote",
     "url": "https://www.hm.com/no",
-    "description": "H&M tilbyr moderne og tidløse klær for alle anledninger – både til dame, herre og barn.",
+    "description": "",
     "topp25": true,
     "forside": false
   },
@@ -273,13 +273,13 @@
     "url": "https://www.hifiklubben.no",
     "forside": false
   },
-  {
+   {
     "name": "IKEA",
     "image": "assets/images/møbler-og-interiør/ikea.png",
     "alt": "IKEA",
     "category": "Møbler og interiør",
     "url": "https://www.ikea.com/no/no",
-    "description": "IKEA tilbyr praktiske og stilrene møbler og interiør til alle rom i hjemmet.",
+    "description": "Høyt gjenkjenningsnivå.",
     "topp25": true,
     "forside": true
   },
@@ -307,7 +307,7 @@
     "alt": "Jollyroom",
     "category": "Barn og baby",
     "url": "https://www.jollyroom.no",
-    "description": "Jollyroom tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
+    "description": "",
     "topp25": true,
     "forside": false
   },
@@ -317,7 +317,7 @@
     "alt": "Kid Interiør",
     "category": "Møbler og interiør",
     "url": "https://www.kid.no",
-    "description": "Kid Interiør tilbyr praktiske og stilrene møbler og interiør til alle rom i hjemmet.",
+    "description": "",
     "topp25": true,
     "forside": false
   },
@@ -330,13 +330,13 @@
     "url": "https://www.kjell.com",
     "forside": false
   },
-  {
+   {
     "name": "Komplett",
     "image": "assets/images/elektronikk/komplett.png",
     "alt": "Komplett",
     "category": "Elektronikk",
     "url": "https://www.komplett.no",
-    "description": "Komplett tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
+    "description": "God dekning innen tech og gaming.",
     "topp25": true,
     "forside": true
   },
@@ -364,7 +364,7 @@
     "alt": "Lekia",
     "category": "Barn og baby",
     "url": "https://www.lekia.no",
-    "description": "Lekia tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
+    "description": "",
     "topp25": true,
     "forside": false
   },
@@ -455,14 +455,14 @@
     "alt": "Platekompaniet",
     "category": "Bøker og underholdning",
     "url": "https://www.platekompaniet.no",
-    "description": "Platekompaniet tilbyr bøker, spill og underholdning for hele familien.",
+    "description": "Kultur og underholdning.",
     "topp25": true,
     "forside": true
   },
   {
     "category": "Elektronikk",
     "name": "Power.no",
-    "description": "Power.no tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
+    "description": "TV, lydplanker og hodetelefoner.",
     "image": "assets/images/elektronikk/Power.png",
     "alt": "Power",
     "url": "https://www.power.no",
@@ -484,7 +484,7 @@
     "alt": "Rudo",
     "category": "Barn og baby",
     "url": "https://www.rudo.no",
-    "description": "Rudo tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
+    "description": "",
     "topp25": true,
     "forside": false
   },
@@ -509,7 +509,7 @@
   {
     "category": "Sport og fritid",
     "name": "Sport1.no",
-    "description": "Sport1.no tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
+    "description": "Sportsutstyr og klær til hele familien.",
     "image": "assets/images/sport-og-fritid/Sport1.png",
     "alt": "Sport1.no",
     "url": "https://www.sport1.no",
@@ -522,7 +522,7 @@
     "alt": "Sportamore",
     "category": "Sport og fritid",
     "url": "https://www.sportamore.no",
-    "description": "Sportamore tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
+    "description": "Sport og klær.",
     "topp25": true,
     "forside": true
   },
@@ -577,7 +577,7 @@
     "alt": "Vinmonopolet",
     "category": "Gadgets og gaver",
     "url": "https://www.vinmonopolet.no",
-    "description": "Vinmonopolet tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
+    "description": "",
     "topp25": true,
     "forside": false
   },
@@ -599,23 +599,23 @@
     "url": "https://www.voltfashion.com/no/",
     "forside": false
   },
-  {
+   {
     "name": "XXL",
     "image": "assets/images/sport-og-fritid/xxl.png",
     "alt": "XXL",
     "category": "Sport og fritid",
     "url": "https://www.xxl.no",
-    "description": "XXL tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
+    "description": "Sport og fritid, bred målgruppe.",
     "topp25": true,
     "forside": true
   },
-  {
+ {
     "name": "Zalando",
     "image": "assets/images/klær-og-mote/Zalando.png",
     "alt": "Zalando",
     "category": "Klær og mote",
     "url": "https://www.zalando.no",
-    "description": "Zalando tilbyr moderne og tidløse klær for alle anledninger – både til dame, herre og barn.",
+    "description": "Svært kjent for klær og sko.",
     "topp25": true,
     "forside": true
   },
@@ -645,7 +645,7 @@
     "alt": "CoolStuff",
     "category": "Gadgets og gaver",
     "url": "https://www.coolstuff.no",
-    "description": "CoolStuff tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
+    "description": "Gadgets og gaver, klikkskapende.",
     "topp25": true,
     "forside": true
   },
