@@ -1587,19 +1587,22 @@ a:hover {
 .store-showcase a {
   display: inline-block;
   padding: 0.5rem 1.2rem;
-  background-color: var(--primary);
-  color: white;
-  border-radius: 6px;
+  color: var(--primary-text, #004c99); /* mørk blå tekst */
+  background-color: transparent;
+  border: 2px solid var(--primary);
   font-weight: 500;
   font-size: 0.95rem;
   text-decoration: none;
   transition: background 0.2s ease, transform 0.2s ease;
   margin-top: 0.75rem;
+  border-radius: 6px;
 }
 
 .store-showcase a:hover {
-  background-color: var(--primary-dark, #0056b3);
+  background-color: var(--primary, #004c99);
+  color: white;
   transform: translateY(-2px);
 }
+
 
 
