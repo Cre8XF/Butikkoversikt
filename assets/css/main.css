@@ -1554,14 +1554,16 @@ a:hover {
 
 .store-showcase {
   text-align: center;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem 2.5rem;
   transition: transform 0.3s ease;
   background: transparent;
   border: none;
 }
 
 .store-showcase:hover {
-  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+  background-color: #f8f9fa;
 }
 
 .store-showcase img {
@@ -1583,14 +1585,17 @@ a:hover {
 }
 
 .store-showcase a {
-  font-weight: 500;
-  color: var(--accent);
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 6px;
+  transition: background 0.2s ease;
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .store-showcase a:hover {
-  color: var(--accent-hover, #004c99);
-  text-decoration: underline;
+  background-color: #0056b3;
 }
+
 
