@@ -1605,6 +1605,17 @@ a:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(0, 76, 153, 0.3); /* Fancy blå skygge */
 }
+.store-showcase img,
+.card-logo {
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+  display: block;
+}
+.card-logo {
+  margin-bottom: 0.5rem;
+}
 
 
 
