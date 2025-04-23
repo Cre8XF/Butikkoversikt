@@ -14,12 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
           : "assets/images/logo-mangler.png";
 
         col.innerHTML = `
-          <div class="store-showcase">
-            <img src="${imageUrl}" alt="${butikk.alt || butikk.name}" class="card-logo" loading="lazy" />
-            <h5>${butikk.name}</h5>
-            <p>${butikk.description || ''}</p>
-            <a href="${butikk.url}" target="_blank" rel="noopener sponsored">Besøk butikk</a>
-          </div>
+          <a href="${butikk.url}" target="_blank" rel="noopener sponsored" class="text-decoration-none text-dark">
+            <div class="store-showcase text-center h-100">
+              <img src="${imageUrl}" alt="${butikk.alt || butikk.name}" class="card-logo mb-2" loading="lazy" />
+              <h5>${butikk.name}</h5>
+              <p class="small text-muted">${butikk.description || ''}</p>
+              <span class="btn btn-outline-primary mt-2">Besøk butikk</span>
+            </div>
+          </a>
         `;
         container.appendChild(col);
       });
