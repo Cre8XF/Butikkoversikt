@@ -863,27 +863,7 @@ footer {
   border: none;
   border-radius: 8px;
 }
-/* ==========LOGO===================== */
-.navbar-brand {
-  background-color: #fff;
-  padding: 10px 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-
-.navbar-brand img:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-}
-
-@media (min-width: 768px) {
-  .navbar-brand img {
-    height: 80px;
-  }
-}
-/* ========== Header bakgrunn og logo forbedring ========== */
+/* ========== Navbar container ========== */
 .navbar {
   background-color: #e6f3fb; /* Lys blå bakgrunn */
   border-bottom: 1px solid #ccc;
@@ -894,22 +874,71 @@ footer {
   z-index: 1000;
 }
 
-.navbar-brand img {
-  height: 60px;
+/* ========== Logo-container og tekst ========== */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
   padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
+.navbar-brand img {
+  height: 60px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.navbar-brand span {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-color, #222);
+}
+
+/* Større logo på desktop */
+@media (min-width: 768px) {
+  .navbar-brand img {
+    height: 70px;
+  }
+}
+
+/* ========== Navigasjonslenker ========== */
 .navbar-nav .nav-link {
-  font-weight: 500;
-  color: #333;
+  font-weight: 600;
+  color: var(--text-color, #333);
   margin-right: 1rem;
-  transition: color 0.2s ease;
   padding: 0.75rem 1.25rem;
+  transition: color 0.2s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #007bff;
+  color: var(--btn-primary, #007bff);
+  background-color: transparent;
+}
+
+/* ========== Dropdown-meny ========== */
+.dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.dropdown-item {
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  color: var(--text-color, #333);
+}
+
+.dropdown-item:hover {
+  color: var(--btn-primary, #007bff);
+  background-color: transparent;
 }
 
 
@@ -1443,52 +1472,6 @@ a:hover {
 .guide-card p {
   font-size: 0.95rem;
   color: var(--text-muted);
-}
-
-/* === Forbedret desktop-navbar i XXL-stil === */
-.desktop-navbar {
-  background-color: #fff;
-  color: var(--text-color);
-  border-bottom: 1px solid #ddd;
-  padding: 1.2rem 0;
-  z-index: 1050;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-.desktop-navbar .navbar-brand img {
-  height: 70px;
-}
-
-.desktop-navbar .navbar-brand span {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-color);
-}
-
-.desktop-navbar .nav-link {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--text-color);
-  padding: 0.8rem 1.5rem;
-  transition: color 0.2s ease;
-}
-
-.desktop-navbar .nav-link:hover,
-.desktop-navbar .dropdown-item:hover {
-  color: var(--btn-primary);
-  background-color: transparent;
-}
-
-.desktop-navbar .dropdown-menu {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-.desktop-navbar .dropdown-item {
-  font-size: 1rem;
-  padding: 0.5rem 1.25rem;
-  color: var(--text-color);
 }
 
  /* === .card.store-card === */
