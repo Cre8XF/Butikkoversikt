@@ -4,14 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const tittelEl = document.getElementById("kategori-tittel");
   const container = document.getElementById("kategori-container");
 
-
   if (!kategori) {
     tittelEl.innerText = "Ingen kategori valgt.";
     return;
   }
 
   fetch("assets/data/butikker.json")
-
     .then(res => res.json())
     .then(data => {
       const filtrert = data.filter(b => b.category.toLowerCase() === kategori.toLowerCase());
@@ -29,15 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
           : "/assets/images/logo-mangler.png";
 
         const card = document.createElement("div");
-        card.className = "col-6 col-md-3 text-center";
+        card.className = "col-12 col-md-6 col-lg-4";
         card.innerHTML = `
-          <a href="${butikk.url}" target="_blank" rel="noopener sponsored" class="text-decoration-none text-dark">
-            <div class="card store-card">
-              <img src="${imageUrl}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-2" loading="lazy" />
-              <h6>${butikk.name}</h6>
-              ${butikk.description ? `<p class="small text-muted">${butikk.description}</p>` : ""}
-            </div>
-          </a>
+          <div class="store-showcase">
+            <img src="${imageUrl}" alt="${butikk.alt || butikk.name}" class="card-logo" loading="lazy" />
+            <h5>${butikk.name}</h5>
+            ${butikk.description ? `<p>${butikk.description}</p>` : ""}
+            <a href="${butikk.url}" target="_blank" rel="noopener sponsored">Besøk butikk</a>
+          </div>
         `;
         container.appendChild(card);
       });

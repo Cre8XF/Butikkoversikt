@@ -7,23 +7,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
       anbefalte.forEach((butikk, index) => {
         const col = document.createElement("div");
-        col.className = `col-6 col-md-3${index >= 8 ? " extra-store" : ""}`;
+        col.className = `col-12 col-md-6 col-lg-4${index >= 8 ? " extra-store" : ""}`;
+
+        const imageUrl = butikk.image && butikk.image.trim() !== ""
+          ? butikk.image
+          : "assets/images/logo-mangler.png";
 
         col.innerHTML = `
-          <a href="${butikk.url}" target="_blank" rel="noopener" class="text-decoration-none text-dark">
-            <div class="card store-card">
-
-              <img src="${butikk.image}" alt="${butikk.alt}" class="img-fluid mb-2" loading="lazy"
-                onerror="this.src='assets/images/logo-mangler.png'" />
-              <h6>${butikk.name}</h6>
-              <p class="small text-muted">${butikk.description || ''}</p>
-            </div>
-          </a>
+          <div class="store-showcase">
+            <img src="${imageUrl}" alt="${butikk.alt || butikk.name}" class="card-logo" loading="lazy" />
+            <h5>${butikk.name}</h5>
+            <p>${butikk.description || ''}</p>
+            <a href="${butikk.url}" target="_blank" rel="noopener sponsored">Besøk butikk</a>
+          </div>
         `;
         container.appendChild(col);
       });
 
-      // Toggle-knapp for å vise/fjerne ekstra kort
       const toggleBtn = document.getElementById("toggleStoresBtn");
       if (toggleBtn) {
         toggleBtn.addEventListener("click", function () {

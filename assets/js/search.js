@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
   const søk = params.get("k")?.toLowerCase() || "";
@@ -23,19 +22,22 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      resultContainer.innerHTML = treff.map(butikk => `
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card store-card">
+      resultContainer.innerHTML = treff.map(butikk => {
+        const image = butikk.image && butikk.image.trim() !== "" 
+          ? butikk.image 
+          : "assets/images/logo-mangler.png";
 
-            <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}">
-            <div class="card-body">
-              <h5 class="card-title">${butikk.name}</h5>
-              <p class="card-text">${butikk.description || ""}</p>
-              <a href="${butikk.url}" target="_blank" class="btn btn-primary" rel="noopener">Besøk butikk</a>
+        return `
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="store-showcase">
+              <img src="${image}" alt="${butikk.name}" class="card-logo" loading="lazy" />
+              <h5>${butikk.name}</h5>
+              <p>${butikk.description || ""}</p>
+              <a href="${butikk.url}" target="_blank" rel="noopener sponsored">Besøk butikk</a>
             </div>
           </div>
-        </div>
-      `).join("");
+        `;
+      }).join("");
     })
     .catch(error => {
       console.error("Feil ved lasting av butikker:", error);
