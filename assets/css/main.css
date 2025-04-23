@@ -1607,11 +1607,12 @@ a:hover {
 }
 .store-showcase img,
 .card-logo {
-  max-height: 60px;
-  width: auto;
-  object-fit: contain;
-  margin: 0 auto 1rem;
   display: block;
+  margin: 0 auto 1rem;
+  max-height: 60px;
+  height: 60px;
+  object-fit: contain;
+  object-position: center;
 }
 .card-logo {
   margin-bottom: 0.5rem;
