@@ -117,11 +117,19 @@
 
 <!-- Ekstra CSS for mobil horisontal scroll -->
 <style>
-  @media (max-width: 768px) {
-    .topp25-scroll-container {
-      -webkit-overflow-scrolling: touch;
-      scroll-snap-type: x mandatory;
-    }
+ @media (min-width: 769px) {
+  .topp25-scroll-container {
+    overflow: visible !important;
+    flex-wrap: wrap !important;
+  }
+
+  .topp25-scroll-container .store-card {
+    width: 100% !important;
+    min-width: auto !important;
+    flex: 1 1 22%; /* 4 kort per rad */
+    margin-bottom: 1.5rem;
+  }
+}
 
     .store-card {
       scroll-snap-align: start;
