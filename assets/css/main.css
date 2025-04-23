@@ -23,6 +23,13 @@
 
   /* --- Hero Seksjon (Valgfritt) --- */
   --hero-bg: var(--bg-dark); /* Bruk den oppdaterte mørkere grå, eller en annen passende farge/gradient */
+
+  /* --- Footer --- */
+  --footer-bg: #1c1c1c;
+  --footer-text: #f1f1f1;
+  --footer-heading: #ffffff;
+  --footer-muted: #cccccc;
+  --footer-border: #2e2e2e;
 }
 
 
@@ -511,13 +518,6 @@ a:hover {
   padding: 2px 8px;
   border-radius: 20px;
   margin: 4px 0;
-}
-
-footer {
-  background-color: var(--bg-dark);
-  color: #fff;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .logo-link {
@@ -1601,6 +1601,50 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
+/* Footer stil */
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 2rem 0;
+  border-top: 1px solid var(--footer-border);
+  font-size: 0.95rem;
+}
 
+footer h6 {
+  color: var(--footer-heading);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer p,
+footer li {
+  color: var(--footer-muted);
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: var(--footer-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--btn-primary); /* eller annen valgt hoverfarge */
+}
+
+footer .form-control {
+  border-radius: 0.375rem;
+  border: 1px solid var(--footer-border);
+}
+
+footer .btn {
+  background-color: var(--btn-primary);
+  color: white;
+  border: none;
+}
+
+footer .btn:hover {
+  background-color: var(--btn-primary-hover, #0056b3);
+}
 
 
