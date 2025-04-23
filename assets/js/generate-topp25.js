@@ -16,8 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
        card.className = "col-6 col-sm-4 col-md-3 d-flex";
 card.innerHTML = `
   <a href="${butikk.url}" target="_blank" rel="noopener sponsored" class="text-decoration-none text-dark w-100">
-    <div class="card store-card">
-
+    <div class="card recommended-store text-center shadow-sm p-3">
       <img src="${imageUrl}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-2" loading="lazy" />
       <h6>${butikk.name}</h6>
       ${butikk.description ? `<p class="small text-muted">${butikk.description}</p>` : ""}
