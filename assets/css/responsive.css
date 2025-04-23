@@ -1,254 +1,119 @@
-/* === Tablet breakpoint (≤768px) === */
-@media (max-width: 768px) {
-  .col-lg-6 {
-    width: 100%;
-    margin-bottom: 20px;
+@media (max-width: 576px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+    color: var(--text-muted);
+  }
+
+  .section {
+    padding: 1.5rem 1rem;
+  }
+
+  .kampanjer img {
+    border-radius: 10px;
+  }
+
+  .store-showcase {
+    padding: 1rem;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 1.25rem;
+  }
+
+  .store-showcase img {
+    max-height: 80px;
+    object-fit: contain;
+    margin-bottom: 0.75rem;
+  }
+
+  .store-showcase h5 {
+    font-size: 1rem;
+  }
+
+  .store-showcase p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+
+  .store-showcase a {
+    font-size: 0.9rem;
+    padding: 6px 14px;
+  }
+
+  .category-icon {
+    max-width: 48px;
+    margin-bottom: 0.5rem;
+  }
+
+  .guide-img {
+    border-radius: 8px;
+    max-height: 150px;
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
   }
 }
-
-/* === Mobil breakpoint (≤576px) === */
-@media (max-width: 576px) {
-  .section {
-    padding: 20px 15px;
-  }
-  .hero h1 {
-    font-size: 1.75rem;
+@media (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 700;
     line-height: 1.3;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
 
   .hero p {
     font-size: 1rem;
     padding: 0 10px;
-  }
-
-  @media (max-width: 576px) {
-    .filter-buttons .btn {
-      font-size: 0.9rem;
-      padding: 6px 14px;
-      margin: 4px;
-    }
-
-    .filter-section h2 {
-      font-size: 1.25rem;
-      margin-top: 40px;
-      margin-bottom: 20px;
-    }
-
-    .filter-section .category-card {
-      padding: 16px;
-      border-radius: 10px;
-    }
-
-    .filter-section .category-card img {
-      max-height: 60px;
-    }
-
-    .filter-section .category-card h5 {
-      font-size: 1rem;
-    }
-
-    .filter-section .category-card p {
-      font-size: 0.85rem;
-    }
-  }
-
-  /* Kort og kolonner */
-  .col-md-3,
-  .col-6 {
-    width: 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .card,
-  .anbefalt-card {
-    min-height: unset;
-    padding: 15px;
-  }
-
-  .anbefalt-card img,
-  .card img {
-    max-height: 80px;
-    margin-bottom: 12px;
-  }
-
-  .anbefalt-card h5,
-  .card h5 {
-    font-size: 1.1rem;
-  }
-
-  .anbefalt-card p,
-  .card p {
-    font-size: 0.95rem;
-  }
-
-  /* Knapper og input */
-  .btn {
-    padding: 6px 14px;
-    font-size: 0.95rem;
-  }
-
-  .search-bar input {
-    font-size: 14px;
-  }
-
-  .search-bar .btn {
-    padding: 6px 10px;
-    font-size: 14px;
-  }
-
-  .navbar .nav-link {
-    font-size: 0.95rem;
-    padding: 0.5rem;
-  }
-
-  /* Kategorikort */
-  .category-card {
-    max-width: 350px;
-    margin: 0 auto;
-  }
-
-  .category-card h5 {
-    font-size: 1rem;
-  }
-
-  .category-card p {
-    font-size: 0.9rem;
-  }
-
-  .category-icon {
-    max-width: 50px;
-    margin-bottom: 10px;
-  }
-
-  .category-icon-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Grid og liste */
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-
-  .list-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .list-item img {
-    margin: 0 0 10px 0;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .text-box {
-    width: 100%;
-    padding: 15px;
-  }
-
-  /* Vis alle-knapp */
-  #toggleStoresBtn {
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  /* Justering av grid-rad */
-  .row.g-4.justify-content-center {
-    justify-content: center !important;
+    color: var(--text-muted);
   }
 }
-
-/* === Små laptops (≤992px) === */
 @media (max-width: 992px) {
-  .navbar-nav {
-    flex-direction: column;
-    text-align: left;
-  }
-  /* flere regler her */
-}
-
-/* === Logo === */
-@media (max-width: 576px) {
-  .navbar-brand img {
-    height: 60px;
-    padding: 5px 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .sticky-ad {
-    display: none !important;
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
   }
 
-  body {
-    padding-top: 60px;
-  }
-}
-/* Sørg for at mobilmeny vises korrekt */
-@media (max-width: 767.98px) {
-  .navbar-toggler {
-    display: block !important;
-  }
-
-  .navbar-collapse {
-    display: none;
-  }
-
-  .navbar-collapse.show {
-    display: block !important;
-  }
-}
-/* --- Menyikon synlighet fix --- */
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-.category-icon-link {
-  text-align: center;
-}
-
-.category-icon {
-  max-width: 60px;
-}
-/* --- Desktop meny fix --- */
-@media (max-width: 991.98px) {
-  .main-nav {
-    display: none !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .main-nav {
-    display: flex !important;
-  }
-}
-
-@media (max-width: 576px) {
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .hero p {
-    font-size: 1rem;
-  }
-
-  .anbefalt-card h5 {
-    font-size: 1rem;
-  }
-
-  .anbefalt-card p {
-    font-size: 0.9rem;
-  }
-
-  .anbefalt-card {
-    padding: 1rem;
-  }
-}
-@media (max-width: 400px) {
-  .side-menu {
-    width: 220px;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    color: var(--text-muted);
   }
 }
