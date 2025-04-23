@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       resultContainer.innerHTML = treff.map(butikk => `
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100">
+          <div class="card store-card">
+
             <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}">
             <div class="card-body">
               <h5 class="card-title">${butikk.name}</h5>

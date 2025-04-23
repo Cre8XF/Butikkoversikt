@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.className = "col-6 col-md-3 text-center";
         card.innerHTML = `
           <a href="${butikk.url}" target="_blank" rel="noopener sponsored" class="text-decoration-none text-dark">
-            <div class="card category-card h-100 p-3">
+            <div class="card store-card">
               <img src="${imageUrl}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-2" loading="lazy" />
               <h6>${butikk.name}</h6>
               ${butikk.description ? `<p class="small text-muted">${butikk.description}</p>` : ""}

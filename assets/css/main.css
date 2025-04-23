@@ -1491,3 +1491,63 @@ a:hover {
   color: var(--text-color);
 }
 
+ /* === .card.store-card === */
+.card.store-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card.store-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card.store-card img {
+  max-height: 100px;
+  object-fit: contain;
+  margin: 20px auto 0;
+  padding: 0 1rem;
+  display: block;
+}
+
+.card.store-card .card-body {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card.store-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.card.store-card .card-text {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.card.store-card .btn {
+  margin-top: 12px;
+  align-self: center;
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.card.store-card .btn:hover {
+  background-color: var(--accent-hover, #004c99);
+}

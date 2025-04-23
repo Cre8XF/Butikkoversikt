@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         col.innerHTML = `
           <a href="${butikk.url}" target="_blank" rel="noopener" class="text-decoration-none text-dark">
-            <div class="card recommended-store text-center shadow-sm h-100 d-flex flex-column justify-content-between">
+            <div class="card store-card">
+
               <img src="${butikk.image}" alt="${butikk.alt}" class="img-fluid mb-2" loading="lazy"
                 onerror="this.src='assets/images/logo-mangler.png'" />
               <h6>${butikk.name}</h6>
