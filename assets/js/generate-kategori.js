@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  fetch("butikker.json")
+  fetch("assets/data/butikker.json")
+
     .then(res => res.json())
     .then(data => {
       const filtrert = data.filter(b => b.category.toLowerCase() === kategori.toLowerCase());

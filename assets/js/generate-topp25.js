@@ -1,6 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("butikker.json")
+  fetch("assets/data/butikker.json")
+
     .then(res => res.json())
     .then(data => {
       const container = document.getElementById("topp25-container");
