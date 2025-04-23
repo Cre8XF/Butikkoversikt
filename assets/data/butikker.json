@@ -661,7 +661,7 @@
   },
   {
   "name": "MaxGaming",
-  "image": "assets/images/gaming-og-gadgets/maxgaming.png",
+  "image": "assets/images/gaming-og-gadgets/hyperx.png",
   "alt": "MaxGaming",
   "category": "Gaming og gadgets",
   "url": "https://www.maxgaming.no",
@@ -712,6 +712,146 @@
   "url": "https://www.hyperxgaming.com",
   "description": "HyperX leverer hodetelefoner, gaming-stoler og annet tilbehør for spillere.",
   "forside": false
-}
-
+},
+  {
+    "name": "CDON",
+    "image": "assets/images/elektronikk/cdon.png",
+    "alt": "CDON",
+    "category": "Spill og underholdning",
+    "url": "https://cdon.no",
+    "description": "CDON tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "Elkjøp",
+    "image": "assets/images/elektronikk/Elkjop.png",
+    "alt": "Elkjøp",
+    "category": "Gaming og elektronikk",
+    "url": "https://www.elkjop.no",
+    "description": "Elkjøp tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "category": "Gadgets og gaver",
+    "name": "Kjell.com",
+    "description": "Smarthus, kabler og småelektronikk.",
+    "image": "assets/images/elektronikk/Kjell.png",
+    "alt": "Kjell & Company",
+    "url": "https://www.kjell.com",
+    "forside": false
+  },
+  {
+    "name": "Komplett",
+    "image": "assets/images/elektronikk/komplett.png",
+    "alt": "Komplett",
+    "category": "Gaming og elektronikk",
+    "url": "https://www.komplett.no",
+    "description": "Komplett tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "category": "Gaming og elektronikk",
+    "name": "KomplettApotek.no",
+    "description": "Digitalt apotek med lave priser og reseptbestilling rett på nett.",
+    "image": "assets/images/apotek/Komplettapotek.png",
+    "alt": "Komplett Apotek",
+    "url": "https://www.komplettapotek.no",
+    "forside": false
+  },
+  {
+    "category": "Gaming og elektronikk",
+    "name": "NetOnNet.no",
+    "description": "Direkte fra lageret – PC og skjermer.",
+    "image": "assets/images/elektronikk/Netonnet.png",
+    "alt": "NetOnNet",
+    "url": "https://www.netonnet.no",
+    "forside": false
+  },
+  {
+    "name": "Platekompaniet",
+    "image": "assets/images/bøker-og-underholdning/platekompaniet.png",
+    "alt": "Platekompaniet",
+    "category": "Spill og underholdning",
+    "url": "https://www.platekompaniet.no",
+    "description": "Platekompaniet tilbyr bøker, spill og underholdning for hele familien.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "category": "Gaming og elektronikk",
+    "name": "Power.no",
+    "description": "Power.no tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
+    "image": "assets/images/elektronikk/Power.png",
+    "alt": "Power",
+    "url": "https://www.power.no",
+    "topp25": true,
+    "forside": false
+  },
+   {
+    "name": "CoolStuff",
+    "image": "assets/images/gadgets-og-gaver/coolstuff.png",
+    "alt": "CoolStuff",
+    "category": "Gadgets og gaver",
+    "url": "https://www.coolstuff.no",
+    "description": "CoolStuff tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
+    "topp25": true,
+    "forside": true
+  },
+  {
+    "name": "MaxGaming",
+    "image": "assets/images/gaming-og-gadgets/hyperx.png",
+    "alt": "MaxGaming",
+    "category": "Gaming og gadgets",
+    "url": "https://www.maxgaming.no",
+    "description": "Spesialist på gamingtilbehør, mus, tastatur og utstyr for e-sport.",
+    "forside": false
+  },
+  {
+    "name": "Proshop",
+    "image": "assets/images/gaming-og-gadgets/proshop.png",
+    "alt": "Proshop",
+    "category": "Gaming og gadgets",
+    "url": "https://www.proshop.no",
+    "description": "Et bredt sortiment av datadeler, skjermer og gamingprodukter.",
+    "forside": false
+  },
+  {
+    "name": "SteelSeries",
+    "image": "assets/images/gaming-og-gadgets/steelseries.png",
+    "alt": "SteelSeries",
+    "category": "Gaming og gadgets",
+    "url": "https://steelseries.com",
+    "description": "Verdenskjent merke for profesjonelle gaming-headset, tastatur og mus.",
+    "forside": false
+  },
+  {
+    "name": "Razer",
+    "image": "assets/images/gaming-og-gadgets/razer.png",
+    "alt": "Razer",
+    "category": "Gaming og gadgets",
+    "url": "https://www.razer.com/eu-en/",
+    "description": "Razer tilbyr premium spillutstyr og tilbehør for gamere.",
+    "forside": false
+  },
+  {
+    "name": "HyperX",
+    "image": "assets/images/gaming-og-gadgets/hyperx.png",
+    "alt": "HyperX",
+    "category": "Gaming og gadgets",
+    "url": "https://www.hyperxgaming.com",
+    "description": "HyperX leverer hodetelefoner, gaming-stoler og annet tilbehør for spillere.",
+    "forside": false
+  },
+  {
+    "name": "Gamezone",
+    "image": "assets/images/gaming-og-gadgets/gamezone.png",
+    "alt": "Gamezone",
+    "category": "Spill og underholdning",
+    "url": "https://www.gamezone.no",
+    "description": "Brettspill, samlekort, figurer og alt for gamingentusiaster.",
+    "forside": false
+  }
 ]
