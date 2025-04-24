@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <style>
+    #underkategori-lenker {
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  </style>
 </head>
 <body>
 
@@ -48,9 +54,10 @@
       <h1 id="kategori-tittel" class="mb-4">Vi henter butikker i denne kategorien...</h1>
 
       <!-- Underkategorier (vises ved behov) -->
-      <div id="underkategorier-wrapper" class="mb-5 d-none">
+      <div id="underkategorier-wrapper" class="mb-4 d-none">
         <h5>Underkategorier</h5>
-        <div id="underkategori-lenker" class="d-flex flex-wrap justify-content-center gap-3"></div>
+        <div id="underkategori-lenker" class="d-flex flex-wrap justify-content-center gap-3 mb-3"></div>
+        <div id="vis-alle-knapp" class="mb-3"></div>
       </div>
 
       <div id="kategori-container" class="row g-4 justify-content-center"></div>
@@ -94,6 +101,7 @@
 
     if (hovedkategori) {
       document.getElementById("underkategorier-wrapper").classList.remove("d-none");
+
       const container = document.getElementById("underkategori-lenker");
       underkategorierMap[hovedkategori].forEach(uk => {
         const link = document.createElement("a");
@@ -102,6 +110,14 @@
         link.textContent = uk;
         container.appendChild(link);
       });
+
+      if (kategori !== hovedkategori) {
+        const visAlle = document.createElement("a");
+        visAlle.href = `kategori-mal.html?kategori=${encodeURIComponent(hovedkategori)}`;
+        visAlle.className = "btn btn-link";
+        visAlle.textContent = `🔙 Vis alle i ${hovedkategori}`;
+        document.getElementById("vis-alle-knapp").appendChild(visAlle);
+      }
     }
   });
   </script>
