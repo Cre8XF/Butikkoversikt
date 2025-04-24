@@ -47,7 +47,7 @@
     "name": "Ark.no",
     "image": "assets/images/bøker/Ark.png",
     "alt": "Ark.no",
-    "category": ["Boker og underholdning"],
+    "category": ["Bøker og underholdning"],
     "subcategory": [],
     "url": "https://www.ark.no",
     "description": "Bestselgere, barnebøker, lydbøker og e-bøker.",
@@ -633,7 +633,7 @@
     "category": ["Sport og fritid"],
     "subcategory": [],
     "url": "https://www.sportsmaster.no",
-    "description": "Sportsmaster er en spesialforretning og leverer alt av treningsapparater direkte fra fabrikk uten fordyrende mellomledd. \n               Vi har et bredt og godt utvalg av treningsutstyr til hjemmetrening, bedrifter og treningssentre til svært gunstige priser.",
+    "description": "Sportsmaster er en spesialforretning og leverer alt av treningsapparater direkte fra fabrikk uten fordyrende mellomledd.",
     "topp25": false,
     "forside": false
   },
