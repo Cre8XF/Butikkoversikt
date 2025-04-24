@@ -1010,5 +1010,150 @@
     "description": "Briller, solbriller og linser med mote og funksjon.",
     "topp25": false,
     "forside": false
+  },
+  {
+    "name": "Zalando",
+    "image": "assets/images/klær og mote/Zalando.png",
+    "alt": "Zalando",
+    "category": ["Klær og mote"],
+    "subcategory": ["Tilbehør og sko"],
+    "url": "https://www.zalando.no/",
+    "description": "Zalando tilbyr moderne og tidløse klær for alle anledninger.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Komplett.no",
+    "image": "assets/images/elektronikk/Komplett.png",
+    "alt": "Komplett",
+    "category": ["Gaming & Gadgets"],
+    "subcategory": ["Gaming og elektronikk"],
+    "url": "https://www.komplett.no",
+    "description": "Gaming-PC, konsoller, tilbehør, skjerm, stoler, lyd, VR.",
+    "topp25": true,
+    "forside": false
+  },
+  {
+    "name": "Power.no",
+    "image": "assets/images/elektronikk/Power.png",
+    "alt": "Power",
+    "category": ["Gaming & Gadgets"],
+    "subcategory": ["Gaming og elektronikk"],
+    "url": "https://www.power.no",
+    "description": "Gaming-laptoper, skjermer, lydutstyr, konsoller.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Elkjøp",
+    "image": "assets/images/elektronikk/Elkjop.png",
+    "alt": "Elkjøp",
+    "category": ["Gaming & Gadgets"],
+    "subcategory": ["Gaming og elektronikk"],
+    "url": "https://www.elkjop.no",
+    "description": "Alt innen gaming, TV, konsoll, PC og utstyr.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "NetOnNet",
+    "image": "assets/images/elektronikk/NetOnNet.png",
+    "alt": "NetOnNet",
+    "category": ["Gaming & Gadgets"],
+    "subcategory": ["Gaming og elektronikk"],
+    "url": "https://www.netonnet.no",
+    "description": "Bra utvalg av gaming-utstyr og teknologiske gadgets.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Proshop",
+    "image": "assets/images/elektronikk/Proshop.png",
+    "alt": "Proshop",
+    "category": ["Gaming & Gadgets"],
+    "subcategory": ["Gaming og elektronikk"],
+    "url": "https://www.proshop.no",
+    "description": "Gaming-PC, skjermer, tastatur, mus, stoler.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Coolstuff",
+    "image": "assets/images/gadgets/Coolstuff.png",
+    "alt": "Coolstuff",
+    "category": ["Gaming & Gadgets"],
+    "subcategory": ["Gadgets og gaver"],
+    "url": "https://www.coolstuff.no",
+    "description": "Morsomme gadgets, spill, interiør til gamingrom, gaveideer.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Kjell & Company",
+    "image": "assets/images/gadgets/Kjell.png",
+    "alt": "Kjell & Company",
+    "category": ["Gaming & Gadgets"],
+    "subcategory": ["Gadgets og gaver"],
+    "url": "https://www.kjell.com/no",
+    "description": "Teknisk tilbehør, smarthus, PC-deler, DIY-kit.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Digital Impuls",
+    "image": "assets/images/gadgets/DigitalImpuls.png",
+    "alt": "Digital Impuls",
+    "category": ["Gaming & Gadgets"],
+    "subcategory": ["Gadgets og gaver"],
+    "url": "https://www.digitalimpuls.no",
+    "description": "Datadeler, gamingtilbehør, PC-bygging.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "MaxGaming",
+    "image": "assets/images/gadgets/MaxGaming.png",
+    "alt": "MaxGaming",
+    "category": ["Gaming & Gadgets"],
+    "subcategory": ["Gadgets og gaver"],
+    "url": "https://www.maxgaming.no",
+    "description": "Spesialisert på gaming: tastatur, stoler, lyd, esport-merch.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Platekompaniet",
+    "image": "assets/images/bøker og underholdning/Platekompaniet.png",
+    "alt": "Platekompaniet",
+    "category": ["Gaming & Gadgets"],
+    "subcategory": ["Spill og underholdning"],
+    "url": "https://www.platekompaniet.no",
+    "description": "Spill, film, musikk og merchandise til gamingrommet.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "CDON",
+    "image": "assets/images/bøker og underholdning/CDON.png",
+    "alt": "CDON",
+    "category": ["Gaming & Gadgets"],
+    "subcategory": ["Spill og underholdning"],
+    "url": "https://www.cdon.no",
+    "description": "Gaming, filmer, tilbehør, plattformer som PS, Xbox, Switch.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Gamezone",
+    "image": "assets/images/bøker og underholdning/Gamezone.png",
+    "alt": "Gamezone",
+    "category": ["Gaming & Gadgets"],
+    "subcategory": ["Spill og underholdning"],
+    "url": "https://www.gamezone.no",
+    "description": "Brettspill, rollespill, samlefigurer, Nintendo, Warhammer osv.",
+    "topp25": false,
+    "forside": false
   }
+]
+
 ]
