@@ -1,63 +1,49 @@
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
-  const kategori = params.get("kategori");
-
-  const tittelEl = document.getElementById("kategori-tittel");
+  const kategori = decodeURIComponent(params.get("kategori") || "").trim();
   const container = document.getElementById("kategori-container");
+  const tittel = document.getElementById("kategori-tittel");
 
-  if (!kategori) {
-    tittelEl.innerText = "Ingen kategori valgt.";
-    return;
-  }
+  if (!kategori || !container || !tittel) return;
 
-  tittelEl.innerText = kategori;
+  tittel.textContent = kategori;
 
   fetch("assets/data/butikker.json")
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Kunne ikke hente butikkdata");
-      }
-      return response.json();
-    })
-    .then(data => {
-      const filtrerte = data.filter(butikk => {
+    .then((res) => res.json())
+    .then((butikker) => {
+      const filtrerte = butikker.filter((butikk) => {
         const hovedkategori = Array.isArray(butikk.category)
-          ? butikk.category.includes(kategori)
-          : butikk.category === kategori;
+          ? butikk.category.map(k => k.toLowerCase().trim()).includes(kategori.toLowerCase().trim())
+          : butikk.category?.toLowerCase().trim() === kategori.toLowerCase().trim();
 
         const underkategori = Array.isArray(butikk.subcategory)
-          ? butikk.subcategory.includes(kategori)
-          : butikk.subcategory === kategori;
+          ? butikk.subcategory.map(k => k.toLowerCase().trim()).includes(kategori.toLowerCase().trim())
+          : butikk.subcategory?.toLowerCase().trim() === kategori.toLowerCase().trim();
 
         return hovedkategori || underkategori;
       });
 
       if (filtrerte.length === 0) {
-        container.innerHTML = `<p class="text-muted">Fant ingen butikker i kategori: ${kategori}</p>`;
+        container.innerHTML = `<p class="text-muted">Ingen butikker funnet i denne kategorien.</p>`;
         return;
       }
 
-      filtrerte.forEach(butikk => {
-        const card = document.createElement("div");
-        card.className = "col-6 col-md-3 text-center";
-
-        card.innerHTML = `
-          <div class="card store-card">
-            <a href="${butikk.url}" target="_blank" rel="noopener">
-              <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" class="img-fluid p-3" />
-            </a>
-            <div class="card-body">
-              <h6 class="card-title fw-bold">${butikk.name}</h6>
-              <p class="text-muted small">${butikk.description || ""}</p>
-              <a href="${butikk.url}" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener">Besøk butikk</a>
-            </div>
-          </div>
-        `;
-        container.appendChild(card);
-      });
+      container.innerHTML = filtrerte
+        .map(
+          (butikk) => `
+        <div class="col-6 col-md-3">
+          <a href="${butikk.url}" target="_blank" rel="noopener sponsored" class="text-decoration-none text-center d-block store-showcase">
+            <img src="${butikk.image}" alt="${butikk.alt}" class="card-logo mb-2">
+            <h6>${butikk.name}</h6>
+            <p class="small text-muted">${butikk.description}</p>
+          </a>
+        </div>
+      `
+        )
+        .join("");
     })
-    .catch(error => {
-      container.innerHTML = `<p class="text-danger">Klarte ikke å laste butikker.</p>`;
-      console.error("Feil ved lasting av butikker:", error);
+    .catch((err) => {
+      console.error("Feil ved lasting av butikker:", err);
+      container.innerHTML = `<p class="text-danger">Det oppstod en feil ved lasting av butikker.</p>`;
     });
 });
