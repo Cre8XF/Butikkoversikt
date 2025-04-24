@@ -26,11 +26,11 @@
   --hero-bg: #e9ecef;
 
   /* === FOOTER === */
-  --footer-bg: var(--bg-dark);         /* Mørk grå bakgrunn */
-  --footer-text: #f8f9fa;              /* Lys tekst */
-  --footer-heading: #ffffff;           /* Hvite overskrifter */
-  --footer-muted: #adb5bd;             /* Litt mørkere grå for mindre tekst */
-  --footer-border: #495057;            /* Tydelig avgrensning */
+   --footer-bg: #343a40;        /* Mørkere grå (tidligere #ced4da) */
+  --footer-text: #f8f9fa;      /* Lys tekst */
+  --footer-heading: #ffffff;   /* Hvit for overskrifter */
+  --footer-muted: #adb5bd;     /* Lys grå for mindre viktig tekst */
+  --footer-border: #495057;    /* Mørk grense for topplinje */
 }
 
 
