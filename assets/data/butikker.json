@@ -1156,127 +1156,125 @@
     "url": "https://www.gamezone.no",
     "description": "Brettspill, rollespill, samlefigurer, Nintendo, Warhammer osv."
   },
-  [
-    {
-      "name": "Boozt",
-      "image": "assets/images/klær og mote/Boozt.png",
-      "alt": "Boozt",
-      "category": "Klær og mote",
-      "subcategory": "Dameklær",
-      "url": "https://www.boozt.com/no/no",
-      "description": "Boozt tilbyr moderne og tidløse klær for dame, herre og barn.",
-      "topp25": true,
-      "forside": false
-    },
-    {
-      "name": "Bubbleroom.com",
-      "image": "assets/images/klær og mote/Bubbleroom.png",
-      "alt": "Bubbleroom",
-      "category": "Klær og mote",
-      "subcategory": "Dameklær",
-      "url": "https://www.bubbleroom.com/no",
-      "description": "Kjoler og festklær til dame.",
-      "topp25": false,
-      "forside": false
-    },
-    {
-      "name": "H&M",
-      "image": "assets/images/klær og mote/HM.png",
-      "alt": "H&M",
-      "category": "Klær og mote",
-      "subcategory": "Dameklær",
-      "url": "https://www2.hm.com/nb_no/index.html",
-      "description": "H&M tilbyr moderne og tidløse klær for alle aldre.",
-      "topp25": false,
-      "forside": false
-    },
-    {
-      "name": "Lindex.no",
-      "image": "assets/images/klær og mote/Lindex.png",
-      "alt": "Lindex",
-      "category": "Klær og mote",
-      "subcategory": "Dameklær",
-      "url": "https://www.lindex.com/no",
-      "description": "Lindex tilbyr dameklær og undertøy med bærekraft i fokus.",
-      "topp25": false,
-      "forside": false
-    },
-    {
-      "name": "Nelly.com",
-      "image": "assets/images/klær og mote/Nelly.png",
-      "alt": "Nelly",
-      "category": "Klær og mote",
-      "subcategory": "Dameklær",
-      "url": "https://nelly.com/no",
-      "description": "Trendy mote for unge kvinner – kjoler, tilbehør og sko.",
-      "topp25": false,
-      "forside": false
-    },
-    {
-      "name": "Bogartstore.no",
-      "image": "assets/images/klær og mote/Bogartstore.png",
-      "alt": "Bogartstore",
-      "category": "Klær og mote",
-      "subcategory": "Herreklær",
-      "url": "https://www.bogartstore.no/",
-      "description": "Klassisk og moderne herremote.",
-      "topp25": false,
-      "forside": false
-    },
-    {
-      "name": "JackAndJones.com",
-      "image": "assets/images/klær og mote/JackJones.png",
-      "alt": "Jack & Jones",
-      "category": "Klær og mote",
-      "subcategory": "Herreklær",
-      "url": "https://www.jackjones.com/",
-      "description": "Casual og trendy klær til herre, fra jeans til dress.",
-      "topp25": false,
-      "forside": false
-    },
-    {
-      "name": "Volt.no",
-      "image": "assets/images/klær og mote/Volt.png",
-      "alt": "Volt",
-      "category": "Klær og mote",
-      "subcategory": "Herreklær",
-      "url": "https://voltfashion.com/no",
-      "description": "Stilfulle klær for menn – dresser, skjorter og tilbehør.",
-      "topp25": false,
-      "forside": false
-    },
-    {
-      "name": "Glitter.no",
-      "image": "assets/images/klær og mote/Glitter.png",
-      "alt": "Glitter",
-      "category": "Klær og mote",
-      "subcategory": "Tilbehør og sko",
-      "url": "https://www.glitter.no/",
-      "description": "Smykker, hårpynt og tilbehør for enhver stil.",
-      "topp25": false,
-      "forside": false
-    },
-    {
-      "name": "Morris.se",
-      "image": "assets/images/klær og mote/Morris.png",
-      "alt": "Morris",
-      "category": "Klær og mote",
-      "subcategory": "Tilbehør og sko",
-      "url": "https://www.morris.no/",
-      "description": "Vesker, lommebøker og stilige sko for dame og herre.",
-      "topp25": false,
-      "forside": false
-    },
-    {
-      "name": "Specsavers.no",
-      "image": "assets/images/klær og mote/Specsavers.png",
-      "alt": "Specsavers",
-      "category": "Klær og mote",
-      "subcategory": "Tilbehør og sko",
-      "url": "https://www.specsavers.no/",
-      "description": "Briller, solbriller og linser med mote og funksjon.",
-      "topp25": false,
-      "forside": false
-    }
-  ]
+  {
+    "name": "Boozt",
+    "image": "assets/images/klær og mote/Boozt.png",
+    "alt": "Boozt",
+    "category": "Klær og mote",
+    "subcategory": "Dameklær",
+    "url": "https://www.boozt.com/no/no",
+    "description": "Boozt tilbyr moderne og tidløse klær for dame, herre og barn.",
+    "topp25": true,
+    "forside": false
+  },
+  {
+    "name": "Bubbleroom.com",
+    "image": "assets/images/klær og mote/Bubbleroom.png",
+    "alt": "Bubbleroom",
+    "category": "Klær og mote",
+    "subcategory": "Dameklær",
+    "url": "https://www.bubbleroom.com/no",
+    "description": "Kjoler og festklær til dame.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "H&M",
+    "image": "assets/images/klær og mote/HM.png",
+    "alt": "H&M",
+    "category": "Klær og mote",
+    "subcategory": "Dameklær",
+    "url": "https://www2.hm.com/nb_no/index.html",
+    "description": "H&M tilbyr moderne og tidløse klær for alle aldre.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Lindex.no",
+    "image": "assets/images/klær og mote/Lindex.png",
+    "alt": "Lindex",
+    "category": "Klær og mote",
+    "subcategory": "Dameklær",
+    "url": "https://www.lindex.com/no",
+    "description": "Lindex tilbyr dameklær og undertøy med bærekraft i fokus.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Nelly.com",
+    "image": "assets/images/klær og mote/Nelly.png",
+    "alt": "Nelly",
+    "category": "Klær og mote",
+    "subcategory": "Dameklær",
+    "url": "https://nelly.com/no",
+    "description": "Trendy mote for unge kvinner – kjoler, tilbehør og sko.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Bogartstore.no",
+    "image": "assets/images/klær og mote/Bogartstore.png",
+    "alt": "Bogartstore",
+    "category": "Klær og mote",
+    "subcategory": "Herreklær",
+    "url": "https://www.bogartstore.no/",
+    "description": "Klassisk og moderne herremote.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "JackAndJones.com",
+    "image": "assets/images/klær og mote/JackJones.png",
+    "alt": "Jack & Jones",
+    "category": "Klær og mote",
+    "subcategory": "Herreklær",
+    "url": "https://www.jackjones.com/",
+    "description": "Casual og trendy klær til herre, fra jeans til dress.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Volt.no",
+    "image": "assets/images/klær og mote/Volt.png",
+    "alt": "Volt",
+    "category": "Klær og mote",
+    "subcategory": "Herreklær",
+    "url": "https://voltfashion.com/no",
+    "description": "Stilfulle klær for menn – dresser, skjorter og tilbehør.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Glitter.no",
+    "image": "assets/images/klær og mote/Glitter.png",
+    "alt": "Glitter",
+    "category": "Klær og mote",
+    "subcategory": "Tilbehør og sko",
+    "url": "https://www.glitter.no/",
+    "description": "Smykker, hårpynt og tilbehør for enhver stil.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Morris.se",
+    "image": "assets/images/klær og mote/Morris.png",
+    "alt": "Morris",
+    "category": "Klær og mote",
+    "subcategory": "Tilbehør og sko",
+    "url": "https://www.morris.no/",
+    "description": "Vesker, lommebøker og stilige sko for dame og herre.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Specsavers.no",
+    "image": "assets/images/klær og mote/Specsavers.png",
+    "alt": "Specsavers",
+    "category": "Klær og mote",
+    "subcategory": "Tilbehør og sko",
+    "url": "https://www.specsavers.no/",
+    "description": "Briller, solbriller og linser med mote og funksjon.",
+    "topp25": false,
+    "forside": false
+  }
 ]
