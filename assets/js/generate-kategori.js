@@ -1,80 +1,70 @@
+
 document.addEventListener("DOMContentLoaded", () => {
+  const kategoriContainer = document.getElementById("kategori-container");
+  const tittelElement = document.getElementById("kategori-tittel");
   const urlParams = new URLSearchParams(window.location.search);
-  const valgtKategori = urlParams.get("kategori");
-  const tittelEl = document.getElementById("kategori-tittel");
-  const container = document.getElementById("kategori-container");
+  const kategori = urlParams.get("kategori");
 
-  // Underkategori-definisjon
-  const underkategoriMap = {
-    "Klær og mote": ["Dameklær", "Herreklær", "Tilbehør og sko"]
-  };
-
-  // Sett tittel
-  if (!valgtKategori) {
-    tittelEl.innerText = "Ingen kategori valgt.";
+  if (!kategori) {
+    tittelElement.innerText = "Ingen kategori valgt.";
     return;
   }
 
-  // Hent butikkdata
-  fetch("assets/data/butikker.json")
-    .then(res => res.json())
-    .then(data => {
-      const filtrert = data.filter(butikk => {
-        const hovedkat = Array.isArray(butikk.category)
-          ? butikk.category.map(k => k.toLowerCase())
-          : [butikk.category?.toLowerCase()];
-
-        const underkat = Array.isArray(butikk.subcategory)
-          ? butikk.subcategory.map(k => k.toLowerCase())
-          : [butikk.subcategory?.toLowerCase()];
-
-        return hovedkat.includes(valgtKategori.toLowerCase()) ||
-               underkat.includes(valgtKategori.toLowerCase());
+  fetch("butikker.json")
+    .then((response) => response.json())
+    .then((butikker) => {
+      const filtrerte = butikker.filter((butikk) => {
+        const kategorier = Array.isArray(butikk.category)
+          ? butikk.category
+          : [butikk.category];
+        return kategorier.includes(kategori);
       });
 
-      // Sett riktig tittel
-      tittelEl.innerText = valgtKategori;
+      // Vis tittel
+      tittelElement.innerText = kategori;
 
-      // Hvis underkategorier finnes
-      if (underkategoriMap[valgtKategori]) {
-        const underkatDiv = document.createElement("div");
-        underkatDiv.className = "text-center mb-4";
-        underkatDiv.innerHTML = `
-          <h6>Underkategorier</h6>
-          <div class="d-flex justify-content-center flex-wrap gap-2 mt-2">
-            ${underkategoriMap[valgtKategori]
-              .map(
-                navn =>
-                  `<a href="kategori-mal.html?kategori=${encodeURIComponent(navn)}" class="btn btn-outline-primary btn-sm">${navn}</a>`
-              )
-              .join("")}
-          </div>
-        `;
-        container.before(underkatDiv);
+      // Vis underkategori-knapper hvis vi er på hovedkategori-nivå
+      const underkategoriMap = {
+        "Klær og mote": ["Dameklær", "Herreklær", "Tilbehør og sko"],
+        "Elektronikk": ["Gaming og elektronikk"],
+        "Bøker og underholdning": ["Spill og underholdning"]
+      };
+
+      if (underkategoriMap[kategori]) {
+        const underkategoriDiv = document.createElement("div");
+        underkategoriDiv.className = "d-flex justify-content-center gap-3 mb-4";
+        underkategoriMap[kategori].forEach((under) => {
+          const link = document.createElement("a");
+          link.href = `kategori-mal.html?kategori=${encodeURIComponent(under)}`;
+          link.className = "btn btn-primary";
+          link.innerText = under;
+          underkategoriDiv.appendChild(link);
+        });
+        tittelElement.parentNode.insertBefore(underkategoriDiv, tittelElement.nextSibling);
       }
 
-      if (filtrert.length === 0) {
-        container.innerHTML = `<p>Fant ingen butikker i kategori: <strong>${valgtKategori}</strong></p>`;
+      if (filtrerte.length === 0) {
+        kategoriContainer.innerHTML =
+          '<div class="col-12 text-center"><p class="text-muted">Fant ingen butikker i denne kategorien.</p></div>';
         return;
       }
 
-      filtrert.forEach(butikk => {
-        const imageUrl = butikk.image && butikk.image.trim() !== "" 
-          ? butikk.image 
-          : "/assets/images/logo-mangler.png";
+      kategoriContainer.innerHTML = "";
 
-        const card = document.createElement("div");
-        card.className = "col-6 col-md-3 text-center";
-        card.innerHTML = `
-          <a href="${butikk.url}" target="_blank" rel="noopener sponsored" class="text-decoration-none text-dark">
-            <div class="card store-card">
-              <img src="${imageUrl}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-2" loading="lazy" />
-              <h6>${butikk.name}</h6>
-              ${butikk.description ? `<p class="small text-muted">${butikk.description}</p>` : ""}
+      filtrerte.forEach((butikk) => {
+        const col = document.createElement("div");
+        col.className = "col-6 col-md-4 col-lg-3";
+        col.innerHTML = `
+          <div class="card category-card h-100 text-center">
+            <img src="${butikk.image}" class="card-img-top mx-auto mt-3 p-3" alt="${butikk.alt}" style="max-height: 100px; object-fit: contain;">
+            <div class="card-body">
+              <h6 class="card-title fw-bold">${butikk.name}</h6>
+              <p class="card-text small text-muted">${butikk.description}</p>
+              <a href="${butikk.url}" target="_blank" rel="noopener sponsored" class="btn btn-outline-primary btn-sm">Besøk butikk</a>
             </div>
-          </a>
+          </div>
         `;
-        container.appendChild(card);
+        kategoriContainer.appendChild(col);
       });
     });
 });
