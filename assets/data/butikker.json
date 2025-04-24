@@ -45,7 +45,7 @@
   },
   {
     "name": "Ark.no",
-    "image": "assets/images/bøker/Ark.png",
+    "image": "assets/images/bøker-og-underholdning/Ark.png",
     "alt": "Ark.no",
     "category": ["Bøker og underholdning"],
     "subcategory": [],
@@ -122,7 +122,7 @@
   },
   {
     "name": "Blivakker.no",
-    "image": "assets/images/helse/Blivakker.png",
+    "image": "assets/images/helse og skjønnhet/Blivakker.png",
     "alt": "Blivakker",
     "category": ["Helse og egenpleie"],
     "subcategory": [],
@@ -430,7 +430,7 @@
   },
   {
     "name": "Life.no",
-    "image": "assets/images/helse/Life.png",
+    "image": "assets/images/helse og skjønnhet/life.png",
     "alt": "Life",
     "category": ["Helse og egenpleie"],
     "subcategory": [],
@@ -447,17 +447,6 @@
     "subcategory": [],
     "url": "https://www.lindex.no",
     "description": "Klær og undertøy til dame og barn.",
-    "topp25": false,
-    "forside": false
-  },
-  {
-    "name": "Livsstil.no",
-    "image": "assets/images/helse/Livsstil.png",
-    "alt": "Livsstil.no",
-    "category": ["Helse og egenpleie"],
-    "subcategory": [],
-    "url": "https://www.livsstil.no",
-    "description": "Naturlige helseprodukter og sunn livsstil.",
     "topp25": false,
     "forside": false
   },
@@ -639,7 +628,7 @@
   },
   {
     "name": "Sunkost.no",
-    "image": "assets/images/helse/Sunkost.png",
+    "image": "assets/images/helse og skjønnhet/sunkost.png",
     "alt": "Sunkost",
     "category": ["Helse og egenpleie"],
     "subcategory": [],
