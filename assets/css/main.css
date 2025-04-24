@@ -1,36 +1,38 @@
 /* ========== ROOT & GRUNNSTIL ========== */
 
 :root {
-  /* --- Grunnleggende Bakgrunner (justert mørkere) --- */
-  --bg-color: #e9ecef;       /* Litt mørkere grå base (denne var --bg-dark i forrige) */
-  --section-bg: var(--bg-color);    /* Veldig lys grå for seksjoner (denne var --bg-color i forrige) */
-  --card-bg: var(--bg-color);       /* Samme for kort, fortsatt lysere enn --bg-color */
-  --bg-dark: #ced4da;       /* En tydeligere mørk grå for header/footer. Alternativt: #adb5bd for enda mer dybde */
+  /* === BAKGRUNNER === */
+  --bg-color: #f5f7f9;              /* Lys, ren grå som hovedbakgrunn */
+  --section-bg: #ffffff;            /* Hvit for tydelig kontrast i seksjoner */
+  --section-alt-bg: #f0f2f5;        /* Alternativ lys grå for annenhver seksjon */
+  --card-bg: #ffffff;               /* Hvit for kort */
+  --bg-dark: #343a40;               /* Dyp grå for footer og evt. header */
 
-  /* --- Tekstfarger (forblir de samme for kontrast) --- */
-  --text-color: #212529;     /* Mørk gråsvart */
-  --text-muted: var(--text-muted);     /* Mellomgrå */
+  /* === TEKSTFARGER === */
+  --text-color: #212529;            /* Standard mørk grå for brødtekst */
+  --text-muted: #6c757d;            /* Lys grå for sekundær tekst */
 
-  /* --- Kort og Interaksjon (justert til nye bakgrunner) --- */
-  --card-border: #ced4da;   /* Litt mørkere kantlinje som matcher --bg-dark eller er tydelig mot --bg-color */
-  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.07); /* Litt mørkere skygge kan vurderes */
-  --card-hover: #dee2e6;     /* Hover-effekt som er litt mørkere enn kortbakgrunnen */
+  /* === KORT OG EFFEKTER === */
+  --card-border: #dee2e6;
+  --card-hover: #f8f9fa;
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 
-  /* --- Knapper og Aksenter (forblir de samme) --- */
-  --btn-primary: #0d6efd;    /* Behold blåfargen for gjenkjennelighet */
-  --btn-hover: #0b5ed7;      /* Mørkere blå ved hover */
-  --link-color: #0d6efd;     /* Blå for lenker */
+  /* === KNAPPER OG LENKER === */
+  --btn-primary: #0d6efd;
+  --btn-hover: #0b5ed7;
+  --link-color: var(--btn-primary);
 
-  /* --- Hero Seksjon (Valgfritt) --- */
-  --hero-bg: var(--bg-dark); /* Bruk den oppdaterte mørkere grå, eller en annen passende farge/gradient */
+  /* === HERO OG EFFEKTFELT === */
+  --hero-bg: #e9ecef;
 
-  /* --- Footer --- */
-  --footer-bg: #ced4da; /* Samme som --bg-dark for konsistens */
-  --footer-text: #f1f1f1; /* Lysere tekstfarge for kontrast */
-  --footer-heading: var(--card-bg)fff; /* Hvit for overskrifter */
-  --footer-muted: var(--border-color)ccc; /* Lys grå for mindre viktig tekst */
-  --footer-border: #2e2e2e; /* Mørkere grå for skillelinjer */
+  /* === FOOTER === */
+  --footer-bg: var(--bg-dark);         /* Mørk grå bakgrunn */
+  --footer-text: #f8f9fa;              /* Lys tekst */
+  --footer-heading: #ffffff;           /* Hvite overskrifter */
+  --footer-muted: #adb5bd;             /* Litt mørkere grå for mindre tekst */
+  --footer-border: #495057;            /* Tydelig avgrensning */
 }
+
 
 /* === ROOT-FARGER === 
 :root {
