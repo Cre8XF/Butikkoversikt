@@ -74,6 +74,18 @@
   <script src="assets/js/generate-kategori.js" defer></script>
   <script src="assets/js/menu-toggle.js"></script>
 
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const kategori = new URLSearchParams(window.location.search).get("kategori");
+    const synligeUnderkategorier = ["Klær og mote", "Dameklær", "Herreklær", "Tilbehør og sko"];
+
+    if (kategori && synligeUnderkategorier.includes(kategori)) {
+      document.getElementById("underkategorier-wrapper").classList.remove("d-none");
+    }
+  });
+</script>
+
+
 
 </body>
 </html>
