@@ -1,36 +1,30 @@
 /* ========== ROOT & GRUNNSTIL ========== */
 
 :root {
-  /* === BAKGRUNNER === */
-  --bg-color: #f5f7f9;              /* Lys, ren grå som hovedbakgrunn */
-  --section-bg: #ffffff;            /* Hvit for tydelig kontrast i seksjoner */
-  --section-alt-bg: #f0f2f5;        /* Alternativ lys grå for annenhver seksjon */
-  --card-bg: #ffffff;               /* Hvit for kort */
-  --bg-dark: #343a40;               /* Dyp grå for footer og evt. header */
+  --bg-color: #f8f9fa;          /* Lys base for forsider og helhetlig bakgrunn */
+  --section-bg: #ffffff;        /* Lys seksjonsbakgrunn */
+  --section-alt-bg: #f1f3f5;    /* Alternativ grålig bakgrunn for annenhver seksjon */
 
-  /* === TEKSTFARGER === */
-  --text-color: #212529;            /* Standard mørk grå for brødtekst */
-  --text-muted: #6c757d;            /* Lys grå for sekundær tekst */
-
-  /* === KORT OG EFFEKTER === */
+  --card-bg: #ffffff;
+  --card-hover: #e9ecef;
   --card-border: #dee2e6;
-  --card-hover: #f8f9fa;
-  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 
-  /* === KNAPPER OG LENKER === */
+  --text-color: #212529;
+  --text-muted: #6c757d;
+
   --btn-primary: #0d6efd;
   --btn-hover: #0b5ed7;
   --link-color: var(--btn-primary);
 
-  /* === HERO OG EFFEKTFELT === */
-  --hero-bg: #e9ecef;
+  --hero-bg: #e0e0e0;
 
-  /* === FOOTER === */
-   --footer-bg: #343a40;        /* Mørkere grå (tidligere #ced4da) */
-  --footer-text: #f8f9fa;      /* Lys tekst */
-  --footer-heading: #ffffff;   /* Hvit for overskrifter */
-  --footer-muted: #adb5bd;     /* Lys grå for mindre viktig tekst */
-  --footer-border: #495057;    /* Mørk grense for topplinje */
+  --footer-bg: #343a40;
+  --footer-text: #f8f9fa;
+  --footer-heading: #ffffff;
+  --footer-muted: #adb5bd;
+  --footer-border: #495057;
+
 }
 
 
