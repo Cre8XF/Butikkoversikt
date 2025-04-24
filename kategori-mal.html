@@ -74,15 +74,6 @@
   <script src="assets/js/generate-kategori.js" defer></script>
   <script src="assets/js/menu-toggle.js"></script>
 
-  <!-- Dynamisk visning av underkategorier -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const kategori = new URLSearchParams(window.location.search).get("kategori");
-      if (kategori && kategori.toLowerCase() === "klær og mote") {
-        document.getElementById("underkategorier-wrapper").classList.remove("d-none");
-      }
-    });
-  </script>
 
 </body>
 </html>
