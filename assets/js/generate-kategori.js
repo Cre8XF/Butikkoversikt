@@ -8,6 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   tittel.textContent = kategori;
 
+  // Vis underkategori-knapper for "Klær og mote"
+  if (kategori === "Klær og mote") {
+    const underkatWrapper = document.getElementById("underkategorier-wrapper");
+    if (underkatWrapper) {
+      underkatWrapper.classList.remove("d-none");
+    }
+  }
+
   fetch("assets/data/butikker.json")
     .then((res) => res.json())
     .then((butikker) => {
