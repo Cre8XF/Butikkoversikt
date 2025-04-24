@@ -1845,7 +1845,6 @@
     "affiliate": false,
     "ny": true
   },
-  [
   {
     "name": "Apotek1.no",
     "url": "https://www.apotek1.no/",
@@ -1945,5 +1944,5 @@
     "affiliate": false,
     "ny": true
   }
-]
+
 ]
