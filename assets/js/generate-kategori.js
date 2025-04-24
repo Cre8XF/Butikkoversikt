@@ -1,75 +1,74 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const kategori = urlParams.get("kategori");
-  const tittelEl = document.getElementById("kategori-tittel");
-  const container = document.getElementById("kategori-container");
-  const underkategoriEl = document.getElementById("underkategori-valg");
+fetch('butikker.json')
+  .then(response => response.json())
+  .then(data => {
+    const params = new URLSearchParams(window.location.search);
+    const kategori = params.get('kategori');
+    const tittelEl = document.getElementById('kategoriTittel');
+    const containerEl = document.getElementById('butikkContainer');
+    const underkategoriEl = document.getElementById('underkategorier');
 
-  if (!kategori) {
-    tittelEl.innerText = "Ingen kategori valgt.";
-    return;
-  }
+    if (!kategori || !tittelEl || !containerEl || !underkategoriEl) {
+      console.warn("Mangler element eller kategori");
+      return;
+    }
 
-  fetch("assets/data/butikker.json")
-    .then(res => res.json())
-    .then(butikker => {
-      // Filtrering for både kategori og underkategori
-      const filtrerte = butikker.filter(butikk => {
-        const iKategori = Array.isArray(butikk.category)
-          ? butikk.category.includes(kategori)
-          : butikk.category === kategori;
+    tittelEl.innerText = kategori;
 
-        const iUnderkategori = Array.isArray(butikk.subcategory)
-          ? butikk.subcategory.includes(kategori)
-          : butikk.subcategory === kategori;
+    // Sett opp underkategorier kun for "Klær og mote"
+    if (kategori === "Klær og mote") {
+      const underkategorier = ["Dameklær", "Herreklær", "Tilbehør og sko"];
+      underkategoriEl.innerHTML = `
+        <div class="d-flex flex-wrap justify-content-center mb-4">
+          ${underkategorier
+            .map(
+              navn => `
+              <a href="kategori-mal.html?kategori=${encodeURIComponent(navn)}" 
+                 class="btn btn-primary m-1">${navn}</a>
+            `
+            )
+            .join("")}
+        </div>
+      `;
+    } else {
+      underkategoriEl.innerHTML = "";
+    }
 
-        return iKategori || iUnderkategori;
-      });
-
-      if (filtrerte.length === 0) {
-        tittelEl.innerText = `Fant ingen butikker i kategori: ${kategori}`;
-        return;
-      }
-
-      // Sett tittel
-      tittelEl.innerText = kategori.charAt(0).toUpperCase() + kategori.slice(1);
-
-      // Lag knapper for underkategorier (dersom aktuelt)
-      const underkategorier = [
-        "Dameklær",
-        "Herreklær",
-        "Tilbehør og sko"
-      ];
-
-      if (kategori === "Klær og mote") {
-        underkategoriEl.innerHTML = `
-          <div class="d-flex flex-wrap justify-content-center mb-4">
-            ${underkategorier.map(navn => `
-              <a href="kategori-mal.html?kategori=${encodeURIComponent(navn)}" class="btn btn-outline-primary m-1">${navn}</a>
-            `).join("")}
-          </div>
-        `;
+    // Filtrer butikker
+    const filtrerte = data.filter(butikk => {
+      if (butikk.subcategory === kategori) return true;
+      if (Array.isArray(butikk.category)) {
+        return butikk.category.includes(kategori);
       } else {
-        underkategoriEl.innerHTML = "";
+        return butikk.category === kategori;
       }
-
-      filtrerte.forEach(butikk => {
-        const imageUrl = butikk.image && butikk.image.trim() !== ""
-          ? butikk.image
-          : "assets/images/logo-mangler.png";
-
-        const card = document.createElement("div");
-        card.className = "col-6 col-md-3 text-center";
-        card.innerHTML = `
-          <a href="${butikk.url}" target="_blank" rel="noopener sponsored" class="text-decoration-none text-dark">
-            <div class="card store-card">
-              <img src="${imageUrl}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-2" loading="lazy" />
-              <h6>${butikk.name}</h6>
-              ${butikk.description ? `<p class="small text-muted">${butikk.description}</p>` : ""}
-            </div>
-          </a>
-        `;
-        container.appendChild(card);
-      });
     });
-});
+
+    // Render butikker
+    if (filtrerte.length === 0) {
+      containerEl.innerHTML = `<p class="text-center text-muted">Fant ingen butikker i kategori: ${kategori}</p>`;
+    } else {
+      containerEl.innerHTML = filtrerte
+        .map(
+          butikk => `
+        <div class="col-6 col-md-3 mb-4">
+          <div class="card store-card text-center h-100">
+            <a href="${butikk.url}" target="_blank" rel="noopener sponsored" class="text-decoration-none p-3 d-block">
+              <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" class="card-logo mb-2" />
+              <h6 class="mb-1">${butikk.name}</h6>
+              <p class="small text-muted">${butikk.description}</p>
+              <span class="btn btn-outline-primary btn-sm mt-auto">Besøk butikk</span>
+            </a>
+          </div>
+        </div>
+      `
+        )
+        .join("");
+    }
+  })
+  .catch(error => {
+    console.error("Feil ved lasting av butikker:", error);
+    const el = document.getElementById('butikkContainer');
+    if (el) {
+      el.innerHTML = `<p class="text-danger text-center">Klarte ikke å laste butikker.</p>`;
+    }
+  });
