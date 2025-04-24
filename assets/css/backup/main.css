@@ -3,13 +3,13 @@
 :root {
   /* --- Grunnleggende Bakgrunner (justert mørkere) --- */
   --bg-color: #e9ecef;       /* Litt mørkere grå base (denne var --bg-dark i forrige) */
-  --section-bg: var(--bg-color);    /* Veldig lys grå for seksjoner (denne var --bg-color i forrige) */
-  --card-bg: var(--bg-color);       /* Samme for kort, fortsatt lysere enn --bg-color */
+  --section-bg: #f8f9fa;    /* Veldig lys grå for seksjoner (denne var --bg-color i forrige) */
+  --card-bg: #f8f9fa;       /* Samme for kort, fortsatt lysere enn --bg-color */
   --bg-dark: #ced4da;       /* En tydeligere mørk grå for header/footer. Alternativt: #adb5bd for enda mer dybde */
 
   /* --- Tekstfarger (forblir de samme for kontrast) --- */
   --text-color: #212529;     /* Mørk gråsvart */
-  --text-muted: var(--text-muted);     /* Mellomgrå */
+  --text-muted: #6c757d;     /* Mellomgrå */
 
   /* --- Kort og Interaksjon (justert til nye bakgrunner) --- */
   --card-border: #ced4da;   /* Litt mørkere kantlinje som matcher --bg-dark eller er tydelig mot --bg-color */
@@ -27,26 +27,26 @@
   /* --- Footer --- */
   --footer-bg: #ced4da; /* Samme som --bg-dark for konsistens */
   --footer-text: #f1f1f1; /* Lysere tekstfarge for kontrast */
-  --footer-heading: var(--card-bg)fff; /* Hvit for overskrifter */
-  --footer-muted: var(--border-color)ccc; /* Lys grå for mindre viktig tekst */
+  --footer-heading: #ffffff; /* Hvit for overskrifter */
+  --footer-muted: #cccccc; /* Lys grå for mindre viktig tekst */
   --footer-border: #2e2e2e; /* Mørkere grå for skillelinjer */
 }
 
 /* === ROOT-FARGER === 
 :root {
-  --primary: var(--primary);
-  --primary-hover: var(--primary-hover);
-  --secondary: var(--secondary);
+  --primary: #004c99;
+  --primary-hover: #003366;
+  --secondary: #e6f3fb;
   --text-color: #212529;
-  --text-muted: var(--text-muted);
-  --btn-primary: var(--btn-primary);
-  --btn-hover: var(--btn-hover);
-  --bg-color: var(--bg-color);
-  --section-bg: var(--card-bg)fff;
-  --card-bg: var(--card-bg)fff;
-  --card-hover: var(--card-hover);
-  --border-color: var(--border-color);
-  --danger: var(--danger);
+  --text-muted: #6c757d;
+  --btn-primary: #007bff;
+  --btn-hover: #0056b3;
+  --bg-color: #f8f9fa;
+  --section-bg: #ffffff;
+  --card-bg: #ffffff;
+  --card-hover: #f0f0f0;
+  --border-color: #ddd;
+  --danger: #dc3545;
 } */
 
 
@@ -131,8 +131,8 @@ img {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  border: 1px solid var(--border-color);
-  background-color: var(--section-bg);
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -164,7 +164,7 @@ img {
 .item:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  background-color: var(--card-hover);
+  background-color: #f0f0f0;
 }
 
 /* Consistent Image Sizes */
@@ -178,7 +178,7 @@ img {
 
 /* Accessibility */
 .item:focus {
-  outline: 2px solid var(--btn-primary);
+  outline: 2px solid #007bff;
   outline-offset: 4px;
 }
 
@@ -226,13 +226,13 @@ img {
 
 .list-item p {
   font-size: 14px;
-  color: var(--text-muted);
+  color: #666;
 }
 
 .text-box {
   flex: 1;
   padding: 10px;
-  background-color: var(--section-bg);
+  background-color: #f9f9f9;
   /* Bakgrunnsfarge for tekstboksen */
   border-radius: 5px;
   /* Avrundede hjørner for tekstboksen */
@@ -246,7 +246,7 @@ img {
 
 .text-box p {
   font-size: 14px;
-  color: var(--text-muted);
+  color: #666;
 }
 
 .float-right {
@@ -267,9 +267,9 @@ img {
 }
 
 .grid-item {
-  background-color: var(--card-bg)fff00;
+  background-color: #ffffff00;
   padding: 10px;
-  border: 1px solid var(--border-color);
+  border: 1px solid #ddd;
   border-radius: 25px;
   text-align: center;
 }
@@ -287,7 +287,7 @@ img {
 
 .grid-item p {
   font-size: 14px;
-  color: var(--text-muted);
+  color: #666;
 }
 
 /* === Manuelle forbedringer === */
@@ -307,7 +307,7 @@ a:hover {
 /* Knapper */
 .btn {
   background-color: #0077cc;
-  color: var(--card-bg);
+  color: #fff;
   border: none;
   font-size: 1rem;
   padding: 0.6rem 1.5rem;
@@ -325,12 +325,12 @@ a:hover {
 /* Produktbeskrivelser */
 .down-content span,
 .down-content p {
-  color: var(--text-color) !important;
+  color: #444 !important;
 }
 
 /* Info under seksjonstitler */
 .section h2 + p {
-  color: var(--text-muted);
+  color: #666;
   font-weight: 400;
 }
 
@@ -349,14 +349,14 @@ a:hover {
 
 /* Undertekst under hver seksjonstittel */
 .section h2 + p {
-  color: var(--text-muted) !important;
+  color: #666 !important;
   font-weight: 400;
 }
 
 /* === Produktkort design === */
 
 .item {
-  border: 1px solid var(--border-color);
+  border: 1px solid #ddd;
   padding: 20px;
   background-color: #fafafa;
   text-align: center;
@@ -370,12 +370,12 @@ a:hover {
 
 .item .down-content {
   font-size: 15px;
-  color: var(--text-color);
+  color: #444;
   margin-top: 10px;
 }
 
 .card {
-  border: 1px solid var(--border-color);
+  border: 1px solid #ddd;
   padding: 20px;
   text-align: center;
   transition: box-shadow 0.3s, transform 0.2s, border-color 0.2s;
@@ -386,19 +386,19 @@ a:hover {
 .card:hover {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
-  border-color: var(--btn-primary);
+  border-color: #007bff;
   cursor: pointer;
 }
 
 .card p {
-  color: var(--text-color);
+  color: #555;
   font-size: 0.95rem;
   white-space: normal;
   /* Viktig: tillat linjebryting */
   word-break: normal;
   max-width: 100%;
   margin: 0 auto;
-  color: var(--text-color);
+  color: #444;
 }
 
 .card img {
@@ -450,7 +450,7 @@ a:hover {
 
 .hero p {
   font-size: 1.2rem;
-  color: var(--text-muted);
+  color: #666;
 }
 
 .section {
@@ -472,7 +472,7 @@ a:hover {
   justify-content: space-between;
   text-align: center;
   padding: 20px;
-  border: 1px solid var(--border-color);
+  border: 1px solid #ddd;
   transition: box-shadow 0.3s, transform 0.2s;
 }
 
@@ -485,7 +485,7 @@ a:hover {
   word-break: normal;
   max-width: 100%;
   margin: 0 auto;
-  color: var(--text-color);
+  color: #444;
 }
 
 .card img {
@@ -542,10 +542,10 @@ a:hover {
 }
 
 .category-card {
-  border: 1px solid var(--border-color);
+  border: 1px solid #ddd;
   border-radius: 8px;
   padding: 25px;
-  background-color: var(--card-bg);
+  background-color: #fff;
   box-shadow: 0 0 0 transparent;
   transition: 0.3s;
   text-align: center;
@@ -556,7 +556,7 @@ a:hover {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   transform: translateY(-3px);
   cursor: pointer;
-  border-color: var(--btn-primary);
+  border-color: #007bff;
 }
 
 .category-icon {
@@ -574,7 +574,7 @@ a:hover {
   border-radius: 12px;
   padding: 20px;
   display: block;
-  background-color: var(--card-bg);
+  background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -608,8 +608,8 @@ a:hover {
 }
 
 .filter-buttons .btn.active {
-  background-color: var(--btn-hover);
-  color: var(--card-bg);
+  background-color: #0056b3;
+  color: #fff;
   border: none;
 }
 
@@ -626,8 +626,8 @@ a:hover {
 
 /* === BUTIKKORT LAYOUT === */
 .filter-section .category-card {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 12px;
   padding: 20px;
   height: 100%;
@@ -657,7 +657,7 @@ a:hover {
 
 .filter-section .category-card p {
   font-size: 0.95rem;
-  color: var(--text-color);
+  color: #555;
   margin-bottom: 0;
 }
 
@@ -667,7 +667,7 @@ a:hover {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   padding: 0.8rem 1rem;
-  background-color: var(--card-bg);
+  background-color: #fff;
   border-bottom: 1px solid #eaeaea;
   z-index: 1000;
 }
@@ -680,7 +680,7 @@ a:hover {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
-  color: var(--btn-primary);
+  color: #007bff;
 }
 
 .navbar-toggler {
@@ -700,7 +700,7 @@ a:hover {
 }
 
 .fas.fa-search:hover {
-  color: var(--btn-primary);
+  color: #007bff;
 }
 
 .navbar .nav-link i {
@@ -710,7 +710,7 @@ a:hover {
 }
 
 .navbar .nav-link i:hover {
-  color: var(--btn-primary);
+  color: #007bff;
   /* Blåfarge ved hover */
 }
 
@@ -720,7 +720,7 @@ a:hover {
 }
 
 .navbar .nav-link i:active {
-  color: var(--btn-hover);
+  color: #0056b3;
   /* Mørkere blåfarge ved klikk */
 }
 
@@ -728,7 +728,7 @@ a:hover {
   display: none;
   background: #f1f1f1;
   padding: 15px 0;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #ddd;
 }
 
 .search-bar.show {
@@ -746,7 +746,7 @@ a:hover {
 }
 .desktop-navbar {
   background-color: var(--bg-dark);
-  color: var(--card-bg);
+  color: #fff;
   z-index: 1050;
 }
 
@@ -763,8 +763,8 @@ a:hover {
 }
 
 .desktop-navbar .dropdown-menu {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid #ccc;
   border-radius: 8px;
 }
 
@@ -783,7 +783,7 @@ a:hover {
 
 /* Justerer menyens visning på mobil */
 .navbar-collapse {
-  background-color: var(--card-bg);
+  background-color: #fff;
   padding: 1rem;
   z-index: 1000;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -804,7 +804,7 @@ a:hover {
   position: static !important;
   top: auto !important;
   bottom: auto !important;
-  background-color: var(--card-bg);
+  background-color: #fff;
   z-index: 999;
 }
 
@@ -832,8 +832,8 @@ a:hover {
 
 .category-tag {
   display: inline-block;
-  background-color: var(--btn-primary);
-  color: var(--card-bg);
+  background-color: #007bff;
+  color: #fff;
   font-size: 12px;
   padding: 4px 10px;
   border-radius: 20px;
@@ -849,14 +849,14 @@ a:hover {
   width: 100%;
   padding: 8px;
   font-size: 14px;
-  border: 1px solid var(--border-color);
+  border: 1px solid #ccc;
   border-radius: 6px;
   resize: none;
 }
 
 .comment-input button {
   margin-top: 8px;
-  background-color: var(--btn-primary);
+  background-color: #007bff;
   color: white;
   border: none;
   padding: 6px 14px;
@@ -865,14 +865,14 @@ a:hover {
 }
 
 .comment-input button:hover {
-  background-color: var(--btn-hover);
+  background-color: #0056b3;
 }
 
 .btn-rating {
   position: absolute;
   top: -10px;
   right: -10px;
-  background-color: var(--btn-primary);
+  background-color: #007bff;
   color: white;
   padding: 6px 10px;
   font-size: 12px;
@@ -881,8 +881,8 @@ a:hover {
 }
 /* ========== Navbar container ========== */
 .navbar {
-  background-color: var(--secondary); /* Lys blå bakgrunn */
-  border-bottom: 1px solid var(--border-color);
+  background-color: #e6f3fb; /* Lys blå bakgrunn */
+  border-bottom: 1px solid #ccc;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
@@ -894,7 +894,7 @@ a:hover {
 .navbar-brand {
   display: flex;
   align-items: center;
-  background-color: var(--card-bg);
+  background-color: #fff;
   padding: 10px 20px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -935,14 +935,14 @@ a:hover {
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--btn-primary, var(--btn-primary));
+  color: var(--btn-primary, #007bff);
   background-color: transparent;
 }
 
 /* ========== Dropdown-meny ========== */
 .dropdown-menu {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
+  background-color: #fff;
+  border: 1px solid #ccc;
   border-radius: 8px;
 }
 
@@ -953,7 +953,7 @@ a:hover {
 }
 
 .dropdown-item:hover {
-  color: var(--btn-primary, var(--btn-primary));
+  color: var(--btn-primary, #007bff);
   background-color: transparent;
 }
 
@@ -964,7 +964,7 @@ a:hover {
 /* =============================== */
 .ad-banner-top,
 .ad-banner-mid {
-  background-color: var(--section-bg);
+  background-color: #f9f9f9;
   padding: 10px 0;
 }
 
@@ -996,14 +996,14 @@ a:hover {
 .sticky-ad img {
   width: 100%;
   height: auto;
-  border: 1px solid var(--border-color);
+  border: 1px solid #ddd;
   border-radius: 8px;
 }
 #ad-slot img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  border: 1px solid var(--border-color);
+  border: 1px solid #ddd;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 #adContainer {
@@ -1039,7 +1039,7 @@ a:hover {
 }
 
 .filter-badge.active {
-  box-shadow: 0 0 0 2px var(--btn-primary) inset;
+  box-shadow: 0 0 0 2px #007bff inset;
 }
 
 /* 📢 guides */
@@ -1078,7 +1078,7 @@ section {
   left: -280px;
   width: 250px;
   max-height: 90vh; /* Stopper før hele høyden */
-  background: linear-gradient(180deg, var(--card-bg)fff 0%, #f1f3f5 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f1f3f5 100%);
   padding: 2rem 1.5rem;
   border-radius: 0 20px 20px 0;
   box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
@@ -1144,7 +1144,7 @@ section {
 }
 
 .anbefalt-card {
-  background-color: var(--card-bg)fff;
+  background-color: #ffffff;
   border-radius: 12px;
   border: 1px solid #e1e1e1;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
@@ -1166,7 +1166,7 @@ section {
   border: none;
   border-radius: 1rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  background: var(--card-bg);
+  background: #fff;
   padding: 1.5rem;
   height: 100%;
 }
@@ -1183,7 +1183,7 @@ section {
 
 .featured-store-card p {
   font-size: 0.95rem;
-  color: var(--text-color);
+  color: #555;
   margin-bottom: 1rem;
 }
 
@@ -1193,7 +1193,7 @@ section {
 }
 .anbefalt-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: var(--card-bg)fff;
+  background-color: #ffffff;
 }
 
 .anbefalt-card:hover {
@@ -1262,7 +1262,7 @@ h1, h2, h3, h4 {
 }
 
 p {
-  color: var(--text-color);
+  color: #555;
 }
 
 /* ========== ANBEFALTE BUTIKKER KORT ========== */
@@ -1271,10 +1271,10 @@ p {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  border: 1px solid var(--border-color);
+  border: 1px solid #ddd;
   border-radius: 12px;
   padding: 20px;
-  background-color: var(--card-bg);
+  background-color: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s;
 }
@@ -1293,7 +1293,7 @@ p {
   border-radius: 1rem;
   box-shadow: var(--card-shadow, 0 4px 14px rgba(0, 0, 0, 0.08));
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: var(--card-bg, var(--card-bg));
+  background-color: var(--card-bg, #fff);
 }
 
 .card.recommended-store:hover {
@@ -1351,7 +1351,7 @@ p {
 #toggleStoresBtn:hover {
   transform: translateY(-2px);
   background-color: #0d6efd;
-  color: var(--card-bg);
+  color: #fff;
 }
 
 /* ========== SEKSJONSOPPSETT ========== */
@@ -1406,7 +1406,7 @@ a:hover {
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-  background-color: var(--card-bg)fff;
+  background-color: #ffffff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -1431,7 +1431,7 @@ a:hover {
 
 .card.recommended-store p {
   font-size: 0.95rem;
-  color: var(--text-color);
+  color: #555;
 }
 
 /* Knapp-stil og toggle */
@@ -1444,7 +1444,7 @@ a:hover {
 #toggleStoresBtn:hover {
   transform: translateY(-2px);
   background-color: #0d6efd;
-  color: var(--card-bg);
+  color: #fff;
 }
 
 /* Sidebanner / sticky annonser */
@@ -1496,7 +1496,7 @@ a:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   overflow: hidden;
-  background-color: var(--card-bg);
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -1540,7 +1540,7 @@ a:hover {
   margin-top: 12px;
   align-self: center;
   background-color: var(--accent);
-  color: var(--card-bg);
+  color: #fff;
   border: none;
   padding: 0.5rem 1.25rem;
   border-radius: 8px;
@@ -1548,7 +1548,7 @@ a:hover {
 }
 
 .card.store-card .btn:hover {
-  background-color: var(--accent-hover, var(--primary));
+  background-color: var(--accent-hover, #004c99);
 }
 
 .store-showcase {
@@ -1562,7 +1562,7 @@ a:hover {
 .store-showcase:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   transform: translateY(-5px);
-  background-color: var(--bg-color);
+  background-color: #f8f9fa;
 }
 
 .store-showcase img {
@@ -1586,7 +1586,7 @@ a:hover {
 .store-showcase a {
   display: inline-block;
   padding: 0.5rem 1.2rem;
-  color: var(--primary-text, var(--primary)); /* Mørk blå tekst */
+  color: var(--primary-text, #004c99); /* Mørk blå tekst */
   background-color: transparent;
   border: 2px solid var(--primary);
   font-weight: 500;
@@ -1599,7 +1599,7 @@ a:hover {
 }
 
 .store-showcase a:hover {
-  background-color: var(--primary, var(--primary));
+  background-color: var(--primary, #004c99);
   color: white;
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(0, 76, 153, 0.3); /* Fancy blå skygge */
@@ -1660,7 +1660,7 @@ footer .btn {
 }
 
 footer .btn:hover {
-  background-color: var(--btn-primary-hover, var(--btn-hover));
+  background-color: var(--btn-primary-hover, #0056b3);
 }
 
 
@@ -1764,7 +1764,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-white {
-  background-color: var(--card-bg) !important;
+  background-color: #fff !important;
 }
 
 .shadow-sm {
