@@ -65,6 +65,13 @@ header.bg-header {
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
 }
+.section-alt {
+  background-color: var(--section-alt-bg);
+}
+.section-white {
+  background-color: #ffffff;
+}
+
 
 
 
