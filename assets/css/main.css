@@ -78,7 +78,19 @@ header.bg-header {
   background-color: #ffffff;
 }
 
-
+.section-gradient {
+  background: linear-gradient(to right, var(--section-alt-bg), var(--section-bg));
+}
+.section-dark {
+  background-color: #1e293b;
+  color: white;
+}
+.section-dark h2,
+.section-dark h5,
+.section-dark a,
+.section-dark p {
+  color: #f1f5f9;
+}
 
 
 
@@ -531,22 +543,14 @@ a:hover {
   color: inherit;
 }
 
-.category-card {
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 25px;
+{.category-card
   background-color: var(--card-bg);
-  box-shadow: 0 0 0 transparent;
-  transition: 0.3s;
-  text-align: center;
-  height: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
 }
-
 .category-card:hover {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   transform: translateY(-3px);
-  cursor: pointer;
-  border-color: var(--btn-primary);
 }
 
 .category-icon {
