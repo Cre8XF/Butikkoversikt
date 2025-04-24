@@ -1,6 +1,8 @@
 [
   {
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "name": "Aboutyou.no",
     "description": "Stort utvalg av merker og mote.",
     "image": "assets/images/klær-og-mote/About you.png",
@@ -9,7 +11,9 @@
     "forside": false
   },
   {
-    "category": "Apotek",
+    "category": [
+      "Apotek"
+    ],
     "name": "Apotek1.no",
     "description": "Apotek1.no tilbyr et bredt utvalg av medisiner, egenpleieprodukter og apotektjenester – alt levert rett hjem.",
     "image": "assets/images/apotek/Apotek1.png",
@@ -19,7 +23,9 @@
     "forside": false
   },
   {
-    "category": "Apotek",
+    "category": [
+      "Apotek"
+    ],
     "name": "Apotekhjem.no",
     "description": "Spesialisert apotek med hjemmelevering og fokus på eldre og kronikere.",
     "image": "assets/images/apotek/Apotekhjem.png",
@@ -28,7 +34,9 @@
     "forside": false
   },
   {
-    "category": "Apotek",
+    "category": [
+      "Apotek"
+    ],
     "name": "Apotera.no",
     "description": "Nytt nettapotek med stort fokus på pris og brukervennlighet.",
     "image": "assets/images/apotek/Apotera.png",
@@ -37,7 +45,9 @@
     "forside": false
   },
   {
-    "category": "Boker og underholdning",
+    "category": [
+      "Boker og underholdning"
+    ],
     "name": "Ark.no",
     "description": "Bestselgere, barnebøker, lydbøker og e-bøker.",
     "image": "assets/images/bøker/Ark.png",
@@ -46,7 +56,9 @@
     "forside": false
   },
   {
-    "category": "Barn og baby",
+    "category": [
+      "Barn og baby"
+    ],
     "name": "AskeladdenNavnelapper.no",
     "description": "Praktiske navnelapper for klær og utstyr.",
     "image": "assets/images/barn-og-baby/Askeladden.png",
@@ -58,7 +70,9 @@
     "name": "Babyshop",
     "image": "assets/images/barn-og-baby/babyshop_logo_200.jpg",
     "alt": "Babyshop",
-    "category": "Barn og baby",
+    "category": [
+      "Barn og baby"
+    ],
     "url": "https://www.babyshop.no",
     "description": "Babyshop tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
@@ -68,14 +82,18 @@
     "name": "Barnas Hus",
     "image": "assets/images/barn-og-baby/BarnasHus_logo.png",
     "alt": "Barnas Hus",
-    "category": "Barn og baby",
+    "category": [
+      "Barn og baby"
+    ],
     "url": "https://www.barnashus.no",
     "description": "Barnas Hus tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
     "forside": false
   },
   {
-    "category": "Barn og baby",
+    "category": [
+      "Barn og baby"
+    ],
     "name": "Barnevognhuset.no",
     "description": "Barnevogner og alt til trilletur og reise.",
     "image": "assets/images/barn-og-baby/Barnevognhuset.png",
@@ -84,7 +102,9 @@
     "forside": false
   },
   {
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "name": "BikBok.com",
     "description": "Mote for unge kvinner.",
     "image": "assets/images/klær-og-mote/Bik Bok.png",
@@ -93,7 +113,9 @@
     "forside": false
   },
   {
-    "category": "Sport og fritid",
+    "category": [
+      "Sport og fritid"
+    ],
     "name": "Bjørnklær.no",
     "description": "Arbeidsklær og fritidsklær for aktive mennesker.",
     "image": "assets/images/sport-og-fritid/Bjornklader.png",
@@ -102,7 +124,9 @@
     "forside": false
   },
   {
-    "category": "Helse og egenpleie",
+    "category": [
+      "Helse og egenpleie"
+    ],
     "name": "Blivakker.no",
     "description": "Skjønnhetsprodukter og hudpleie på nett.",
     "image": "assets/images/helse/Blivakker.png",
@@ -111,7 +135,9 @@
     "forside": false
   },
   {
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "name": "Bogartstore.no",
     "description": "Klassisk og moderne herremote.",
     "image": "assets/images/klær-og-mote/Bogart.png",
@@ -123,14 +149,18 @@
     "name": "Boozt",
     "image": "assets/images/klær-og-mote/Boozt.png",
     "alt": "Boozt",
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "url": "https://www.boozt.com",
     "description": "Boozt tilbyr moderne og tidløse klær for alle anledninger – både til dame, herre og barn.",
     "topp25": true,
     "forside": true
   },
   {
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "name": "Bubbleroom.com",
     "description": "Kjoler og festklær til dame.",
     "image": "assets/images/klær-og-mote/Bubbleroom.png",
@@ -142,7 +172,9 @@
     "name": "CDON",
     "image": "assets/images/elektronikk/cdon.png",
     "alt": "CDON",
-    "category": "Elektronikk",
+    "category": [
+      "Elektronikk"
+    ],
     "url": "https://cdon.no",
     "description": "CDON tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "topp25": true,
@@ -152,14 +184,18 @@
     "name": "Clas Ohlson",
     "image": "assets/images/elektronikk/ClasOhlson.png",
     "alt": "Clas Ohlson",
-    "category": "Gadgets og gaver",
+    "category": [
+      "Gadgets og gaver"
+    ],
     "url": "https://www.clasohlson.com/no/",
     "description": "Clas Ohlson tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
     "topp25": true,
     "forside": false
   },
   {
-    "category": "Elektronikk",
+    "category": [
+      "Elektronikk"
+    ],
     "name": "ClasOhlson.no",
     "description": "Praktiske løsninger for hjemmet – også hodetelefoner og lyd.",
     "image": "assets/images/elektronikk/ClasOhlson.png",
@@ -168,7 +204,9 @@
     "forside": false
   },
   {
-    "category": "Barn og baby",
+    "category": [
+      "Barn og baby"
+    ],
     "name": "Cubus.no",
     "description": "Cubus.no tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "image": "assets/images/barn-og-baby/Cubus.png",
@@ -178,7 +216,9 @@
     "forside": false
   },
   {
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "name": "Dressmann.com",
     "description": "Basisplagg og formelle klær.",
     "image": "assets/images/klær-og-mote/Dressmann.png",
@@ -187,7 +227,9 @@
     "forside": false
   },
   {
-    "category": "Elektronikk",
+    "category": [
+      "Elektronikk"
+    ],
     "name": "DustinHome.no",
     "description": "Stort utvalg av datautstyr og tilbehør.",
     "image": "assets/images/elektronikk/Dustin.png",
@@ -199,7 +241,9 @@
     "name": "Elkjøp",
     "image": "assets/images/elektronikk/Elkjop.png",
     "alt": "Elkjøp",
-    "category": "Elektronikk",
+    "category": [
+      "Elektronikk"
+    ],
     "url": "https://www.elkjop.no",
     "description": "Elkjøp tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "topp25": true,
@@ -209,7 +253,9 @@
     "name": "Ellos",
     "image": "assets/images/barn-og-baby/ellos.png",
     "alt": "Ellos",
-    "category": "Barn og baby",
+    "category": [
+      "Barn og baby"
+    ],
     "url": "https://www.ellos.no",
     "description": "Ellos tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
@@ -219,14 +265,18 @@
     "name": "Farmasiet",
     "image": "assets/images/apotek/farmasiet.png",
     "alt": "Farmasiet",
-    "category": "Apotek",
+    "category": [
+      "Apotek"
+    ],
     "url": "https://www.farmasiet.no",
     "description": "Farmasiet tilbyr et bredt utvalg av medisiner, egenpleieprodukter og apotektjenester – alt levert rett hjem.",
     "topp25": true,
     "forside": true
   },
   {
-    "category": "Sport og fritid",
+    "category": [
+      "Sport og fritid"
+    ],
     "name": "Fjellsport.no",
     "description": "Fjellsport.no tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
     "image": "assets/images/sport-og-fritid/Fjellsport.png",
@@ -236,7 +286,9 @@
     "forside": false
   },
   {
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "name": "Glitter.no",
     "description": "Smykker og hårtilbehør.",
     "image": "assets/images/klær-og-mote/glitter.png",
@@ -248,7 +300,9 @@
     "name": "Guttelus",
     "image": "assets/images/barn-og-baby/guttelus-logo--200x201.jpg",
     "alt": "Guttelus",
-    "category": "Barn og baby",
+    "category": [
+      "Barn og baby"
+    ],
     "url": "https://www.guttelus.no",
     "description": "Guttelus tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
@@ -258,14 +312,18 @@
     "name": "H&M",
     "image": "assets/images/klær-og-mote/H&M.png",
     "alt": "H&M",
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "url": "https://www.hm.com/no",
     "description": "H&M tilbyr moderne og tidløse klær for alle anledninger – både til dame, herre og barn.",
     "topp25": true,
     "forside": false
   },
   {
-    "category": "Elektronikk",
+    "category": [
+      "Elektronikk"
+    ],
     "name": "HiFiKlubben.no",
     "description": "Høyttalere, forsterkere og lydprodukter i toppklasse.",
     "image": "assets/images/elektronikk/HiFiKlubben.png",
@@ -277,14 +335,18 @@
     "name": "IKEA",
     "image": "assets/images/møbler-og-interiør/ikea.png",
     "alt": "IKEA",
-    "category": "Møbler og interiør",
+    "category": [
+      "Møbler og interiør"
+    ],
     "url": "https://www.ikea.com/no/no",
     "description": "IKEA tilbyr praktiske og stilrene møbler og interiør til alle rom i hjemmet.",
     "topp25": true,
     "forside": true
   },
   {
-    "category": "Elektronikk",
+    "category": [
+      "Elektronikk"
+    ],
     "name": "iTech.no",
     "description": "Apple-produkter og tilbehør.",
     "image": "assets/images/elektronikk/iTech.png",
@@ -293,7 +355,9 @@
     "forside": false
   },
   {
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "name": "JackAndJones.com",
     "description": "Moderne herremote for menn.",
     "image": "assets/images/klær-og-mote/JackJones.png",
@@ -305,7 +369,9 @@
     "name": "Jollyroom",
     "image": "assets/images/barn-og-baby/Jollyroom.jpg",
     "alt": "Jollyroom",
-    "category": "Barn og baby",
+    "category": [
+      "Barn og baby"
+    ],
     "url": "https://www.jollyroom.no",
     "description": "Jollyroom tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
@@ -315,14 +381,18 @@
     "name": "Kid Interiør",
     "image": "assets/images/møbler-og-interiør/Kid.png",
     "alt": "Kid Interiør",
-    "category": "Møbler og interiør",
+    "category": [
+      "Møbler og interiør"
+    ],
     "url": "https://www.kid.no",
     "description": "Kid Interiør tilbyr praktiske og stilrene møbler og interiør til alle rom i hjemmet.",
     "topp25": true,
     "forside": false
   },
   {
-    "category": "Elektronikk",
+    "category": [
+      "Elektronikk"
+    ],
     "name": "Kjell.com",
     "description": "Smarthus, kabler og småelektronikk.",
     "image": "assets/images/elektronikk/Kjell.png",
@@ -334,14 +404,18 @@
     "name": "Komplett",
     "image": "assets/images/elektronikk/komplett.png",
     "alt": "Komplett",
-    "category": "Elektronikk",
+    "category": [
+      "Elektronikk"
+    ],
     "url": "https://www.komplett.no",
     "description": "Komplett tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "topp25": true,
     "forside": true
   },
   {
-    "category": "Apotek",
+    "category": [
+      "Apotek"
+    ],
     "name": "KomplettApotek.no",
     "description": "Digitalt apotek med lave priser og reseptbestilling rett på nett.",
     "image": "assets/images/apotek/Komplettapotek.png",
@@ -350,7 +424,9 @@
     "forside": false
   },
   {
-    "category": "Barn og baby",
+    "category": [
+      "Barn og baby"
+    ],
     "name": "Lekeakademiet.no",
     "description": "Leker som stimulerer barns utvikling og læring.",
     "image": "assets/images/barn-og-baby/Lekeakademiet.png",
@@ -362,14 +438,18 @@
     "name": "Lekia",
     "image": "assets/images/barn-og-baby/Lekia.png",
     "alt": "Lekia",
-    "category": "Barn og baby",
+    "category": [
+      "Barn og baby"
+    ],
     "url": "https://www.lekia.no",
     "description": "Lekia tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
     "forside": false
   },
   {
-    "category": "Helse og egenpleie",
+    "category": [
+      "Helse og egenpleie"
+    ],
     "name": "Life.no",
     "description": "Helsekost og naturlig velvære.",
     "image": "assets/images/helse/Life.png",
@@ -378,7 +458,9 @@
     "forside": false
   },
   {
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "name": "Lindex.no",
     "description": "Klær og undertøy til dame og barn.",
     "image": "assets/images/klær-og-mote/Lindex.png",
@@ -387,7 +469,9 @@
     "forside": false
   },
   {
-    "category": "Helse og egenpleie",
+    "category": [
+      "Helse og egenpleie"
+    ],
     "name": "Livsstil.no",
     "description": "Naturlige helseprodukter og sunn livsstil.",
     "image": "assets/images/helse/Livsstil.png",
@@ -396,7 +480,9 @@
     "forside": false
   },
   {
-    "category": "Barn og baby",
+    "category": [
+      "Barn og baby"
+    ],
     "name": "Mimmis.no",
     "description": "Bilstoler, vogner, bæreseler og babyutstyr.",
     "image": "assets/images/barn-og-baby/Mimmis.png",
@@ -405,7 +491,9 @@
     "forside": false
   },
   {
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "name": "Morris.se",
     "description": "Vesker, lommebøker og reisetilbehør.",
     "image": "assets/images/klær-og-mote/Morris.png",
@@ -414,7 +502,9 @@
     "forside": false
   },
   {
-    "category": "Barn og baby",
+    "category": [
+      "Barn og baby"
+    ],
     "name": "Nameit.com",
     "description": "Moderne barneklær og mammaklær.",
     "image": "assets/images/barn-og-baby/NameIt.png",
@@ -423,7 +513,9 @@
     "forside": false
   },
   {
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "name": "Nelly.com",
     "description": "Trendklær og kjoler for damer.",
     "image": "assets/images/klær-og-mote/Nelly.png",
@@ -432,7 +524,9 @@
     "forside": false
   },
   {
-    "category": "Elektronikk",
+    "category": [
+      "Elektronikk"
+    ],
     "name": "NetOnNet.no",
     "description": "Direkte fra lageret – PC og skjermer.",
     "image": "assets/images/elektronikk/Netonnet.png",
@@ -441,7 +535,9 @@
     "forside": false
   },
   {
-    "category": "Sport og fritid",
+    "category": [
+      "Sport og fritid"
+    ],
     "name": "Outnorth.no",
     "description": "Friluftsliv og turprodukter av høy kvalitet.",
     "image": "assets/images/sport-og-fritid/Outnorth.png",
@@ -453,14 +549,18 @@
     "name": "Platekompaniet",
     "image": "assets/images/bøker-og-underholdning/platekompaniet.png",
     "alt": "Platekompaniet",
-    "category": "Bøker og underholdning",
+    "category": [
+      "Bøker og underholdning"
+    ],
     "url": "https://www.platekompaniet.no",
     "description": "Platekompaniet tilbyr bøker, spill og underholdning for hele familien.",
     "topp25": true,
     "forside": true
   },
   {
-    "category": "Elektronikk",
+    "category": [
+      "Elektronikk"
+    ],
     "name": "Power.no",
     "description": "Power.no tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "image": "assets/images/elektronikk/Power.png",
@@ -470,7 +570,9 @@
     "forside": false
   },
   {
-    "category": "Barn og baby",
+    "category": [
+      "Barn og baby"
+    ],
     "name": "RiktigeLeker.no",
     "description": "Kvalitetsleker og babyleker for alle aldre.",
     "image": "assets/images/barn-og-baby/sprell.png",
@@ -482,14 +584,18 @@
     "name": "Rudo",
     "image": "assets/images/barn-og-baby/Rudo.png",
     "alt": "Rudo",
-    "category": "Barn og baby",
+    "category": [
+      "Barn og baby"
+    ],
     "url": "https://www.rudo.no",
     "description": "Rudo tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
     "forside": false
   },
   {
-    "category": "Elektronikk",
+    "category": [
+      "Elektronikk"
+    ],
     "name": "Soundgarden.no",
     "description": "Hi-fi og hjemmekino for entusiaster.",
     "image": "assets/images/elektronikk/Soundgarden.png",
@@ -498,7 +604,9 @@
     "forside": false
   },
   {
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "name": "Specsavers.no",
     "description": "Briller, solbriller og tilbehør.",
     "image": "assets/images/klær-og-mote/Specsavers.png",
@@ -507,7 +615,9 @@
     "forside": false
   },
   {
-    "category": "Sport og fritid",
+    "category": [
+      "Sport og fritid"
+    ],
     "name": "Sport1.no",
     "description": "Sport1.no tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
     "image": "assets/images/sport-og-fritid/Sport1.png",
@@ -520,14 +630,18 @@
     "name": "Sportamore",
     "image": "assets/images/sport-og-fritid/sportamore.png",
     "alt": "Sportamore",
-    "category": "Sport og fritid",
+    "category": [
+      "Sport og fritid"
+    ],
     "url": "https://www.sportamore.no",
     "description": "Sportamore tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
     "topp25": true,
     "forside": true
   },
   {
-    "category": "Sport og fritid",
+    "category": [
+      "Sport og fritid"
+    ],
     "name": "Sportshopen.no",
     "description": "Utstyr for sport og fritid til gode priser.",
     "image": "assets/images/sport-og-fritid/Sportshopen.png",
@@ -536,7 +650,9 @@
     "forside": false
   },
   {
-    "category": "Sport og fritid",
+    "category": [
+      "Sport og fritid"
+    ],
     "name": "sportsmaster",
     "description": "Sportsmaster er en spesialforretning og leverer alt av treningsapparater direkte fra fabrikk uten fordyrende mellomledd. \n               Vi har et bredt og godt utvalg av treningsutstyr til hjemmetrening, bedrifter og treningssentre til svært gunstige priser.",
     "image": "assets/images/sport-og-fritid/sportsmaster.png",
@@ -545,7 +661,9 @@
     "forside": false
   },
   {
-    "category": "Helse og egenpleie",
+    "category": [
+      "Helse og egenpleie"
+    ],
     "name": "Sunkost.no",
     "description": "Kosttilskudd, vitaminer og naturlig egenpleie.",
     "image": "assets/images/helse/Sunkost.png",
@@ -554,7 +672,9 @@
     "forside": false
   },
   {
-    "category": "Elektronikk",
+    "category": [
+      "Elektronikk"
+    ],
     "name": "Tek.no",
     "description": "Teknologinyheter og produktanbefalinger.",
     "image": "assets/images/elektronikk/Tek.png",
@@ -563,7 +683,9 @@
     "forside": false
   },
   {
-    "category": "Elektronikk",
+    "category": [
+      "Elektronikk"
+    ],
     "name": "Teknikmagasinet.no",
     "description": "Gadgets, gaming og duppeditter.",
     "image": "assets/images/elektronikk/Teknikmagasinet.png",
@@ -575,14 +697,18 @@
     "name": "Vinmonopolet",
     "image": "assets/images/gadgets-og-gaver/Vinmonopolet.png",
     "alt": "Vinmonopolet",
-    "category": "Gadgets og gaver",
+    "category": [
+      "Gadgets og gaver"
+    ],
     "url": "https://www.vinmonopolet.no",
     "description": "Vinmonopolet tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
     "topp25": true,
     "forside": false
   },
   {
-    "category": "Apotek",
+    "category": [
+      "Apotek"
+    ],
     "name": "Vitusapotek.no",
     "description": "Trygt apotek på nett med legemidler, vitaminer, egenpleie og resepttjenester.",
     "image": "assets/images/apotek/Vitusapotek.png",
@@ -591,7 +717,9 @@
     "forside": false
   },
   {
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "name": "Volt.no",
     "description": "Nordisk herremote med stil.",
     "image": "assets/images/klær-og-mote/Volt.png",
@@ -603,7 +731,9 @@
     "name": "XXL",
     "image": "assets/images/sport-og-fritid/xxl.png",
     "alt": "XXL",
-    "category": "Sport og fritid",
+    "category": [
+      "Sport og fritid"
+    ],
     "url": "https://www.xxl.no",
     "description": "XXL tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
     "topp25": true,
@@ -613,14 +743,18 @@
     "name": "Zalando",
     "image": "assets/images/klær-og-mote/Zalando.png",
     "alt": "Zalando",
-    "category": "Klær og mote",
+    "category": [
+      "Klær og mote"
+    ],
     "url": "https://www.zalando.no",
     "description": "Zalando tilbyr moderne og tidløse klær for alle anledninger – både til dame, herre og barn.",
     "topp25": true,
     "forside": true
   },
   {
-    "category": "Møbler og interiør",
+    "category": [
+      "Møbler og interiør"
+    ],
     "name": "JYSK",
     "description": "Skandinavisk interiør og møbler til gode priser.",
     "image": "assets/images/møbler-og-interiør/JYSK.png",
@@ -630,7 +764,9 @@
     "forside": false
   },
   {
-    "category": "Møbler og interiør",
+    "category": [
+      "Møbler og interiør"
+    ],
     "name": "Skeidar",
     "description": "Kvalitetsmøbler og interiør til hjemmet.",
     "image": "assets/images/møbler-og-interiør/skeidar.png",
@@ -643,14 +779,18 @@
     "name": "CoolStuff",
     "image": "assets/images/gadgets-og-gaver/coolstuff.png",
     "alt": "CoolStuff",
-    "category": "Gadgets og gaver",
+    "category": [
+      "Gadgets og gaver"
+    ],
     "url": "https://www.coolstuff.no",
     "description": "CoolStuff tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
     "topp25": true,
     "forside": true
   },
   {
-    "category": "Gadgets og gaver",
+    "category": [
+      "Gadgets og gaver"
+    ],
     "name": "Firebox",
     "description": "Oppfinnsomme og morsomme gadgets og gaver.",
     "image": "assets/images/gadgets-og-gaver/Firebox.png",
@@ -660,64 +800,78 @@
     "forside": false
   },
   {
-  "name": "MaxGaming",
-  "image": "assets/images/gaming-og-gadgets/hyperx.png",
-  "alt": "MaxGaming",
-  "category": "Gaming og gadgets",
-  "url": "https://www.maxgaming.no",
-  "description": "Spesialist på gamingtilbehør, mus, tastatur og utstyr for e-sport.",
-  "forside": false
-},
-{
-  "name": "Proshop",
-  "image": "assets/images/gaming-og-gadgets/proshop.png",
-  "alt": "Proshop",
-  "category": "Gaming og gadgets",
-  "url": "https://www.proshop.no",
-  "description": "Et bredt sortiment av datadeler, skjermer og gamingprodukter.",
-  "forside": false
-},
-{
-  "name": "NetOnNet",
-  "image": "assets/images/gaming-og-gadgets/netonnet.png",
-  "alt": "NetOnNet",
-  "category": "Gaming og gadgets",
-  "url": "https://www.netonnet.no",
-  "description": "Lagerpriser på skjermer, PC-utstyr og gaming gear.",
-  "forside": false
-},
-{
-  "name": "SteelSeries",
-  "image": "assets/images/gaming-og-gadgets/steelseries.png",
-  "alt": "SteelSeries",
-  "category": "Gaming og gadgets",
-  "url": "https://steelseries.com",
-  "description": "Verdenskjent merke for profesjonelle gaming-headset, tastatur og mus.",
-  "forside": false
-},
-{
-  "name": "Razer",
-  "image": "assets/images/gaming-og-gadgets/razer.png",
-  "alt": "Razer",
-  "category": "Gaming og gadgets",
-  "url": "https://www.razer.com/eu-en/",
-  "description": "Razer tilbyr premium spillutstyr og tilbehør for gamere.",
-  "forside": false
-},
-{
-  "name": "HyperX",
-  "image": "assets/images/gaming-og-gadgets/hyperx.png",
-  "alt": "HyperX",
-  "category": "Gaming og gadgets",
-  "url": "https://www.hyperxgaming.com",
-  "description": "HyperX leverer hodetelefoner, gaming-stoler og annet tilbehør for spillere.",
-  "forside": false
-},
+    "name": "MaxGaming",
+    "image": "assets/images/gaming-og-gadgets/hyperx.png",
+    "alt": "MaxGaming",
+    "category": [
+      "Gaming og gadgets"
+    ],
+    "url": "https://www.maxgaming.no",
+    "description": "Spesialist på gamingtilbehør, mus, tastatur og utstyr for e-sport.",
+    "forside": false
+  },
+  {
+    "name": "Proshop",
+    "image": "assets/images/gaming-og-gadgets/proshop.png",
+    "alt": "Proshop",
+    "category": [
+      "Gaming og gadgets"
+    ],
+    "url": "https://www.proshop.no",
+    "description": "Et bredt sortiment av datadeler, skjermer og gamingprodukter.",
+    "forside": false
+  },
+  {
+    "name": "NetOnNet",
+    "image": "assets/images/gaming-og-gadgets/netonnet.png",
+    "alt": "NetOnNet",
+    "category": [
+      "Gaming og gadgets"
+    ],
+    "url": "https://www.netonnet.no",
+    "description": "Lagerpriser på skjermer, PC-utstyr og gaming gear.",
+    "forside": false
+  },
+  {
+    "name": "SteelSeries",
+    "image": "assets/images/gaming-og-gadgets/steelseries.png",
+    "alt": "SteelSeries",
+    "category": [
+      "Gaming og gadgets"
+    ],
+    "url": "https://steelseries.com",
+    "description": "Verdenskjent merke for profesjonelle gaming-headset, tastatur og mus.",
+    "forside": false
+  },
+  {
+    "name": "Razer",
+    "image": "assets/images/gaming-og-gadgets/razer.png",
+    "alt": "Razer",
+    "category": [
+      "Gaming og gadgets"
+    ],
+    "url": "https://www.razer.com/eu-en/",
+    "description": "Razer tilbyr premium spillutstyr og tilbehør for gamere.",
+    "forside": false
+  },
+  {
+    "name": "HyperX",
+    "image": "assets/images/gaming-og-gadgets/hyperx.png",
+    "alt": "HyperX",
+    "category": [
+      "Gaming og gadgets"
+    ],
+    "url": "https://www.hyperxgaming.com",
+    "description": "HyperX leverer hodetelefoner, gaming-stoler og annet tilbehør for spillere.",
+    "forside": false
+  },
   {
     "name": "CDON",
     "image": "assets/images/elektronikk/cdon.png",
     "alt": "CDON",
-    "category": "Spill og underholdning",
+    "category": [
+      "Spill og underholdning"
+    ],
     "url": "https://cdon.no",
     "description": "CDON tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "topp25": true,
@@ -727,14 +881,18 @@
     "name": "Elkjøp",
     "image": "assets/images/elektronikk/Elkjop.png",
     "alt": "Elkjøp",
-    "category": "Gaming og elektronikk",
+    "category": [
+      "Gaming og elektronikk"
+    ],
     "url": "https://www.elkjop.no",
     "description": "Elkjøp tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "topp25": true,
     "forside": true
   },
   {
-    "category": "Gadgets og gaver",
+    "category": [
+      "Gadgets og gaver"
+    ],
     "name": "Kjell.com",
     "description": "Smarthus, kabler og småelektronikk.",
     "image": "assets/images/elektronikk/Kjell.png",
@@ -746,14 +904,18 @@
     "name": "Komplett",
     "image": "assets/images/elektronikk/komplett.png",
     "alt": "Komplett",
-    "category": "Gaming og elektronikk",
+    "category": [
+      "Gaming og elektronikk"
+    ],
     "url": "https://www.komplett.no",
     "description": "Komplett tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "topp25": true,
     "forside": true
   },
   {
-    "category": "Gaming og elektronikk",
+    "category": [
+      "Gaming og elektronikk"
+    ],
     "name": "KomplettApotek.no",
     "description": "Digitalt apotek med lave priser og reseptbestilling rett på nett.",
     "image": "assets/images/apotek/Komplettapotek.png",
@@ -762,7 +924,9 @@
     "forside": false
   },
   {
-    "category": "Gaming og elektronikk",
+    "category": [
+      "Gaming og elektronikk"
+    ],
     "name": "NetOnNet.no",
     "description": "Direkte fra lageret – PC og skjermer.",
     "image": "assets/images/elektronikk/Netonnet.png",
@@ -774,14 +938,18 @@
     "name": "Platekompaniet",
     "image": "assets/images/bøker-og-underholdning/platekompaniet.png",
     "alt": "Platekompaniet",
-    "category": "Spill og underholdning",
+    "category": [
+      "Spill og underholdning"
+    ],
     "url": "https://www.platekompaniet.no",
     "description": "Platekompaniet tilbyr bøker, spill og underholdning for hele familien.",
     "topp25": true,
     "forside": true
   },
   {
-    "category": "Gaming og elektronikk",
+    "category": [
+      "Gaming og elektronikk"
+    ],
     "name": "Power.no",
     "description": "Power.no tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "image": "assets/images/elektronikk/Power.png",
@@ -790,11 +958,13 @@
     "topp25": true,
     "forside": false
   },
-   {
+  {
     "name": "CoolStuff",
     "image": "assets/images/gadgets-og-gaver/coolstuff.png",
     "alt": "CoolStuff",
-    "category": "Gadgets og gaver",
+    "category": [
+      "Gadgets og gaver"
+    ],
     "url": "https://www.coolstuff.no",
     "description": "CoolStuff tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
     "topp25": true,
@@ -804,7 +974,9 @@
     "name": "MaxGaming",
     "image": "assets/images/gaming-og-gadgets/hyperx.png",
     "alt": "MaxGaming",
-    "category": "Gaming og gadgets",
+    "category": [
+      "Gaming og gadgets"
+    ],
     "url": "https://www.maxgaming.no",
     "description": "Spesialist på gamingtilbehør, mus, tastatur og utstyr for e-sport.",
     "forside": false
@@ -813,7 +985,9 @@
     "name": "Proshop",
     "image": "assets/images/gaming-og-gadgets/proshop.png",
     "alt": "Proshop",
-    "category": "Gaming og gadgets",
+    "category": [
+      "Gaming og gadgets"
+    ],
     "url": "https://www.proshop.no",
     "description": "Et bredt sortiment av datadeler, skjermer og gamingprodukter.",
     "forside": false
@@ -822,7 +996,9 @@
     "name": "SteelSeries",
     "image": "assets/images/gaming-og-gadgets/steelseries.png",
     "alt": "SteelSeries",
-    "category": "Gaming og gadgets",
+    "category": [
+      "Gaming og gadgets"
+    ],
     "url": "https://steelseries.com",
     "description": "Verdenskjent merke for profesjonelle gaming-headset, tastatur og mus.",
     "forside": false
@@ -831,7 +1007,9 @@
     "name": "Razer",
     "image": "assets/images/gaming-og-gadgets/razer.png",
     "alt": "Razer",
-    "category": "Gaming og gadgets",
+    "category": [
+      "Gaming og gadgets"
+    ],
     "url": "https://www.razer.com/eu-en/",
     "description": "Razer tilbyr premium spillutstyr og tilbehør for gamere.",
     "forside": false
@@ -840,7 +1018,9 @@
     "name": "HyperX",
     "image": "assets/images/gaming-og-gadgets/hyperx.png",
     "alt": "HyperX",
-    "category": "Gaming og gadgets",
+    "category": [
+      "Gaming og gadgets"
+    ],
     "url": "https://www.hyperxgaming.com",
     "description": "HyperX leverer hodetelefoner, gaming-stoler og annet tilbehør for spillere.",
     "forside": false
@@ -849,230 +1029,254 @@
     "name": "Gamezone",
     "image": "assets/images/gaming-og-gadgets/gamezone.png",
     "alt": "Gamezone",
-    "category": "Spill og underholdning",
+    "category": [
+      "Spill og underholdning"
+    ],
     "url": "https://www.gamezone.no",
     "description": "Brettspill, samlekort, figurer og alt for gamingentusiaster.",
     "forside": false
   },
   {
-  "name": "Komplett",
-  "image": "assets/images/elektronikk/komplett.png",
-  "alt": "Komplett",
-  "category": "Gaming og elektronikk",
-  "url": "https://www.komplett.no",
-  "description": "Gaming-PC, konsoller, tilbehør, skjerm, stoler, lyd, VR."
-},
-{
-  "name": "Power",
-  "image": "assets/images/elektronikk/Power.png",
-  "alt": "Power",
-  "category": "Gaming og elektronikk",
-  "url": "https://www.power.no",
-  "description": "Gaming-laptoper, skjermer, lydutstyr, konsoller."
-},
-{
-  "name": "Elkjøp",
-  "image": "assets/images/elektronikk/Elkjop.png",
-  "alt": "Elkjøp",
-  "category": "Gaming og elektronikk",
-  "url": "https://www.elkjop.no",
-  "description": "Alt innen gaming, TV, konsoll, PC og utstyr."
-},
-{
-  "name": "NetOnNet",
-  "image": "assets/images/gaming-og-gadgets/netonnet.png",
-  "alt": "NetOnNet",
-  "category": "Gaming og elektronikk",
-  "url": "https://www.netonnet.no",
-  "description": "Bra utvalg av gaming-utstyr og teknologiske gadgets."
-},
-{
-  "name": "Proshop",
-  "image": "assets/images/gaming-og-gadgets/proshop.png",
-  "alt": "Proshop",
-  "category": "Gaming og elektronikk",
-  "url": "https://www.proshop.no",
-  "description": "Gaming-PC, skjermer, tastatur, mus, stoler."
-},
-{
-  "name": "Coolstuff",
-  "image": "assets/images/gadgets-og-gaver/coolstuff.png",
-  "alt": "Coolstuff",
-  "category": "Gadgets og gaver",
-  "url": "https://www.coolstuff.no",
-  "description": "Morsomme gadgets, spill, interiør til gamingrom, gaveideer."
-},
-{
-  "name": "Kjell & Company",
-  "image": "assets/images/elektronikk/Kjell.png",
-  "alt": "Kjell & Company",
-  "category": "Gadgets og gaver",
-  "url": "https://www.kjell.com",
-  "description": "Teknisk tilbehør, smarthus, PC-deler, DIY-kit."
-},
-{
-  "name": "DigitalImpuls",
-  "image": "assets/images/gaming-og-gadgets/digitalimpuls.png",
-  "alt": "DigitalImpuls",
-  "category": "Gadgets og gaver",
-  "url": "https://www.digitalimpuls.no",
-  "description": "Datadeler, gamingtilbehør, PC-bygging."
-},
-{
-  "name": "MaxGaming",
-  "image": "assets/images/gaming-og-gadgets/maxgaming.png",
-  "alt": "MaxGaming",
-  "category": "Gadgets og gaver",
-  "url": "https://www.maxgaming.no",
-  "description": "Spesialisert på gaming: tastatur, stoler, lyd, esport-merch."
-},
-{
-  "name": "Platekompaniet",
-  "image": "assets/images/bøker-og-underholdning/platekompaniet.png",
-  "alt": "Platekompaniet",
-  "category": "Spill og underholdning",
-  "url": "https://www.platekompaniet.no",
-  "description": "Spill, film, musikk og merchandise til gamingrommet."
-},
-{
-  "name": "CDON",
-  "image": "assets/images/elektronikk/cdon.png",
-  "alt": "CDON",
-  "category": "Spill og underholdning",
-  "url": "https://www.cdon.no",
-  "description": "Gaming, filmer, tilbehør, plattformer som PS, Xbox, Switch."
-},
-{
-  "name": "Gamezone",
-  "image": "assets/images/gaming-og-gadgets/gamezone.png",
-  "alt": "Gamezone",
-  "category": "Spill og underholdning",
-  "url": "https://www.gamezone.no",
-  "description": "Brettspill, rollespill, samlefigurer, Nintendo, Warhammer osv."
-},
-[
-  {
-    "name": "Boozt",
-    "image": "assets/images/klær og mote/Boozt.png",
-    "alt": "Boozt",
-    "category": "Klær og mote",
-    "subcategory": "Dameklær",
-    "url": "https://www.boozt.com/no/no",
-    "description": "Boozt tilbyr moderne og tidløse klær for dame, herre og barn.",
-    "topp25": true,
-    "forside": false
+    "name": "Komplett",
+    "image": "assets/images/elektronikk/komplett.png",
+    "alt": "Komplett",
+    "category": [
+      "Gaming og elektronikk"
+    ],
+    "url": "https://www.komplett.no",
+    "description": "Gaming-PC, konsoller, tilbehør, skjerm, stoler, lyd, VR."
   },
   {
-    "name": "Bubbleroom.com",
-    "image": "assets/images/klær og mote/Bubbleroom.png",
-    "alt": "Bubbleroom",
-    "category": "Klær og mote",
-    "subcategory": "Dameklær",
-    "url": "https://www.bubbleroom.com/no",
-    "description": "Kjoler og festklær til dame.",
-    "topp25": false,
-    "forside": false
+    "name": "Power",
+    "image": "assets/images/elektronikk/Power.png",
+    "alt": "Power",
+    "category": [
+      "Gaming og elektronikk"
+    ],
+    "url": "https://www.power.no",
+    "description": "Gaming-laptoper, skjermer, lydutstyr, konsoller."
   },
   {
-    "name": "H&M",
-    "image": "assets/images/klær og mote/HM.png",
-    "alt": "H&M",
-    "category": "Klær og mote",
-    "subcategory": "Dameklær",
-    "url": "https://www2.hm.com/nb_no/index.html",
-    "description": "H&M tilbyr moderne og tidløse klær for alle aldre.",
-    "topp25": false,
-    "forside": false
+    "name": "Elkjøp",
+    "image": "assets/images/elektronikk/Elkjop.png",
+    "alt": "Elkjøp",
+    "category": [
+      "Gaming og elektronikk"
+    ],
+    "url": "https://www.elkjop.no",
+    "description": "Alt innen gaming, TV, konsoll, PC og utstyr."
   },
   {
-    "name": "Lindex.no",
-    "image": "assets/images/klær og mote/Lindex.png",
-    "alt": "Lindex",
-    "category": "Klær og mote",
-    "subcategory": "Dameklær",
-    "url": "https://www.lindex.com/no",
-    "description": "Lindex tilbyr dameklær og undertøy med bærekraft i fokus.",
-    "topp25": false,
-    "forside": false
+    "name": "NetOnNet",
+    "image": "assets/images/gaming-og-gadgets/netonnet.png",
+    "alt": "NetOnNet",
+    "category": [
+      "Gaming og elektronikk"
+    ],
+    "url": "https://www.netonnet.no",
+    "description": "Bra utvalg av gaming-utstyr og teknologiske gadgets."
   },
   {
-    "name": "Nelly.com",
-    "image": "assets/images/klær og mote/Nelly.png",
-    "alt": "Nelly",
-    "category": "Klær og mote",
-    "subcategory": "Dameklær",
-    "url": "https://nelly.com/no",
-    "description": "Trendy mote for unge kvinner – kjoler, tilbehør og sko.",
-    "topp25": false,
-    "forside": false
+    "name": "Proshop",
+    "image": "assets/images/gaming-og-gadgets/proshop.png",
+    "alt": "Proshop",
+    "category": [
+      "Gaming og elektronikk"
+    ],
+    "url": "https://www.proshop.no",
+    "description": "Gaming-PC, skjermer, tastatur, mus, stoler."
   },
   {
-    "name": "Bogartstore.no",
-    "image": "assets/images/klær og mote/Bogartstore.png",
-    "alt": "Bogartstore",
-    "category": "Klær og mote",
-    "subcategory": "Herreklær",
-    "url": "https://www.bogartstore.no/",
-    "description": "Klassisk og moderne herremote.",
-    "topp25": false,
-    "forside": false
+    "name": "Coolstuff",
+    "image": "assets/images/gadgets-og-gaver/coolstuff.png",
+    "alt": "Coolstuff",
+    "category": [
+      "Gadgets og gaver"
+    ],
+    "url": "https://www.coolstuff.no",
+    "description": "Morsomme gadgets, spill, interiør til gamingrom, gaveideer."
   },
   {
-    "name": "JackAndJones.com",
-    "image": "assets/images/klær og mote/JackJones.png",
-    "alt": "Jack & Jones",
-    "category": "Klær og mote",
-    "subcategory": "Herreklær",
-    "url": "https://www.jackjones.com/",
-    "description": "Casual og trendy klær til herre, fra jeans til dress.",
-    "topp25": false,
-    "forside": false
+    "name": "Kjell & Company",
+    "image": "assets/images/elektronikk/Kjell.png",
+    "alt": "Kjell & Company",
+    "category": [
+      "Gadgets og gaver"
+    ],
+    "url": "https://www.kjell.com",
+    "description": "Teknisk tilbehør, smarthus, PC-deler, DIY-kit."
   },
   {
-    "name": "Volt.no",
-    "image": "assets/images/klær og mote/Volt.png",
-    "alt": "Volt",
-    "category": "Klær og mote",
-    "subcategory": "Herreklær",
-    "url": "https://voltfashion.com/no",
-    "description": "Stilfulle klær for menn – dresser, skjorter og tilbehør.",
-    "topp25": false,
-    "forside": false
+    "name": "DigitalImpuls",
+    "image": "assets/images/gaming-og-gadgets/digitalimpuls.png",
+    "alt": "DigitalImpuls",
+    "category": [
+      "Gadgets og gaver"
+    ],
+    "url": "https://www.digitalimpuls.no",
+    "description": "Datadeler, gamingtilbehør, PC-bygging."
   },
   {
-    "name": "Glitter.no",
-    "image": "assets/images/klær og mote/Glitter.png",
-    "alt": "Glitter",
-    "category": "Klær og mote",
-    "subcategory": "Tilbehør og sko",
-    "url": "https://www.glitter.no/",
-    "description": "Smykker, hårpynt og tilbehør for enhver stil.",
-    "topp25": false,
-    "forside": false
+    "name": "MaxGaming",
+    "image": "assets/images/gaming-og-gadgets/maxgaming.png",
+    "alt": "MaxGaming",
+    "category": [
+      "Gadgets og gaver"
+    ],
+    "url": "https://www.maxgaming.no",
+    "description": "Spesialisert på gaming: tastatur, stoler, lyd, esport-merch."
   },
   {
-    "name": "Morris.se",
-    "image": "assets/images/klær og mote/Morris.png",
-    "alt": "Morris",
-    "category": "Klær og mote",
-    "subcategory": "Tilbehør og sko",
-    "url": "https://www.morris.no/",
-    "description": "Vesker, lommebøker og stilige sko for dame og herre.",
-    "topp25": false,
-    "forside": false
+    "name": "Platekompaniet",
+    "image": "assets/images/bøker-og-underholdning/platekompaniet.png",
+    "alt": "Platekompaniet",
+    "category": [
+      "Spill og underholdning"
+    ],
+    "url": "https://www.platekompaniet.no",
+    "description": "Spill, film, musikk og merchandise til gamingrommet."
   },
   {
-    "name": "Specsavers.no",
-    "image": "assets/images/klær og mote/Specsavers.png",
-    "alt": "Specsavers",
-    "category": "Klær og mote",
-    "subcategory": "Tilbehør og sko",
-    "url": "https://www.specsavers.no/",
-    "description": "Briller, solbriller og linser med mote og funksjon.",
-    "topp25": false,
-    "forside": false
-  }
-]
-
-
+    "name": "CDON",
+    "image": "assets/images/elektronikk/cdon.png",
+    "alt": "CDON",
+    "category": [
+      "Spill og underholdning"
+    ],
+    "url": "https://www.cdon.no",
+    "description": "Gaming, filmer, tilbehør, plattformer som PS, Xbox, Switch."
+  },
+  {
+    "name": "Gamezone",
+    "image": "assets/images/gaming-og-gadgets/gamezone.png",
+    "alt": "Gamezone",
+    "category": [
+      "Spill og underholdning"
+    ],
+    "url": "https://www.gamezone.no",
+    "description": "Brettspill, rollespill, samlefigurer, Nintendo, Warhammer osv."
+  },
+  [
+    {
+      "name": "Boozt",
+      "image": "assets/images/klær og mote/Boozt.png",
+      "alt": "Boozt",
+      "category": "Klær og mote",
+      "subcategory": "Dameklær",
+      "url": "https://www.boozt.com/no/no",
+      "description": "Boozt tilbyr moderne og tidløse klær for dame, herre og barn.",
+      "topp25": true,
+      "forside": false
+    },
+    {
+      "name": "Bubbleroom.com",
+      "image": "assets/images/klær og mote/Bubbleroom.png",
+      "alt": "Bubbleroom",
+      "category": "Klær og mote",
+      "subcategory": "Dameklær",
+      "url": "https://www.bubbleroom.com/no",
+      "description": "Kjoler og festklær til dame.",
+      "topp25": false,
+      "forside": false
+    },
+    {
+      "name": "H&M",
+      "image": "assets/images/klær og mote/HM.png",
+      "alt": "H&M",
+      "category": "Klær og mote",
+      "subcategory": "Dameklær",
+      "url": "https://www2.hm.com/nb_no/index.html",
+      "description": "H&M tilbyr moderne og tidløse klær for alle aldre.",
+      "topp25": false,
+      "forside": false
+    },
+    {
+      "name": "Lindex.no",
+      "image": "assets/images/klær og mote/Lindex.png",
+      "alt": "Lindex",
+      "category": "Klær og mote",
+      "subcategory": "Dameklær",
+      "url": "https://www.lindex.com/no",
+      "description": "Lindex tilbyr dameklær og undertøy med bærekraft i fokus.",
+      "topp25": false,
+      "forside": false
+    },
+    {
+      "name": "Nelly.com",
+      "image": "assets/images/klær og mote/Nelly.png",
+      "alt": "Nelly",
+      "category": "Klær og mote",
+      "subcategory": "Dameklær",
+      "url": "https://nelly.com/no",
+      "description": "Trendy mote for unge kvinner – kjoler, tilbehør og sko.",
+      "topp25": false,
+      "forside": false
+    },
+    {
+      "name": "Bogartstore.no",
+      "image": "assets/images/klær og mote/Bogartstore.png",
+      "alt": "Bogartstore",
+      "category": "Klær og mote",
+      "subcategory": "Herreklær",
+      "url": "https://www.bogartstore.no/",
+      "description": "Klassisk og moderne herremote.",
+      "topp25": false,
+      "forside": false
+    },
+    {
+      "name": "JackAndJones.com",
+      "image": "assets/images/klær og mote/JackJones.png",
+      "alt": "Jack & Jones",
+      "category": "Klær og mote",
+      "subcategory": "Herreklær",
+      "url": "https://www.jackjones.com/",
+      "description": "Casual og trendy klær til herre, fra jeans til dress.",
+      "topp25": false,
+      "forside": false
+    },
+    {
+      "name": "Volt.no",
+      "image": "assets/images/klær og mote/Volt.png",
+      "alt": "Volt",
+      "category": "Klær og mote",
+      "subcategory": "Herreklær",
+      "url": "https://voltfashion.com/no",
+      "description": "Stilfulle klær for menn – dresser, skjorter og tilbehør.",
+      "topp25": false,
+      "forside": false
+    },
+    {
+      "name": "Glitter.no",
+      "image": "assets/images/klær og mote/Glitter.png",
+      "alt": "Glitter",
+      "category": "Klær og mote",
+      "subcategory": "Tilbehør og sko",
+      "url": "https://www.glitter.no/",
+      "description": "Smykker, hårpynt og tilbehør for enhver stil.",
+      "topp25": false,
+      "forside": false
+    },
+    {
+      "name": "Morris.se",
+      "image": "assets/images/klær og mote/Morris.png",
+      "alt": "Morris",
+      "category": "Klær og mote",
+      "subcategory": "Tilbehør og sko",
+      "url": "https://www.morris.no/",
+      "description": "Vesker, lommebøker og stilige sko for dame og herre.",
+      "topp25": false,
+      "forside": false
+    },
+    {
+      "name": "Specsavers.no",
+      "image": "assets/images/klær og mote/Specsavers.png",
+      "alt": "Specsavers",
+      "category": "Klær og mote",
+      "subcategory": "Tilbehør og sko",
+      "url": "https://www.specsavers.no/",
+      "description": "Briller, solbriller og linser med mote og funksjon.",
+      "topp25": false,
+      "forside": false
+    }
+  ]
 ]
