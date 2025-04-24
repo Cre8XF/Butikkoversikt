@@ -47,7 +47,7 @@
     <div class="container">
       <h1 id="kategori-tittel" class="mb-4">Vi henter butikker i denne kategorien...</h1>
 
-      <!-- Underkategorier (vises bare for Klær og mote og Elektronikk og data) -->
+      <!-- Underkategorier (vises ved behov) -->
       <div id="underkategorier-wrapper" class="mb-5 d-none">
         <h5>Underkategorier</h5>
         <div id="underkategori-lenker" class="d-flex flex-wrap justify-content-center gap-3"></div>
@@ -84,10 +84,18 @@
       ]
     };
 
-    if (kategori && underkategorierMap[kategori]) {
+    let hovedkategori = null;
+    for (const [kategoriNavn, underkatListe] of Object.entries(underkategorierMap)) {
+      if (kategori === kategoriNavn || underkatListe.includes(kategori)) {
+        hovedkategori = kategoriNavn;
+        break;
+      }
+    }
+
+    if (hovedkategori) {
       document.getElementById("underkategorier-wrapper").classList.remove("d-none");
       const container = document.getElementById("underkategori-lenker");
-      underkategorierMap[kategori].forEach(uk => {
+      underkategorierMap[hovedkategori].forEach(uk => {
         const link = document.createElement("a");
         link.href = `kategori-mal.html?kategori=${encodeURIComponent(uk)}`;
         link.className = "btn btn-outline-primary";
