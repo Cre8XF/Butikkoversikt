@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     : "Vi henter butikker i denne kategorien...";
 
   try {
-    const response = await fetch("butikker.json");
+    const response = await fetch('assets/data/butikker.json') ;
     const butikker = await response.json();
 
     const filtrerte = butikker.filter(butikk => {
