@@ -853,5 +853,102 @@
     "url": "https://www.gamezone.no",
     "description": "Brettspill, samlekort, figurer og alt for gamingentusiaster.",
     "forside": false
-  }
+  },
+  {
+  "name": "Komplett",
+  "image": "assets/images/elektronikk/komplett.png",
+  "alt": "Komplett",
+  "category": "Gaming og elektronikk",
+  "url": "https://www.komplett.no",
+  "description": "Gaming-PC, konsoller, tilbehør, skjerm, stoler, lyd, VR."
+},
+{
+  "name": "Power",
+  "image": "assets/images/elektronikk/Power.png",
+  "alt": "Power",
+  "category": "Gaming og elektronikk",
+  "url": "https://www.power.no",
+  "description": "Gaming-laptoper, skjermer, lydutstyr, konsoller."
+},
+{
+  "name": "Elkjøp",
+  "image": "assets/images/elektronikk/Elkjop.png",
+  "alt": "Elkjøp",
+  "category": "Gaming og elektronikk",
+  "url": "https://www.elkjop.no",
+  "description": "Alt innen gaming, TV, konsoll, PC og utstyr."
+},
+{
+  "name": "NetOnNet",
+  "image": "assets/images/gaming-og-gadgets/netonnet.png",
+  "alt": "NetOnNet",
+  "category": "Gaming og elektronikk",
+  "url": "https://www.netonnet.no",
+  "description": "Bra utvalg av gaming-utstyr og teknologiske gadgets."
+},
+{
+  "name": "Proshop",
+  "image": "assets/images/gaming-og-gadgets/proshop.png",
+  "alt": "Proshop",
+  "category": "Gaming og elektronikk",
+  "url": "https://www.proshop.no",
+  "description": "Gaming-PC, skjermer, tastatur, mus, stoler."
+},
+{
+  "name": "Coolstuff",
+  "image": "assets/images/gadgets-og-gaver/coolstuff.png",
+  "alt": "Coolstuff",
+  "category": "Gadgets og gaver",
+  "url": "https://www.coolstuff.no",
+  "description": "Morsomme gadgets, spill, interiør til gamingrom, gaveideer."
+},
+{
+  "name": "Kjell & Company",
+  "image": "assets/images/elektronikk/Kjell.png",
+  "alt": "Kjell & Company",
+  "category": "Gadgets og gaver",
+  "url": "https://www.kjell.com",
+  "description": "Teknisk tilbehør, smarthus, PC-deler, DIY-kit."
+},
+{
+  "name": "DigitalImpuls",
+  "image": "assets/images/gaming-og-gadgets/digitalimpuls.png",
+  "alt": "DigitalImpuls",
+  "category": "Gadgets og gaver",
+  "url": "https://www.digitalimpuls.no",
+  "description": "Datadeler, gamingtilbehør, PC-bygging."
+},
+{
+  "name": "MaxGaming",
+  "image": "assets/images/gaming-og-gadgets/maxgaming.png",
+  "alt": "MaxGaming",
+  "category": "Gadgets og gaver",
+  "url": "https://www.maxgaming.no",
+  "description": "Spesialisert på gaming: tastatur, stoler, lyd, esport-merch."
+},
+{
+  "name": "Platekompaniet",
+  "image": "assets/images/bøker-og-underholdning/platekompaniet.png",
+  "alt": "Platekompaniet",
+  "category": "Spill og underholdning",
+  "url": "https://www.platekompaniet.no",
+  "description": "Spill, film, musikk og merchandise til gamingrommet."
+},
+{
+  "name": "CDON",
+  "image": "assets/images/elektronikk/cdon.png",
+  "alt": "CDON",
+  "category": "Spill og underholdning",
+  "url": "https://www.cdon.no",
+  "description": "Gaming, filmer, tilbehør, plattformer som PS, Xbox, Switch."
+},
+{
+  "name": "Gamezone",
+  "image": "assets/images/gaming-og-gadgets/gamezone.png",
+  "alt": "Gamezone",
+  "category": "Spill og underholdning",
+  "url": "https://www.gamezone.no",
+  "description": "Brettspill, rollespill, samlefigurer, Nintendo, Warhammer osv."
+}
+
 ]
