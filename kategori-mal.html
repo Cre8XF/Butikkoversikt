@@ -27,7 +27,7 @@
               <li><a class="dropdown-item" href="kategori-mal.html?kategori=Klær og mote">Klær og mote</a></li>
               <li><a class="dropdown-item" href="kategori-mal.html?kategori=Helse og egenpleie">Helse og egenpleie</a></li>
               <li><a class="dropdown-item" href="kategori-mal.html?kategori=Barn og baby">Barn og baby</a></li>
-              <li><a class="dropdown-item" href="kategori-mal.html?kategori=Elektronikk">Elektronikk</a></li>
+              <li><a class="dropdown-item" href="kategori-mal.html?kategori=Elektronikk og data">Elektronikk og data</a></li>
               <li><a class="dropdown-item" href="kategori-mal.html?kategori=Møbler og interiør">Møbler og interiør</a></li>
               <li><a class="dropdown-item" href="kategori-mal.html?kategori=Bøker og underholdning">Bøker og underholdning</a></li>
               <li><a class="dropdown-item" href="kategori-mal.html?kategori=Apotek">Apotek</a></li>
@@ -47,14 +47,10 @@
     <div class="container">
       <h1 id="kategori-tittel" class="mb-4">Vi henter butikker i denne kategorien...</h1>
 
-      <!-- Underkategorier (vises bare for Klær og mote) -->
+      <!-- Underkategorier (vises bare for Klær og mote og Elektronikk og data) -->
       <div id="underkategorier-wrapper" class="mb-5 d-none">
         <h5>Underkategorier</h5>
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-          <a href="kategori-mal.html?kategori=Dameklær" class="btn btn-outline-primary">Dameklær</a>
-          <a href="kategori-mal.html?kategori=Herreklær" class="btn btn-outline-primary">Herreklær</a>
-          <a href="kategori-mal.html?kategori=Tilbehør og sko" class="btn btn-outline-primary">Tilbehør og sko</a>
-        </div>
+        <div id="underkategori-lenker" class="d-flex flex-wrap justify-content-center gap-3"></div>
       </div>
 
       <div id="kategori-container" class="row g-4 justify-content-center"></div>
@@ -77,15 +73,30 @@
   <script>
   document.addEventListener("DOMContentLoaded", () => {
     const kategori = new URLSearchParams(window.location.search).get("kategori");
-    const synligeUnderkategorier = ["Klær og mote", "Dameklær", "Herreklær", "Tilbehør og sko"];
+    const underkategorierMap = {
+      "Klær og mote": ["Dameklær", "Herreklær", "Tilbehør og sko"],
+      "Elektronikk og data": [
+        "PC og tilbehør",
+        "Mobil og nettbrett",
+        "Lyd og bilde",
+        "Smartprodukter og IoT",
+        "Komponenter og gamingutstyr"
+      ]
+    };
 
-    if (kategori && synligeUnderkategorier.includes(kategori)) {
+    if (kategori && underkategorierMap[kategori]) {
       document.getElementById("underkategorier-wrapper").classList.remove("d-none");
+      const container = document.getElementById("underkategori-lenker");
+      underkategorierMap[kategori].forEach(uk => {
+        const link = document.createElement("a");
+        link.href = `kategori-mal.html?kategori=${encodeURIComponent(uk)}`;
+        link.className = "btn btn-outline-primary";
+        link.textContent = uk;
+        container.appendChild(link);
+      });
     }
   });
-</script>
-
-
+  </script>
 
 </body>
 </html>

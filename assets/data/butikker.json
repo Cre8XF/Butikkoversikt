@@ -1417,7 +1417,62 @@
     "image": "assets/images/sport-og-fritid/gsport.png",
     "topp25": false,
     "forside": false
-  }
+  },
+  {
+  "name": "Komplett.no",
+  "url": "https://www.komplett.no/",
+  "image": "assets/images/elektronikk/komplett.png",
+  "category": "Elektronikk og data",
+  "subcategory": "PC og tilbehør",
+  "affiliate": true,
+  "ny": true
+},
+{
+  "name": "Komplett.no",
+  "url": "https://www.komplett.no/",
+  "image": "assets/images/elektronikk/komplett.png",
+  "category": "Elektronikk og data",
+  "subcategory": "Mobil og nettbrett",
+  "affiliate": true,
+  "ny": true
+},
+{
+  "name": "Komplett.no",
+  "url": "https://www.komplett.no/",
+  "image": "assets/images/elektronikk/komplett.png",
+  "category": "Elektronikk og data",
+  "subcategory": "Lyd og bilde",
+  "affiliate": true,
+  "ny": true
+},
+{
+  "name": "Elkjøp",
+  "url": "https://www.elkjop.no/",
+  "image": "assets/images/elektronikk/elkjop.png",
+  "category": "Elektronikk og data",
+  "subcategory": "PC og tilbehør",
+  "affiliate": false,
+  "ny": true
+},
+{
+  "name": "Elkjøp",
+  "url": "https://www.elkjop.no/",
+  "image": "assets/images/elektronikk/elkjop.png",
+  "category": "Elektronikk og data",
+  "subcategory": "Lyd og bilde",
+  "affiliate": false,
+  "ny": true
+},
+{
+  "name": "NetOnNet",
+  "url": "https://www.netonnet.no/",
+  "image": "assets/images/elektronikk/netonnet.png",
+  "category": "Elektronikk og data",
+  "subcategory": "Smartprodukter og IoT",
+  "affiliate": true,
+  "ny": true
+}
+
 
 ]
 
