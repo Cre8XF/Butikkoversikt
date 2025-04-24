@@ -4,11 +4,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const tittelEl = document.getElementById("kategori-tittel");
   const container = document.getElementById("kategori-container");
 
+  // Underkategori-definisjon
+  const underkategoriMap = {
+    "Klær og mote": ["Dameklær", "Herreklær", "Tilbehør og sko"]
+  };
+
+  // Sett tittel
   if (!valgtKategori) {
     tittelEl.innerText = "Ingen kategori valgt.";
     return;
   }
 
+  // Hent butikkdata
   fetch("assets/data/butikker.json")
     .then(res => res.json())
     .then(data => {
@@ -25,12 +32,31 @@ document.addEventListener("DOMContentLoaded", () => {
                underkat.includes(valgtKategori.toLowerCase());
       });
 
-      if (filtrert.length === 0) {
-        tittelEl.innerText = `Fant ingen butikker i kategori: ${valgtKategori}`;
-        return;
+      // Sett riktig tittel
+      tittelEl.innerText = valgtKategori;
+
+      // Hvis underkategorier finnes
+      if (underkategoriMap[valgtKategori]) {
+        const underkatDiv = document.createElement("div");
+        underkatDiv.className = "text-center mb-4";
+        underkatDiv.innerHTML = `
+          <h6>Underkategorier</h6>
+          <div class="d-flex justify-content-center flex-wrap gap-2 mt-2">
+            ${underkategoriMap[valgtKategori]
+              .map(
+                navn =>
+                  `<a href="kategori-mal.html?kategori=${encodeURIComponent(navn)}" class="btn btn-outline-primary btn-sm">${navn}</a>`
+              )
+              .join("")}
+          </div>
+        `;
+        container.before(underkatDiv);
       }
 
-      tittelEl.innerText = valgtKategori.charAt(0).toUpperCase() + valgtKategori.slice(1);
+      if (filtrert.length === 0) {
+        container.innerHTML = `<p>Fant ingen butikker i kategori: <strong>${valgtKategori}</strong></p>`;
+        return;
+      }
 
       filtrert.forEach(butikk => {
         const imageUrl = butikk.image && butikk.image.trim() !== "" 
