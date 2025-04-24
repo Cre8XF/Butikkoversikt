@@ -1747,13 +1747,6 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--btn-hover);
 }
 
-/* === FOOTER === */
-.footer {
-  background-color: var(--primary);
-  color: white;
-  padding: 2rem 0;
-  text-align: center;
-}
 
 /* === ANNEN STIL === */
 .section {
