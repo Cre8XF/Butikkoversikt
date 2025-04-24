@@ -342,7 +342,7 @@
   },
   {
     "name": "JackAndJones.com",
-    "image": "assets/images/klær-og-mote/JackJones.png",
+    "image": "assets/images/klær-og-mote/jack&jones.png",
     "alt": "Jack & Jones",
     "category": ["Klær og mote"],
     "subcategory": [],
@@ -947,7 +947,7 @@
   },
   {
     "name": "JackAndJones.com",
-    "image": "assets/images/klær og mote/JackJones.png",
+    "image": "assets/images/klær-og-mote/jack&jones.png",
     "alt": "Jack & Jones",
     "category": ["Klær og mote"],
     "subcategory": ["Herreklær"],
@@ -969,7 +969,7 @@
   },
   {
     "name": "Glitter.no",
-    "image": "assets/images/klær og mote/Glitter.png",
+    "image": "assets/images/klær-og-mote/glitter.png",
     "alt": "Glitter",
     "category": ["Klær og mote"],
     "subcategory": ["Tilbehør og sko"],
