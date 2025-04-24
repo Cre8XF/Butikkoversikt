@@ -1844,5 +1844,106 @@
     "subcategory": "Smartprodukter og IoT",
     "affiliate": false,
     "ny": true
+  },
+  [
+  {
+    "name": "Apotek1.no",
+    "url": "https://www.apotek1.no/",
+    "image": "assets/images/helse/apotek1.png",
+    "category": "Helse og egenpleie",
+    "subcategory": "Apotek og helseprodukter",
+    "affiliate": false,
+    "ny": true
+  },
+  {
+    "name": "Vitusapotek.no",
+    "url": "https://www.vitusapotek.no/",
+    "image": "assets/images/helse/vitusapotek.png",
+    "category": "Helse og egenpleie",
+    "subcategory": "Apotek og helseprodukter",
+    "affiliate": false,
+    "ny": true
+  },
+  {
+    "name": "Mecindo.no",
+    "url": "https://www.mecindo.no/",
+    "image": "assets/images/helse/mecindo.png",
+    "category": "Helse og egenpleie",
+    "subcategory": "Apotek og helseprodukter",
+    "affiliate": false,
+    "ny": true
+  },
+  {
+    "name": "Sunkost.no",
+    "url": "https://sunkost.no/",
+    "image": "assets/images/helse/sunkost.png",
+    "category": "Helse og egenpleie",
+    "subcategory": "Apotek og helseprodukter",
+    "affiliate": false,
+    "ny": true
+  },
+  {
+    "name": "Blivakker.no",
+    "url": "https://www.blivakker.no/",
+    "image": "assets/images/helse/blivakker.png",
+    "category": "Helse og egenpleie",
+    "subcategory": "Hud- og kroppspleie",
+    "affiliate": false,
+    "ny": true
+  },
+  {
+    "name": "Coverbrands.no",
+    "url": "https://coverbrands.no/",
+    "image": "assets/images/helse/coverbrands.png",
+    "category": "Helse og egenpleie",
+    "subcategory": "Hud- og kroppspleie",
+    "affiliate": false,
+    "ny": true
+  },
+  {
+    "name": "Lyko.no",
+    "url": "https://www.lyko.com/no",
+    "image": "assets/images/helse/lyko.png",
+    "category": "Helse og egenpleie",
+    "subcategory": "Hår- og skjønnhetspleie",
+    "affiliate": false,
+    "ny": true
+  },
+  {
+    "name": "Blush.no",
+    "url": "https://www.blush.no/",
+    "image": "assets/images/helse/blush.png",
+    "category": "Helse og egenpleie",
+    "subcategory": "Hår- og skjønnhetspleie",
+    "affiliate": false,
+    "ny": true
+  },
+  {
+    "name": "Eleven.no",
+    "url": "https://eleven.no/",
+    "image": "assets/images/helse/eleven.png",
+    "category": "Helse og egenpleie",
+    "subcategory": "Sminke og kosmetikk",
+    "affiliate": false,
+    "ny": true
+  },
+  {
+    "name": "Gymgrossisten.no",
+    "url": "https://www.gymgrossisten.no/",
+    "image": "assets/images/helse/gymgrossisten.png",
+    "category": "Helse og egenpleie",
+    "subcategory": "Trening og velvære",
+    "affiliate": false,
+    "ny": true
+  },
+  {
+    "name": "GetInspired.no",
+    "url": "https://www.getinspired.no/",
+    "image": "assets/images/helse/getinspired.png",
+    "category": "Helse og egenpleie",
+    "subcategory": "Trening og velvære",
+    "affiliate": false,
+    "ny": true
   }
+]
 ]

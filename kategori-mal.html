@@ -21,32 +21,30 @@
   <!-- Header -->
   <header class="desktop-navbar d-none d-lg-block sticky-top shadow-sm">
     <div class="container d-flex justify-content-between align-items-center py-2">
-      <a href="index.html" class="navbar-brand d-flex align-items-center">
+      <a href="/index.html" class="navbar-brand d-flex align-items-center">
         <img src="assets/images/logo.png" alt="Butikkoversikt.no" height="50" class="me-2">
         <span class="h5 mb-0">Butikkoversikt.no</span>
       </a>
-     <nav class="d-none d-md-flex align-items-center gap-4">
-  <div class="dropdown">
-    <a class="dropdown-toggle text-dark" href="#" id="kategoriDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Kategorier
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="kategoriDropdown">
-      <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Kl%C3%A6r%20og%20mote">Klær og mote</a></li>
-      <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Elektronikk og data">Elektronikk og data</a></li>
-      <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Gaming%20og%20gadgets">Gaming & gadgets</a></li>
-      <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Helse%20og%20egenpleie">Helse og egenpleie</a></li>
-      <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Barn%20og%20baby">Barn og baby</a></li>
-      <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Møbler%20og%20interiør">Møbler og interiør</a></li>
-      <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Bøker%20og%20underholdning">Bøker og underholdning</a></li>
-      <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Apotek">Apotek</a></li>
-      <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Sport%20og%20fritid">Sport og fritid</a></li>
-    </ul>
-  </div>
-  <a href="/topp25.html" class="text-dark">Topp 25</a>
-  <a href="/guider/main-guider.html" class="text-dark">Guider</a>
-  <a href="/om-oss.html" class="text-dark">Om oss</a>
-</nav>
-
+      <nav class="main-nav">
+        <ul class="nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="kategoriDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategorier</a>
+            <ul class="dropdown-menu" aria-labelledby="kategoriDropdown">
+              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Klær og mote">Klær og mote</a></li>
+              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Helse og egenpleie">Helse og egenpleie</a></li>
+              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Barn og baby">Barn og baby</a></li>
+              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Elektronikk og data">Elektronikk og data</a></li>
+              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Møbler og interiør">Møbler og interiør</a></li>
+              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Bøker og underholdning">Bøker og underholdning</a></li>
+              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Apotek">Apotek</a></li>
+              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Sport og fritid">Sport og fritid</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/topp25.html">Topp 25</a></li>
+          <li class="nav-item"><a class="nav-link" href="/guider/main-guider.html">Guider</a></li>
+          <li class="nav-item"><a class="nav-link" href="/om-oss.html">Om oss</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -75,9 +73,9 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/generate-kategori.js" defer></script>
-  <script src="assets/js/menu-toggle.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/generate-kategori.js" defer></script>
+  <script src="/assets/js/menu-toggle.js"></script>
 
   <script>
   document.addEventListener("DOMContentLoaded", () => {
@@ -90,6 +88,13 @@
         "Lyd og bilde",
         "Smartprodukter og IoT",
         "Komponenter og gamingutstyr"
+      ],
+      "Helse og egenpleie": [
+        "Apotek og helseprodukter",
+        "Hud- og kroppspleie",
+        "Hår- og skjønnhetspleie",
+        "Sminke og kosmetikk",
+        "Trening og velvære"
       ]
     };
 
@@ -107,7 +112,7 @@
       const container = document.getElementById("underkategori-lenker");
       underkategorierMap[hovedkategori].forEach(uk => {
         const link = document.createElement("a");
-        link.href = `kategori-mal.html?kategori=${encodeURIComponent(uk)}`;
+        link.href = `/kategori-mal.html?kategori=${encodeURIComponent(uk)}`;
         link.className = "btn btn-outline-primary";
         link.textContent = uk;
         container.appendChild(link);
@@ -115,7 +120,7 @@
 
       if (kategori !== hovedkategori) {
         const visAlle = document.createElement("a");
-        visAlle.href = `kategori-mal.html?kategori=${encodeURIComponent(hovedkategori)}`;
+        visAlle.href = `/kategori-mal.html?kategori=${encodeURIComponent(hovedkategori)}`;
         visAlle.className = "btn btn-link";
         visAlle.textContent = `🔙 Vis alle i ${hovedkategori}`;
         document.getElementById("vis-alle-knapp").appendChild(visAlle);
