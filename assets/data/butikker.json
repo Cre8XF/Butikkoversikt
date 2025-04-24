@@ -1153,6 +1153,95 @@
     "description": "Brettspill, rollespill, samlefigurer, Nintendo, Warhammer osv.",
     "topp25": false,
     "forside": false
+  },
+  {
+    "name": "Footway",
+    "image": "assets/images/klær-og-mote/footway.png",
+    "alt": "Footway",
+    "category": ["klær-og-mote"],
+    "subcategory": ["tilbehør-og-sko"],
+    "url": "https://www.footway.no",
+    "description": "Footway tilbyr et bredt utvalg av sko og tilbehør for hele familien.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Babyplan.no",
+    "image": "assets/images/barn-og-baby/babyplan.png",
+    "alt": "Babyplan",
+    "category": ["Barn og baby"],
+    "subcategory": [],
+    "url": "https://www.babyplan.no",
+    "description": "Produkter for prøvere, gravide og småbarnsforeldre.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Gymgrossisten ",
+    "image": "assets/images/helse og skjønnhet/gymgrossisten.png",
+    "alt": "Gymgrossisten",
+    "category": ["Helse og egenpleie"],
+    "subcategory": [],
+    "url": "https://www.gymgrossisten.no",
+    "description": "Kosttilskudd, treningsutstyr og helseprodukter.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Multicom.no",
+    "image": "assets/images/elektronikk/multicom.png",
+    "alt": "Multicom",
+    "category": ["Gaming & Gadgets"],
+    "subcategory": ["Gaming og elektronikk"], 
+    "url": "https://www.multicom.no",
+    "description": "Multicom tilbyr et bredt utvalg av datamaskiner, komponenter og tilbehør.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Bokkilden",
+    "image": "assets/images/bøker og underholdning/bokkilden.png",
+    "alt": "Bokkilden",
+    "category": ["Bøker og underholdning"],
+    "subcategory": [],
+    "url": "https://www.bokkilden.no",
+    "description": "Bøker, filmer, musikk og spill.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Adlibris",
+    "image": "assets/images/bøker og underholdning/adlibris.png",
+    "alt": "Adlibris",
+    "category": ["Bøker og underholdning"],
+    "subcategory": [],
+    "url": "https://www.adlibris.com/no",
+    "description": "Bøker, filmer, musikk og spill.",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name": "Gadgetshop.no",
+    "image": "assets/images/gadgets-og-gaver/gadgetshop.png",
+    "alt": "Gadgetshop",
+    "category": ["Gadgets og gaver"],
+    "subcategory": [],
+    "url": "https://www.gadgetshop.no",
+    "description": "",
+    "topp25": false,
+    "forside": false
+  },
+  {
+    "name" : "Lekmer.no",
+    "image" : "assets/images/barn-og-baby/lekmer.png",
+    "alt" : "Lekmer",
+    "category" : ["Barn og baby"],
+    "subcategory" : [],
+    "url" : "https://lekmer.no",
+    "description" : "Lekmer.no tilbyr leker, klær og utstyr for barn i alle aldre.",
+    "topp25" : false,
+    "forside" : false 
   }
+
 ]
 
