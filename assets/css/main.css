@@ -1,10 +1,9 @@
 /* ========== ROOT & GRUNNSTIL ========== */
 
 :root {
-  --bg-color: #f8f9fa;          /* Lys base for forsider og helhetlig bakgrunn */
-  --section-bg: #ffffff;        /* Lys seksjonsbakgrunn */
-  --section-alt-bg: #f1f3f5;    /* Alternativ grålig bakgrunn for annenhver seksjon */
-
+  --bg-color: #f8f9fa;
+  --section-bg: #ffffff;
+  --section-alt-bg: #f1f3f5;
   --card-bg: #ffffff;
   --card-hover: #e9ecef;
   --card-border: #dee2e6;
@@ -15,6 +14,7 @@
 
   --btn-primary: #0d6efd;
   --btn-hover: #0b5ed7;
+
   --link-color: var(--btn-primary);
 
   --hero-bg: #e0e0e0;
@@ -24,26 +24,7 @@
   --footer-heading: #ffffff;
   --footer-muted: #adb5bd;
   --footer-border: #495057;
-
 }
-
-
-/* === ROOT-FARGER === 
-:root {
-  --primary: var(--primary);
-  --primary-hover: var(--primary-hover);
-  --secondary: var(--secondary);
-  --text-color: #212529;
-  --text-muted: var(--text-muted);
-  --btn-primary: var(--btn-primary);
-  --btn-hover: var(--btn-hover);
-  --bg-color: var(--bg-color);
-  --section-bg: var(--card-bg)fff;
-  --card-bg: var(--card-bg)fff;
-  --card-hover: var(--card-hover);
-  --border-color: var(--border-color);
-  --danger: var(--danger);
-} */
 
 
 body {
