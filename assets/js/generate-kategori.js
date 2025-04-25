@@ -1,57 +1,122 @@
+// Oppdatert generate-kategori.js
+
 document.addEventListener("DOMContentLoaded", () => {
-  const params = new URLSearchParams(window.location.search);
-  const kategori = decodeURIComponent(params.get("kategori") || "").trim();
-  const container = document.getElementById("kategori-container");
-  const tittel = document.getElementById("kategori-tittel");
+  const urlParams = new URLSearchParams(window.location.search);
+  const kategori = urlParams.get("kategori");
 
-  if (!kategori || !container || !tittel) return;
+  const underkategorierMap = {
+    "Klær og mote": ["Dameklær", "Herreklær", "Tilbehør og sko"],
+    "Elektronikk og data": [
+      "PC og tilbehør",
+      "Mobil og nettbrett",
+      "Lyd og bilde",
+      "Smartprodukter og IoT",
+      "Komponenter og gamingutstyr"
+    ],
+    "Helse og egenpleie": [
+      "Apotek og helseprodukter",
+      "Hud- og kroppspleie",
+      "Hår- og skjønnhetspleie",
+      "Sminke og kosmetikk",
+      "Trening og velvære"
+    ],
+    "Barn og baby": [
+      "Barneklær",
+      "Babyutstyr",
+      "Leker og spill",
+      "Barnerom og møbler",
+      "Bleier og hygiene",
+      "Mat og amming"
+    ],
+    "Sport og fritid": [
+      "Sportsklær og sko",
+      "Trening og treningsutstyr",
+      "Friluft og tur",
+      "Sykkel og sykkelutstyr",
+      "Fiske og jakt"
+    ],
+    "Møbler og interiør": [
+      "Møbler",
+      "Belysning",
+      "Tekstiler og tepper",
+      "Dekor og interiør"
+    ],
+    "Gaming og tilbehør": [
+      "Gamingutstyr og komponenter"
+    ],
+    "Fritid og gaver": [
+      "Gadgets og gaver"
+    ]
+  };
 
-  tittel.textContent = kategori;
-
-  // Vis underkategori-knapper for "Klær og mote"
-  if (kategori === "Klær og mote") {
+  if (underkategorierMap[kategori]) {
     const underkatWrapper = document.getElementById("underkategorier-wrapper");
     if (underkatWrapper) {
       underkatWrapper.classList.remove("d-none");
     }
   }
 
-  fetch("assets/data/butikker.json")
-    .then((res) => res.json())
+  fetch("/butikker.json")
+    .then((response) => response.json())
     .then((butikker) => {
-      const filtrerte = butikker.filter((butikk) => {
-        const hovedkategori = Array.isArray(butikk.category)
-          ? butikk.category.map(k => k.toLowerCase().trim()).includes(kategori.toLowerCase().trim())
-          : butikk.category?.toLowerCase().trim() === kategori.toLowerCase().trim();
+      const container = document.getElementById("butikk-container");
+      container.innerHTML = "";
 
-        const underkategori = Array.isArray(butikk.subcategory)
-          ? butikk.subcategory.map(k => k.toLowerCase().trim()).includes(kategori.toLowerCase().trim())
-          : butikk.subcategory?.toLowerCase().trim() === kategori.toLowerCase().trim();
+      const aktivSubkategori = document.querySelector(".filter-btn.active")?.dataset.subcategory || "alle";
 
-        return hovedkategori || underkategori;
-      });
-
-      if (filtrerte.length === 0) {
-        container.innerHTML = `<p class="text-muted">Ingen butikker funnet i denne kategorien.</p>`;
-        return;
-      }
-
-      container.innerHTML = filtrerte
-        .map(
-          (butikk) => `
-        <div class="col-6 col-md-3">
-          <a href="${butikk.url}" target="_blank" rel="noopener sponsored" class="text-decoration-none text-center d-block store-showcase">
-            <img src="${butikk.image}" alt="${butikk.alt}" class="card-logo mb-2">
-            <h6>${butikk.name}</h6>
-            <p class="small text-muted">${butikk.description}</p>
-          </a>
-        </div>
-      `
-        )
-        .join("");
-    })
-    .catch((err) => {
-      console.error("Feil ved lasting av butikker:", err);
-      container.innerHTML = `<p class="text-danger">Det oppstod en feil ved lasting av butikker.</p>`;
+      butikker
+        .filter((butikk) => {
+          return butikk.category === kategori && (aktivSubkategori === "alle" || butikk.subcategory === aktivSubkategori);
+        })
+        .forEach((butikk) => {
+          const card = document.createElement("div");
+          card.className = "col";
+          card.innerHTML = `
+            <div class="card h-100 border-0 shadow-sm hover-shadow">
+              <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}">
+              <div class="card-body">
+                <h5 class="card-title">${butikk.name}</h5>
+                <p class="card-text">${butikk.description}</p>
+                <a href="${butikk.url}" class="btn btn-primary w-100" target="_blank" rel="noopener">Besøk butikk</a>
+              </div>
+            </div>
+          `;
+          container.appendChild(card);
+        });
     });
+
+  document.querySelectorAll(".filter-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      document.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
+      e.target.classList.add("active");
+      const subkategori = e.target.dataset.subcategory;
+
+      fetch("/butikker.json")
+        .then((response) => response.json())
+        .then((butikker) => {
+          const container = document.getElementById("butikk-container");
+          container.innerHTML = "";
+
+          butikker
+            .filter((butikk) => {
+              return butikk.category === kategori && (subkategori === "alle" || butikk.subcategory === subkategori);
+            })
+            .forEach((butikk) => {
+              const card = document.createElement("div");
+              card.className = "col";
+              card.innerHTML = `
+                <div class="card h-100 border-0 shadow-sm hover-shadow">
+                  <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}">
+                  <div class="card-body">
+                    <h5 class="card-title">${butikk.name}</h5>
+                    <p class="card-text">${butikk.description}</p>
+                    <a href="${butikk.url}" class="btn btn-primary w-100" target="_blank" rel="noopener">Besøk butikk</a>
+                  </div>
+                </div>
+              `;
+              container.appendChild(card);
+            });
+        });
+    });
+  });
 });
