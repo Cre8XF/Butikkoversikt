@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Demo - Butikkoversikt.no</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 90px;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+      color: #0d6efd;
+    }
+    .dropdown-menu {
+      margin-top: 8px;
+    }
+    header {
+      z-index: 1030;
+    }
+  </style>
+</head>
+<body>
+
+<header class="custom-header sticky-top py-3 px-3 bg-white border-bottom shadow-sm">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <a href="#" class="navbar-brand d-flex align-items-center">
+      <i class="bi bi-shop fs-3 text-primary me-2"></i>
+      <span class="h5 mb-0 fw-bold">Butikkoversikt.no</span>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobilMeny" aria-controls="mobilMeny" aria-expanded="false" aria-label="Meny">
+      <i class="bi bi-list fs-2"></i>
+    </button>
+  </div>
+
+  <div class="collapse" id="mobilMeny">
+    <div class="bg-white p-3 border-top">
+      <form action="#" method="GET" class="mb-3">
+        <div class="input-group input-group-sm">
+          <input name="k" type="text" class="form-control rounded-start" placeholder="Søk butikk eller kategori..." aria-label="Søk">
+          <button class="btn btn-outline-primary rounded-end" type="submit" title="Søk">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </form>
+
+      <ul class="nav flex-column">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" id="kategoriDropdownMobil" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Kategorier
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="kategoriDropdownMobil">
+            <li><a class="dropdown-item" href="#">Klær og mote</a></li>
+            <li><a class="dropdown-item" href="#">Elektronikk og data</a></li>
+            <li><a class="dropdown-item" href="#">Gaming og tilbehør</a></li>
+            <li><a class="dropdown-item" href="#">Fritid og gaver</a></li>
+            <li><a class="dropdown-item" href="#">Helse og egenpleie</a></li>
+            <li><a class="dropdown-item" href="#">Barn og baby</a></li>
+            <li><a class="dropdown-item" href="#">Møbler og interiør</a></li>
+            <li><a class="dropdown-item" href="#">Bøker og underholdning</a></li>
+            <li><a class="dropdown-item" href="#">Apotek</a></li>
+            <li><a class="dropdown-item" href="#">Sport og fritid</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#">Topp 25</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#">Guider</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#">Om oss</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main class="container mt-5">
+  <h1>Header Demo</h1>
+  <p>Dette er en demo som viser forbedret header for Butikkoversikt.no på desktop og mobil.</p>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
