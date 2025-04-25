@@ -1,8 +1,11 @@
-// generate-kategori.js - Oppdatert versjon
-
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
-  const kategori = urlParams.get("kategori");
+  const valgtKategori = urlParams.get("kategori");
+
+  const butikkContainer = document.getElementById("butikk-container");
+  const underkatWrapper = document.getElementById("underkategorier-wrapper");
+  const underkategoriFilter = document.getElementById("underkategori-lenker");
+  const kategoriTittel = document.getElementById("kategori-tittel");
 
   const underkategorierMap = {
     "Klær og mote": ["Dameklær", "Herreklær", "Tilbehør og sko"],
@@ -45,104 +48,83 @@ document.addEventListener("DOMContentLoaded", () => {
     "Fritid og gaver": ["Gadgets og gaver"]
   };
 
-  if (underkategorierMap[kategori]) {
-    const underkatWrapper = document.getElementById("underkategorier-wrapper");
-    if (underkatWrapper) {
-      underkatWrapper.classList.remove("d-none");
-    }
+  if (!valgtKategori) {
+    kategoriTittel.textContent = "Kategori ikke valgt.";
+    return;
   }
 
-  fetch("assets/data/butikker.json")
+  kategoriTittel.textContent = valgtKategori;
+
+  fetch("/assets/data/butikker.json")
     .then((response) => response.json())
     .then((butikker) => {
-      const container = document.getElementById("butikk-container");
-      container.innerHTML = "";
+      const butikkerIKategori = butikker.filter(
+        (butikk) => butikk.kategori === valgtKategori
+      );
 
-      const aktivSubkategori = document.querySelector(".filter-btn.active")?.dataset.subcategory || "alle";
+      if (butikkerIKategori.length === 0) {
+        butikkContainer.innerHTML = "<p>Ingen butikker funnet.</p>";
+        return;
+      }
 
-      butikker
-        .filter((butikk) => {
-          return butikk.category === kategori && (aktivSubkategori === "alle" || butikk.subcategory === aktivSubkategori);
-        })
-        .forEach((butikk) => {
-          const card = document.createElement("div");
-          card.className = "col";
-          card.innerHTML = `
-            <div class="card h-100 border-0 shadow-sm hover-shadow">
-              <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}" />
-              <div class="card-body">
-                <h5 class="card-title">${butikk.name}</h5>
-                <p class="card-text">${butikk.description}</p>
-                <a href="${butikk.url}" class="btn btn-primary w-100" target="_blank" rel="noopener">Besøk butikk</a>
-              </div>
-            </div>
-          `;
-          container.appendChild(card);
+      // Hvis underkategorier finnes, vis filteret
+      const underkategorier = underkategorierMap[valgtKategori];
+      if (underkategorier && underkategorier.length > 0) {
+        underkatWrapper.classList.remove("d-none");
+        
+        // Lag "Vis alle" knapp
+        const visAlleBtn = document.createElement("button");
+        visAlleBtn.textContent = "Vis alle";
+        visAlleBtn.className = "btn btn-outline-primary filter-btn active";
+        visAlleBtn.dataset.underkategori = "alle";
+        underkategoriFilter.appendChild(visAlleBtn);
+
+        // Lag egne knapper for hver underkategori
+        underkategorier.forEach((underkat) => {
+          const btn = document.createElement("button");
+          btn.textContent = underkat;
+          btn.className = "btn btn-outline-primary filter-btn";
+          btn.dataset.underkategori = underkat;
+          underkategoriFilter.appendChild(btn);
         });
-    });
+      }
 
-  document.querySelectorAll(".filter-btn").forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      document.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
-      e.target.classList.add("active");
-      const subkategori = e.target.dataset.subcategory;
+      visButikker(butikkerIKategori); // Start med å vise alle
 
-      fetch("assets/data/butikker.json")
-        .then((response) => response.json())
-        .then((butikker) => {
-          const container = document.getElementById("butikk-container");
-          container.innerHTML = "";
-          const aktivSubkategori = document.querySelector(".filter-btn.active")?.dataset.subcategory || "alle";
-          const kategori = urlParams.get("kategori");
-          const underkategori = underkategorierMap[kategori] || [];
-          const subkategorier = underkategori.filter((subkat) => {
-            return subkat !== "alle" && subkat !== aktivSubkategori;
-          });
-          const subkategoriContainer = document.getElementById("underkategori-lenker");
-          subkategoriContainer.innerHTML = "";
-          subkategorier.forEach((subkat) => {
-            const subkatBtn = document.createElement("button");
-            subkatBtn.className = "btn btn-outline-secondary filter-btn";
-            subkatBtn.dataset.subcategory = subkat;
-            subkatBtn.innerText = subkat;
-            subkategoriContainer.appendChild(subkatBtn);
-          });
-          const alleBtn = document.createElement("button");
-          alleBtn.className = "btn btn-outline-secondary filter-btn";
-          alleBtn.dataset.subcategory = "alle";
-          alleBtn.innerText = "Alle";
-          alleBtn.addEventListener("click", () => {
-            document.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
-            alleBtn.classList.add("active");
-            fetch("assets/data/butikker.json")
-              .then((response) => response.json())
-              .then((butikker) => {
-                container.innerHTML = "";
-                butikker
-                  .filter((butikk) => {
-                    return butikk.category === kategori;
-                  })
-                  .forEach((butikk) => {
-                    const card = document.createElement("div");
-                    card.className = "col";
-                    card.innerHTML = `
-                      <div class="card h-100 border-0 shadow-sm hover-shadow">
-                        <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}" />
-                        <div class="card-body">
-                          <h5 class="card-title">${butikk.name}</h5>
-                          <p class="card-text">${butikk.description}</p>
-                          <a href="${butikk.url}" class="btn btn-primary w-100" target="_blank" rel="noopener">Besøk butikk</a>
-                        </div>
-                      </div>
-                    `;
-                    container.appendChild(card);
-                  });
-              })
-              .catch((error) => {
-                console.error("Error fetching butikker:", error);
-              });
-          });
+      underkategoriFilter.addEventListener("click", (e) => {
+        if (e.target.tagName !== "BUTTON") return;
+
+        document.querySelectorAll(".filter-btn").forEach((btn) => {
+          btn.classList.remove("active");
         });
+        e.target.classList.add("active");
+
+        const valgtUnderkat = e.target.dataset.underkategori;
+
+        const filtrerte = valgtUnderkat === "alle"
+          ? butikkerIKategori
+          : butikkerIKategori.filter(
+              (butikk) => butikk.underkategori === valgtUnderkat
+            );
+
+        visButikker(filtrerte);
       });
+    })
+    .catch((err) => {
+      console.error("Feil ved lasting av butikker:", err);
     });
-  });
+
+  function visButikker(butikker) {
+    butikkContainer.innerHTML = "";
+
+    butikker.forEach((butikk) => {
+      const kort = document.createElement("div");
+      kort.className = "col-md-4";
+
+      kort.innerHTML = `
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="${butikk.bilde}" class="card-img-top" alt="${butikk.navn}" />
+          <div class="card-body">
+            <h5 class="card-title">${butikk.navn}</h5>
+            <p class="card-text">${butikk.beskrivelse}</p>
+            <a href="${butikk.lenke}" class="
