@@ -92,6 +92,44 @@ document.addEventListener("DOMContentLoaded", () => {
         .then((butikker) => {
           const container = document.getElementById("butikk-container");
           container.innerHTML = "";
+          const aktivSubkategori = document.querySelector(".filter-btn.active")?.dataset.subcategory || "alle";
+          const kategori = urlParams.get("kategori");
+          const underkategori = underkategorierMap[kategori] || [];
+          const subkategorier = underkategori.filter((subkat) => {
+            return subkat !== "alle" && subkat !== aktivSubkategori;
+          });
+          const subkategoriContainer = document.getElementById("underkategorier");
+          subkategoriContainer.innerHTML = "";
+          subkategorier.forEach((subkat) => {
+            const subkatBtn = document.createElement("button");
+            subkatBtn.className = "btn btn-outline-secondary filter-btn";
+            subkatBtn.dataset.subcategory = subkat;
+            subkatBtn.innerText = subkat;
+            subkategoriContainer.appendChild(subkatBtn);
+          });
+          const alleBtn = document.createElement("button");
+          alleBtn.className = "btn btn-outline-secondary filter-btn";
+          alleBtn.dataset.subcategory = "alle";
+          alleBtn.innerText = "Alle";
+          alleBtn.addEventListener("click", () => {
+            document.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
+            alleBtn.classList.add("active");
+            fetch("assets/data/butikker.json")
+              .then((response) => response.json())
+              .then((butikker) => {
+                container.innerHTML = "";
+                butikker
+                  .filter((butikk) => {
+                    return butikk.category === kategori;
+                  })
+                  .forEach((butikk) => {
+                    const card = document.createElement("div");
+                    card.className = "col";
+                    card.innerHTML = `
+                      <div class="card h-100 border-0 shadow-sm hover-shadow">
+                        <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}">
+                        <div class="card-body">
+                          <h5 class="card-title
 
           butikker
             .filter((butikk) => {
