@@ -92,6 +92,7 @@ header.bg-header {
   margin-bottom: 3rem;
 }
 .section-dark {
+  background-color: linear-gradient(to right, #1e293b, #334155);
   color: #f1f5f9;
   padding-top: 4rem;
   padding-bottom: 4rem;
