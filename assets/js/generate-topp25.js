@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
           : "assets/images/logo-mangler.png";
 
         const card = document.createElement("div");
-        card.className = "col-6 col-md-3 d-flex store-card"; // Nå med store-card klasse
+        card.className = "col-6 col-md-3 d-flex store-card fade in"; // Nå med store-card klasse
         card.innerHTML = `
           <div class="store-showcase text-center w-100 p-3">
             <img src="${imageUrl}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-2" loading="lazy" />
