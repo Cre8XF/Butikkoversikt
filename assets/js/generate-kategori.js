@@ -127,4 +127,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="card-body">
             <h5 class="card-title">${butikk.navn}</h5>
             <p class="card-text">${butikk.beskrivelse}</p>
-            <a href="${butikk.lenke}" class="
+                  <a href="${butikk.lenke}" class="btn btn-primary">Besøk butikk</a>
+                </div>
+              </div>
+            `;
+
