@@ -1,255 +1,76 @@
-<!DOCTYPE html>
-<html lang="no">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kategori | Butikkoversikt.no</title>
-    <meta
-      name="description"
-      content="Utforsk nettbutikker sortert etter kategori og underkategori."
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
-    <style>
-      #underkategori-lenker {
-        overflow-x: auto;
-        white-space: nowrap;
+<!-- Oppdatert kategori-mal.html -->
+<section class="py-5">
+  <div class="container">
+    <h2 id="kategori-tittel" class="text-center mb-4"></h2>
+    <p id="kategori-beskrivelse" class="text-muted text-center"></p>
+
+    <div id="underkategorier-wrapper" class="d-flex flex-wrap justify-content-center gap-2 mb-4 d-none">
+      <!-- Underkategori-knapper genereres her -->
+    </div>
+
+    <div id="butikk-container" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"></div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const kategori = new URLSearchParams(window.location.search).get("kategori");
+
+    const underkategorierMap = {
+      "Klær og mote": ["Dameklær", "Herreklær", "Tilbehør og sko"],
+      "Elektronikk og data": [
+        "PC og tilbehør",
+        "Mobil og nettbrett",
+        "Lyd og bilde",
+        "Smartprodukter og IoT",
+        "Komponenter og gamingutstyr"
+      ],
+      "Helse og egenpleie": [
+        "Apotek og helseprodukter",
+        "Hud- og kroppspleie",
+        "Hår- og skjønnhetspleie",
+        "Sminke og kosmetikk",
+        "Trening og velvære"
+      ],
+      "Barn og baby": [
+        "Barneklær",
+        "Babyutstyr",
+        "Leker og spill",
+        "Barnerom og møbler",
+        "Bleier og hygiene",
+        "Mat og amming"
+      ],
+      "Sport og fritid": [
+        "Sportsklær og sko",
+        "Trening og treningsutstyr",
+        "Friluft og tur",
+        "Sykkel og sykkelutstyr",
+        "Fiske og jakt"
+      ],
+      "Møbler og interiør": [
+        "Møbler",
+        "Belysning",
+        "Tekstiler og tepper",
+        "Dekor og interiør"
+      ],
+      "Gaming og tilbehør": [
+        "Gamingutstyr og komponenter"
+      ],
+      "Fritid og gaver": [
+        "Gadgets og gaver"
+      ]
+    };
+
+    if (underkategorierMap[kategori]) {
+      const underkatWrapper = document.getElementById("underkategorier-wrapper");
+      if (underkatWrapper) {
+        underkatWrapper.classList.remove("d-none");
       }
-    </style>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="desktop-navbar d-none d-lg-block sticky-top shadow-sm">
-      <div
-        class="container d-flex justify-content-between align-items-center py-2"
-      >
-        <a href="/index.html" class="navbar-brand d-flex align-items-center">
-          <img
-            src="assets/images/logo.png"
-            alt="Butikkoversikt.no"
-            height="50"
-            class="me-2"
-          />
-          <span class="h5 mb-0">Butikkoversikt.no</span>
-        </a>
-        <nav class="main-nav">
-          <ul class="nav">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="kategoriDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Kategorier</a
-              >
-              <ul class="dropdown-menu" aria-labelledby="kategoriDropdown">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="/kategori-mal.html?kategori=Klær og mote"
-                    >Klær og mote</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="/kategori-mal.html?kategori=Helse og egenpleie"
-                    >Helse og egenpleie</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="/kategori-mal.html?kategori=Barn og baby"
-                    >Barn og baby</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="/kategori-mal.html?kategori=Elektronikk og data"
-                    >Elektronikk og data</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="/kategori-mal.html?kategori=Møbler og interiør"
-                    >Møbler og interiør</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="/kategori-mal.html?kategori=Bøker og underholdning"
-                    >Bøker og underholdning</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="/kategori-mal.html?kategori=Apotek"
-                    >Apotek</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="/kategori-mal.html?kategori=Sport og fritid"
-                    >Sport og fritid</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/topp25.html">Topp 25</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/guider/main-guider.html">Guider</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/om-oss.html">Om oss</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    }
+  });
+</script>
 
-    <!-- Innhold -->
-    <section class="section bg-section text-center">
-      <div class="container">
-        <h1 id="kategori-tittel" class="mb-4">
-          Vi henter butikker i denne kategorien...
-        </h1>
-
-        <!-- Underkategorier (vises ved behov) -->
-        <div id="underkategorier-wrapper" class="mb-4 d-none">
-          <h5>Underkategorier</h5>
-          <div
-            id="underkategori-lenker"
-            class="d-flex flex-wrap justify-content-center gap-3 mb-3"
-          ></div>
-          <div id="vis-alle-knapp" class="mb-3"></div>
-        </div>
-
-        <div
-          id="kategori-container"
-          class="row g-4 justify-content-center"
-        ></div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer bg-header text-white mt-5">
-      <div class="text-center py-3">© 2025 Butikkoversikt.no</div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/generate-kategori.js" defer></script>
-    <script src="/assets/js/menu-toggle.js"></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const kategori = new URLSearchParams(window.location.search).get(
-          "kategori"
-        );
-        const underkategorierMap = {
-  const underkategorierMap = {
-  "Klær og mote": [
-    "Dameklær",
-    "Herreklær",
-    "Tilbehør og sko"
-  ],
-  "Elektronikk og data": [
-    "PC og tilbehør",
-    "Mobil og nettbrett",
-    "Lyd og bilde",
-    "Smartprodukter og IoT",
-    "Komponenter og gamingutstyr"
-  ],
-  "Helse og egenpleie": [
-    "Apotek og helseprodukter",
-    "Hud- og kroppspleie",
-    "Hår- og skjønnhetspleie",
-    "Sminke og kosmetikk",
-    "Trening og velvære"
-  ],
-  "Barn og baby": [
-    "Barneklær",
-    "Babyutstyr",
-    "Leker og spill",
-    "Barnerom og møbler",
-    "Bleier og hygiene",
-    "Mat og amming"
-  ],
-  "Sport og fritid": [
-    "Sportsklær og sko",
-    "Trening og treningsutstyr",
-    "Friluft og tur",
-    "Sykkel og sykkelutstyr",
-    "Fiske og jakt"
-  ],
-  "Møbler og interiør": [
-    "Møbler",
-    "Belysning",
-    "Tekstiler og tepper",
-    "Dekor og interiør"
-  ],
-  "Gaming og tilbehør": [
-    "Gamingutstyr og komponenter"
-  ],
-  "Fritid og gaver": [
-    "Gadgets og gaver"
-  ]
-}
-
-
-
-          let hovedkategori = null;
-          for (const [kategoriNavn, underkatListe] of Object.entries(
-            underkategorierMap
-          )) {
-            if (kategori === kategoriNavn || underkatListe.includes(kategori)) {
-              hovedkategori = kategoriNavn;
-              break;
-            }
-          }
-
-          if (hovedkategori) {
-            document
-              .getElementById("underkategorier-wrapper")
-              .classList.remove("d-none");
-
-            const container = document.getElementById("underkategori-lenker");
-            underkategorierMap[hovedkategori].forEach((uk) => {
-              const link = document.createElement("a");
-              link.href = `/kategori-mal.html?kategori=${encodeURIComponent(uk)}`;
-              link.className = "btn btn-outline-primary";
-              link.textContent = uk;
-              container.appendChild(link);
-            });
-
-            if (kategori !== hovedkategori) {
-              const visAlle = document.createElement("a");
-              visAlle.href = `/kategori-mal.html?kategori=${encodeURIComponent(
-                hovedkategori
-              )}`;
-              visAlle.className = "btn btn-link";
-              visAlle.textContent = `🔙 Vis alle i ${hovedkategori}`;
-              document.getElementById("vis-alle-knapp").appendChild(visAlle);
-            }
-          }
-        });
-      </script>
-    </body>
-  </html>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Scripts -->
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/generate-kategori.js"></script>
+<script src="/assets/js/menu-toggle.js"></script>
