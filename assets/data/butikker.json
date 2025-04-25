@@ -1850,5 +1850,86 @@
     "subcategory": "Mat og amming",
     "affiliate": true,
     "ny": true
+  },
+  {
+    "name": "Skeidar",
+    "description": "En av Norges største møbelkjeder med sofaer, senger, stoler og mer.",
+    "image": "assets/images/mobler-og-interior/skeidar.png",
+    "url": "https://www.skeidar.no",
+    "category": "Møbler og interiør",
+    "subcategory": "Møbler",
+    "affiliate": true,
+    "ny": true
+  },
+  {
+    "name": "Møbelringen",
+    "description": "Møbler og interiør til stue, soverom, kjøkken og mer.",
+    "image": "assets/images/mobler-og-interior/mobelringen.png",
+    "url": "https://www.mobelringen.no",
+    "category": "Møbler og interiør",
+    "subcategory": "Møbler",
+    "affiliate": true,
+    "ny": true
+  },
+  {
+    "name": "Jotex",
+    "description": "Stilrene tekstiler, interiør og småmøbler til hjemmet.",
+    "image": "assets/images/mobler-og-interior/jotex.png",
+    "url": "https://www.jotex.no",
+    "category": "Møbler og interiør",
+    "subcategory": "Tekstiler og tepper",
+    "affiliate": true,
+    "ny": true
+  },
+  {
+    "name": "Lampegiganten",
+    "description": "Alt innen belysning – taklamper, vegglamper og LED.",
+    "image": "assets/images/mobler-og-interior/lampegiganten.png",
+    "url": "https://www.lampegiganten.no",
+    "category": "Møbler og interiør",
+    "subcategory": "Belysning",
+    "affiliate": true,
+    "ny": true
+  },
+  {
+    "name": "Hviit",
+    "description": "Norsk interiørbutikk med designprodukter og dekor.",
+    "image": "assets/images/mobler-og-interior/hviit.png",
+    "url": "https://www.hviit.no",
+    "category": "Møbler og interiør",
+    "subcategory": "Dekor og interiør",
+    "affiliate": true,
+    "ny": true
+  },
+  {
+    "name": "Nordic Nest",
+    "description": "Skandinavisk design – dekor, belysning og interiørprodukter.",
+    "image": "assets/images/mobler-og-interior/nordicnest.png",
+    "url": "https://www.nordicnest.no",
+    "category": "Møbler og interiør",
+    "subcategory": "Dekor og interiør",
+    "affiliate": true,
+    "ny": true
+  },
+  {
+    "name": "Kid",
+    "description": "Kjent for tekstiler, gardiner, puter og sesonginteriør.",
+    "image": "assets/images/mobler-og-interior/kid.png",
+    "url": "https://www.kid.no",
+    "category": "Møbler og interiør",
+    "subcategory": "Tekstiler og tepper",
+    "affiliate": true,
+    "ny": true
+  },
+  {
+    "name": "Ellos Home",
+    "description": "Bredt utvalg av møbler, belysning og interiør til hele hjemmet.",
+    "image": "assets/images/mobler-og-interior/elloshome.png",
+    "url": "https://www.ellos.no/home",
+    "category": "Møbler og interiør",
+    "subcategory": "Møbler",
+    "affiliate": true,
+    "ny": true
   }
 ]
+
