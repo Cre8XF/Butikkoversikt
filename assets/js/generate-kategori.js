@@ -1,4 +1,4 @@
-// Oppdatert generate-kategori.js
+// generate-kategori.js - Oppdatert versjon
 
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
@@ -41,12 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Tekstiler og tepper",
       "Dekor og interiør"
     ],
-    "Gaming og tilbehør": [
-      "Gamingutstyr og komponenter"
-    ],
-    "Fritid og gaver": [
-      "Gadgets og gaver"
-    ]
+    "Gaming og tilbehør": ["Gamingutstyr og komponenter"],
+    "Fritid og gaver": ["Gadgets og gaver"]
   };
 
   if (underkategorierMap[kategori]) {
