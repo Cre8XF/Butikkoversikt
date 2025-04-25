@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  fetch("/butikker.json")
+  fetch("assets/data/butikker.json")
     .then((response) => response.json())
     .then((butikker) => {
       const container = document.getElementById("butikk-container");
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.target.classList.add("active");
       const subkategori = e.target.dataset.subcategory;
 
-      fetch("assets/json/butikker.json")
+      fetch("assets/data/butikker.json")
         .then((response) => response.json())
         .then((butikker) => {
           const container = document.getElementById("butikk-container");
