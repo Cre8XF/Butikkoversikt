@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const subkategorier = underkategori.filter((subkat) => {
             return subkat !== "alle" && subkat !== aktivSubkategori;
           });
-          const subkategoriContainer = document.getElementById("underkategorier");
+          const subkategoriContainer = document.getElementById("underkategori-lenker");
           subkategoriContainer.innerHTML = "";
           subkategorier.forEach((subkat) => {
             const subkatBtn = document.createElement("button");
