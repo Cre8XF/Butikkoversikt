@@ -1944,6 +1944,7 @@
     "affiliate": false,
     "ny": true
   },
+  [
   {
     "navn": "Jollyroom",
     "beskrivelse": "Stort utvalg av barneutstyr, leker, klær og barnevogner.",
@@ -2024,4 +2025,7 @@
     "affiliate": true,
     "ny": true
   }
+]
+
+
 ]
