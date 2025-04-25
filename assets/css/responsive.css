@@ -1,11 +1,6 @@
-/* RESPONSIVE */
+/* EXTRA: Responsiv forbedring guider */
 @media (max-width: 768px) {
-  .navbar-nav {
-    text-align: center;
-  }
-}
-@media (max-width: 576px) {
-  .section {
-    padding: 40px 0;
+  .guide-card {
+    margin-bottom: 1.5rem;
   }
 }

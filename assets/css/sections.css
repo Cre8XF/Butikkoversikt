@@ -1,11 +1,13 @@
-/* SECTIONS */
-.section {
-  padding: 60px 0;
+/* EXTRA: Fade in seksjoner */
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
 }
-.section-light {
-  background-color: var(--light-bg);
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-.section-dark {
-  background-color: var(--dark-bg);
-  color: #fff;
+.section-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
 }
