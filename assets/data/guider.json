@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "guide-trygg-netthandel",
+    "title": "Hvordan handle trygt på nett",
+    "description": "Enkel guide til trygg betaling og hvordan du unngår svindel.",
+    "image": "assets/images/guides/guide-trygg-netthandel.png"
+  },
+  {
+    "slug": "guide-barn",
+    "title": "10 beste nettbutikker for barn i 2025",
+    "description": "Se våre anbefalte butikker for barneklær, leker og utstyr.",
+    "image": "assets/images/guides/guide-barn.png"
+  },
+  {
+    "slug": "guide-billig-treningstoy",
+    "title": "Billig treningstøy på nett",
+    "description": "Tips og nettbutikker med rimelige treningsklær for dame og herre.",
+    "image": "assets/images/guides/guide-billig-treningstoy.png"
+  }
+]
