@@ -1802,5 +1802,20 @@ h1, h2, h3, h4, h5, h6 {
 .section-gradient {
   margin-bottom: 3rem;
 }
+.section-dark {
+  background: linear-gradient(to right, #2a3545, #1e2835);
+  color: #f1f5f9;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-top: 1px solid var(--footer-border);
+  border-bottom: 1px solid var(--footer-border);
+}
+.section-dark h2,
+.section-dark h5,
+.section-dark p,
+.section-dark a {
+  color: #f1f5f9;
+}
+
 
 
