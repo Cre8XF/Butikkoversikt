@@ -1,0 +1,10 @@
+/* CARDS */
+.card {
+  background-color: var(--card-bg);
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.card-title {
+  font-size: 1.1rem;
+}

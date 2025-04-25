@@ -1,0 +1,12 @@
+/* MISC */
+.sticky-ad {
+  position: sticky;
+  top: 80px;
+}
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

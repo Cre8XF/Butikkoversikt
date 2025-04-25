@@ -1,0 +1,20 @@
+/* HEADER */
+header {
+  z-index: 1030;
+  background-color: #fcfcfc;
+}
+.navbar .container {
+  box-shadow: none !important;
+  background: transparent !important;
+  border: none !important;
+}
+.navbar-brand span {
+  font-family: 'Poppins', sans-serif;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+.dropdown-menu {
+  margin-top: 8px;
+}

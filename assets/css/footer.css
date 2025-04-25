@@ -1,0 +1,12 @@
+/* FOOTER */
+footer {
+  background-color: var(--dark-bg);
+  color: #fff;
+  padding: 40px 0;
+}
+footer a {
+  color: #adb5bd;
+}
+footer a:hover {
+  color: #fff;
+}

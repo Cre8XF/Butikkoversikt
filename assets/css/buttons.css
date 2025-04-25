@@ -1,0 +1,8 @@
+/* BUTTONS */
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}

@@ -1,0 +1,11 @@
+/* SECTIONS */
+.section {
+  padding: 60px 0;
+}
+.section-light {
+  background-color: var(--light-bg);
+}
+.section-dark {
+  background-color: var(--dark-bg);
+  color: #fff;
+}

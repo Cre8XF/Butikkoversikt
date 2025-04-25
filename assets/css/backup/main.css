@@ -1,53 +1,36 @@
 /* ========== ROOT & GRUNNSTIL ========== */
 
 :root {
-  /* --- Grunnleggende Bakgrunner (justert mørkere) --- */
-  --bg-color: #e9ecef;       /* Litt mørkere grå base (denne var --bg-dark i forrige) */
-  --section-bg: #f8f9fa;    /* Veldig lys grå for seksjoner (denne var --bg-color i forrige) */
-  --card-bg: #f8f9fa;       /* Samme for kort, fortsatt lysere enn --bg-color */
-  --bg-dark: #ced4da;       /* En tydeligere mørk grå for header/footer. Alternativt: #adb5bd for enda mer dybde */
+  --bg-color: #f5f7fa;
+  --section-bg: #ffffff;
+  --section-alt-bg: #e8edf3;
+  --card-bg: #ffffff;
+  --card-hover: #f1f5f9;
 
-  /* --- Tekstfarger (forblir de samme for kontrast) --- */
-  --text-color: #212529;     /* Mørk gråsvart */
-  --text-muted: #6c757d;     /* Mellomgrå */
+  --text-color: #1f2937;
+  --text-muted: #6b7280;
+  --heading-color: #111827;
 
-  /* --- Kort og Interaksjon (justert til nye bakgrunner) --- */
-  --card-border: #ced4da;   /* Litt mørkere kantlinje som matcher --bg-dark eller er tydelig mot --bg-color */
-  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.07); /* Litt mørkere skygge kan vurderes */
-  --card-hover: #dee2e6;     /* Hover-effekt som er litt mørkere enn kortbakgrunnen */
+  --btn-primary: #2563eb;
+  --btn-hover: #1d4ed8;
+  --link-color: #2563eb;
 
-  /* --- Knapper og Aksenter (forblir de samme) --- */
-  --btn-primary: #0d6efd;    /* Behold blåfargen for gjenkjennelighet */
-  --btn-hover: #0b5ed7;      /* Mørkere blå ved hover */
-  --link-color: #0d6efd;     /* Blå for lenker */
+  --footer-bg: #1e293b;
+  --footer-text: #f1f5f9;
+  --footer-heading: #ffffff;
+  --footer-muted: #94a3b8;
+  --footer-border: #334155;
 
-  /* --- Hero Seksjon (Valgfritt) --- */
-  --hero-bg: var(--bg-dark); /* Bruk den oppdaterte mørkere grå, eller en annen passende farge/gradient */
+  --section-light: #f4f6f9;     /* Ekstra bakgrunn hvis du bruker .bg-light-section */
+  --section-muted: #e9eef5;     /* Ekstra hvis du bruker .bg-muted */
 
-  /* --- Footer --- */
-  --footer-bg: #ced4da; /* Samme som --bg-dark for konsistens */
-  --footer-text: #f1f1f1; /* Lysere tekstfarge for kontrast */
-  --footer-heading: #ffffff; /* Hvit for overskrifter */
-  --footer-muted: #cccccc; /* Lys grå for mindre viktig tekst */
-  --footer-border: #2e2e2e; /* Mørkere grå for skillelinjer */
+  --border-color: #d1d5db;      /* Grensefarge for kort, skiller, dividers */
+  --success-color: #10b981;     /* Grønn for suksess/merker */
+  --warning-color: #f59e0b;     /* Gul for varsler */
+  --danger-color: #ef4444;      /* Rød for feil */
+
 }
 
-/* === ROOT-FARGER === 
-:root {
-  --primary: #004c99;
-  --primary-hover: #003366;
-  --secondary: #e6f3fb;
-  --text-color: #212529;
-  --text-muted: #6c757d;
-  --btn-primary: #007bff;
-  --btn-hover: #0056b3;
-  --bg-color: #f8f9fa;
-  --section-bg: #ffffff;
-  --card-bg: #ffffff;
-  --card-hover: #f0f0f0;
-  --border-color: #ddd;
-  --danger: #dc3545;
-} */
 
 
 body {
@@ -88,10 +71,51 @@ header.bg-header {
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
 }
+.section-alt {
+  background-color: var(--section-alt-bg);
+}
+.section-white {
+  background-color: #ffffff;
+}
 
+.section-gradient {
+  background: linear-gradient(to right, var(--section-alt-bg), var(--section-bg));
+}
+.section-dark h2,
+.section-dark h3,
+.section-dark h5,
+.section-dark a,
+.section-dark p {
+  color: #1f2937;
+}
 
+/* Øk luft under "Populære kategorier" */
+.section-gradient {
+  margin-bottom: 3rem;
+}
+.section-dark {
+  background-color: linear-gradient(to right, #1e293b, #334155);
+  color: #f1f5f9;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-top: 1px solid var(--footer-border);
+  border-bottom: 1px solid var(--footer-border);
+}
 
-
+/* Header styling */
+body { padding-top: 90px; }
+    .nav-link:hover { text-decoration: underline; color: #0d6efd; }
+    .dropdown-menu { margin-top: 8px; }
+    header { z-index: 1030; }
+    .navbar-brand span { font-family: 'Poppins', sans-serif; }
+    .input-group > .form-control {
+      background-color: #f8f9fa;
+      border: 1px solid #ced4da;
+    }
+    .input-group > .form-control:focus {
+      box-shadow: none;
+      border-color: #0d6efd;
+    }
 
 
 
@@ -131,8 +155,8 @@ img {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
+  border: 1px solid var(--border-color);
+  background-color: var(--section-bg);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -164,7 +188,7 @@ img {
 .item:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  background-color: #f0f0f0;
+  background-color: var(--card-hover);
 }
 
 /* Consistent Image Sizes */
@@ -178,7 +202,7 @@ img {
 
 /* Accessibility */
 .item:focus {
-  outline: 2px solid #007bff;
+  outline: 2px solid var(--btn-primary);
   outline-offset: 4px;
 }
 
@@ -226,13 +250,13 @@ img {
 
 .list-item p {
   font-size: 14px;
-  color: #666;
+  color: var(--text-muted);
 }
 
 .text-box {
   flex: 1;
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color: var(--section-bg);
   /* Bakgrunnsfarge for tekstboksen */
   border-radius: 5px;
   /* Avrundede hjørner for tekstboksen */
@@ -246,7 +270,7 @@ img {
 
 .text-box p {
   font-size: 14px;
-  color: #666;
+  color: var(--text-muted);
 }
 
 .float-right {
@@ -267,9 +291,9 @@ img {
 }
 
 .grid-item {
-  background-color: #ffffff00;
+  background-color: var(--card-bg)fff00;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 25px;
   text-align: center;
 }
@@ -287,7 +311,7 @@ img {
 
 .grid-item p {
   font-size: 14px;
-  color: #666;
+  color: var(--text-muted);
 }
 
 /* === Manuelle forbedringer === */
@@ -296,18 +320,18 @@ img {
 /* Lenker */
 a {
   text-decoration: none;
-  color: #0077cc;
+  color: var(--link-color);
 }
 
 a:hover {
-  color: #005fa3;
+  color: var(--link-color);
   text-decoration: underline;
 }
 
 /* Knapper */
 .btn {
-  background-color: #0077cc;
-  color: #fff;
+  background-color: var(--btn-primary);
+  color: var(--card-bg);
   border: none;
   font-size: 1rem;
   padding: 0.6rem 1.5rem;
@@ -317,7 +341,7 @@ a:hover {
 
 .btn:hover {
   transform: translateY(-2px);
-  background-color: #005fa3;
+  background-color: var(--btn-hover);
 }
 
 /* === Forbedret tekstkontrast og synlighet === */
@@ -325,19 +349,23 @@ a:hover {
 /* Produktbeskrivelser */
 .down-content span,
 .down-content p {
-  color: #444 !important;
+  color: var(--text-color) !important;
 }
 
 /* Info under seksjonstitler */
 .section h2 + p {
-  color: #666;
+  color: var(--text-muted);
   font-weight: 400;
 }
+.section-dark h3 {
+  margin-top: 2rem;
+}
+
 
 /* Tydeligere bannertekst (Butikkoversikt.no) */
 .main-banner h1,
 .main-banner h2 {
-  color: #222 !important;
+  color: var(--section-heading) !important;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -349,14 +377,14 @@ a:hover {
 
 /* Undertekst under hver seksjonstittel */
 .section h2 + p {
-  color: #666 !important;
+  color: var(--text-muted) !important;
   font-weight: 400;
 }
 
 /* === Produktkort design === */
 
 .item {
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   padding: 20px;
   background-color: #fafafa;
   text-align: center;
@@ -370,12 +398,12 @@ a:hover {
 
 .item .down-content {
   font-size: 15px;
-  color: #444;
+  color: var(--text-color);
   margin-top: 10px;
 }
 
 .card {
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   padding: 20px;
   text-align: center;
   transition: box-shadow 0.3s, transform 0.2s, border-color 0.2s;
@@ -386,19 +414,19 @@ a:hover {
 .card:hover {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
-  border-color: #007bff;
+  border-color: var(--btn-primary);
   cursor: pointer;
 }
 
 .card p {
-  color: #555;
+  color: var(--text-color);
   font-size: 0.95rem;
   white-space: normal;
   /* Viktig: tillat linjebryting */
   word-break: normal;
   max-width: 100%;
   margin: 0 auto;
-  color: #444;
+  color: var(--text-color);
 }
 
 .card img {
@@ -427,11 +455,11 @@ a:hover {
   background-color: var(--bg-color);
 }
 .bg-light-section {
-  background-color: #f4f6f9;
+  background-color: var(--section-light);
 }
 
 .bg-muted {
-  background-color: #e9eef5;
+  background-color: var(--section-muted);
 }
 
 
@@ -450,7 +478,7 @@ a:hover {
 
 .hero p {
   font-size: 1.2rem;
-  color: #666;
+  color: var(--text-muted);
 }
 
 .section {
@@ -472,7 +500,7 @@ a:hover {
   justify-content: space-between;
   text-align: center;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   transition: box-shadow 0.3s, transform 0.2s;
 }
 
@@ -485,7 +513,7 @@ a:hover {
   word-break: normal;
   max-width: 100%;
   margin: 0 auto;
-  color: #444;
+  color: var(--text-color);
 }
 
 .card img {
@@ -504,6 +532,7 @@ a:hover {
 .row.g-4 {
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .col-md-3 {
@@ -542,21 +571,13 @@ a:hover {
 }
 
 .category-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 25px;
-  background-color: #fff;
-  box-shadow: 0 0 0 transparent;
-  transition: 0.3s;
-  text-align: center;
-  height: 100%;
+  background-color: var(--card-bg);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
 }
-
 .category-card:hover {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   transform: translateY(-3px);
-  cursor: pointer;
-  border-color: #007bff;
 }
 
 .category-icon {
@@ -574,7 +595,7 @@ a:hover {
   border-radius: 12px;
   padding: 20px;
   display: block;
-  background-color: #fff;
+  background-color: var(--card-bg);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -608,8 +629,8 @@ a:hover {
 }
 
 .filter-buttons .btn.active {
-  background-color: #0056b3;
-  color: #fff;
+  background-color: var(--btn-hover);
+  color: var(--card-bg);
   border: none;
 }
 
@@ -626,8 +647,8 @@ a:hover {
 
 /* === BUTIKKORT LAYOUT === */
 .filter-section .category-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 20px;
   height: 100%;
@@ -657,7 +678,7 @@ a:hover {
 
 .filter-section .category-card p {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-color);
   margin-bottom: 0;
 }
 
@@ -667,7 +688,7 @@ a:hover {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   padding: 0.8rem 1rem;
-  background-color: #fff;
+  background-color: var(--card-bg);
   border-bottom: 1px solid #eaeaea;
   z-index: 1000;
 }
@@ -680,7 +701,7 @@ a:hover {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
-  color: #007bff;
+  color: var(--btn-primary);
 }
 
 .navbar-toggler {
@@ -700,7 +721,7 @@ a:hover {
 }
 
 .fas.fa-search:hover {
-  color: #007bff;
+  color: var(--btn-primary);
 }
 
 .navbar .nav-link i {
@@ -710,7 +731,7 @@ a:hover {
 }
 
 .navbar .nav-link i:hover {
-  color: #007bff;
+  color: var(--btn-primary);
   /* Blåfarge ved hover */
 }
 
@@ -720,7 +741,7 @@ a:hover {
 }
 
 .navbar .nav-link i:active {
-  color: #0056b3;
+  color: var(--btn-hover);
   /* Mørkere blåfarge ved klikk */
 }
 
@@ -728,7 +749,7 @@ a:hover {
   display: none;
   background: #f1f1f1;
   padding: 15px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .search-bar.show {
@@ -746,7 +767,7 @@ a:hover {
 }
 .desktop-navbar {
   background-color: var(--bg-dark);
-  color: #fff;
+  color: var(--card-bg);
   z-index: 1050;
 }
 
@@ -763,8 +784,8 @@ a:hover {
 }
 
 .desktop-navbar .dropdown-menu {
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
 }
 
@@ -783,7 +804,7 @@ a:hover {
 
 /* Justerer menyens visning på mobil */
 .navbar-collapse {
-  background-color: #fff;
+  background-color: var(--card-bg);
   padding: 1rem;
   z-index: 1000;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -804,7 +825,7 @@ a:hover {
   position: static !important;
   top: auto !important;
   bottom: auto !important;
-  background-color: #fff;
+  background-color: var(--card-bg);
   z-index: 999;
 }
 
@@ -832,8 +853,8 @@ a:hover {
 
 .category-tag {
   display: inline-block;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--btn-primary);
+  color: var(--card-bg);
   font-size: 12px;
   padding: 4px 10px;
   border-radius: 20px;
@@ -849,14 +870,14 @@ a:hover {
   width: 100%;
   padding: 8px;
   font-size: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   border-radius: 6px;
   resize: none;
 }
 
 .comment-input button {
   margin-top: 8px;
-  background-color: #007bff;
+  background-color: var(--btn-primary);
   color: white;
   border: none;
   padding: 6px 14px;
@@ -865,14 +886,14 @@ a:hover {
 }
 
 .comment-input button:hover {
-  background-color: #0056b3;
+  background-color: var(--btn-hover);
 }
 
 .btn-rating {
   position: absolute;
   top: -10px;
   right: -10px;
-  background-color: #007bff;
+  background-color: var(--btn-primary);
   color: white;
   padding: 6px 10px;
   font-size: 12px;
@@ -881,8 +902,8 @@ a:hover {
 }
 /* ========== Navbar container ========== */
 .navbar {
-  background-color: #e6f3fb; /* Lys blå bakgrunn */
-  border-bottom: 1px solid #ccc;
+  background-color: var(--secondary); /* Lys blå bakgrunn */
+  border-bottom: 1px solid var(--border-color);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
@@ -894,7 +915,7 @@ a:hover {
 .navbar-brand {
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--card-bg);
   padding: 10px 20px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -935,14 +956,14 @@ a:hover {
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--btn-primary, #007bff);
+  color: var(--btn-primary, var(--btn-primary));
   background-color: transparent;
 }
 
 /* ========== Dropdown-meny ========== */
 .dropdown-menu {
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
 }
 
@@ -953,7 +974,7 @@ a:hover {
 }
 
 .dropdown-item:hover {
-  color: var(--btn-primary, #007bff);
+  color: var(--btn-primary, var(--btn-primary));
   background-color: transparent;
 }
 
@@ -964,7 +985,7 @@ a:hover {
 /* =============================== */
 .ad-banner-top,
 .ad-banner-mid {
-  background-color: #f9f9f9;
+  background-color: var(--section-bg);
   padding: 10px 0;
 }
 
@@ -996,14 +1017,14 @@ a:hover {
 .sticky-ad img {
   width: 100%;
   height: auto;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
 }
 #ad-slot img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 #adContainer {
@@ -1039,7 +1060,7 @@ a:hover {
 }
 
 .filter-badge.active {
-  box-shadow: 0 0 0 2px #007bff inset;
+  box-shadow: 0 0 0 2px var(--btn-primary) inset;
 }
 
 /* 📢 guides */
@@ -1078,7 +1099,7 @@ section {
   left: -280px;
   width: 250px;
   max-height: 90vh; /* Stopper før hele høyden */
-  background: linear-gradient(180deg, #ffffff 0%, #f1f3f5 100%);
+  background: linear-gradient(180deg, var(--card-bg)fff 0%, #f1f3f5 100%);
   padding: 2rem 1.5rem;
   border-radius: 0 20px 20px 0;
   box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
@@ -1144,7 +1165,7 @@ section {
 }
 
 .anbefalt-card {
-  background-color: #ffffff;
+  background-color: var(--card-bg)fff;
   border-radius: 12px;
   border: 1px solid #e1e1e1;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
@@ -1166,7 +1187,7 @@ section {
   border: none;
   border-radius: 1rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  background: #fff;
+  background: var(--card-bg);
   padding: 1.5rem;
   height: 100%;
 }
@@ -1183,7 +1204,7 @@ section {
 
 .featured-store-card p {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-color);
   margin-bottom: 1rem;
 }
 
@@ -1193,7 +1214,7 @@ section {
 }
 .anbefalt-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #ffffff;
+  background-color: var(--card-bg)fff;
 }
 
 .anbefalt-card:hover {
@@ -1254,15 +1275,15 @@ h5, h6 {
   font-size: 1.25rem;
 }
 h1, h2, h3, h4 {
-  color: #111;
+  color: var(--heading-color);
   letter-spacing: -0.5px;
 }
 .text-muted {
-  color: #777 !important;
+  color:  var(--text-muted) !important;
 }
 
 p {
-  color: #555;
+  color: var(--text-color);
 }
 
 /* ========== ANBEFALTE BUTIKKER KORT ========== */
@@ -1271,10 +1292,10 @@ p {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--card-bg);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s;
 }
@@ -1293,7 +1314,7 @@ p {
   border-radius: 1rem;
   box-shadow: var(--card-shadow, 0 4px 14px rgba(0, 0, 0, 0.08));
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: var(--card-bg, #fff);
+  background-color: var(--card-bg);
 }
 
 .card.recommended-store:hover {
@@ -1351,7 +1372,7 @@ p {
 #toggleStoresBtn:hover {
   transform: translateY(-2px);
   background-color: #0d6efd;
-  color: #fff;
+  color: var(--card-bg);
 }
 
 /* ========== SEKSJONSOPPSETT ========== */
@@ -1361,9 +1382,9 @@ p {
 }
 
 .container {
-  max-width: 1440px;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  max-width: 1320px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1406,7 +1427,7 @@ a:hover {
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-  background-color: #ffffff;
+  background-color: var(--card-bg)fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -1425,13 +1446,13 @@ a:hover {
 }
 
 .card.recommended-store h6 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .card.recommended-store p {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-color);
 }
 
 /* Knapp-stil og toggle */
@@ -1444,7 +1465,7 @@ a:hover {
 #toggleStoresBtn:hover {
   transform: translateY(-2px);
   background-color: #0d6efd;
-  color: #fff;
+  color: var(--card-bg);
 }
 
 /* Sidebanner / sticky annonser */
@@ -1496,7 +1517,7 @@ a:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   overflow: hidden;
-  background-color: #fff;
+  background-color: var(--card-bg);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -1540,7 +1561,7 @@ a:hover {
   margin-top: 12px;
   align-self: center;
   background-color: var(--accent);
-  color: #fff;
+  color: var(--card-bg);
   border: none;
   padding: 0.5rem 1.25rem;
   border-radius: 8px;
@@ -1548,7 +1569,7 @@ a:hover {
 }
 
 .card.store-card .btn:hover {
-  background-color: var(--accent-hover, #004c99);
+  background-color: var(--accent-hover, var(--primary));
 }
 
 .store-showcase {
@@ -1562,7 +1583,7 @@ a:hover {
 .store-showcase:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   transform: translateY(-5px);
-  background-color: #f8f9fa;
+  background-color: var(--bg-color);
 }
 
 .store-showcase img {
@@ -1586,7 +1607,7 @@ a:hover {
 .store-showcase a {
   display: inline-block;
   padding: 0.5rem 1.2rem;
-  color: var(--primary-text, #004c99); /* Mørk blå tekst */
+  color: var(--primary-text, var(--primary)); /* Mørk blå tekst */
   background-color: transparent;
   border: 2px solid var(--primary);
   font-weight: 500;
@@ -1599,7 +1620,7 @@ a:hover {
 }
 
 .store-showcase a:hover {
-  background-color: var(--primary, #004c99);
+  background-color: var(--primary, var(--primary));
   color: white;
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(0, 76, 153, 0.3); /* Fancy blå skygge */
@@ -1660,7 +1681,7 @@ footer .btn {
 }
 
 footer .btn:hover {
-  background-color: var(--btn-primary-hover, #0056b3);
+  background-color: var(--btn-primary-hover, var(--btn-hover));
 }
 
 
@@ -1745,13 +1766,6 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--btn-hover);
 }
 
-/* === FOOTER === */
-.footer {
-  background-color: var(--primary);
-  color: white;
-  padding: 2rem 0;
-  text-align: center;
-}
 
 /* === ANNEN STIL === */
 .section {
@@ -1764,7 +1778,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-white {
-  background-color: #fff !important;
+  background-color: var(--card-bg) !important;
 }
 
 .shadow-sm {
@@ -1774,4 +1788,54 @@ h1, h2, h3, h4, h5, h6 {
 .border-top {
   border-top: 1px solid var(--border-color) !important;
 }
+/* Oppdatert navbar med visuell stil */
+.navbar,
+.desktop-navbar {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  padding: 0.8rem 1rem;
+  z-index: 1000;
+}
+
+.navbar a,
+.desktop-navbar a {
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover,
+.desktop-navbar a:hover,
+.navbar .dropdown-item:hover {
+  color: var(--btn-primary);
+  text-decoration: none;
+}
+
+.navbar .dropdown-menu,
+.desktop-navbar .dropdown-menu {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Øk ikonstørrelse på kategori-ikoner */
+.category-card img {
+  width: 60px !important;
+  height: auto;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
 
