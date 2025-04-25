@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
           card.className = "col";
           card.innerHTML = `
             <div class="card h-100 border-0 shadow-sm hover-shadow">
-              <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}">
+              <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}" />
               <div class="card-body">
                 <h5 class="card-title">${butikk.name}</h5>
                 <p class="card-text">${butikk.description}</p>
@@ -127,30 +127,22 @@ document.addEventListener("DOMContentLoaded", () => {
                     card.className = "col";
                     card.innerHTML = `
                       <div class="card h-100 border-0 shadow-sm hover-shadow">
-                        <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}">
+                        <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}" />
                         <div class="card-body">
-                          <h5 class="card-title
-
-          butikker
-            .filter((butikk) => {
-              return butikk.category === kategori && (subkategori === "alle" || butikk.subcategory === subkategori);
-            })
-            .forEach((butikk) => {
-              const card = document.createElement("div");
-              card.className = "col";
-              card.innerHTML = `
-                <div class="card h-100 border-0 shadow-sm hover-shadow">
-                  <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}">
-                  <div class="card-body">
-                    <h5 class="card-title">${butikk.name}</h5>
-                    <p class="card-text">${butikk.description}</p>
-                    <a href="${butikk.url}" class="btn btn-primary w-100" target="_blank" rel="noopener">Besøk butikk</a>
-                  </div>
-                </div>
-              `;
-              container.appendChild(card);
-            });
+                          <h5 class="card-title">${butikk.name}</h5>
+                          <p class="card-text">${butikk.description}</p>
+                          <a href="${butikk.url}" class="btn btn-primary w-100" target="_blank" rel="noopener">Besøk butikk</a>
+                        </div>
+                      </div>
+                    `;
+                    container.appendChild(card);
+                  });
+              })
+              .catch((error) => {
+                console.error("Error fetching butikker:", error);
+              });
+          });
         });
+      });
     });
   });
-});
