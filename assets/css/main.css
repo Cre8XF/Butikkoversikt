@@ -1761,4 +1761,46 @@ h1, h2, h3, h4, h5, h6 {
 .border-top {
   border-top: 1px solid var(--border-color) !important;
 }
+/* Oppdatert navbar med visuell stil */
+.navbar,
+.desktop-navbar {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  padding: 0.8rem 1rem;
+  z-index: 1000;
+}
+
+.navbar a,
+.desktop-navbar a {
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover,
+.desktop-navbar a:hover,
+.navbar .dropdown-item:hover {
+  color: var(--btn-primary);
+  text-decoration: none;
+}
+
+.navbar .dropdown-menu,
+.desktop-navbar .dropdown-menu {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Øk ikonstørrelse på kategori-ikoner */
+.category-card img {
+  width: 60px !important;
+  height: auto;
+}
+
+/* Øk luft under "Populære kategorier" */
+.section-gradient {
+  margin-bottom: 3rem;
+}
+
 

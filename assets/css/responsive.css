@@ -179,3 +179,39 @@
     color: var(--text-muted);
   }
 }
+/* === Mobilforbedringer under 576px === */
+@media (max-width: 576px) {
+  /* Bedre luft mellom seksjoner */
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* CTA-knapper – mer mellomrom */
+  .btn + .btn {
+    margin-top: 0.75rem;
+  }
+
+  /* Header-branding – litt venstre-padding */
+  .navbar-brand {
+    padding-left: 0.5rem;
+  }
+
+  /* Korttekst sentrert og lesbar */
+  .category-card h6 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* Kortbildene litt mindre for jevn layout */
+  .category-card img {
+    width: 50px !important;
+  }
+
+  /* Tips & guider-kort – bedre layout */
+  .guider-wrapper .col-6 {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+}
