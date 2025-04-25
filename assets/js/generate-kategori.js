@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.target.classList.add("active");
       const subkategori = e.target.dataset.subcategory;
 
-      fetch("/butikker.json")
+      fetch("assets/json/butikker.json")
         .then((response) => response.json())
         .then((butikker) => {
           const container = document.getElementById("butikk-container");
