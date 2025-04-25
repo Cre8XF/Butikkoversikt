@@ -1930,6 +1930,86 @@
     "subcategory": "Møbler",
     "affiliate": true,
     "ny": true
+  },
+    {
+    "name": "XXL",
+    "description": "Stort utvalg av sportsklær, sko, utstyr og friluftsartikler.",
+    "image": "assets/images/sport-og-fritid/xxl.png",
+    "url": "https://www.xxl.no",
+    "category": "Sport og fritid",
+    "subcategory": "Sportsklær og sko",
+    "affiliate": true,
+    "ny": true
+  },
+  {
+    "name": "Sport 1",
+    "description": "Alt til trening, ski, løping, friluft og sykkel.",
+    "image": "assets/images/sport-og-fritid/sport1.png",
+    "url": "https://www.sport1.no",
+    "category": "Sport og fritid",
+    "subcategory": "Friluft og tur",
+    "affiliate": true,
+    "ny": true
+  },
+  {
+    "name": "Anton Sport",
+    "description": "Premium sportsklær og utstyr fra kjente merker.",
+    "image": "assets/images/sport-og-fritid/antonsport.png",
+    "url": "https://www.antonsport.no",
+    "category": "Sport og fritid",
+    "subcategory": "Sportsklær og sko",
+    "affiliate": true,
+    "ny": true
+  },
+  {
+    "name": "Milrab",
+    "description": "Taktisk utstyr, klær og sko til friluft, trening og forsvar.",
+    "image": "assets/images/sport-og-fritid/milrab.png",
+    "url": "https://www.milrab.no",
+    "category": "Sport og fritid",
+    "subcategory": "Friluft og tur",
+    "affiliate": true,
+    "ny": true
+  },
+  {
+    "name": "Gmax",
+    "description": "Rimelige sportsvarer og treningsutstyr.",
+    "image": "assets/images/sport-og-fritid/gmax.png",
+    "url": "https://www.gmax.no",
+    "category": "Sport og fritid",
+    "subcategory": "Trening og treningsutstyr",
+    "affiliate": true,
+    "ny": true
+  },
+  {
+    "name": "Skitt Fiske",
+    "description": "Alt innen fiskeutstyr, jakt og friluft.",
+    "image": "assets/images/sport-og-fritid/skittfiske.png",
+    "url": "https://www.skittfiske.no",
+    "category": "Sport og fritid",
+    "subcategory": "Fiske og jakt",
+    "affiliate": true,
+    "ny": true
+  },
+  {
+    "name": "Oslo Sportslager",
+    "description": "Spesialister på ski, løping, sykkel og trening.",
+    "image": "assets/images/sport-og-fritid/oslosportslager.png",
+    "url": "https://www.oslosportslager.no",
+    "category": "Sport og fritid",
+    "subcategory": "Trening og treningsutstyr",
+    "affiliate": true,
+    "ny": true
+  },
+  {
+    "name": "Sykkelpikene",
+    "description": "Norges koseligste nettbutikk for sykler og tilbehør.",
+    "image": "assets/images/sport-og-fritid/sykkelpikene.png",
+    "url": "https://www.sykkelpikene.no",
+    "category": "Sport og fritid",
+    "subcategory": "Sykkel og sykkelutstyr",
+    "affiliate": true,
+    "ny": true
   }
 ]
 

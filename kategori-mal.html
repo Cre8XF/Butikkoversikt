@@ -163,42 +163,44 @@
           "kategori"
         );
         const underkategorierMap = {
-          "Klær og mote": ["Dameklær", "Herreklær", "Tilbehør og sko"],
-          "Elektronikk og data": [
-            "PC og tilbehør",
-            "Mobil og nettbrett",
-            "Lyd og bilde",
-            "Smartprodukter og IoT",
-            "Komponenter og gamingutstyr",
-          ],
-          "Helse og egenpleie": [
-            "Apotek og helseprodukter",
-            "Hud- og kroppspleie",
-            "Hår- og skjønnhetspleie",
-            "Sminke og kosmetikk",
-            "Trening og velvære",
-          ],
-          "Barn og baby": [
-            "Barneklær",
-            "Babyutstyr",
-            "Leker og spill",
-            "Barnerom og møbler",
-            "Bleier og hygiene",
-            "Mat og amming",
-          ],
-            "Sport og fritid": [
-            "Trening og sportsklær",
-            "Friluft og tur",
-            "Hobby og fritid",
-            "Kosttilskudd og ernæring"
-         ],
-         "Møbler og interiør": [
-          "Møbler",
-          "Belysning",
-          "Tekstiler og tepper",
-            "Dekor og interiør"
-        ]
-          };
+  "Klær og mote": ["Dameklær", "Herreklær", "Tilbehør og sko"],
+  "Elektronikk og data": [
+    "PC og tilbehør",
+    "Mobil og nettbrett",
+    "Lyd og bilde",
+    "Smartprodukter og IoT",
+    "Komponenter og gamingutstyr"
+  ],
+  "Helse og egenpleie": [
+    "Apotek og helseprodukter",
+    "Hud- og kroppspleie",
+    "Hår- og skjønnhetspleie",
+    "Sminke og kosmetikk",
+    "Trening og velvære"
+  ],
+  "Barn og baby": [
+    "Barneklær",
+    "Babyutstyr",
+    "Leker og spill",
+    "Barnerom og møbler",
+    "Bleier og hygiene",
+    "Mat og amming"
+  ],
+  "Sport og fritid": [
+    "Sportsklær og sko",
+    "Trening og treningsutstyr",
+    "Friluft og tur",
+    "Sykkel og sykkelutstyr",
+    "Fiske og jakt"
+  ],
+  "Møbler og interiør": [
+    "Møbler",
+    "Belysning",
+    "Tekstiler og tepper",
+    "Dekor og interiør"
+  ]
+};
+
 
           let hovedkategori = null;
           for (const [kategoriNavn, underkatListe] of Object.entries(
