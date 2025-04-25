@@ -82,11 +82,13 @@ header.bg-header {
   background: linear-gradient(to right, var(--section-alt-bg), var(--section-bg));
 }
 .section-dark h2,
+.section-dark h3,
 .section-dark h5,
 .section-dark a,
 .section-dark p {
   color: #f1f5f9;
 }
+
 /* Øk luft under "Populære kategorier" */
 .section-gradient {
   margin-bottom: 3rem;
