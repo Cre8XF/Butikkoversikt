@@ -55,11 +55,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   kategoriTittel.textContent = valgtKategori;
 
-  fetch("/assets/data/butikker.json")
+  fetch("assets/data/butikker.json")
     .then((response) => response.json())
     .then((butikker) => {
       const butikkerIKategori = butikker.filter(
-        (butikk) => butikk.kategori === valgtKategori
+        (butikk) => butikk.category === valgtKategori
       );
 
       if (butikkerIKategori.length === 0) {
@@ -67,19 +67,16 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Hvis underkategorier finnes, vis filteret
       const underkategorier = underkategorierMap[valgtKategori];
       if (underkategorier && underkategorier.length > 0) {
         underkatWrapper.classList.remove("d-none");
-        
-        // Lag "Vis alle" knapp
+
         const visAlleBtn = document.createElement("button");
         visAlleBtn.textContent = "Vis alle";
         visAlleBtn.className = "btn btn-outline-primary filter-btn active";
         visAlleBtn.dataset.underkategori = "alle";
         underkategoriFilter.appendChild(visAlleBtn);
 
-        // Lag egne knapper for hver underkategori
         underkategorier.forEach((underkat) => {
           const btn = document.createElement("button");
           btn.textContent = underkat;
@@ -89,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
 
-      visButikker(butikkerIKategori); // Start med å vise alle
+      visButikker(butikkerIKategori);
 
       underkategoriFilter.addEventListener("click", (e) => {
         if (e.target.tagName !== "BUTTON") return;
@@ -103,9 +100,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const filtrerte = valgtUnderkat === "alle"
           ? butikkerIKategori
-          : butikkerIKategori.filter(
-              (butikk) => butikk.underkategori === valgtUnderkat
-            );
+          : butikkerIKategori.filter((butikk) => {
+              if (Array.isArray(butikk.subcategory)) {
+                return butikk.subcategory.includes(valgtUnderkat);
+              } else {
+                return butikk.subcategory === valgtUnderkat;
+              }
+            });
 
         visButikker(filtrerte);
       });
@@ -123,12 +124,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       kort.innerHTML = `
         <div class="card h-100 border-0 shadow-sm">
-          <img src="${butikk.bilde}" class="card-img-top" alt="${butikk.navn}" />
-          <div class="card-body">
-            <h5 class="card-title">${butikk.navn}</h5>
-            <p class="card-text">${butikk.beskrivelse}</p>
-                  <a href="${butikk.lenke}" class="btn btn-primary">Besøk butikk</a>
-                </div>
-              </div>
-            `;
-
+          <img src="${butikk.image}" class="card-img-top" alt="${butikk.alt || butikk.name}" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">${butikk.name}</h5>
+            <p class="card-text">${butikk.description || ""}</p>
+            <a href="${butikk.url}" target="_blank" rel="noopener" class="btn btn-primary mt-auto w-100">Besøk butikk</a>
+          </div>
+        </div>
+      `;
+      butikkContainer.appendChild(kort);
+    });
+  }
+});
