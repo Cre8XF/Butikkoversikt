@@ -94,8 +94,8 @@ header.bg-header {
 .section-dark {
   background-color: linear-gradient(to right, #1e293b, #334155);
   color: #f1f5f9;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   border-top: 1px solid var(--footer-border);
   border-bottom: 1px solid var(--footer-border);
 }
@@ -513,6 +513,7 @@ a:hover {
 .row.g-4 {
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .col-md-3 {
@@ -1362,9 +1363,9 @@ p {
 }
 
 .container {
-  max-width: 1440px;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  max-width: 1320px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1426,7 +1427,7 @@ a:hover {
 }
 
 .card.recommended-store h6 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
