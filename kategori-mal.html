@@ -191,44 +191,51 @@
             "Friluft og tur",
             "Hobby og fritid",
             "Kosttilskudd og ernæring"
-       ]
-    };
+         ],
+         "Møbler og interiør": [
+          "Møbler",
+          "Belysning",
+          "Tekstiler og tepper",
+            "Dekor og interiør"
+        ]
+          };
 
-        let hovedkategori = null;
-        for (const [kategoriNavn, underkatListe] of Object.entries(
-          underkategorierMap
-        )) {
-          if (kategori === kategoriNavn || underkatListe.includes(kategori)) {
-            hovedkategori = kategoriNavn;
-            break;
+          let hovedkategori = null;
+          for (const [kategoriNavn, underkatListe] of Object.entries(
+            underkategorierMap
+          )) {
+            if (kategori === kategoriNavn || underkatListe.includes(kategori)) {
+              hovedkategori = kategoriNavn;
+              break;
+            }
           }
-        }
 
-        if (hovedkategori) {
-          document
-            .getElementById("underkategorier-wrapper")
-            .classList.remove("d-none");
+          if (hovedkategori) {
+            document
+              .getElementById("underkategorier-wrapper")
+              .classList.remove("d-none");
 
-          const container = document.getElementById("underkategori-lenker");
-          underkategorierMap[hovedkategori].forEach((uk) => {
-            const link = document.createElement("a");
-            link.href = `/kategori-mal.html?kategori=${encodeURIComponent(uk)}`;
-            link.className = "btn btn-outline-primary";
-            link.textContent = uk;
-            container.appendChild(link);
-          });
+            const container = document.getElementById("underkategori-lenker");
+            underkategorierMap[hovedkategori].forEach((uk) => {
+              const link = document.createElement("a");
+              link.href = `/kategori-mal.html?kategori=${encodeURIComponent(uk)}`;
+              link.className = "btn btn-outline-primary";
+              link.textContent = uk;
+              container.appendChild(link);
+            });
 
-          if (kategori !== hovedkategori) {
-            const visAlle = document.createElement("a");
-            visAlle.href = `/kategori-mal.html?kategori=${encodeURIComponent(
-              hovedkategori
-            )}`;
-            visAlle.className = "btn btn-link";
-            visAlle.textContent = `🔙 Vis alle i ${hovedkategori}`;
-            document.getElementById("vis-alle-knapp").appendChild(visAlle);
+            if (kategori !== hovedkategori) {
+              const visAlle = document.createElement("a");
+              visAlle.href = `/kategori-mal.html?kategori=${encodeURIComponent(
+                hovedkategori
+              )}`;
+              visAlle.className = "btn btn-link";
+              visAlle.textContent = `🔙 Vis alle i ${hovedkategori}`;
+              document.getElementById("vis-alle-knapp").appendChild(visAlle);
+            }
           }
-        }
-      });
-    </script>
-  </body>
-</html>
+        });
+      </script>
+    </body>
+  </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

@@ -1621,86 +1621,86 @@
     "affiliate": false,
     "ny": true
   },
-    {
-      "navn": "Jollyroom",
-      "beskrivelse": "Stort utvalg av barneutstyr, leker, klær og barnevogner.",
-      "bilde": "assets/images/barn-og-baby/jollyroom.png",
-      "lenke": "https://www.jollyroom.no",
-      "category": "Barn og baby",
-      "subcategory": "Babyutstyr",
-      "affiliate": true,
-      "ny": true
-    },
-    {
-      "navn": "Barnas Hus",
-      "beskrivelse": "Babyutstyr, klær, bilstoler og barnevogner fra kjente merker.",
-      "bilde": "assets/images/barn-og-baby/barnashus.png",
-      "lenke": "https://www.barnashus.no",
-      "category": "Barn og baby",
-      "subcategory": "Barneklær",
-      "affiliate": true,
-      "ny": true
-    },
-    {
-      "navn": "Lekmer",
-      "beskrivelse": "Leker, barneklær, barnevogner og interiør til barn.",
-      "bilde": "assets/images/barn-og-baby/lekmer.png",
-      "lenke": "https://www.lekmer.no",
-      "category": "Barn og baby",
-      "subcategory": "Leker og spill",
-      "affiliate": true,
-      "ny": true
-    },
-    {
-      "navn": "Mimmis",
-      "beskrivelse": "Populær nettbutikk med babyutstyr, møbler og leker.",
-      "bilde": "assets/images/barn-og-baby/mimmis.png",
-      "lenke": "https://www.mimmis.no",
-      "category": "Barn og baby",
-      "subcategory": "Barnerom og møbler",
-      "affiliate": true,
-      "ny": true
-    },
-    {
-      "navn": "Babyshop",
-      "beskrivelse": "Eksklusive barneklær og babyprodukter.",
-      "bilde": "assets/images/barn-og-baby/babyshop.png",
-      "lenke": "https://www.babyshop.no",
-      "category": "Barn og baby",
-      "subcategory": "Barneklær",
-      "affiliate": true,
-      "ny": true
-    },
-    {
-      "navn": "Extra Leker",
-      "beskrivelse": "Leker og spill til barn i alle aldre.",
-      "bilde": "assets/images/barn-og-baby/extraleker.png",
-      "lenke": "https://www.extra-leker.no",
-      "category": "Barn og baby",
-      "subcategory": "Leker og spill",
-      "affiliate": true,
-      "ny": true
-    },
-    {
-      "navn": "Lekeakademiet",
-      "beskrivelse": "Pedagogiske og utviklende leker.",
-      "bilde": "assets/images/barn-og-baby/lekeakademiet.png",
-      "lenke": "https://www.lekeakademiet.no",
-      "category": "Barn og baby",
-      "subcategory": "Leker og spill",
-      "affiliate": true,
-      "ny": true
-    },
-    {
-      "navn": "Lilleprinsen",
-      "beskrivelse": "Alt til baby og småbarn: mat, klær og utstyr.",
-      "bilde": "assets/images/barn-og-baby/lilleprinsen.png",
-      "lenke": "https://www.lilleprinsen.no",
-      "category": "Barn og baby",
-      "subcategory": "Mat og amming",
-      "affiliate": true,
-      "ny": true
-    },
+  {
+  "name": "Jollyroom",
+  "description": "Stort utvalg av barneutstyr, leker, klær og barnevogner.",
+  "image": "assets/images/barn-og-baby/jollyroom.png",
+  "url": "https://www.jollyroom.no",
+  "category": "Barn og baby",
+  "subcategory": "Babyutstyr",
+  "affiliate": true,
+  "ny": true
+},
+{
+  "name": "Barnas Hus",
+  "description": "Babyutstyr, klær, bilstoler og barnevogner fra kjente merker.",
+  "image": "assets/images/barn-og-baby/barnashus.png",
+  "url": "https://www.barnashus.no",
+  "category": "Barn og baby",
+  "subcategory": "Barneklær",
+  "affiliate": true,
+  "ny": true
+},
+{
+  "name": "Lekmer",
+  "description": "Leker, barneklær, barnevogner og interiør til barn.",
+  "image": "assets/images/barn-og-baby/lekmer.png",
+  "url": "https://www.lekmer.no",
+  "category": "Barn og baby",
+  "subcategory": "Leker og spill",
+  "affiliate": true,
+  "ny": true
+},
+{
+  "name": "Mimmis",
+  "description": "Populær nettbutikk med babyutstyr, møbler og leker.",
+  "image": "assets/images/barn-og-baby/mimmis.png",
+  "url": "https://www.mimmis.no",
+  "category": "Barn og baby",
+  "subcategory": "Barnerom og møbler",
+  "affiliate": true,
+  "ny": true
+},
+{
+  "name": "Babyshop",
+  "description": "Eksklusive barneklær og babyprodukter.",
+  "image": "assets/images/barn-og-baby/babyshop.png",
+  "url": "https://www.babyshop.no",
+  "category": "Barn og baby",
+  "subcategory": "Barneklær",
+  "affiliate": true,
+  "ny": true
+},
+{
+  "name": "Extra Leker",
+  "description": "Leker og spill til barn i alle aldre.",
+  "image": "assets/images/barn-og-baby/extraleker.png",
+  "url": "https://www.extra-leker.no",
+  "category": "Barn og baby",
+  "subcategory": "Leker og spill",
+  "affiliate": true,
+  "ny": true
+},
+{
+  "name": "Lekeakademiet",
+  "description": "Pedagogiske og utviklende leker.",
+  "image": "assets/images/barn-og-baby/lekeakademiet.png",
+  "url": "https://www.lekeakademiet.no",
+  "category": "Barn og baby",
+  "subcategory": "Leker og spill",
+  "affiliate": true,
+  "ny": true
+},
+{
+  "name": "Lilleprinsen",
+  "description": "Alt til baby og småbarn: mat, klær og utstyr.",
+  "image": "assets/images/barn-og-baby/lilleprinsen.png",
+  "url": "https://www.lilleprinsen.no",
+  "category": "Barn og baby",
+  "subcategory": "Mat og amming",
+  "affiliate": true,
+  "ny": true
+},
   {
     "name": "XXL",
     "description": "En av Norges største sportsbutikker med klær, sko, trening og friluft.",
