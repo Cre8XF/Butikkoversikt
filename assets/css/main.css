@@ -342,6 +342,10 @@ a:hover {
   color: var(--text-muted);
   font-weight: 400;
 }
+.section-dark h3 {
+  margin-top: 2rem;
+}
+
 
 /* Tydeligere bannertekst (Butikkoversikt.no) */
 .main-banner h1,
