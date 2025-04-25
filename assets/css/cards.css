@@ -1,16 +1,23 @@
-/* EXTRA: CARDS forbedringer */
+/* CARDS forbedret med hover og symmetri */
 .card {
   background-color: #ffffff;
   border: none;
   border-radius: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 .card-title {
   font-size: 1.1rem;
   font-weight: 600;
+}
+.card-body {
+  flex: 1 1 auto;
 }

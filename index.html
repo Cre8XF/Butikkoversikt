@@ -13,66 +13,81 @@
 </head>
 <body>
   <!-- Sticky header -->
+  <!-- Bedre Header med ikoner og font -->
   <header class="custom-header sticky-top bg-white border-bottom shadow-sm">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container">
-
-      <a class="navbar-brand d-flex align-items-center" href="/">
-        <i class="bi bi-shop fs-3 text-primary me-2"></i>
-        <span class="h4 mb-0 fw-bold">Butikkoversikt.no</span>
-      </a>
-
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list fs-2"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-dark" href="#" id="kategoriDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Kategorier
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="kategoriDropdown">
-              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Kl%C3%A6r%20og%20mote">Klær og mote</a></li>
-              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Elektronikk%20og%20data">Elektronikk og data</a></li>
-              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Gaming%20og%20tilbehør">Gaming og tilbehør</a></li>
-              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Fritid%20og%20gaver">Fritid og gaver</a></li>
-              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Helse%20og%20egenpleie">Helse og egenpleie</a></li>
-              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Barn%20og%20baby">Barn og baby</a></li>
-              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Møbler%20og%20interiør">Møbler og interiør</a></li>
-              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Bøker%20og%20underholdning">Bøker og underholdning</a></li>
-              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Apotek">Apotek</a></li>
-              <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Sport%20og%20fritid">Sport og fritid</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-dark d-flex align-items-center gap-1" href="/topp25.html">
-              <i class="bi bi-trophy"></i> Topplisten
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark d-flex align-items-center gap-1" href="/guider/main-guider.html">
-              <i class="bi bi-journal-text"></i> Guider
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="/om-oss.html">Om oss</a>
-          </li>
-        </ul>
-
-        <form class="d-flex" action="/search.html" method="GET" style="max-width: 300px; width: 100%;">
-          <div class="input-group input-group-sm">
-            <input class="form-control rounded-start" type="text" placeholder="Søk butikk eller kategori..." aria-label="Søk" name="k">
-            <button class="btn btn-outline-primary rounded-end" type="submit" title="Søk"><i class="bi bi-search"></i></button>
-          </div>
-        </form>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+  
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <i class="bi bi-shop fs-3 text-primary me-2"></i>
+          <span class="h4 mb-0 fw-bold logo-text">Butikkoversikt.no</span>
+        </a>
+  
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="kategoriDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Kategorier
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="kategoriDropdown">
+                <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Kl%C3%A6r%20og%20mote">Klær og mote</a>
+                </li>
+                <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Elektronikk%20og%20data">Elektronikk og
+                    data</a></li>
+                <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Gaming%20og%20tilbehør">Gaming og
+                    tilbehør</a></li>
+                <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Fritid%20og%20gaver">Fritid og gaver</a>
+                </li>
+                <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Helse%20og%20egenpleie">Helse og
+                    egenpleie</a></li>
+                <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Barn%20og%20baby">Barn og baby</a></li>
+                <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Møbler%20og%20interiør">Møbler og
+                    interiør</a></li>
+                <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Bøker%20og%20underholdning">Bøker og
+                    underholdning</a></li>
+                <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Apotek">Apotek</a></li>
+                <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Sport%20og%20fritid">Sport og fritid</a>
+                </li>
+              </ul>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link text-dark d-flex align-items-center gap-1" href="/topplisten.html">
+                <i class="bi bi-trophy"></i> Topplisten
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark d-flex align-items-center gap-1" href="/guider/main-guider.html">
+                <i class="bi bi-journal-text"></i> Guider
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="/om-oss.html">Om oss</a>
+            </li>
+  
+          </ul>
+  
+          <form class="d-flex search-wrapper" action="/search.html" method="GET">
+            <div class="input-group input-group-sm">
+              <input class="form-control rounded-start" type="text" placeholder="Søk butikk eller kategori..."
+                aria-label="Søk" name="k">
+              <button class="btn btn-outline-primary rounded-end" type="submit" title="Søk">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+  
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 
 
 

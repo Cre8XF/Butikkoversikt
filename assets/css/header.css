@@ -8,7 +8,7 @@ header {
   border: none !important;
 }
 .navbar-brand span {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .nav-link:hover {
   text-decoration: underline;
@@ -16,4 +16,11 @@ header {
 }
 .dropdown-menu {
   margin-top: 8px;
+}
+.logo-text {
+  font-family: "Poppins", sans-serif;
+}
+.search-wrapper {
+  max-width: 300px;
+  width: 100%;
 }
