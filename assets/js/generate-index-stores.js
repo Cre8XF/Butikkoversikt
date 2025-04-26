@@ -1,7 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch('assets/data/butikker.json')
-    .then((response) => response.json())
+  console.log("DOM fully loaded and parsed");
+
+  fetch("assets/data/butikker.json")
+    .then((response) => {
+      console.log("Fetch response:", response);
+      return response.json();
+    })
     .then((data) => {
+      console.log("Data hentet fra butikker.json:", data);
+
       const anbefalteContainer = document.getElementById("anbefalte-butikker");
 
       if (!anbefalteContainer) {
@@ -9,15 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
+      let count = 0;
+
       data.forEach((butikk) => {
+        console.log("Sjekker butikk:", butikk);
+
         if (butikk.anbefalt) {
-          // Lag en kolonne
+          console.log("Anbefalt butikk funnet:", butikk);
+          count++;
+
           const col = document.createElement("div");
           col.className = "col";
 
-          // Lag kortet
           const card = document.createElement("div");
-          card.className = 'store-card w-100 d-flex flex-column';
+          card.className = "category-card text-center";
 
           card.innerHTML = `
             <a href="${butikk.url}" target="_blank" rel="noopener">
@@ -27,13 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
             </a>
           `;
 
-          // Sett kortet inn i kolonnen
           col.appendChild(card);
-
-          // Sett kolonnen inn i raden
           anbefalteContainer.appendChild(col);
         }
       });
+
+      console.log(`Totalt anbefalte butikker lagt til: ${count}`);
     })
     .catch((error) => {
       console.error("Feil ved lasting av anbefalte butikker:", error);
