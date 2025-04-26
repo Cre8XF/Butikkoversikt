@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           // Lag kortet
           const card = document.createElement("div");
-          card.className = "category-card text-center";
+          card.className = 'store-card w-100 d-flex flex-column';
 
           card.innerHTML = `
             <a href="${butikk.url}" target="_blank" rel="noopener">
