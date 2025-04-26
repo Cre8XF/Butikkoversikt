@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       data.forEach((butikk) => {
-        if (anbefltebutikker) {
+        if (butikk.anbefalt) {
           // Lag en kolonne
           const col = document.createElement("div");
           col.className = "col";
