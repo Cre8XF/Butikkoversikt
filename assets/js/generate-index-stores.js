@@ -12,7 +12,8 @@ fetch('assets/data/butikker.json')
         col.className = 'col-6 col-md-3 d-flex';
 
         const card = document.createElement('div');
-        card.className = 'store-card w-100 d-flex flex-column';
+        card.className = 'category-card text-center';
+
 
         card.innerHTML = `
           <img src="${butikk.image}" class="img-fluid rounded-top" alt="${butikk.alt}">
