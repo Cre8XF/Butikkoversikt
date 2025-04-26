@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
       let count = 0;
 
       data.forEach((butikk) => {
-        console.log("Sjekker butikk:", butikk);
+        console.log("Sjekker butikk:", butikk);  // Log hele butikkobjektet
 
-        if (butikk.anbefalt) {
-          console.log("Anbefalt butikk funnet:", butikk);
+        if (butikk.anbefalt === true) {
+          console.log("✅ Anbefalt butikk funnet:", butikk.name);
           count++;
 
           const col = document.createElement("div");
