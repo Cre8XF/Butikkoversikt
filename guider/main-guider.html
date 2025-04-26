@@ -4,12 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Butikkoversikt.no - Din guide til nettbutikker</title>
+  <title>Butikkoversikt.no - Guider</title>
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="assets/css/header-modern.css">
-
-
 </head>
 
 <body>
@@ -20,48 +18,42 @@
       <div class="logo">Butikkoversikt.no</div>
       <nav class="main-nav">
         <ul class="nav-list d-flex gap-4">
-          <li><a href="#kategorier">Kategori</a></li>
-          <li><a href="#tilbud">Tilbud</a></li>
-          <li><a href="#kundeservice">Kundeservice</a></li>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="kategori.html">Kategorier</a></li>
+          <li><a href="topplisten.html">Topplisten</a></li>
+          <li><a href="main-guider.html">Guider</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-    <section class="hero">
-      <div class="container text-center">
-        <h1>Guider og tips</h1>
-        <p class="lead">Utforsk våre nyttige artikler for smartere og tryggere netthandel</p>
-      </div>
-    </section>
-
-    <!-- Dynamisk guider -->
+  <main>
     <section class="py-5">
       <div class="container">
-        <div id="guider-container" class="row g-4">
-          <!-- Guides fylles inn dynamisk -->
+        <h1 class="text-center mb-4">Guider og Tips</h1>
+        <p class="lead text-center mb-5">Lær hvordan du finner de beste nettbutikkene og handler trygt på nett!</p>
+        <div id="guider-container" class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Dynamisk innhold via JS -->
         </div>
       </div>
     </section>
+  </main>
 
-    <footer class="footer text-white mt-5 py-4">
-      <div class="text-center">
-        © 2025 Butikkoversikt.no – Alle rettigheter reservert.
-      </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="site-footer bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>© 2025 Butikkoversikt.no | <a href="#" class="text-white">Om oss</a> | <a href="#"
+          class="text-white">Kontakt</a> | <a href="#" class="text-white">Personvern</a></p>
+    </div>
+  </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    
-    <!-- Effekter -->
-    <script src="assets/js/effects/fade-in.js"></script>
-    <script src="assets/js/effects/menu-toggle.js"></script>
-    
-    
-    <!-- Generatorer -->
-    <script src="assets/js/generate/generate-index-stores.js"></script>
-    
-    <!-- Main -->
-    <script src="assets/js/main.js"></script>
-  </body>
+  <!-- Scripts -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/effects/fade-in.js"></script>
+  <script src="assets/js/effects/menu-toggle.js"></script>
+  <script src="assets/js/generate/generate-guider.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
