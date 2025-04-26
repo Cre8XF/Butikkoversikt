@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
       let count = 0;
 
       data.forEach((butikk) => {
-        console.log("Sjekker butikk:", butikk);  // Log hele butikkobjektet
+        console.log("Sjekker butikk:", butikk);
 
-        if (butikk.anbefalt === true) {
-          console.log("✅ Anbefalt butikk funnet:", butikk.name);
+        if (butikk.forside === true) {
+          console.log("✅ Forside-butikk funnet:", butikk.name);
           count++;
 
           const col = document.createElement("div");
@@ -44,9 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      console.log(`Totalt anbefalte butikker lagt til: ${count}`);
+      console.log(`Totalt forsidebutikker lagt til: ${count}`);
     })
     .catch((error) => {
-      console.error("Feil ved lasting av anbefalte butikker:", error);
+      console.error("Feil ved lasting av forsidebutikker:", error);
     });
 });
