@@ -1,0 +1,10 @@
+/* 📂 footer.css - Footer-styling */
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 2rem 0;
+  font-size: 0.95rem;
+}
+footer a:hover {
+  color: var(--btn-primary);
+}

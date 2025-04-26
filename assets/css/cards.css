@@ -1,0 +1,13 @@
+/* 📂 cards.css - Kortdesign og hovereffekter */
+.card, .category-card, .anbefalt-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+.card:hover {
+  background-color: var(--card-hover);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}

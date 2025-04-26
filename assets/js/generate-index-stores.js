@@ -1,4 +1,4 @@
-// Oppdatert generate-index-stores.js med hover-effekt på Anbefalte butikker
+// Oppdatert generate-index-stores.js for å hente Anbefalte butikker basert på "forside": true
 
 fetch('assets/data/butikker.json')
   .then(response => response.json())
@@ -6,7 +6,7 @@ fetch('assets/data/butikker.json')
     const anbefalteContainer = document.getElementById('anbefalte-butikker');
 
     butikker
-      .filter(butikk => butikk.anbefalt)
+      .filter(butikk => butikk.forside) // <-- riktig nå!
       .forEach(butikk => {
         const col = document.createElement('div');
         col.className = 'col-6 col-md-3 d-flex';
@@ -15,11 +15,11 @@ fetch('assets/data/butikker.json')
         card.className = 'store-card w-100 d-flex flex-column';
 
         card.innerHTML = `
-          <img src="${butikk.bilde}" class="img-fluid rounded-top" alt="${butikk.navn}">
+          <img src="${butikk.image}" class="img-fluid rounded-top" alt="${butikk.alt}">
           <div class="p-3 d-flex flex-column flex-grow-1">
-            <h5 class="fw-bold mb-2">${butikk.navn}</h5>
-            <p class="small text-muted mb-3 flex-grow-1">${butikk.beskrivelse}</p>
-            <a href="${butikk.lenke}" class="btn btn-primary mt-auto">Besøk butikk</a>
+            <h5 class="fw-bold mb-2">${butikk.name}</h5>
+            <p class="small text-muted mb-3 flex-grow-1">${butikk.description}</p>
+            <a href="${butikk.url}" class="btn btn-primary mt-auto" target="_blank" rel="noopener">Besøk butikk</a>
           </div>
         `;
 
