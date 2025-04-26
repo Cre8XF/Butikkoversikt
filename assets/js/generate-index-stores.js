@@ -1,31 +1,41 @@
-// Oppdatert generate-index-stores.js for å hente Anbefalte butikker basert på "forside": true
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('butikker.json')
+    .then(response => response.json())
+    .then(data => {
+      const anbefalteContainer = document.getElementById('anbefalte-butikker');
 
-fetch('assets/data/butikker.json')
-  .then(response => response.json())
-  .then(butikker => {
-    const anbefalteContainer = document.getElementById('anbefalte-butikker');
+      if (!anbefalteContainer) {
+        console.error('Container for anbefalte butikker ikke funnet!');
+        return;
+      }
 
-    butikker
-      .filter(butikk => butikk.forside) // <-- riktig nå!
-      .forEach(butikk => {
-        const col = document.createElement('div');
-        col.className = 'col-6 col-md-3 d-flex';
+      data.forEach(butikk => {
+        if (butikk.anbefalt) {
+          // Lag en kolonne
+          const col = document.createElement('div');
+          col.className = 'col';
 
-        const card = document.createElement('div');
-        card.className = 'category-card text-center';
+          // Lag kortet
+          const card = document.createElement('div');
+          card.className = 'category-card text-center';
 
+          card.innerHTML = `
+            <a href="${butikk.url}" target="_blank" rel="noopener">
+              <img src="${butikk.image}" class="category-icon" alt="${butikk.alt}">
+              <h6 class="mt-3 mb-2">${butikk.name}</h6>
+              <p class="small text-muted">${butikk.description}</p>
+            </a>
+          `;
 
-        card.innerHTML = `
-          <img src="${butikk.image}" class="img-fluid rounded-top" alt="${butikk.alt}">
-          <div class="p-3 d-flex flex-column flex-grow-1">
-            <h5 class="fw-bold mb-2">${butikk.name}</h5>
-            <p class="small text-muted mb-3 flex-grow-1">${butikk.description}</p>
-            <a href="${butikk.url}" class="btn btn-primary mt-auto" target="_blank" rel="noopener">Besøk butikk</a>
-          </div>
-        `;
+          // Sett kortet inn i kolonnen
+          col.appendChild(card);
 
-        col.appendChild(card);
-        anbefalteContainer.appendChild(col);
+          // Sett kolonnen inn i raden
+          anbefalteContainer.appendChild(col);
+        }
       });
-  })
-  .catch(error => console.error('Feil ved lasting av anbefalte butikker:', error));
+    })
+    .catch(error => {
+      console.error('Feil ved lasting av anbefalte butikker:', error);
+    });
+});
