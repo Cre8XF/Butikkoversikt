@@ -240,3 +240,11 @@
   width: 250px;
   min-width: 250px;
 }
+@media (max-width: 576px) {
+  #anbefalte-butikker .col-sm-6,
+  #anbefalte-butikker .col-md-4,
+  #anbefalte-butikker .col-lg-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
