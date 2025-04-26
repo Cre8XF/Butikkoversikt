@@ -1,34 +1,32 @@
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("assets/data/butikker.json")
-    .then(res => res.json())
-    .then(data => {
-      const grupper = {
-        "Gaming og elektronikk": document.getElementById("gaming-elektronikk"),
-        "Gadgets og gaver": document.getElementById("gadgets-gaver"),
-        "Spill og underholdning": document.getElementById("spill-underholdning")
-      };
+// Oppdatert generate-gaming-sections.js for hover-effekt på Gaming-seksjonene
 
-      data.forEach(butikk => {
-        if (!Array.isArray(butikk.category)) return;
+fetch('assets/data/butikker.json')
+  .then(response => response.json())
+  .then(butikker => {
+    const gamingSections = document.querySelectorAll('.gaming-section');
 
-        butikk.category.forEach(cat => {
-          const container = grupper[cat];
-          if (container) {
-            const col = document.createElement("div");
-            col.className = "col-6 col-md-3 text-center";
-            col.innerHTML = `
-              <a href="${butikk.url}" target="_blank" rel="noopener sponsored" class="text-decoration-none text-dark d-block store-showcase">
-                <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-2 card-logo" loading="lazy" />
-                <h6>${butikk.name}</h6>
-                <p class="small text-muted">${butikk.description || ""}</p>
-              </a>
-            `;
-            container.appendChild(col);
-          }
-        });
+    gamingSections.forEach(section => {
+      const kategori = section.getAttribute('data-kategori');
+      const container = section.querySelector('.row');
+
+      butikker.filter(butikk => butikk.gamingkategori === kategori).forEach(butikk => {
+        const col = document.createElement('div');
+        col.className = 'col-6 col-md-3 d-flex';
+
+        const kort = document.createElement('div');
+        kort.className = 'store-card w-100';
+        kort.innerHTML = `
+          <img src="${butikk.bilde}" class="img-fluid rounded-top" alt="${butikk.navn}">
+          <div class="p-3 d-flex flex-column justify-content-between h-100">
+            <h5 class="fw-bold mb-2">${butikk.navn}</h5>
+            <p class="small text-muted flex-grow-1">${butikk.beskrivelse}</p>
+            <a href="${butikk.lenke}" class="btn btn-primary mt-2">Besøk</a>
+          </div>
+        `;
+
+        col.appendChild(kort);
+        container.appendChild(col);
       });
-    })
-    .catch(err => {
-      console.error("Feil ved lasting av butikker:", err);
     });
-});
+  })
+  .catch(error => console.error('Feil ved lasting av gaming-seksjoner:', error));
