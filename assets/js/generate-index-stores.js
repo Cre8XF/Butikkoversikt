@@ -1,23 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('butikker.json')
-    .then(response => response.json())
-    .then(data => {
-      const anbefalteContainer = document.getElementById('anbefalte-butikker');
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("butikker.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const anbefalteContainer = document.getElementById("anbefalte-butikker");
 
       if (!anbefalteContainer) {
-        console.error('Container for anbefalte butikker ikke funnet!');
+        console.error("Container for anbefalte butikker ikke funnet!");
         return;
       }
 
-      data.forEach(butikk => {
-        if (butikk.anbefalt) {
+      data.forEach((butikk) => {
+        if (anbefltebutikker) {
           // Lag en kolonne
-          const col = document.createElement('div');
-          col.className = 'col';
+          const col = document.createElement("div");
+          col.className = "col";
 
           // Lag kortet
-          const card = document.createElement('div');
-          card.className = 'category-card text-center';
+          const card = document.createElement("div");
+          card.className = "category-card text-center";
 
           card.innerHTML = `
             <a href="${butikk.url}" target="_blank" rel="noopener">
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     })
-    .catch(error => {
-      console.error('Feil ved lasting av anbefalte butikker:', error);
+    .catch((error) => {
+      console.error("Feil ved lasting av anbefalte butikker:", error);
     });
 });
