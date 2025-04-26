@@ -1,0 +1,6 @@
+/* EXTRA: Responsiv forbedring guider */
+@media (max-width: 768px) {
+  .guide-card {
+    margin-bottom: 1.5rem;
+  }
+}
