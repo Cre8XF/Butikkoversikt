@@ -1,7 +1,7 @@
 [
   {
     "name": "Aboutyou.no",
-    "image": "assets/images/klær-og-mote/About you.png",
+    "image": "assets/images/butikker/About you.png",
     "alt": "About You",
     "category": "Klær og mote",
     "subcategory": [],
@@ -12,7 +12,7 @@
   },
   {
     "name": "Apotek1.no",
-    "image": "assets/images/apotek/Apotek1.png",
+    "image": "assets/images/butikker/Apotek1.png",
     "alt": "Apotek 1",
     "category": "Apotek",
     "subcategory": [],
@@ -23,7 +23,7 @@
   },
   {
     "name": "Apotekhjem.no",
-    "image": "assets/images/apotek/Apotekhjem.png",
+    "image": "assets/images/butikker/Apotekhjem.png",
     "alt": "Apotekhjem",
     "category": "Apotek",
     "subcategory": [],
@@ -34,7 +34,7 @@
   },
   {
     "name": "Apotera.no",
-    "image": "assets/images/apotek/Apotera.png",
+    "image": "assets/images/butikker/Apotera.png",
     "alt": "Apotera",
     "category": "Apotek",
     "subcategory": [],
@@ -45,7 +45,7 @@
   },
   {
     "name": "Ark.no",
-    "image": "assets/images/bøker-og-underholdning/Ark.png",
+    "image": "assets/images/butikker/Ark.png",
     "alt": "Ark.no",
     "category": "Bøker og underholdning",
     "subcategory": [],
@@ -56,7 +56,7 @@
   },
   {
     "name": "AskeladdenNavnelapper.no",
-    "image": "assets/images/barn-og-baby/Askeladden.png",
+    "image": "assets/images/butikker/Askeladden.png",
     "alt": "Askeladden",
     "category": "Barn og baby",
     "subcategory": [],
@@ -67,7 +67,7 @@
   },
   {
     "name": "Babyshop",
-    "image": "assets/images/barn-og-baby/babyshop_logo_200.jpg",
+    "image": "assets/images/butikker/babyshop_logo_200.jpg",
     "alt": "Babyshop",
     "category": "Barn og baby",
     "subcategory": [],
@@ -78,7 +78,7 @@
   },
   {
     "name": "Barnas Hus",
-    "image": "assets/images/barn-og-baby/BarnasHus_logo.png",
+    "image": "assets/images/butikker/BarnasHus_logo.png",
     "alt": "Barnas Hus",
     "category": "Barn og baby",
     "subcategory": [],
@@ -89,7 +89,7 @@
   },
   {
     "name": "Barnevognhuset.no",
-    "image": "assets/images/barn-og-baby/Barnevognhuset.png",
+    "image": "assets/images/butikker/Barnevognhuset.png",
     "alt": "Barnevognhuset",
     "category": "Barn og baby",
     "subcategory": [],
@@ -100,7 +100,7 @@
   },
   {
     "name": "BikBok.com",
-    "image": "assets/images/klær-og-mote/Bik Bok.png",
+    "image": "assets/images/butikker/Bik Bok.png",
     "alt": "Bik Bok",
     "category": "Klær og mote",
     "subcategory": [],
@@ -111,7 +111,7 @@
   },
   {
     "name": "Bjørnklær.no",
-    "image": "assets/images/sport-og-fritid/Bjornklader.png",
+    "image": "assets/images/butikker/Bjornklader.png",
     "alt": "Bjørnklær.no",
     "category": "Sport og fritid",
     "subcategory": [],
@@ -122,7 +122,7 @@
   },
   {
     "name": "Blivakker.no",
-    "image": "assets/images/helse og skjønnhet/Blivakker.png",
+    "image": "assets/images/butikker/Blivakker.png",
     "alt": "Blivakker",
     "category": "Helse og egenpleie",
     "subcategory": [],
@@ -133,7 +133,7 @@
   },
   {
     "name": "Bogartstore.no",
-    "image": "assets/images/klær-og-mote/Bogart.png",
+    "image": "assets/images/butikker/Bogart.png",
     "alt": "Bogart",
     "category": "Klær og mote",
     "subcategory": [],
@@ -144,7 +144,7 @@
   },
   {
     "name": "Boozt",
-    "image": "assets/images/klær-og-mote/Boozt.png",
+    "image": "assets/images/butikker/Boozt.png",
     "alt": "Boozt",
     "category": "Klær og mote",
     "subcategory": [],
@@ -155,7 +155,7 @@
   },
   {
     "name": "Bubbleroom.com",
-    "image": "assets/images/klær-og-mote/bubbleroom.png",
+    "image": "assets/images/butikker/bubbleroom.png",
     "alt": "Bubbleroom",
     "category": "Klær og mote",
     "subcategory": [],
@@ -166,7 +166,7 @@
   },
   {
     "name": "CDON",
-    "image": "assets/images/elektronikk/cdon.png",
+    "image": "assets/images/butikker/cdon.png",
     "alt": "CDON",
     "category": "Elektronikk og data",
     "subcategory": [],
@@ -177,7 +177,7 @@
   },
   {
     "name": "Clas Ohlson",
-    "image": "assets/images/elektronikk/ClasOhlson.png",
+    "image": "assets/images/butikker/ClasOhlson.png",
     "alt": "Clas Ohlson",
     "category": "Fritid og gaver",
     "subcategory": "Gadgets og gaver",
@@ -188,7 +188,7 @@
   },
   {
     "name": "ClasOhlson.no",
-    "image": "assets/images/elektronikk/ClasOhlson.png",
+    "image": "assets/images/butikker/ClasOhlson.png",
     "alt": "Clas Ohlson",
     "category": "Elektronikk og data",
     "subcategory": [],
@@ -199,7 +199,7 @@
   },
   {
     "name": "Cubus.no",
-    "image": "assets/images/barn-og-baby/Cubus.png",
+    "image": "assets/images/butikker/Cubus.png",
     "alt": "Cubus",
     "category": "Barn og baby",
     "subcategory": [],
@@ -210,7 +210,7 @@
   },
   {
     "name": "Dressmann.com",
-    "image": "assets/images/klær-og-mote/Dressmann.png",
+    "image": "assets/images/butikker/Dressmann.png",
     "alt": "Dressmann",
     "category": "Klær og mote",
     "subcategory": [],
@@ -221,7 +221,7 @@
   },
   {
     "name": "DustinHome.no",
-    "image": "assets/images/elektronikk/Dustin.png",
+    "image": "assets/images/butikker/Dustin.png",
     "alt": "Dustin",
     "category": "Elektronikk og data",
     "subcategory": [],
@@ -232,7 +232,7 @@
   },
   {
     "name": "Elkjøp",
-    "image": "assets/images/elektronikk/Elkjop.png",
+    "image": "assets/images/butikker/Elkjop.png",
     "alt": "Elkjøp",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -243,7 +243,7 @@
   },
   {
     "name": "Ellos",
-    "image": "assets/images/barn-og-baby/ellos.png",
+    "image": "assets/images/butikker/ellos.png",
     "alt": "Ellos",
     "category": "Barn og baby",
     "subcategory": [],
@@ -254,7 +254,7 @@
   },
   {
     "name": "Farmasiet",
-    "image": "assets/images/apotek/farmasiet.png",
+    "image": "assets/images/butikker/farmasiet.png",
     "alt": "Farmasiet",
     "category": "Apotek",
     "subcategory": [],
@@ -265,7 +265,7 @@
   },
   {
     "name": "Fjellsport.no",
-    "image": "assets/images/sport-og-fritid/Fjellsport.png",
+    "image": "assets/images/butikker/Fjellsport.png",
     "alt": "Fjellsport.no",
     "category": "Sport og fritid",
     "subcategory": [],
@@ -276,7 +276,7 @@
   },
   {
     "name": "Glitter.no",
-    "image": "assets/images/klær-og-mote/glitter.png",
+    "image": "assets/images/butikker/glitter.png",
     "alt": "Glitter",
     "category": "Klær og mote",
     "subcategory": [],
@@ -287,7 +287,7 @@
   },
   {
     "name": "Guttelus",
-    "image": "assets/images/barn-og-baby/guttelus-logo--200x201.jpg",
+    "image": "assets/images/butikker/guttelus-logo--200x201.jpg",
     "alt": "Guttelus",
     "category": "Barn og baby",
     "subcategory": [],
@@ -298,7 +298,7 @@
   },
   {
     "name": "H&M",
-    "image": "assets/images/klær-og-mote/H&M.png",
+    "image": "assets/images/butikker/H&M.png",
     "alt": "H&M",
     "category": "Klær og mote",
     "subcategory": [],
@@ -309,7 +309,7 @@
   },
   {
     "name": "HiFiKlubben.no",
-    "image": "assets/images/elektronikk/HiFiKlubben.png",
+    "image": "assets/images/butikker/HiFiKlubben.png",
     "alt": "HiFi Klubben",
     "category": "Elektronikk og data",
     "subcategory": [],
@@ -320,7 +320,7 @@
   },
   {
     "name": "IKEA",
-    "image": "assets/images/møbler-og-interiør/ikea.png",
+    "image": "assets/images/butikker/ikea.png",
     "alt": "IKEA",
     "category": "Møbler og interiør",
     "subcategory": [],
@@ -331,7 +331,7 @@
   },
   {
     "name": "iTech.no",
-    "image": "assets/images/elektronikk/iTech.png",
+    "image": "assets/images/butikker/iTech.png",
     "alt": "iTech",
     "category": "Elektronikk og data",
     "subcategory": [],
@@ -342,7 +342,7 @@
   },
   {
     "name": "JackAndJones.com",
-    "image": "assets/images/klær-og-mote/jack&jones.png",
+    "image": "assets/images/butikker/jack&jones.png",
     "alt": "Jack & Jones",
     "category": "Klær og mote",
     "subcategory": [],
@@ -353,7 +353,7 @@
   },
   {
     "name": "Jollyroom",
-    "image": "assets/images/barn-og-baby/Jollyroom.jpg",
+    "image": "assets/images/butikker/Jollyroom.jpg",
     "alt": "Jollyroom",
     "category": "Barn og baby",
     "subcategory": [],
@@ -364,7 +364,7 @@
   },
   {
     "name": "Kid Interiør",
-    "image": "assets/images/møbler-og-interiør/Kid.png",
+    "image": "assets/images/butikker/Kid.png",
     "alt": "Kid Interiør",
     "category": "Møbler og interiør",
     "subcategory": [],
@@ -375,7 +375,7 @@
   },
   {
     "name": "Kjell.com",
-    "image": "assets/images/elektronikk/Kjell.png",
+    "image": "assets/images/butikker/Kjell.png",
     "alt": "Kjell & Company",
     "category": "Elektronikk og data",
     "subcategory": [],
@@ -386,7 +386,7 @@
   },
   {
     "name": "Komplett",
-    "image": "assets/images/elektronikk/komplett.png",
+    "image": "assets/images/butikker/komplett.png",
     "alt": "Komplett",
     "category": "Elektronikk og data",
     "subcategory": [],
@@ -397,7 +397,7 @@
   },
   {
     "name": "KomplettApotek.no",
-    "image": "assets/images/apotek/Komplettapotek.png",
+    "image": "assets/images/butikker/Komplettapotek.png",
     "alt": "Komplett Apotek",
     "category": "Apotek",
     "subcategory": [],
@@ -408,7 +408,7 @@
   },
   {
     "name": "Lekeakademiet.no",
-    "image": "assets/images/barn-og-baby/Lekeakademiet.png",
+    "image": "assets/images/butikker/Lekeakademiet.png",
     "alt": "Lekeakademiet",
     "category": "Barn og baby",
     "subcategory": [],
@@ -419,7 +419,7 @@
   },
   {
     "name": "Lekia",
-    "image": "assets/images/barn-og-baby/Lekia.png",
+    "image": "assets/images/butikker/Lekia.png",
     "alt": "Lekia",
     "category": "Barn og baby",
     "subcategory": [],
@@ -430,7 +430,7 @@
   },
   {
     "name": "Life.no",
-    "image": "assets/images/helse og skjønnhet/life.png",
+    "image": "assets/images/butikker/life.png",
     "alt": "Life",
     "category": "Helse og egenpleie",
     "subcategory": [],
@@ -441,7 +441,7 @@
   },
   {
     "name": "Lindex.no",
-    "image": "assets/images/klær-og-mote/Lindex.png",
+    "image": "assets/images/butikker/Lindex.png",
     "alt": "Lindex",
     "category": "Klær og mote",
     "subcategory": [],
@@ -452,7 +452,7 @@
   },
   {
     "name": "Mimmis.no",
-    "image": "assets/images/barn-og-baby/Mimmis.png",
+    "image": "assets/images/butikker/Mimmis.png",
     "alt": "Mimmis",
     "category": "Barn og baby",
     "subcategory": [],
@@ -463,7 +463,7 @@
   },
   {
     "name": "Morris.se",
-    "image": "assets/images/klær-og-mote/Morris.png",
+    "image": "assets/images/butikker/Morris.png",
     "alt": "Morris",
     "category": "Klær og mote",
     "subcategory": [],
@@ -474,7 +474,7 @@
   },
   {
     "name": "Nameit.com",
-    "image": "assets/images/barn-og-baby/NameIt.png",
+    "image": "assets/images/butikker/NameIt.png",
     "alt": "Name It",
     "category": "Barn og baby",
     "subcategory": [],
@@ -485,7 +485,7 @@
   },
   {
     "name": "Nelly.com",
-    "image": "assets/images/klær-og-mote/Nelly.png",
+    "image": "assets/images/butikker/Nelly.png",
     "alt": "Nelly",
     "category": "Klær og mote",
     "subcategory": [],
@@ -496,7 +496,7 @@
   },
   {
     "name": "NetOnNet.no",
-    "image": "assets/images/elektronikk/Netonnet.png",
+    "image": "assets/images/butikker/Netonnet.png",
     "alt": "NetOnNet",
     "category": "Elektronikk og data",
     "subcategory": [],
@@ -507,7 +507,7 @@
   },
   {
     "name": "Outnorth.no",
-    "image": "assets/images/sport-og-fritid/Outnorth.png",
+    "image": "assets/images/butikker/Outnorth.png",
     "alt": "Outnorth.no",
     "category": "Sport og fritid",
     "subcategory": [],
@@ -518,7 +518,7 @@
   },
   {
     "name": "Platekompaniet",
-    "image": "assets/images/bøker-og-underholdning/platekompaniet.png",
+    "image": "assets/images/butikker/platekompaniet.png",
     "alt": "Platekompaniet",
     "category": "Bøker og underholdning",
     "subcategory": [],
@@ -529,7 +529,7 @@
   },
   {
     "name": "Power.no",
-    "image": "assets/images/elektronikk/Power.png",
+    "image": "assets/images/butikker/Power.png",
     "alt": "Power",
     "category": "Elektronikk og data",
     "subcategory": [],
@@ -540,7 +540,7 @@
   },
   {
     "name": "RiktigeLeker.no",
-    "image": "assets/images/barn-og-baby/sprell.png",
+    "image": "assets/images/butikker/sprell.png",
     "alt": "Riktige Leker",
     "category": "Barn og baby",
     "subcategory": [],
@@ -551,7 +551,7 @@
   },
   {
     "name": "Rudo",
-    "image": "assets/images/barn-og-baby/Rudo.png",
+    "image": "assets/images/butikker/Rudo.png",
     "alt": "Rudo",
     "category": "Barn og baby",
     "subcategory": [],
@@ -562,7 +562,7 @@
   },
   {
     "name": "Soundgarden.no",
-    "image": "assets/images/elektronikk/Soundgarden.png",
+    "image": "assets/images/butikker/Soundgarden.png",
     "alt": "Soundgarden",
     "category": "Elektronikk og data",
     "subcategory": [],
@@ -573,7 +573,7 @@
   },
   {
     "name": "Specsavers.no",
-    "image": "assets/images/klær-og-mote/Specsavers.png",
+    "image": "assets/images/butikker/Specsavers.png",
     "alt": "Specsavers",
     "category": "Klær og mote",
     "subcategory": [],
@@ -584,7 +584,7 @@
   },
   {
     "name": "Sport1.no",
-    "image": "assets/images/sport-og-fritid/Sport1.png",
+    "image": "assets/images/butikker/Sport1.png",
     "alt": "Sport1.no",
     "category": "Sport og fritid",
     "subcategory": [],
@@ -595,7 +595,7 @@
   },
   {
     "name": "Sportamore",
-    "image": "assets/images/sport-og-fritid/sportamore.png",
+    "image": "assets/images/butikker/sportamore.png",
     "alt": "Sportamore",
     "category": "Sport og fritid",
     "subcategory": [],
@@ -606,7 +606,7 @@
   },
   {
     "name": "Sportshopen.no",
-    "image": "assets/images/sport-og-fritid/Sportshopen.png",
+    "image": "assets/images/butikker/Sportshopen.png",
     "alt": "Sportshopen.no",
     "category": "Sport og fritid",
     "subcategory": [],
@@ -617,7 +617,7 @@
   },
   {
     "name": "sportsmaster",
-    "image": "assets/images/sport-og-fritid/sportsmaster.png",
+    "image": "assets/images/butikker/sportsmaster.png",
     "alt": "Sport24.no",
     "category": "Sport og fritid",
     "subcategory": [],
@@ -628,7 +628,7 @@
   },
   {
     "name": "Sunkost.no",
-    "image": "assets/images/helse og skjønnhet/sunkost.png",
+    "image": "assets/images/butikker/sunkost.png",
     "alt": "Sunkost",
     "category": "Helse og egenpleie",
     "subcategory": [],
@@ -639,7 +639,7 @@
   },
   {
     "name": "Tek.no",
-    "image": "assets/images/elektronikk/Tek.png",
+    "image": "assets/images/butikker/Tek.png",
     "alt": "Tek.no",
     "category": "Elektronikk og data",
     "subcategory": [],
@@ -650,7 +650,7 @@
   },
   {
     "name": "Teknikmagasinet.no",
-    "image": "assets/images/elektronikk/Teknikmagasinet.png",
+    "image": "assets/images/butikker/Teknikmagasinet.png",
     "alt": "Teknikmagasinet",
     "category": "Elektronikk og data",
     "subcategory": [],
@@ -661,7 +661,7 @@
   },
   {
     "name": "Vinmonopolet",
-    "image": "assets/images/gadgets-og-gaver/Vinmonopolet.png",
+    "image": "assets/images/butikker/Vinmonopolet.png",
     "alt": "Vinmonopolet",
     "category": "Fritid og gaver",
     "subcategory": "Gadgets og gaver",
@@ -672,7 +672,7 @@
   },
   {
     "name": "Vitusapotek.no",
-    "image": "assets/images/apotek/Vitusapotek.png",
+    "image": "assets/images/butikker/Vitusapotek.png",
     "alt": "Vitusapotek",
     "category": "Apotek",
     "subcategory": [],
@@ -683,7 +683,7 @@
   },
   {
     "name": "Volt.no",
-    "image": "assets/images/klær-og-mote/Volt.png",
+    "image": "assets/images/butikker/Volt.png",
     "alt": "Volt",
     "category": "Klær og mote",
     "subcategory": [],
@@ -694,7 +694,7 @@
   },
   {
     "name": "XXL",
-    "image": "assets/images/sport-og-fritid/xxl.png",
+    "image": "assets/images/butikker/xxl.png",
     "alt": "XXL",
     "category": "Sport og fritid",
     "subcategory": [],
@@ -705,7 +705,7 @@
   },
   {
     "name": "Zalando",
-    "image": "assets/images/klær-og-mote/Zalando.png",
+    "image": "assets/images/butikker/Zalando.png",
     "alt": "Zalando",
     "category": "Klær og mote",
     "subcategory": [],
@@ -716,7 +716,7 @@
   },
   {
     "name": "JYSK",
-    "image": "assets/images/møbler-og-interiør/JYSK.png",
+    "image": "assets/images/butikker/JYSK.png",
     "alt": "JYSK",
     "category": "Møbler og interiør",
     "subcategory": [],
@@ -727,7 +727,7 @@
   },
   {
     "name": "Skeidar",
-    "image": "assets/images/møbler-og-interiør/skeidar.png",
+    "image": "assets/images/butikker/skeidar.png",
     "alt": "Skeidar",
     "category": "Møbler og interiør",
     "subcategory": [],
@@ -738,7 +738,7 @@
   },
   {
     "name": "CoolStuff",
-    "image": "assets/images/gadgets-og-gaver/coolstuff.png",
+    "image": "assets/images/butikker/coolstuff.png",
     "alt": "CoolStuff",
     "category": "Fritid og gaver",
     "subcategory": "Gadgets og gaver",
@@ -749,7 +749,7 @@
   },
   {
     "name": "Firebox",
-    "image": "assets/images/gadgets-og-gaver/Firebox.png",
+    "image": "assets/images/butikker/Firebox.png",
     "alt": "Firebox",
     "category": "Fritid og gaver",
     "subcategory": "Gadgets og gaver",
@@ -760,7 +760,7 @@
   },
   {
     "name": "MaxGaming",
-    "image": "assets/images/gaming-og-gadgets/hyperx.png",
+    "image": "assets/images/butikker/hyperx.png",
     "alt": "MaxGaming",
     "category": "Fritid og gaver",
     "subcategory": "Gadgets og gaver",
@@ -771,7 +771,7 @@
   },
   {
     "name": "Proshop",
-    "image": "assets/images/gaming-og-gadgets/proshop.png",
+    "image": "assets/images/butikker/proshop.png",
     "alt": "Proshop",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -782,7 +782,7 @@
   },
   {
     "name": "NetOnNet",
-    "image": "assets/images/gaming-og-gadgets/netonnet.png",
+    "image": "assets/images/butikker/netonnet.png",
     "alt": "NetOnNet",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -793,7 +793,7 @@
   },
   {
     "name": "SteelSeries",
-    "image": "assets/images/gaming-og-gadgets/steelseries.png",
+    "image": "assets/images/butikker/steelseries.png",
     "alt": "SteelSeries",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -804,7 +804,7 @@
   },
   {
     "name": "Razer",
-    "image": "assets/images/gaming-og-gadgets/razer.png",
+    "image": "assets/images/butikker/razer.png",
     "alt": "Razer",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -815,7 +815,7 @@
   },
   {
     "name": "HyperX",
-    "image": "assets/images/gaming-og-gadgets/hyperx.png",
+    "image": "assets/images/butikker/hyperx.png",
     "alt": "HyperX",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -826,7 +826,7 @@
   },
   {
     "name": "Gamezone",
-    "image": "assets/images/gaming-og-gadgets/gamezone.png",
+    "image": "assets/images/butikker/gamezone.png",
     "alt": "Gamezone",
     "category": "Spill og underholdning",
     "subcategory": [],
@@ -837,7 +837,7 @@
   },
   {
     "name": "Power",
-    "image": "assets/images/elektronikk/Power.png",
+    "image": "assets/images/butikker/Power.png",
     "alt": "Power",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -848,7 +848,7 @@
   },
   {
     "name": "Kjell & Company",
-    "image": "assets/images/elektronikk/Kjell.png",
+    "image": "assets/images/butikker/Kjell.png",
     "alt": "Kjell & Company",
     "category": "Fritid og gaver",
     "subcategory": "Gadgets og gaver",
@@ -859,7 +859,7 @@
   },
   {
     "name": "DigitalImpuls",
-    "image": "assets/images/gaming-og-gadgets/digitalimpuls.png",
+    "image": "assets/images/butikker/digitalimpuls.png",
     "alt": "DigitalImpuls",
     "category": "Fritid og gaver",
     "subcategory": "Gadgets og gaver",
@@ -870,7 +870,7 @@
   },
   {
     "name": "Boozt",
-    "image": "assets/images/klær-og-mote/Boozt.png",
+    "image": "assets/images/butikker/Boozt.png",
     "alt": "Boozt",
     "category": "Klær og mote",
     "subcategory": [
@@ -883,7 +883,7 @@
   },
   {
     "name": "Bubbleroom.com",
-    "image": "assets/images/klær-og-mote/Bubbleroom.png",
+    "image": "assets/images/butikker/Bubbleroom.png",
     "alt": "Bubbleroom",
     "category": "Klær og mote",
     "subcategory": [
@@ -896,7 +896,7 @@
   },
   {
     "name": "H&M",
-    "image": "assets/images/klær-og-mote/H&M.png",
+    "image": "assets/images/butikker/H&M.png",
     "alt": "H&M",
     "category": "Klær og mote",
     "subcategory": [
@@ -909,7 +909,7 @@
   },
   {
     "name": "Lindex.no",
-    "image": "assets/images/klær-og-mote/Lindex.png",
+    "image": "assets/images/butikker/Lindex.png",
     "alt": "Lindex",
     "category": "Klær og mote",
     "subcategory": [
@@ -922,7 +922,7 @@
   },
   {
     "name": "Nelly.com",
-    "image": "assets/images/klær-og-mote/Nelly.png",
+    "image": "assets/images/butikker/Nelly.png",
     "alt": "Nelly",
     "category": "Klær og mote",
     "subcategory": [
@@ -935,7 +935,7 @@
   },
   {
     "name": "Bogartstore.no",
-    "image": "assets/images/klær-og-mote/Bogartstore.png",
+    "image": "assets/images/butikker/Bogartstore.png",
     "alt": "Bogartstore",
     "category": "Klær og mote",
     "subcategory": [
@@ -948,7 +948,7 @@
   },
   {
     "name": "JackAndJones.com",
-    "image": "assets/images/klær-og-mote/jack&jones.png",
+    "image": "assets/images/butikker/jack&jones.png",
     "alt": "Jack & Jones",
     "category": "Klær og mote",
     "subcategory": [
@@ -961,7 +961,7 @@
   },
   {
     "name": "Volt.no",
-    "image": "assets/images/klær-og-mote/Volt.png",
+    "image": "assets/images/butikker/Volt.png",
     "alt": "Volt",
     "category": "Klær og mote",
     "subcategory": [
@@ -974,7 +974,7 @@
   },
   {
     "name": "Glitter.no",
-    "image": "assets/images/klær-og-mote/glitter.png",
+    "image": "assets/images/butikker/glitter.png",
     "alt": "Glitter",
     "category": "Klær og mote",
     "subcategory": [
@@ -987,7 +987,7 @@
   },
   {
     "name": "Morris.se",
-    "image": "assets/images/klær-og-mote/Morris.png",
+    "image": "assets/images/butikker/Morris.png",
     "alt": "Morris",
     "category": "Klær og mote",
     "subcategory": [
@@ -1000,7 +1000,7 @@
   },
   {
     "name": "Specsavers.no",
-    "image": "assets/images/klær-og-mote/Specsavers.png",
+    "image": "assets/images/butikker/Specsavers.png",
     "alt": "Specsavers",
     "category": "Klær og mote",
     "subcategory": [
@@ -1013,7 +1013,7 @@
   },
   {
     "name": "Zalando",
-    "image": "assets/images/klær-og-mote/Zalando.png",
+    "image": "assets/images/butikker/Zalando.png",
     "alt": "Zalando",
     "category": "Klær og mote",
     "subcategory": [
@@ -1026,7 +1026,7 @@
   },
   {
     "name": "Boozt",
-    "image": "assets/images/klær-og-mote/Boozt.png",
+    "image": "assets/images/butikker/Boozt.png",
     "alt": "Boozt",
     "category": "Klær og mote",
     "subcategory": [
@@ -1039,7 +1039,7 @@
   },
   {
     "name": "Komplett.no",
-    "image": "assets/images/elektronikk/Komplett.png",
+    "image": "assets/images/butikker/Komplett.png",
     "alt": "Komplett",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -1050,7 +1050,7 @@
   },
   {
     "name": "Power.no",
-    "image": "assets/images/elektronikk/Power.png",
+    "image": "assets/images/butikker/Power.png",
     "alt": "Power",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -1061,7 +1061,7 @@
   },
   {
     "name": "Elkjøp",
-    "image": "assets/images/elektronikk/Elkjop.png",
+    "image": "assets/images/butikker/Elkjop.png",
     "alt": "Elkjøp",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -1072,7 +1072,7 @@
   },
   {
     "name": "NetOnNet",
-    "image": "assets/images/elektronikk/NetOnNet.png",
+    "image": "assets/images/butikker/NetOnNet.png",
     "alt": "NetOnNet",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -1083,7 +1083,7 @@
   },
   {
     "name": "Proshop",
-    "image": "assets/images/elektronikk/Proshop.png",
+    "image": "assets/images/butikker/Proshop.png",
     "alt": "Proshop",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -1094,7 +1094,7 @@
   },
   {
     "name": "Coolstuff",
-    "image": "assets/images/gadgets/Coolstuff.png",
+    "image": "assets/images/butikker/Coolstuff.png",
     "alt": "Coolstuff",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -1105,7 +1105,7 @@
   },
   {
     "name": "Kjell & Company",
-    "image": "assets/images/gadgets/Kjell.png",
+    "image": "assets/images/butikker/Kjell.png",
     "alt": "Kjell & Company",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -1116,7 +1116,7 @@
   },
   {
     "name": "Digital Impuls",
-    "image": "assets/images/gadgets/DigitalImpuls.png",
+    "image": "assets/images/butikker/DigitalImpuls.png",
     "alt": "Digital Impuls",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -1127,7 +1127,7 @@
   },
   {
     "name": "MaxGaming",
-    "image": "assets/images/gadgets/MaxGaming.png",
+    "image": "assets/images/butikker/MaxGaming.png",
     "alt": "MaxGaming",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -1138,7 +1138,7 @@
   },
   {
     "name": "Platekompaniet",
-    "image": "assets/images/bøker og underholdning/Platekompaniet.png",
+    "image": "assets/images/butikker/Platekompaniet.png",
     "alt": "Platekompaniet",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -1149,7 +1149,7 @@
   },
   {
     "name": "CDON",
-    "image": "assets/images/bøker og underholdning/CDON.png",
+    "image": "assets/images/butikker/CDON.png",
     "alt": "CDON",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -1160,7 +1160,7 @@
   },
   {
     "name": "Gamezone",
-    "image": "assets/images/bøker og underholdning/Gamezone.png",
+    "image": "assets/images/butikker/Gamezone.png",
     "alt": "Gamezone",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -1171,7 +1171,7 @@
   },
   {
     "name": "Footway",
-    "image": "assets/images/klær-og-mote/footway.png",
+    "image": "assets/images/butikker/footway.png",
     "alt": "Footway",
     "category": "Klær og mote",
     "subcategory": [
@@ -1184,7 +1184,7 @@
   },
   {
     "name": "Babyplan.no",
-    "image": "assets/images/barn-og-baby/babyplan.png",
+    "image": "assets/images/butikker/babyplan.png",
     "alt": "Babyplan",
     "category": "Barn og baby",
     "subcategory": [],
@@ -1195,7 +1195,7 @@
   },
   {
     "name": "Gymgrossisten ",
-    "image": "assets/images/helse og skjønnhet/gymgrossisten.png",
+    "image": "assets/images/butikker/gymgrossisten.png",
     "alt": "Gymgrossisten",
     "category": "Helse og egenpleie",
     "subcategory": [],
@@ -1206,7 +1206,7 @@
   },
   {
     "name": "Multicom.no",
-    "image": "assets/images/elektronikk/multicom.png",
+    "image": "assets/images/butikker/multicom.png",
     "alt": "Multicom",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
@@ -1217,7 +1217,7 @@
   },
   {
     "name": "Bokkilden",
-    "image": "assets/images/bøker og underholdning/bokkilden.png",
+    "image": "assets/images/butikker/bokkilden.png",
     "alt": "Bokkilden",
     "category": "Bøker og underholdning",
     "subcategory": [],
@@ -1228,7 +1228,7 @@
   },
   {
     "name": "Adlibris",
-    "image": "assets/images/bøker og underholdning/adlibris.png",
+    "image": "assets/images/butikker/adlibris.png",
     "alt": "Adlibris",
     "category": "Bøker og underholdning",
     "subcategory": [],
@@ -1239,7 +1239,7 @@
   },
   {
     "name": "Gadgetshop.no",
-    "image": "assets/images/gadgets-og-gaver/gadgetshop.png",
+    "image": "assets/images/butikker/gadgetshop.png",
     "alt": "Gadgetshop",
     "category": "Fritid og gaver",
     "subcategory": "Gadgets og gaver",
@@ -1250,7 +1250,7 @@
   },
   {
     "name": "Lekmer.no",
-    "image": "assets/images/barn-og-baby/lekmer.png",
+    "image": "assets/images/butikker/lekmer.png",
     "alt": "Lekmer",
     "category": "Barn og baby",
     "subcategory": [],
@@ -1261,6 +1261,7 @@
   },
   {
     "name": "Zizzi.no",
+    "image": "assets/images/butikker/zizzi.png",
     "alt": "Zizzi",
     "category": "Klær og mote",
     "subcategory": [
@@ -1268,12 +1269,12 @@
     ],
     "url": "https://www.zizzi.no",
     "description": "Zizzi tilbyr moderne plussize-mote for kvinner med fokus på komfort og stil.",
-    "image": "assets/images/klær-og-mote/zizzi.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "Stayhard.no",
+    "image": "assets/images/butikker/stayhard.png",
     "alt": "Stayhard",
     "category": "Klær og mote",
     "subcategory": [
@@ -1281,766 +1282,854 @@
     ],
     "url": "https://www.stayhard.no",
     "description": "Trendy herremote og tilbehør for menn.",
-    "image": "assets/images/klær-og-mote/stayhard.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "Miinto.no",
+    "image": "assets/images/butikker/miinto.png",
     "alt": "Miinto",
     "category": "Klær og mote",
     "subcategory": [],
     "url": "https://www.miinto.no",
     "description": "Miinto samler klær og mote fra lokale butikker i Norge.",
-    "image": "assets/images/klær-og-mote/miinto.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "Lilleprinsen.no",
+    "image": "assets/images/butikker/lilleprinsen.png",
     "alt": "Lilleprinsen",
     "category": "Barn og baby",
     "subcategory": [],
     "url": "https://www.lilleprinsen.no",
     "description": "Babyutstyr og barneprodukter med fokus på kvalitet.",
-    "image": "assets/images/barn-og-baby/lilleprinsen.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "Småungene.no",
+    "image": "assets/images/butikker/smaungene.png",
     "alt": "Småungene",
     "category": "Barn og baby",
     "subcategory": [],
     "url": "https://www.smaungene.no",
     "description": "Ullklær og praktisk utstyr for baby og barn.",
-    "image": "assets/images/barn-og-baby/smaungene.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "NorskApotek.no",
+    "image": "assets/images/butikker/norskapotek.png",
     "alt": "Norsk Apotek",
     "category": "Apotek",
     "subcategory": [],
     "url": "https://www.norskapotek.no",
     "description": "Trygt norsk apotek på nett med stort sortiment.",
-    "image": "assets/images/apotek/norskapotek.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "Soma.no",
+    "image": "assets/images/butikker/soma.png",
     "alt": "Soma",
     "category": "Helse og egenpleie",
     "subcategory": [],
     "url": "https://www.soma.no",
     "description": "Naturlig kosttilskudd og supermat.",
-    "image": "assets/images/helse og skjønnhet/soma.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "AntonSport.no",
+    "image": "assets/images/butikker/antonsport.png",
     "alt": "Anton Sport",
     "category": "Sport og fritid",
     "subcategory": [],
     "url": "https://www.antonsport.no",
     "description": "Kvalitetsutstyr for sport og friluftsliv.",
-    "image": "assets/images/sport-og-fritid/antonsport.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "Chilli.no",
+    "image": "assets/images/butikker/chilli.png",
     "alt": "Chilli",
     "category": "Møbler og interiør",
     "subcategory": [],
     "url": "https://www.chilli.no",
     "description": "Moderne møbler og interiør til gode priser.",
-    "image": "assets/images/møbler-og-interiør/chilli.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "Ting.no",
+    "image": "assets/images/butikker/ting.png",
     "alt": "Ting",
     "category": "Fritid og gaver",
     "subcategory": "Gadgets og gaver",
     "url": "https://www.ting.no",
     "description": "Gaver, design og morsomme produkter for hjemmet.",
-    "image": "assets/images/gadgets-og-gaver/ting.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "EnklereLiv.no",
+    "image": "assets/images/butikker/enklereliv.png",
     "alt": "Enklere Liv",
     "category": "Fritid og gaver",
     "subcategory": "Gadgets og gaver",
     "url": "https://www.enklereliv.no",
     "description": "Smarte løsninger for hverdagen og praktiske produkter.",
-    "image": "assets/images/gadgets-og-gaver/enklereliv.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "Furniturebox.no",
+    "image": "assets/images/butikker/furniturebox.png",
     "alt": "Furniturebox",
     "category": "Møbler og interiør",
     "subcategory": [],
     "url": "https://www.furniturebox.no",
     "description": "Stort utvalg av møbler og interiør med rask levering.",
-    "image": "assets/images/møbler-og-interiør/furniturebox.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "Norli.no",
+    "image": "assets/images/butikker/norli.png",
     "alt": "Norli",
     "category": "Bøker og underholdning",
     "subcategory": [],
     "url": "https://www.norli.no",
     "description": "En av Norges største bokhandler med stort utvalg av bøker og e-bøker.",
-    "image": "assets/images/bøker-og-underholdning/norli.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "Printoz.no",
+    "image": "assets/images/butikker/printoz.png",
     "alt": "Printoz",
     "category": "Fritid og gaver",
     "subcategory": "Gadgets og gaver",
     "url": "https://www.printoz.no",
     "description": "Personlige gaver, firmagaver og profilprodukter med trykk.",
-    "image": "assets/images/gadgets-og-gaver/printoz.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "Gsport.no",
+    "image": "assets/images/butikker/gsport.png",
     "alt": "Gsport",
     "category": "Sport og fritid",
     "subcategory": [],
     "url": "https://www.gsport.no",
     "description": "Alt innen sport og fritid, inkludert klær, sko og treningsutstyr.",
-    "image": "assets/images/sport-og-fritid/gsport.png",
     "topp25": false,
     "forside": false
   },
   {
     "name": "Komplett.no",
-    "url": "https://www.komplett.no/",
-    "image": "assets/images/elektronikk/komplett.png",
+    "image": "assets/images/butikker/komplett.png",
+    "alt": "Komplett.no",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.komplett.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Komplett.no",
-    "url": "https://www.komplett.no/",
-    "image": "assets/images/elektronikk/komplett.png",
+    "image": "assets/images/butikker/komplett.png",
+    "alt": "Komplett.no",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.komplett.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Komplett.no",
+    "image": "assets/images/butikker/komplett.png",
+    "alt": "Komplett.no",
+    "category": "Gaming og tilbehør",
+    "subcategory": "Gamingutstyr og komponenter",
     "url": "https://www.komplett.no/",
-    "image": "assets/images/elektronikk/komplett.png",
-    "category": "Gaming og tilbehør",
-    "subcategory": "Gamingutstyr og komponenter",
-    "affiliate": true,
-    "ny": true
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Elkjøp",
-    "url": "https://www.elkjop.no/",
-    "image": "assets/images/elektronikk/elkjop.png",
+    "image": "assets/images/butikker/elkjop.png",
+    "alt": "Elkjøp",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.elkjop.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Elkjøp",
-    "url": "https://www.elkjop.no/",
-    "image": "assets/images/elektronikk/elkjop.png",
+    "image": "assets/images/butikker/elkjop.png",
+    "alt": "Elkjøp",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.elkjop.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "NetOnNet",
-    "url": "https://www.netonnet.no/",
-    "image": "assets/images/elektronikk/netonnet.png",
+    "image": "assets/images/butikker/netonnet.png",
+    "alt": "NetOnNet",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.netonnet.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Proshop.no",
-    "url": "https://www.proshop.no/",
-    "image": "assets/images/elektronikk/proshop.png",
+    "image": "assets/images/butikker/proshop.png",
+    "alt": "Proshop.no",
     "category": "Elektronikk og data",
     "subcategory": "PC og tilbehør",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.proshop.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Multicom.no",
-    "url": "https://www.multicom.no/",
-    "image": "assets/images/elektronikk/multicom.png",
+    "image": "assets/images/butikker/multicom.png",
+    "alt": "Multicom.no",
     "category": "Elektronikk og data",
     "subcategory": "PC og tilbehør",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.multicom.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Telia.no",
-    "url": "https://www.telia.no/",
-    "image": "assets/images/elektronikk/telia.png",
+    "image": "assets/images/butikker/telia.png",
+    "alt": "Telia.no",
     "category": "Elektronikk og data",
     "subcategory": "Mobil og nettbrett",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.telia.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Telenor.no",
-    "url": "https://www.telenor.no/",
-    "image": "assets/images/elektronikk/telenor.png",
+    "image": "assets/images/butikker/telenor.png",
+    "alt": "Telenor.no",
     "category": "Elektronikk og data",
     "subcategory": "Mobil og nettbrett",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.telenor.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "HiFi Klubben",
-    "url": "https://www.hifiklubben.no/",
-    "image": "assets/images/elektronikk/hifiklubben.png",
+    "image": "assets/images/butikker/hifiklubben.png",
+    "alt": "HiFi Klubben",
     "category": "Elektronikk og data",
     "subcategory": "Lyd og bilde",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.hifiklubben.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Power.no",
-    "url": "https://www.power.no/",
-    "image": "assets/images/elektronikk/power.png",
+    "image": "assets/images/butikker/power.png",
+    "alt": "Power.no",
     "category": "Elektronikk og data",
     "subcategory": "Lyd og bilde",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.power.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Clas Ohlson",
-    "url": "https://www.clasohlson.com/no/",
-    "image": "assets/images/elektronikk/clasohlson.png",
+    "image": "assets/images/butikker/clasohlson.png",
+    "alt": "Clas Ohlson",
     "category": "Fritid og gaver",
     "subcategory": "Gadgets og gaver",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.clasohlson.com/no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Kjell & Company",
-    "url": "https://www.kjell.com/no/",
-    "image": "assets/images/elektronikk/kjell.png",
+    "image": "assets/images/butikker/kjell.png",
+    "alt": "Kjell & Company",
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.kjell.com/no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Apotek1.no",
-    "url": "https://www.apotek1.no/",
-    "image": "assets/images/helse/apotek1.png",
+    "image": "assets/images/butikker/apotek1.png",
+    "alt": "Apotek1.no",
     "category": "Helse og egenpleie",
     "subcategory": "Apotek og helseprodukter",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.apotek1.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Vitusapotek.no",
-    "url": "https://www.vitusapotek.no/",
-    "image": "assets/images/helse/vitusapotek.png",
+    "image": "assets/images/butikker/vitusapotek.png",
+    "alt": "Vitusapotek.no",
     "category": "Helse og egenpleie",
     "subcategory": "Apotek og helseprodukter",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.vitusapotek.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Mecindo.no",
-    "url": "https://www.mecindo.no/",
-    "image": "assets/images/helse/mecindo.png",
+    "image": "assets/images/butikker/mecindo.png",
+    "alt": "Mecindo.no",
     "category": "Helse og egenpleie",
     "subcategory": "Apotek og helseprodukter",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.mecindo.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Sunkost.no",
-    "url": "https://sunkost.no/",
-    "image": "assets/images/helse/sunkost.png",
+    "image": "assets/images/butikker/sunkost.png",
+    "alt": "Sunkost.no",
     "category": "Helse og egenpleie",
     "subcategory": "Apotek og helseprodukter",
-    "affiliate": false,
-    "ny": true
+    "url": "https://sunkost.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Blivakker.no",
-    "url": "https://www.blivakker.no/",
-    "image": "assets/images/helse/blivakker.png",
+    "image": "assets/images/butikker/blivakker.png",
+    "alt": "Blivakker.no",
     "category": "Helse og egenpleie",
     "subcategory": "Hud- og kroppspleie",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.blivakker.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Coverbrands.no",
-    "url": "https://coverbrands.no/",
-    "image": "assets/images/helse/coverbrands.png",
+    "image": "assets/images/butikker/coverbrands.png",
+    "alt": "Coverbrands.no",
     "category": "Helse og egenpleie",
     "subcategory": "Hud- og kroppspleie",
-    "affiliate": false,
-    "ny": true
+    "url": "https://coverbrands.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Lyko.no",
-    "url": "https://www.lyko.com/no",
-    "image": "assets/images/helse/lyko.png",
+    "image": "assets/images/butikker/lyko.png",
+    "alt": "Lyko.no",
     "category": "Helse og egenpleie",
     "subcategory": "Hår- og skjønnhetspleie",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.lyko.com/no",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Blush.no",
-    "url": "https://www.blush.no/",
-    "image": "assets/images/helse/blush.png",
+    "image": "assets/images/butikker/blush.png",
+    "alt": "Blush.no",
     "category": "Helse og egenpleie",
     "subcategory": "Hår- og skjønnhetspleie",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.blush.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Eleven.no",
-    "url": "https://eleven.no/",
-    "image": "assets/images/helse/eleven.png",
+    "image": "assets/images/butikker/eleven.png",
+    "alt": "Eleven.no",
     "category": "Helse og egenpleie",
     "subcategory": "Sminke og kosmetikk",
-    "affiliate": false,
-    "ny": true
+    "url": "https://eleven.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Gymgrossisten.no",
-    "url": "https://www.gymgrossisten.no/",
-    "image": "assets/images/helse/gymgrossisten.png",
+    "image": "assets/images/butikker/gymgrossisten.png",
+    "alt": "Gymgrossisten.no",
     "category": "Helse og egenpleie",
     "subcategory": "Trening og velvære",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.gymgrossisten.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "GetInspired.no",
-    "url": "https://www.getinspired.no/",
-    "image": "assets/images/helse/getinspired.png",
+    "image": "assets/images/butikker/getinspired.png",
+    "alt": "GetInspired.no",
     "category": "Helse og egenpleie",
     "subcategory": "Trening og velvære",
-    "affiliate": false,
-    "ny": true
+    "url": "https://www.getinspired.no/",
+    "description": "",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Jollyroom",
-    "description": "Stort utvalg av barneutstyr, leker, klær og barnevogner.",
-    "image": "assets/images/barn-og-baby/jollyroom.png",
-    "url": "https://www.jollyroom.no",
+    "image": "assets/images/butikker/jollyroom.png",
+    "alt": "Jollyroom",
     "category": "Barn og baby",
     "subcategory": "Babyutstyr",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.jollyroom.no",
+    "description": "Stort utvalg av barneutstyr, leker, klær og barnevogner.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Barnas Hus",
-    "description": "Babyutstyr, klær, bilstoler og barnevogner fra kjente merker.",
-    "image": "assets/images/barn-og-baby/barnashus.png",
-    "url": "https://www.barnashus.no",
+    "image": "assets/images/butikker/barnashus.png",
+    "alt": "Barnas Hus",
     "category": "Barn og baby",
     "subcategory": "Barneklær",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.barnashus.no",
+    "description": "Babyutstyr, klær, bilstoler og barnevogner fra kjente merker.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Lekmer",
-    "description": "Leker, barneklær, barnevogner og interiør til barn.",
-    "image": "assets/images/barn-og-baby/lekmer.png",
-    "url": "https://www.lekmer.no",
+    "image": "assets/images/butikker/lekmer.png",
+    "alt": "Lekmer",
     "category": "Barn og baby",
     "subcategory": "Leker og spill",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.lekmer.no",
+    "description": "Leker, barneklær, barnevogner og interiør til barn.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Mimmis",
-    "description": "Populær nettbutikk med babyutstyr, møbler og leker.",
-    "image": "assets/images/barn-og-baby/mimmis.png",
-    "url": "https://www.mimmis.no",
+    "image": "assets/images/butikker/mimmis.png",
+    "alt": "Mimmis",
     "category": "Barn og baby",
     "subcategory": "Barnerom og møbler",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.mimmis.no",
+    "description": "Populær nettbutikk med babyutstyr, møbler og leker.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Babyshop",
-    "description": "Eksklusive barneklær og babyprodukter.",
-    "image": "assets/images/barn-og-baby/babyshop.png",
-    "url": "https://www.babyshop.no",
+    "image": "assets/images/butikker/babyshop.png",
+    "alt": "Babyshop",
     "category": "Barn og baby",
     "subcategory": "Barneklær",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.babyshop.no",
+    "description": "Eksklusive barneklær og babyprodukter.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Extra Leker",
-    "description": "Leker og spill til barn i alle aldre.",
-    "image": "assets/images/barn-og-baby/extraleker.png",
-    "url": "https://www.extra-leker.no",
+    "image": "assets/images/butikker/extraleker.png",
+    "alt": "Extra Leker",
     "category": "Barn og baby",
     "subcategory": "Leker og spill",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.extra-leker.no",
+    "description": "Leker og spill til barn i alle aldre.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Lekeakademiet",
-    "description": "Pedagogiske og utviklende leker.",
-    "image": "assets/images/barn-og-baby/lekeakademiet.png",
-    "url": "https://www.lekeakademiet.no",
+    "image": "assets/images/butikker/lekeakademiet.png",
+    "alt": "Lekeakademiet",
     "category": "Barn og baby",
     "subcategory": "Leker og spill",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.lekeakademiet.no",
+    "description": "Pedagogiske og utviklende leker.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Lilleprinsen",
-    "description": "Alt til baby og småbarn: mat, klær og utstyr.",
-    "image": "assets/images/barn-og-baby/lilleprinsen.png",
-    "url": "https://www.lilleprinsen.no",
+    "image": "assets/images/butikker/lilleprinsen.png",
+    "alt": "Lilleprinsen",
     "category": "Barn og baby",
     "subcategory": "Mat og amming",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.lilleprinsen.no",
+    "description": "Alt til baby og småbarn: mat, klær og utstyr.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "XXL",
-    "description": "En av Norges største sportsbutikker med klær, sko, trening og friluft.",
-    "image": "assets/images/sport-og-fritid/xxl.png",
-    "url": "https://www.xxl.no",
+    "image": "assets/images/butikker/xxl.png",
+    "alt": "XXL",
     "category": "Sport og fritid",
     "subcategory": "Trening og sportsklær",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.xxl.no",
+    "description": "En av Norges største sportsbutikker med klær, sko, trening og friluft.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Sport 1",
-    "description": "Bredt utvalg innen sportsklær, treningsutstyr og sko.",
-    "image": "assets/images/sport-og-fritid/sport1.png",
-    "url": "https://www.sport1.no",
+    "image": "assets/images/butikker/sport1.png",
+    "alt": "Sport 1",
     "category": "Sport og fritid",
     "subcategory": "Trening og sportsklær",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.sport1.no",
+    "description": "Bredt utvalg innen sportsklær, treningsutstyr og sko.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Outnorth",
-    "description": "Alt til friluft, tur og natur – fra telt til soveposer og klær.",
-    "image": "assets/images/sport-og-fritid/outnorth.png",
-    "url": "https://www.outnorth.no",
+    "image": "assets/images/butikker/outnorth.png",
+    "alt": "Outnorth",
     "category": "Sport og fritid",
     "subcategory": "Friluft og tur",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.outnorth.no",
+    "description": "Alt til friluft, tur og natur – fra telt til soveposer og klær.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Skitt Fiske",
-    "description": "Fiskeutstyr, friluftsprodukter og jaktutstyr – for hobby og tur.",
-    "image": "assets/images/sport-og-fritid/skittfiske.png",
-    "url": "https://www.skittfiske.no",
+    "image": "assets/images/butikker/skittfiske.png",
+    "alt": "Skitt Fiske",
     "category": "Sport og fritid",
     "subcategory": "Hobby og fritid",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.skittfiske.no",
+    "description": "Fiskeutstyr, friluftsprodukter og jaktutstyr – for hobby og tur.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Gymgrossisten",
-    "description": "Treningsklær, protein, kosttilskudd og utstyr til hjemmetrening.",
-    "image": "assets/images/sport-og-fritid/gymgrossisten.png",
-    "url": "https://www.gymgrossisten.no",
+    "image": "assets/images/butikker/gymgrossisten.png",
+    "alt": "Gymgrossisten",
     "category": "Sport og fritid",
     "subcategory": "Kosttilskudd og ernæring",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.gymgrossisten.no",
+    "description": "Treningsklær, protein, kosttilskudd og utstyr til hjemmetrening.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Protein.no",
-    "description": "Norsk kosttilskuddsbutikk med protein, shaker og treningsklær.",
-    "image": "assets/images/sport-og-fritid/proteinno.png",
-    "url": "https://www.protein.no",
+    "image": "assets/images/butikker/proteinno.png",
+    "alt": "Protein.no",
     "category": "Sport og fritid",
     "subcategory": "Kosttilskudd og ernæring",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.protein.no",
+    "description": "Norsk kosttilskuddsbutikk med protein, shaker og treningsklær.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Milrab",
-    "description": "Utstyr for tur, taktisk bruk og friluftsliv med militær vri.",
-    "image": "assets/images/sport-og-fritid/milrab.png",
-    "url": "https://www.milrab.no",
+    "image": "assets/images/butikker/milrab.png",
+    "alt": "Milrab",
     "category": "Sport og fritid",
     "subcategory": "Friluft og tur",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.milrab.no",
+    "description": "Utstyr for tur, taktisk bruk og friluftsliv med militær vri.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Jollyroom",
-    "description": "Stort utvalg av barneutstyr, leker, klær og barnevogner.",
-    "image": "assets/images/barn-og-baby/jollyroom.png",
-    "url": "https://www.jollyroom.no",
+    "image": "assets/images/butikker/jollyroom.png",
+    "alt": "Jollyroom",
     "category": "Barn og baby",
     "subcategory": "Babyutstyr",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.jollyroom.no",
+    "description": "Stort utvalg av barneutstyr, leker, klær og barnevogner.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Barnas Hus",
-    "description": "Babyutstyr, klær, bilstoler og barnevogner fra kjente merker.",
-    "image": "assets/images/barn-og-baby/barnashus.png",
-    "url": "https://www.barnashus.no",
+    "image": "assets/images/butikker/barnashus.png",
+    "alt": "Barnas Hus",
     "category": "Barn og baby",
     "subcategory": "Barneklær",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.barnashus.no",
+    "description": "Babyutstyr, klær, bilstoler og barnevogner fra kjente merker.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Lekmer",
-    "description": "Leker, barneklær, barnevogner og interiør til barn.",
-    "image": "assets/images/barn-og-baby/lekmer.png",
-    "url": "https://www.lekmer.no",
+    "image": "assets/images/butikker/lekmer.png",
+    "alt": "Lekmer",
     "category": "Barn og baby",
     "subcategory": "Leker og spill",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.lekmer.no",
+    "description": "Leker, barneklær, barnevogner og interiør til barn.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Mimmis",
-    "description": "Populær nettbutikk med babyutstyr, møbler og leker.",
-    "image": "assets/images/barn-og-baby/mimmis.png",
-    "url": "https://www.mimmis.no",
+    "image": "assets/images/butikker/mimmis.png",
+    "alt": "Mimmis",
     "category": "Barn og baby",
     "subcategory": "Barnerom og møbler",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.mimmis.no",
+    "description": "Populær nettbutikk med babyutstyr, møbler og leker.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Babyshop",
-    "description": "Eksklusive barneklær og babyprodukter.",
-    "image": "assets/images/barn-og-baby/babyshop.png",
-    "url": "https://www.babyshop.no",
+    "image": "assets/images/butikker/babyshop.png",
+    "alt": "Babyshop",
     "category": "Barn og baby",
     "subcategory": "Barneklær",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.babyshop.no",
+    "description": "Eksklusive barneklær og babyprodukter.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Extra Leker",
-    "description": "Leker og spill til barn i alle aldre.",
-    "image": "assets/images/barn-og-baby/extraleker.png",
-    "url": "https://www.extra-leker.no",
+    "image": "assets/images/butikker/extraleker.png",
+    "alt": "Extra Leker",
     "category": "Barn og baby",
     "subcategory": "Leker og spill",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.extra-leker.no",
+    "description": "Leker og spill til barn i alle aldre.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Lekeakademiet",
-    "description": "Pedagogiske og utviklende leker.",
-    "image": "assets/images/barn-og-baby/lekeakademiet.png",
-    "url": "https://www.lekeakademiet.no",
+    "image": "assets/images/butikker/lekeakademiet.png",
+    "alt": "Lekeakademiet",
     "category": "Barn og baby",
     "subcategory": "Leker og spill",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.lekeakademiet.no",
+    "description": "Pedagogiske og utviklende leker.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Lilleprinsen",
-    "description": "Alt til baby og småbarn: mat, klær og utstyr.",
-    "image": "assets/images/barn-og-baby/lilleprinsen.png",
-    "url": "https://www.lilleprinsen.no",
+    "image": "assets/images/butikker/lilleprinsen.png",
+    "alt": "Lilleprinsen",
     "category": "Barn og baby",
     "subcategory": "Mat og amming",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.lilleprinsen.no",
+    "description": "Alt til baby og småbarn: mat, klær og utstyr.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Skeidar",
-    "description": "En av Norges største møbelkjeder med sofaer, senger, stoler og mer.",
-    "image": "assets/images/mobler-og-interior/skeidar.png",
-    "url": "https://www.skeidar.no",
+    "image": "assets/images/butikker/skeidar.png",
+    "alt": "Skeidar",
     "category": "Møbler og interiør",
     "subcategory": "Møbler",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.skeidar.no",
+    "description": "En av Norges største møbelkjeder med sofaer, senger, stoler og mer.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Møbelringen",
-    "description": "Møbler og interiør til stue, soverom, kjøkken og mer.",
-    "image": "assets/images/mobler-og-interior/mobelringen.png",
-    "url": "https://www.mobelringen.no",
+    "image": "assets/images/butikker/mobelringen.png",
+    "alt": "Møbelringen",
     "category": "Møbler og interiør",
     "subcategory": "Møbler",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.mobelringen.no",
+    "description": "Møbler og interiør til stue, soverom, kjøkken og mer.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Jotex",
-    "description": "Stilrene tekstiler, interiør og småmøbler til hjemmet.",
-    "image": "assets/images/mobler-og-interior/jotex.png",
-    "url": "https://www.jotex.no",
+    "image": "assets/images/butikker/jotex.png",
+    "alt": "Jotex",
     "category": "Møbler og interiør",
     "subcategory": "Tekstiler og tepper",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.jotex.no",
+    "description": "Stilrene tekstiler, interiør og småmøbler til hjemmet.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Lampegiganten",
-    "description": "Alt innen belysning – taklamper, vegglamper og LED.",
-    "image": "assets/images/mobler-og-interior/lampegiganten.png",
-    "url": "https://www.lampegiganten.no",
+    "image": "assets/images/butikker/lampegiganten.png",
+    "alt": "Lampegiganten",
     "category": "Møbler og interiør",
     "subcategory": "Belysning",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.lampegiganten.no",
+    "description": "Alt innen belysning – taklamper, vegglamper og LED.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Hviit",
-    "description": "Norsk interiørbutikk med designprodukter og dekor.",
-    "image": "assets/images/mobler-og-interior/hviit.png",
-    "url": "https://www.hviit.no",
+    "image": "assets/images/butikker/hviit.png",
+    "alt": "Hviit",
     "category": "Møbler og interiør",
     "subcategory": "Dekor og interiør",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.hviit.no",
+    "description": "Norsk interiørbutikk med designprodukter og dekor.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Nordic Nest",
-    "description": "Skandinavisk design – dekor, belysning og interiørprodukter.",
-    "image": "assets/images/mobler-og-interior/nordicnest.png",
-    "url": "https://www.nordicnest.no",
+    "image": "assets/images/butikker/nordicnest.png",
+    "alt": "Nordic Nest",
     "category": "Møbler og interiør",
     "subcategory": "Dekor og interiør",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.nordicnest.no",
+    "description": "Skandinavisk design – dekor, belysning og interiørprodukter.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Kid",
-    "description": "Kjent for tekstiler, gardiner, puter og sesonginteriør.",
-    "image": "assets/images/mobler-og-interior/kid.png",
-    "url": "https://www.kid.no",
+    "image": "assets/images/butikker/kid.png",
+    "alt": "Kid",
     "category": "Møbler og interiør",
     "subcategory": "Tekstiler og tepper",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.kid.no",
+    "description": "Kjent for tekstiler, gardiner, puter og sesonginteriør.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Ellos Home",
-    "description": "Bredt utvalg av møbler, belysning og interiør til hele hjemmet.",
-    "image": "assets/images/mobler-og-interior/elloshome.png",
-    "url": "https://www.ellos.no/home",
+    "image": "assets/images/butikker/elloshome.png",
+    "alt": "Ellos Home",
     "category": "Møbler og interiør",
     "subcategory": "Møbler",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.ellos.no/home",
+    "description": "Bredt utvalg av møbler, belysning og interiør til hele hjemmet.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "XXL",
-    "description": "Stort utvalg av sportsklær, sko, utstyr og friluftsartikler.",
-    "image": "assets/images/sport-og-fritid/xxl.png",
-    "url": "https://www.xxl.no",
+    "image": "assets/images/butikker/xxl.png",
+    "alt": "XXL",
     "category": "Sport og fritid",
     "subcategory": "Sportsklær og sko",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.xxl.no",
+    "description": "Stort utvalg av sportsklær, sko, utstyr og friluftsartikler.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Sport 1",
-    "description": "Alt til trening, ski, løping, friluft og sykkel.",
-    "image": "assets/images/sport-og-fritid/sport1.png",
-    "url": "https://www.sport1.no",
+    "image": "assets/images/butikker/sport1.png",
+    "alt": "Sport 1",
     "category": "Sport og fritid",
     "subcategory": "Friluft og tur",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.sport1.no",
+    "description": "Alt til trening, ski, løping, friluft og sykkel.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Anton Sport",
-    "description": "Premium sportsklær og utstyr fra kjente merker.",
-    "image": "assets/images/sport-og-fritid/antonsport.png",
-    "url": "https://www.antonsport.no",
+    "image": "assets/images/butikker/antonsport.png",
+    "alt": "Anton Sport",
     "category": "Sport og fritid",
     "subcategory": "Sportsklær og sko",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.antonsport.no",
+    "description": "Premium sportsklær og utstyr fra kjente merker.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Milrab",
-    "description": "Taktisk utstyr, klær og sko til friluft, trening og forsvar.",
-    "image": "assets/images/sport-og-fritid/milrab.png",
-    "url": "https://www.milrab.no",
+    "image": "assets/images/butikker/milrab.png",
+    "alt": "Milrab",
     "category": "Sport og fritid",
     "subcategory": "Friluft og tur",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.milrab.no",
+    "description": "Taktisk utstyr, klær og sko til friluft, trening og forsvar.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Gmax",
-    "description": "Rimelige sportsvarer og treningsutstyr.",
-    "image": "assets/images/sport-og-fritid/gmax.png",
-    "url": "https://www.gmax.no",
+    "image": "assets/images/butikker/gmax.png",
+    "alt": "Gmax",
     "category": "Sport og fritid",
     "subcategory": "Trening og treningsutstyr",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.gmax.no",
+    "description": "Rimelige sportsvarer og treningsutstyr.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Skitt Fiske",
-    "description": "Alt innen fiskeutstyr, jakt og friluft.",
-    "image": "assets/images/sport-og-fritid/skittfiske.png",
-    "url": "https://www.skittfiske.no",
+    "image": "assets/images/butikker/skittfiske.png",
+    "alt": "Skitt Fiske",
     "category": "Sport og fritid",
     "subcategory": "Fiske og jakt",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.skittfiske.no",
+    "description": "Alt innen fiskeutstyr, jakt og friluft.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Oslo Sportslager",
-    "description": "Spesialister på ski, løping, sykkel og trening.",
-    "image": "assets/images/sport-og-fritid/oslosportslager.png",
-    "url": "https://www.oslosportslager.no",
+    "image": "assets/images/butikker/oslosportslager.png",
+    "alt": "Oslo Sportslager",
     "category": "Sport og fritid",
     "subcategory": "Trening og treningsutstyr",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.oslosportslager.no",
+    "description": "Spesialister på ski, løping, sykkel og trening.",
+    "topp25": false,
+    "forside": false
   },
   {
     "name": "Sykkelpikene",
-    "description": "Norges koseligste nettbutikk for sykler og tilbehør.",
-    "image": "assets/images/sport-og-fritid/sykkelpikene.png",
-    "url": "https://www.sykkelpikene.no",
+    "image": "assets/images/butikker/sykkelpikene.png",
+    "alt": "Sykkelpikene",
     "category": "Sport og fritid",
     "subcategory": "Sykkel og sykkelutstyr",
-    "affiliate": true,
-    "ny": true
+    "url": "https://www.sykkelpikene.no",
+    "description": "Norges koseligste nettbutikk for sykler og tilbehør.",
+    "topp25": false,
+    "forside": false
   }
 ]

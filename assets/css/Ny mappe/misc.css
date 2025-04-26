@@ -1,9 +1,0 @@
-/* EXTRA: Sticky annonser og hjelpetekster */
-.sticky-ad {
-  position: sticky;
-  top: 100px;
-}
-.helper-text {
-  font-size: 0.9rem;
-  color: #6c757d;
-}
