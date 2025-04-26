@@ -1,67 +1,32 @@
 <!DOCTYPE html>
 <html lang="no">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Topp 25 nettbutikker | Butikkoversikt.no</title>
-  <meta name="description" content="Se de mest populære nettbutikkene i Norge for 2025 – alt fra elektronikk til mote og barneutstyr." />
-  <meta name="keywords" content="topp 25, populære nettbutikker, Norge, elektronikk, klær, babyutstyr" />
-  <meta name="author" content="Butikkoversikt.no" />
-  <meta property="og:title" content="Topp 25 nettbutikker | Butikkoversikt.no" />
-  <meta property="og:description" content="Oppdag de mest populære nettbutikkene i Norge akkurat nå – se våre topp 25!" />
-  <meta property="og:image" content="https://butikkoversikt.no/assets/images/social-preview.jpg" />
-  <meta property="og:url" content="https://butikkoversikt.no/topp25.html" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Topp 25 nettbutikker | Butikkoversikt.no" />
-  <meta name="twitter:description" content="De beste nettbutikkene i Norge – samlet på ett sted." />
-  <meta name="twitter:image" content="https://butikkoversikt.no/assets/images/social-preview.jpg" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/responsive.css" />
-  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Butikkoversikt.no - Din guide til nettbutikker</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/header-modern.css">
+
+
 </head>
 
 <body>
 
-<header class="custom-header sticky-top py-3 px-4 bg-white border-bottom shadow-sm d-flex justify-content-between align-items-center">
-  <a href="index.html" class="navbar-brand d-flex align-items-center">
-    <i class="bi bi-shop fs-4 text-primary me-2"></i>
-    <span class="h5 mb-0">Butikkoversikt.no</span>
-  </a>
-
-
- <nav class="d-none d-md-flex align-items-center gap-4">
-  <div class="dropdown">
-    <a class="dropdown-toggle text-dark" href="#" id="kategoriDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Kategorier
-    </a>
-   <ul class="dropdown-menu" aria-labelledby="kategoriDropdown">
-  <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Kl%C3%A6r%20og%20mote">Klær og mote</a></li>
-  <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Elektronikk%20og%20data">Elektronikk og data</a></li>
-  <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Gaming%20og%20tilbehør">Gaming og tilbehør</a></li>
-  <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Fritid%20og%20gaver">Fritid og gaver</a></li>
-  <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Helse%20og%20egenpleie">Helse og egenpleie</a></li>
-  <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Barn%20og%20baby">Barn og baby</a></li>
-  <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Møbler%20og%20interiør">Møbler og interiør</a></li>
-  <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Bøker%20og%20underholdning">Bøker og underholdning</a></li>
-  <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Apotek">Apotek</a></li>
-  <li><a class="dropdown-item" href="/kategori-mal.html?kategori=Sport%20og%20fritid">Sport og fritid</a></li>
-</ul>
-
-  </div>
-  <a href="/topp25.html" class="text-dark">Topp 25</a>
-  <a href="/guider/main-guider.html" class="text-dark">Guider</a>
-  <a href="/om-oss.html" class="text-dark">Om oss</a>
-</nav>
-
-
-  <form action="search.html" method="GET" class="d-flex align-items-center">
-    <input name="k" type="text" class="form-control form-control-sm me-2" placeholder="Søk etter butikk eller kategori...">
-    <button type="submit" class="btn btn-outline-primary btn-sm" title="Søk"><i class="bi bi-search"></i></button>
-  </form>
-</header>
+  <!-- Header -->
+  <header class="site-header sticky-top">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+      <div class="logo">Butikkoversikt.no</div>
+      <nav class="main-nav">
+        <ul class="nav-list d-flex gap-4">
+          <li><a href="#kategorier">Kategori</a></li>
+          <li><a href="#tilbud">Tilbud</a></li>
+          <li><a href="#kundeservice">Kundeservice</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
 
   <!-- Side-meny -->
@@ -106,12 +71,19 @@
 </footer>
 
 <!-- JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script defer src="assets/js/generate-topp25.js"></script>
-<script src="assets/js/menu-toggle.js"></script>
-<script src="assets/js/fade-in.js"></script>
+<!-- Scripts -->
+<script src="assets/js/bootstrap.min.js"></script>
 
+<!-- Effekter -->
+<script src="assets/js/effects/fade-in.js"></script>
+<script src="assets/js/effects/menu-toggle.js"></script>
+
+
+<!-- Generatorer -->
+<script src="assets/js/generate/generate-index-stores.js"></script>
+
+<!-- Main -->
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
