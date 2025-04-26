@@ -1,0 +1,9 @@
+/* 📂 main.css - Importerer alle css-filer */
+@import url('base.css');
+@import url('header.css');
+@import url('footer.css');
+@import url('cards.css');
+@import url('sections.css');
+@import url('buttons.css');
+@import url('responsive.css');
+@import url('misc.css');
