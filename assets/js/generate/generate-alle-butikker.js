@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let butikker = [];
 
-  fetch("assets/data/butikker.json")
+  fetch("assets/json/butikker.json")
     .then(response => response.json())
     .then(data => {
       butikker = data;
