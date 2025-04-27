@@ -1,4 +1,4 @@
-// generate-alle-butikker.js inline versjon
+// generate-alle-butikker.js - Ferdig og riktig
 
 window.addEventListener("DOMContentLoaded", () => {
   fetch("assets/data/butikker.json")
@@ -15,16 +15,27 @@ function visButikker(butikker) {
   container.innerHTML = "";
 
   butikker.forEach((butikk) => {
-    const kort = document.createElement("div");
-    kort.className = "card fade-in";
-    kort.innerHTML = `
+    // Lag en col
+    const col = document.createElement("div");
+    col.className = "col";
+
+    // Lag kortet
+    const card = document.createElement("div");
+    card.className = "card text-center fade-in";
+
+    card.innerHTML = `
       <a href="${butikk.url}" target="_blank" rel="noopener">
-        <img src="${butikk.image}" alt="${butikk.name}" loading="lazy">
-        <h3>${butikk.name}</h3>
-        <p>${butikk.description}</p>
+        <img src="${butikk.image}" alt="${butikk.name}" class="card-img-top" loading="lazy">
+        <div class="card-body">
+          <h5 class="card-title">${butikk.name}</h5>
+          <p class="card-text small text-muted">${butikk.description}</p>
+        </div>
       </a>
     `;
-    container.appendChild(kort);
+
+    // Sett kortet inni col, og col inni containeren
+    col.appendChild(card);
+    container.appendChild(col);
   });
 }
 
