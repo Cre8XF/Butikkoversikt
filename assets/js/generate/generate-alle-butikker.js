@@ -1,6 +1,5 @@
 // generate-alle-butikker.js
 
-// Når dokumentet er klart
 document.addEventListener("DOMContentLoaded", () => {
   const butikkerContainer = document.getElementById("butikk-liste");
   const filterContainer = document.getElementById("kategori-filter");
@@ -10,14 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  // Hent butikkdata
+  let butikker = [];
+
   fetch("assets/data/butikker.json")
     .then(response => response.json())
     .then(data => {
+      butikker = data;
       const kategorier = new Set();
 
       data.forEach(butikk => {
-        // Opprett kort for hver butikk
+        // Lag kort
         const card = document.createElement("div");
         card.className = "alle-butikker-kort";
         card.setAttribute("data-kategori", butikk.category);
@@ -32,35 +33,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
         butikkerContainer.appendChild(card);
 
-        // Legg kategori til filteret
         if (butikk.category) {
           kategorier.add(butikk.category);
         }
       });
 
-      // Lag filterknapper
+      // Bygg dropdown
       kategorier.forEach(kategori => {
-       const option = document.createElement("option");
+        const option = document.createElement("option");
         option.value = kategori;
         option.textContent = kategori;
         filterContainer.appendChild(option);
-
-
-        knapp.addEventListener("click", () => {
-          filtrerButikker(kategori);
-        });
-
-        filterContainer.appendChild(knapp);
       });
-
-      // Legg til "Alle"-knapp
-      const alleKnapp = document.createElement("button");
-      alleKnapp.className = "filter-knapp";
-      alleKnapp.textContent = "Alle";
-      alleKnapp.addEventListener("click", () => filtrerButikker("alle"));
-      filterContainer.insertBefore(alleKnapp, filterContainer.firstChild);
     })
     .catch(error => console.error("Feil ved lasting av butikker:", error));
+
+  // Lytte på endring i dropdown
+  filterContainer.addEventListener("change", (e) => {
+    filtrerButikker(e.target.value);
+  });
 
   function filtrerButikker(kategori) {
     const kort = document.querySelectorAll(".alle-butikker-kort");
