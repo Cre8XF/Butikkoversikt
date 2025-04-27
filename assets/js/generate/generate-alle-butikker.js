@@ -1,67 +1,51 @@
-// generate-alle-butikker.js
+// generate-alle-butikker.js inline versjon
 
-document.addEventListener("DOMContentLoaded", () => {
-  const butikkerContainer = document.getElementById("butikk-liste");
-  const filterContainer = document.getElementById("kategori-filter");
-
-  if (!butikkerContainer || !filterContainer) {
-    console.error("Manglende containere for butikker eller filter!");
-    return;
-  }
-
-  let butikker = [];
-
+window.addEventListener("DOMContentLoaded", () => {
   fetch("assets/data/butikker.json")
-    .then(response => response.json())
-    .then(data => {
-      butikker = data;
-      const kategorier = new Set();
-
-      data.forEach(butikk => {
-        // Lag kort
-        const card = document.createElement("div");
-        card.className = "alle-butikker-kort";
-        card.setAttribute("data-kategori", butikk.category);
-
-        card.innerHTML = `
-          <a href="${butikk.url}" target="_blank" rel="noopener">
-            <img src="${butikk.image}" alt="${butikk.name}" class="alle-butikker-logo">
-            <h6>${butikk.name}</h6>
-            <p class="small text-muted">${butikk.description}</p>
-          </a>
-        `;
-
-        butikkerContainer.appendChild(card);
-
-        if (butikk.category) {
-          kategorier.add(butikk.category);
-        }
-      });
-
-      // Bygg dropdown
-      kategorier.forEach(kategori => {
-        const option = document.createElement("option");
-        option.value = kategori;
-        option.textContent = kategori;
-        filterContainer.appendChild(option);
-      });
+    .then((response) => response.json())
+    .then((data) => {
+      visButikker(data);
+      byggFilter(data);
     })
-    .catch(error => console.error("Feil ved lasting av butikker:", error));
+    .catch((error) => console.error("Feil ved lasting av butikker:", error));
+});
 
-  // Lytte på endring i dropdown
-  filterContainer.addEventListener("change", (e) => {
-    filtrerButikker(e.target.value);
+function visButikker(butikker) {
+  const container = document.getElementById("butikk-container");
+  container.innerHTML = "";
+
+  butikker.forEach((butikk) => {
+    const kort = document.createElement("div");
+    kort.className = "butikkort fade-in";
+    kort.innerHTML = `
+      <a href="${butikk.url}" target="_blank" rel="noopener">
+        <img src="${butikk.image}" alt="${butikk.name}" loading="lazy">
+        <h3>${butikk.name}</h3>
+        <p>${butikk.description}</p>
+      </a>
+    `;
+    container.appendChild(kort);
+  });
+}
+
+function byggFilter(butikker) {
+  const filter = document.getElementById("kategori-filter");
+  const kategorier = [...new Set(butikker.map(b => b.category))];
+
+  kategorier.forEach((kategori) => {
+    const option = document.createElement("option");
+    option.value = kategori;
+    option.textContent = kategori;
+    filter.appendChild(option);
   });
 
-  function filtrerButikker(kategori) {
-    const kort = document.querySelectorAll(".alle-butikker-kort");
-
-    kort.forEach(k => {
-      if (kategori === "alle" || k.getAttribute("data-kategori") === kategori) {
-        k.style.display = "flex";
-      } else {
-        k.style.display = "none";
-      }
-    });
-  }
-});
+  filter.addEventListener("change", (e) => {
+    const valgt = e.target.value;
+    if (valgt === "alle") {
+      visButikker(butikker);
+    } else {
+      const filtrerte = butikker.filter(b => b.category === valgt);
+      visButikker(filtrerte);
+    }
+  });
+}

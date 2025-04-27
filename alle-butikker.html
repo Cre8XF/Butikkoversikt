@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alle Butikker | Butikkoversikt.no</title>
+    <title>Utforsk Nettbutikker | Butikkoversikt.no</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -20,17 +20,18 @@
     <main>
         <section class="section bg-light text-center py-5">
             <div class="container">
-                <h1 class="mb-4">Utforsk alle våre nettbutikker</h1>
-                <p class="mb-4">Velg en kategori eller bla gjennom hele oversikten!</p>
+                <h1 class="mb-4">Utforsk Nettbutikker</h1>
+                <p class="mb-4">Finn butikker innenfor alle kategorier, eller bruk filteret for å finne det du leter
+                    etter!</p>
 
                 <div class="mb-4">
-                    <label for="kategori-filter" class="form-label">Velg en kategori</label>
+                    <label for="kategori-filter" class="form-label">Velg kategori:</label>
                     <select id="kategori-filter" class="form-select w-auto mx-auto">
                         <option value="alle">Alle kategorier</option>
                     </select>
                 </div>
 
-                <!-- Container hvor butikkortene lastes inn -->
+                <!-- Container for butikkortene -->
                 <div id="butikk-container" class="butikk-grid"></div>
 
             </div>
@@ -43,8 +44,7 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/generate/generate-alle-butikker.js" defer></script>
+    <script src="assets/js/generate-alle-butikker.js" defer></script>
     <script src="assets/js/main.js" defer></script>
 </body>
 
