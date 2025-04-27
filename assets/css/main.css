@@ -488,25 +488,26 @@ header {
   text-align: center;
 }
 
-#anbefalte-butikker .card {
+/* anbefalte butikker */
+#anbefalte-butikker .store-showcase {
   background-color: var(--card-bg, #ffffff);
   border: 1px solid var(--border-color, #e0e0e0);
   border-radius: 12px;
   padding: 20px;
   text-align: center;
   height: 100%;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-#anbefalte-butikker .card:hover {
+#anbefalte-butikker .store-showcase:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-#anbefalte-butikker img {
+#anbefalte-butikker .store-showcase img {
   width: 100%;
   max-height: 80px;
   object-fit: contain;
