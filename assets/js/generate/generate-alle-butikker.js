@@ -1,4 +1,4 @@
-// generate-alle-butikker.js - Ferdig og riktig
+// generate-alle-butikker.js - Ferdig oppdatert versjon
 
 window.addEventListener("DOMContentLoaded", () => {
   fetch("assets/data/butikker.json")
@@ -12,14 +12,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function visButikker(butikker) {
   const container = document.getElementById("butikk-container");
+  const teller = document.getElementById("butikk-teller");
   container.innerHTML = "";
 
   butikker.forEach((butikk) => {
-    // Lag en col
     const col = document.createElement("div");
     col.className = "col";
 
-    // Lag kortet
     const card = document.createElement("div");
     card.className = "card text-center";
 
@@ -33,10 +32,14 @@ function visButikker(butikker) {
       </a>
     `;
 
-    // Sett kortet inni col, og col inni containeren
     col.appendChild(card);
     container.appendChild(col);
   });
+
+  // 🧮 Oppdatere antall butikkvisninger
+  if (teller) {
+    teller.textContent = `Viser ${butikker.length} butikker`;
+  }
 }
 
 function byggFilter(butikker) {
@@ -55,7 +58,9 @@ function byggFilter(butikker) {
     if (valgt === "alle") {
       visButikker(butikker);
     } else {
-      const filtrerte = butikker.filter(b => b.category === valgt);
+      const filtrerte = butikker.filter(
+        (butikk) => butikk.category.toLowerCase() === valgt.toLowerCase()
+      );
       visButikker(filtrerte);
     }
   });
