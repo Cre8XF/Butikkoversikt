@@ -597,6 +597,49 @@ header {
   transform: translateY(-4px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
 }
+/* Butikkort for Alle Butikker siden */
+.butikKort,
+.butikkort {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.butikKort img,
+.butikkort img {
+  max-width: 120px;
+  max-height: 80px;
+  margin: 0 auto 15px;
+  object-fit: contain;
+}
+
+.butikKort h3,
+.butikkort h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.butikKort p,
+.butikkort p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.butikKort:hover,
+.butikkort:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
 
 /* ========================================= */
 /* 📂 KNAPPER */
@@ -1077,4 +1120,49 @@ footer .btn:hover {
 .butikkort:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+/* Container for alle butikkort på alle-butikker.html */
+#butikk-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Ekstra for bedre spacing på kortene */
+#butikk-container .butikkort {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#butikk-container .butikkort:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+#butikk-container .butikkort img {
+  max-width: 120px;
+  max-height: 80px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+#butikk-container .butikkort h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+#butikk-container .butikkort p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
 }
