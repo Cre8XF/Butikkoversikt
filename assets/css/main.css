@@ -560,6 +560,44 @@ header {
   font-size: 0.85rem;
   color: var(--text-muted, #777);
 }
+/* Butikkort */
+.butikKort {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.butikKort img {
+  max-height: 80px;
+  object-fit: contain;
+  margin: 0 auto 15px;
+}
+
+.butikKort h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.butikKort p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.butikKort:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
 /* ========================================= */
 /* 📂 KNAPPER */
 /* ========================================= */
