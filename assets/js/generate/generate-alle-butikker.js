@@ -2,7 +2,7 @@
 
 // Venter til hele DOM-en er klar
 window.addEventListener("DOMContentLoaded", () => {
-  fetch("/assets/data/butikker.json")
+  fetch("assets/data/butikker.json")
     .then((response) => response.json())
     .then((data) => {
       visButikker(data);
