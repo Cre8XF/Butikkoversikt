@@ -1,71 +1,46 @@
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("assets/data/butikker.json")
-    .then(res => res.json())
-    .then(data => {
-      const container = document.getElementById("anbefalte-butikker-list");
+const antallViste = 8; // Hvor mange butikker vises først
+let butikker = []; // Lagrer alle butikkene
+let vistAntall = 0; // Teller hvor mange som er vist
+let butikkRow = document.getElementById("butikk-row");
 
-      const anbefalte = data.filter(b => b.forside === true);
+// 1. Hente butikker fra JSON
+fetch('assets/data/butikker.json')
+  .then(response => response.json())
+  .then(data => {
+    butikker = data.filter(butikk => butikk.forside); // Kun forside: true
+    visFlereButikker();
+  })
+  .catch(error => {
+    console.error("Feil ved lasting av butikker:", error);
+  });
 
-      // Bygg kort
-      anbefalte.forEach((butikk, index) => {
-        const imageUrl = butikk.image && butikk.image.trim() !== "" 
-          ? butikk.image 
-          : "assets/images/logo-mangler.png";
+// 2. Funksjon for å vise flere butikker
+function visFlereButikker() {
+  const nesteBatch = butikker.slice(vistAntall, vistAntall + antallViste);
+  
+  nesteBatch.forEach(butikk => {
+    const col = document.createElement("div");
+    col.className = "col-md-3 mb-4";
 
-        const col = document.createElement("div");
-        col.className = "col d-flex store-card fade-in"; // fade-in for smooth innlasting
+    col.innerHTML = `
+      <div class="card store-showcase text-center w-100 h-100">
+        <a href="${butikk.url}" target="_blank" rel="noopener">
+          <img src="${butikk.image}" alt="${butikk.name}" class="mb-3" style="max-height:80px;object-fit:contain;">
+          <h6>${butikk.name}</h6>
+          <p class="text-muted small">${butikk.description}</p>
+        </a>
+      </div>
+    `;
 
-        col.innerHTML = `
-          <div class="card store-showcase text-center w-100">
-            <a href="${butikk.url}" target="_blank" rel="noopener noreferrer">
-              <img src="${imageUrl}" alt="${butikk.alt || butikk.name}" loading="lazy" />
-              <div class="card-body d-flex flex-column justify-content-between">
-                <h6 class="card-title mt-2 mb-0">${butikk.name}</h6>
-                ${butikk.description ? `<p class="card-text small text-muted">${butikk.description}</p>` : ""}
-              </div>
-            </a>
-          </div>
-        `;
+    butikkRow.appendChild(col);
+  });
 
-        // Skjul butikker etter 4 stk
-        if (index >= 4) {
-          col.style.display = "none";
-          col.classList.add("skjult-butikk");
-        }
+  vistAntall += nesteBatch.length;
 
-        container.appendChild(col);
-      });
-
-      // Aktiver fade-in etter kortene er på plass
-      startFadeInObserver();
-
-      // Vis flere-knapp
-      const visFlereBtn = document.getElementById("vis-flere-butikker");
-      if (visFlereBtn) {
-        visFlereBtn.addEventListener("click", () => {
-          document.querySelectorAll(".skjult-butikk").forEach(el => {
-            el.style.display = "block";
-          });
-          visFlereBtn.style.display = "none"; // Skjul knapp etter klikk
-        });
-      }
-    })
-    .catch(err => {
-      console.error("Feil ved lasting av anbefalte butikker:", err);
-    });
-});
-
-// Fade-in effekt
-function startFadeInObserver() {
-  const fadeEls = document.querySelectorAll('.fade-in');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1 });
-
-  fadeEls.forEach(el => observer.observe(el));
+  if (vistAntall >= butikker.length) {
+    document.getElementById("vis-flere-butikker").style.display = "none";
+  }
 }
+
+// 3. Lytte på knappen
+document.getElementById("vis-flere-butikker").addEventListener("click", visFlereButikker);
