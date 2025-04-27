@@ -4,61 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utforsk nettbutikker | Butikkoversikt.no</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Alle Butikker | Butikkoversikt.no</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="custom-header sticky-top">
+
+    <header class="custom-header sticky-top bg-white border-bottom shadow-sm">
         <div class="container">
-            <a href="index.html" class="logo">Butikkoversikt.no</a>
+            <a href="/" class="navbar-brand">Butikkoversikt.no</a>
         </div>
     </header>
 
     <main>
-        <!-- Tittel -->
-        <section class="section-alt text-center py-5">
+        <section class="section bg-light text-center py-5">
             <div class="container">
-                <h1>Utforsk alle våre nettbutikker</h1>
-                <p>Velg en kategori eller bla gjennom hele oversikten!</p>
-            </div>
-        </section>
+                <h1 class="mb-4">Utforsk alle våre nettbutikker</h1>
+                <p class="mb-4">Velg en kategori eller bla gjennom hele oversikten!</p>
 
-        <!-- Filter -->
-        <section class="py-3">
-            <div class="container text-center">
-                <label for="kategori-filter" class="sr-only">Velg en kategori</label>
-                <select id="kategori-filter" class="filter-dropdown">
-                    <option value="alle">Alle kategorier</option>
-                    <!-- Dynamisk fylt med JS -->
-                </select>
-            </div>
-        </section>
-
-        <!-- Butikkort -->
-        <section class="py-4">
-            <div class="container">
-                <div id="butikk-liste" class="grid-container">
-                    <!-- Butikkort fylles inn her med JS -->
+                <div class="mb-4">
+                    <label for="kategori-filter" class="form-label">Velg en kategori</label>
+                    <select id="kategori-filter" class="form-select w-auto mx-auto">
+                        <option value="alle">Alle kategorier</option>
+                    </select>
                 </div>
+
+                <!-- Container hvor butikkortene lastes inn -->
+                <div id="butikk-container" class="butikk-grid"></div>
+
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer bg-header text-white py-4">
+    <footer class="footer bg-header text-white mt-5 py-4">
         <div class="container text-center">
-            <p>Butikkoversikt.no &copy; 2025</p>
+            Butikkoversikt.no &copy; 2025
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/generate/generate-alle-butikker.js"></script>
+    <!-- Scripts -->
+    <script src="../assets/js/generate-alle-butikker.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
 </body>
 
 </html>
