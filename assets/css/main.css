@@ -1166,3 +1166,23 @@ footer .btn:hover {
   font-size: 0.9rem;
   color: var(--text-muted);
 }
+.kategori-filter-wrapper {
+  text-align: center;
+}
+
+.filter-select {
+  display: inline-block;
+  width: 250px;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filter-select:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.25);
+}
