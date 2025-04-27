@@ -245,6 +245,11 @@ header {
   padding: 20px;
   text-align: center;
   height: 100%;
+  min-height: 220px; /* Tilpass høyden på kortet */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -254,8 +259,8 @@ header {
 }
 
 .popular-categories .category-icon {
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   margin-bottom: 15px;
 }
