@@ -1,4 +1,4 @@
-// generate-alle-butikker.js
+// generate-alle-butikker.js - komplett oppdatert versjon
 
 document.addEventListener("DOMContentLoaded", () => {
   const butikkerContainer = document.getElementById("butikk-liste");
@@ -11,57 +11,64 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let butikker = [];
 
-  fetch("assets/data/butikker.json")
+  fetch("assets/butikker.json")
     .then(response => response.json())
     .then(data => {
       butikker = data;
+
       const kategorier = new Set();
 
       data.forEach(butikk => {
-        // Lag kort
-        const card = document.createElement("div");
-        card.className = "alle-butikker-kort";
-        card.setAttribute("data-kategori", butikk.category);
-
-        card.innerHTML = `
-          <a href="${butikk.url}" target="_blank" rel="noopener">
-            <img src="${butikk.image}" alt="${butikk.name}" class="alle-butikker-logo">
-            <h6>${butikk.name}</h6>
-            <p class="small text-muted">${butikk.description}</p>
-          </a>
-        `;
-
-        butikkerContainer.appendChild(card);
-
         if (butikk.category) {
           kategorier.add(butikk.category);
         }
       });
 
-      // Bygg dropdown
+      // Bygg filterdropdown
       kategorier.forEach(kategori => {
         const option = document.createElement("option");
         option.value = kategori;
         option.textContent = kategori;
         filterContainer.appendChild(option);
       });
+
+      // Initial visning av alle butikker
+      visButikker("alle");
     })
     .catch(error => console.error("Feil ved lasting av butikker:", error));
 
-  // Lytte på endring i dropdown
+  // Lytt til filter-endringer
   filterContainer.addEventListener("change", (e) => {
-    filtrerButikker(e.target.value);
+    visButikker(e.target.value);
   });
 
-  function filtrerButikker(kategori) {
-    const kort = document.querySelectorAll(".alle-butikker-kort");
+  function visButikker(kategori) {
+    butikkerContainer.innerHTML = ""; // Tøm liste først
 
-    kort.forEach(k => {
-      if (kategori === "alle" || k.getAttribute("data-kategori") === kategori) {
-        k.style.display = "flex";
-      } else {
-        k.style.display = "none";
-      }
+    let filtrert = butikker;
+    if (kategori !== "alle") {
+      filtrert = butikker.filter(b => b.category === kategori);
+    }
+
+    if (filtrert.length === 0) {
+      butikkerContainer.innerHTML = "<p class='text-center text-muted py-5'>Ingen butikker funnet i valgt kategori.</p>";
+      return;
+    }
+
+    filtrert.forEach(butikk => {
+      const kort = document.createElement("div");
+      kort.className = "alle-butikker-kort";
+      kort.innerHTML = `
+        <a href="${butikk.url}" target="_blank" rel="noopener">
+          <div class="kort-innhold">
+            <img src="${butikk.image}" alt="${butikk.name}" class="alle-butikker-logo">
+            <h6 class="mt-3 mb-1">${butikk.name}</h6>
+            <p class="small text-muted">${butikk.description}</p>
+          </div>
+        </a>
+      `;
+
+      butikkerContainer.appendChild(kort);
     });
   }
 });

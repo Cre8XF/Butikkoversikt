@@ -519,7 +519,47 @@ header {
   font-size: 1.1rem;
   border-radius: 8px;
 }
+#butikk-liste {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
 
+.alle-butikker-kort {
+  background-color: var(--card-bg, #fff);
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.alle-butikker-kort:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.alle-butikker-logo {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+}
+
+.kort-innhold h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color, #333);
+}
+
+.kort-innhold p {
+  font-size: 0.85rem;
+  color: var(--text-muted, #777);
+}
 /* ========================================= */
 /* 📂 KNAPPER */
 /* ========================================= */
