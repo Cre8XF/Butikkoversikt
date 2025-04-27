@@ -1,57 +1,67 @@
-// generate-alle-butikker.js - Oppdatert og fikset versjon
+// generate-alle-butikker.js
 
-window.addEventListener("DOMContentLoaded", () => {
-  fetch("assets/data/butikker.json")
-    .then((response) => response.json())
-    .then((data) => {
-      visButikker(data);
-      settOppFilter(data);
-    })
-    .catch((error) => {
-      console.error("Feil ved lasting av butikker:", error);
-    });
-});
-
-function visButikker(butikker) {
-  const butikkerContainer = document.getElementById("butikk-container");
-  if (!butikkerContainer) {
-    console.error("Fant ikke container for butikker!");
-    return;
-  }
-
-  butikkerContainer.innerHTML = "";
-
-  butikker.forEach((butikk) => {
-    const card = document.createElement("div");
-    card.className = "butikkort fade-in";
-
-    card.innerHTML = `
-      <a href="${butikk.url}" target="_blank" rel="noopener">
-        <img src="${butikk.image}" alt="${butikk.alt}" loading="lazy">
-        <h3>${butikk.name}</h3>
-        <p>${butikk.description}</p>
-      </a>
-    `;
-
-    butikkerContainer.appendChild(card);
-  });
-}
-
-function settOppFilter(butikker) {
+document.addEventListener("DOMContentLoaded", () => {
+  const butikkerContainer = document.getElementById("butikk-liste");
   const filterContainer = document.getElementById("kategori-filter");
-  if (!filterContainer) {
-    console.error("Fant ikke filter-container!");
+
+  if (!butikkerContainer || !filterContainer) {
+    console.error("Manglende containere for butikker eller filter!");
     return;
   }
 
-  filterContainer.addEventListener("change", (e) => {
-    const valgtKategori = e.target.value;
+  let butikker = [];
 
-    if (valgtKategori === "alle") {
-      visButikker(butikker);
-    } else {
-      const filtrerte = butikker.filter((butikk) => butikk.category.toLowerCase() === valgtKategori.toLowerCase());
-      visButikker(filtrerte);
-    }
+  fetch("assets/data/butikker.json")
+    .then(response => response.json())
+    .then(data => {
+      butikker = data;
+      const kategorier = new Set();
+
+      data.forEach(butikk => {
+        // Lag kort
+        const card = document.createElement("div");
+        card.className = "alle-butikker-kort";
+        card.setAttribute("data-kategori", butikk.category);
+
+        card.innerHTML = `
+          <a href="${butikk.url}" target="_blank" rel="noopener">
+            <img src="${butikk.image}" alt="${butikk.name}" class="alle-butikker-logo">
+            <h6>${butikk.name}</h6>
+            <p class="small text-muted">${butikk.description}</p>
+          </a>
+        `;
+
+        butikkerContainer.appendChild(card);
+
+        if (butikk.category) {
+          kategorier.add(butikk.category);
+        }
+      });
+
+      // Bygg dropdown
+      kategorier.forEach(kategori => {
+        const option = document.createElement("option");
+        option.value = kategori;
+        option.textContent = kategori;
+        filterContainer.appendChild(option);
+      });
+    })
+    .catch(error => console.error("Feil ved lasting av butikker:", error));
+
+  // Lytte på endring i dropdown
+  filterContainer.addEventListener("change", (e) => {
+    filtrerButikker(e.target.value);
   });
-}
+
+  function filtrerButikker(kategori) {
+    const kort = document.querySelectorAll(".alle-butikker-kort");
+
+    kort.forEach(k => {
+      if (kategori === "alle" || k.getAttribute("data-kategori") === kategori) {
+        k.style.display = "flex";
+      } else {
+        k.style.display = "none";
+      }
+    });
+  }
+});
