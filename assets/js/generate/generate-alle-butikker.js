@@ -16,7 +16,7 @@ function visButikker(butikker) {
 
   butikker.forEach((butikk) => {
     const kort = document.createElement("div");
-    kort.className = "butikkort fade-in";
+    kort.className = "card fade-in";
     kort.innerHTML = `
       <a href="${butikk.url}" target="_blank" rel="noopener">
         <img src="${butikk.image}" alt="${butikk.name}" loading="lazy">
