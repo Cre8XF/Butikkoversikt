@@ -21,7 +21,7 @@ function visButikker(butikker) {
 
     // Lag kortet
     const card = document.createElement("div");
-    card.className = "card text-center fade-in";
+    card.className = "card text-center";
 
     card.innerHTML = `
       <a href="${butikk.url}" target="_blank" rel="noopener">
