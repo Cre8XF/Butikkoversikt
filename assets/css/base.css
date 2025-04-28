@@ -29,6 +29,12 @@
   --success-color: #10b981; /* Grønn for suksess/merker */
   --warning-color: #f59e0b; /* Gul for varsler */
   --danger-color: #ef4444; /* Rød for feil */
+
+  --hero-bg: #eef3f9;
+  --popular-categories-bg: #dde6f2;
+  --ad-banner-bg: #fff4d6;
+  --section-alt-bg: #e6f7f4;
+  --news-section-bg: #fff0b3;
 }
 
 body {

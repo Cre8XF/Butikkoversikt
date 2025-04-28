@@ -136,28 +136,27 @@
 
 /* Populære kategorier */
 .popular-categories {
-  background-color: var(--section-light); /* Ekstra lys blågrå seksjon */
+  background-color: var(--popular-categories-bg); /* Lys blå variant */
 }
 
 /* Annonsebanner */
 .ad-banner {
-  background-color: var(--section-muted); /* Lys blå variant */
+  background-color: var(--ad-banner-bg); /* Lys grå variant */
 }
 
 /* Anbefalte butikker */
 .section-alt {
-  background-color: var(
-    --section-light
-  ); /* Samme som populære kategorier for nå, evt. justere senere */
+  background-color: var(--section-alt-bg); /* Lys grå variant */
 }
 
 /* Nyheter og kampanjer */
 .nyheter-kampanjer {
-  background-color: var(
-    --warning-color
-  ); /* Bruker gul-ish farge for varm følelse */
-  background-color: #fffbea; /* alternativ: manuell override for varmere gul */
+  background-color: var(--news-section-bg);
 }
+
+/* Legg til en svak skillelinje */
+section {
+  border-bottom: 1px solid var(--border-color);
 
 /* 📂 Kort Hover-effekter */
 
