@@ -11,11 +11,11 @@
 
 /* Light Theme */
 [data-theme="light"] {
-  --bg-color: #caddf0;
-  --section-bg: #929aa3;
+  --bg-color: #f9fafb;
+  --section-bg: #eef2f7;
   --section-alt-bg: #e3eaf3;
-  --card-bg: #e7b2b2;
-  --card-hover: #f1f5f9;
+  --card-bg: #eef2f7;
+  --card-hover: #dbe7f3;
   --text-color: #1f2937;
   --text-muted: #6b7280;
   --heading-color: #111827;
@@ -55,6 +55,11 @@
   --success-color: #10b981;
   --warning-color: #f59e0b;
   --danger-color: #ef4444;
+}
+
+/* Fade transitions */
+body, header, section, footer {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
 }
 /* ========================================= */
 
