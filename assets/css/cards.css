@@ -402,3 +402,10 @@
   color: var(--btn-primary);
   text-shadow: 0 0 8px rgba(37, 99, 235, 0.6);
 }
+.campaign-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.campaign-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
