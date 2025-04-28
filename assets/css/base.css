@@ -1,0 +1,113 @@
+📂 BASIS VARIABLER & BASIS STIL */
+/* ========================================= */
+
+:root {
+  --bg-color: #f5f7fa;
+  --section-bg: #ffffff;
+  --section-alt-bg: #e8edf3;
+  --card-bg: #ffffff;
+  --card-hover: #f1f5f9;
+
+  --text-color: #1f2937;
+  --text-muted: #6b7280;
+  --heading-color: #111827;
+
+  --btn-primary: #2563eb;
+  --btn-hover: #1d4ed8;
+  --link-color: #2563eb;
+
+  --footer-bg: #1e293b;
+  --footer-text: #f1f5f9;
+  --footer-heading: #ffffff;
+  --footer-muted: #94a3b8;
+  --footer-border: #334155;
+
+  --section-light: #f4f6f9; /* Ekstra bakgrunn hvis du bruker .bg-light-section */
+  --section-muted: #e9eef5; /* Ekstra hvis du bruker .bg-muted */
+
+  --border-color: #d1d5db; /* Grensefarge for kort, skiller, dividers */
+  --success-color: #10b981; /* Grønn for suksess/merker */
+  --warning-color: #f59e0b; /* Gul for varsler */
+  --danger-color: #ef4444; /* Rød for feil */
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+header.bg-header {
+  background-color: var(--bg-dark);
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
+}
+
+.bg-section {
+  background-color: var(--bg-color);
+}
+
+.bg-light-section {
+  background-color: #f4f6f9;
+}
+
+.bg-muted {
+  background-color: #e9eef5;
+}
+.bg-hero {
+  background: var(--hero-bg);
+}
+.bg-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+.section-alt {
+  background-color: var(--section-alt-bg);
+}
+.section-white {
+  background-color: #ffffff;
+}
+
+.section-gradient {
+  background: linear-gradient(
+    to right,
+    var(--section-alt-bg),
+    var(--section-bg)
+  );
+}
+.section-dark h2,
+.section-dark h3,
+.section-dark h5,
+.section-dark a,
+.section-dark p {
+  color: #1f2937;
+}
+
+/* Øk luft under "Populære kategorier" */
+.section-gradient {
+  margin-bottom: 3rem;
+}
+.section-dark {
+  background-color: linear-gradient(to right, #1e293b, #334155);
+  color: #f1f5f9;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-top: 1px solid var(--footer-border);
+  border-bottom: 1px solid var(--footer-border);
+}
+
+/* ========================================= */
+/*

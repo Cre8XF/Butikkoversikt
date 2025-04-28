@@ -1,5 +1,31 @@
-/* HEADER MODERN FORBEDRINGER */
+📂 HEADER (Navigasjon, meny, søk) */
+/* ========================================= */
 
+/* Header styling */
+body {
+  padding-top: 90px;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  color: #0d6efd;
+}
+.dropdown-menu {
+  margin-top: 8px;
+}
+header {
+  z-index: 1030;
+}
+.navbar-brand span {
+  font-family: "Poppins", sans-serif;
+}
+.input-group > .form-control {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+}
+.input-group > .form-control:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
 header {
   z-index: 1030;
   background-color: #fcfcfc;
@@ -47,3 +73,6 @@ header {
   font-size: 1rem;
   margin-right: 0.25rem;
 }
+
+/* ========================================= */
+/*

@@ -1,0 +1,73 @@
+📂 ANNONSER / STICKY ADS */
+/* ========================================= */
+
+/* Annonsebannere */
+.ad-banner-top,
+.ad-banner-mid {
+  background-color: var(--section-bg);
+  padding: 10px 0;
+}
+
+.ad-banner {
+  background-color: #fdfdfd;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ad-sidebar img,
+#ad-slot img,
+#adContainer img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#adContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+#adContainer a {
+  display: block;
+  text-align: center;
+}
+
+/* Hover-effekt på annonser */
+#adContainer img:hover {
+  transform: scale(1.02);
+}
+
+/* Sticky annonse på høyre side (desktop) */
+.sticky-ad {
+  position: fixed;
+  top: 150px;
+  right: 30px;
+  width: 160px;
+  z-index: 1000;
+  background-color: transparent;
+  transition: top 0.3s ease, opacity 0.3s ease;
+}
+
+.sticky-ad img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+/* Sticky annonse vises kun på desktop */
+@media (max-width: 1200px) {
+  .sticky-ad {
+    display: none;
+  }
+}
+
+/* ========================================= */
+/*

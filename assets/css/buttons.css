@@ -1,0 +1,63 @@
+/* ========================================= */
+/* 📂 KNAPPER */
+/* ========================================= */
+
+/* Generelle knapper */
+.btn {
+  background-color: var(--btn-primary);
+  color: var(--card-bg);
+  border: none;
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+  transform: translateY(-2px);
+}
+
+/* Primær knapper (ekstra definisjon hvis brukt separat) */
+.btn-primary {
+  background-color: var(--btn-primary);
+  border-color: var(--btn-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-hover);
+  border-color: var(--btn-hover);
+}
+
+/* Filterknapper */
+.filter-buttons {
+  margin-bottom: 30px;
+}
+
+.filter-buttons .btn {
+  border-radius: 30px;
+  padding: 8px 22px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.filter-buttons .btn.active {
+  background-color: var(--btn-hover);
+  color: var(--card-bg);
+  border: none;
+}
+
+/* Toggle "Vis alle butikker" knapp */
+#toggleStoresBtn {
+  font-size: 0.9rem;
+  padding: 0.4rem 1.4rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#toggleStoresBtn:hover {
+  transform: translateY(-2px);
+  background-color: #0d6efd;
+  color: var(--card-bg);
+}

@@ -1,0 +1,304 @@
+/* ========================================= */
+/* 📂 KORT (Butikkort, anbefalte kort, kategori-ikoner) */
+/* ========================================= */
+
+/* Butikkort generelt (kan brukes til andre kort senere) */
+/* Butikkort - standard kortdesign */
+.card {
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 12px;
+  background-color: var(--card-bg, #ffffff);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Kortbilde */
+.card-img-top {
+  max-height: 120px;
+  object-fit: contain;
+}
+
+/* Korttekst */
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Hovereffekt på hele kortet */
+.card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: none;
+}
+
+/* Kategori-kort (Brukt til kategorier OG anbefalte butikker) */
+.category-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+  width: auto;
+  max-width: 100%;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.category-card h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.category-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Kategori-ikon-lenke */
+.category-icon-link {
+  display: block;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: var(--card-bg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.category-icon-link:hover {
+  transform: scale(1.05);
+}
+
+/* Badge for populære kategorier */
+.badge-popular {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ffc107;
+  color: #333;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+}
+
+/* Underkategori-kort */
+.underkategori-kort {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.underkategori-kort:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* Seksjon for underkategorier */
+.kategori-seksjon {
+  margin-bottom: 3rem;
+}
+
+/* Grid-layout på kort (hvis du bruker grid-container/grid-item) */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: var(--card-bg);
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* anbefalte butikker */
+#anbefalte-butikker .store-showcase {
+  background-color: var(--card-bg, #ffffff);
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#anbefalte-butikker .store-showcase:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+#anbefalte-butikker .store-showcase img {
+  width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+#vis-flere-butikker {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+}
+#butikk-liste {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.alle-butikker-kort {
+  background-color: var(--card-bg, #fff);
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.alle-butikker-kort:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.alle-butikker-logo {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+}
+
+.kort-innhold h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color, #333);
+}
+
+.kort-innhold p {
+  font-size: 0.85rem;
+  color: var(--text-muted, #777);
+}
+/* Butikkort */
+.butikKort {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.butikKort img {
+  max-height: 80px;
+  object-fit: contain;
+  margin: 0 auto 15px;
+}
+
+.butikKort h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.butikKort p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.butikKort:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+/* Butikkort for Alle Butikker siden */
+.butikKort,
+.butikkort {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.butikKort img,
+.butikkort img {
+  max-width: 120px;
+  max-height: 80px;
+  margin: 0 auto 15px;
+  object-fit: contain;
+}
+
+.butikKort h3,
+.butikkort h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.butikKort p,
+.butikkort p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.butikKort:hover,
+.butikkort:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
