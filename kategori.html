@@ -37,13 +37,28 @@
   </header>
 
 
-  <!-- Innhold -->
-  <section class="py-5 bg-section text-center">
+  <!-- Kategori Hero Section -->
+  <section class="py-5 bg-light text-center">
     <div class="container">
-      <h1 id="kategori-tittel" class="mb-4">Laster kategori...</h1>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-md-8">
+          <img id="kategori-ikon" src="assets/images/ikoner/default.png" alt="Kategori ikon" class="img-fluid mb-4"
+            style="height: 120px; object-fit: contain;">
+          <h1 id="kategori-tittel" class="mb-3">Laster kategori...</h1>
+          <p id="kategori-beskrivelse" class="lead text-muted">Vi henter relevante butikker for deg innen denne
+            kategorien.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Butikk-kortene -->
+  <section class="py-5 bg-section">
+    <div class="container">
       <div id="kategori-container" class="row g-4 justify-content-center"></div>
     </div>
   </section>
+
   
   <!-- Footer -->
   <footer class="bg-footer text-white mt-5">
