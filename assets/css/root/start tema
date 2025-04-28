@@ -1,0 +1,35 @@
+:root {
+  --bg-color: #f5f7fa;
+  --section-bg: #ffffff;
+  --section-alt-bg: #e8edf3;
+  --card-bg: #ffffff;
+  --card-hover: #f1f5f9;
+
+  --text-color: #1f2937;
+  --text-muted: #6b7280;
+  --heading-color: #111827;
+
+  --btn-primary: #2563eb;
+  --btn-hover: #1d4ed8;
+  --link-color: #2563eb;
+
+  --footer-bg: #1e293b;
+  --footer-text: #f1f5f9;
+  --footer-heading: #ffffff;
+  --footer-muted: #94a3b8;
+  --footer-border: #334155;
+
+  --section-light: #f9f5f0;
+  --section-muted: #f3ece7;
+
+  --border-color: #d1d5db; /* Grensefarge for kort, skiller, dividers */
+  --success-color: #10b981; /* Grønn for suksess/merker */
+  --warning-color: #f59e0b; /* Gul for varsler */
+  --danger-color: #ef4444; /* Rød for feil */
+
+  --hero-bg: #fef9f5;
+  --popular-categories-bg: #f8e8d9;
+  --ad-banner-bg: #fff1cc;
+  --section-alt-bg: #f2f9f1;
+  --news-section-bg: #fff5cc;
+}
