@@ -27,6 +27,8 @@
 .btn-primary:hover {
   background-color: var(--btn-hover);
   border-color: var(--btn-hover);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+  transform: translateY(-2px);
 }
 
 /* Filterknapper */
