@@ -22,7 +22,8 @@ function visButikker(butikker) {
 
     // Selve kortet
     const card = document.createElement("div");
-    card.className = "card text-center shadow-sm w-100"; // ✅ fyller hele kolonnen, liten skygge
+    card.className = "store-card text-center w-100";
+
 
     card.innerHTML = `
       <a href="${butikk.url}" target="_blank" rel="noopener" class="text-decoration-none text-dark">
