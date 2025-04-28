@@ -58,6 +58,6 @@
 
 #toggleStoresBtn:hover {
   transform: translateY(-2px);
-  background-color: #0d6efd;
+  background-color: var(--btn-hover);
   color: var(--card-bg);
 }

@@ -41,7 +41,7 @@
   border-radius: 8px;
   padding: 1rem;
   margin-top: 1rem;
-  background-color: #ffffff;
+  background-color: var(--card-bg);
 }
 
 .comment-input {
@@ -88,7 +88,7 @@
 }
 
 .bg-white {
-  background-color: #ffffff;
+  background-color: var(--card-bg);
 }
 
 .shadow-sm {

@@ -67,11 +67,11 @@ header.bg-header {
 }
 
 .bg-light-section {
-  background-color: #f4f6f9;
+  background-color: var(--section-light);
 }
 
 .bg-muted {
-  background-color: #e9eef5;
+  background-color: var(--section-muted);
 }
 .bg-hero {
   background: var(--hero-bg);
@@ -84,7 +84,7 @@ header.bg-header {
   background-color: var(--section-alt-bg);
 }
 .section-white {
-  background-color: #ffffff;
+  background-color: var(--section-bg);
 }
 
 .section-gradient {

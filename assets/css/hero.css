@@ -8,8 +8,8 @@
 }
 
 .hero .btn-primary {
-  background-color: #007bff;
-  border: none;
+   background-color: var(--btn-primary); /* Tidligere #007bff */
+  border-color: var(--btn-primary);
   padding: 12px 30px;
   font-size: 1.1rem;
   border-radius: 8px;
@@ -17,7 +17,8 @@
 }
 
 .hero .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: var(--btn-hover); /* Tidligere #0056b3 */
+  border-color: var(--btn-hover);
   transform: translateY(-3px);
 }
 

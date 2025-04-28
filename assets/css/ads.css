@@ -9,7 +9,7 @@
 }
 
 .ad-banner {
-  background-color: #fdfdfd;
+  background-color: var(--ad-banner-bg);
   border: 1px solid #eee;
   border-radius: 8px;
   padding: 10px;

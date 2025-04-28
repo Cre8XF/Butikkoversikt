@@ -1,0 +1,42 @@
+:root {
+  /* Grunnfarger */
+  --bg-color: #0f172a; /* Hovedbakgrunn */
+  --section-bg: #1e293b; /* Seksjoner */
+  --section-alt-bg: #334155; /* Alternativ seksjon */
+  --card-bg: #1e293b; /* Kortbakgrunn */
+  --card-hover: #334155; /* Hover på kort */
+
+  /* Tekst */
+  --text-color: #e2e8f0; /* Lys tekst */
+  --text-muted: #94a3b8; /* Dempet tekst */
+  --heading-color: #f1f5f9; /* Overskrifter */
+
+  /* Knapp og lenker */
+  --btn-primary: #3b82f6; /* Primærknapp: lys blå */
+  --btn-hover: #2563eb; /* Primærknapp hover: mørkere blå */
+  --link-color: #60a5fa; /* Lenker: lysere blå */
+
+  /* Footer */
+  --footer-bg: #0f172a; /* Footer mørk bakgrunn */
+  --footer-text: #94a3b8; /* Footer tekst */
+  --footer-heading: #e2e8f0; /* Footer overskrift */
+  --footer-muted: #64748b; /* Footer dempet tekst */
+  --footer-border: #334155; /* Footer grense */
+
+  /* Seksjonsbakgrunner spesifikt */
+  --section-light: #1e293b; /* Light for dark theme = mellomgrå-blå */
+  --section-muted: #334155; /* Muted mellomseksjon */
+
+  /* Linjer, alerts */
+  --border-color: #475569; /* Svært subtil grensefarge */
+  --success-color: #10b981; /* Grønn: suksess */
+  --warning-color: #f59e0b; /* Gul: advarsel */
+  --danger-color: #ef4444; /* Rød: feil */
+
+  /* Egendefinerte seksjoner */
+  --hero-bg: #1e293b;
+  --popular-categories-bg: #273449;
+  --ad-banner-bg: #334155;
+  --section-alt-bg: #334155;
+  --news-section-bg: #273449;
+}
