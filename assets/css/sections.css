@@ -173,18 +173,19 @@ section {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
-.hero-scandinavian {
-  background-image: url("assets/images/hero-scandinavian.png");
+.hero-abstract {
+  background-image: url("assets/images/hero-abstract.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px 0;
   position: relative;
-  color: #1f2937; /* mørk blågrå tekst */
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
-.hero-scandinavian::after {
+.hero-abstract::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.5);
 }
