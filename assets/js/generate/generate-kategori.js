@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(response => response.json())
     .then(data => {
       // Filtrer butikker som matcher valgt kategori
-      const filtrerteButikker = data.filter(butikk => butikk.category === valgtKategori);
+      const filtrerteButikker = data.filter(butikk => butikk.category.toLowerCase() === valgtKategori.toLowerCase());
+
 
       if (filtrerteButikker.length === 0) {
         kategoriContainer.innerHTML = '<p>Ingen butikker funnet for denne kategorien.</p>';
