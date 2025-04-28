@@ -173,19 +173,18 @@ section {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
-.hero-shopping {
-  background-image: url("assets/images/hero/hero-shopping.png"); /* husk å lagre bildet */
+.hero-scandinavian {
+  background-image: url("assets/images/hero-scandinavian.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px 0;
   position: relative;
-  color: white;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  color: #1f2937; /* mørk blågrå tekst */
 }
-.hero-shopping::after {
+.hero-scandinavian::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.6);
 }
