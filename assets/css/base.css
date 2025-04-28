@@ -22,19 +22,19 @@
   --footer-muted: #94a3b8;
   --footer-border: #334155;
 
-  --section-light: #afbccf; /* Ekstra bakgrunn hvis du bruker .bg-light-section */
-  --section-muted: #e9eef5; /* Ekstra hvis du bruker .bg-muted */
+  --section-light: #f9f5f0;
+  --section-muted: #f3ece7;
 
   --border-color: #d1d5db; /* Grensefarge for kort, skiller, dividers */
   --success-color: #10b981; /* Grønn for suksess/merker */
   --warning-color: #f59e0b; /* Gul for varsler */
   --danger-color: #ef4444; /* Rød for feil */
 
-  --hero-bg: #eef3f9;
-  --popular-categories-bg: #dde6f2;
-  --ad-banner-bg: #fff4d6;
-  --section-alt-bg: #e6f7f4;
-  --news-section-bg: #fff0b3;
+   --hero-bg: #fef9f5;
+  --popular-categories-bg: #f8e8d9;
+  --ad-banner-bg: #fff1cc;
+  --section-alt-bg: #f2f9f1;
+  --news-section-bg: #fff5cc;
 }
 
 body {
