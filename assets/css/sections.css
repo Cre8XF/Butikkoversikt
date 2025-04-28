@@ -157,7 +157,7 @@
 /* Legg til en svak skillelinje */
 section {
   border-bottom: 1px solid var(--border-color);
-
+}
 /* 📂 Kort Hover-effekter */
 
 .category-card:hover,
