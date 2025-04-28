@@ -129,28 +129,34 @@
   color: var(--text-muted);
   font-weight: 400;
 }
+
 /* 📂 Seksjonsbakgrunner */
 
-/* Hero - Beholder hvit bakgrunn */
+/* Hero - Beholder hvit (fra --section-bg) */
 
 /* Populære kategorier */
 .popular-categories {
-  background-color: #f8f9fb; /* Svak blågrå for å bryte opp */
+  background-color: var(--section-light); /* Ekstra lys blågrå seksjon */
 }
 
 /* Annonsebanner */
 .ad-banner {
-  background-color: #eef3f9; /* Ekstra lys blå */
+  background-color: var(--section-muted); /* Lys blå variant */
 }
 
 /* Anbefalte butikker */
 .section-alt {
-  background-color: #f1f5f9; /* Lys gråblå variant */
+  background-color: var(
+    --section-light
+  ); /* Samme som populære kategorier for nå, evt. justere senere */
 }
 
 /* Nyheter og kampanjer */
 .nyheter-kampanjer {
-  background-color: #fffbea; /* Varm lys gul */
+  background-color: var(
+    --warning-color
+  ); /* Bruker gul-ish farge for varm følelse */
+  background-color: #fffbea; /* alternativ: manuell override for varmere gul */
 }
 
 /* 📂 Kort Hover-effekter */
@@ -158,13 +164,7 @@
 .category-card:hover,
 .butikKort:hover,
 .butikkort:hover,
-.store-showcase:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-/* Gjelder også vanlige kort */
+.store-showcase:hover,
 .card:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
