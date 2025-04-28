@@ -1,70 +1,57 @@
 📂 BASIS VARIABLER & BASIS STIL */
 /* ========================================= */
-/* ====== Light Theme ====== */
 :root {
-  /* Bakgrunnsfarger */
-  --bg-color: #caddf0; /* Svært lys grå */
-  --section-bg: #929aa3; /* Lys blå-grå for seksjoner */
-  --section-alt-bg: #e3eaf3; /* Litt mørkere for variasjon */
-  --card-bg: #e7b2b2; /* Helt hvite kort */
-  --card-hover: #f1f5f9; /* Svak lys hover på kort */
+  /* (Kun basis-ting hvis nødvendig, eller tomt) */
+}
 
-  /* Tekst */
-  --text-color: #1f2937; /* Mørk marine */
-  --text-muted: #6b7280; /* Dempet gråblå */
-  --heading-color: #111827; /* Ekstra mørk for headings */
-
-  /* Knapper og lenker */
-  --btn-primary: #2563eb; /* Sterk blå */
-  --btn-hover: #1d4ed8; /* Mørkere blå på hover */
-  --link-color: #2563eb; /* Lenker i blå */
-
-  /* Footer */
-  --footer-bg: #1e293b; /* Mørk footer */
+/* Light Theme */
+[data-theme="light"] {
+  --bg-color: #caddf0;
+  --section-bg: #929aa3;
+  --section-alt-bg: #e3eaf3;
+  --card-bg: #e7b2b2;
+  --card-hover: #f1f5f9;
+  --text-color: #1f2937;
+  --text-muted: #6b7280;
+  --heading-color: #111827;
+  --btn-primary: #2563eb;
+  --btn-hover: #1d4ed8;
+  --link-color: #2563eb;
+  --footer-bg: #1e293b;
   --footer-text: #e2e8f0;
   --footer-heading: #f1f5f9;
   --footer-muted: #94a3b8;
   --footer-border: #334155;
-
-  /* Diverse */
   --border-color: #d1d5db;
   --success-color: #10b981;
   --warning-color: #f59e0b;
   --danger-color: #ef4444;
 }
-/* ========================================= */
 
+/* Dark Theme */
 [data-theme="dark"] {
-  /* Bakgrunnsfarger */
-  --bg-color: #0f172a; /* Svartblå hovedbakgrunn */
-  --section-bg: #1e293b; /* Mørk blågrå seksjoner */
-  --section-alt-bg: #334155; /* Lysere mellomseksjoner */
-  --card-bg: #1e293b; /* Kort mørk bakgrunn */
-  --card-hover: #3b4c64; /* Hover-effekt på kort */
-
-  /* Tekst */
-  --text-color: #e2e8f0; /* Lys tekst */
-  --text-muted: #94a3b8; /* Dempet lys blå */
-  --heading-color: #f1f5f9; /* Hvit på headings */
-
-  /* Knapper og lenker */
-  --btn-primary: #3b82f6; /* Lys blå */
-  --btn-hover: #2563eb; /* Dypere blå på hover */
-  --link-color: #60a5fa; /* Link-lysblå */
-
-  /* Footer */
+  --bg-color: #0f172a;
+  --section-bg: #1e293b;
+  --section-alt-bg: #334155;
+  --card-bg: #1e293b;
+  --card-hover: #3b4c64;
+  --text-color: #e2e8f0;
+  --text-muted: #94a3b8;
+  --heading-color: #f1f5f9;
+  --btn-primary: #3b82f6;
+  --btn-hover: #2563eb;
+  --link-color: #60a5fa;
   --footer-bg: #0f172a;
   --footer-text: #94a3b8;
   --footer-heading: #e2e8f0;
   --footer-muted: #64748b;
   --footer-border: #334155;
-
-  /* Diverse */
   --border-color: #475569;
   --success-color: #10b981;
   --warning-color: #f59e0b;
   --danger-color: #ef4444;
 }
+/* ========================================= */
 
 body {
   background-color: var(--bg-color);
