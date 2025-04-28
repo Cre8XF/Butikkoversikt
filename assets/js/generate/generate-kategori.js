@@ -1,18 +1,72 @@
-
 document.addEventListener('DOMContentLoaded', function() {
   const params = new URLSearchParams(window.location.search);
   const valgtKategori = params.get('kategori');
 
   const kategoriTittel = document.getElementById('kategori-tittel');
   const kategoriContainer = document.getElementById('kategori-container');
+  const kategoriIkon = document.getElementById('kategori-ikon');
+  const kategoriBeskrivelse = document.getElementById('kategori-beskrivelse');
 
   if (!valgtKategori || !kategoriTittel || !kategoriContainer) {
     console.error('Mangler kategori, tittel eller container');
     return;
   }
 
+  // Sett kategori-tittel
   kategoriTittel.textContent = valgtKategori;
 
+  // Beskrivelser og ikoner
+  const kategoriData = {
+    "Apotek": {
+      ikon: "assets/images/ikoner/apotek.png",
+      beskrivelse: "Utforsk apotekbutikker med alt innen helse og egenpleie."
+    },
+    "Barn og baby": {
+      ikon: "assets/images/ikoner/barn og baby.png",
+      beskrivelse: "Alt du trenger til barn og baby – klær, leker og utstyr."
+    },
+    "Bøker og underholdning": {
+      ikon: "assets/images/ikoner/bøker og underholdning.png",
+      beskrivelse: "Oppdag bøker, filmer, spill og underholdning for alle aldre."
+    },
+    "Elektronikk og data": {
+      ikon: "assets/images/ikoner/elektronikk og data.png",
+      beskrivelse: "De nyeste produktene innen teknologi og elektronikk."
+    },
+    "Fritid og gaver": {
+      ikon: "assets/images/ikoner/fritid og gaver.png",
+      beskrivelse: "Perfekte gaver og produkter for hobby og fritid."
+    },
+    "Gaming og tilbehør": {
+      ikon: "assets/images/ikoner/gaming og tilbehør.png",
+      beskrivelse: "Alt du trenger til gamingopplevelsen din."
+    },
+    "Helse og egenpleie": {
+      ikon: "assets/images/ikoner/helse og egenpleie.png",
+      beskrivelse: "Produkter for personlig helse og velvære."
+    },
+    "Klær og mote": {
+      ikon: "assets/images/ikoner/klær og mote.png",
+      beskrivelse: "Trendy klær, sko og tilbehør for enhver stil."
+    },
+    "Møbler og interiør": {
+      ikon: "assets/images/ikoner/møbler og interiør.png",
+      beskrivelse: "Innred hjemmet ditt med stil og komfort."
+    },
+    "Sport og fritid": {
+      ikon: "assets/images/ikoner/sport og fritid.png",
+      beskrivelse: "Treningsutstyr, sportsartikler og friluftsutstyr."
+    }
+  };
+
+  // Hvis data finnes for valgt kategori, sett ikon og beskrivelse
+  if (kategoriData[valgtKategori]) {
+    kategoriIkon.src = kategoriData[valgtKategori].ikon;
+    kategoriIkon.alt = valgtKategori + " ikon";
+    kategoriBeskrivelse.textContent = kategoriData[valgtKategori].beskrivelse;
+  }
+
+  // Hent butikker
   fetch('assets/data/butikker.json')
     .then(response => response.json())
     .then(butikker => {
