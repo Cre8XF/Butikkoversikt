@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
   // Hent kategori fra URL
   const params = new URLSearchParams(window.location.search);
@@ -20,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(response => response.json())
     .then(data => {
       // Filtrer butikker som matcher valgt kategori
-      const filtrerteButikker = data.filter(butikk => butikk.kategori === valgtKategori);
+      const filtrerteButikker = data.filter(butikk => butikk.category === valgtKategori);
 
       if (filtrerteButikker.length === 0) {
         kategoriContainer.innerHTML = '<p>Ingen butikker funnet for denne kategorien.</p>';
@@ -34,10 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         card.innerHTML = `
           <div class="store-card text-center w-100">
-            <img src="\${butikk.bilde}" alt="\${butikk.navn}" class="img-fluid mb-3" style="max-height: 120px; object-fit: contain;">
-            <h6 class="mb-1">\${butikk.navn}</h6>
-            <p class="text-muted small">\${butikk.beskrivelse || ''}</p>
-            <a href="\${butikk.lenke}" class="btn btn-primary btn-sm mt-2" target="_blank" rel="noopener noreferrer">Besøk butikk</a>
+            <a href="${butikk.url}" target="_blank" rel="noopener" class="text-decoration-none text-dark">
+              <img src="${butikk.image}" alt="${butikk.name}" class="card-img-top p-3" style="height: 120px; object-fit: contain;" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-2">${butikk.name}</h5>
+                <p class="card-text small text-muted">${butikk.description || ''}</p>
+              </div>
+            </a>
           </div>
         `;
         kategoriContainer.appendChild(card);
