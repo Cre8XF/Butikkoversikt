@@ -2,8 +2,7 @@
 /* 📂 KORT (Butikkort, anbefalte kort, kategori-ikoner) */
 /* ========================================= */
 
-/* Butikkort generelt (kan brukes til andre kort senere) */
-/* Butikkort - standard kortdesign */
+/* Generell kort-styling */
 .card {
   border: 1px solid var(--border-color, #e0e0e0);
   border-radius: 12px;
@@ -18,33 +17,35 @@
 }
 
 /* Kortbilde */
-.card-img-top {
+.card-img-top,
+#butikk-container .card img {
   max-height: 120px;
   object-fit: contain;
 }
 
 /* Korttekst */
-.card-title {
+.card-title,
+#butikk-container .card-title {
   font-size: 1.1rem;
   font-weight: 600;
 }
 
-.card-text {
+.card-text,
+#butikk-container .card-text {
   font-size: 0.9rem;
-  color: #6c757d;
+  color: var(--text-muted, #777);
 }
 
-/* Hovereffekt på hele kortet */
+/* Hovereffekt på kortlenker */
 .card a {
   color: inherit;
   text-decoration: none;
 }
-
 .card a:hover {
   text-decoration: none;
 }
 
-/* Kategori-kort (Brukt til kategorier OG anbefalte butikker) */
+/* Kategori-kort */
 .category-card {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -135,8 +136,9 @@
   margin-bottom: 3rem;
 }
 
-/* Grid-layout på kort (hvis du bruker grid-container/grid-item) */
-.grid-container {
+/* Grid-layout på kort */
+.grid-container,
+#butikk-liste {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
@@ -150,10 +152,11 @@
   text-align: center;
 }
 
-/* anbefalte butikker */
-#anbefalte-butikker .store-showcase {
-  background-color: var(--card-bg, #ffffff);
-  border: 1px solid var(--border-color, #e0e0e0);
+/* Store showcase kort */
+#anbefalte-butikker .store-showcase,
+.store-showcase {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 20px;
   text-align: center;
@@ -164,7 +167,8 @@
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-#anbefalte-butikker .store-showcase:hover {
+#anbefalte-butikker .store-showcase:hover,
+.store-showcase:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
@@ -176,20 +180,10 @@
   margin-bottom: 15px;
 }
 
-#vis-flere-butikker {
-  padding: 12px 30px;
-  font-size: 1.1rem;
-  border-radius: 8px;
-}
-#butikk-liste {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-}
-
+/* Alle-butikker kort */
 .alle-butikker-kort {
-  background-color: var(--card-bg, #fff);
-  border: 1px solid var(--border-color, #e0e0e0);
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   overflow: hidden;
   text-align: center;
@@ -212,6 +206,7 @@
   margin: 0 auto 10px;
 }
 
+/* Innhold inni kort */
 .kort-innhold h6 {
   font-size: 1rem;
   font-weight: 600;
@@ -222,44 +217,8 @@
   font-size: 0.85rem;
   color: var(--text-muted, #777);
 }
-/* Butikkort */
-.butikKort {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
-.butikKort img {
-  max-height: 80px;
-  object-fit: contain;
-  margin: 0 auto 15px;
-}
-
-.butikKort h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: var(--text-color);
-}
-
-.butikKort p {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  margin-bottom: 0;
-}
-
-.butikKort:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-}
-/* Butikkort for Alle Butikker siden */
+/* Spesialkort: butikKort + butikkort */
 .butikKort,
 .butikkort {
   background-color: var(--card-bg);
@@ -301,4 +260,12 @@
 .butikkort:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* Butikk-container spesialkort */
+#butikk-container .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
