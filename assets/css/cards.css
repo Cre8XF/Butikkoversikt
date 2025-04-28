@@ -49,22 +49,25 @@
 .category-card {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 16px;
+  padding: 24px 20px;
   height: 100%;
-  min-height: 340px;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  position: relative;
 }
 
 .category-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  background-color: var(--section-light);
 }
 
 .category-card img {
@@ -78,18 +81,36 @@
 
 .category-card:hover img {
   transform: scale(1.1);
-  box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.4); /* blå glød */
+}
+
+.category-card hr {
+  width: 60%;
+  border-top: 1px solid var(--border-color);
+  margin: 1rem 0;
 }
 
 .category-card h6 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
 }
 
 .category-card p {
   font-size: 0.9rem;
   color: var(--text-muted);
+}
+
+.category-card .badge {
+  font-size: 0.7rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--btn-primary);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
 }
 
 /* Kategori-ikon-lenke */
