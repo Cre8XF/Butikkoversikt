@@ -73,6 +73,12 @@
   height: 100px;
   object-fit: contain;
   margin-bottom: 1rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
 }
 
 .category-card h6 {
