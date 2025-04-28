@@ -1,0 +1,46 @@
+[
+  {
+    "title": "20% på egenpleie hos Apotek1",
+    "image": "assets/images/kampanjer/apotek1-tilbud.jpg",
+    "link": "https://www.apotek1.no",
+    "description": "Gyldig til 30. april 2025"
+  },
+  {
+    "title": "Spar opptil 40% på gaming hos Elkjøp",
+    "image": "assets/images/kampanjer/elkjop-kampanje.jpg",
+    "link": "https://www.elkjop.no",
+    "description": "Gaming-utstyr på tilbud nå!"
+  },
+  {
+    "title": "Vårsalg hos Boozt – opptil 50%",
+    "image": "assets/images/kampanjer/boozt-tilbud.jpg",
+    "link": "https://www.boozt.com",
+    "description": "Oppdater vårgarderoben med gode rabatter"
+  },
+
+  {
+    "title": "Kampanje på klær hos Zalando",
+    "image": "assets/images/kampanjer/zalando-kampanje.jpg",
+    "link": "https://www.zalando.no",
+    "description": "Rabatter på utvalgte merker"
+  },
+  {
+    "title": "Spar 25% på sminke hos Kicks",
+    "image": "assets/images/kampanjer/kicks-tilbud.jpg",
+    "link": "https://www.kicks.no",
+    "description": "Gyldig til 1. juni 2025"
+  },
+
+  {
+    "title": "Spar 30% på utvalgte produkter hos H&M",
+    "image": "assets/images/kampanjer/hm-tilbud.jpg",
+    "link": "https://www.hm.com",
+    "description": "Gyldig til 15. mai 2025"
+  },
+  {
+    "title": "Kampanje på elektronikk hos Power",
+    "image": "assets/images/kampanjer/power-kampanje.jpg",
+    "link": "https://www.power.no",
+    "description": "Rabatter på TV-er, datamaskiner og mer"
+  }
+]
