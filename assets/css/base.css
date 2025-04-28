@@ -3,10 +3,10 @@
 /* ====== Light Theme ====== */
 :root {
   /* Bakgrunnsfarger */
-  --bg-color: #f9fafb; /* Svært lys grå */
-  --section-bg: #eef2f7; /* Lys blå-grå for seksjoner */
+  --bg-color: #caddf0; /* Svært lys grå */
+  --section-bg: #929aa3; /* Lys blå-grå for seksjoner */
   --section-alt-bg: #e3eaf3; /* Litt mørkere for variasjon */
-  --card-bg: #ffffff; /* Helt hvite kort */
+  --card-bg: #e7b2b2; /* Helt hvite kort */
   --card-hover: #f1f5f9; /* Svak lys hover på kort */
 
   /* Tekst */
