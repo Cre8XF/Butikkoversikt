@@ -1,138 +1,50 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const valgtKategori = urlParams.get("kategori");
 
-  const butikkContainer = document.getElementById("butikk-container");
-  const underkatWrapper = document.getElementById("underkategorier-wrapper");
-  const underkategoriFilter = document.getElementById("underkategori-lenker");
-  const kategoriTittel = document.getElementById("kategori-tittel");
+document.addEventListener('DOMContentLoaded', function() {
+  // Hent kategori fra URL
+  const params = new URLSearchParams(window.location.search);
+  const valgtKategori = params.get('kategori');
 
-  const underkategorierMap = {
-    "Klær og mote": ["Dameklær", "Herreklær", "Tilbehør og sko"],
-    "Elektronikk og data": [
-      "PC og tilbehør",
-      "Mobil og nettbrett",
-      "Lyd og bilde",
-      "Smartprodukter og IoT",
-      "Komponenter og gamingutstyr"
-    ],
-    "Helse og egenpleie": [
-      "Apotek og helseprodukter",
-      "Hud- og kroppspleie",
-      "Hår- og skjønnhetspleie",
-      "Sminke og kosmetikk",
-      "Trening og velvære"
-    ],
-    "Barn og baby": [
-      "Barneklær",
-      "Babyutstyr",
-      "Leker og spill",
-      "Barnerom og møbler",
-      "Bleier og hygiene",
-      "Mat og amming"
-    ],
-    "Sport og fritid": [
-      "Sportsklær og sko",
-      "Trening og treningsutstyr",
-      "Friluft og tur",
-      "Sykkel og sykkelutstyr",
-      "Fiske og jakt"
-    ],
-    "Møbler og interiør": [
-      "Møbler",
-      "Belysning",
-      "Tekstiler og tepper",
-      "Dekor og interiør"
-    ],
-    "Gaming og tilbehør": ["Gamingutstyr og komponenter"],
-    "Fritid og gaver": ["Gadgets og gaver"]
-  };
+  const kategoriTittel = document.getElementById('kategori-tittel');
+  const kategoriContainer = document.getElementById('kategori-container');
 
-  if (!valgtKategori) {
-    kategoriTittel.textContent = "Kategori ikke valgt.";
+  if (!valgtKategori || !kategoriTittel || !kategoriContainer) {
+    console.error('Mangler kategori, tittel eller container');
     return;
   }
 
+  // Sett tittel
   kategoriTittel.textContent = valgtKategori;
 
-  fetch("assets/data/butikker.json")
-    .then((response) => response.json())
-    .then((butikker) => {
-      const butikkerIKategori = butikker.filter(
-        (butikk) => butikk.category === valgtKategori
-      );
+  // Hent butikker
+  fetch('assets/data/butikker.json')
+    .then(response => response.json())
+    .then(data => {
+      // Filtrer butikker som matcher valgt kategori
+      const filtrerteButikker = data.filter(butikk => butikk.kategori === valgtKategori);
 
-      if (butikkerIKategori.length === 0) {
-        butikkContainer.innerHTML = "<p>Ingen butikker funnet.</p>";
+      if (filtrerteButikker.length === 0) {
+        kategoriContainer.innerHTML = '<p>Ingen butikker funnet for denne kategorien.</p>';
         return;
       }
 
-      const underkategorier = underkategorierMap[valgtKategori];
-      if (underkategorier && underkategorier.length > 0) {
-        underkatWrapper.classList.remove("d-none");
+      // Bygg kort for hver butikk
+      filtrerteButikker.forEach(butikk => {
+        const card = document.createElement('div');
+        card.className = 'col-6 col-md-3 mb-4';
 
-        const visAlleBtn = document.createElement("button");
-        visAlleBtn.textContent = "Vis alle";
-        visAlleBtn.className = "btn btn-outline-primary filter-btn active";
-        visAlleBtn.dataset.underkategori = "alle";
-        underkategoriFilter.appendChild(visAlleBtn);
-
-        underkategorier.forEach((underkat) => {
-          const btn = document.createElement("button");
-          btn.textContent = underkat;
-          btn.className = "btn btn-outline-primary filter-btn";
-          btn.dataset.underkategori = underkat;
-          underkategoriFilter.appendChild(btn);
-        });
-      }
-
-      visButikker(butikkerIKategori);
-
-      underkategoriFilter.addEventListener("click", (e) => {
-        if (e.target.tagName !== "BUTTON") return;
-
-        document.querySelectorAll(".filter-btn").forEach((btn) => {
-          btn.classList.remove("active");
-        });
-        e.target.classList.add("active");
-
-        const valgtUnderkat = e.target.dataset.underkategori;
-
-        const filtrerte = valgtUnderkat === "alle"
-          ? butikkerIKategori
-          : butikkerIKategori.filter((butikk) => {
-              if (Array.isArray(butikk.subcategory)) {
-                return butikk.subcategory.includes(valgtUnderkat);
-              } else {
-                return butikk.subcategory === valgtUnderkat;
-              }
-            });
-
-        visButikker(filtrerte);
+        card.innerHTML = `
+          <div class="store-card text-center w-100">
+            <img src="\${butikk.bilde}" alt="\${butikk.navn}" class="img-fluid mb-3" style="max-height: 120px; object-fit: contain;">
+            <h6 class="mb-1">\${butikk.navn}</h6>
+            <p class="text-muted small">\${butikk.beskrivelse || ''}</p>
+            <a href="\${butikk.lenke}" class="btn btn-primary btn-sm mt-2" target="_blank" rel="noopener noreferrer">Besøk butikk</a>
+          </div>
+        `;
+        kategoriContainer.appendChild(card);
       });
     })
-    .catch((err) => {
-      console.error("Feil ved lasting av butikker:", err);
+    .catch(error => {
+      console.error('Feil ved henting av butikker:', error);
+      kategoriContainer.innerHTML = '<p>Kunne ikke laste butikker.</p>';
     });
-
-  function visButikker(butikker) {
-    butikkContainer.innerHTML = "";
-
-    butikker.forEach((butikk) => {
-      const kort = document.createElement("div");
-      kort.className = "col-md-4";
-
-      kort.innerHTML = `
-        <div class="card h-100 border-0 shadow-sm">
-          <img src="${butikk.image}" class="card-img-top" alt="${butikk.alt || butikk.name}" />
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">${butikk.name}</h5>
-            <p class="card-text">${butikk.description || ""}</p>
-            <a href="${butikk.url}" target="_blank" rel="noopener" class="btn btn-primary mt-auto w-100">Besøk butikk</a>
-          </div>
-        </div>
-      `;
-      butikkContainer.appendChild(kort);
-    });
-  }
 });

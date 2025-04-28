@@ -100,6 +100,10 @@
 .bg-light-section {
   background-color: var(--section-light);
 }
+.bg-footer {
+  background-color: var(--footer-bg); /* Mørk blågrå */
+  color: var(--footer-text); /* Lys tekst i footer */
+}
 
 .bg-muted {
   background-color: var(--section-muted);

@@ -4,16 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Butikkoversikt.no - Din guide til nettbutikker</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="assets/css/master-override.css" rel="stylesheet">
+  <title>Kategori - Butikkoversikt.no</title>
 
-
+  <!-- CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/base-new.css" rel="stylesheet">
+  <link href="assets/css/cards.css" rel="stylesheet">
+  <link href="assets/css/sections.css" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- 🌟 Tema-bytteknapp med lagring i LocalStorage -->
+  <button id="themeToggleBtn" class="btn btn-sm btn-primary"
+    style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">
+    Bytt Tema
+  </button>
+  
   <!-- Header -->
   <header class="site-header sticky-top">
     <div class="container d-flex justify-content-between align-items-center py-3">
@@ -26,46 +33,40 @@
         </ul>
       </nav>
     </div>
-    <!-- 🌟 Tema-bytteknapp med lagring i LocalStorage -->
-    <button id="themeToggleBtn" class="btn btn-sm btn-primary"
-      style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">
-      Bytt Tema
-    </button>
+   
   </header>
 
 
   <!-- Innhold -->
-  <section class="section bg-section text-center">
+  <section class="py-5 bg-section text-center">
     <div class="container">
       <h1 id="kategori-tittel" class="mb-4">Laster kategori...</h1>
       <div id="kategori-container" class="row g-4 justify-content-center"></div>
     </div>
   </section>
-
+  
   <!-- Footer -->
-  <footer class="footer bg-header text-white mt-5">
-    <div class="text-center py-3">
+  <footer class="bg-footer text-white mt-5">
+    <div class="text-center py-4 small">
       © 2025 Butikkoversikt.no
     </div>
   </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- JS -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
   
   <!-- Effekter -->
   <script src="assets/js/effects/fade-in.js"></script>
   <script src="assets/js/effects/menu-toggle.js"></script>
   <script src="assets/js/effects/theme-toggle.js"></script>
   
-  
-  <!-- Generatorer -->
-  <script src="assets/js/generate/generate-index-stores.js"></script>
-  <script src="assets/js/generate/generate-anbefalte.js"></script>
-  <script src="assets/js/generate/generate-alle-butikker.js"></script>
-  
+  <!-- Generator for kategori -->
+  <script src="assets/js/generate-kategori.js"></script>
   
   <!-- Main -->
   <script src="assets/js/main.js"></script>
+  
+  </body>
+  
+  </html>
 
-</body>
-</html>
