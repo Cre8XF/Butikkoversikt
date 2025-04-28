@@ -187,34 +187,7 @@
 <!-- Main -->
 <script src="assets/js/main.js"></script>
 
-<!-- Script for å bytte Light/Dark modus -->
-<script>
-  // Funksjon for å sette tema
-  function setTheme(mode) {
-    if (mode === 'dark') {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      document.documentElement.setAttribute('data-bs-theme', 'dark'); // Bootstrap
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-      document.documentElement.setAttribute('data-bs-theme', 'light'); // Bootstrap
-      localStorage.setItem('theme', 'light');
-    }
-  }
 
-  // Når siden lastes, sjekk localStorage
-  document.addEventListener('DOMContentLoaded', function () {
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    setTheme(savedTheme);
-
-    const themeToggleBtn = document.getElementById('themeToggleBtn');
-    themeToggleBtn.addEventListener('click', function () {
-      const currentTheme = localStorage.getItem('theme') || 'light';
-      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-      setTheme(newTheme);
-    });
-  });
-</script>
 </body>
 
 </html>

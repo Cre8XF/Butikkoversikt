@@ -1,5 +1,5 @@
 
-<script>
+// Theme toggle script for light/dark mode
 document.addEventListener('DOMContentLoaded', function() {
   const btn = document.getElementById('themeToggleBtn');
 
@@ -26,4 +26,4 @@ document.addEventListener('DOMContentLoaded', function() {
     setTheme(next);
   });
 });
-</script>
+
