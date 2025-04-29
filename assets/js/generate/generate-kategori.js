@@ -28,9 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
       kategoriBeskrivelse.textContent = `Oppdag spennende nettbutikker innen ${valgtKategori.toLowerCase()} hos oss.`;
 
       // Sett ikon hvis finnes
-      const ikonNavn = valgtKategori.toLowerCase().replace(/ /g, '-') + '.png';
-      kategoriIkon.src = `assets/images/ikoner/${ikonNavn}`;
+     const ikonNavn = valgtKategori
+      .toLowerCase()
+      .replace(/\s/g, '-') // mellomrom til bindestrek
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, '') // fjern diakritiske tegn
+      .replace(/[^a-z0-9\-]/g, ''); // fjern evt. spesialtegn
+
+      kategoriIkon.src = `assets/images/ikoner/${ikonNavn}.png`;
       kategoriIkon.alt = `${valgtKategori} ikon`;
+
 
       const underkategorier = Array.from(new Set(
         alleIMinKategori.flatMap(b => b.subcategory || [])
