@@ -1,65 +1,54 @@
-// generate-kategorioversikt.js (fixet versjon)
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.getElementById("kategorioversikt-container");
+  const kategoriListe = document.getElementById("kategorioversikt-liste");
 
-document.addEventListener('DOMContentLoaded', () => {
-  const kategoriListe = document.getElementById('kategori-liste');
-  const sokInput = document.getElementById('kategori-sok');
-
-  fetch('assets/data/butikker.json')
+  fetch("assets/data/butikker.json")
     .then(response => response.json())
-    .then(butikker => {
-      const kategorier = new Map();
+    .then(data => {
+      const kategorier = {};
 
-      butikker.forEach(butikk => {
-        const kategori = butikk.category || 'Ukjent';
-
-        if (!kategorier.has(kategori)) {
-          kategorier.set(kategori, {
-            name: kategori,
-            underkategorier: new Set(),
-            image: `assets/images/ikoner/${kategori.toLowerCase()
-              .replace(/\s+/g, '-')
-              .normalize("NFD").replace(/[\u0300-\u036f]/g, '')
-              .replace(/[^a-z0-9\-]/g, '')}.png`
-          });
+      data.forEach(butikk => {
+        // Sørg for at subcategory alltid er et array
+        let subcats = butikk.subcategory;
+        if (!Array.isArray(subcats)) {
+          subcats = typeof subcats === "string" ? [subcats] : [];
         }
 
-        (butikk.subcategory || []).forEach(underkat => {
-          kategorier.get(kategori).underkategorier.add(underkat);
-        });
+        const hovedkategori = butikk.category || "Ukjent";
+
+        if (!kategorier[hovedkategori]) {
+          kategorier[hovedkategori] = {
+            navn: hovedkategori,
+            butikker: [],
+            underkategorier: new Set()
+          };
+        }
+
+        kategorier[hovedkategori].butikker.push(butikk);
+        subcats.forEach(sc => kategorier[hovedkategori].underkategorier.add(sc));
       });
 
-      const kategorierArray = Array.from(kategorier.values());
-      renderKategorier(kategorierArray);
+      // Bygg HTML
+      Object.values(kategorier).forEach(kat => {
+        const col = document.createElement("div");
+        col.className = "col-6 col-md-4 col-lg-3";
 
-      sokInput.addEventListener('input', () => {
-        const term = sokInput.value.toLowerCase();
-        const filtrerte = kategorierArray.filter(k => k.name.toLowerCase().includes(term));
-        renderKategorier(filtrerte);
+        const underkatTekst = Array.from(kat.underkategorier).join(", ") || "Ingen underkategorier";
+
+        col.innerHTML = `
+          <a href="kategori.html?kategori=${encodeURIComponent(kat.navn)}" class="text-decoration-none">
+            <div class="category-card text-center p-4 h-100">
+              <img src="assets/images/ikoner/${kat.navn.toLowerCase().replace(/ /g, "-")}.png" alt="${kat.navn}" class="mb-3" style="height: 80px; object-fit: contain;">
+              <h5 class="fw-semibold">${kat.navn}</h5>
+              <p class="small text-muted">${underkatTekst}</p>
+            </div>
+          </a>
+        `;
+        kategoriListe.appendChild(col);
       });
     })
     .catch(error => {
-      console.error('Feil ved lasting av butikker.json:', error);
-      kategoriListe.innerHTML = '<p>Kunne ikke laste kategorier.</p>';
+      console.error("Feil ved lasting av butikker.json:", error);
+      container.innerHTML = "<p class='text-danger'>Kunne ikke laste kategorioversikt.</p>";
     });
-
-  function renderKategorier(kategorier) {
-    kategoriListe.innerHTML = '';
-
-    kategorier.forEach(kat => {
-      const col = document.createElement('div');
-      col.className = 'col-6 col-md-4 col-lg-3';
-
-      col.innerHTML = `
-        <div class="card h-100 text-center p-3">
-          <img src="${kat.image}" alt="${kat.name}" class="mb-3" style="height: 80px; object-fit: contain;">
-          <h5 class="mb-2">${kat.name}</h5>
-          <div class="small text-muted mb-3">
-            ${kat.underkategorier.size > 0 ? Array.from(kat.underkategorier).join(', ') : 'Ingen underkategorier'}
-          </div>
-          <a href="kategori.html?kategori=${encodeURIComponent(kat.name)}" class="btn btn-outline-primary btn-sm">Utforsk</a>
-        </div>
-      `;
-      kategoriListe.appendChild(col);
-    });
-  }
 });
