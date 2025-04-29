@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       kategoriTittel.innerHTML = `
       ${valgtKategori}
       <p class="lead text-muted mt-3">Fant ${filtrerteButikker.length} butikker</p>
-      <a href="kategori.html" class="btn btn-outline-primary mt-3">Tilbake til kategorier</a>
+      <a href="kategori.html" class="btn btn-outline-primary mt-3">Tilbake til kategorier</a>`;
 
       filtrerteButikker.forEach(butikk => {
         const col = document.createElement("div");
