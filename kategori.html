@@ -74,24 +74,15 @@
 <script src="assets/js/main.js"></script>
 
 <!-- Dynamisk valg av generator -->
-<script>
-  const urlParams = new URLSearchParams(window.location.search);
-  const valgtKategori = urlParams.get("kategori");
-  const visOversikt = urlParams.get("oversikt") === "true";
-  const script = document.createElement("script");
+document.addEventListener("DOMContentLoaded", () => {
+const kategorioversikt = document.getElementById("kategorioversikt-seksjon");
+kategorioversikt.classList.remove("d-none");
 
-  if (valgtKategori) {
-    document.getElementById("kategori-seksjon").classList.remove("d-none");
-    script.src = "assets/js/generate/generate-kategori.js";
-  } else if (visOversikt) {
-    document.getElementById("kategorioversikt-seksjon").classList.remove("d-none");
-    script.src = "assets/js/generate/generate-kategorioversikt.js";
-  } else {
-    window.location.href = "/";
-  }
+const script = document.createElement("script");
+script.src = "assets/js/generate/generate-kategorioversikt.js";
+document.body.appendChild(script);
+});
 
-  document.body.appendChild(script);
-</script>
 
 </body>
 
