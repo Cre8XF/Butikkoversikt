@@ -1,6 +1,5 @@
-// generate-kategorioversikt.js
+// generate-kategorioversikt.js (fixet versjon)
 
-// Når siden lastes
 document.addEventListener('DOMContentLoaded', () => {
   const kategoriListe = document.getElementById('kategori-liste');
   const sokInput = document.getElementById('kategori-sok');
@@ -10,18 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(butikker => {
       const kategorier = new Map();
 
-      // Samle kategorier
       butikker.forEach(butikk => {
-        const kategori = butikk.category;
+        const kategori = butikk.category || 'Ukjent';
+
         if (!kategorier.has(kategori)) {
           kategorier.set(kategori, {
             name: kategori,
             underkategorier: new Set(),
-            image: `assets/images/ikoner/${kategori.toLowerCase().replace(/\s/g, '-').replace(/[\u00C0-\u00FF]/g, '')}.png`
+            image: `assets/images/ikoner/${kategori.toLowerCase()
+              .replace(/\s+/g, '-')
+              .normalize("NFD").replace(/[\u0300-\u036f]/g, '')
+              .replace(/[^a-z0-9\-]/g, '')}.png`
           });
         }
 
-        // Legg til underkategorier
         (butikk.subcategory || []).forEach(underkat => {
           kategorier.get(kategori).underkategorier.add(underkat);
         });
@@ -30,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const kategorierArray = Array.from(kategorier.values());
       renderKategorier(kategorierArray);
 
-      // Live søk
       sokInput.addEventListener('input', () => {
         const term = sokInput.value.toLowerCase();
         const filtrerte = kategorierArray.filter(k => k.name.toLowerCase().includes(term));
@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
       kategoriListe.innerHTML = '<p>Kunne ikke laste kategorier.</p>';
     });
 
-  // Funksjon for å vise kategorier
   function renderKategorier(kategorier) {
     kategoriListe.innerHTML = '';
 
