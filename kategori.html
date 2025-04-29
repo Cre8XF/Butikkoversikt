@@ -36,40 +36,28 @@
 </header>
 
 
-<!-- Hovedinnhold -->
 <main>
-  <section id="kategori-seksjon" class="py-5 d-none">
+  <!-- Kategorioversikt -->
+  <section id="kategorioversikt-seksjon" class="py-5 bg-section text-center">
     <div class="container">
-      <div id="kategori-header" class="text-center mb-5">
-        <img id="kategori-ikon" src="" alt="" style="height:80px;">
-        <h1 id="kategori-tittel"></h1>
-        <p id="kategori-beskrivelse" class="lead text-muted"></p>
+      <h1 class="mb-4">Utforsk våre hovedkategorier</h1>
+      <p class="lead text-muted mb-5">Finn spennende nettbutikker sortert etter interesseområde – mote, teknologi,
+        sport, interiør og mer!</p>
+      <div class="mb-5">
+        <input type="text" id="kategori-sok" class="form-control w-50 mx-auto" placeholder="Søk i kategorier...">
       </div>
-      <div id="kategori-container" class="row g-4 justify-content-center"></div>
+      <div id="kategori-liste" class="row g-4 justify-content-center"></div>
     </div>
   </section>
 
-  <section id="kategorioversikt-seksjon" class="py-5 d-none">
+  <!-- Tomt skall for spesifikk kategori (om vi vil bruke denne senere) -->
+  <section id="kategori-seksjon" class="py-5 bg-section text-center d-none">
     <div class="container">
-      <h1 class="text-center mb-4">Utforsk våre kategorier</h1>
-      <input type="text" id="kategori-sok" class="form-control mb-4" placeholder="Søk kategori...">
-      <div id="kategori-liste" class="row g-4"></div>
+      <h1 id="kategori-tittel" class="mb-4"></h1>
+      <div id="butikk-container" class="row g-4 justify-content-center"></div>
     </div>
   </section>
 </main>
-
-<!-- Seksjon for alle hovedkategorier (oversikt) -->
-<section id="kategorioversikt-seksjon" class="py-5 bg-section text-center">
-  <div class="container">
-    <h1 class="mb-4">Utforsk våre hovedkategorier</h1>
-    <p class="lead text-muted mb-5">Finn spennende nettbutikker sortert etter interesseområde – mote, teknologi, sport,
-      interiør og mer!</p>
-    <div class="mb-5">
-      <input type="text" id="kategori-sok" class="form-control w-50 mx-auto" placeholder="Søk i kategorier...">
-    </div>
-    <div id="kategori-liste" class="row g-4 justify-content-center"></div>
-  </div>
-</section>
 
 <!-- Footer -->
 <footer class="footer bg-header text-white mt-5">
