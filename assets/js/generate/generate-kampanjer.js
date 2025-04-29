@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
           </a>
         `;
-
         butikkContainer.appendChild(col);
       });
     })
