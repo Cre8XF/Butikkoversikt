@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Butikkoversikt.no - Din guide til nettbutikker</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="assets/css/master-override.css" rel="stylesheet">
-
-
+  <title>Kategorier - Butikkoversikt.no</title>
+  <link href="assets/css/base.css" rel="stylesheet">
+  <link href="assets/css/layout.css" rel="stylesheet">
+  <link href="assets/css/components.css" rel="stylesheet">
+  <link href="assets/css/header.css" rel="stylesheet">
+  <link href="assets/css/footer.css" rel="stylesheet">
+  <link href="assets/css/cards.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,62 +36,66 @@
 </header>
 
 
-<!-- Oppdatert kategori.html -->
-<section class="py-5 bg-section text-center">
+<!-- Hovedinnhold -->
+
+<section id="kategorioversikt-seksjon" class="py-5 bg-section text-center">
   <div class="container">
     <h1 class="mb-4">Utforsk våre hovedkategorier</h1>
     <p class="lead text-muted mb-5">Finn spennende nettbutikker sortert etter interesseområde – mote, teknologi, sport,
       interiør og mer!</p>
-
-    <!-- Søkefelt -->
     <div class="mb-5">
       <input type="text" id="kategori-sok" class="form-control w-50 mx-auto" placeholder="Søk i kategorier...">
     </div>
+    <div id="kategori-liste" class="row g-4 justify-content-center"></div>
+  </div>
+</section>
 
-    <!-- Kategorier vises her -->
-    <div id="kategori-liste" class="row g-4 justify-content-center">
-      <!-- Dynamisk innhold fra generate-kategorioversikt.js -->
+<section id="kategori-seksjon" class="py-5 bg-section text-center d-none">
+  <div class="container">
+    <div class="category-header mb-5">
+      <img id="kategori-ikon" src="" alt="" class="mb-3" style="height: 80px; object-fit: contain;">
+      <h1 id="kategori-tittel" class="mb-2">Laster kategori…</h1>
+      <p id="kategori-beskrivelse" class="lead text-muted"></p>
     </div>
-
-    <!-- Guider og tips -->
-    <div class="mt-5">
-      <h4 class="mb-3">Guider og nyttige tips</h4>
-      <p class="text-muted">Lær hvordan du handler trygt på nett, finner de beste tilbudene, og velger riktige
-        nettbutikker for deg.</p>
-      <a href="main-guider.html" class="btn btn-outline-primary">Se alle guider</a>
-    </div>
+    <div id="underkategori-wrapper" class="mb-4"></div>
+    <div id="kategori-container" class="row g-4 justify-content-center"></div>
   </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-footer text-white mt-5">
-  <div class="text-center py-4 small">
+<footer class="footer bg-header text-white mt-5">
+  <div class="text-center py-3">
     © 2025 Butikkoversikt.no
   </div>
 </footer>
 
-<!-- Bootstrap, effekter, main.js -->
+<!-- JS -->
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/effects/fade-in.js"></script>
 <script src="assets/js/effects/menu-toggle.js"></script>
 <script src="assets/js/effects/theme-toggle.js"></script>
 <script src="assets/js/main.js"></script>
 
-<!-- Dynamisk valg av riktig kategori-generator -->
+<!-- Dynamisk valg av generator -->
 <script>
   const params = new URLSearchParams(window.location.search);
   const valgtKategori = params.get('kategori');
 
   if (valgtKategori) {
+    document.getElementById('kategorioversikt-seksjon').classList.add('d-none');
+    document.getElementById('kategori-seksjon').classList.remove('d-none');
     const script = document.createElement('script');
     script.src = 'assets/js/generate/generate-kategori.js';
     document.body.appendChild(script);
   } else {
+    document.getElementById('kategorioversikt-seksjon').classList.remove('d-none');
+    document.getElementById('kategori-seksjon').classList.add('d-none');
     const script = document.createElement('script');
     script.src = 'assets/js/generate/generate-kategorioversikt.js';
     document.body.appendChild(script);
   }
 </script>
+
 </body>
 
 </html>
