@@ -1,54 +1,72 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const container = document.getElementById("kategorioversikt-container");
-  const kategoriListe = document.getElementById("kategorioversikt-liste");
+document.addEventListener("DOMContentLoaded", () => {
+  const liste = document.getElementById("kategori-liste");
+  const sok = document.getElementById("kategori-sok");
+
+  if (!liste) {
+    console.error("Fant ikke container for kategorier (#kategori-liste)");
+    return;
+  }
 
   fetch("assets/data/butikker.json")
-    .then(response => response.json())
+    .then(res => res.json())
     .then(data => {
+      if (!Array.isArray(data)) {
+        throw new Error("butikker.json er ikke et array");
+      }
+
       const kategorier = {};
 
       data.forEach(butikk => {
-        // Sørg for at subcategory alltid er et array
-        let subcats = butikk.subcategory;
-        if (!Array.isArray(subcats)) {
-          subcats = typeof subcats === "string" ? [subcats] : [];
-        }
-
-        const hovedkategori = butikk.category || "Ukjent";
+        const hovedkategori = butikk.category?.trim();
+        if (!hovedkategori) return;
 
         if (!kategorier[hovedkategori]) {
           kategorier[hovedkategori] = {
             navn: hovedkategori,
-            butikker: [],
-            underkategorier: new Set()
+            antall: 0,
+            ikonsrc: `assets/images/ikoner/${hovedkategori.toLowerCase().replace(/ /g, "-")}.png`
           };
         }
 
-        kategorier[hovedkategori].butikker.push(butikk);
-        subcats.forEach(sc => kategorier[hovedkategori].underkategorier.add(sc));
+        kategorier[hovedkategori].antall += 1;
       });
 
-      // Bygg HTML
-      Object.values(kategorier).forEach(kat => {
-        const col = document.createElement("div");
-        col.className = "col-6 col-md-4 col-lg-3";
+      const kategoriArray = Object.values(kategorier);
 
-        const underkatTekst = Array.from(kat.underkategorier).join(", ") || "Ingen underkategorier";
+      // Tegn kategori-kort
+      function render(filter = "") {
+        liste.innerHTML = "";
+        kategoriArray
+          .filter(k => k.navn.toLowerCase().includes(filter.toLowerCase()))
+          .forEach(kategori => {
+            const col = document.createElement("div");
+            col.className = "col-6 col-md-4 col-lg-3";
 
-        col.innerHTML = `
-          <a href="kategori.html?kategori=${encodeURIComponent(kat.navn)}" class="text-decoration-none">
-            <div class="category-card text-center p-4 h-100">
-              <img src="assets/images/ikoner/${kat.navn.toLowerCase().replace(/ /g, "-")}.png" alt="${kat.navn}" class="mb-3" style="height: 80px; object-fit: contain;">
-              <h5 class="fw-semibold">${kat.navn}</h5>
-              <p class="small text-muted">${underkatTekst}</p>
-            </div>
-          </a>
-        `;
-        kategoriListe.appendChild(col);
-      });
+            col.innerHTML = `
+              <a href="kategori.html?kategori=${encodeURIComponent(kategori.navn)}" class="text-decoration-none">
+                <div class="card p-4 text-center h-100">
+                  <img src="${kategori.ikonsrc}" alt="${kategori.navn}" class="mb-3" style="height: 80px; object-fit: contain;">
+                  <h5>${kategori.navn}</h5>
+                  <p class="text-muted small">${kategori.antall} butikker</p>
+                </div>
+              </a>
+            `;
+            liste.appendChild(col);
+          });
+      }
+
+      render();
+
+      if (sok) {
+        sok.addEventListener("input", () => {
+          render(sok.value);
+        });
+      }
     })
-    .catch(error => {
-      console.error("Feil ved lasting av butikker.json:", error);
-      container.innerHTML = "<p class='text-danger'>Kunne ikke laste kategorioversikt.</p>";
+    .catch(err => {
+      console.error("Feil ved lasting av butikker.json:", err);
+      if (liste) {
+        liste.innerHTML = `<p class="text-danger">Kunne ikke laste kategorier. Prøv igjen senere.</p>`;
+      }
     });
 });
