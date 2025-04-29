@@ -1,19 +1,15 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const liste = document.getElementById("kategori-liste");
-  const sok = document.getElementById("kategori-sok");
+document.addEventListener("DOMContentLoaded", function () {
+  const kategoriListe = document.getElementById("kategori-liste");
+  const kategoriSok = document.getElementById("kategori-sok");
 
-  if (!liste) {
+  if (!kategoriListe) {
     console.error("Fant ikke container for kategorier (#kategori-liste)");
     return;
   }
 
   fetch("assets/data/butikker.json")
-    .then(res => res.json())
+    .then(response => response.json())
     .then(data => {
-      if (!Array.isArray(data)) {
-        throw new Error("butikker.json er ikke et array");
-      }
-
       const kategorier = {};
 
       data.forEach(butikk => {
@@ -24,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
           kategorier[hovedkategori] = {
             navn: hovedkategori,
             antall: 0,
-            ikonsrc: `assets/images/ikoner/${hovedkategori.toLowerCase().replace(/ /g, "-")}.png`
+            ikon: `assets/images/ikoner/${hovedkategori.toLowerCase().replace(/ /g, "-")}.png`
           };
         }
 
@@ -33,9 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const kategoriArray = Object.values(kategorier);
 
-      // Tegn kategori-kort
       function render(filter = "") {
-        liste.innerHTML = "";
+        kategoriListe.innerHTML = "";
+
         kategoriArray
           .filter(k => k.navn.toLowerCase().includes(filter.toLowerCase()))
           .forEach(kategori => {
@@ -44,29 +40,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
             col.innerHTML = `
               <a href="kategori.html?kategori=${encodeURIComponent(kategori.navn)}" class="text-decoration-none">
-                <div class="card p-4 text-center h-100">
-                  <img src="${kategori.ikonsrc}" alt="${kategori.navn}" class="mb-3" style="height: 80px; object-fit: contain;">
+                <div class="category-card text-center p-4 h-100">
+                  <img src="${kategori.ikon}" alt="${kategori.navn}" class="mb-3" style="height: 80px; object-fit: contain;">
                   <h5>${kategori.navn}</h5>
                   <p class="text-muted small">${kategori.antall} butikker</p>
                 </div>
               </a>
             `;
-            liste.appendChild(col);
+
+            kategoriListe.appendChild(col);
           });
       }
 
       render();
 
-      if (sok) {
-        sok.addEventListener("input", () => {
-          render(sok.value);
+      if (kategoriSok) {
+        kategoriSok.addEventListener("input", function () {
+          render(kategoriSok.value);
         });
       }
     })
-    .catch(err => {
-      console.error("Feil ved lasting av butikker.json:", err);
-      if (liste) {
-        liste.innerHTML = `<p class="text-danger">Kunne ikke laste kategorier. Prøv igjen senere.</p>`;
-      }
+    .catch(error => {
+      console.error("Feil ved lasting av butikker.json:", error);
+      kategoriListe.innerHTML = `<p class="text-danger">Kunne ikke laste kategorier. Prøv igjen senere.</p>`;
     });
 });
