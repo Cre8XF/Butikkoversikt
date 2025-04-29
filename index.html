@@ -8,364 +8,150 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="assets/css/master-override.css" rel="stylesheet">
-
-
 </head>
 
 <body>
-
-<!-- Header -->
-<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="/">
-      <img src="assets/images/hero/hero.png" alt="Butikkoversikt logo" style="height: 100px;" class="me-2">
-      <div>
-        <strong style="font-size: 1.5rem;">Butikkoversikt.no</strong><br>
-        <small class="text-muted" style="font-size: 1rem;">Norges nettbutikk-guide</small>
-      </div>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="alle-butikker.html">Alle butikker</a></li>
-        <li class="nav-item"><a class="nav-link" href="kategori.html?oversikt=true">Kategorier</a></li>
-        <li class="nav-item"><a class="nav-link" href="topp25.html">Topp 25</a></li>
-        <li class="nav-item"><a class="nav-link" href="guider.html">Guider</a></li>
-      </ul>
-    </div>
-  </div>
-  <!-- 🌟 Tema-bytteknapp med lagring i LocalStorage -->
-  <button id="themeToggleBtn" class="btn btn-sm btn-primary"
-    style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">
-    Bytt Tema
-  </button>
-</header>
-
-<section class="hero-section var(--heading-color) d-flex align-items-center">
-  <div class="container text-center">
-    <h1 class="display-4 fw-bold">Norges beste nettbutikker – samlet for deg</h1>
-    <p class="lead mt-3">Oppdag topp nettbutikker innen mote, teknologi, sport og mer. Alt på ett sted – enkelt og trygt.</p>
-    <a href="alle-butikker.html" class="btn btn-primary btn-lg mt-3">Utforsk i alle butikkene</a>
-  </div>
-</section>
-
-
-
-<!-- Ukens Tilbud -->
-<section class="bg-primary text-white text-center py-3">
-  <div class="container">
-    <p class="mb-0 fw-bold">Ukens tilbud: <a href="https://partnerlink.no" class="text-white text-decoration-underline"
-        target="_blank" rel="noopener">Spar 20% på Apotek1.no – Klikk her!</a></p>
-  </div>
-</section>
-
-<!-- Aktuelle Kampanjer -->
-<section class="py-5 bg-section">
-  <div class="container">
-    <h2 class="text-center mb-5">Aktuelle kampanjer og tilbud</h2>
-    <div id="kampanje-container" class="row g-4">
-      <!-- Kampanjekortene kommer dynamisk inn her -->
-    </div>
-  </div>
-</section>
-
-    <!-- Populære kategorier -->
-    <section class="py-5 bg-section text-center">
-      <div class="container">
-        <h2 class="mb-4">Populære kategorier</h2>
-        <div class="row g-4 justify-content-center">
-    
-          <!-- Apotek -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <a href="kategori-mal.html?kategori=Apotek" class="category-card d-block text-decoration-none">
-              <img src="assets/images/ikoner/apotek.png" alt="Apotek" class="img-fluid mb-3"
-                style="height: 100px; object-fit: contain;">
-              <hr>
-              <h6>Apotek</h6>
-              <p>Alt innen helse, medisiner og egenpleie.</p>
-            </a>
-          </div>
-    
-          <!-- Barn og baby -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <a href="kategori-mal.html?kategori=Barn%20og%20baby" class="category-card d-block text-decoration-none">
-              <img src="assets/images/ikoner/barn-og-baby.png" alt="Barn og baby" class="img-fluid mb-3"
-                style="height: 100px; object-fit: contain;">
-              <hr>
-              <h6>Barn og baby</h6>
-              <p>Alt du trenger til barn og baby, fra klær til utstyr.</p>
-            </a>
-          </div>
-    
-          <!-- Bøker og underholdning -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <a href="kategori-mal.html?kategori=Bøker%20og%20underholdning" class="category-card d-block text-decoration-none">
-              <img src="assets/images/ikoner/bøker-og-underholdning.png" alt="Bøker og underholdning" class="img-fluid mb-3"
-                style="height: 100px; object-fit: contain;">
-              <hr>
-              <h6>Bøker og underholdning</h6>
-              <p>Oppdag bøker, spill og underholdning for alle aldre.</p>
-            </a>
-          </div>
-    
-          <!-- Elektronikk og data -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <a href="kategori-mal.html?kategori=Elektronikk%20og%20data" class="category-card d-block text-decoration-none">
-              <img src="assets/images/ikoner/elektronikk-og-data.png" alt="Elektronikk og data" class="img-fluid mb-3"
-                style="height: 100px; object-fit: contain;">
-              <hr>
-              <h6>Elektronikk og data</h6>
-              <p>Elektronikk, datamaskiner og smarte gadgets.</p>
-            </a>
-          </div>
-    
-          <!-- Fritid og gaver -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <a href="kategori-mal.html?kategori=Fritid%20og%20gaver" class="category-card d-block text-decoration-none">
-              <img src="assets/images/ikoner/fritid-og-gaver.png" alt="Fritid og gaver" class="img-fluid mb-3"
-                style="height: 100px; object-fit: contain;">
-              <hr>
-              <h6>Fritid og gaver</h6>
-              <p>Gaver, hobbyartikler og fritidsutstyr.</p>
-            </a>
-          </div>
-    
-          <!-- Gaming og tilbehør -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <a href="kategori-mal.html?kategori=Gaming%20og%20tilbehør" class="category-card d-block text-decoration-none">
-              <img src="assets/images/ikoner/gaming-og-tilbehør.png" alt="Gaming og tilbehør" class="img-fluid mb-3"
-                style="height: 100px; object-fit: contain;">
-              <hr>
-              <h6>Gaming og tilbehør</h6>
-              <p>Alt til gaming: konsoller, spill og utstyr.</p>
-            </a>
-          </div>
-    
-          <!-- Helse og egenpleie -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <a href="kategori-mal.html?kategori=Helse%20og%20egenpleie" class="category-card d-block text-decoration-none">
-              <img src="assets/images/ikoner/helse-og-egenpleie.png" alt="Helse og egenpleie" class="img-fluid mb-3"
-                style="height: 100px; object-fit: contain;">
-              <hr>
-              <h6>Helse og egenpleie</h6>
-              <p>Produkter for personlig pleie og velvære.</p>
-            </a>
-          </div>
-    
-          <!-- Klær og mote -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <a href="kategori-mal.html?kategori=Klær%20og%20mote" class="category-card d-block text-decoration-none">
-              <img src="assets/images/ikoner/Klær-og-mote.png" alt="Klær og mote" class="img-fluid mb-3"
-                style="height: 100px; object-fit: contain;">
-              <hr>
-              <h6>Klær og mote</h6>
-              <p>Trendy klær, sko og tilbehør for alle stiler.</p>
-            </a>
-          </div>
-    
-          <!-- Møbler og interiør -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <a href="kategori-mal.html?kategori=Møbler%20og%20interiør" class="category-card d-block text-decoration-none">
-              <img src="assets/images/ikoner/møbler-og-interiør.png" alt="Møbler og interiør" class="img-fluid mb-3"
-                style="height: 100px; object-fit: contain;">
-              <hr>
-              <h6>Møbler og interiør</h6>
-              <p>Innred hjemmet ditt med stil og komfort.</p>
-            </a>
-          </div>
-    
-          <!-- Sport og fritid -->
-          <div class="col-6 col-md-4 col-lg-3">
-            <a href="kategori-mal.html?kategori=Sport%20og%20fritid" class="category-card d-block text-decoration-none">
-              <img src="assets/images/ikoner/sport-og-fritid.png" alt="Sport og fritid" class="img-fluid mb-3"
-                style="height: 100px; object-fit: contain;">
-              <hr>
-              <h6>Sport og fritid</h6>
-              <p>Treningsutstyr, sportsartikler og friluftsliv.</p>
-            </a>
-          </div>
-    
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="assets/images/hero/hero.png" alt="Butikkoversikt logo" style="height: 100px;" class="me-2">
+        <div>
+          <strong style="font-size: 1.5rem;">Butikkoversikt.no</strong><br>
+          <small class="text-muted" style="font-size: 1rem;">Norges nettbutikk-guide</small>
         </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" title="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="alle-butikker.html">Alle butikker</a></li>
+          <li class="nav-item"><a class="nav-link" href="kategori.html">Kategorier</a></li>
+          <li class="nav-item"><a class="nav-link" href="topp25.html">Topp 25</a></li>
+          <li class="nav-item"><a class="nav-link" href="guider.html">Guider</a></li>
+        </ul>
       </div>
-    </section>
-
-<!-- Aktuelle Kampanjer -->
-<section class="py-5 bg-section">
-  <div class="container">
-    <h2 class="text-center mb-5">Aktuelle kampanjer og tilbud</h2>
-    <div class="row g-4">
-
-      <!-- Kampanjekort 1 -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <a href="https://www.apotek1.no" target="_blank" rel="noopener" class="d-block text-decoration-none">
-          <div class="campaign-card text-center p-4 bg-white rounded shadow-sm h-100">
-            <img src="assets/images/kampanjer/apotek1-tilbud.jpg" alt="Apotek1 tilbud" class="img-fluid mb-3"
-              style="height: 120px; object-fit: contain;">
-            <h6 class="fw-bold mb-2">20% på egenpleie hos Apotek1</h6>
-            <p class="small text-muted">Gyldig til 30. april 2025</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- Kampanjekort 2 -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <a href="https://www.elkjop.no" target="_blank" rel="noopener" class="d-block text-decoration-none">
-          <div class="campaign-card text-center p-4 bg-white rounded shadow-sm h-100">
-            <img src="assets/images/kampanjer/elkjop-kampanje.jpg" alt="Elkjøp kampanje" class="img-fluid mb-3"
-              style="height: 120px; object-fit: contain;">
-            <h6 class="fw-bold mb-2">Spar opptil 40% på gaming-utstyr</h6>
-            <p class="small text-muted">Tilbud hos Elkjøp nå!</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- Kampanjekort 3 -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <a href="https://www.boozt.com" target="_blank" rel="noopener" class="d-block text-decoration-none">
-          <div class="campaign-card text-center p-4 bg-white rounded shadow-sm h-100">
-            <img src="assets/images/kampanjer/boozt-tilbud.jpg" alt="Boozt vårsalg" class="img-fluid mb-3"
-              style="height: 120px; object-fit: contain;">
-            <h6 class="fw-bold mb-2">Vårsalg hos Boozt – opptil 50%</h6>
-            <p class="small text-muted">Frisk opp garderoben nå</p>
-          </div>
-        </a>
-      </div>
-
     </div>
-  </div>
-</section>
+    <button id="themeToggleBtn" class="btn btn-sm btn-primary"
+      style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
+  </header>
 
+  <section class="hero-section d-flex align-items-center">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold">Norges beste nettbutikker – samlet for deg</h1>
+      <p class="lead mt-3">Oppdag topp nettbutikker innen mote, teknologi, sport og mer. Alt på ett sted – enkelt og
+        trygt.</p>
+      <a href="alle-butikker.html" class="btn btn-primary btn-lg mt-3">Utforsk alle butikker</a>
+    </div>
+  </section>
 
+  <!-- Ukens Tilbud -->
+  <section class="bg-primary text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0 fw-bold">Ukens tilbud: <a href="https://partnerlink.no"
+          class="text-white text-decoration-underline" target="_blank" rel="noopener">Spar 20% på Apotek1.no – Klikk
+          her!</a></p>
+    </div>
+  </section>
 
-    <!-- Annonsebanner -->
-    <section class="ad-banner text-center py-5">
-      <div class="container">
-        <div class="ad-card">
-          <img src="assets/icons/gave.png" alt="Annonse" class="ad-icon">
-          <p>Plass for annonse eller spesialkampanje</p>
-        </div>
+  <!-- Aktuelle Kampanjer -->
+  <section class="py-5 bg-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Aktuelle kampanjer og tilbud</h2>
+      <div id="kampanje-container" class="row g-4">
+        <!-- Dynamisk kampanjekort -->
       </div>
-    </section>
+    </div>
+  </section>
 
   <!-- Anbefalte Butikker -->
   <section class="section-alt py-5">
     <div class="container">
       <h2 class="text-center mb-5">Anbefalte butikker</h2>
-  
       <div class="row" id="butikk-row">
         <!-- Butikkortene kommer hit dynamisk -->
       </div>
-  
       <div class="text-center mt-4">
         <button id="vis-flere-butikker" class="btn btn-primary">Vis flere butikker</button>
       </div>
     </div>
   </section>
 
-
-
-    <!-- Nyheter og kampanjer -->
-    <section id="tilbud" class="nyheter-kampanjer py-5">
-      <div class="container">
-        <h2 class="section-title text-center mb-4">Nyheter og kampanjer</h2>
-        <div class="row g-4">
-          <div class="col-md-6">
-            <div class="news-card p-3 border rounded">
-              <h5>Sommerfest hos Zalando</h5>
-              <p>Opptil 50% på sommersko og klær.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="news-card p-3 border rounded">
-              <h5>Nyåpning av Elkjøp Outlet</h5>
-              <p>Gjør et kupp på elektronikk til knallpriser!</p>
-            </div>
-          </div>
-        </div>
+  <!-- Topp 25 Butikker -->
+  <section class="py-5 bg-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Topp 25 nettbutikker</h2>
+      <div id="topp25-row" class="row g-4">
+        <!-- Dynamisk Topp 25-kort -->
       </div>
-    </section>
+      <div class="text-center mt-4">
+        <a href="topp25.html" class="btn btn-outline-primary">Se hele listen</a>
+      </div>
+    </div>
+  </section>
 
-  </main>
+  <!-- CTA til kategorier -->
+  <section class="text-center py-5">
+    <div class="container">
+      <h3 class="mb-4">Leter du etter noe spesielt?</h3>
+      <a href="kategori.html" class="btn btn-primary btn-lg">Utforsk alle kategorier</a>
+    </div>
+  </section>
 
+  <!-- Footer -->
   <footer class="footer bg-header text-white py-5 mt-5">
     <div class="container">
       <div class="row">
-        <!-- Logo og beskrivelse -->
         <div class="col-md-4 mb-4">
           <h5>Butikkoversikt.no</h5>
           <p class="text-muted">Din guide til de beste norske nettbutikkene. Enkelt, trygt og oppdatert.</p>
         </div>
-  
-        <!-- Navigasjon -->
         <div class="col-md-4 mb-4">
           <h6>Nyttige lenker</h6>
           <ul class="list-unstyled">
             <li><a href="index.html" class="text-white text-decoration-none">Hjem</a></li>
             <li><a href="alle-butikker.html" class="text-white text-decoration-none">Alle butikker</a></li>
             <li><a href="kategori.html" class="text-white text-decoration-none">Kategorier</a></li>
-            <li><a href="topplisten.html" class="text-white text-decoration-none">Topp 25</a></li>
+            <li><a href="topp25.html" class="text-white text-decoration-none">Topp 25</a></li>
             <li><a href="main-guider.html" class="text-white text-decoration-none">Guider</a></li>
           </ul>
         </div>
-  
-        <!-- Kontakt -->
         <div class="col-md-4 mb-4">
           <h6>Kontakt</h6>
           <p class="text-muted mb-1">E-post: kontakt@butikkoversikt.no</p>
           <p class="text-muted mb-2">Org.nr: 123 456 789</p>
           <div>
-            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white me-3" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3" title="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-white" title="Instagram"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
       </div>
-
-      <!-- Nyhetsbrev påmelding -->
       <div class="newsletter-wrapper text-center mb-5">
         <h5 class="mb-3">Få de beste tilbudene først!</h5>
-        <p class="text-muted mb-4">Meld deg på vårt nyhetsbrev og få ukens beste nettbutikker, kampanjer og rabatter rett i
-          innboksen.</p>
+        <p class="text-muted mb-4">Meld deg på vårt nyhetsbrev og få ukens beste nettbutikker, kampanjer og rabatter
+          rett i innboksen.</p>
         <form id="newsletter-form" class="d-flex flex-column flex-sm-row justify-content-center">
           <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0" placeholder="Din e-postadresse" required>
           <button type="submit" class="btn btn-primary">Meld meg på</button>
         </form>
       </div>
-
-      
       <hr class="border-secondary">
       <p class="text-center text-muted mb-0">&copy; 2025 Butikkoversikt.no. Alle rettigheter forbeholdt.</p>
     </div>
   </footer>
 
-
   <!-- Scripts -->
-  <!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Effekter -->
-<script src="assets/js/effects/fade-in.js"></script>
-<script src="assets/js/effects/menu-toggle.js"></script>
-<script src="assets/js/effects/theme-toggle.js"></script>
-
-
-<!-- Generatorer -->
-<script src="assets/js/generate/generate-index-stores.js"></script>
-<script src="assets/js/generate/generate-anbefalte.js"></script>
-<script src="assets/js/generate/generate-alle-butikker.js"></script>
-<script src="assets/js/generate-kampanjer.js"></script>
-<script src="assets/js/generate/generate-kategorier.js"></script>
-<script src="assets/js/generate/generate-kategori.js"></script>
-
-
-
-<!-- Main -->
-<script src="assets/js/main.js"></script>
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/effects/fade-in.js"></script>
+  <script src="assets/js/effects/menu-toggle.js"></script>
+  <script src="assets/js/effects/theme-toggle.js"></script>
+  <script src="assets/js/generate/generate-index-stores.js"></script>
+  <script src="assets/js/generate/generate-anbefalte.js"></script>
+  <script src="assets/js/generate/generate-kampanjer.js"></script>
+  <script src="assets/js/generate/generate-topp25.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
