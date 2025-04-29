@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             col.innerHTML = `
               <div class="category-card text-center w-100">
-                <a href="kategori.html?kategori=${encodeURIComponent(kategori)}" class="text-decoration-none text-dark">
+                <a href="kategori-mal.html?kategori=${encodeURIComponent(kategori)}" class="text-decoration-none text-dark">
                   <img src="assets/images/ikoner/${ikonNavn}" alt="${kategori}" class="img-fluid mb-3" style="height: 100px; object-fit: contain;" loading="lazy">
                   <h6 class="mb-2">${kategori}</h6>
                 </a>
