@@ -80,6 +80,7 @@
 <script>
   const params = new URLSearchParams(window.location.search);
   const valgtKategori = params.get('kategori');
+  const visOversikt = params.get('oversikt');
 
   if (valgtKategori) {
     document.getElementById('kategorioversikt-seksjon').classList.add('d-none');
@@ -87,14 +88,18 @@
     const script = document.createElement('script');
     script.src = 'assets/js/generate/generate-kategori.js';
     document.body.appendChild(script);
-  } else {
+  } else if (visOversikt) {
     document.getElementById('kategorioversikt-seksjon').classList.remove('d-none');
     document.getElementById('kategori-seksjon').classList.add('d-none');
     const script = document.createElement('script');
     script.src = 'assets/js/generate/generate-kategorioversikt.js';
     document.body.appendChild(script);
+  } else {
+    // fallback: gå til forsiden hvis URL mangler alt
+    window.location.href = '/';
   }
 </script>
+
 
 </body>
 
