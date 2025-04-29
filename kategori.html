@@ -34,56 +34,54 @@
 </header>
 
 
-<!-- Kategori Hero Section -->
+<!-- Oppdatert kategori.html -->
 <section class="py-5 bg-section text-center">
   <div class="container">
-    <!-- Kategori header med ikon, tittel og beskrivelse -->
-    <div class="category-header mb-5">
-      <img id="kategori-ikon" src="assets/images/ikoner/default.png" alt="Kategori ikon" class="img-fluid mb-3"
-        style="height: 80px; object-fit: contain;">
-      <h1 id="kategori-tittel" class="mb-2">Laster kategori...</h1>
-      <p id="kategori-beskrivelse" class="lead text-muted">Oppdag spennende nettbutikker i denne kategorien.</p>
+    <h1 class="mb-4">Utforsk våre hovedkategorier</h1>
+    <p class="lead text-muted mb-5">Finn spennende nettbutikker sortert etter interesseområde – mote, teknologi, sport,
+      interiør og mer!</p>
+
+    <!-- Søkefelt -->
+    <div class="mb-5">
+      <input type="text" id="kategori-sok" class="form-control w-50 mx-auto" placeholder="Søk i kategorier...">
     </div>
 
-    <!-- Dropdown settes her via JS -->
-    <div id="underkategori-wrapper" class="mb-4"></div>
+    <!-- Kategorier vises her -->
+    <div id="kategori-liste" class="row g-4 justify-content-center">
+      <!-- Dynamisk innhold fra generate-kategorioversikt.js -->
+    </div>
 
-    <!-- Butikkortene (hentes dynamisk fra JS) -->
-    <div id="kategori-container" class="row g-4 justify-content-center"></div>
+    <!-- Guider og tips -->
+    <div class="mt-5">
+      <h4 class="mb-3">Guider og nyttige tips</h4>
+      <p class="text-muted">Lær hvordan du handler trygt på nett, finner de beste tilbudene, og velger riktige
+        nettbutikker for deg.</p>
+      <a href="main-guider.html" class="btn btn-outline-primary">Se alle guider</a>
+    </div>
   </div>
 </section>
 
+<!-- Footer -->
+<footer class="bg-footer text-white mt-5">
+  <div class="text-center py-4 small">
+    © 2025 Butikkoversikt.no
+  </div>
+</footer>
 
+<!-- JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 
-  
-  <!-- Butikk-kortene -->
-  <section class="py-5 bg-section">
-    <div class="container">
-      <div id="kategori-container" class="row g-4 justify-content-center"></div>
-    </div>
-  </section>
+<!-- Effekter -->
+<script src="assets/js/effects/fade-in.js"></script>
+<script src="assets/js/effects/menu-toggle.js"></script>
+<script src="assets/js/effects/theme-toggle.js"></script>
 
-  
-  <!-- Footer -->
-  <footer class="bg-footer text-white mt-5">
-    <div class="text-center py-4 small">
-      © 2025 Butikkoversikt.no
-    </div>
-  </footer>
-  
-  <!-- JS -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  
-  <!-- Effekter -->
-  <script src="assets/js/effects/fade-in.js"></script>
-  <script src="assets/js/effects/menu-toggle.js"></script>
-  <script src="assets/js/effects/theme-toggle.js"></script>
-  
-  <!-- Generator for kategori -->
-  <script src="assets/js/generate/generate-kategori.js"></script>
-  
-  <!-- Main -->
-  <script src="assets/js/main.js"></script>
+<!-- Riktig generator -->
+<script src="assets/js/generate/generate-kategorioversikt.js"></script>
+
+<!-- Main -->
+<script src="assets/js/main.js"></script>
+
   
   </body>
   
