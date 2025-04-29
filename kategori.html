@@ -68,24 +68,30 @@
   </div>
 </footer>
 
-<!-- JS -->
+<!-- Bootstrap, effekter, main.js -->
 <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-<!-- Effekter -->
 <script src="assets/js/effects/fade-in.js"></script>
 <script src="assets/js/effects/menu-toggle.js"></script>
 <script src="assets/js/effects/theme-toggle.js"></script>
-
-<!-- Main -->
 <script src="assets/js/main.js"></script>
 
-<!-- Riktig generator -->
-<script src="assets/js/generate/generate-kategorioversikt.js"></script>
+<!-- Dynamisk valg av riktig kategori-generator -->
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const valgtKategori = params.get('kategori');
 
+  if (valgtKategori) {
+    const script = document.createElement('script');
+    script.src = 'assets/js/generate/generate-kategori.js';
+    document.body.appendChild(script);
+  } else {
+    const script = document.createElement('script');
+    script.src = 'assets/js/generate/generate-kategorioversikt.js';
+    document.body.appendChild(script);
+  }
+</script>
+</body>
 
+</html>
 
-  
-  </body>
-  
-  </html>
 
