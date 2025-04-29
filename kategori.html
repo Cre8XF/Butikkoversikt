@@ -38,6 +38,7 @@
 
 <!-- Hovedinnhold -->
 
+<!-- Seksjon for alle hovedkategorier (oversikt) -->
 <section id="kategorioversikt-seksjon" class="py-5 bg-section text-center">
   <div class="container">
     <h1 class="mb-4">Utforsk våre hovedkategorier</h1>
@@ -50,14 +51,15 @@
   </div>
 </section>
 
+<!-- Seksjon for butikker i valgt kategori -->
 <section id="kategori-seksjon" class="py-5 bg-section text-center d-none">
   <div class="container">
     <div class="category-header mb-5">
       <img id="kategori-ikon" src="" alt="" class="mb-3" style="height: 80px; object-fit: contain;">
-      <h1 id="kategori-tittel" class="mb-2">Laster kategori…</h1>
+      <h1 id="kategori-tittel" class="mb-2">Laster kategori...</h1>
       <p id="kategori-beskrivelse" class="lead text-muted"></p>
     </div>
-    <div id="underkategori-wrapper" class="mb-4"></div>
+    <div id="underkategori-wrapper"></div>
     <div id="kategori-container" class="row g-4 justify-content-center"></div>
   </div>
 </section>
@@ -83,8 +85,8 @@
   const visOversikt = params.get('oversikt');
 
   if (valgtKategori) {
-    document.getElementById('kategorioversikt-seksjon').classList.add('d-none');
     document.getElementById('kategori-seksjon').classList.remove('d-none');
+    document.getElementById('kategorioversikt-seksjon').classList.add('d-none');
     const script = document.createElement('script');
     script.src = 'assets/js/generate/generate-kategori.js';
     document.body.appendChild(script);
@@ -95,11 +97,9 @@
     script.src = 'assets/js/generate/generate-kategorioversikt.js';
     document.body.appendChild(script);
   } else {
-    // fallback: gå til forsiden hvis URL mangler alt
     window.location.href = '/';
   }
 </script>
-
 
 </body>
 
