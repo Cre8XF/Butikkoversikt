@@ -1,9 +1,13 @@
+// generate-kategori.js
+
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
   const valgtKategori = params.get("kategori");
 
   const kategoriTittel = document.getElementById("kategori-tittel");
   const kategoriContainer = document.getElementById("kategori-container");
+  const kategoriIkon = document.getElementById("kategori-ikon");
+  const kategoriBeskrivelse = document.getElementById("kategori-beskrivelse");
 
   if (!valgtKategori || !kategoriTittel || !kategoriContainer) {
     console.error("Mangler kategori eller container");
@@ -18,8 +22,20 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       kategoriTittel.textContent = valgtKategori;
+      kategoriBeskrivelse.textContent = `Vi har ${filtrerteButikker.length} butikker innen ${valgtKategori}.`;
+
+      // Sett ikon hvis mulig
+      const ikonNavn = valgtKategori.toLowerCase().replace(/ /g, '-') + '.png';
+      kategoriIkon.src = `assets/images/ikoner/${ikonNavn}`;
+      kategoriIkon.alt = `${valgtKategori} ikon`;
 
       kategoriContainer.innerHTML = "";
+
+      if (filtrerteButikker.length === 0) {
+        kategoriContainer.innerHTML = `<p class="text-muted">Ingen butikker funnet i denne kategorien.</p>`;
+        return;
+      }
+
       filtrerteButikker.forEach(butikk => {
         const col = document.createElement("div");
         col.className = "col-6 col-md-3 mb-4";
@@ -33,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </a>
           </div>
         `;
+
         kategoriContainer.appendChild(col);
       });
     })
