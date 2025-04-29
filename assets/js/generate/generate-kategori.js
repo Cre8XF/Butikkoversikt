@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  fetch("/assets/js/data/butikker.json")
+  fetch("/assets/data/butikker.json")
     .then(r => r.json())
     .then(butikker => {
       const filtrerteButikker = butikker.filter(b =>
