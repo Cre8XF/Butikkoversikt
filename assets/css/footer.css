@@ -46,6 +46,21 @@ footer .btn {
 footer .btn:hover {
   background-color: var(--btn-hover);
 }
+.newsletter-wrapper {
+  background-color: var(--section-muted);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.newsletter-wrapper h5 {
+  font-weight: 600;
+}
+
+.newsletter-wrapper input {
+  min-width: 250px;
+}
 
 /* ========================================= */
 /*
