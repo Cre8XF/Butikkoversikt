@@ -1,85 +1,69 @@
-document.addEventListener('DOMContentLoaded', function() {
+// generate-kategori.js (Oppdatert versjon)
+
+document.addEventListener('DOMContentLoaded', function () {
   const params = new URLSearchParams(window.location.search);
   const valgtKategori = params.get('kategori');
   const kategoriTittel = document.getElementById('kategori-tittel');
   const kategoriContainer = document.getElementById('kategori-container');
+  const kategoriIkon = document.getElementById('kategori-ikon');
+  const kategoriBeskrivelse = document.getElementById('kategori-beskrivelse');
 
-  // Legg inn en filter-dropdown
-  const filterWrapper = document.createElement('div');
-  filterWrapper.className = 'mb-4';
-  filterWrapper.innerHTML = `
-    <label for="underkategori-filter" class="form-label">Filtrer på underkategori:</label>
-    <select id="underkategori-filter" class="form-select">
-      <option value="alle">Alle underkategorier</option>
-    </select>
-  `;
-  kategoriContainer.parentNode.insertBefore(filterWrapper, kategoriContainer);
-
-  const underkategoriFilter = document.getElementById('underkategori-filter');
+  if (!valgtKategori || !kategoriTittel || !kategoriContainer) {
+    console.error('Mangler kategori, tittel eller container');
+    return;
+  }
 
   fetch('assets/data/butikker.json')
-    .then(res => res.json())
+    .then(r => r.json())
     .then(butikker => {
-      // Filtrer først på hovedkategori
-      const innenKategori = butikker.filter(b => 
+      // Filtrer butikker basert på kategori
+      const innenKategori = butikker.filter(b =>
         b.category.toLowerCase() === valgtKategori.toLowerCase()
       );
 
-      // Finn alle unike underkategorier
-      const underkategorier = Array.from(new Set(
-        innenKategori
-          .flatMap(b => b.subcategory || [])
-          .filter(s => s)    // fjern tomme
-      )).sort();
+      // Oppdater Hero (tittel, beskrivelse, ikon)
+      kategoriTittel.textContent = valgtKategori;
 
-      // Fyll dropdown
-      underkategorier.forEach(uk => {
-        const opt = document.createElement('option');
-        opt.value = uk;
-        opt.textContent = uk;
-        underkategoriFilter.appendChild(opt);
-      });
+      // Prøv hente riktig ikon - fallback hvis mangler
+      const ikonNavn = valgtKategori.toLowerCase().replace(/\s+/g, '-') + '.png';
+      const ikonPath = `assets/images/ikoner/${ikonNavn}`;
+      kategoriIkon.src = ikonPath;
+      kategoriIkon.alt = valgtKategori;
 
-      // Funksjon som viser butikkliste
-      function visButikker(liste) {
-        kategoriContainer.innerHTML = '';
-        if (liste.length === 0) {
-          kategoriContainer.innerHTML = '<p>Ingen butikker funnet for dette valget.</p>';
-          return;
-        }
-        liste.forEach(butikk => {
-          const card = document.createElement('div');
-          card.className = 'col-6 col-md-3 mb-4';
-          card.innerHTML = `
-            <div class="store-card text-center w-100">
-              <a href="${butikk.url}" target="_blank" rel="noopener">
-                <img src="${butikk.image}" alt="${butikk.name}" class="img-fluid mb-3" style="height:120px;object-fit:contain">
-                <h6>${butikk.name}</h6>
-                <p class="small text-muted">${butikk.description || ''}</p>
-              </a>
-            </div>
-          `;
-          kategoriContainer.appendChild(card);
-        });
-      }
+      // Sett beskrivelse
+      kategoriBeskrivelse.textContent = `Utforsk nettbutikker innen ${valgtKategori.toLowerCase()} hos oss.`;
 
-      // Vis alle ved oppstart
-      visButikker(innenKategori);
-
-      // Når filteret endres, filtrer på underkategori
-      underkategoriFilter.addEventListener('change', () => {
-        const valgtUK = underkategoriFilter.value;
-        if (valgtUK === 'alle') {
-          visButikker(innenKategori);
-        } else {
-          visButikker(
-            innenKategori.filter(b => (b.subcategory || []).includes(valgtUK))
-          );
-        }
-      });
+      // Render butikkortene
+      renderButikker(innenKategori);
     })
     .catch(err => {
-      console.error(err);
+      console.error('Kunne ikke laste butikker.json:', err);
       kategoriContainer.innerHTML = '<p>Kunne ikke laste butikker.</p>';
     });
+
+  // Funksjon for å vise kortene
+  function renderButikker(butikkListe) {
+    kategoriContainer.innerHTML = '';
+    if (butikkListe.length === 0) {
+      kategoriContainer.innerHTML = '<p>Ingen butikker funnet for denne kategorien.</p>';
+      return;
+    }
+
+    butikkListe.forEach(b => {
+      const col = document.createElement('div');
+      col.className = 'col-6 col-md-3 mb-4';
+
+      col.innerHTML = `
+        <div class="store-card text-center w-100">
+          <a href="${b.url}" target="_blank" rel="noopener" class="text-decoration-none text-dark">
+            <img src="${b.image}" alt="${b.alt || b.name}" class="img-fluid mb-3" style="height:120px;object-fit:contain" loading="lazy">
+            <h6 class="mb-2">${b.name}</h6>
+            <p class="small text-muted">${b.description || ''}</p>
+          </a>
+        </div>
+      `;
+
+      kategoriContainer.appendChild(col);
+    });
+  }
 });
