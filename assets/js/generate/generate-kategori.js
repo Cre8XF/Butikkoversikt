@@ -5,56 +5,47 @@ document.addEventListener("DOMContentLoaded", () => {
   const valgtKategori = params.get("kategori");
 
   const kategoriTittel = document.getElementById("kategori-tittel");
-  const kategoriContainer = document.getElementById("kategori-container");
-  const kategoriIkon = document.getElementById("kategori-ikon");
-  const kategoriBeskrivelse = document.getElementById("kategori-beskrivelse");
+  const butikkContainer = document.getElementById("butikk-container");
 
-  if (!valgtKategori || !kategoriTittel || !kategoriContainer) {
+  if (!valgtKategori || !kategoriTittel || !butikkContainer) {
     console.error("Mangler kategori eller container");
     return;
   }
 
-  fetch("assets/data/butikker.json")
+  fetch("assets/js/data/butikker.json")
     .then(r => r.json())
     .then(butikker => {
-      const filtrerteButikker = butikker.filter(b => 
+      const filtrerteButikker = butikker.filter(b =>
         b.category?.toLowerCase() === valgtKategori.toLowerCase()
       );
 
       kategoriTittel.textContent = valgtKategori;
-      kategoriBeskrivelse.textContent = `Vi har ${filtrerteButikker.length} butikker innen ${valgtKategori}.`;
-
-      // Sett ikon hvis mulig
-      const ikonNavn = valgtKategori.toLowerCase().replace(/ /g, '-') + '.png';
-      kategoriIkon.src = `assets/images/ikoner/${ikonNavn}`;
-      kategoriIkon.alt = `${valgtKategori} ikon`;
-
-      kategoriContainer.innerHTML = "";
 
       if (filtrerteButikker.length === 0) {
-        kategoriContainer.innerHTML = `<p class="text-muted">Ingen butikker funnet i denne kategorien.</p>`;
+        butikkContainer.innerHTML = `<p class="text-muted">Ingen butikker funnet i denne kategorien.</p>`;
         return;
       }
 
+      butikkContainer.innerHTML = "";
+
       filtrerteButikker.forEach(butikk => {
         const col = document.createElement("div");
-        col.className = "col-6 col-md-3 mb-4";
+        col.className = "col-6 col-md-4 col-lg-3";
 
         col.innerHTML = `
-          <div class="store-card text-center w-100">
-            <a href="${butikk.url}" target="_blank" rel="noopener" class="text-decoration-none text-dark">
-              <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-3" style="height: 120px; object-fit: contain;" loading="lazy">
-              <h6 class="mb-2">${butikk.name}</h6>
-              <p class="small text-muted">${butikk.description || ""}</p>
-            </a>
-          </div>
+          <a href="${butikk.url}" target="_blank" rel="noopener" class="text-decoration-none">
+            <div class="card p-3 h-100">
+              <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-2" style="height: 100px; object-fit: contain;">
+              <h6 class="fw-bold">${butikk.name}</h6>
+              <p class="text-muted small">${butikk.description || ""}</p>
+            </div>
+          </a>
         `;
-
-        kategoriContainer.appendChild(col);
+        butikkContainer.appendChild(col);
       });
     })
     .catch(err => {
       console.error("Feil ved lasting av butikker.json:", err);
-      kategoriContainer.innerHTML = "<p>Kunne ikke laste butikker.</p>";
+      butikkContainer.innerHTML = "<p>Kunne ikke laste butikkene.</p>";
     });
 });

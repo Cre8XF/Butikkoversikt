@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kategori | Butikkoversikt.no</title>
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="nav-link">Hjem</a></li>
+      <li><a href="kategori.html?oversikt=true" class="nav-link">Kategorier</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="kategori-seksjon" class="py-5 d-none">
+    <div class="container">
+      <div id="kategori-header" class="text-center mb-5">
+        <img id="kategori-ikon" src="" alt="" style="height:80px;">
+        <h1 id="kategori-tittel"></h1>
+        <p id="kategori-beskrivelse" class="lead text-muted"></p>
+      </div>
+      <div id="kategori-container" class="row g-4 justify-content-center"></div>
+    </div>
+  </section>
+
+  <section id="kategorioversikt-seksjon" class="py-5 d-none">
+    <div class="container">
+      <h1 class="text-center mb-4">Utforsk våre kategorier</h1>
+      <input type="text" id="kategori-sok" class="form-control mb-4" placeholder="Søk kategori...">
+      <div id="kategori-liste" class="row g-4"></div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/effects/menu-toggle.js"></script>
+<script src="assets/js/effects/theme-toggle.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const valgtKategori = params.get('kategori');
+  const visOversikt = params.get('oversikt');
+
+  if (valgtKategori) {
+    document.getElementById('kategori-seksjon').classList.remove('d-none');
+    const script = document.createElement('script');
+    script.src = 'assets/js/generate/generate-kategori.js';
+    document.body.appendChild(script);
+  } else if (visOversikt) {
+    document.getElementById('kategorioversikt-seksjon').classList.remove('d-none');
+    const script = document.createElement('script');
+    script.src = 'assets/js/generate/generate-kategorioversikt.js';
+    document.body.appendChild(script);
+  } else {
+    window.location.href = '/';
+  }
+</script>
+</body>
+</html>
