@@ -53,4 +53,4 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Feil ved lasting av butikker.json:", err);
       butikkContainer.innerHTML = "<p>Kunne ikke laste butikkene.</p>";
     });
-}); // <--- Denne var helt manglende!
+});
