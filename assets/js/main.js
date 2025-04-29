@@ -136,4 +136,13 @@ document.getElementById('newsletter-form').addEventListener('submit', function (
   alert('Takk for at du meldte deg på! Vi sender deg våre beste tilbud snart.');
   this.reset();
 });
+const newsletterForm = document.getElementById('newsletter-form');
+if (newsletterForm) {
+  newsletterForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Takk for at du meldte deg på! Vi sender deg våre beste tilbud snart.');
+    this.reset();
+  });
+}
+
 
