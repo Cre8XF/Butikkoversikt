@@ -12,18 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  fetch("/assets/data/butikker.json")
+  fetch("assets/data/butikker.json")
     .then(r => r.json())
     .then(butikker => {
       const filtrerteButikker = butikker.filter(b =>
         b.category?.toLowerCase() === valgtKategori.toLowerCase()
       );
 
-      kategoriTittel.innerHTML = `
-        ${valgtKategori}
-        <p class="lead text-muted mt-3">Fant ${filtrerteButikker.length} butikker</p>
-        <a href="kategori.html?oversikt=true" class="btn btn-outline-primary mt-3">Tilbake til kategorier</a>
-      `;
+      kategoriTittel.textContent = valgtKategori;
 
       if (filtrerteButikker.length === 0) {
         butikkContainer.innerHTML = `<p class="text-muted">Ingen butikker funnet i denne kategorien.</p>`;
@@ -41,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="card p-3 h-100">
               <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-2" style="height: 100px; object-fit: contain;">
               <h6 class="fw-bold">${butikk.name}</h6>
-              <p class="text-muted small">${butikk.subcategory ? `(${butikk.subcategory})` : ""}</p>
               <p class="text-muted small">${butikk.description || ""}</p>
             </div>
           </a>
