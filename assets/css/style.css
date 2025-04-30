@@ -1,11 +1,19 @@
-/* 📂 STYLE: Importerer alle css-filer */
+/* Grunnleggende oppsett og variabler */
 @import url("base.css");
+@import url("theme.css"); /* Hvis du ønsker den her for sentral kontroll */
+
+/* Layout og struktur */
 @import url("header.css");
+@import url("footer.css");
 @import url("hero.css");
 @import url("sections.css");
+
+/* Komponenter */
 @import url("cards.css");
 @import url("buttons.css");
 @import url("ads.css");
-@import url("footer.css");
+
+/* Ekstra og tilpasninger */
 @import url("responsive.css");
 @import url("extras.css");
+@import url("master-override.css");
