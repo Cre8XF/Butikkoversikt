@@ -2,119 +2,94 @@
 <html lang="no" data-theme="light">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Butikkoversikt.no - Din guide til nettbutikker</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Temavariabler styres av theme.css -->
-  <link rel="stylesheet" href="assets/css/theme.css"> <!-- 🎨 Temavariabler -->
-  <link rel="stylesheet" href="assets/css/style.css"> <!-- 📦 Alt av struktur og layout -->
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guider og Tips | Butikkoversikt.no</title>
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/theme.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/master-override.css" />
 </head>
 
 <body>
-  <!-- Header -->
   <header class="navbar navbar-expand-lg navbar-theme bg-header shadow-sm py-2">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="/">
-        <img src="assets/images/hero/hero.png" alt="Butikkoversikt logo" style="height: 100px;" class="me-2">
-        <div>
-          <strong style="font-size: 1.5rem;">Butikkoversikt.no</strong><br>
-          <small class="text-muted-theme" style="font-size: 1rem;">Norges nettbutikk-guide</small>
-        </div>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-        title="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="alle-butikker.html">Alle butikker</a></li>
-          <li class="nav-item"><a class="nav-link" href="kategori.html">Kategorier</a></li>
-          <li class="nav-item"><a class="nav-link" href="topp25.html">Topp 25</a></li>
-          <li class="nav-item"><a class="nav-link" href="guider.html">Guider</a></li>
-        </ul>
-      </div>
+      <a class="navbar-brand fw-bold" href="../index.html">Butikkoversikt.no</a>
     </div>
-    <button id="themeToggleBtn" class="btn btn-sm btn-primary"
-      style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
   </header>
 
-  <main>
-    <section class="py-5">
-      <div class="container">
-        <h1 class="text-center mb-4">Guider og Tips</h1>
-        <p class="lead text-center mb-5">Lær hvordan du finner de beste nettbutikkene og handler trygt på nett!</p>
-        <div id="guider-container" class="row row-cols-1 row-cols-md-3 g-4">
-          <!-- Dynamisk innhold via JS -->
-        </div>
-      </div>
-    </section>
-  </main>
+  <main class="container py-5">
+    <h1 class="text-center mb-4">Guider, Tips og Råd</h1>
 
-  <!-- Footer -->
-  <footer class="footer bg-header text-heading py-5 mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <h5>Butikkoversikt.no</h5>
-          <p class="text-muted-theme">Din guide til de beste norske nettbutikkene. Enkelt, trygt og oppdatert.</p>
+    <!-- Seksjon: Guider -->
+    <section class="mb-5">
+      <h2 class="mb-3">Våre guider</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="../assets/images/guider/trygg-netthandel.jpg" class="card-img-top" alt="Trygg netthandel">
+            <div class="card-body">
+              <h5 class="card-title">Trygg netthandel</h5>
+              <p class="card-text">Slik handler du sikkert og unngår svindel...</p>
+              <a href="guide-trygg-netthandel.html" class="btn btn-primary">Les mer</a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <h6>Nyttige lenker</h6>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-heading text-decoration-none">Hjem</a></li>
-            <li><a href="alle-butikker.html" class="text-heading text-decoration-none">Alle butikker</a></li>
-            <li><a href="kategori.html" class="text-heading text-decoration-none">Kategorier</a></li>
-            <li><a href="topp25.html" class="text-heading text-decoration-none">Topp 25</a></li>
-            <li><a href="main-guider.html" class="text-heading text-decoration-none">Guider</a></li>
-          </ul>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../assets/images/guider/billig-treningstoy.jpg" class="card-img-top" alt="Billig treningstøy">
+            <div class="card-body">
+              <h5 class="card-title">Billig treningstøy</h5>
+              <p class="card-text">Her finner du rimelige nettbutikker for treningsklær...</p>
+              <a href="guide-billig-treningstoy.html" class="btn btn-primary">Les mer</a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <h6>Kontakt</h6>
-          <p class="text-muted-theme mb-1">E-post: kontakt@butikkoversikt.no</p>
-          <p class="text-muted-theme mb-2">Org.nr: 123 456 789</p>
-          <div>
-            <a href="#" class="text-heading me-3" title="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-heading me-3" title="Twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="text-heading" title="Instagram"><i class="bi bi-instagram"></i></a>
+        <div class="col">
+          <div class="card h-100">
+            <img src="../assets/images/guider/guide-barn.jpg" class="card-img-top" alt="Handle til barn og baby">
+            <div class="card-body">
+              <h5 class="card-title">Handle til barn og baby</h5>
+              <p class="card-text">Tips og butikker for smarte kjøp til de minste...</p>
+              <a href="guide-barn.html" class="btn btn-primary">Les mer</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="newsletter-wrapper text-center mb-5">
-        <h5 class="mb-3">Få de beste tilbudene først!</h5>
-        <p class="text-muted-theme mb-4">Meld deg på vårt nyhetsbrev og få ukens beste nettbutikker, kampanjer og
-          rabatter
-          rett i innboksen.</p>
-        <form id="newsletter-form" class="d-flex flex-column flex-sm-row justify-content-center">
-          <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0" placeholder="Din e-postadresse" required>
-          <button type="submit" class="btn btn-primary">Meld meg på</button>
-        </form>
-      </div>
-      <hr class="border-secondary">
-      <p class="text-center text-muted-theme mb-0">&copy; 2025 Butikkoversikt.no. Alle rettigheter forbeholdt.</p>
+    </section>
+
+    <!-- Seksjon: Smarte tips -->
+    <section class="mb-5">
+      <h2 class="mb-3">Smarte tips</h2>
+      <ul class="list-unstyled">
+        <li>✨ Bruk prisagenter som Prisjakt og Prisguiden før du handler.</li>
+        <li>✉ Meld deg på nyhetsbrev for eksklusive tilbud.</li>
+        <li>📅 Handle på spesialdager: Black Friday, Singles Day, osv.</li>
+        <li>🚪 Sjekk alltid returvilkår og fraktkostnader før kjøp.</li>
+      </ul>
+    </section>
+
+    <!-- Seksjon: Kategorier eller kommende verktøy -->
+    <section>
+      <h2 class="mb-3">Flere temaer og guider kommer snart:</h2>
+      <ul>
+        <li>Rabattkoder og kupongguider</li>
+        <li>Sammenligning av frakt og levering</li>
+        <li>Guide: Norske vs utenlandske nettbutikker</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer bg-header text-heading py-5 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2024 Butikkoversikt.no</p>
     </div>
   </footer>
 
-
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  
-  <!-- Effekter -->
-  <script src="assets/js/effects/fade-in.js"></script>
-  <script src="assets/js/effects/menu-toggle.js"></script>
-  <script src="assets/js/effects/theme-toggle.js"></script>
-  
-  
-  <!-- Generatorer -->
-  <script src="assets/js/generate/generate-index-stores.js"></script>
-  <script src="assets/js/generate/generate-anbefalte.js"></script>
-  <script src="assets/js/generate/generate-alle-butikker.js"></script>
-  
-  
-  <!-- Main -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="../assets/js/effects/menu-toggle.js"></script>
+  <script src="../assets/js/effects/theme-toggle.js"></script>
+  <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
