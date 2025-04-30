@@ -414,18 +414,15 @@
 .guide-card {
   background-color: var(--guide-card-bg);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px var(--guide-card-shadow);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  box-shadow: 0 2px 4px var(--guide-card-shadow);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 0.75rem;
 }
 
 .guide-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px var(--guide-card-shadow-hover);
+  box-shadow: 0 6px 12px var(--guide-card-shadow-hover);
+  transform: translateY(-4px);
+  background-color: var(--guide-card-hover);
 }
 
 .guide-card img {

@@ -98,10 +98,10 @@
   --shadow-md: rgba(0, 0, 0, 0.15); /* 🌑 Skygge medium */
   --shadow-primary-glow: rgba(147, 197, 253, 0.25);
 
-  --guide-card-bg: var(--card-bg);
-  --guide-card-hover: var(--card-hover);
-  --guide-card-shadow: var(--shadow-md);
-  --guide-card-shadow-hover: var(--shadow-lg);
+  --guide-card-bg: #f9fafb; /* lett kontrast mot hvit bakgrunn */
+  --guide-card-hover: #eef2f7; /* subtil lys hover */
+  --guide-card-shadow: rgba(0, 0, 0, 0.08);
+  --guide-card-shadow-hover: rgba(0, 0, 0, 0.16);
 
   /* 🌟 Blå glød f.eks. kort hover */
   --shadow-sm: rgba(0, 0, 0, 0.1); /* 🌑 Skygge liten */
