@@ -10,7 +10,7 @@
 }
 
 /* Light theme */
-:root {
+[data-theme="light"] {
   --bg-color: #f6f9fc;
   --section-bg: #eef3f9;
   --section-alt-bg: #e2e8f0;
