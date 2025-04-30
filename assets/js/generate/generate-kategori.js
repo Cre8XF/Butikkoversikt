@@ -12,28 +12,26 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  console.log("Valgt kategori:", valgtKategori);
-console.log("Unike kategorier i JSON:", [...new Set(butikker.map(b => b.category))]);
-
-
   fetch("assets/data/butikker.json")
     .then(r => r.json())
     .then(butikker => {
+      console.log("Valgt kategori:", valgtKategori);
+      console.log("Unike kategorier i JSON:", [...new Set(butikker.map(b => (b.category || "").trim()))]);
+
       const filtrerteButikker = butikker.filter(b =>
         (b.category || "").trim().toLowerCase() === valgtKategori.trim().toLowerCase()
       );
 
-      kategoriTittel.textContent = valgtKategori;
-
       if (filtrerteButikker.length === 0) {
+        kategoriTittel.textContent = valgtKategori;
         butikkContainer.innerHTML = `<p class="text-muted">Ingen butikker funnet i denne kategorien.</p>`;
         return;
       }
 
       kategoriTittel.innerHTML = `
-      ${valgtKategori}
-      <p class="lead text-muted mt-3">Fant ${filtrerteButikker.length} butikker</p>
-      <a href="kategori.html" class="btn btn-outline-primary mt-3">Tilbake til kategorier</a>`;
+        ${valgtKategori}
+        <p class="lead text-muted mt-3">Fant ${filtrerteButikker.length} butikker</p>
+        <a href="kategori.html" class="btn btn-outline-primary mt-3">Tilbake til kategorier</a>`;
 
       filtrerteButikker.forEach(butikk => {
         const col = document.createElement("div");
