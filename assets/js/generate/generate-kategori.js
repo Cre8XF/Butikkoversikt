@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
+  console.log("Valgt kategori:", valgtKategori);
+console.log("Unike kategorier i JSON:", [...new Set(butikker.map(b => b.category))]);
+
+
   fetch("assets/data/butikker.json")
     .then(r => r.json())
     .then(butikker => {
