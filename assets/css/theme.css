@@ -52,6 +52,11 @@
   --success-color: #10b981;
   --warning-color: #f59e0b;
   --danger-color: #ef4444;
+
+  --guide-card-bg: var(--card-bg);
+  --guide-card-hover: var(--card-hover);
+  --guide-card-shadow: var(--shadow-md);
+  --guide-card-shadow-hover: var(--shadow-lg);
 }
 
 /* Dark Theme */
@@ -91,12 +96,14 @@
   --section-white: #1e293b; /* 🔹 Helt hvit seksjon */
   --shadow-lg: rgba(0, 0, 0, 0.25); /* 🌑 Skygge stor */
   --shadow-md: rgba(0, 0, 0, 0.15); /* 🌑 Skygge medium */
-  --shadow-primary-glow: rgba(
-    147,
-    197,
-    253,
-    0.25
-  ); /* 🌟 Blå glød f.eks. kort hover */
+  --shadow-primary-glow: rgba(147, 197, 253, 0.25);
+
+  --guide-card-bg: var(--card-bg);
+  --guide-card-hover: var(--card-hover);
+  --guide-card-shadow: var(--shadow-md);
+  --guide-card-shadow-hover: var(--shadow-lg);
+
+  /* 🌟 Blå glød f.eks. kort hover */
   --shadow-sm: rgba(0, 0, 0, 0.1); /* 🌑 Skygge liten */
   --success-color: #10b981; /* ✅ Successtilstand */
   --text-color: #e2e8f0; /* 🔤 Standard tekst */
