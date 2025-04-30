@@ -11,33 +11,32 @@
 
 /* Light theme */
 [data-theme="light"] {
-  --bg-color: #f6f9fc;
-  --section-bg: #eef3f9;
-  --section-alt-bg: #e2e8f0;
+  --bg-color: #f7fafd; /* Hovedbakgrunn – svært lys blå */
+  --section-bg: #d0f0ef; /* Blue green – rolig grønnblå seksjon */
+  --section-alt-bg: #cce6f6; /* Sky blue – alternativ seksjon */
   --card-bg: #ffffff;
-  --card-hover: #f1f5f9;
-  --footer-bg: #dbe2eb;
-  --footer-text: #1f2937;
-  --footer-heading: #111827;
-  --footer-muted: #6b7280;
-  --footer-border: #cbd5e1;
-  --header-bg: #eef3f9;
-  --btn-primary: #2563eb;
-  --btn-hover: #1e40af;
-  --btn-shadow: rgba(37, 99, 235, 0.3);
-  --link-color: #2563eb;
+  --card-hover: #f0f4f8;
+  --header-bg: #3a66a3; /* Lapis blue – mørk og rik blå for header */
+  --footer-bg: #3a66a3; /* Samme for helhet */
+  --footer-text: #ffffff;
+  --footer-heading: #e2e8f0;
+  --footer-muted: #d1d5db;
+  --footer-border: #5b7ba3;
+  --btn-primary: #fbbf24; /* Yellow orange – kraftig og varm */
+  --btn-hover: #f59e0b;
+  --btn-shadow: rgba(251, 191, 36, 0.3);
+  --link-color: #3b82f6;
   --heading-color: #111827;
   --text-color: #1f2937;
   --text-muted: #6b7280;
-  --border-color: #cbd5e1;
-  --hero-bg: #dbeafe;
+  --border-color: #d1d5db;
+  --hero-bg: #e0f2fe;
   --hero-gradient-start: #f8fbff;
-  --hero-gradient-end: #e0f2fe;
+  --hero-gradient-end: #e0f0ff;
   --accent-color: #fcd34d;
   --shadow-sm: rgba(0, 0, 0, 0.04);
   --shadow-md: rgba(0, 0, 0, 0.08);
-  --shadow-lg: rgba(0, 0, 0, 0.12); /* 🌟 Blå glød f.eks. kort hover */
-  --shadow-sm: rgba(0, 0, 0, 0.05); /* 🌑 Skygge liten */
+  --shadow-lg: rgba(0, 0, 0, 0.12);
   --success-color: #10b981; /* ✅ Successtilstand */
   --text-color: #1f2937; /* 🔤 Standard tekst */
   --text-muted: #6b7280; /* 🔤 Dempet tekst */
