@@ -95,7 +95,7 @@
   max-height: 90vh;
   background: linear-gradient(180deg, var(--card-bg) 0%, #f1f3f5 100%);
   border-radius: 0 20px 20px 0;
-  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 14px var(--shadow-md);
   overflow-y: auto;
   transition: left 0.3s ease;
   padding: 1rem;
@@ -142,7 +142,7 @@
 }
 
 .rating-stars {
-  color: #fbbf24; /* Gullfarge */
+  color: var(--rating-star-color);
   font-size: 1.2rem;
 }
 
@@ -157,7 +157,7 @@
 }
 
 .guide-card:hover {
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 14px var(--shadow-md);
 }
 
 .guide-img {
@@ -223,7 +223,7 @@
 }
 
 .shadow-sm {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 14px var(--shadow-md);
 }
 
 .border-top {
@@ -289,7 +289,7 @@
 .butikKort:hover,
 .butikkort:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px var(--shadow-lg);
 }
 /* Container for alle butikkort på alle-butikker.html */
 #butikk-container .card {
@@ -306,7 +306,7 @@
 
 #butikk-container .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 24px var(--shadow-lg);
 }
 
 #butikk-container .card img {
@@ -351,6 +351,6 @@
 }
 
 .filter-select:focus {
-  border-color: #0056b3;
-  box-shadow: 0 0 5px rgba(0, 86, 179, 0.25);
+  border-color: var(--focus-color);
+  box-shadow: 0 0 5px var(--focus-shadow);
 }

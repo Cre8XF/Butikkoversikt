@@ -22,6 +22,7 @@
   --btn-primary: #2563eb;
   --btn-hover: #1d4ed8;
   --btn-shadow: rgba(37, 99, 235, 0.4);
+  --btn-focus-shadow: rgba(37, 99, 235, 0.25);
   --link-color: #2563eb;
   --footer-bg: #1e293b;
   --footer-text: #e2e8f0;
@@ -35,12 +36,25 @@
   --danger-color: #ef4444;
   --section-light: #f3f4f6;
   --section-muted: #e5e7eb;
+  --section-white: #ffffff;
   --hero-bg: #e0f2fe;
   --shadow-sm: rgba(0, 0, 0, 0.05);
   --shadow-md: rgba(0, 0, 0, 0.1);
   --shadow-lg: rgba(0, 0, 0, 0.15);
   --shadow-primary-glow: rgba(37, 99, 235, 0.4);
   --icon-glow: rgba(37, 99, 235, 0.6);
+  --rating-star-color: #fbbf24;
+  --focus-color: #0056b3;
+  --focus-shadow: rgba(0, 86, 179, 0.25);
+  --input-bg: #ffffff;
+  --placeholder-color: #888;
+  --hero-gradient-start: #f8fbff;
+  --hero-gradient-end: #e0f0ff;
+  --section-dark-start: #1e293b;
+  --section-dark-end: #334155;
+  --focus-color: #0056b3;
+  --focus-shadow: rgba(0, 86, 179, 0.25);
+
 
 }
 
@@ -57,6 +71,7 @@
   --btn-primary: #3b82f6;
   --btn-hover: #2563eb;
   --btn-shadow: rgba(147, 197, 253, 0.25); /* lysere blå variant */
+  --btn-focus-shadow: rgba(147, 197, 253, 0.3);
   --link-color: #60a5fa;
   --footer-bg: #0f172a;
   --footer-text: #94a3b8;
@@ -70,12 +85,25 @@
   --danger-color: #ef4444;
   --section-light: #1e293b;
   --section-muted: #334155;
+  --section-white: #1e293b;
   --hero-bg: #0f172a;
   --shadow-sm: rgba(0, 0, 0, 0.1);
   --shadow-md: rgba(0, 0, 0, 0.15);
   --shadow-lg: rgba(0, 0, 0, 0.25);
   --shadow-primary-glow: rgba(147, 197, 253, 0.25);
   --icon-glow: rgba(147, 197, 253, 0.4);
+  --rating-star-color: #fbbf24;
+  --focus-color: #60a5fa;
+  --focus-shadow: rgba(147, 197, 253, 0.3);
+  --input-bg: #1e293b;
+  --placeholder-color: #aaa;
+  --hero-gradient-start: #1e293b;
+  --hero-gradient-end: #0f172a;
+  --section-dark-start: #0f172a;
+  --section-dark-end: #1e293b;
+  --focus-color: #0056b3;
+  --focus-shadow: rgba(0, 86, 179, 0.25);
+
 
 }
 

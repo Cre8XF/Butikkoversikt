@@ -1,0 +1,26 @@
+/* 🎨 Eksempel: Tilpassede farger via override */
+
+:root {
+  --btn-primary: #ff5722;
+  --btn-hover: #e64a19;
+  --card-bg: #fffbea;
+  --text-color: #111111;
+  --heading-color: #000000;
+  --border-color: #ffccbc;
+  --section-bg: #fff8f0;
+  --footer-bg: #ffe0b2;
+  --link-color: #ff7043;
+}
+
+/* Dark mode justering */
+[data-theme="dark"] {
+  --btn-primary: #ff8a65;
+  --btn-hover: #ff7043;
+  --card-bg: #3e2723;
+  --text-color: #fff3e0;
+  --heading-color: #ffccbc;
+  --border-color: #5d4037;
+  --section-bg: #4e342e;
+  --footer-bg: #3e2723;
+  --link-color: #ffab91;
+}

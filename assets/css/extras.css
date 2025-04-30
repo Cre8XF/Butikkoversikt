@@ -11,7 +11,7 @@
 }
 
 .rating-stars {
-  color: #fbbf24; /* Gullfarge */
+  color: var(--rating-star-color);
   font-size: 1.2rem;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .guide-card:hover {
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 14px var(--shadow-md);
 }
 
 .guide-img {
@@ -127,6 +127,6 @@
 }
 
 .filter-select:focus {
-  border-color: #0056b3;
-  box-shadow: 0 0 5px rgba(0, 86, 179, 0.25);
+  border-color: var(--focus-color);
+  box-shadow: 0 0 5px var(--focus-shadow);
 }

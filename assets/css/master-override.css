@@ -1,4 +1,3 @@
-
 /* ✅ MASTER OVERRIDE - Kontroll på Bootstrap styling med egne variabler */
 
 /* Body */
@@ -41,7 +40,7 @@ textarea:focus,
 select:focus,
 .form-control:focus {
   border-color: var(--btn-primary);
-  box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.25); /* Bruk btn-primary */
+  box-shadow: 0 0 0 0.25rem var(--btn-focus-shadow);
   background-color: var(--card-bg);
   color: var(--text-color);
 }
@@ -56,7 +55,7 @@ select:focus,
 .card:hover {
   background-color: var(--card-hover);
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 24px var(--shadow-lg);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -69,19 +68,23 @@ select:focus,
 }
 
 /* Footer */
-footer, .site-footer {
+footer,
+.site-footer {
   background-color: var(--footer-bg);
   color: var(--footer-text);
 }
 
-footer h4, .site-footer h4 {
+footer h4,
+.site-footer h4 {
   color: var(--footer-heading);
 }
 
-footer a, .site-footer a {
+footer a,
+.site-footer a {
   color: var(--footer-muted);
 }
-footer a:hover, .site-footer a:hover {
+footer a:hover,
+.site-footer a:hover {
   color: var(--footer-text);
 }
 
