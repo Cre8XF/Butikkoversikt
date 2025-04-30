@@ -21,6 +21,7 @@
   --footer-heading: #111827;
   --footer-muted: #6b7280;
   --footer-border: #cbd5e1;
+  --header-bg: #eef3f9;
   --btn-primary: #2563eb;
   --btn-hover: #1e40af;
   --btn-shadow: rgba(37, 99, 235, 0.3);
@@ -62,6 +63,7 @@
   --footer-muted: #64748b; /* 🦶 Footer dempet tekst */
   --footer-text: #94a3b8; /* 🦶 Footer tekst */
   --heading-color: #f1f5f9; /* 🔤 Overskrifter */
+  --header-bg: #1e293b; /* 🗂️ Header bakgrunn */
   --hero-bg: #0f172a; /* 🔹 Bakgrunn for helteområde */
   --hero-gradient-end: #0f172a; /* 🔹 Gradientslutt for hero */
   --hero-gradient-start: #1e293b; /* 🔹 Gradientstart for hero */
