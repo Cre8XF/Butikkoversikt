@@ -1,0 +1,93 @@
+📂 BASIS VARIABLER & BASIS STIL */
+/* ========================================= */
+:root {
+  /* Felles for begge temaene */
+  --transition-speed: 0.3s;
+  --border-radius: 0.5rem;
+  --font-family: "Inter", sans-serif;
+  --spacing-unit: 1rem;
+  --shadow-default: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Light theme */
+:root {
+  --bg-color: #f6f9fc;
+  --section-bg: #eef3f9;
+  --section-alt-bg: #e2e8f0;
+  --card-bg: #ffffff;
+  --card-hover: #f1f5f9;
+  --footer-bg: #e2e8f0;
+  --footer-text: #1f2937;
+  --footer-heading: #111827;
+  --footer-muted: #6b7280;
+  --footer-border: #cbd5e1;
+  --btn-primary: #2563eb;
+  --btn-hover: #1e40af;
+  --btn-shadow: rgba(37, 99, 235, 0.3);
+  --link-color: #2563eb;
+  --heading-color: #111827;
+  --text-color: #1f2937;
+  --text-muted: #6b7280;
+  --border-color: #cbd5e1;
+  --hero-bg: #dbeafe;
+  --hero-gradient-start: #f8fbff;
+  --hero-gradient-end: #e0f2fe;
+  --accent-color: #fcd34d;
+  --shadow-sm: rgba(0, 0, 0, 0.04);
+  --shadow-md: rgba(0, 0, 0, 0.08);
+  --shadow-lg: rgba(0, 0, 0, 0.12); /* 🌟 Blå glød f.eks. kort hover */
+  --shadow-sm: rgba(0, 0, 0, 0.05); /* 🌑 Skygge liten */
+  --success-color: #10b981; /* ✅ Successtilstand */
+  --text-color: #1f2937; /* 🔤 Standard tekst */
+  --text-muted: #6b7280; /* 🔤 Dempet tekst */
+  --warning-color: #f59e0b; /* ⚠️ Advarsel */
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg-color: #0f172a; /* 🔹 Bakgrunnsfarge for <body> */
+  --border-color: #475569; /* 📏 Standard border */
+  --btn-focus-shadow: rgba(147, 197, 253, 0.3); /* 🔘 Knapp i fokus */
+  --btn-hover: #2563eb; /* 🔘 Knapp hover */
+  --btn-primary: #3b82f6; /* 🔘 Primærknapp */
+  --btn-shadow: rgba(147, 197, 253, 0.25); /* 🔘 Knappeskygge */
+  --card-bg: #1e293b; /* 🧾 Kortbakgrunn */
+  --card-hover: #3b4c64; /* 🧾 Kort ved hover */
+  --danger-color: #ef4444; /* ❌ Feiltilstand */
+  --focus-color: #60a5fa; /* 🧾 Fokusrammefarge */
+  --focus-shadow: rgba(147, 197, 253, 0.3); /* 🧾 Fokus-skygge */
+  --footer-bg: #0f172a; /* 🦶 Footer bakgrunn */
+  --footer-border: #334155; /* 🦶 Footer kant */
+  --footer-heading: #e2e8f0; /* 🦶 Footer overskrift */
+  --footer-muted: #64748b; /* 🦶 Footer dempet tekst */
+  --footer-text: #94a3b8; /* 🦶 Footer tekst */
+  --heading-color: #f1f5f9; /* 🔤 Overskrifter */
+  --hero-bg: #0f172a; /* 🔹 Bakgrunn for helteområde */
+  --hero-gradient-end: #0f172a; /* 🔹 Gradientslutt for hero */
+  --hero-gradient-start: #1e293b; /* 🔹 Gradientstart for hero */
+  --icon-glow: rgba(147, 197, 253, 0.4); /* 🌟 Ikonglød */
+  --input-bg: #1e293b; /* 🧾 Skjemabakgrunn */
+  --link-color: #60a5fa; /* 🔗 Lenker */
+  --placeholder-color: #aaa; /* 🔤 Skjema-placeholdertekst */
+  --rating-star-color: #fbbf24; /* ⭐ Vurderingsstjerner */
+  --section-alt-bg: #334155; /* 🔹 Alternativ seksjonsbakgrunn */
+  --section-bg: #1e293b; /* 🔹 Seksjonsbakgrunn standard */
+  --section-dark-end: #1e293b; /* 🔹 Gradientslutt for mørk seksjon */
+  --section-dark-start: #0f172a; /* 🔹 Gradientstart for mørk seksjon */
+  --section-light: #1e293b; /* 🔹 Lys seksjon (ekstra) */
+  --section-muted: #334155; /* 🔹 Muted seksjon (grå) */
+  --section-white: #1e293b; /* 🔹 Helt hvit seksjon */
+  --shadow-lg: rgba(0, 0, 0, 0.25); /* 🌑 Skygge stor */
+  --shadow-md: rgba(0, 0, 0, 0.15); /* 🌑 Skygge medium */
+  --shadow-primary-glow: rgba(
+    147,
+    197,
+    253,
+    0.25
+  ); /* 🌟 Blå glød f.eks. kort hover */
+  --shadow-sm: rgba(0, 0, 0, 0.1); /* 🌑 Skygge liten */
+  --success-color: #10b981; /* ✅ Successtilstand */
+  --text-color: #e2e8f0; /* 🔤 Standard tekst */
+  --text-muted: #94a3b8; /* 🔤 Dempet tekst */
+  --warning-color: #f59e0b; /* ⚠️ Advarsel */
+}
