@@ -1,0 +1,51 @@
+📂 HERO / BANNER */
+/* ========================================= */
+
+.hero.section.bg-light-section {
+  background: linear-gradient(to right, #f8fbff, #e0f0ff);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero .btn-primary {
+   background-color: var(--btn-primary); /* Tidligere #007bff */
+  border-color: var(--btn-primary);
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: var(--btn-hover); /* Tidligere #0056b3 */
+  border-color: var(--btn-hover);
+  transform: translateY(-3px);
+}
+
+.hero {
+  background: var(--hero-bg);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+/* 📢 Hovedbanner forbedringer */
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+/* ========================================= */
+/*

@@ -21,27 +21,16 @@
   --heading-color: #111827;
   --btn-primary: #2563eb;
   --btn-hover: #1d4ed8;
-  --btn-shadow: rgba(37, 99, 235, 0.4);
   --link-color: #2563eb;
   --footer-bg: #1e293b;
   --footer-text: #e2e8f0;
   --footer-heading: #f1f5f9;
   --footer-muted: #94a3b8;
   --footer-border: #334155;
-  --footer-bg: #0f172a;
   --border-color: #d1d5db;
   --success-color: #10b981;
   --warning-color: #f59e0b;
   --danger-color: #ef4444;
-  --section-light: #f3f4f6;
-  --section-muted: #e5e7eb;
-  --hero-bg: #e0f2fe;
-  --shadow-sm: rgba(0, 0, 0, 0.05);
-  --shadow-md: rgba(0, 0, 0, 0.1);
-  --shadow-lg: rgba(0, 0, 0, 0.15);
-  --shadow-primary-glow: rgba(37, 99, 235, 0.4);
-  --icon-glow: rgba(37, 99, 235, 0.6);
-
 }
 
 /* Dark Theme */
@@ -56,27 +45,16 @@
   --heading-color: #f1f5f9;
   --btn-primary: #3b82f6;
   --btn-hover: #2563eb;
-  --btn-shadow: rgba(147, 197, 253, 0.25); /* lysere blå variant */
   --link-color: #60a5fa;
   --footer-bg: #0f172a;
   --footer-text: #94a3b8;
   --footer-heading: #e2e8f0;
   --footer-muted: #64748b;
   --footer-border: #334155;
-  --footer-bg: #0f172a;
   --border-color: #475569;
   --success-color: #10b981;
   --warning-color: #f59e0b;
   --danger-color: #ef4444;
-  --section-light: #1e293b;
-  --section-muted: #334155;
-  --hero-bg: #0f172a;
-  --shadow-sm: rgba(0, 0, 0, 0.1);
-  --shadow-md: rgba(0, 0, 0, 0.15);
-  --shadow-lg: rgba(0, 0, 0, 0.25);
-  --shadow-primary-glow: rgba(147, 197, 253, 0.25);
-  --icon-glow: rgba(147, 197, 253, 0.4);
-
 }
 
 /* Fade transitions */
@@ -147,7 +125,7 @@ header.bg-header {
 .section-dark h5,
 .section-dark a,
 .section-dark p {
- color: var(--heading-color);
+  color: #1f2937;
 }
 
 /* Øk luft under "Populære kategorier" */
@@ -155,10 +133,8 @@ header.bg-header {
   margin-bottom: 3rem;
 }
 .section-dark {
-  .section-dark {
-  background: linear-gradient(to right, var(--section-bg), var(--section-alt-bg));
-  color: var(--text-color);
-}
+  background-color: linear-gradient(to right, #1e293b, #334155);
+  color: #f1f5f9;
   padding-top: 4rem;
   padding-bottom: 4rem;
   border-top: 1px solid var(--footer-border);
