@@ -28,8 +28,11 @@
   --btn-hover: #d97d30;
   --btn-shadow: rgba(244, 162, 89, 0.25);
 
-  --bs-primary: #b7ce52; /* Samme som din --btn-primary f.eks. */
-  --bs-primary-rgb: 37, 99, 235;
+  --offer-bg: #fff3cd; /* Lys gul/oransje bakgrunn */
+  --offer-text: #7c3b00; /* Mørk varm brun for kontrast */
+
+  --campaign-bg: #d1e7dd; /* Mild grønn (Bootstrap's success-light) */
+  --campaign-text: #0f5132; /* Mørk grønn tekst */
 
   --link-color: #2563eb;
   --heading-color: #0f172a;

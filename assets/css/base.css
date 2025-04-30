@@ -51,6 +51,16 @@ header.bg-header {
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
 }
+.bg-offer {
+  background-color: var(--offer-bg);
+  color: var(--offer-text);
+}
+
+.bg-campaign {
+  background-color: var(--campaign-bg);
+  color: var(--campaign-text);
+}
+
 .section-alt {
   background-color: var(--section-alt-bg);
 }
