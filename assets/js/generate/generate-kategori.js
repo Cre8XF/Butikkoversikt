@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(r => r.json())
     .then(butikker => {
       const filtrerteButikker = butikker.filter(b =>
-        b.category?.toLowerCase() === valgtKategori.toLowerCase()
+        (b.category || "").trim().toLowerCase() === valgtKategori.trim().toLowerCase()
       );
 
       kategoriTittel.textContent = valgtKategori;
