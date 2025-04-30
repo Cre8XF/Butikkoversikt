@@ -4,224 +4,176 @@
     "image": "assets/images/butikker/About you.png",
     "alt": "About You",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.aboutyou.no",
     "description": "Stort utvalg av merker og mote.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Apotek1.no",
     "image": "assets/images/butikker/Apotek1.png",
     "alt": "Apotek 1",
     "category": "Apotek",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.apotek1.no",
-    "description": "Apotek1.no tilbyr et bredt utvalg av medisiner, egenpleieprodukter og apotektjenester â alt levert rett hjem.",
+    "description": "Apotek1.no tilbyr et bredt utvalg av medisiner, egenpleieprodukter og apotektjenester – alt levert rett hjem.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Apotekhjem.no",
     "image": "assets/images/butikker/Apotekhjem.png",
     "alt": "Apotekhjem",
     "category": "Apotek",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.apotekhjem.no",
-    "description": "Spesialisert apotek med hjemmelevering og fokus pÃ¥ eldre og kronikere.",
+    "description": "Spesialisert apotek med hjemmelevering og fokus på eldre og kronikere.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Apotera.no",
     "image": "assets/images/butikker/Apotera.png",
     "alt": "Apotera",
     "category": "Apotek",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.apotera.no",
-    "description": "Nytt nettapotek med stort fokus pÃ¥ pris og brukervennlighet.",
+    "description": "Nytt nettapotek med stort fokus på pris og brukervennlighet.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Ark.no",
     "image": "assets/images/butikker/Ark.png",
     "alt": "Ark.no",
     "category": "Bøker og underholdning",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.ark.no",
     "description": "Bestselgere, barnebøker, lydbøker og e-bøker.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "AskeladdenNavnelapper.no",
     "image": "assets/images/butikker/Askeladden.png",
     "alt": "Askeladden",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.askeladdennavnelapper.no",
     "description": "Praktiske navnelapper for klær og utstyr.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Babyshop",
     "image": "assets/images/butikker/babyshop_logo_200.jpg",
     "alt": "Babyshop",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.babyshop.no",
-    "description": "Babyshop tilbyr produkter for barn og baby, med fokus pÃ¥ kvalitet, komfort og lek.",
+    "description": "Babyshop tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
-    "forside": true,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": true
   },
   {
     "name": "Barnas Hus",
     "image": "assets/images/butikker/BarnasHus_logo.png",
     "alt": "Barnas Hus",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.barnashus.no",
-    "description": "Barnas Hus tilbyr produkter for barn og baby, med fokus pÃ¥ kvalitet, komfort og lek.",
+    "description": "Barnas Hus tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Barnevognhuset.no",
     "image": "assets/images/butikker/Barnevognhuset.png",
     "alt": "Barnevognhuset",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.barnevognhuset.no",
     "description": "Barnevogner og alt til trilletur og reise.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "BikBok.com",
     "image": "assets/images/butikker/Bik Bok.png",
     "alt": "Bik Bok",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.bikbok.com",
     "description": "Mote for unge kvinner.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Bjørnklær.no",
     "image": "assets/images/butikker/Bjornklader.png",
     "alt": "Bjørnklær.no",
     "category": "Sport og fritid",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.bjornklader.no",
     "description": "Arbeidsklær og fritidsklær for aktive mennesker.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Blivakker.no",
     "image": "assets/images/butikker/Blivakker.png",
     "alt": "Blivakker",
     "category": "Helse og egenpleie",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.blivakker.no",
-    "description": "Skjønnhetsprodukter og hudpleie pÃ¥ nett.",
+    "description": "Skjønnhetsprodukter og hudpleie på nett.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Bogartstore.no",
     "image": "assets/images/butikker/Bogart.png",
     "alt": "Bogart",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.bogartstore.no",
     "description": "Klassisk og moderne herremote.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Boozt",
     "image": "assets/images/butikker/Boozt.png",
     "alt": "Boozt",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.boozt.com",
-    "description": "Boozt tilbyr moderne og tidløse klær for alle anledninger â bÃ¥de til dame, herre og barn.",
+    "description": "Boozt tilbyr moderne og tidløse klær for alle anledninger – både til dame, herre og barn.",
     "topp25": true,
-    "forside": true,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": true
   },
   {
     "name": "Bubbleroom.com",
     "image": "assets/images/butikker/bubbleroom.png",
     "alt": "Bubbleroom",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.bubbleroom.com",
     "description": "Kjoler og festklær til dame.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "CDON",
     "image": "assets/images/butikker/cdon.png",
     "alt": "CDON",
     "category": "Elektronikk og data",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://cdon.no",
     "description": "CDON tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "topp25": true,
-    "forside": true,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": true
   },
   {
     "name": "Clas Ohlson",
@@ -232,66 +184,51 @@
     "url": "https://www.clasohlson.com/no/",
     "description": "Clas Ohlson tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "ClasOhlson.no",
     "image": "assets/images/butikker/ClasOhlson.png",
     "alt": "Clas Ohlson",
     "category": "Elektronikk og data",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.clasohlson.no",
-    "description": "Praktiske løsninger for hjemmet â ogsÃ¥ hodetelefoner og lyd.",
+    "description": "Praktiske løsninger for hjemmet – også hodetelefoner og lyd.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Cubus.no",
     "image": "assets/images/butikker/Cubus.png",
     "alt": "Cubus",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://cubus.com/no/",
-    "description": "Cubus.no tilbyr produkter for barn og baby, med fokus pÃ¥ kvalitet, komfort og lek.",
+    "description": "Cubus.no tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Dressmann.com",
     "image": "assets/images/butikker/Dressmann.png",
     "alt": "Dressmann",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.dressmann.com",
     "description": "Basisplagg og formelle klær.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "DustinHome.no",
     "image": "assets/images/butikker/Dustin.png",
     "alt": "Dustin",
     "category": "Elektronikk og data",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.dustinhome.no/",
     "description": "Stort utvalg av datautstyr og tilbehør.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Elkjøp",
@@ -302,542 +239,425 @@
     "url": "https://www.elkjop.no",
     "description": "Elkjøp tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "topp25": true,
-    "forside": true,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": true
   },
   {
     "name": "Ellos",
     "image": "assets/images/butikker/ellos.png",
     "alt": "Ellos",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.ellos.no",
-    "description": "Ellos tilbyr produkter for barn og baby, med fokus pÃ¥ kvalitet, komfort og lek.",
+    "description": "Ellos tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Farmasiet",
     "image": "assets/images/butikker/farmasiet.png",
     "alt": "Farmasiet",
     "category": "Apotek",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.farmasiet.no",
-    "description": "Farmasiet tilbyr et bredt utvalg av medisiner, egenpleieprodukter og apotektjenester â alt levert rett hjem.",
+    "description": "Farmasiet tilbyr et bredt utvalg av medisiner, egenpleieprodukter og apotektjenester – alt levert rett hjem.",
     "topp25": true,
-    "forside": true,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": true
   },
   {
     "name": "Fjellsport.no",
     "image": "assets/images/butikker/Fjellsport.png",
     "alt": "Fjellsport.no",
     "category": "Sport og fritid",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.fjellsport.no",
     "description": "Fjellsport.no tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Glitter.no",
     "image": "assets/images/butikker/glitter.png",
     "alt": "Glitter",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.glitter.no",
-    "description": "Smykker og hÃ¥rtilbehør.",
+    "description": "Smykker og hårtilbehør.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Guttelus",
     "image": "assets/images/butikker/guttelus-logo--200x201.jpg",
     "alt": "Guttelus",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.guttelus.no",
-    "description": "Guttelus tilbyr produkter for barn og baby, med fokus pÃ¥ kvalitet, komfort og lek.",
+    "description": "Guttelus tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "H&M",
     "image": "assets/images/butikker/H&M.png",
     "alt": "H&M",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.hm.com/no",
-    "description": "H&M tilbyr moderne og tidløse klær for alle anledninger â bÃ¥de til dame, herre og barn.",
+    "description": "H&M tilbyr moderne og tidløse klær for alle anledninger – både til dame, herre og barn.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "HiFiKlubben.no",
     "image": "assets/images/butikker/HiFiKlubben.png",
     "alt": "HiFi Klubben",
     "category": "Elektronikk og data",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.hifiklubben.no",
     "description": "Høyttalere, forsterkere og lydprodukter i toppklasse.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "IKEA",
     "image": "assets/images/butikker/ikea.png",
     "alt": "IKEA",
     "category": "Møbler og interiør",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.ikea.com/no/no",
     "description": "IKEA tilbyr praktiske og stilrene møbler og interiør til alle rom i hjemmet.",
     "topp25": true,
-    "forside": true,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": true
   },
   {
     "name": "iTech.no",
     "image": "assets/images/butikker/iTech.png",
     "alt": "iTech",
     "category": "Elektronikk og data",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.itech.no",
     "description": "Apple-produkter og tilbehør.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "JackAndJones.com",
     "image": "assets/images/butikker/jack&jones.png",
     "alt": "Jack & Jones",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.jackjones.com",
     "description": "Moderne herremote for menn.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Jollyroom",
     "image": "assets/images/butikker/Jollyroom.jpg",
     "alt": "Jollyroom",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.jollyroom.no",
-    "description": "Jollyroom tilbyr produkter for barn og baby, med fokus pÃ¥ kvalitet, komfort og lek.",
+    "description": "Jollyroom tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Kid Interiør",
     "image": "assets/images/butikker/Kid.png",
     "alt": "Kid Interiør",
     "category": "Møbler og interiør",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.kid.no",
     "description": "Kid Interiør tilbyr praktiske og stilrene møbler og interiør til alle rom i hjemmet.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Kjell.com",
     "image": "assets/images/butikker/Kjell.png",
     "alt": "Kjell & Company",
     "category": "Elektronikk og data",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.kjell.com",
-    "description": "Smarthus, kabler og smÃ¥elektronikk.",
+    "description": "Smarthus, kabler og småelektronikk.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Komplett",
     "image": "assets/images/butikker/komplett.png",
     "alt": "Komplett",
     "category": "Elektronikk og data",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.komplett.no",
     "description": "Komplett tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "topp25": true,
-    "forside": true,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": true
   },
   {
     "name": "KomplettApotek.no",
     "image": "assets/images/butikker/Komplettapotek.png",
     "alt": "Komplett Apotek",
     "category": "Apotek",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.komplettapotek.no",
-    "description": "Digitalt apotek med lave priser og reseptbestilling rett pÃ¥ nett.",
+    "description": "Digitalt apotek med lave priser og reseptbestilling rett på nett.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Lekeakademiet.no",
     "image": "assets/images/butikker/Lekeakademiet.png",
     "alt": "Lekeakademiet",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.lekeakademiet.no",
     "description": "Leker som stimulerer barns utvikling og læring.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Lekia",
     "image": "assets/images/butikker/Lekia.png",
     "alt": "Lekia",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.lekia.no",
-    "description": "Lekia tilbyr produkter for barn og baby, med fokus pÃ¥ kvalitet, komfort og lek.",
+    "description": "Lekia tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Life.no",
     "image": "assets/images/butikker/life.png",
     "alt": "Life",
     "category": "Helse og egenpleie",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.life.no",
     "description": "Helsekost og naturlig velvære.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Lindex.no",
     "image": "assets/images/butikker/Lindex.png",
     "alt": "Lindex",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.lindex.no",
     "description": "Klær og undertøy til dame og barn.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Mimmis.no",
     "image": "assets/images/butikker/Mimmis.png",
     "alt": "Mimmis",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.mimmis.no",
     "description": "Bilstoler, vogner, bæreseler og babyutstyr.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Morris.se",
     "image": "assets/images/butikker/Morris.png",
     "alt": "Morris",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://morrisstockholm.com/sv",
     "description": "Vesker, lommebøker og reisetilbehør.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Nameit.com",
     "image": "assets/images/butikker/NameIt.png",
     "alt": "Name It",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.nameit.com/no-no/home",
     "description": "Moderne barneklær og mammaklær.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Nelly.com",
     "image": "assets/images/butikker/Nelly.png",
     "alt": "Nelly",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.nelly.com",
     "description": "Trendklær og kjoler for damer.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "NetOnNet.no",
     "image": "assets/images/butikker/Netonnet.png",
     "alt": "NetOnNet",
     "category": "Elektronikk og data",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.netonnet.no",
-    "description": "Direkte fra lageret â PC og skjermer.",
+    "description": "Direkte fra lageret – PC og skjermer.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Outnorth.no",
     "image": "assets/images/butikker/Outnorth.png",
     "alt": "Outnorth.no",
     "category": "Sport og fritid",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.outnorth.no",
     "description": "Friluftsliv og turprodukter av høy kvalitet.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Platekompaniet",
     "image": "assets/images/butikker/platekompaniet.png",
     "alt": "Platekompaniet",
     "category": "Bøker og underholdning",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.platekompaniet.no",
     "description": "Platekompaniet tilbyr bøker, spill og underholdning for hele familien.",
     "topp25": true,
-    "forside": true,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": true
   },
   {
     "name": "Power.no",
     "image": "assets/images/butikker/Power.png",
     "alt": "Power",
     "category": "Elektronikk og data",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.power.no",
     "description": "Power.no tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "RiktigeLeker.no",
     "image": "assets/images/butikker/sprell.png",
     "alt": "Riktige Leker",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.riktigeleker.no",
     "description": "Kvalitetsleker og babyleker for alle aldre.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Rudo",
     "image": "assets/images/butikker/Rudo.png",
     "alt": "Rudo",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.rudo.no",
-    "description": "Rudo tilbyr produkter for barn og baby, med fokus pÃ¥ kvalitet, komfort og lek.",
+    "description": "Rudo tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Soundgarden.no",
     "image": "assets/images/butikker/Soundgarden.png",
     "alt": "Soundgarden",
     "category": "Elektronikk og data",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.soundgarden.no",
     "description": "Hi-fi og hjemmekino for entusiaster.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Specsavers.no",
     "image": "assets/images/butikker/Specsavers.png",
     "alt": "Specsavers",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.specsavers.no",
     "description": "Briller, solbriller og tilbehør.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Sport1.no",
     "image": "assets/images/butikker/Sport1.png",
     "alt": "Sport1.no",
     "category": "Sport og fritid",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.sport1.no",
     "description": "Sport1.no tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Sportamore",
     "image": "assets/images/butikker/sportamore.png",
     "alt": "Sportamore",
     "category": "Sport og fritid",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.sportamore.no",
     "description": "Sportamore tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
     "topp25": true,
-    "forside": true,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": true
   },
   {
     "name": "Sportshopen.no",
     "image": "assets/images/butikker/Sportshopen.png",
     "alt": "Sportshopen.no",
     "category": "Sport og fritid",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.sportshopen.no",
     "description": "Utstyr for sport og fritid til gode priser.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "sportsmaster",
     "image": "assets/images/butikker/sportsmaster.png",
     "alt": "Sport24.no",
     "category": "Sport og fritid",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.sportsmaster.no",
     "description": "Sportsmaster er en spesialforretning og leverer alt av treningsapparater direkte fra fabrikk uten fordyrende mellomledd.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Sunkost.no",
     "image": "assets/images/butikker/sunkost.png",
     "alt": "Sunkost",
     "category": "Helse og egenpleie",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.sunkost.no",
     "description": "Kosttilskudd, vitaminer og naturlig egenpleie.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Tek.no",
     "image": "assets/images/butikker/Tek.png",
     "alt": "Tek.no",
     "category": "Elektronikk og data",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.tek.no",
     "description": "Teknologinyheter og produktanbefalinger.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Teknikmagasinet.no",
     "image": "assets/images/butikker/Teknikmagasinet.png",
     "alt": "Teknikmagasinet",
     "category": "Elektronikk og data",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.teknikmagasinet.no",
     "description": "Gadgets, gaming og duppeditter.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Vinmonopolet",
@@ -848,94 +668,73 @@
     "url": "https://www.vinmonopolet.no",
     "description": "Vinmonopolet tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Vitusapotek.no",
     "image": "assets/images/butikker/Vitusapotek.png",
     "alt": "Vitusapotek",
     "category": "Apotek",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.vitusapotek.no",
-    "description": "Trygt apotek pÃ¥ nett med legemidler, vitaminer, egenpleie og resepttjenester.",
+    "description": "Trygt apotek på nett med legemidler, vitaminer, egenpleie og resepttjenester.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Volt.no",
     "image": "assets/images/butikker/Volt.png",
     "alt": "Volt",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.voltfashion.com/no/",
     "description": "Nordisk herremote med stil.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "XXL",
     "image": "assets/images/butikker/xxl.png",
     "alt": "XXL",
     "category": "Sport og fritid",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.xxl.no",
     "description": "XXL tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
     "topp25": true,
-    "forside": true,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": true
   },
   {
     "name": "Zalando",
     "image": "assets/images/butikker/Zalando.png",
     "alt": "Zalando",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.zalando.no",
-    "description": "Zalando tilbyr moderne og tidløse klær for alle anledninger â bÃ¥de til dame, herre og barn.",
+    "description": "Zalando tilbyr moderne og tidløse klær for alle anledninger – både til dame, herre og barn.",
     "topp25": true,
-    "forside": true,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": true
   },
   {
     "name": "JYSK",
     "image": "assets/images/butikker/JYSK.png",
     "alt": "JYSK",
     "category": "Møbler og interiør",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://jysk.no/",
     "description": "Skandinavisk interiør og møbler til gode priser.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Skeidar",
     "image": "assets/images/butikker/skeidar.png",
     "alt": "Skeidar",
     "category": "Møbler og interiør",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.skeidar.no",
     "description": "Kvalitetsmøbler og interiør til hjemmet.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "CoolStuff",
@@ -946,10 +745,7 @@
     "url": "https://www.coolstuff.no",
     "description": "CoolStuff tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
     "topp25": true,
-    "forside": true,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": true
   },
   {
     "name": "Firebox",
@@ -960,10 +756,7 @@
     "url": "https://www.firebox.com",
     "description": "Oppfinnsomme og morsomme gadgets og gaver.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "MaxGaming",
@@ -972,12 +765,9 @@
     "category": "Fritid og gaver",
     "subcategory": "Gadgets og gaver",
     "url": "https://www.maxgaming.no",
-    "description": "Spesialist pÃ¥ gamingtilbehør, mus, tastatur og utstyr for e-sport.",
+    "description": "Spesialist på gamingtilbehør, mus, tastatur og utstyr for e-sport.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Proshop",
@@ -988,10 +778,7 @@
     "url": "https://www.proshop.no",
     "description": "Et bredt sortiment av datadeler, skjermer og gamingprodukter.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "NetOnNet",
@@ -1000,12 +787,9 @@
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
     "url": "https://www.netonnet.no",
-    "description": "Lagerpriser pÃ¥ skjermer, PC-utstyr og gaming gear.",
+    "description": "Lagerpriser på skjermer, PC-utstyr og gaming gear.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "SteelSeries",
@@ -1016,10 +800,7 @@
     "url": "https://steelseries.com",
     "description": "Verdenskjent merke for profesjonelle gaming-headset, tastatur og mus.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Razer",
@@ -1030,10 +811,7 @@
     "url": "https://www.razer.com/eu-en/",
     "description": "Razer tilbyr premium spillutstyr og tilbehør for gamere.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "HyperX",
@@ -1044,24 +822,18 @@
     "url": "https://www.hyperxgaming.com",
     "description": "HyperX leverer hodetelefoner, gaming-stoler og annet tilbehør for spillere.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Gamezone",
     "image": "assets/images/butikker/gamezone.png",
     "alt": "Gamezone",
     "category": "Spill og underholdning",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.gamezone.no",
     "description": "Brettspill, samlekort, figurer og alt for gamingentusiaster.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Power",
@@ -1072,10 +844,7 @@
     "url": "https://www.power.no",
     "description": "Gaming-laptoper, skjermer, lydutstyr, konsoller.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Kjell & Company",
@@ -1086,10 +855,7 @@
     "url": "https://www.kjell.com",
     "description": "Teknisk tilbehør, smarthus, PC-deler, DIY-kit.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "DigitalImpuls",
@@ -1100,192 +866,176 @@
     "url": "https://www.digitalimpuls.no",
     "description": "Datadeler, gamingtilbehør, PC-bygging.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Boozt",
     "image": "assets/images/butikker/Boozt.png",
     "alt": "Boozt",
     "category": "Klær og mote",
-    "subcategory": "['Dameklær']",
+    "subcategory": [
+      "Dameklær"
+    ],
     "url": "https://www.boozt.com/no/no",
     "description": "Boozt tilbyr moderne og tidløse klær for dame, herre og barn.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Bubbleroom.com",
     "image": "assets/images/butikker/Bubbleroom.png",
     "alt": "Bubbleroom",
     "category": "Klær og mote",
-    "subcategory": "['Dameklær']",
+    "subcategory": [
+      "Dameklær"
+    ],
     "url": "https://www.bubbleroom.com/no",
     "description": "Kjoler og festklær til dame.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "H&M",
     "image": "assets/images/butikker/H&M.png",
     "alt": "H&M",
     "category": "Klær og mote",
-    "subcategory": "['Dameklær']",
+    "subcategory": [
+      "Dameklær"
+    ],
     "url": "https://www2.hm.com/nb_no/index.html",
     "description": "H&M tilbyr moderne og tidløse klær for alle aldre.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Lindex.no",
     "image": "assets/images/butikker/Lindex.png",
     "alt": "Lindex",
     "category": "Klær og mote",
-    "subcategory": "['Dameklær']",
+    "subcategory": [
+      "Dameklær"
+    ],
     "url": "https://www.lindex.com/no",
     "description": "Lindex tilbyr dameklær og undertøy med bærekraft i fokus.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Nelly.com",
     "image": "assets/images/butikker/Nelly.png",
     "alt": "Nelly",
     "category": "Klær og mote",
-    "subcategory": "['Dameklær']",
+    "subcategory": [
+      "Dameklær"
+    ],
     "url": "https://nelly.com/no",
-    "description": "Trendy mote for unge kvinner â kjoler, tilbehør og sko.",
+    "description": "Trendy mote for unge kvinner – kjoler, tilbehør og sko.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Bogartstore.no",
     "image": "assets/images/butikker/Bogartstore.png",
     "alt": "Bogartstore",
     "category": "Klær og mote",
-    "subcategory": "['Herreklær']",
+    "subcategory": [
+      "Herreklær"
+    ],
     "url": "https://www.bogartstore.no/",
     "description": "Klassisk og moderne herremote.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "JackAndJones.com",
     "image": "assets/images/butikker/jack&jones.png",
     "alt": "Jack & Jones",
     "category": "Klær og mote",
-    "subcategory": "['Herreklær']",
+    "subcategory": [
+      "Herreklær"
+    ],
     "url": "https://www.jackjones.com/",
     "description": "Casual og trendy klær til herre, fra jeans til dress.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Volt.no",
     "image": "assets/images/butikker/Volt.png",
     "alt": "Volt",
     "category": "Klær og mote",
-    "subcategory": "['Herreklær']",
+    "subcategory": [
+      "Herreklær"
+    ],
     "url": "https://voltfashion.com/no",
-    "description": "Stilfulle klær for menn â dresser, skjorter og tilbehør.",
+    "description": "Stilfulle klær for menn – dresser, skjorter og tilbehør.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Glitter.no",
     "image": "assets/images/butikker/glitter.png",
     "alt": "Glitter",
     "category": "Klær og mote",
-    "subcategory": "['Tilbehør og sko']",
+    "subcategory": [
+      "Tilbehør og sko"
+    ],
     "url": "https://www.glitter.no/",
-    "description": "Smykker, hÃ¥rpynt og tilbehør for enhver stil.",
+    "description": "Smykker, hårpynt og tilbehør for enhver stil.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Morris.se",
     "image": "assets/images/butikker/Morris.png",
     "alt": "Morris",
     "category": "Klær og mote",
-    "subcategory": "['Tilbehør og sko']",
+    "subcategory": [
+      "Tilbehør og sko"
+    ],
     "url": "https://www.morris.no/",
     "description": "Vesker, lommebøker og stilige sko for dame og herre.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Specsavers.no",
     "image": "assets/images/butikker/Specsavers.png",
     "alt": "Specsavers",
     "category": "Klær og mote",
-    "subcategory": "['Tilbehør og sko']",
+    "subcategory": [
+      "Tilbehør og sko"
+    ],
     "url": "https://www.specsavers.no/",
     "description": "Briller, solbriller og linser med mote og funksjon.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Zalando",
     "image": "assets/images/butikker/Zalando.png",
     "alt": "Zalando",
     "category": "Klær og mote",
-    "subcategory": "['Tilbehør og sko']",
+    "subcategory": [
+      "Tilbehør og sko"
+    ],
     "url": "https://www.zalando.no/",
     "description": "Zalando tilbyr moderne og tidløse klær for alle anledninger.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Boozt",
     "image": "assets/images/butikker/Boozt.png",
     "alt": "Boozt",
     "category": "Klær og mote",
-    "subcategory": "['Tilbehør og sko']",
+    "subcategory": [
+      "Tilbehør og sko"
+    ],
     "url": "https://www.boozt.com/no/no",
     "description": "Boozt tilbyr moderne og tidløse klær for dame, herre og barn.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Komplett.no",
@@ -1296,10 +1046,7 @@
     "url": "https://www.komplett.no",
     "description": "Gaming-PC, konsoller, tilbehør, skjerm, stoler, lyd, VR.",
     "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Power.no",
@@ -1310,10 +1057,7 @@
     "url": "https://www.power.no",
     "description": "Gaming-laptoper, skjermer, lydutstyr, konsoller.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Elkjøp",
@@ -1324,10 +1068,7 @@
     "url": "https://www.elkjop.no",
     "description": "Alt innen gaming, TV, konsoll, PC og utstyr.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "NetOnNet",
@@ -1338,10 +1079,7 @@
     "url": "https://www.netonnet.no",
     "description": "Bra utvalg av gaming-utstyr og teknologiske gadgets.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Proshop",
@@ -1352,10 +1090,7 @@
     "url": "https://www.proshop.no",
     "description": "Gaming-PC, skjermer, tastatur, mus, stoler.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Coolstuff",
@@ -1366,10 +1101,7 @@
     "url": "https://www.coolstuff.no",
     "description": "Morsomme gadgets, spill, interiør til gamingrom, gaveideer.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Kjell & Company",
@@ -1380,10 +1112,7 @@
     "url": "https://www.kjell.com/no",
     "description": "Teknisk tilbehør, smarthus, PC-deler, DIY-kit.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Digital Impuls",
@@ -1394,10 +1123,7 @@
     "url": "https://www.digitalimpuls.no",
     "description": "Datadeler, gamingtilbehør, PC-bygging.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "MaxGaming",
@@ -1406,12 +1132,9 @@
     "category": "Gaming og tilbehør",
     "subcategory": "Gamingutstyr og komponenter",
     "url": "https://www.maxgaming.no",
-    "description": "Spesialisert pÃ¥ gaming: tastatur, stoler, lyd, esport-merch.",
+    "description": "Spesialisert på gaming: tastatur, stoler, lyd, esport-merch.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Platekompaniet",
@@ -1422,10 +1145,7 @@
     "url": "https://www.platekompaniet.no",
     "description": "Spill, film, musikk og merchandise til gamingrommet.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "CDON",
@@ -1436,10 +1156,7 @@
     "url": "https://www.cdon.no",
     "description": "Gaming, filmer, tilbehør, plattformer som PS, Xbox, Switch.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Gamezone",
@@ -1450,52 +1167,42 @@
     "url": "https://www.gamezone.no",
     "description": "Brettspill, rollespill, samlefigurer, Nintendo, Warhammer osv.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Footway",
     "image": "assets/images/butikker/footway.png",
     "alt": "Footway",
     "category": "Klær og mote",
-    "subcategory": "['tilbehør-og-sko']",
+    "subcategory": [
+      "tilbehør-og-sko"
+    ],
     "url": "https://www.footway.no",
     "description": "Footway tilbyr et bredt utvalg av sko og tilbehør for hele familien.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Babyplan.no",
     "image": "assets/images/butikker/babyplan.png",
     "alt": "Babyplan",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.babyplan.no",
-    "description": "Produkter for prøvere, gravide og smÃ¥barnsforeldre.",
+    "description": "Produkter for prøvere, gravide og småbarnsforeldre.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Gymgrossisten ",
     "image": "assets/images/butikker/gymgrossisten.png",
     "alt": "Gymgrossisten",
     "category": "Helse og egenpleie",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.gymgrossisten.no",
     "description": "Kosttilskudd, treningsutstyr og helseprodukter.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Multicom.no",
@@ -1506,38 +1213,29 @@
     "url": "https://www.multicom.no",
     "description": "Multicom tilbyr et bredt utvalg av datamaskiner, komponenter og tilbehør.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Bokkilden",
     "image": "assets/images/butikker/bokkilden.png",
     "alt": "Bokkilden",
     "category": "Bøker og underholdning",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.bokkilden.no",
     "description": "Bøker, filmer, musikk og spill.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Adlibris",
     "image": "assets/images/butikker/adlibris.png",
     "alt": "Adlibris",
     "category": "Bøker og underholdning",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.adlibris.com/no",
     "description": "Bøker, filmer, musikk og spill.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Gadgetshop.no",
@@ -1548,150 +1246,121 @@
     "url": "https://www.gadgetshop.no",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Lekmer.no",
     "image": "assets/images/butikker/lekmer.png",
     "alt": "Lekmer",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://lekmer.no",
     "description": "Lekmer.no tilbyr leker, klær og utstyr for barn i alle aldre.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Zizzi.no",
     "image": "assets/images/butikker/zizzi.png",
     "alt": "Zizzi",
     "category": "Klær og mote",
-    "subcategory": "['Dameklær']",
+    "subcategory": [
+      "Dameklær"
+    ],
     "url": "https://www.zizzi.no",
-    "description": "Zizzi tilbyr moderne plussize-mote for kvinner med fokus pÃ¥ komfort og stil.",
+    "description": "Zizzi tilbyr moderne plussize-mote for kvinner med fokus på komfort og stil.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Stayhard.no",
     "image": "assets/images/butikker/stayhard.png",
     "alt": "Stayhard",
     "category": "Klær og mote",
-    "subcategory": "['Herreklær']",
+    "subcategory": [
+      "Herreklær"
+    ],
     "url": "https://www.stayhard.no",
     "description": "Trendy herremote og tilbehør for menn.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Miinto.no",
     "image": "assets/images/butikker/miinto.png",
     "alt": "Miinto",
     "category": "Klær og mote",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.miinto.no",
     "description": "Miinto samler klær og mote fra lokale butikker i Norge.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Lilleprinsen.no",
     "image": "assets/images/butikker/lilleprinsen.png",
     "alt": "Lilleprinsen",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.lilleprinsen.no",
-    "description": "Babyutstyr og barneprodukter med fokus pÃ¥ kvalitet.",
+    "description": "Babyutstyr og barneprodukter med fokus på kvalitet.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
-    "name": "SmÃ¥ungene.no",
+    "name": "Småungene.no",
     "image": "assets/images/butikker/smaungene.png",
-    "alt": "SmÃ¥ungene",
+    "alt": "Småungene",
     "category": "Barn og baby",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.smaungene.no",
     "description": "Ullklær og praktisk utstyr for baby og barn.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "NorskApotek.no",
     "image": "assets/images/butikker/norskapotek.png",
     "alt": "Norsk Apotek",
     "category": "Apotek",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.norskapotek.no",
-    "description": "Trygt norsk apotek pÃ¥ nett med stort sortiment.",
+    "description": "Trygt norsk apotek på nett med stort sortiment.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Soma.no",
     "image": "assets/images/butikker/soma.png",
     "alt": "Soma",
     "category": "Helse og egenpleie",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.soma.no",
     "description": "Naturlig kosttilskudd og supermat.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "AntonSport.no",
     "image": "assets/images/butikker/antonsport.png",
     "alt": "Anton Sport",
     "category": "Sport og fritid",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.antonsport.no",
     "description": "Kvalitetsutstyr for sport og friluftsliv.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Chilli.no",
     "image": "assets/images/butikker/chilli.png",
     "alt": "Chilli",
     "category": "Møbler og interiør",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.chilli.no",
     "description": "Moderne møbler og interiør til gode priser.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Ting.no",
@@ -1702,10 +1371,7 @@
     "url": "https://www.ting.no",
     "description": "Gaver, design og morsomme produkter for hjemmet.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "EnklereLiv.no",
@@ -1716,38 +1382,29 @@
     "url": "https://www.enklereliv.no",
     "description": "Smarte løsninger for hverdagen og praktiske produkter.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Furniturebox.no",
     "image": "assets/images/butikker/furniturebox.png",
     "alt": "Furniturebox",
     "category": "Møbler og interiør",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.furniturebox.no",
     "description": "Stort utvalg av møbler og interiør med rask levering.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Norli.no",
     "image": "assets/images/butikker/norli.png",
     "alt": "Norli",
     "category": "Bøker og underholdning",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.norli.no",
     "description": "En av Norges største bokhandler med stort utvalg av bøker og e-bøker.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Printoz.no",
@@ -1758,24 +1415,18 @@
     "url": "https://www.printoz.no",
     "description": "Personlige gaver, firmagaver og profilprodukter med trykk.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Gsport.no",
     "image": "assets/images/butikker/gsport.png",
     "alt": "Gsport",
     "category": "Sport og fritid",
-    "subcategory": "[]",
+    "subcategory": [],
     "url": "https://www.gsport.no",
     "description": "Alt innen sport og fritid, inkludert klær, sko og treningsutstyr.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Komplett.no",
@@ -1786,10 +1437,7 @@
     "url": "https://www.komplett.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Komplett.no",
@@ -1800,10 +1448,7 @@
     "url": "https://www.komplett.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Komplett.no",
@@ -1814,10 +1459,7 @@
     "url": "https://www.komplett.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Elkjøp",
@@ -1828,10 +1470,7 @@
     "url": "https://www.elkjop.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Elkjøp",
@@ -1842,10 +1481,7 @@
     "url": "https://www.elkjop.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "NetOnNet",
@@ -1856,10 +1492,7 @@
     "url": "https://www.netonnet.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Proshop.no",
@@ -1870,10 +1503,7 @@
     "url": "https://www.proshop.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Multicom.no",
@@ -1884,10 +1514,7 @@
     "url": "https://www.multicom.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Telia.no",
@@ -1898,10 +1525,7 @@
     "url": "https://www.telia.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Telenor.no",
@@ -1912,10 +1536,7 @@
     "url": "https://www.telenor.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "HiFi Klubben",
@@ -1926,10 +1547,7 @@
     "url": "https://www.hifiklubben.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Power.no",
@@ -1940,10 +1558,7 @@
     "url": "https://www.power.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Clas Ohlson",
@@ -1954,10 +1569,7 @@
     "url": "https://www.clasohlson.com/no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Kjell & Company",
@@ -1968,10 +1580,7 @@
     "url": "https://www.kjell.com/no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Apotek1.no",
@@ -1982,10 +1591,7 @@
     "url": "https://www.apotek1.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Vitusapotek.no",
@@ -1996,10 +1602,7 @@
     "url": "https://www.vitusapotek.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Mecindo.no",
@@ -2010,10 +1613,7 @@
     "url": "https://www.mecindo.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Sunkost.no",
@@ -2024,10 +1624,7 @@
     "url": "https://sunkost.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Blivakker.no",
@@ -2038,10 +1635,7 @@
     "url": "https://www.blivakker.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Coverbrands.no",
@@ -2052,38 +1646,29 @@
     "url": "https://coverbrands.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Lyko.no",
     "image": "assets/images/butikker/lyko.png",
     "alt": "Lyko.no",
     "category": "Helse og egenpleie",
-    "subcategory": "HÃ¥r- og skjønnhetspleie",
+    "subcategory": "Hår- og skjønnhetspleie",
     "url": "https://www.lyko.com/no",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Blush.no",
     "image": "assets/images/butikker/blush.png",
     "alt": "Blush.no",
     "category": "Helse og egenpleie",
-    "subcategory": "HÃ¥r- og skjønnhetspleie",
+    "subcategory": "Hår- og skjønnhetspleie",
     "url": "https://www.blush.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Eleven.no",
@@ -2094,10 +1679,7 @@
     "url": "https://eleven.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Gymgrossisten.no",
@@ -2108,10 +1690,7 @@
     "url": "https://www.gymgrossisten.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "GetInspired.no",
@@ -2122,10 +1701,7 @@
     "url": "https://www.getinspired.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Jollyroom",
@@ -2136,10 +1712,7 @@
     "url": "https://www.jollyroom.no",
     "description": "Stort utvalg av barneutstyr, leker, klær og barnevogner.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Barnas Hus",
@@ -2150,10 +1723,7 @@
     "url": "https://www.barnashus.no",
     "description": "Babyutstyr, klær, bilstoler og barnevogner fra kjente merker.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Lekmer",
@@ -2164,10 +1734,7 @@
     "url": "https://www.lekmer.no",
     "description": "Leker, barneklær, barnevogner og interiør til barn.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Mimmis",
@@ -2178,10 +1745,7 @@
     "url": "https://www.mimmis.no",
     "description": "Populær nettbutikk med babyutstyr, møbler og leker.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Babyshop",
@@ -2192,10 +1756,7 @@
     "url": "https://www.babyshop.no",
     "description": "Eksklusive barneklær og babyprodukter.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Extra Leker",
@@ -2206,10 +1767,7 @@
     "url": "https://www.extra-leker.no",
     "description": "Leker og spill til barn i alle aldre.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Lekeakademiet",
@@ -2220,10 +1778,7 @@
     "url": "https://www.lekeakademiet.no",
     "description": "Pedagogiske og utviklende leker.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Lilleprinsen",
@@ -2232,12 +1787,9 @@
     "category": "Barn og baby",
     "subcategory": "Mat og amming",
     "url": "https://www.lilleprinsen.no",
-    "description": "Alt til baby og smÃ¥barn: mat, klær og utstyr.",
+    "description": "Alt til baby og småbarn: mat, klær og utstyr.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "XXL",
@@ -2248,10 +1800,7 @@
     "url": "https://www.xxl.no",
     "description": "En av Norges største sportsbutikker med klær, sko, trening og friluft.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Sport 1",
@@ -2262,10 +1811,7 @@
     "url": "https://www.sport1.no",
     "description": "Bredt utvalg innen sportsklær, treningsutstyr og sko.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Outnorth",
@@ -2274,12 +1820,9 @@
     "category": "Sport og fritid",
     "subcategory": "Friluft og tur",
     "url": "https://www.outnorth.no",
-    "description": "Alt til friluft, tur og natur â fra telt til soveposer og klær.",
+    "description": "Alt til friluft, tur og natur – fra telt til soveposer og klær.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Skitt Fiske",
@@ -2288,12 +1831,9 @@
     "category": "Sport og fritid",
     "subcategory": "Hobby og fritid",
     "url": "https://www.skittfiske.no",
-    "description": "Fiskeutstyr, friluftsprodukter og jaktutstyr â for hobby og tur.",
+    "description": "Fiskeutstyr, friluftsprodukter og jaktutstyr – for hobby og tur.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Gymgrossisten",
@@ -2304,10 +1844,7 @@
     "url": "https://www.gymgrossisten.no",
     "description": "Treningsklær, protein, kosttilskudd og utstyr til hjemmetrening.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Protein.no",
@@ -2318,10 +1855,7 @@
     "url": "https://www.protein.no",
     "description": "Norsk kosttilskuddsbutikk med protein, shaker og treningsklær.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Milrab",
@@ -2332,10 +1866,7 @@
     "url": "https://www.milrab.no",
     "description": "Utstyr for tur, taktisk bruk og friluftsliv med militær vri.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Jollyroom",
@@ -2346,10 +1877,7 @@
     "url": "https://www.jollyroom.no",
     "description": "Stort utvalg av barneutstyr, leker, klær og barnevogner.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Barnas Hus",
@@ -2360,10 +1888,7 @@
     "url": "https://www.barnashus.no",
     "description": "Babyutstyr, klær, bilstoler og barnevogner fra kjente merker.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Lekmer",
@@ -2374,10 +1899,7 @@
     "url": "https://www.lekmer.no",
     "description": "Leker, barneklær, barnevogner og interiør til barn.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Mimmis",
@@ -2388,10 +1910,7 @@
     "url": "https://www.mimmis.no",
     "description": "Populær nettbutikk med babyutstyr, møbler og leker.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Babyshop",
@@ -2402,10 +1921,7 @@
     "url": "https://www.babyshop.no",
     "description": "Eksklusive barneklær og babyprodukter.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Extra Leker",
@@ -2416,10 +1932,7 @@
     "url": "https://www.extra-leker.no",
     "description": "Leker og spill til barn i alle aldre.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Lekeakademiet",
@@ -2430,10 +1943,7 @@
     "url": "https://www.lekeakademiet.no",
     "description": "Pedagogiske og utviklende leker.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Lilleprinsen",
@@ -2442,12 +1952,9 @@
     "category": "Barn og baby",
     "subcategory": "Mat og amming",
     "url": "https://www.lilleprinsen.no",
-    "description": "Alt til baby og smÃ¥barn: mat, klær og utstyr.",
+    "description": "Alt til baby og småbarn: mat, klær og utstyr.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Skeidar",
@@ -2458,10 +1965,7 @@
     "url": "https://www.skeidar.no",
     "description": "En av Norges største møbelkjeder med sofaer, senger, stoler og mer.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Møbelringen",
@@ -2472,10 +1976,7 @@
     "url": "https://www.mobelringen.no",
     "description": "Møbler og interiør til stue, soverom, kjøkken og mer.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Jotex",
@@ -2484,12 +1985,9 @@
     "category": "Møbler og interiør",
     "subcategory": "Tekstiler og tepper",
     "url": "https://www.jotex.no",
-    "description": "Stilrene tekstiler, interiør og smÃ¥møbler til hjemmet.",
+    "description": "Stilrene tekstiler, interiør og småmøbler til hjemmet.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Lampegiganten",
@@ -2498,12 +1996,9 @@
     "category": "Møbler og interiør",
     "subcategory": "Belysning",
     "url": "https://www.lampegiganten.no",
-    "description": "Alt innen belysning â taklamper, vegglamper og LED.",
+    "description": "Alt innen belysning – taklamper, vegglamper og LED.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Hviit",
@@ -2514,10 +2009,7 @@
     "url": "https://www.hviit.no",
     "description": "Norsk interiørbutikk med designprodukter og dekor.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Nordic Nest",
@@ -2526,12 +2018,9 @@
     "category": "Møbler og interiør",
     "subcategory": "Dekor og interiør",
     "url": "https://www.nordicnest.no",
-    "description": "Skandinavisk design â dekor, belysning og interiørprodukter.",
+    "description": "Skandinavisk design – dekor, belysning og interiørprodukter.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Kid",
@@ -2542,10 +2031,7 @@
     "url": "https://www.kid.no",
     "description": "Kjent for tekstiler, gardiner, puter og sesonginteriør.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Ellos Home",
@@ -2556,10 +2042,7 @@
     "url": "https://www.ellos.no/home",
     "description": "Bredt utvalg av møbler, belysning og interiør til hele hjemmet.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "XXL",
@@ -2570,10 +2053,7 @@
     "url": "https://www.xxl.no",
     "description": "Stort utvalg av sportsklær, sko, utstyr og friluftsartikler.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Sport 1",
@@ -2584,10 +2064,7 @@
     "url": "https://www.sport1.no",
     "description": "Alt til trening, ski, løping, friluft og sykkel.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Anton Sport",
@@ -2598,10 +2075,7 @@
     "url": "https://www.antonsport.no",
     "description": "Premium sportsklær og utstyr fra kjente merker.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Milrab",
@@ -2612,10 +2086,7 @@
     "url": "https://www.milrab.no",
     "description": "Taktisk utstyr, klær og sko til friluft, trening og forsvar.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Gmax",
@@ -2626,10 +2097,7 @@
     "url": "https://www.gmax.no",
     "description": "Rimelige sportsvarer og treningsutstyr.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Skitt Fiske",
@@ -2640,10 +2108,7 @@
     "url": "https://www.skittfiske.no",
     "description": "Alt innen fiskeutstyr, jakt og friluft.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Oslo Sportslager",
@@ -2652,12 +2117,9 @@
     "category": "Sport og fritid",
     "subcategory": "Trening og treningsutstyr",
     "url": "https://www.oslosportslager.no",
-    "description": "Spesialister pÃ¥ ski, løping, sykkel og trening.",
+    "description": "Spesialister på ski, løping, sykkel og trening.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   },
   {
     "name": "Sykkelpikene",
@@ -2668,9 +2130,6 @@
     "url": "https://www.sykkelpikene.no",
     "description": "Norges koseligste nettbutikk for sykler og tilbehør.",
     "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "forside": false
   }
 ]
