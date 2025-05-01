@@ -2412,5 +2412,446 @@
       "fortelling"
     ],
     "ny": true
+  },
+  [
+  {
+    "name": "Gamezone",
+    "url": "https://www.gamezone.no",
+    "category": "Spill og underholdning",
+    "subcategory": [
+      "Konsoller og tilbehør"
+    ],
+    "image": "assets/images/spill-og-underholdning/gamezone.png",
+    "description": "Norsk nettbutikk med fokus på gaming, konsoller og spilltilbehør.",
+    "tags": [
+      "gaming",
+      "ps5",
+      "xbox"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Outland",
+    "url": "https://www.outland.no",
+    "category": "Spill og underholdning",
+    "subcategory": [
+      "Brettspill og kortspill",
+      "Anime og manga"
+    ],
+    "image": "assets/images/spill-og-underholdning/outland.png",
+    "description": "Alt fra brettspill og manga til figurer og fantasy-bøker.",
+    "tags": [
+      "anime",
+      "manga",
+      "brettspill"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Spillsjefen",
+    "url": "https://www.spillsjefen.no",
+    "category": "Spill og underholdning",
+    "subcategory": [
+      "Brettspill og kortspill"
+    ],
+    "image": "assets/images/spill-og-underholdning/spillsjefen.png",
+    "description": "Spesialist på brettspill, kortspill og familiespill.",
+    "tags": [
+      "brettspill",
+      "familiespill"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Neo Tokyo",
+    "url": "https://neotokyo.no",
+    "category": "Spill og underholdning",
+    "subcategory": [
+      "Anime og manga",
+      "Figurer og samleobjekter"
+    ],
+    "image": "assets/images/spill-og-underholdning/neotokyo.png",
+    "description": "Norges beste utvalg i japansk popkultur, figurer og manga.",
+    "tags": [
+      "japan",
+      "anime",
+      "figurer"
+    ],
+    "ny": true
+  },
+  {
+    "name": "EMP Shop",
+    "url": "https://www.emp-shop.no",
+    "category": "Spill og underholdning",
+    "subcategory": [
+      "Gaming merch"
+    ],
+    "image": "assets/images/spill-og-underholdning/emp.png",
+    "description": "Merch og klær inspirert av spill, musikk og popkultur.",
+    "tags": [
+      "merch",
+      "spillklær"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Platekompaniet",
+    "url": "https://www.platekompaniet.no",
+    "category": "Spill og underholdning",
+    "subcategory": [
+      "Film og musikk"
+    ],
+    "image": "assets/images/spill-og-underholdning/platekompaniet.png",
+    "description": "Klassisk norsk nettbutikk for film, musikk og spill.",
+    "tags": [
+      "cd",
+      "blu-ray",
+      "vinyl"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Strikkemekka",
+    "url": "https://www.strikkemekka.no",
+    "category": "Hobby og DIY",
+    "subcategory": [
+      "Garn og strikk"
+    ],
+    "image": "assets/images/hobby-og-diy/strikkemekka.png",
+    "description": "Alt du trenger til strikking – garn, pinner og oppskrifter.",
+    "tags": [
+      "strikk",
+      "garn",
+      "håndarbeid"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Panduro",
+    "url": "https://www.panduro.com/nb-no",
+    "category": "Hobby og DIY",
+    "subcategory": [
+      "DIY kits og prosjekter"
+    ],
+    "image": "assets/images/hobby-og-diy/panduro.png",
+    "description": "Skandinavias største hobbybutikk – maling, perler og DIY.",
+    "tags": [
+      "hobby",
+      "diy",
+      "perler"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Nomaden",
+    "url": "https://www.nomaden.no",
+    "category": "Reise og opplevelser",
+    "subcategory": [
+      "Reiseutstyr",
+      "Kart og guider"
+    ],
+    "image": "assets/images/reise-og-opplevelser/nomaden.png",
+    "description": "Spesialbutikk for reiseutstyr, kart og globetrottere.",
+    "tags": [
+      "reise",
+      "kart",
+      "utstyr"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Morris",
+    "url": "https://www.morris.no",
+    "category": "Reise og opplevelser",
+    "subcategory": [
+      "Bager og kofferter"
+    ],
+    "image": "assets/images/reise-og-opplevelser/morris.png",
+    "description": "Stort utvalg av kofferter, bager og reisetilbehør.",
+    "tags": [
+      "reise",
+      "bag",
+      "koffert"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Ark",
+    "url": "https://www.ark.no",
+    "category": "Bøker og media",
+    "subcategory": [
+      "Bøker og e-bøker"
+    ],
+    "image": "assets/images/boker-og-media/ark.png",
+    "description": "Norges største bokhandel med e-bøker, skolebøker og mer.",
+    "tags": [
+      "bøker",
+      "ebok",
+      "skole"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Norli",
+    "url": "https://www.norli.no",
+    "category": "Bøker og media",
+    "subcategory": [
+      "Skjønnlitteratur",
+      "Barnebøker"
+    ],
+    "image": "assets/images/boker-og-media/norli.png",
+    "description": "Klassiske og nye bøker for store og små – nett og fysisk butikk.",
+    "tags": [
+      "barnebøker",
+      "roman"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Fabel",
+    "url": "https://www.fabel.no",
+    "category": "Bøker og media",
+    "subcategory": [
+      "Lyd- og lydbøker"
+    ],
+    "image": "assets/images/boker-og-media/fabel.png",
+    "description": "Norsk strømmetjeneste for lydbøker og fortellinger.",
+    "tags": [
+      "lydbok",
+      "fortelling"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Selfmade",
+    "url": "https://www.selfmade.com/no-no/",
+    "category": "Hobby og DIY",
+    "subcategory": [
+      "Håndarbeid og broderi"
+    ],
+    "image": "assets/images/hobby-og-diy/selfmade.png",
+    "description": "Tidligere Stoff & Stil – alt innen søm, tekstil og broderi.",
+    "tags": [
+      "stoff",
+      "søm",
+      "broderi"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Kreativshop",
+    "url": "https://www.kreativshop.no",
+    "category": "Hobby og DIY",
+    "subcategory": [
+      "Tegning og maling"
+    ],
+    "image": "assets/images/hobby-og-diy/kreativshop.png",
+    "description": "Nettbutikk for maling, tegning og kreative prosjekter.",
+    "tags": [
+      "tegning",
+      "maling",
+      "kunst"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Jula",
+    "url": "https://www.jula.no",
+    "category": "Hobby og DIY",
+    "subcategory": [
+      "Verktøy og materialer"
+    ],
+    "image": "assets/images/hobby-og-diy/jula.png",
+    "description": "Verktøy, byggematerialer og alt du trenger til hjemmeprosjektene.",
+    "tags": [
+      "verktøy",
+      "materialer"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Regovs",
+    "url": "https://www.regovs.no",
+    "category": "Reise og opplevelser",
+    "subcategory": [
+      "Bager og kofferter"
+    ],
+    "image": "assets/images/reise-og-opplevelser/regovs.png",
+    "description": "Dansk spesialist på kofferter og business-vesker.",
+    "tags": [
+      "bag",
+      "reise",
+      "koffert"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Sportsnett",
+    "url": "https://www.sportsnett.no",
+    "category": "Reise og opplevelser",
+    "subcategory": [
+      "Festival- og campingutstyr"
+    ],
+    "image": "assets/images/reise-og-opplevelser/sportsnett.png",
+    "description": "Utstyr til tur, ekspedisjon og festivalcamping.",
+    "tags": [
+      "tur",
+      "festival",
+      "sovepose"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Barnas Egen Bokverden",
+    "url": "https://www.barnasegenbokverden.no",
+    "category": "Bøker og media",
+    "subcategory": [
+      "Barnebøker"
+    ],
+    "image": "assets/images/boker-og-media/barnasbokverden.png",
+    "description": "Barnebøker i abonnement og som gavepakker for ulike aldre.",
+    "tags": [
+      "barn",
+      "barnebok",
+      "bokklubb"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Storytel",
+    "url": "https://www.storytel.com/no",
+    "category": "Bøker og media",
+    "subcategory": [
+      "Lyd- og lydbøker"
+    ],
+    "image": "assets/images/boker-og-media/storytel.png",
+    "description": "Strømmetjeneste for tusenvis av lydbøker og e-bøker.",
+    "tags": [
+      "lydbok",
+      "strømming",
+      "fortelling"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Superhelten.no",
+    "url": "https://www.superhelten.no",
+    "category": "Spill og underholdning",
+    "subcategory": [
+      "Figurer og samleobjekter"
+    ],
+    "image": "assets/images/spill-og-underholdning/superhelten.png",
+    "description": "Samlefigurer, Funko Pop, LEGO og nerdete gaver.",
+    "tags": [
+      "figurer",
+      "funko",
+      "samleobjekt"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Coolshop",
+    "url": "https://www.coolshop.no",
+    "category": "Spill og underholdning",
+    "subcategory": [
+      "Konsoller og tilbehør"
+    ],
+    "image": "assets/images/spill-og-underholdning/coolshop.png",
+    "description": "Gaming, leker, film og gaver til hele familien.",
+    "tags": [
+      "spill",
+      "konsoll",
+      "gaver"
+    ],
+    "ny": true
+  }
+],
+  {
+    "name": "LookFantastic",
+    "url": "https://www.lookfantastic.no",
+    "category": "Helse og egenpleie",
+    "subcategory": [
+      "Kosmetikk og sminke"
+    ],
+    "image": "assets/images/helse-og-egenpleie/lookfantastic.png",
+    "description": "Internasjonal skjønnhetsbutikk med stort utvalg og rask frakt til Norge.",
+    "tags": [
+      "sminke",
+      "hudpleie",
+      "internasjonal"
+    ],
+    "ny": true,
+    "annonse": true
+  },
+  {
+    "name": "LightInTheBox",
+    "url": "https://www.lightinthebox.com/no",
+    "category": "Klær og mote",
+    "subcategory": [
+      "Dameklær",
+      "Sko og tilbehør"
+    ],
+    "image": "assets/images/klaer-og-mote/lightinthebox.png",
+    "description": "Global nettbutikk med mote, gadgets og hjem til lave priser. Sender til Norge.",
+    "tags": [
+      "billig",
+      "internasjonal",
+      "sko",
+      "klær"
+    ],
+    "ny": true,
+    "annonse": true
+  },
+  {
+    "name": "AliExpress",
+    "url": "https://www.aliexpress.com",
+    "category": "Gaver og gadgets",
+    "subcategory": [
+      "Gadgets og gaver"
+    ],
+    "image": "assets/images/gaver-og-gadgets/aliexpress.png",
+    "description": "Enorm markedsplass for gadgets, tilbehør og klær – sender til Norge.",
+    "tags": [
+      "billig",
+      "internasjonal",
+      "tilbehør"
+    ],
+    "ny": true,
+    "annonse": true
+  },
+  {
+    "name": "DHGate",
+    "url": "https://www.dhgate.com",
+    "category": "Elektronikk og data",
+    "subcategory": [
+      "Elektronikk"
+    ],
+    "image": "assets/images/elektronikk-og-data/dhgate.png",
+    "description": "Grossist- og B2C-plattform for alt fra gadgets til klær og teknologi.",
+    "tags": [
+      "grossist",
+      "elektronikk",
+      "internasjonal"
+    ],
+    "ny": true,
+    "annonse": true
+  },
+  {
+    "name": "Trip.com",
+    "url": "https://www.trip.com",
+    "category": "Reise og opplevelser",
+    "subcategory": [
+      "Reiseutstyr"
+    ],
+    "image": "assets/images/reise-og-opplevelser/trip.png",
+    "description": "En av verdens største reiseplattformer med hotell, fly og tog. Affiliate-støttet.",
+    "tags": [
+      "reise",
+      "hotell",
+      "fly",
+      "affiliate"
+    ],
+    "ny": true,
+    "annonse": true
   }
 ]
