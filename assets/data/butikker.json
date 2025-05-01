@@ -1803,7 +1803,7 @@
     "url": "https://www.lightinthebox.com/no",
     "category": "Klær og mote",
     "subcategory": ["Dameklær", "Sko og tilbehør"],
-    "image": "assets/images/butikkerlightinthebox.png",
+    "image": "assets/images/butikker/lightinthebox.png",
     "description": "Global nettbutikk med mote, gadgets og hjem til lave priser. Sender til Norge.",
     "tags": ["billig", "internasjonal", "sko", "klær"],
     "ny": true,
