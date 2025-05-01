@@ -69,20 +69,15 @@
     "alt": "Ark.no",
     "category": "Klær og mote",
     "subcategory": [
-      "Barneklær",
-      "Bøker og e-bøker"
+      "Barneklær"
     ],
     "url": "https://www.ark.no",
     "description": "Bestselgere, barnebøker, lydbøker og e-bøker.",
     "topp25": false,
     "forside": false,
-    "ny": true,
+    "ny": false,
     "annonse": false,
-    "tags": [
-      "bøker",
-      "ebok",
-      "skole"
-    ]
+    "tags": []
   },
   {
     "name": "AskeladdenNavnelapper.no",
@@ -360,8 +355,7 @@
     "alt": "Ellos",
     "category": "Klær og mote",
     "subcategory": [
-      "Barneklær",
-      "Møbler"
+      "Barneklær"
     ],
     "url": "https://www.ellos.no",
     "description": "Ellos tilbyr produkter for barn og baby, med fokus pÃ¥ kvalitet, komfort og lek.",
@@ -537,7 +531,6 @@
     "alt": "Kid Interiør",
     "category": "Møbler og interiør",
     "subcategory": [
-      "Dekor og interiør",
       "Møbler"
     ],
     "url": "https://www.kid.no",
@@ -554,7 +547,6 @@
     "alt": "Kjell & Company",
     "category": "Elektronikk og data",
     "subcategory": [
-      "Sko og tilbehør",
       "Elektronikk"
     ],
     "url": "https://www.kjell.com",
@@ -571,7 +563,6 @@
     "alt": "Komplett",
     "category": "Møbler og interiør",
     "subcategory": [
-      "Sko og tilbehør",
       "Veggkunst og bilder"
     ],
     "url": "https://www.komplett.no",
@@ -604,8 +595,7 @@
     "alt": "Lekeakademiet",
     "category": "Klær og mote",
     "subcategory": [
-      "Barneklær",
-      "Leker"
+      "Barneklær"
     ],
     "url": "https://www.lekeakademiet.no",
     "description": "Leker som stimulerer barns utvikling og læring.",
@@ -733,7 +723,6 @@
     "alt": "NetOnNet",
     "category": "Mat og drikke",
     "subcategory": [
-      "Gamingutstyr og komponenter",
       "Kaffe og te"
     ],
     "url": "https://www.netonnet.no",
@@ -766,20 +755,15 @@
     "alt": "Platekompaniet",
     "category": "Barn og baby",
     "subcategory": [
-      "Leker",
-      "Film og musikk"
+      "Leker"
     ],
     "url": "https://www.platekompaniet.no",
     "description": "Platekompaniet tilbyr bøker, spill og underholdning for hele familien.",
     "topp25": true,
     "forside": true,
-    "ny": true,
+    "ny": false,
     "annonse": false,
-    "tags": [
-      "cd",
-      "blu-ray",
-      "vinyl"
-    ]
+    "tags": []
   },
   {
     "name": "Power.no",
@@ -787,7 +771,6 @@
     "alt": "Power",
     "category": "Møbler og interiør",
     "subcategory": [
-      "Gamingutstyr og komponenter",
       "Veggkunst og bilder"
     ],
     "url": "https://www.power.no",
@@ -1092,7 +1075,6 @@
     "alt": "CoolStuff",
     "category": "Mat og drikke",
     "subcategory": [
-      "Leker",
       "Kaffe og te"
     ],
     "url": "https://www.coolstuff.no",
@@ -1145,6 +1127,22 @@
     ],
     "url": "https://www.proshop.no",
     "description": "Et bredt sortiment av datadeler, skjermer og gamingprodukter.",
+    "topp25": false,
+    "forside": false,
+    "ny": false,
+    "annonse": false,
+    "tags": []
+  },
+  {
+    "name": "NetOnNet",
+    "image": "assets/images/butikker/netonnet.png",
+    "alt": "NetOnNet",
+    "category": "Elektronikk og data",
+    "subcategory": [
+      "Gamingutstyr og komponenter"
+    ],
+    "url": "https://www.netonnet.no",
+    "description": "Lagerpriser pÃ¥ skjermer, PC-utstyr og gaming gear.",
     "topp25": false,
     "forside": false,
     "ny": false,
@@ -1205,20 +1203,63 @@
     "alt": "Gamezone",
     "category": "Barn og baby",
     "subcategory": [
-      "Leker",
-      "Konsoller og tilbehør"
+      "Leker"
     ],
     "url": "https://www.gamezone.no",
     "description": "Brettspill, samlekort, figurer og alt for gamingentusiaster.",
     "topp25": false,
     "forside": false,
-    "ny": true,
+    "ny": false,
     "annonse": false,
-    "tags": [
-      "ps5",
-      "gaming",
-      "xbox"
-    ]
+    "tags": []
+  },
+  {
+    "name": "Power",
+    "image": "assets/images/butikker/power.png",
+    "alt": "Power",
+    "category": "Elektronikk og data",
+    "subcategory": [
+      "Gamingutstyr og komponenter"
+    ],
+    "url": "https://www.power.no",
+    "description": "Gaming-laptoper, skjermer, lydutstyr, konsoller.",
+    "topp25": false,
+    "forside": false,
+    "ny": false,
+    "annonse": false,
+    "tags": []
+  },
+  {
+    "name": "Kjell & Company",
+    "image": "assets/images/butikker/kjell.png",
+    "alt": "Kjell & Company",
+    "category": "Klær og mote",
+    "subcategory": [
+      "Sko og tilbehør"
+    ],
+    "url": "https://www.kjell.com",
+    "description": "Teknisk tilbehør, smarthus, PC-deler, DIY-kit.",
+    "topp25": false,
+    "forside": false,
+    "ny": false,
+    "annonse": false,
+    "tags": []
+  },
+  {
+    "name": "Komplett.no",
+    "image": "assets/images/butikker/komplett.png",
+    "alt": "Komplett",
+    "category": "Klær og mote",
+    "subcategory": [
+      "Sko og tilbehør"
+    ],
+    "url": "https://www.komplett.no",
+    "description": "Gaming-PC, konsoller, tilbehør, skjerm, stoler, lyd, VR.",
+    "topp25": true,
+    "forside": false,
+    "ny": false,
+    "annonse": false,
+    "tags": []
   },
   {
     "name": "Footway",
@@ -1258,8 +1299,7 @@
     "alt": "Gymgrossisten",
     "category": "Helse og egenpleie",
     "subcategory": [
-      "Apotek og helseprodukter",
-      "Sportsklær"
+      "Apotek og helseprodukter"
     ],
     "url": "https://www.gymgrossisten.no",
     "description": "Kosttilskudd, treningsutstyr og helseprodukter.",
@@ -1435,7 +1475,6 @@
     "alt": "Anton Sport",
     "category": "Sport og fritid",
     "subcategory": [
-      "Sportsklær",
       "Friluft og tur"
     ],
     "url": "https://www.antonsport.no",
@@ -1516,20 +1555,15 @@
     "alt": "Norli",
     "category": "Elektronikk og data",
     "subcategory": [
-      "Barnebøker",
-      "Skjønnlitteratur",
       "Elektronikk"
     ],
     "url": "https://www.norli.no",
     "description": "En av Norges største bokhandler med stort utvalg av bøker og e-bøker.",
     "topp25": false,
     "forside": false,
-    "ny": true,
+    "ny": false,
     "annonse": false,
-    "tags": [
-      "roman",
-      "barnebøker"
-    ]
+    "tags": []
   },
   {
     "name": "Printoz.no",
@@ -1648,9 +1682,7 @@
     "image": "assets/images/butikker/coverbrands.png",
     "alt": "Coverbrands.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Hud- og kroppspleie"
-    ],
+    "subcategory": [],
     "url": "https://coverbrands.no/",
     "description": "",
     "topp25": false,
@@ -1664,9 +1696,7 @@
     "image": "assets/images/butikker/lyko.png",
     "alt": "Lyko.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "HÃ¥r- og skjønnhetspleie"
-    ],
+    "subcategory": [],
     "url": "https://www.lyko.com/no",
     "description": "",
     "topp25": false,
@@ -1680,9 +1710,7 @@
     "image": "assets/images/butikker/blush.png",
     "alt": "Blush.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "HÃ¥r- og skjønnhetspleie"
-    ],
+    "subcategory": [],
     "url": "https://www.blush.no/",
     "description": "",
     "topp25": false,
@@ -1696,9 +1724,7 @@
     "image": "assets/images/butikker/nordicfeel.png",
     "alt": "nordicfeel.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Sminke og kosmetikk"
-    ],
+    "subcategory": [],
     "url": "https://www.nordicfeel.no/",
     "description": "",
     "topp25": false,
@@ -1712,9 +1738,7 @@
     "image": "assets/images/butikker/gymgrossisten.png",
     "alt": "Gymgrossisten.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Trening og velvære"
-    ],
+    "subcategory": [],
     "url": "https://www.gymgrossisten.no/",
     "description": "",
     "topp25": false,
@@ -1728,9 +1752,7 @@
     "image": "assets/images/butikker/getinspired.png",
     "alt": "GetInspired.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Trening og velvære"
-    ],
+    "subcategory": [],
     "url": "https://www.getinspired.no/",
     "description": "",
     "topp25": false,
@@ -1756,6 +1778,22 @@
     "tags": []
   },
   {
+    "name": "Mimmis",
+    "image": "assets/images/butikker/mimmis.png",
+    "alt": "Mimmis",
+    "category": "Barn og baby",
+    "subcategory": [
+      "Babyutstyr"
+    ],
+    "url": "https://www.mimmis.no",
+    "description": "Populær nettbutikk med babyutstyr, møbler og leker.",
+    "topp25": false,
+    "forside": false,
+    "ny": false,
+    "annonse": false,
+    "tags": []
+  },
+  {
     "name": "Extra Leker",
     "image": "assets/images/butikker/extraleker.png",
     "alt": "Extra Leker",
@@ -1765,6 +1803,70 @@
     ],
     "url": "https://www.extra-leker.no",
     "description": "Leker og spill til barn i alle aldre.",
+    "topp25": false,
+    "forside": false,
+    "ny": false,
+    "annonse": false,
+    "tags": []
+  },
+  {
+    "name": "Lekeakademiet",
+    "image": "assets/images/butikker/lekeakademiet.png",
+    "alt": "Lekeakademiet",
+    "category": "Barn og baby",
+    "subcategory": [
+      "Leker"
+    ],
+    "url": "https://www.lekeakademiet.no",
+    "description": "Pedagogiske og utviklende leker.",
+    "topp25": false,
+    "forside": false,
+    "ny": false,
+    "annonse": false,
+    "tags": []
+  },
+  {
+    "name": "Lilleprinsen",
+    "image": "assets/images/butikker/lilleprinsen.png",
+    "alt": "Lilleprinsen",
+    "category": "Klær og mote",
+    "subcategory": [
+      "Barneklær"
+    ],
+    "url": "https://www.lilleprinsen.no",
+    "description": "Alt til baby og smÃ¥barn: mat, klær og utstyr.",
+    "topp25": false,
+    "forside": false,
+    "ny": false,
+    "annonse": false,
+    "tags": []
+  },
+  {
+    "name": "Sport 1",
+    "image": "assets/images/butikker/sport1.png",
+    "alt": "Sport 1",
+    "category": "Klær og mote",
+    "subcategory": [
+      "Sko og tilbehør"
+    ],
+    "url": "https://www.sport1.no",
+    "description": "Bredt utvalg innen sportsklær, treningsutstyr og sko.",
+    "topp25": false,
+    "forside": false,
+    "ny": false,
+    "annonse": false,
+    "tags": []
+  },
+  {
+    "name": "Outnorth",
+    "image": "assets/images/butikker/outnorth.png",
+    "alt": "Outnorth",
+    "category": "Sport og fritid",
+    "subcategory": [
+      "Friluft og tur"
+    ],
+    "url": "https://www.outnorth.no",
+    "description": "Alt til friluft, tur og natur â fra telt til soveposer og klær.",
     "topp25": false,
     "forside": false,
     "ny": false,
@@ -1877,6 +1979,54 @@
     ],
     "url": "https://www.nordicnest.no",
     "description": "Skandinavisk design â dekor, belysning og interiørprodukter.",
+    "topp25": false,
+    "forside": false,
+    "ny": false,
+    "annonse": false,
+    "tags": []
+  },
+  {
+    "name": "Kid",
+    "image": "assets/images/butikker/kid.png",
+    "alt": "Kid",
+    "category": "Møbler og interiør",
+    "subcategory": [
+      "Dekor og interiør"
+    ],
+    "url": "https://www.kid.no",
+    "description": "Kjent for tekstiler, gardiner, puter og sesonginteriør.",
+    "topp25": false,
+    "forside": false,
+    "ny": false,
+    "annonse": false,
+    "tags": []
+  },
+  {
+    "name": "Ellos Home",
+    "image": "assets/images/butikker/ellos.png",
+    "alt": "Ellos Home",
+    "category": "Møbler og interiør",
+    "subcategory": [
+      "Møbler"
+    ],
+    "url": "https://www.ellos.no",
+    "description": "Bredt utvalg av møbler, belysning og interiør til hele hjemmet.",
+    "topp25": false,
+    "forside": false,
+    "ny": false,
+    "annonse": false,
+    "tags": []
+  },
+  {
+    "name": "Anton Sport",
+    "image": "assets/images/butikker/antonsport.png",
+    "alt": "Anton Sport",
+    "category": "Klær og mote",
+    "subcategory": [
+      "Sportsklær"
+    ],
+    "url": "https://www.antonsport.no",
+    "description": "Premium sportsklær og utstyr fra kjente merker.",
     "topp25": false,
     "forside": false,
     "ny": false,
@@ -2137,6 +2287,38 @@
       "reise",
       "bag",
       "koffert"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Ark",
+    "url": "https://www.ark.no",
+    "category": "Bøker og media",
+    "subcategory": [
+      "Bøker og e-bøker"
+    ],
+    "image": "assets/images/boker-og-media/ark.png",
+    "description": "Norges største bokhandel med e-bøker, skolebøker og mer.",
+    "tags": [
+      "bøker",
+      "ebok",
+      "skole"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Norli",
+    "url": "https://www.norli.no",
+    "category": "Bøker og media",
+    "subcategory": [
+      "Skjønnlitteratur",
+      "Barnebøker"
+    ],
+    "image": "assets/images/boker-og-media/norli.png",
+    "description": "Klassiske og nye bøker for store og små – nett og fysisk butikk.",
+    "tags": [
+      "barnebøker",
+      "roman"
     ],
     "ny": true
   },
