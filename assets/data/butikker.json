@@ -1842,12 +1842,12 @@
     "tags": ""
   },
   {
-    "name": "Gsport.no",
-    "image": "assets/images/butikker/gsport.png",
+    "name": "intersport.no",
+    "image": "assets/images/butikker/intersport.png",
     "alt": "Gsport",
     "category": "Sport og fritid",
     "subcategory": [],
-    "url": "https://www.gsport.no",
+    "url": "https://www.intersport.no",
     "description": "Alt innen sport og fritid, inkludert klær, sko og treningsutstyr.",
     "topp25": false,
     "forside": false,
