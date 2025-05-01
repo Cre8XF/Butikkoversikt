@@ -1,3 +1,5 @@
+// Oppdatert generate-kategorioversikt.js med trygg ikon-navn generering og DOM-manipulasjon
+
 document.addEventListener("DOMContentLoaded", () => {
   const kategoriListe = document.getElementById("kategori-liste");
   const kategoriSok = document.getElementById("kategori-sok");
@@ -15,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       hovedkategorier.forEach(kategori => {
         const ikonNavn = kategori
           .toLowerCase()
-          .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+          .normalize("NFD").replace(/[̀-ͯ]/g, "")
           .replace(/[^a-z0-9]+/g, "-")
           .replace(/(^-|-$)/g, "") + ".png";
 
@@ -23,15 +25,28 @@ document.addEventListener("DOMContentLoaded", () => {
         kort.className = "col-6 col-md-4 col-lg-3 kategori-kort";
         kort.setAttribute("data-kategori", kategori.toLowerCase());
 
-        kort.innerHTML = `
-          <a href="kategori-mal.html?kategori=${encodeURIComponent(kategori)}" class="text-decoration-none text-dark">
-            <div class="card p-4 h-100 shadow-sm d-flex flex-column justify-content-center align-items-center">
-              <img src="assets/images/ikoner/${ikonNavn}" alt="${kategori}" class="img-fluid mb-3" style="height: 80px; object-fit: contain;">
-              <h6 class="fw-bold">${kategori}</h6>
-            </div>
-          </a>
-        `;
+        const link = document.createElement("a");
+        link.href = `kategori-mal.html?kategori=${encodeURIComponent(kategori)}`;
+        link.className = "text-decoration-none text-dark";
 
+        const card = document.createElement("div");
+        card.className = "card p-4 h-100 shadow-sm d-flex flex-column justify-content-center align-items-center";
+
+        const img = document.createElement("img");
+        img.src = `assets/images/ikoner/${ikonNavn}`;
+        img.alt = kategori;
+        img.className = "img-fluid mb-3";
+        img.style.height = "80px";
+        img.style.objectFit = "contain";
+
+        const tittel = document.createElement("h6");
+        tittel.className = "fw-bold";
+        tittel.textContent = kategori;
+
+        card.appendChild(img);
+        card.appendChild(tittel);
+        link.appendChild(card);
+        kort.appendChild(link);
         kategoriListe.appendChild(kort);
       });
 
