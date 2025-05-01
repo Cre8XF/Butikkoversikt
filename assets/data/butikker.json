@@ -13,7 +13,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Apotek1.no",
@@ -29,7 +29,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Apotekhjem.no",
@@ -45,7 +45,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Apotera.no",
@@ -61,7 +61,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Ark.no",
@@ -77,7 +77,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "AskeladdenNavnelapper.no",
@@ -93,7 +93,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Babyshop",
@@ -109,7 +109,7 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Barnas Hus",
@@ -125,7 +125,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Barnevognhuset.no",
@@ -141,7 +141,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "BikBok.com",
@@ -157,7 +157,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Bjørnklær.no",
@@ -173,7 +173,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Blivakker.no",
@@ -189,7 +189,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Bogartstore.no",
@@ -205,7 +205,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Boozt",
@@ -221,7 +221,7 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Bubbleroom.com",
@@ -237,7 +237,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "CDON",
@@ -253,7 +253,7 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Clas Ohlson",
@@ -269,7 +269,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "ClasOhlson.no",
@@ -285,7 +285,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Cubus.no",
@@ -301,7 +301,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Dressmann.com",
@@ -315,7 +315,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "DustinHome.no",
@@ -331,7 +331,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Elkjøp",
@@ -347,7 +347,7 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Ellos",
@@ -363,7 +363,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Farmasiet",
@@ -379,7 +379,7 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Fjellsport.no",
@@ -395,7 +395,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Glitter.no",
@@ -411,7 +411,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Guttelus",
@@ -427,7 +427,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "H&M",
@@ -443,7 +443,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "HiFiKlubben.no",
@@ -459,7 +459,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "IKEA",
@@ -475,7 +475,7 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "iTech.no",
@@ -491,7 +491,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "JackAndJones.com",
@@ -507,7 +507,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Jollyroom",
@@ -523,7 +523,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Kid Interiør",
@@ -539,7 +539,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Kjell.com",
@@ -555,7 +555,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Komplett",
@@ -571,7 +571,7 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "KomplettApotek.no",
@@ -587,7 +587,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Lekeakademiet.no",
@@ -603,7 +603,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Lekia",
@@ -619,7 +619,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Life.no",
@@ -635,7 +635,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Lindex.no",
@@ -651,7 +651,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Mimmis.no",
@@ -667,7 +667,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Morris.se",
@@ -683,7 +683,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Nameit.com",
@@ -699,7 +699,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Nelly.com",
@@ -715,7 +715,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "NetOnNet.no",
@@ -731,7 +731,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Outnorth.no",
@@ -747,7 +747,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Platekompaniet",
@@ -763,7 +763,7 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Power.no",
@@ -779,7 +779,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "RiktigeLeker.no",
@@ -795,7 +795,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Rudo",
@@ -811,7 +811,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Soundgarden.no",
@@ -827,7 +827,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Specsavers.no",
@@ -843,7 +843,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Sport1.no",
@@ -859,7 +859,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Sportamore",
@@ -875,7 +875,7 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Sportshopen.no",
@@ -891,7 +891,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "sportsmaster",
@@ -907,7 +907,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Sunkost.no",
@@ -923,7 +923,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Tek.no",
@@ -939,7 +939,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Teknikmagasinet.no",
@@ -955,7 +955,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Vinmonopolet",
@@ -971,7 +971,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Vitusapotek.no",
@@ -987,7 +987,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Volt.no",
@@ -1003,7 +1003,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "XXL",
@@ -1019,7 +1019,7 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Zalando",
@@ -1035,7 +1035,7 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "JYSK",
@@ -1051,7 +1051,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Skeidar",
@@ -1067,7 +1067,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "CoolStuff",
@@ -1083,7 +1083,7 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Firebox",
@@ -1099,7 +1099,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "MaxGaming",
@@ -1115,7 +1115,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Proshop",
@@ -1131,7 +1131,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "NetOnNet",
@@ -1147,7 +1147,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "SteelSeries",
@@ -1163,7 +1163,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Razer",
@@ -1179,7 +1179,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "HyperX",
@@ -1195,7 +1195,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Gamezone",
@@ -1211,7 +1211,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Power",
@@ -1227,7 +1227,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Kjell & Company",
@@ -1243,7 +1243,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Komplett.no",
@@ -1259,23 +1259,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
-  },
-  {
-    "name": "Coolstuff",
-    "image": "assets/images/butikker/coolstuff.png",
-    "alt": "Coolstuff",
-    "category": "Barn og baby",
-    "subcategory": [
-      "Leker"
-    ],
-    "url": "https://www.coolstuff.no",
-    "description": "Morsomme gadgets, spill, interiør til gamingrom, gaveideer.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Footway",
@@ -1291,7 +1275,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Babyplan.no",
@@ -1307,7 +1291,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Gymgrossisten ",
@@ -1323,7 +1307,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Multicom.no",
@@ -1339,7 +1323,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Bokkilden",
@@ -1355,7 +1339,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Adlibris",
@@ -1371,7 +1355,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Lekmer.no",
@@ -1387,7 +1371,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Zizzi.no",
@@ -1403,7 +1387,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Stayhard.no",
@@ -1419,7 +1403,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Miinto.no",
@@ -1435,7 +1419,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Lilleprinsen.no",
@@ -1451,7 +1435,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Smaaungene.no",
@@ -1467,7 +1451,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Soma.no",
@@ -1483,7 +1467,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "AntonSport.no",
@@ -1499,7 +1483,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Chilli.no",
@@ -1515,7 +1499,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Ting.no",
@@ -1531,7 +1515,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "EnklereLiv.no",
@@ -1547,7 +1531,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Furniturebox.no",
@@ -1563,7 +1547,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Norli.no",
@@ -1579,7 +1563,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Printoz.no",
@@ -1595,7 +1579,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "intersport.no",
@@ -1611,7 +1595,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Proshop.no",
@@ -1627,7 +1611,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Telia.no",
@@ -1643,7 +1627,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Telenor.no",
@@ -1659,7 +1643,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "HiFi Klubben",
@@ -1675,7 +1659,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Mecindo.no",
@@ -1691,103 +1675,91 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Coverbrands.no",
     "image": "assets/images/butikker/coverbrands.png",
     "alt": "Coverbrands.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Hud- og kroppspleie"
-    ],
+    "subcategory": [],
     "url": "https://coverbrands.no/",
     "description": "",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Lyko.no",
     "image": "assets/images/butikker/lyko.png",
     "alt": "Lyko.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "HÃ¥r- og skjønnhetspleie"
-    ],
+    "subcategory": [],
     "url": "https://www.lyko.com/no",
     "description": "",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Blush.no",
     "image": "assets/images/butikker/blush.png",
     "alt": "Blush.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "HÃ¥r- og skjønnhetspleie"
-    ],
+    "subcategory": [],
     "url": "https://www.blush.no/",
     "description": "",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "nordicfeel.no",
     "image": "assets/images/butikker/nordicfeel.png",
     "alt": "nordicfeel.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Sminke og kosmetikk"
-    ],
+    "subcategory": [],
     "url": "https://www.nordicfeel.no/",
     "description": "",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Gymgrossisten.no",
     "image": "assets/images/butikker/gymgrossisten.png",
     "alt": "Gymgrossisten.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Trening og velvære"
-    ],
+    "subcategory": [],
     "url": "https://www.gymgrossisten.no/",
     "description": "",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "GetInspired.no",
     "image": "assets/images/butikker/getinspired.png",
     "alt": "GetInspired.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Trening og velvære"
-    ],
+    "subcategory": [],
     "url": "https://www.getinspired.no/",
     "description": "",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Lekmer",
@@ -1803,7 +1775,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Mimmis",
@@ -1819,7 +1791,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Extra Leker",
@@ -1835,7 +1807,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Lekeakademiet",
@@ -1851,7 +1823,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Lilleprinsen",
@@ -1867,7 +1839,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Sport 1",
@@ -1883,7 +1855,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Outnorth",
@@ -1899,7 +1871,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Skitt Fiske",
@@ -1915,23 +1887,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
-  },
-  {
-    "name": "Gymgrossisten",
-    "image": "assets/images/butikker/gymgrossisten.png",
-    "alt": "Gymgrossisten",
-    "category": "Klær og mote",
-    "subcategory": [
-      "Sportsklær"
-    ],
-    "url": "https://www.gymgrossisten.no",
-    "description": "Treningsklær, protein, kosttilskudd og utstyr til hjemmetrening.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Protein.no",
@@ -1947,7 +1903,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Milrab",
@@ -1963,7 +1919,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Møbelringen",
@@ -1979,7 +1935,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Jotex",
@@ -1995,7 +1951,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Lampegiganten",
@@ -2011,7 +1967,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Nordic Nest",
@@ -2027,7 +1983,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Kid",
@@ -2043,7 +1999,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Ellos Home",
@@ -2059,7 +2015,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Anton Sport",
@@ -2075,7 +2031,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Oslo Sportslager",
@@ -2091,7 +2047,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Sykkelpikene",
@@ -2107,7 +2063,7 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Ateljé Margaretha",
@@ -2123,7 +2079,7 @@
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "CChobby",
@@ -2139,7 +2095,7 @@
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Club Creo",
@@ -2155,7 +2111,7 @@
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Elefun",
@@ -2171,7 +2127,7 @@
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "hobby247",
@@ -2187,7 +2143,7 @@
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": ""
+    "tags": []
   },
   {
     "name": "Hobbyhjørnet",
@@ -2203,23 +2159,7 @@
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": ""
-  },
-  {
-    "name": "Gamezone",
-    "url": "https://www.gamezone.no",
-    "category": "Spill og underholdning",
-    "subcategory": [
-      "Konsoller og tilbehør"
-    ],
-    "image": "assets/images/spill-og-underholdning/gamezone.png",
-    "description": "Norsk nettbutikk med fokus på gaming, konsoller og spilltilbehør.",
-    "tags": [
-      "gaming",
-      "ps5",
-      "xbox"
-    ],
-    "ny": true
+    "tags": []
   },
   {
     "name": "Outland",
@@ -2282,22 +2222,6 @@
     "tags": [
       "merch",
       "spillklær"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Platekompaniet",
-    "url": "https://www.platekompaniet.no",
-    "category": "Spill og underholdning",
-    "subcategory": [
-      "Film og musikk"
-    ],
-    "image": "assets/images/spill-og-underholdning/platekompaniet.png",
-    "description": "Klassisk norsk nettbutikk for film, musikk og spill.",
-    "tags": [
-      "cd",
-      "blu-ray",
-      "vinyl"
     ],
     "ny": true
   },
@@ -2413,359 +2337,6 @@
     ],
     "ny": true
   },
-  [
-  {
-    "name": "Gamezone",
-    "url": "https://www.gamezone.no",
-    "category": "Spill og underholdning",
-    "subcategory": [
-      "Konsoller og tilbehør"
-    ],
-    "image": "assets/images/spill-og-underholdning/gamezone.png",
-    "description": "Norsk nettbutikk med fokus på gaming, konsoller og spilltilbehør.",
-    "tags": [
-      "gaming",
-      "ps5",
-      "xbox"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Outland",
-    "url": "https://www.outland.no",
-    "category": "Spill og underholdning",
-    "subcategory": [
-      "Brettspill og kortspill",
-      "Anime og manga"
-    ],
-    "image": "assets/images/spill-og-underholdning/outland.png",
-    "description": "Alt fra brettspill og manga til figurer og fantasy-bøker.",
-    "tags": [
-      "anime",
-      "manga",
-      "brettspill"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Spillsjefen",
-    "url": "https://www.spillsjefen.no",
-    "category": "Spill og underholdning",
-    "subcategory": [
-      "Brettspill og kortspill"
-    ],
-    "image": "assets/images/spill-og-underholdning/spillsjefen.png",
-    "description": "Spesialist på brettspill, kortspill og familiespill.",
-    "tags": [
-      "brettspill",
-      "familiespill"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Neo Tokyo",
-    "url": "https://neotokyo.no",
-    "category": "Spill og underholdning",
-    "subcategory": [
-      "Anime og manga",
-      "Figurer og samleobjekter"
-    ],
-    "image": "assets/images/spill-og-underholdning/neotokyo.png",
-    "description": "Norges beste utvalg i japansk popkultur, figurer og manga.",
-    "tags": [
-      "japan",
-      "anime",
-      "figurer"
-    ],
-    "ny": true
-  },
-  {
-    "name": "EMP Shop",
-    "url": "https://www.emp-shop.no",
-    "category": "Spill og underholdning",
-    "subcategory": [
-      "Gaming merch"
-    ],
-    "image": "assets/images/spill-og-underholdning/emp.png",
-    "description": "Merch og klær inspirert av spill, musikk og popkultur.",
-    "tags": [
-      "merch",
-      "spillklær"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Platekompaniet",
-    "url": "https://www.platekompaniet.no",
-    "category": "Spill og underholdning",
-    "subcategory": [
-      "Film og musikk"
-    ],
-    "image": "assets/images/spill-og-underholdning/platekompaniet.png",
-    "description": "Klassisk norsk nettbutikk for film, musikk og spill.",
-    "tags": [
-      "cd",
-      "blu-ray",
-      "vinyl"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Strikkemekka",
-    "url": "https://www.strikkemekka.no",
-    "category": "Hobby og DIY",
-    "subcategory": [
-      "Garn og strikk"
-    ],
-    "image": "assets/images/hobby-og-diy/strikkemekka.png",
-    "description": "Alt du trenger til strikking – garn, pinner og oppskrifter.",
-    "tags": [
-      "strikk",
-      "garn",
-      "håndarbeid"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Panduro",
-    "url": "https://www.panduro.com/nb-no",
-    "category": "Hobby og DIY",
-    "subcategory": [
-      "DIY kits og prosjekter"
-    ],
-    "image": "assets/images/hobby-og-diy/panduro.png",
-    "description": "Skandinavias største hobbybutikk – maling, perler og DIY.",
-    "tags": [
-      "hobby",
-      "diy",
-      "perler"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Nomaden",
-    "url": "https://www.nomaden.no",
-    "category": "Reise og opplevelser",
-    "subcategory": [
-      "Reiseutstyr",
-      "Kart og guider"
-    ],
-    "image": "assets/images/reise-og-opplevelser/nomaden.png",
-    "description": "Spesialbutikk for reiseutstyr, kart og globetrottere.",
-    "tags": [
-      "reise",
-      "kart",
-      "utstyr"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Morris",
-    "url": "https://www.morris.no",
-    "category": "Reise og opplevelser",
-    "subcategory": [
-      "Bager og kofferter"
-    ],
-    "image": "assets/images/reise-og-opplevelser/morris.png",
-    "description": "Stort utvalg av kofferter, bager og reisetilbehør.",
-    "tags": [
-      "reise",
-      "bag",
-      "koffert"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Ark",
-    "url": "https://www.ark.no",
-    "category": "Bøker og media",
-    "subcategory": [
-      "Bøker og e-bøker"
-    ],
-    "image": "assets/images/boker-og-media/ark.png",
-    "description": "Norges største bokhandel med e-bøker, skolebøker og mer.",
-    "tags": [
-      "bøker",
-      "ebok",
-      "skole"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Norli",
-    "url": "https://www.norli.no",
-    "category": "Bøker og media",
-    "subcategory": [
-      "Skjønnlitteratur",
-      "Barnebøker"
-    ],
-    "image": "assets/images/boker-og-media/norli.png",
-    "description": "Klassiske og nye bøker for store og små – nett og fysisk butikk.",
-    "tags": [
-      "barnebøker",
-      "roman"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Fabel",
-    "url": "https://www.fabel.no",
-    "category": "Bøker og media",
-    "subcategory": [
-      "Lyd- og lydbøker"
-    ],
-    "image": "assets/images/boker-og-media/fabel.png",
-    "description": "Norsk strømmetjeneste for lydbøker og fortellinger.",
-    "tags": [
-      "lydbok",
-      "fortelling"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Selfmade",
-    "url": "https://www.selfmade.com/no-no/",
-    "category": "Hobby og DIY",
-    "subcategory": [
-      "Håndarbeid og broderi"
-    ],
-    "image": "assets/images/hobby-og-diy/selfmade.png",
-    "description": "Tidligere Stoff & Stil – alt innen søm, tekstil og broderi.",
-    "tags": [
-      "stoff",
-      "søm",
-      "broderi"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Kreativshop",
-    "url": "https://www.kreativshop.no",
-    "category": "Hobby og DIY",
-    "subcategory": [
-      "Tegning og maling"
-    ],
-    "image": "assets/images/hobby-og-diy/kreativshop.png",
-    "description": "Nettbutikk for maling, tegning og kreative prosjekter.",
-    "tags": [
-      "tegning",
-      "maling",
-      "kunst"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Jula",
-    "url": "https://www.jula.no",
-    "category": "Hobby og DIY",
-    "subcategory": [
-      "Verktøy og materialer"
-    ],
-    "image": "assets/images/hobby-og-diy/jula.png",
-    "description": "Verktøy, byggematerialer og alt du trenger til hjemmeprosjektene.",
-    "tags": [
-      "verktøy",
-      "materialer"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Regovs",
-    "url": "https://www.regovs.no",
-    "category": "Reise og opplevelser",
-    "subcategory": [
-      "Bager og kofferter"
-    ],
-    "image": "assets/images/reise-og-opplevelser/regovs.png",
-    "description": "Dansk spesialist på kofferter og business-vesker.",
-    "tags": [
-      "bag",
-      "reise",
-      "koffert"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Sportsnett",
-    "url": "https://www.sportsnett.no",
-    "category": "Reise og opplevelser",
-    "subcategory": [
-      "Festival- og campingutstyr"
-    ],
-    "image": "assets/images/reise-og-opplevelser/sportsnett.png",
-    "description": "Utstyr til tur, ekspedisjon og festivalcamping.",
-    "tags": [
-      "tur",
-      "festival",
-      "sovepose"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Barnas Egen Bokverden",
-    "url": "https://www.barnasegenbokverden.no",
-    "category": "Bøker og media",
-    "subcategory": [
-      "Barnebøker"
-    ],
-    "image": "assets/images/boker-og-media/barnasbokverden.png",
-    "description": "Barnebøker i abonnement og som gavepakker for ulike aldre.",
-    "tags": [
-      "barn",
-      "barnebok",
-      "bokklubb"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Storytel",
-    "url": "https://www.storytel.com/no",
-    "category": "Bøker og media",
-    "subcategory": [
-      "Lyd- og lydbøker"
-    ],
-    "image": "assets/images/boker-og-media/storytel.png",
-    "description": "Strømmetjeneste for tusenvis av lydbøker og e-bøker.",
-    "tags": [
-      "lydbok",
-      "strømming",
-      "fortelling"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Superhelten.no",
-    "url": "https://www.superhelten.no",
-    "category": "Spill og underholdning",
-    "subcategory": [
-      "Figurer og samleobjekter"
-    ],
-    "image": "assets/images/spill-og-underholdning/superhelten.png",
-    "description": "Samlefigurer, Funko Pop, LEGO og nerdete gaver.",
-    "tags": [
-      "figurer",
-      "funko",
-      "samleobjekt"
-    ],
-    "ny": true
-  },
-  {
-    "name": "Coolshop",
-    "url": "https://www.coolshop.no",
-    "category": "Spill og underholdning",
-    "subcategory": [
-      "Konsoller og tilbehør"
-    ],
-    "image": "assets/images/spill-og-underholdning/coolshop.png",
-    "description": "Gaming, leker, film og gaver til hele familien.",
-    "tags": [
-      "spill",
-      "konsoll",
-      "gaver"
-    ],
-    "ny": true
-  }
-],
   {
     "name": "LookFantastic",
     "url": "https://www.lookfantastic.no",
