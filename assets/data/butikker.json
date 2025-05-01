@@ -1438,22 +1438,6 @@
     "tags": ""
   },
   {
-    "name": "Digital Impuls",
-    "image": "assets/images/butikker/DigitalImpuls.png",
-    "alt": "Digital Impuls",
-    "category": "Gaming og tilbehør",
-    "subcategory": [
-      "Gamingutstyr og komponenter"
-    ],
-    "url": "https://www.digitalimpuls.no",
-    "description": "Datadeler, gamingtilbehør, PC-bygging.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
-  },
-  {
     "name": "MaxGaming",
     "image": "assets/images/butikker/maxgaming.png",
     "alt": "MaxGaming",
@@ -2667,22 +2651,6 @@
     ],
     "url": "https://www.lampegiganten.no",
     "description": "Alt innen belysning â taklamper, vegglamper og LED.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
-  },
-  {
-    "name": "Hviit",
-    "image": "assets/images/butikker/hviit.png",
-    "alt": "Hviit",
-    "category": "Møbler og interiør",
-    "subcategory": [
-      "Dekor og interiør"
-    ],
-    "url": "https://www.hviit.no",
-    "description": "Norsk interiørbutikk med designprodukter og dekor.",
     "topp25": false,
     "forside": false,
     "ny": false,
