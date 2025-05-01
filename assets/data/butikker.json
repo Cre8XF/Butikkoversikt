@@ -844,7 +844,7 @@
     "image": "assets/images/butikker/vinmonopolet.png",
     "alt": "Vinmonopolet",
     "category": "Mat og drikke",
-    "subcategory": ["Kaffe og te"],
+    "subcategory": ["Vin og brennevin"],
     "url": "https://www.vinmonopolet.no",
     "description": "Vinmonopolet tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
     "topp25": true,
