@@ -1204,20 +1204,6 @@
     "tags": []
   },
   {
-    "name": "Soma.no",
-    "image": "assets/images/butikker/soma.png",
-    "alt": "Soma",
-    "category": "Helse og egenpleie",
-    "subcategory": ["Naturlige produkter"],
-    "url": "https://www.soma.no",
-    "description": "Naturlig kosttilskudd og supermat.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": []
-  },
-  {
     "name": "AntonSport.no",
     "image": "assets/images/butikker/antonsport.png",
     "alt": "Anton Sport",
