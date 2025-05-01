@@ -17,8 +17,10 @@
     "name": "Apotek1.no",
     "image": "assets/images/butikker/apotek1.png",
     "alt": "Apotek 1",
-    "category": "Apotek",
-    "subcategory": [],
+    "category": "Helse og egenpleie",
+    "subcategory": [
+      "Apotek og helseprodukter"
+    ],
     "url": "https://www.apotek1.no",
     "description": "Apotek1.no tilbyr et bredt utvalg av medisiner, egenpleieprodukter og apotektjenester â alt levert rett hjem.",
     "topp25": true,
@@ -31,8 +33,10 @@
     "name": "Apotekhjem.no",
     "image": "assets/images/butikker/apotekhjem.png",
     "alt": "Apotekhjem",
-    "category": "Apotek",
-    "subcategory": [],
+    "category": "Helse og egenpleie",
+    "subcategory": [
+      "Apotek og helseprodukter"
+    ],
     "url": "https://www.apotekhjem.no",
     "description": "Spesialisert apotek med hjemmelevering og fokus pÃ¥ eldre og kronikere.",
     "topp25": false,
@@ -45,8 +49,10 @@
     "name": "Apotera.no",
     "image": "assets/images/butikker/apotera.png",
     "alt": "Apotera",
-    "category": "Apotek",
-    "subcategory": [],
+    "category": "Helse og egenpleie",
+    "subcategory": [
+      "Apotek og helseprodukter"
+    ],
     "url": "https://www.apotera.no",
     "description": "Nytt nettapotek med stort fokus pÃ¥ pris og brukervennlighet.",
     "topp25": false,
@@ -60,9 +66,7 @@
     "image": "assets/images/butikker/ark.png",
     "alt": "Ark.no",
     "category": "Bøker og underholdning",
-    "subcategory": [
-      "Barnebøker"
-    ],
+    "subcategory": [],
     "url": "https://www.ark.no",
     "description": "Bestselgere, barnebøker, lydbøker og e-bøker.",
     "topp25": false,
@@ -160,9 +164,7 @@
     "image": "assets/images/butikker/blivakker.png",
     "alt": "Blivakker",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Hudpleie"
-    ],
+    "subcategory": [],
     "url": "https://www.blivakker.no",
     "description": "Skjønnhetsprodukter og hudpleie pÃ¥ nett.",
     "topp25": false,
@@ -333,8 +335,10 @@
     "name": "Farmasiet",
     "image": "assets/images/butikker/farmasiet.png",
     "alt": "Farmasiet",
-    "category": "Apotek",
-    "subcategory": [],
+    "category": "Helse og egenpleie",
+    "subcategory": [
+      "Apotek og helseprodukter"
+    ],
     "url": "https://www.farmasiet.no",
     "description": "Farmasiet tilbyr et bredt utvalg av medisiner, egenpleieprodukter og apotektjenester â alt levert rett hjem.",
     "topp25": true,
@@ -417,9 +421,9 @@
     "name": "IKEA",
     "image": "assets/images/butikker/ikea.png",
     "alt": "IKEA",
-    "category": "Møbler og interiør",
+    "category": "Barn og baby",
     "subcategory": [
-      "Møbler"
+      "Møbler og interiør"
     ],
     "url": "https://www.ikea.com/no/no",
     "description": "IKEA tilbyr praktiske og stilrene møbler og interiør til alle rom i hjemmet.",
@@ -475,9 +479,9 @@
     "name": "Kid Interiør",
     "image": "assets/images/butikker/kid.png",
     "alt": "Kid Interiør",
-    "category": "Møbler og interiør",
+    "category": "Barn og baby",
     "subcategory": [
-      "Møbler"
+      "Møbler og interiør"
     ],
     "url": "https://www.kid.no",
     "description": "Kid Interiør tilbyr praktiske og stilrene møbler og interiør til alle rom i hjemmet.",
@@ -519,8 +523,10 @@
     "name": "KomplettApotek.no",
     "image": "assets/images/butikker/komplettapotek.png",
     "alt": "Komplett Apotek",
-    "category": "Apotek",
-    "subcategory": [],
+    "category": "Helse og egenpleie",
+    "subcategory": [
+      "Apotek og helseprodukter"
+    ],
     "url": "https://www.komplettapotek.no",
     "description": "Digitalt apotek med lave priser og reseptbestilling rett pÃ¥ nett.",
     "topp25": false,
@@ -590,9 +596,7 @@
     "image": "assets/images/butikker/mimmis.png",
     "alt": "Mimmis",
     "category": "Barn og baby",
-    "subcategory": [
-      "Babyutstyr"
-    ],
+    "subcategory": [],
     "url": "https://www.mimmis.no",
     "description": "Bilstoler, vogner, bæreseler og babyutstyr.",
     "topp25": false,
@@ -620,9 +624,7 @@
     "image": "assets/images/butikker/nameit.png",
     "alt": "Name It",
     "category": "Barn og baby",
-    "subcategory": [
-      "Barneklær"
-    ],
+    "subcategory": [],
     "url": "https://www.nameit.com/no-no/home",
     "description": "Moderne barneklær og mammaklær.",
     "topp25": false,
@@ -818,9 +820,7 @@
     "image": "assets/images/butikker/sunkost.png",
     "alt": "Sunkost",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Kosttilskudd"
-    ],
+    "subcategory": [],
     "url": "https://www.sunkost.no",
     "description": "Kosttilskudd, vitaminer og naturlig egenpleie.",
     "topp25": false,
@@ -877,8 +877,10 @@
     "name": "Vitusapotek.no",
     "image": "assets/images/butikker/vitusapotek.png",
     "alt": "Vitusapotek",
-    "category": "Apotek",
-    "subcategory": [],
+    "category": "Helse og egenpleie",
+    "subcategory": [
+      "Apotek og helseprodukter"
+    ],
     "url": "https://www.vitusapotek.no",
     "description": "Trygt apotek pÃ¥ nett med legemidler, vitaminer, egenpleie og resepttjenester.",
     "topp25": false,
@@ -933,9 +935,9 @@
     "name": "JYSK",
     "image": "assets/images/butikker/jysk.png",
     "alt": "JYSK",
-    "category": "Møbler og interiør",
+    "category": "Barn og baby",
     "subcategory": [
-      "Møbler"
+      "Møbler og interiør"
     ],
     "url": "https://jysk.no/",
     "description": "Skandinavisk interiør og møbler til gode priser.",
@@ -949,9 +951,9 @@
     "name": "Skeidar",
     "image": "assets/images/butikker/skeidar.png",
     "alt": "Skeidar",
-    "category": "Møbler og interiør",
+    "category": "Barn og baby",
     "subcategory": [
-      "Møbler"
+      "Møbler og interiør"
     ],
     "url": "https://www.skeidar.no",
     "description": "Kvalitetsmøbler og interiør til hjemmet.",
@@ -1094,9 +1096,7 @@
     "image": "assets/images/butikker/gamezone.png",
     "alt": "Gamezone",
     "category": "Spill og underholdning",
-    "subcategory": [
-      "Brettspill"
-    ],
+    "subcategory": [],
     "url": "https://www.gamezone.no",
     "description": "Brettspill, samlekort, figurer og alt for gamingentusiaster.",
     "topp25": false,
@@ -1555,10 +1555,8 @@
     "name": "Gymgrossisten ",
     "image": "assets/images/butikker/gymgrossisten.png",
     "alt": "Gymgrossisten",
-    "category": "Sport og fritid",
-    "subcategory": [
-      "Treningsutstyr"
-    ],
+    "category": "Helse og egenpleie",
+    "subcategory": [],
     "url": "https://www.gymgrossisten.no",
     "description": "Kosttilskudd, treningsutstyr og helseprodukter.",
     "topp25": false,
@@ -1676,9 +1674,7 @@
     "image": "assets/images/butikker/lilleprinsen.png",
     "alt": "Lilleprinsen",
     "category": "Barn og baby",
-    "subcategory": [
-      "Babyutstyr"
-    ],
+    "subcategory": [],
     "url": "https://www.lilleprinsen.no",
     "description": "Babyutstyr og barneprodukter med fokus pÃ¥ kvalitet.",
     "topp25": false,
@@ -1706,9 +1702,7 @@
     "image": "assets/images/butikker/soma.png",
     "alt": "Soma",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Kosttilskudd"
-    ],
+    "subcategory": [],
     "url": "https://www.soma.no",
     "description": "Naturlig kosttilskudd og supermat.",
     "topp25": false,
@@ -1735,9 +1729,9 @@
     "name": "Chilli.no",
     "image": "assets/images/butikker/chilli.png",
     "alt": "Chilli",
-    "category": "Møbler og interiør",
+    "category": "Barn og baby",
     "subcategory": [
-      "Møbler"
+      "Møbler og interiør"
     ],
     "url": "https://www.chilli.no",
     "description": "Moderne møbler og interiør til gode priser.",
@@ -1783,9 +1777,9 @@
     "name": "Furniturebox.no",
     "image": "assets/images/butikker/furniturebox.png",
     "alt": "Furniturebox",
-    "category": "Møbler og interiør",
+    "category": "Barn og baby",
     "subcategory": [
-      "Møbler"
+      "Møbler og interiør"
     ],
     "url": "https://www.furniturebox.no",
     "description": "Stort utvalg av møbler og interiør med rask levering.",
@@ -1830,9 +1824,7 @@
     "image": "assets/images/butikker/intersport.png",
     "alt": "Gsport",
     "category": "Sport og fritid",
-    "subcategory": [
-      "Treningsutstyr"
-    ],
+    "subcategory": [],
     "url": "https://www.intersport.no",
     "description": "Alt innen sport og fritid, inkludert klær, sko og treningsutstyr.",
     "topp25": false,
@@ -2613,7 +2605,7 @@
     "name": "Skeidar",
     "image": "assets/images/butikker/skeidar.png",
     "alt": "Skeidar",
-    "category": "Møbler og interiør",
+    "category": "Barn og baby",
     "subcategory": [
       "Møbler"
     ],
@@ -2629,7 +2621,7 @@
     "name": "Møbelringen",
     "image": "assets/images/butikker/mobelringen.png",
     "alt": "Møbelringen",
-    "category": "Møbler og interiør",
+    "category": "Barn og baby",
     "subcategory": [
       "Møbler"
     ],
@@ -2645,7 +2637,7 @@
     "name": "Jotex",
     "image": "assets/images/butikker/jotex.png",
     "alt": "Jotex",
-    "category": "Møbler og interiør",
+    "category": "Barn og baby",
     "subcategory": [
       "Tekstiler og tepper"
     ],
@@ -2661,7 +2653,7 @@
     "name": "Lampegiganten",
     "image": "assets/images/butikker/lampegiganten.png",
     "alt": "Lampegiganten",
-    "category": "Møbler og interiør",
+    "category": "Barn og baby",
     "subcategory": [
       "Belysning"
     ],
@@ -2677,7 +2669,7 @@
     "name": "Nordic Nest",
     "image": "assets/images/butikker/nordicnest.png",
     "alt": "Nordic Nest",
-    "category": "Møbler og interiør",
+    "category": "Barn og baby",
     "subcategory": [
       "Dekor og interiør"
     ],
@@ -2693,7 +2685,7 @@
     "name": "Kid",
     "image": "assets/images/butikker/kid.png",
     "alt": "Kid",
-    "category": "Møbler og interiør",
+    "category": "Barn og baby",
     "subcategory": [
       "Tekstiler og tepper"
     ],
@@ -2709,7 +2701,7 @@
     "name": "Ellos Home",
     "image": "assets/images/butikker/ellos.png",
     "alt": "Ellos Home",
-    "category": "Møbler og interiør",
+    "category": "Barn og baby",
     "subcategory": [
       "Møbler"
     ],
