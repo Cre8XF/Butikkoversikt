@@ -1199,7 +1199,7 @@
   },
   {
     "name": "Bogartstore.no",
-    "image": "assets/images/butikker/Bogart.png",
+    "image": "assets/images/butikker/bogart.png",
     "alt": "Bogartstore",
     "category": "Klær og mote",
     "subcategory": [
@@ -1590,22 +1590,6 @@
     "tags": ""
   },
   {
-    "name": "Gadgetshop.no",
-    "image": "assets/images/butikker/gadgetshop.png",
-    "alt": "Gadgetshop",
-    "category": "Fritid og gaver",
-    "subcategory": [
-      "Gadgets og gaver"
-    ],
-    "url": "https://www.gadgetshop.no",
-    "description": "",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
-  },
-  {
     "name": "Lekmer.no",
     "image": "assets/images/butikker/lekmer.png",
     "alt": "Lekmer",
@@ -1680,12 +1664,12 @@
     "tags": ""
   },
   {
-    "name": "SmÃ¥ungene.no",
-    "image": "assets/images/butikker/smaungene.png",
-    "alt": "SmÃ¥ungene",
+    "name": "Smaaungene.no",
+    "image": "assets/images/butikker/smaaungene.png",
+    "alt": "Smaaungene",
     "category": "Barn og baby",
     "subcategory": [],
-    "url": "https://www.smaungene.no",
+    "url": "https://www.smaaungene.no",
     "description": "Ullklær og praktisk utstyr for baby og barn.",
     "topp25": false,
     "forside": false,
