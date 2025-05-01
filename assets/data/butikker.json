@@ -3,9 +3,9 @@
     "name": "Aboutyou.no",
     "image": "/assets/images/butikker/aboutyou.png",
     "alt": "About You",
-    "category": "Elektronikk og data",
+    "category": "Klær og mote",
     "subcategory": [
-      "Elektronikk"
+      "Dameklær"
     ],
     "url": "https://www.aboutyou.no",
     "description": "Stort utvalg av merker og mote.",
@@ -67,10 +67,9 @@
     "name": "Ark.no",
     "image": "assets/images/butikker/ark.png",
     "alt": "Ark.no",
-    "category": "Klær og mote",
+    "category": "Bøker og media",
     "subcategory": [
-      "Barneklær",
-      "Bøker og e-bøker"
+      "Barnebøker"
     ],
     "url": "https://www.ark.no",
     "description": "Bestselgere, barnebøker, lydbøker og e-bøker.",
@@ -218,7 +217,7 @@
     "alt": "Boozt",
     "category": "Klær og mote",
     "subcategory": [
-      "Dameklær"
+      "Herreklær"
     ],
     "url": "https://www.boozt.com",
     "description": "Boozt tilbyr moderne og tidløse klær for alle anledninger â bÃ¥de til dame, herre og barn.",
@@ -248,9 +247,9 @@
     "name": "CDON",
     "image": "assets/images/butikker/cdon.png",
     "alt": "CDON",
-    "category": "Møbler og interiør",
+    "category": "Elektronikk og data",
     "subcategory": [
-      "Veggkunst og bilder"
+      "Elektronikk"
     ],
     "url": "https://cdon.no",
     "description": "CDON tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
@@ -313,7 +312,9 @@
     "image": "assets/images/butikker/dressmann.png",
     "alt": "Dressmann",
     "category": "Klær og mote",
-    "subcategory": [],
+    "subcategory": [
+      "Dameklær"
+    ],
     "url": "https://www.dressmann.com",
     "description": "Basisplagg og formelle klær.",
     "topp25": false,
@@ -342,9 +343,9 @@
     "name": "Elkjøp",
     "image": "assets/images/butikker/elkjop.png",
     "alt": "Elkjøp",
-    "category": "Møbler og interiør",
+    "category": "Elektronikk og data",
     "subcategory": [
-      "Veggkunst og bilder"
+      "Elektronikk"
     ],
     "url": "https://www.elkjop.no",
     "description": "Elkjøp tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
@@ -569,10 +570,9 @@
     "name": "Komplett",
     "image": "assets/images/butikker/komplett.png",
     "alt": "Komplett",
-    "category": "Møbler og interiør",
+    "category": "Elektronikk og data",
     "subcategory": [
-      "Sko og tilbehør",
-      "Veggkunst og bilder"
+      "Elektronikk"
     ],
     "url": "https://www.komplett.no",
     "description": "Komplett tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
@@ -586,9 +586,9 @@
     "name": "KomplettApotek.no",
     "image": "assets/images/butikker/komplettapotek.png",
     "alt": "Komplett Apotek",
-    "category": "Helse og egenpleie",
+    "category": "Elektronikk og data",
     "subcategory": [
-      "Apotek og helseprodukter"
+      "Elektronikk"
     ],
     "url": "https://www.komplettapotek.no",
     "description": "Digitalt apotek med lave priser og reseptbestilling rett pÃ¥ nett.",
@@ -653,7 +653,7 @@
     "alt": "Lindex",
     "category": "Klær og mote",
     "subcategory": [
-      "Dameklær"
+      "Barneklær"
     ],
     "url": "https://www.lindex.no",
     "description": "Klær og undertøy til dame og barn.",
@@ -731,10 +731,9 @@
     "name": "NetOnNet.no",
     "image": "assets/images/butikker/netonnet.png",
     "alt": "NetOnNet",
-    "category": "Mat og drikke",
+    "category": "Elektronikk og data",
     "subcategory": [
-      "Gamingutstyr og komponenter",
-      "Kaffe og te"
+      "Elektronikk"
     ],
     "url": "https://www.netonnet.no",
     "description": "Direkte fra lageret â PC og skjermer.",
@@ -785,10 +784,9 @@
     "name": "Power.no",
     "image": "assets/images/butikker/power.png",
     "alt": "Power",
-    "category": "Møbler og interiør",
+    "category": "Elektronikk og data",
     "subcategory": [
-      "Gamingutstyr og komponenter",
-      "Veggkunst og bilder"
+      "Elektronikk"
     ],
     "url": "https://www.power.no",
     "description": "Power.no tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
@@ -1044,7 +1042,7 @@
     "alt": "Zalando",
     "category": "Klær og mote",
     "subcategory": [
-      "Dameklær"
+      "Herreklær"
     ],
     "url": "https://www.zalando.no",
     "description": "Zalando tilbyr moderne og tidløse klær for alle anledninger â bÃ¥de til dame, herre og barn.",
@@ -1289,9 +1287,9 @@
     "name": "Bokkilden",
     "image": "assets/images/butikker/bokkilden.png",
     "alt": "Bokkilden",
-    "category": "Barn og baby",
+    "category": "Bøker og media",
     "subcategory": [
-      "Leker"
+      "Bøker og e-bøker"
     ],
     "url": "https://www.bokkilden.no",
     "description": "Bøker, filmer, musikk og spill.",
@@ -1305,9 +1303,9 @@
     "name": "Adlibris",
     "image": "assets/images/butikker/adlibris.png",
     "alt": "Adlibris",
-    "category": "Barn og baby",
+    "category": "Bøker og media",
     "subcategory": [
-      "Leker"
+      "Bøker og e-bøker"
     ],
     "url": "https://www.adlibris.com/no",
     "description": "Bøker, filmer, musikk og spill.",
@@ -1514,11 +1512,9 @@
     "name": "Norli.no",
     "image": "assets/images/butikker/norli.png",
     "alt": "Norli",
-    "category": "Elektronikk og data",
+    "category": "Bøker og media",
     "subcategory": [
-      "Barnebøker",
-      "Skjønnlitteratur",
-      "Elektronikk"
+      "Bøker og e-bøker"
     ],
     "url": "https://www.norli.no",
     "description": "En av Norges største bokhandler med stort utvalg av bøker og e-bøker.",
@@ -1569,7 +1565,7 @@
     "alt": "Proshop.no",
     "category": "Elektronikk og data",
     "subcategory": [
-      "PC og tilbehør"
+      "Elektronikk"
     ],
     "url": "https://www.proshop.no/",
     "description": "",
