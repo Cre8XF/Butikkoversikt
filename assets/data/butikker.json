@@ -1118,22 +1118,6 @@
     "tags": ""
   },
   {
-    "name": "DigitalImpuls",
-    "image": "assets/images/butikker/digitalimpuls.png",
-    "alt": "DigitalImpuls",
-    "category": "Fritid og gaver",
-    "subcategory": [
-      "Gadgets og gaver"
-    ],
-    "url": "https://www.digitalimpuls.no",
-    "description": "Datadeler, gamingtilbehør, PC-bygging.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
-  },
-  {
     "name": "Boozt",
     "image": "assets/images/butikker/boozt.png",
     "alt": "Boozt",
