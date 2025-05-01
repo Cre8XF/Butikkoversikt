@@ -1,9 +1,9 @@
 [
   {
     "name": "Aboutyou.no",
-    "image": "assets/images/butikker/about-you.png",
+    "image": "/assets/images/butikker/aboutyou.png",
     "alt": "About You",
-    "category": "Klær og mote",
+    "category": "test",
     "subcategory": [],
     "url": "https://www.aboutyou.no",
     "description": "Stort utvalg av merker og mote.",
@@ -2798,6 +2798,104 @@
     "topp25": false,
     "forside": false,
     "ny": false,
+    "annonse": false,
+    "tags": ""
+  },
+  {
+    "name": "Ateljé Margaretha",
+    "image": "assets/images/butikker/atelje-margaretha.png",
+    "alt": "Ateljé Margaretha",
+    "category": "Hobby og fritid",
+    "subcategory": [
+      "Broderi",
+      "Strikking"
+    ],
+    "url": "https://www.margaretha.no",
+    "description": "Nettbutikk med broderier, garn, oppskrifter og tilbehør. Bli medlem i Club Margaretha for eksklusive hobbyprosjekter.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ""
+  },
+  {
+    "name": "CChobby",
+    "image": "assets/images/butikker/cchobby.png",
+    "alt": "CChobby",
+    "category": "Hobby og fritid",
+    "subcategory": [
+      "DIY",
+      "Kunst og tegning"
+    ],
+    "url": "https://www.cchobby.no",
+    "description": "Stor hobbybutikk med kreative produkter, DIY-kits og alt innen maling, papir, pynt og tilbehør.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ""
+  },
+  {
+    "name": "Club Creo",
+    "image": "assets/images/butikker/club-creo.png",
+    "alt": "Club Creo",
+    "category": "Hobby og fritid",
+    "subcategory": [
+      "Barn og hobby"
+    ],
+    "url": "https://www.clubcreo.com/no",
+    "description": "Prisvinnende abonnementstjeneste med kreative hobbykit for barn. Ny pakke hver måned, ingen bindingstid.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ""
+  },
+  {
+    "name": "Elefun",
+    "image": "assets/images/butikker/elefun.png",
+    "alt": "Elefun",
+    "category": "Hobby og fritid",
+    "subcategory": [
+      "Radiostyrt"
+    ],
+    "url": "https://www.elefun.no",
+    "description": "Norges største utvalg av radiostyrte produkter som biler, fly, båter og droner. Rask levering.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ""
+  },
+  {
+    "name": "hobby247",
+    "image": "assets/images/butikker/hobby247.png",
+    "alt": "hobby247",
+    "category": "Hobby og fritid",
+    "subcategory": [
+      "Håndarbeid"
+    ],
+    "url": "https://www.hobby247.no",
+    "description": "Svensk hobbybutikk med norsk side. Alt innen strikking, sying, veving, leker og tilbehør. Toll og moms inkludert.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ""
+  },
+  {
+    "name": "Hobbyhjørnet",
+    "image": "assets/images/butikker/hobbyhjornet.png",
+    "alt": "Hobbyhjørnet",
+    "category": "Hobby og fritid",
+    "subcategory": [
+      "Hobby"
+    ],
+    "url": "https://www.hobbyhjornet.no",
+    "description": "Nettbutikk med hobbyartikler som perler, papir, skala modeller og dekor. Fri frakt over 1000 kr.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
     "annonse": false,
     "tags": ""
   }
