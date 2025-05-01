@@ -1199,7 +1199,7 @@
   },
   {
     "name": "Bogartstore.no",
-    "image": "assets/images/butikker/Bogartstore.png",
+    "image": "assets/images/butikker/Bogart.png",
     "alt": "Bogartstore",
     "category": "Klær og mote",
     "subcategory": [
@@ -1703,20 +1703,6 @@
     "subcategory": [],
     "url": "https://www.smaungene.no",
     "description": "Ullklær og praktisk utstyr for baby og barn.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
-  },
-  {
-    "name": "NorskApotek.no",
-    "image": "assets/images/butikker/norskapotek.png",
-    "alt": "Norsk Apotek",
-    "category": "Apotek",
-    "subcategory": [],
-    "url": "https://www.norskapotek.no",
-    "description": "Trygt norsk apotek pÃ¥ nett med stort sortiment.",
     "topp25": false,
     "forside": false,
     "ny": false,
