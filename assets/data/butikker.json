@@ -383,7 +383,7 @@
   },
   {
     "name": "H&M",
-    "image": "assets/images/butikker/H&M.png",
+    "image": "assets/images/butikker/hm.png",
     "alt": "H&M",
     "category": "Klær og mote",
     "subcategory": [],
@@ -2737,7 +2737,7 @@
   },
   {
     "name": "Ellos Home",
-    "image": "assets/images/butikker/elloshome.png",
+    "image": "assets/images/butikker/ellos.png",
     "alt": "Ellos Home",
     "category": "Møbler og interiør",
     "subcategory": [
