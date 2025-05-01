@@ -2194,14 +2194,14 @@
     "tags": ""
   },
   {
-    "name": "Eleven.no",
-    "image": "assets/images/butikker/eleven.png",
-    "alt": "Eleven.no",
+    "name": "nordicfeel.no",
+    "image": "assets/images/butikker/nordicfeel.png",
+    "alt": "nordicfeel.no",
     "category": "Helse og egenpleie",
     "subcategory": [
       "Sminke og kosmetikk"
     ],
-    "url": "https://eleven.no/",
+    "url": "https://www.nordicfeel.no/",
     "description": "",
     "topp25": false,
     "forside": false,
