@@ -1151,13 +1151,13 @@
   },
   {
     "name": "H&M",
-    "image": "assets/images/butikker/H&M.png",
+    "image": "assets/images/butikker/hm.png",
     "alt": "H&M",
     "category": "Klær og mote",
     "subcategory": [
       "Dameklær"
     ],
-    "url": "https://www2.hm.com/nb_no/index.html",
+    "url": "https://www2.hm.com/no_no/index.html",
     "description": "H&M tilbyr moderne og tidløse klær for alle aldre.",
     "topp25": false,
     "forside": false,
