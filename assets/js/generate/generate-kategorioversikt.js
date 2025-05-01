@@ -1,4 +1,4 @@
-// Oppdatert generate-kategorioversikt.js med trygg ikon-navn generering og DOM-manipulasjon
+// generate-kategorioversikt.js – Oppdatert og ryddet versjon
 
 document.addEventListener("DOMContentLoaded", () => {
   const kategoriListe = document.getElementById("kategori-liste");
@@ -15,12 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
       const hovedkategorier = Array.from(new Set(butikker.map(b => b.category))).filter(Boolean);
 
       hovedkategorier.forEach(kategori => {
+        // Generer ikon-navn basert på kategoritekst
         const ikonNavn = kategori
           .toLowerCase()
-          .normalize("NFD").replace(/[̀-ͯ]/g, "")
+          .replace(/æ/g, "ae")
+          .replace(/ø/g, "o")
+          .replace(/å/g, "a")
+          .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Fjern diakritiske tegn
           .replace(/[^a-z0-9]+/g, "-")
           .replace(/(^-|-$)/g, "") + ".png";
 
+        // Bygg HTML-struktur for kort
         const kort = document.createElement("div");
         kort.className = "col-6 col-md-4 col-lg-3 kategori-kort";
         kort.setAttribute("data-kategori", kategori.toLowerCase());
@@ -32,20 +37,18 @@ document.addEventListener("DOMContentLoaded", () => {
         const card = document.createElement("div");
         card.className = "card p-4 h-100 shadow-sm d-flex flex-column justify-content-center align-items-center";
 
-        const ikonNavn = kategori
-  .toLowerCase()
-  .replace(/æ/g, "ae")
-  .replace(/ø/g, "o")
-  .replace(/å/g, "a")
-  .normalize("NFD").replace(/[̀-ͯ]/g, "")
-  .replace(/[^a-z0-9]+/g, "-")
-  .replace(/(^-|-$)/g, "") + ".png";
-
+        const img = document.createElement("img");
+        img.src = `assets/images/ikoner/${ikonNavn}`;
+        img.alt = kategori;
+        img.className = "img-fluid mb-3";
+        img.style.height = "80px";
+        img.style.objectFit = "contain";
 
         const tittel = document.createElement("h6");
         tittel.className = "fw-bold";
         tittel.textContent = kategori;
 
+        // Sett sammen kortet
         card.appendChild(img);
         card.appendChild(tittel);
         link.appendChild(card);
@@ -53,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         kategoriListe.appendChild(kort);
       });
 
+      // Søke/filter-funksjon
       kategoriSok.addEventListener("input", () => {
         const sok = kategoriSok.value.toLowerCase();
         document.querySelectorAll(".kategori-kort").forEach(kort => {
