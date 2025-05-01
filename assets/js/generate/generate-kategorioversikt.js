@@ -32,12 +32,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const card = document.createElement("div");
         card.className = "card p-4 h-100 shadow-sm d-flex flex-column justify-content-center align-items-center";
 
-        const img = document.createElement("img");
-        img.src = `assets/images/ikoner/${ikonNavn}`;
-        img.alt = kategori;
-        img.className = "img-fluid mb-3";
-        img.style.height = "80px";
-        img.style.objectFit = "contain";
+        const ikonNavn = kategori
+  .toLowerCase()
+  .replace(/æ/g, "ae")
+  .replace(/ø/g, "o")
+  .replace(/å/g, "a")
+  .normalize("NFD").replace(/[̀-ͯ]/g, "")
+  .replace(/[^a-z0-9]+/g, "-")
+  .replace(/(^-|-$)/g, "") + ".png";
+
 
         const tittel = document.createElement("h6");
         tittel.className = "fw-bold";
