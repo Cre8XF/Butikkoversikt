@@ -2802,22 +2802,6 @@
     "tags": ""
   },
   {
-    "name": "Gmax",
-    "image": "assets/images/butikker/gmax.png",
-    "alt": "Gmax",
-    "category": "Sport og fritid",
-    "subcategory": [
-      "Trening og treningsutstyr"
-    ],
-    "url": "https://www.gmax.no",
-    "description": "Rimelige sportsvarer og treningsutstyr.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ""
-  },
-  {
     "name": "Skitt Fiske",
     "image": "assets/images/butikker/skittfiske.png",
     "alt": "Skitt Fiske",
