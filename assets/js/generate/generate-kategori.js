@@ -1,3 +1,4 @@
+// generate-kategori.js
 
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
@@ -5,9 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const kategoriTittel = document.getElementById("kategori-tittel");
   const butikkContainer = document.getElementById("butikk-container");
-  const subcategoryFilterContainer = document.getElementById("subcategory-filter");
+  const filterContainer = document.getElementById("filter-container");
 
-  if (!valgtKategori || !kategoriTittel || !butikkContainer) {
+  if (!valgtKategori || !kategoriTittel || !butikkContainer || !filterContainer) {
     console.error("Mangler kategori eller container");
     return;
   }
@@ -15,82 +16,77 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("assets/data/butikker.json")
     .then(r => r.json())
     .then(butikker => {
-      const filtrerteButikker = butikker.filter(b =>
-        (b.category || "").trim().toLowerCase() === valgtKategori.trim().toLowerCase()
-      );
+      const filtrerteButikker = butikker.filter(b => (b.category || "").trim().toLowerCase() === valgtKategori.trim().toLowerCase());
 
       if (filtrerteButikker.length === 0) {
         kategoriTittel.textContent = valgtKategori;
-        butikkContainer.innerHTML = `<p class="text-muted">Ingen butikker funnet i denne kategorien.</p>`;
+        butikkContainer.innerHTML = '<p class="text-muted">Ingen butikker funnet i denne kategorien.</p>';
         return;
       }
 
-      kategoriTittel.innerHTML = `
-        ${valgtKategori}
-        <p class="lead text-muted mt-3">Fant ${filtrerteButikker.length} butikker</p>
-        <a href="kategori.html" class="btn btn-outline-primary mt-3">Tilbake til kategorier</a>`;
-
-      const subSet = new Set();
+      // Hent unike underkategorier
+      const underkategorier = new Set();
       filtrerteButikker.forEach(b => {
-        const subs = Array.isArray(b.subcategory)
-          ? b.subcategory
-          : (typeof b.subcategory === "string" && b.subcategory.startsWith("["))
-            ? JSON.parse(b.subcategory)
-            : [b.subcategory];
-        subs.forEach(s => { if (s) subSet.add(s); });
-      });
-      const unikeSubkategorier = Array.from(subSet);
-
-      if (subcategoryFilterContainer && unikeSubkategorier.length > 0) {
-        const buttonAll = document.createElement("button");
-        buttonAll.className = "btn btn-outline-secondary btn-sm me-2 mb-2";
-        buttonAll.textContent = "Alle";
-        buttonAll.onclick = () => visButikker(filtrerteButikker);
-        subcategoryFilterContainer.appendChild(buttonAll);
-
-        unikeSubkategorier.forEach(sub => {
-          const button = document.createElement("button");
-          button.className = "btn btn-outline-secondary btn-sm me-2 mb-2";
-          button.textContent = sub;
-          button.onclick = () => {
-            const filtrert = filtrerteButikker.filter(b => {
-              const subs = Array.isArray(b.subcategory)
-                ? b.subcategory
-                : (typeof b.subcategory === "string" && b.subcategory.startsWith("["))
-                  ? JSON.parse(b.subcategory)
-                  : [b.subcategory];
-              return subs.includes(sub);
-            });
-            visButikker(filtrert);
-          };
-          subcategoryFilterContainer.appendChild(button);
+        const subcats = Array.isArray(b.subcategory) ? b.subcategory : [b.subcategory];
+        subcats.forEach(sc => {
+          if (sc && sc.trim()) {
+            underkategorier.add(sc.trim());
+          }
         });
-      }
+      });
 
-      visButikker(filtrerteButikker);
+      // Lag filterknapper
+      const filterButtons = document.createElement("div");
+      filterButtons.className = "mb-4 d-flex flex-wrap gap-2 justify-content-center";
+
+      const alleBtn = document.createElement("button");
+      alleBtn.className = "btn btn-warning";
+      alleBtn.textContent = "Alle";
+      alleBtn.addEventListener("click", () => renderButikker(filtrerteButikker));
+      filterButtons.appendChild(alleBtn);
+
+      underkategorier.forEach(subcat => {
+        const btn = document.createElement("button");
+        btn.className = "btn btn-outline-warning";
+        btn.textContent = subcat;
+        btn.addEventListener("click", () => {
+          const filtrert = filtrerteButikker.filter(b => {
+            const subcats = Array.isArray(b.subcategory) ? b.subcategory : [b.subcategory];
+            return subcats.includes(subcat);
+          });
+          renderButikker(filtrert);
+        });
+        filterButtons.appendChild(btn);
+      });
+
+      filterContainer.appendChild(filterButtons);
+
+      kategoriTittel.innerHTML = `${valgtKategori}<p class="lead text-muted mt-3">Fant ${filtrerteButikker.length} butikker</p>
+      <a href="kategori.html" class="btn btn-outline-primary mt-3">Tilbake til kategorier</a>`;
+
+      renderButikker(filtrerteButikker);
     })
     .catch(err => {
       console.error("Feil ved lasting av butikker.json:", err);
-      butikkContainer.innerHTML = "<p>Kunne ikke laste butikkene.</p>";
+      butikkContainer.innerHTML = '<p class="text-muted">Kunne ikke laste butikkene.</p>';
     });
 
-  function visButikker(butikker) {
-    const container = document.getElementById("butikk-container");
-    container.innerHTML = "";
-    butikker.forEach(butikk => {
+  function renderButikker(liste) {
+    butikkContainer.innerHTML = "";
+    liste.forEach(butikk => {
       const col = document.createElement("div");
       col.className = "col-6 col-md-4 col-lg-3";
 
       col.innerHTML = `
         <a href="${butikk.url}" target="_blank" rel="noopener" class="text-decoration-none">
           <div class="card p-3 h-100">
-            <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-2" style="height: 100px; object-fit: contain;">
+            <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-2">
             <h6 class="fw-bold">${butikk.name}</h6>
             <p class="text-muted small">${butikk.description || ""}</p>
           </div>
         </a>
       `;
-      container.appendChild(col);
+      butikkContainer.appendChild(col);
     });
   }
 });
