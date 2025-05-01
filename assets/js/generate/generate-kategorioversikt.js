@@ -23,14 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
         kort.className = "col-6 col-md-4 col-lg-3 kategori-kort";
         kort.setAttribute("data-kategori", kategori.toLowerCase());
 
-        kort.innerHTML = `
-          <a href="kategori-mal.html?kategori=${encodeURIComponent(kategori)}" class="text-decoration-none text-dark">
-            <div class="card p-4 h-100 shadow-sm d-flex flex-column justify-content-center align-items-center">
-              <img src="assets/images/ikoner/${ikonNavn}" alt="${kategori}" class="img-fluid mb-3" style="height: 80px; object-fit: contain;">
-              <h6 class="fw-bold">${kategori}</h6>
-            </div>
-          </a>
-        `;
+        const ikonNavn = kategori
+  .toLowerCase()
+  .replace(/æ/g, "ae")
+  .replace(/ø/g, "o")
+  .replace(/å/g, "a")
+  .replace(/\s+/g, "-") + ".png";
+
+kort.innerHTML = `
+  <a href="kategori-mal.html?kategori=${encodeURIComponent(kategori)}" class="text-decoration-none text-dark">
+    <div class="card p-4 h-100 shadow-sm d-flex flex-column justify-content-center align-items-center">
+      <img src="assets/images/ikoner/${ikonNavn}" alt="${kategori}" class="img-fluid mb-3" style="height: 80px; object-fit: contain;">
+      <h6 class="fw-bold">${kategori}</h6>
+    </div>
+  </a>
+`;
+
 
         kategoriListe.appendChild(kort);
       });
