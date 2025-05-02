@@ -1,4 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
+  // resten av koden uendret
+});
+console.log("✅ Forside-guide-script kjører");
+
   fetch("assets/data/guider.json")
     .then(response => response.json())
     .then(guides => {
