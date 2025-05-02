@@ -466,3 +466,39 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.guide-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #ccc !important;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.guide-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  color: #000 !important;
+}
+
+.guide-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000 !important;
+}
+
+.guide-card .card-text {
+  font-size: 0.95rem;
+  color: #333 !important;
+}
+
+.guide-card img {
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
