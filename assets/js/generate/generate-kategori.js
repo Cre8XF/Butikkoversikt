@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const ikonMap = {
   "Klær og mote": "klaer-og-mote.png",
   "Elektronikk og data": "elektronikk-og-data.png",
-  "Helse og skjønnhet": "helse-og-egenpleie.png",
+  "Helse og egenpleie": "helse-og-egenpleie.png",
   "Møbler og interiør": "mobler-og-interior.png",
   "Sport og fritid": "sport-og-fritid.png",
   "Hobby og DIY": "hobby-og-diy.png",
