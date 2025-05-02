@@ -1,5 +1,15 @@
 // generate-kategorier.js for kategori.html
 
+function slugify(text) {
+  return text.toLowerCase()
+    .replaceAll(" ", "-")
+    .replaceAll("æ", "ae")
+    .replaceAll("ø", "o")
+    .replaceAll("å", "a")
+    .replace(/[^\w\-]+/g, '');
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
   fetch("assets/data/butikker.json")
     .then(r => r.json())
@@ -81,7 +91,7 @@ function lagKategoriKort(kategoriNavn, antall, ikonFil) {
       <div class="card-body text-center">
         <h5 class="card-title">${kategoriNavn}</h5>
         <p class="card-text text-muted">${antall || 0} butikker</p>
-        <a href="kategori-mal.html?kategori=${encodeURIComponent(kategoriNavn)}" class="btn btn-primary">Utforsk</a>
+        <a href="kategorier/${slugify(kategoriNavn)}.html" class="btn btn-primary">Utforsk</a>
       </div>
     </div>
   `;
