@@ -1,7 +1,33 @@
 // generate-kategori-mal.js
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  // Støtte for både URL-parameter og statisk valgtKategori
+  let valgtKategori = null;
+
   const params = new URLSearchParams(window.location.search);
+  const valgtKategoriFraUrl = params.get("kategori");
+
+  if (valgtKategoriFraUrl) {
+    const decoded = decodeURIComponent(valgtKategoriFraUrl).toLowerCase().trim();
+    const kategoriMap = {
+      "klaer og mote": "Klær og mote",
+      "elektronikk og data": "Elektronikk og data",
+      "helse og egenpleie": "Helse og egenpleie",
+      "mobler og interior": "Møbler og interiør",
+      "sport og fritid": "Sport og fritid",
+      "hobby og diy": "Hobby og DIY",
+      "barn og baby": "Barn og baby",
+      "spill og underholdning": "Spill og underholdning",
+      "gaver og gadgets": "Gaver og gadgets",
+      "boker og media": "Bøker og media",
+      "reise og opplevelser": "Reise og opplevelser",
+      "mat og drikke": "Mat og drikke",
+      "altmulig butikker": "Alt-mulig butikker"
+    };
+    valgtKategori = kategoriMap[decoded] || valgtKategoriFraUrl;
+  }
+
   const valgtKategoriRaw = params.get("kategori")?.toLowerCase().trim();
 
   const kategoriMap = {
@@ -20,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "alt-mulig butikker": "Alt-mulig butikker"
   };
 
-  const valgtKategori = kategoriMap[valgtKategoriRaw] || valgtKategoriRaw;
+  valgtKategori = valgtKategori || kategoriMap[valgtKategoriRaw] || valgtKategoriRaw;
 
   const kategoriTittel = document.getElementById("kategori-tittel");
   const butikkContainer = document.getElementById("butikk-container");
