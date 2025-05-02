@@ -1,7 +1,7 @@
 // generate-kategorier.js for kategori.html
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("butikker.json")
+  fetch("assets/data/butikker.json")
     .then(r => r.json())
     .then(butikker => {
       const kategoriTeller = {};
