@@ -1,3 +1,6 @@
+console.log("✅ generate-forside-guider.js er lastet og kjører!");
+
+
 window.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("forside-guider");
   if (!container) return;
