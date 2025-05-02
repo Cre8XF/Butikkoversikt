@@ -11,7 +11,7 @@ function slugify(text) {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("assets/data/butikker.json")
+  fetch("../assets/data/butikker.json")
     .then(r => r.json())
     .then(butikker => {
       const kategoriTeller = {};
