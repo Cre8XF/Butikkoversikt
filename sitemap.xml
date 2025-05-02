@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://butikkoversikt.no/</loc>
+  </url>
+  <url>
+    <loc>https://butikkoversikt.no/alle-butikker.html</loc>
+  </url>
+  <url>
+    <loc>https://butikkoversikt.no/kategori.html</loc>
+  </url>
+  <url>
+    <loc>https://butikkoversikt.no/kategori-mal.html</loc>
+  </url>
+  <url>
+    <loc>https://butikkoversikt.no/topp25.html</loc>
+  </url>
+  <url>
+    <loc>https://butikkoversikt.no/sok.html</loc>
+  </url>
+  <url>
+    <loc>https://butikkoversikt.no/guider/main-guider.html</loc>
+  </url>
+  <!-- Legg til flere dynamiske URL-er etter behov -->
+</urlset>
