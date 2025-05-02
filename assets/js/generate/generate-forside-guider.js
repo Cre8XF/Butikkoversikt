@@ -1,10 +1,10 @@
 window.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("forside-guider");
+  if (!container) return;
+
   fetch("assets/data/guider.json")
     .then(res => res.json())
     .then(guides => {
-      const container = document.getElementById("forside-guider");
-      if (!container) return;
-
       const selected = guides.filter(g => g.forside === true).slice(0, 3);
 
       selected.forEach(guide => {
