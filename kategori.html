@@ -4,13 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Butikkoversikt.no - Utforsk kategorier</title>
+  <title>Butikkoversikt.no - Din guide til nettbutikker</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/theme.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Temavariabler styres av theme.css -->
+  <link rel="stylesheet" href="assets/css/theme.css"> <!-- 🎨 Temavariabler -->
+  <link rel="stylesheet" href="assets/css/style.css"> <!-- 📦 Alt av struktur og layout -->
+
 </head>
 
 <body>
+  <!-- Header -->
   <header class="navbar navbar-expand-lg navbar-theme bg-header shadow-sm py-2">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="/">
@@ -29,10 +32,12 @@
           <li class="nav-item"><a class="nav-link" href="alle-butikker.html">Alle butikker</a></li>
           <li class="nav-item"><a class="nav-link" href="kategori.html">Kategorier</a></li>
           <li class="nav-item"><a class="nav-link" href="topp25.html">Topp 25</a></li>
-          <li class="nav-item"><a class="nav-link" href="main-guider.html">Guider</a></li>
+          <li class="nav-item"><a class="nav-link" href="guider.html">Guider</a></li>
         </ul>
       </div>
     </div>
+    <button id="themeToggleBtn" class="btn btn-sm btn-primary"
+      style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
   </header>
 
   <main>
@@ -41,21 +46,15 @@
         <h1 class="mb-4">Utforsk våre hovedkategorier</h1>
         <p class="lead text-muted mb-5">Finn spennende nettbutikker sortert etter interesseområde – mote, teknologi,
           sport, interiør og mer!</p>
-
         <div class="mb-5">
           <input type="text" id="kategori-sok" class="form-control w-50 mx-auto" placeholder="Søk i kategorier...">
         </div>
-
-        <div id="kategori-liste-popular" class="row g-4 justify-content-center mb-4"></div>
-
-        <button id="toggleMore" class="btn btn-outline-secondary mb-4">Vis alle kategorier</button>
-
-        <div id="kategori-liste-more" class="row g-4 justify-content-center d-none"></div>
-
+        <div id="kategori-liste" class="row g-4 justify-content-center"></div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer bg-header text-heading py-5 mt-5">
     <div class="container">
       <div class="row">
@@ -77,18 +76,35 @@
           <h6>Kontakt</h6>
           <p class="text-muted-theme mb-1">E-post: kontakt@butikkoversikt.no</p>
           <p class="text-muted-theme mb-2">Org.nr: 123 456 789</p>
+          <div>
+            <a href="#" class="text-heading me-3" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-heading me-3" title="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-heading" title="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
         </div>
+      </div>
+      <div class="newsletter-wrapper text-center mb-5">
+        <h5 class="mb-3">Få de beste tilbudene først!</h5>
+        <p class="text-muted-theme mb-4">Meld deg på vårt nyhetsbrev og få ukens beste nettbutikker, kampanjer og
+          rabatter
+          rett i innboksen.</p>
+        <form id="newsletter-form" class="d-flex flex-column flex-sm-row justify-content-center">
+          <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0" placeholder="Din e-postadresse" required>
+          <button type="submit" class="btn btn-primary">Meld meg på</button>
+        </form>
       </div>
       <hr class="border-secondary">
       <p class="text-center text-muted-theme mb-0">&copy; 2025 Butikkoversikt.no. Alle rettigheter forbeholdt.</p>
     </div>
   </footer>
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/effects/fade-in.js"></script>
   <script src="assets/js/effects/menu-toggle.js"></script>
   <script src="assets/js/effects/theme-toggle.js"></script>
-  <script src="assets/js/generate/generate-kategori.js"></script>
+  <script src="assets/js/generate/generate-kategorioversikt.js"></script>
+
 </body>
 
 </html>

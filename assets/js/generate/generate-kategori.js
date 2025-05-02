@@ -1,104 +1,88 @@
-// generate-kategorier.js for kategori.html
-
-// Dynamisk basePath for riktig ressurssti
-const basePath = window.location.pathname.includes("/kategorier/") ? "../" : "";
-
-
-function slugify(text) {
-  return text.toLowerCase()
-    .replaceAll(" ", "-")
-    .replaceAll("æ", "ae")
-    .replaceAll("ø", "o")
-    .replaceAll("å", "a")
-    .replace(/[^\w\-]+/g, '');
-}
-
-
 document.addEventListener("DOMContentLoaded", () => {
-  fetch(`${basePath}assets/data/butikker.json`)
+  const params = new URLSearchParams(window.location.search);
+  const valgtKategori = params.get("kategori");
+
+  const kategoriTittel = document.getElementById("kategori-tittel");
+  const butikkContainer = document.getElementById("butikk-container");
+  const filterContainer = document.getElementById("subcategory-filter");
+
+  if (!valgtKategori || !kategoriTittel || !butikkContainer) {
+    console.error("Mangler kategori eller container");
+    return;
+  }
+
+  fetch("assets/data/butikker.json")
     .then(r => r.json())
     .then(butikker => {
-      const kategoriTeller = {};
-      const navnMap = {}; // map for å koble normalisert navn til originalt navn
+      const filtrerteButikker = butikker.filter(b =>
+        (b.category || "").trim().toLowerCase() === valgtKategori.trim().toLowerCase()
+      );
 
-      // Tell hvor mange butikker per kategori, normalisert
-      butikker.forEach(b => {
-        const kat = (b.category || '').trim();
-        const key = kat.toLowerCase();
-        if (!key) return;
-        kategoriTeller[key] = (kategoriTeller[key] || 0) + 1;
-        navnMap[key] = kat; // beholder opprinnelig navn
+      if (filtrerteButikker.length === 0) {
+        kategoriTittel.textContent = valgtKategori;
+        butikkContainer.innerHTML = `<p class="text-muted">Ingen butikker funnet i denne kategorien.</p>`;
+        return;
+      }
+
+      // Vis tittel og antall
+      kategoriTittel.innerHTML = `
+        ${valgtKategori}
+        <p class="lead text-muted mt-3">Fant ${filtrerteButikker.length} butikker</p>
+        <a href="kategori.html" class="btn btn-outline-primary mt-3">Tilbake til kategorier</a>
+      `;
+
+      // Samle alle unike underkategorier (flatmap støtter både enkeltstreng og array)
+      const underkategorier = [...new Set(
+        filtrerteButikker.flatMap(b => Array.isArray(b.subcategory) ? b.subcategory : [b.subcategory])
+      )];
+
+      // Lag filterknapper
+      filterContainer.innerHTML = `
+        <button class="btn btn-warning btn-sm me-2 mb-2" data-filter="Alle">Alle</button>
+        ${underkategorier.map(sub =>
+          `<button class="btn btn-warning btn-sm me-2 mb-2" data-filter="${sub}">${sub}</button>`
+        ).join("")}
+      `;
+
+      // Håndter filtrering ved klikk
+      filterContainer.addEventListener("click", e => {
+        if (!e.target.matches("button[data-filter]")) return;
+
+        const valgt = e.target.getAttribute("data-filter");
+
+        const synlige = valgt === "Alle"
+          ? filtrerteButikker
+          : filtrerteButikker.filter(b => {
+              const subs = Array.isArray(b.subcategory) ? b.subcategory : [b.subcategory];
+              return subs.includes(valgt);
+            });
+
+        visButikker(synlige);
       });
 
-      const unikeKategorier = Object.keys(kategoriTeller).sort((a, b) => kategoriTeller[b] - kategoriTeller[a]);
+      // Start med alle butikker
+      visButikker(filtrerteButikker);
 
-      const popularContainer = document.getElementById("kategori-liste-popular");
-      const moreContainer = document.getElementById("kategori-liste-more");
-
-      const ikonMap = {
-  "Klær og mote": "klaer-og-mote.png",
-  "Elektronikk og data": "elektronikk-og-data.png",
-  "Helse og egenpleie": "helse-og-egenpleie.png",
-  "Møbler og interiør": "mobler-og-interior.png",
-  "Sport og fritid": "sport-og-fritid.png",
-  "Hobby og DIY": "hobby-og-diy.png",
-  "Barn og baby": "barn-og-baby.png",
-  "Spill og underholdning": "spill-og-underholdning.png",
-  "Gaver og gadgets": "gaver-og-gadgets.png",
-  "Bøker og media": "boker-og-media.png",
-  "Reise og opplevelser": "reise-og-opplevelser.png",
-  "Mat og drikke": "mat-og-drikke.png",
-  "Alt-mulig butikker": "altmulig.png"
-};
-
-
-      unikeKategorier.slice(0, 6).forEach(key => {
-        const navn = navnMap[key];
-        popularContainer.appendChild(lagKategoriKort(navn, kategoriTeller[key], ikonMap[navn]));
-      });
-
-      unikeKategorier.slice(6).forEach(key => {
-        const navn = navnMap[key];
-        moreContainer.appendChild(lagKategoriKort(navn, kategoriTeller[key], ikonMap[navn]));
-      });
-
-      // Toggle-knapp
-      document.getElementById("toggleMore").addEventListener("click", function () {
-        moreContainer.classList.toggle("d-none");
-        this.textContent = moreContainer.classList.contains("d-none") ? "Vis alle kategorier" : "Skjul kategorier";
-      });
-
-      // Søkefunksjon (valgfritt)
-      const sokefelt = document.getElementById("kategori-sok");
-      if (sokefelt) {
-        sokefelt.addEventListener("input", () => {
-          const søk = sokefelt.value.toLowerCase();
-          [...popularContainer.children, ...moreContainer.children].forEach(card => {
-            const navn = card.querySelector(".card-title").textContent.toLowerCase();
-            card.style.display = navn.includes(søk) ? "block" : "none";
-          });
+      function visButikker(liste) {
+        butikkContainer.innerHTML = "";
+        liste.forEach(butikk => {
+          const col = document.createElement("div");
+          col.className = "col-6 col-md-4 col-lg-3";
+          col.innerHTML = `
+            <a href="${butikk.url}" target="_blank" rel="noopener" class="text-decoration-none">
+              <div class="card p-3 h-100">
+                <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-3" loading="lazy">
+                <h6 class="fw-bold">${butikk.name}</h6>
+                <p class="text-muted small">${butikk.description || ""}</p>
+              </div>
+            </a>
+          `;
+          butikkContainer.appendChild(col);
         });
       }
     })
     .catch(error => {
       console.error("Feil ved lasting av butikker.json:", error);
+      butikkContainer.innerHTML = "<p class='text-danger'>Kunne ikke laste butikkene.</p>";
     });
 });
-
-function lagKategoriKort(kategoriNavn, antall, ikonFil) {
-  const col = document.createElement("div");
-  col.className = "col-6 col-md-4 col-lg-3";
-
-  col.innerHTML = `
-    <div class="card h-100 shadow-sm">
-      <img src="${basePath}assets/images/ikoner/${ikonFil || 'default.png'}" class="card-img-top" alt="${kategoriNavn}">
-      <div class="card-body text-center">
-        <h5 class="card-title">${kategoriNavn}</h5>
-        <p class="card-text text-muted">${antall || 0} butikker</p>
-        <a href="kategorier/${slugify(kategoriNavn)}.html" class="btn btn-primary">Utforsk</a>
-      </div>
-    </div>
-  `;
-
-  return col;
-}
