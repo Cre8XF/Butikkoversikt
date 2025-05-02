@@ -5,12 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(r => r.json())
     .then(butikker => {
       const kategoriTeller = {};
+      const navnMap = {}; // map for å koble normalisert navn til originalt navn
 
-      // Tell hvor mange butikker per kategori
+      // Tell hvor mange butikker per kategori, normalisert
       butikker.forEach(b => {
-        const kat = b.category;
-        if (!kat) return;
-        kategoriTeller[kat] = (kategoriTeller[kat] || 0) + 1;
+        const kat = (b.category || '').trim();
+        const key = kat.toLowerCase();
+        if (!key) return;
+        kategoriTeller[key] = (kategoriTeller[key] || 0) + 1;
+        navnMap[key] = kat; // beholder opprinnelig navn
       });
 
       const unikeKategorier = Object.keys(kategoriTeller).sort((a, b) => kategoriTeller[b] - kategoriTeller[a]);
@@ -19,27 +22,29 @@ document.addEventListener("DOMContentLoaded", () => {
       const moreContainer = document.getElementById("kategori-liste-more");
 
       const ikonMap = {
-        "Klær og mote": "klaer.png",
-        "Elektronikk og data": "elektronikk.png",
-        "Helse og skjønnhet": "helse.png",
-        "Møbler og interiør": "interior.png",
-        "Sport og fritid": "sport.png",
+        "Klær og mote": "klaer-og-mote.png",
+        "Elektronikk og data": "elektronikk-og-data.png",
+        "Helse og skjønnhet": "helse-og-egenpleie.png",
+        "Møbler og interiør": "mobler-og-interior.png",
+        "Sport og fritid": "sport-og-fritid.png",
         "Hobby og DIY": "diy.png",
-        "Barn og baby": "barn.png",
-        "Spill og underholdning": "spill.png",
-        "Gaver og gadgets": "gaver.png",
-        "Bøker og media": "boker.png",
-        "Reise og opplevelser": "reise.png",
-        "Mat og drikke": "mat.png",
+        "Barn og baby": "barn-og-baby.png",
+        "Spill og underholdning": "spill-og-underholdning.png",
+        "Gaver og gadgets": "gaver-og-gadgets.png",
+        "Bøker og media": "boker-og-underholdning.png",
+        "Reise og opplevelser": "reise-og-opplevelser.png",
+        "Mat og drikke": "mat-og-drikke.png",
         "Alt-mulig butikker": "altmulig.png"
       };
 
-      unikeKategorier.slice(0, 6).forEach(kat => {
-        popularContainer.appendChild(lagKategoriKort(kat, kategoriTeller[kat], ikonMap[kat]));
+      unikeKategorier.slice(0, 6).forEach(key => {
+        const navn = navnMap[key];
+        popularContainer.appendChild(lagKategoriKort(navn, kategoriTeller[key], ikonMap[navn]));
       });
 
-      unikeKategorier.slice(6).forEach(kat => {
-        moreContainer.appendChild(lagKategoriKort(kat, kategoriTeller[kat], ikonMap[kat]));
+      unikeKategorier.slice(6).forEach(key => {
+        const navn = navnMap[key];
+        moreContainer.appendChild(lagKategoriKort(navn, kategoriTeller[key], ikonMap[navn]));
       });
 
       // Toggle-knapp
@@ -74,7 +79,7 @@ function lagKategoriKort(kategoriNavn, antall, ikonFil) {
       <img src="assets/images/ikoner/${ikonFil || 'default.png'}" class="card-img-top" alt="${kategoriNavn}">
       <div class="card-body text-center">
         <h5 class="card-title">${kategoriNavn}</h5>
-        <p class="card-text text-muted">${antall} butikker</p>
+        <p class="card-text text-muted">${antall || 0} butikker</p>
         <a href="kategori-mal.html?kategori=${encodeURIComponent(kategoriNavn)}" class="btn btn-primary">Utforsk</a>
       </div>
     </div>
