@@ -1,5 +1,9 @@
 // generate-kategorier.js for kategori.html
 
+// Dynamisk basePath for riktig ressurssti
+const basePath = window.location.pathname.includes("/kategorier/") ? "../" : "";
+
+
 function slugify(text) {
   return text.toLowerCase()
     .replaceAll(" ", "-")
@@ -11,7 +15,7 @@ function slugify(text) {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("../assets/data/butikker.json")
+  fetch(`${basePath}assets/data/butikker.json`)
     .then(r => r.json())
     .then(butikker => {
       const kategoriTeller = {};
@@ -87,7 +91,7 @@ function lagKategoriKort(kategoriNavn, antall, ikonFil) {
 
   col.innerHTML = `
     <div class="card h-100 shadow-sm">
-      <img src="assets/images/ikoner/${ikonFil || 'default.png'}" class="card-img-top" alt="${kategoriNavn}">
+      <img src="${basePath}assets/images/ikoner/${ikonFil || 'default.png'}" class="card-img-top" alt="${kategoriNavn}">
       <div class="card-body text-center">
         <h5 class="card-title">${kategoriNavn}</h5>
         <p class="card-text text-muted">${antall || 0} butikker</p>
