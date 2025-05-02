@@ -270,7 +270,7 @@
     "image": "assets/images/butikker/dressmann.png",
     "alt": "Dressmann",
     "category": "Klær og mote",
-    "subcategory": [],
+    "subcategory": ["Herreklær"],
     "url": "https://www.dressmann.com",
     "description": "Basisplagg og formelle klær.",
     "topp25": false,
@@ -312,7 +312,7 @@
     "image": "assets/images/butikker/ellos.png",
     "alt": "Ellos",
     "category": "Klær og mote",
-    "subcategory": ["Barneklær", "Møbler"],
+    "subcategory": ["Barneklær"],
     "url": "https://www.ellos.no",
     "description": "Ellos tilbyr produkter for barn og baby, med fokus pÃ¥ kvalitet, komfort og lek.",
     "topp25": true,
@@ -1795,41 +1795,7 @@
     "image": "assets/images/butikker/lookfantastic.png",
     "description": "Internasjonal skjønnhetsbutikk med stort utvalg og rask frakt til Norge.",
     "tags": ["sminke", "hudpleie", "internasjonal"],
-    "ny": true,
-    "annonse": true
-  },
-  {
-    "name": "LightInTheBox",
-    "url": "https://www.lightinthebox.com/no",
-    "category": "Klær og mote",
-    "subcategory": ["Dameklær", "Sko og tilbehør"],
-    "image": "assets/images/butikker/lightinthebox.png",
-    "description": "Global nettbutikk med mote, gadgets og hjem til lave priser. Sender til Norge.",
-    "tags": ["billig", "internasjonal", "sko", "klær"],
-    "ny": true,
-    "annonse": true
-  },
-  {
-    "name": "AliExpress",
-    "url": "https://www.aliexpress.com",
-    "category": "Gaver og gadgets",
-    "subcategory": ["Gadgets og gaver"],
-    "image": "assets/images/butikker/aliexpress.png",
-    "description": "Enorm markedsplass for gadgets, tilbehør og klær – sender til Norge.",
-    "tags": ["billig", "internasjonal", "tilbehør"],
-    "ny": true,
-    "annonse": true
-  },
-  {
-    "name": "DHGate",
-    "url": "https://www.dhgate.com",
-    "category": "Elektronikk og data",
-    "subcategory": ["Elektronikk"],
-    "image": "assets/images/butikker/dhgate.png",
-    "description": "Grossist- og B2C-plattform for alt fra gadgets til klær og teknologi.",
-    "tags": ["grossist", "elektronikk", "internasjonal"],
-    "ny": true,
-    "annonse": true
+    "ny": true
   },
   {
     "name": "Trip.com",
@@ -1839,7 +1805,158 @@
     "image": "assets/images/butikker/trip.png",
     "description": "En av verdens største reiseplattformer med hotell, fly og tog. Affiliate-støttet.",
     "tags": ["reise", "hotell", "fly", "affiliate"],
-    "ny": true,
-    "annonse": true
+    "ny": true
+  },
+  {
+    "name": "AliExpress",
+    "url": "https://www.aliexpress.com",
+    "category": "Alt-mulig butikker",
+    "subcategory": [
+      "Gadgets og tilbehør"
+    ],
+    "image": "assets/images/butikker/aliexpress.png",
+    "description": "Verdens største markedsplass for billig tilbehør, klær, gadgets og mer. Frakt til Norge.",
+    "tags": [
+      "billig",
+      "internasjonal",
+      "tilbehør",
+      "frakt fra Kina",
+      "klær", 
+      "elektronikk"
+    ],
+    "ny": true
+  },
+  {
+    "name": "LightInTheBox",
+    "url": "https://www.lightinthebox.com/no",
+    "category": "Alt-mulig butikker",
+    "subcategory": [
+      "Kles- og livsstilsbutikker"
+    ],
+    "image": "assets/images/butikker/lightinthebox.png",
+    "description": "Kjent global nettbutikk med klær, tilbehør, interiør og gadgets. Lave priser og direkte frakt.",
+    "tags": [
+      "billig",
+      "klær",
+      "internasjonal",
+      "livsstil",
+      "interiør", 
+      "bredt utvalg"
+    ],
+    "ny": true
+  },
+  {
+    "name": "DHGate",
+    "url": "https://www.dhgate.com",
+    "category": "Alt-mulig butikker",
+    "subcategory": [
+      "Grossist og dropshipping"
+    ],
+    "image": "assets/images/butikker/dhgate.png",
+    "description": "Populær engrosplattform for dropshipping og grossistvarer. Alt fra gadgets til klær.",
+    "tags": [
+      "grossist",
+      "dropshipping",
+      "Kina",
+      "tilbehør",
+      "frakt",
+      "klær", 
+      "engros"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Temu",
+    "url": "https://www.temu.com",
+    "category": "Alt-mulig butikker",
+    "subcategory": [
+      "Gadgets og tilbehør"
+    ],
+    "image": "assets/images/butikker/temu.png",
+    "description": "Temu tilbyr alt fra klær til gadgets med svært lave priser og rask frakt.",
+    "tags": [
+      "billig",
+      "internasjonal",
+      "gadgets",
+      "ny trend",
+      "klær", 
+      "husholdning"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Wish",
+    "url": "https://www.wish.com",
+    "category": "Alt-mulig butikker",
+    "subcategory": [
+      "Gadgets og tilbehør"
+    ],
+    "image": "assets/images/butikker/wish.png",
+    "description": "Wish er kjent for sine ekstremt lave priser på gadgets, klær og tilbehør.",
+    "tags": [
+      "billig",
+      "internasjonal",
+      "tilbehør",
+      "frakt fra Kina",
+      "klær", "gadgets"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Banggood",
+    "url": "https://www.banggood.com",
+    "category": "Alt-mulig butikker",
+    "subcategory": [
+      "Gadgets og tilbehør"
+    ],
+    "image": "assets/images/butikker/banggood.png",
+    "description": "Banggood tilbyr et bredt utvalg av gadgets, elektronikk og tilbehør med internasjonal frakt.",
+    "tags": [
+      "billig",
+      "internasjonal",
+      "tilbehør",
+      "frakt fra Kina",
+      "elektronikk", 
+      "gadgets"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Joom",
+    "url": "https://www.joom.com",
+    "category": "Alt-mulig butikker",
+    "subcategory": [
+      "Gadgets og tilbehør"
+    ],
+    "image": "assets/images/butikker/joom.png",
+    "description": "Joom er en nettbutikk med fokus på lave priser og gratis frakt på et bredt utvalg av produkter.",
+    "tags": [
+      "billig",
+      "internasjonal",
+      "tilbehør",
+      "frakt fra Kina",
+      "gratis frakt", 
+      "klær"
+    ],
+    "ny": true
+  },
+  {
+    "name": "Grandado",
+    "url": "https://nor.grandado.com/",
+    "category": "Alt-mulig butikker",
+    "subcategory": [
+      "Gadgets og tilbehør"
+    ],
+    "image": "assets/images/butikker/grandado.png",
+    "description": "Grandado er en internasjonal nettbutikk med et bredt utvalg av rimelige produkter, inkludert klær, elektronikk og husholdningsartikler. De fokuserer på kvalitetsprodukter til lave priser og arbeider for å redusere miljøpåvirkning gjennom nøye produktutvalg og kundetilbakemeldinger.",
+    "tags": [
+      "billig",
+      "internasjonal",
+      "bredt utvalg",
+      "frakt fra Kina",
+      "lang returrett",
+      "husholdning", "elektronikk", "klær"
+    ],
+    "ny": true
   }
 ]
