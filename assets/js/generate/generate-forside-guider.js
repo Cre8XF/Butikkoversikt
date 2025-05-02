@@ -1,6 +1,4 @@
-window.addEventListener("load", () => {
-  console.log("✅ generate-forside-guider.js lastet");
-
+window.addEventListener("DOMContentLoaded", () => {
   fetch("assets/data/guider.json")
     .then(res => res.json())
     .then(guides => {
@@ -27,7 +25,5 @@ window.addEventListener("load", () => {
         container.insertAdjacentHTML("beforeend", html);
       });
     })
-    .catch(err => {
-      console.error("❌ Feil ved lasting av guider:", err);
-    });
+    .catch(err => console.error("❌ Feil ved lasting av guider:", err));
 });
