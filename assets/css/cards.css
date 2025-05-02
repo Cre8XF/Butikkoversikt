@@ -441,64 +441,34 @@
   font-size: 0.95rem;
   color: var(--text-muted);
 }
-/* 🔧 Sikrer at guidekort vises korrekt */
 .guide-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
   background-color: var(--guide-card-bg, #fff);
-  box-shadow: var(--guide-card-shadow, 0 2px 4px rgba(0, 0, 0, 0.1));
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--border-color, #ccc);
   border-radius: 0.75rem;
-  overflow: hidden;
+  transition: box-shadow 0.3s ease;
 }
 
-.guide-card .card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.guide-card .card-body {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.guide-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  background-color: #ffffff !important;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1) !important;
-  border: 1px solid #ccc !important;
-  padding: 1rem;
-  border-radius: 0.75rem;
-}
-
-.guide-card .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-  color: #000 !important;
-}
-
-.guide-card .card-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #000 !important;
-}
-
-.guide-card .card-text {
-  font-size: 0.95rem;
-  color: #333 !important;
+.guide-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .guide-card img {
   height: 180px;
   object-fit: cover;
-  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.guide-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--heading-color, #000);
+}
+
+.guide-card .card-text {
+  color: var(--text-muted, #555);
+  font-size: 0.95rem;
 }
