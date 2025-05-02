@@ -1,14 +1,18 @@
 window.addEventListener("load", () => {
-  // resten av koden uendret
-});
-console.log("✅ Forside-guide-script kjører");
+  console.log("✅ generate-forside-guider.js lastet");
 
   fetch("assets/data/guider.json")
     .then(response => response.json())
     .then(guides => {
       const container = document.getElementById("forside-guider");
+      if (!container) {
+        console.warn("Fant ikke #forside-guider");
+        return;
+      }
 
-      const selectedGuides = guides.filter(g => g.forside === true).slice(0, 3);
+      const selectedGuides = guides
+        .filter(g => g.forside === true)
+        .slice(0, 3);
 
       selectedGuides.forEach(guide => {
         const col = document.createElement("div");
@@ -29,6 +33,6 @@ console.log("✅ Forside-guide-script kjører");
       });
     })
     .catch(err => {
-      console.error("Feil ved lasting av guider til forsiden:", err);
+      console.error("❌ Feil ved lasting av guider:", err);
     });
 });
