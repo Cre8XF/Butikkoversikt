@@ -1,88 +1,84 @@
+// generate-kategorier.js for kategori.html
+
 document.addEventListener("DOMContentLoaded", () => {
-  const params = new URLSearchParams(window.location.search);
-  const valgtKategori = params.get("kategori");
-
-  const kategoriTittel = document.getElementById("kategori-tittel");
-  const butikkContainer = document.getElementById("butikk-container");
-  const filterContainer = document.getElementById("subcategory-filter");
-
-  if (!valgtKategori || !kategoriTittel || !butikkContainer) {
-    console.error("Mangler kategori eller container");
-    return;
-  }
-
-  fetch("assets/data/butikker.json")
+  fetch("butikker.json")
     .then(r => r.json())
     .then(butikker => {
-      const filtrerteButikker = butikker.filter(b =>
-        (b.category || "").trim().toLowerCase() === valgtKategori.trim().toLowerCase()
-      );
+      const kategoriTeller = {};
 
-      if (filtrerteButikker.length === 0) {
-        kategoriTittel.textContent = valgtKategori;
-        butikkContainer.innerHTML = `<p class="text-muted">Ingen butikker funnet i denne kategorien.</p>`;
-        return;
-      }
-
-      // Vis tittel og antall
-      kategoriTittel.innerHTML = `
-        ${valgtKategori}
-        <p class="lead text-muted mt-3">Fant ${filtrerteButikker.length} butikker</p>
-        <a href="kategori.html" class="btn btn-outline-primary mt-3">Tilbake til kategorier</a>
-      `;
-
-      // Samle alle unike underkategorier (flatmap støtter både enkeltstreng og array)
-      const underkategorier = [...new Set(
-        filtrerteButikker.flatMap(b => Array.isArray(b.subcategory) ? b.subcategory : [b.subcategory])
-      )];
-
-      // Lag filterknapper
-      filterContainer.innerHTML = `
-        <button class="btn btn-warning btn-sm me-2 mb-2" data-filter="Alle">Alle</button>
-        ${underkategorier.map(sub =>
-          `<button class="btn btn-warning btn-sm me-2 mb-2" data-filter="${sub}">${sub}</button>`
-        ).join("")}
-      `;
-
-      // Håndter filtrering ved klikk
-      filterContainer.addEventListener("click", e => {
-        if (!e.target.matches("button[data-filter]")) return;
-
-        const valgt = e.target.getAttribute("data-filter");
-
-        const synlige = valgt === "Alle"
-          ? filtrerteButikker
-          : filtrerteButikker.filter(b => {
-              const subs = Array.isArray(b.subcategory) ? b.subcategory : [b.subcategory];
-              return subs.includes(valgt);
-            });
-
-        visButikker(synlige);
+      // Tell hvor mange butikker per kategori
+      butikker.forEach(b => {
+        const kat = b.category;
+        if (!kat) return;
+        kategoriTeller[kat] = (kategoriTeller[kat] || 0) + 1;
       });
 
-      // Start med alle butikker
-      visButikker(filtrerteButikker);
+      const unikeKategorier = Object.keys(kategoriTeller).sort((a, b) => kategoriTeller[b] - kategoriTeller[a]);
 
-      function visButikker(liste) {
-        butikkContainer.innerHTML = "";
-        liste.forEach(butikk => {
-          const col = document.createElement("div");
-          col.className = "col-6 col-md-4 col-lg-3";
-          col.innerHTML = `
-            <a href="${butikk.url}" target="_blank" rel="noopener" class="text-decoration-none">
-              <div class="card p-3 h-100">
-                <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-3" loading="lazy">
-                <h6 class="fw-bold">${butikk.name}</h6>
-                <p class="text-muted small">${butikk.description || ""}</p>
-              </div>
-            </a>
-          `;
-          butikkContainer.appendChild(col);
+      const popularContainer = document.getElementById("kategori-liste-popular");
+      const moreContainer = document.getElementById("kategori-liste-more");
+
+      const ikonMap = {
+        "Klær og mote": "klaer.png",
+        "Elektronikk og data": "elektronikk.png",
+        "Helse og skjønnhet": "helse.png",
+        "Møbler og interiør": "interior.png",
+        "Sport og fritid": "sport.png",
+        "Hobby og DIY": "diy.png",
+        "Barn og baby": "barn.png",
+        "Spill og underholdning": "spill.png",
+        "Gaver og gadgets": "gaver.png",
+        "Bøker og media": "boker.png",
+        "Reise og opplevelser": "reise.png",
+        "Mat og drikke": "mat.png",
+        "Alt-mulig butikker": "altmulig.png"
+      };
+
+      unikeKategorier.slice(0, 6).forEach(kat => {
+        popularContainer.appendChild(lagKategoriKort(kat, kategoriTeller[kat], ikonMap[kat]));
+      });
+
+      unikeKategorier.slice(6).forEach(kat => {
+        moreContainer.appendChild(lagKategoriKort(kat, kategoriTeller[kat], ikonMap[kat]));
+      });
+
+      // Toggle-knapp
+      document.getElementById("toggleMore").addEventListener("click", function () {
+        moreContainer.classList.toggle("d-none");
+        this.textContent = moreContainer.classList.contains("d-none") ? "Vis alle kategorier" : "Skjul kategorier";
+      });
+
+      // Søkefunksjon (valgfritt)
+      const sokefelt = document.getElementById("kategori-sok");
+      if (sokefelt) {
+        sokefelt.addEventListener("input", () => {
+          const søk = sokefelt.value.toLowerCase();
+          [...popularContainer.children, ...moreContainer.children].forEach(card => {
+            const navn = card.querySelector(".card-title").textContent.toLowerCase();
+            card.style.display = navn.includes(søk) ? "block" : "none";
+          });
         });
       }
     })
     .catch(error => {
       console.error("Feil ved lasting av butikker.json:", error);
-      butikkContainer.innerHTML = "<p class='text-danger'>Kunne ikke laste butikkene.</p>";
     });
 });
+
+function lagKategoriKort(kategoriNavn, antall, ikonFil) {
+  const col = document.createElement("div");
+  col.className = "col-6 col-md-4 col-lg-3";
+
+  col.innerHTML = `
+    <div class="card h-100 shadow-sm">
+      <img src="assets/images/ikoner/${ikonFil || 'default.png'}" class="card-img-top" alt="${kategoriNavn}">
+      <div class="card-body text-center">
+        <h5 class="card-title">${kategoriNavn}</h5>
+        <p class="card-text text-muted">${antall} butikker</p>
+        <a href="kategori-mal.html?kategori=${encodeURIComponent(kategoriNavn)}" class="btn btn-primary">Utforsk</a>
+      </div>
+    </div>
+  `;
+
+  return col;
+}
