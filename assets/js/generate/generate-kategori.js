@@ -22,20 +22,21 @@ document.addEventListener("DOMContentLoaded", () => {
       const moreContainer = document.getElementById("kategori-liste-more");
 
       const ikonMap = {
-        "Klær og mote": "klaer.png",
-        "Elektronikk og data": "elektronikk.png",
-        "Helse og skjønnhet": "helse.png",
-        "Møbler og interiør": "interior.png",
-        "Sport og fritid": "sport.png",
-        "Hobby og DIY": "diy.png",
-        "Barn og baby": "barn.png",
-        "Spill og underholdning": "spill.png",
-        "Gaver og gadgets": "gaver.png",
-        "Bøker og media": "boker.png",
-        "Reise og opplevelser": "reise.png",
-        "Mat og drikke": "mat.png",
-        "Alt-mulig butikker": "altmulig.png"
-      };
+  "Klær og mote": "klaer-og-mote.png",
+  "Elektronikk og data": "elektronikk-og-data.png",
+  "Helse og skjønnhet": "helse-og-egenpleie.png",
+  "Møbler og interiør": "mobler-og-interior.png",
+  "Sport og fritid": "sport-og-fritid.png",
+  "Hobby og DIY": "hobby-og-diy.png",
+  "Barn og baby": "barn-og-baby.png",
+  "Spill og underholdning": "spill-og-underholdning.png",
+  "Gaver og gadgets": "gaver-og-gadgets.png",
+  "Bøker og media": "boker-og-media.png",
+  "Reise og opplevelser": "reise-og-opplevelser.png",
+  "Mat og drikke": "mat-og-drikke.png",
+  "Alt-mulig butikker": "altmulig.png"
+};
+
 
       unikeKategorier.slice(0, 6).forEach(key => {
         const navn = navnMap[key];
