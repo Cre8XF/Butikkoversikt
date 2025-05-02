@@ -29,174 +29,25 @@
           <li class="nav-item"><a class="nav-link" href="alle-butikker.html">Alle butikker</a></li>
           <li class="nav-item"><a class="nav-link" href="kategori.html">Kategorier</a></li>
           <li class="nav-item"><a class="nav-link" href="topp25.html">Topp 25</a></li>
-          <li class="nav-item"><a class="nav-link" href="guider.html">Guider</a></li>
+          <li class="nav-item"><a class="nav-link" href="main-guider.html">Guider</a></li>
         </ul>
       </div>
     </div>
-    <button id="themeToggleBtn" class="btn btn-sm btn-primary"
-      style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
   </header>
 
   <main>
     <section class="py-5 bg-section text-center">
       <div class="container">
-        <h1 class="mb-4">Utforsk våre mest populære kategorier</h1>
-        <p class="lead text-muted mb-5">Klikk deg inn på en kategori og oppdag spennende nettbutikker innen mote,
-          elektronikk, skjønnhet og mer.</p>
+        <h1 class="mb-4">Utforsk våre hovedkategorier</h1>
+        <p class="lead text-muted mb-5">Finn spennende nettbutikker sortert etter interesseområde – mote, teknologi,
+          sport, interiør og mer!</p>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4" id="popularCategories">
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/images/ikoner/klaer.png" class="card-img-top" alt="Klær og mote">
-              <div class="card-body">
-                <h5 class="card-title">Klær og mote</h5>
-                <p class="card-text">Alt fra dameklær, herreklær og sko til barneklær og tilbehør. 45 butikker.</p>
-                <a href="kategori-mal.html?kat=Klær%20og%20mote" class="btn btn-primary">Utforsk</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/images/ikoner/elektronikk.png" class="card-img-top" alt="Elektronikk og data">
-              <div class="card-body">
-                <h5 class="card-title">Elektronikk og data</h5>
-                <p class="card-text">Mobiltilbehør, PC-utstyr og smarte dingser samlet i 24 butikker.</p>
-                <a href="kategori-mal.html?kat=Elektronikk%20og%20data" class="btn btn-primary">Utforsk</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/images/ikoner/helse.png" class="card-img-top" alt="Helse og skjønnhet">
-              <div class="card-body">
-                <h5 class="card-title">Helse og skjønnhet</h5>
-                <p class="card-text">Hudpleie, apotek og velvære samlet i 16 butikker.</p>
-                <a href="kategori-mal.html?kat=Helse%20og%20skjønnhet" class="btn btn-primary">Utforsk</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/images/ikoner/interior.png" class="card-img-top" alt="Møbler og interiør">
-              <div class="card-body">
-                <h5 class="card-title">Møbler og interiør</h5>
-                <p class="card-text">Stilrene og funksjonelle løsninger fra 10 butikker.</p>
-                <a href="kategori-mal.html?kat=Møbler%20og%20interiør" class="btn btn-primary">Utforsk</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/images/ikoner/sport.png" class="card-img-top" alt="Sport og fritid">
-              <div class="card-body">
-                <h5 class="card-title">Sport og fritid</h5>
-                <p class="card-text">Utstyr for trening, friluft og fritidsaktiviteter. 8 butikker totalt.</p>
-                <a href="kategori-mal.html?kat=Sport%20og%20fritid" class="btn btn-primary">Utforsk</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/images/ikoner/diy.png" class="card-img-top" alt="Hobby og DIY">
-              <div class="card-body">
-                <h5 class="card-title">Hobby og DIY</h5>
-                <p class="card-text">Alt fra håndarbeid og tegning til verktøy og hobbyprosjekter. 7 butikker.</p>
-                <a href="kategori-mal.html?kat=Hobby%20og%20DIY" class="btn btn-primary">Utforsk</a>
-              </div>
-            </div>
-          </div>
+        <div class="mb-5">
+          <input type="text" id="kategori-sok" class="form-control w-50 mx-auto" placeholder="Søk i kategorier...">
         </div>
 
-        <section class="bg-light py-4 my-5 text-center border rounded">
-          <h5 class="mb-2">Ukens anbefaling</h5>
-          <p>Se tilbud fra populære butikker – kun i en begrenset periode!</p>
-          <a href="topp25.html" class="btn btn-warning">Se kampanjer</a>
-        </section>
-
-        <button id="toggleMore" class="btn btn-outline-secondary mt-4">Vis alle kategorier</button>
-
-        <div id="moreCategories" class="row row-cols-1 row-cols-md-3 g-4 mt-3 d-none">
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/images/ikoner/barn.png" class="card-img-top" alt="Barn og baby">
-              <div class="card-body">
-                <h5 class="card-title">Barn og baby</h5>
-                <p class="card-text">Alt fra leker og babyutstyr til barneklær. 5 butikker.</p>
-                <a href="kategori-mal.html?kat=Barn%20og%20baby" class="btn btn-primary">Utforsk</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/images/ikoner/spill.png" class="card-img-top" alt="Spill og underholdning">
-              <div class="card-body">
-                <h5 class="card-title">Spill og underholdning</h5>
-                <p class="card-text">Gaming, film, musikk og samlerobjekter. 5 butikker.</p>
-                <a href="kategori-mal.html?kat=Spill%20og%20underholdning" class="btn btn-primary">Utforsk</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/images/ikoner/gaver.png" class="card-img-top" alt="Gaver og gadgets">
-              <div class="card-body">
-                <h5 class="card-title">Gaver og gadgets</h5>
-                <p class="card-text">Små morsomme gaver og tekniske duppeditter. 6 butikker.</p>
-                <a href="kategori-mal.html?kat=Gaver%20og%20gadgets" class="btn btn-primary">Utforsk</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/images/ikoner/boker.png" class="card-img-top" alt="Bøker og media">
-              <div class="card-body">
-                <h5 class="card-title">Bøker og media</h5>
-                <p class="card-text">Skjønnlitteratur, barnebøker, lydbøker og mer. 5 butikker.</p>
-                <a href="kategori-mal.html?kat=Bøker%20og%20media" class="btn btn-primary">Utforsk</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/images/ikoner/reise.png" class="card-img-top" alt="Reise og opplevelser">
-              <div class="card-body">
-                <h5 class="card-title">Reise og opplevelser</h5>
-                <p class="card-text">Utstyr, tips og gaver til reiselystne. 3 butikker.</p>
-                <a href="kategori-mal.html?kat=Reise%20og%20opplevelser" class="btn btn-primary">Utforsk</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/images/ikoner/mat.png" class="card-img-top" alt="Mat og drikke">
-              <div class="card-body">
-                <h5 class="card-title">Mat og drikke</h5>
-                <p class="card-text">Spesialmat, kosttilskudd og godteri på nett. 1 butikk.</p>
-                <a href="kategori-mal.html?kat=Mat%20og%20drikke" class="btn btn-primary">Utforsk</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 shadow-sm">
-              <img src="assets/images/ikoner/altmulig.png" class="card-img-top" alt="Alt-mulig butikker">
-              <div class="card-body">
-                <h5 class="card-title">Alt-mulig butikker</h5>
-                <p class="card-text">Billige produkter fra globale nettbutikker. 8 butikker.</p>
-                <a href="kategori-mal.html?kat=Alt-mulig%20butikker" class="btn btn-primary">Utforsk</a>
-              </div>
-            </div>
-          </div>
+        <div id="kategori-liste" class="row g-4 justify-content-center">
+          <!-- Dynamisk innhold genereres med JS -->
         </div>
       </div>
     </section>
@@ -231,13 +82,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.getElementById("toggleMore").addEventListener("click", function () {
-      const section = document.getElementById("moreCategories");
-      section.classList.toggle("d-none");
-      this.textContent = section.classList.contains("d-none") ? "Vis alle kategorier" : "Skjul kategorier";
-    });
-  </script>
+  <script src="js/generate-kategorier.js"></script>
 </body>
 
 </html>
