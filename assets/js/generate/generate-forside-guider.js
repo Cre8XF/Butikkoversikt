@@ -14,10 +14,12 @@ window.addEventListener("load", () => {
           <div class="col-md-4 fade-in">
             <div class="card guide-card h-100 border-0 shadow-sm">
               <img src="${guide.image}" class="card-img-top" alt="${guide.title}" loading="lazy">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">${guide.title}</h5>
-                <p class="card-text">${guide.description}</p>
-                <a href="guider/${guide.slug}.html" class="btn btn-primary mt-auto">Les guide</a>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">${guide.title}</h5>
+                  <p class="card-text">${guide.description}</p>
+                </div>
+                <a href="guider/${guide.slug}.html" class="btn btn-primary mt-3">Les guide</a>
               </div>
             </div>
           </div>
