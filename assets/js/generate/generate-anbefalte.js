@@ -22,15 +22,21 @@ function visFlereButikker() {
     const col = document.createElement("div");
     col.className = "col-md-3 mb-4";
 
-    col.innerHTML = `
-      <div class="card store-showcase text-center w-100 h-100">
-        <a href="${butikk.url}" target="_blank" rel="noopener">
-          <img src="${butikk.image}" alt="${butikk.name}" class="mb-3" style="max-height:80px;object-fit:contain;">
-          <h6>${butikk.name}</h6>
-          <p class="text-muted small">${butikk.description}</p>
-        </a>
+   col.innerHTML = `
+  <div class="card category-card h-100 d-flex flex-column text-center">
+    <a href="${butikk.url}" target="_blank" rel="noopener">
+      <img src="${butikk.image}" alt="${butikk.name}" class="card-img-top p-3" style="max-height:80px; object-fit:contain;">
+    </a>
+    <div class="card-body d-flex flex-column justify-content-between">
+      <div>
+        <h6 class="card-title">${butikk.name}</h6>
+        <p class="card-text small text-muted">${butikk.description}</p>
       </div>
-    `;
+      <a href="${butikk.url}" target="_blank" rel="noopener" class="btn btn-primary mt-3">Besøk butikk</a>
+    </div>
+  </div>
+`;
+
 
     butikkRow.appendChild(col);
   });
