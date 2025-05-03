@@ -29,9 +29,9 @@
   --footer-border: #a17668; /* Skillelinjer i footer */
 
   /* 🔘 KNAPPER */
-  --btn-primary: #facf39; /* Gultoner for primærknapper */
-  --btn-hover: #f4b82d; /* Mørkere gul ved hover */
-  --btn-shadow: rgba(250, 207, 57, 0.25); /* Knappeskygge */
+  --btn-primary: #1a3e74;
+  --btn-hover: #102d59;
+  --btn-shadow: rgba(26, 62, 116, 0.25);
 
   /* 🛍️ SPESIELLE SEKSJONER */
   --offer-bg: #fff9e6; /* Ukens tilbud bakgrunn */

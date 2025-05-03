@@ -11,11 +11,14 @@
   padding: 0.6rem 1.5rem;
   border-radius: 0.5rem;
   transition: background-color 0.2s ease, transform 0.2s ease;
+  font-weight: 600; /* gjør alle knapper tydeligere */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05); /* lett skygge alltid */
 }
 
 .btn:hover {
   background-color: var(--btn-hover);
   transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12); /* sterkere løft */
 }
 
 /* Primær knapper (ekstra definisjon hvis brukt separat) */
