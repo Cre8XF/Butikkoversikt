@@ -29,7 +29,8 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 1
   },
   {
     "name": "Apotekhjem.no",
@@ -113,7 +114,8 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 2
   },
   {
     "name": "Barnas Hus",
@@ -129,7 +131,8 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 3
   },
   {
     "name": "Barnevognhuset.no",
@@ -193,7 +196,8 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 4
   },
   {
     "name": "Bogartstore.no",
@@ -225,7 +229,8 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 5
   },
   {
     "name": "Bubbleroom.com",
@@ -257,7 +262,8 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 6
   },
   {
     "name": "Clas Ohlson",
@@ -269,11 +275,12 @@
     ],
     "url": "https://www.clasohlson.com/no/",
     "description": "Clas Ohlson tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
-    "topp25": false,
+    "topp25": true,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 7
   },
   {
     "name": "ClasOhlson.no",
@@ -305,7 +312,8 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 8
   },
   {
     "name": "Dressmann.com",
@@ -353,7 +361,8 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 9
   },
   {
     "name": "Ellos",
@@ -369,7 +378,8 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 10
   },
   {
     "name": "Farmasiet",
@@ -385,7 +395,8 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 11
   },
   {
     "name": "Fjellsport.no",
@@ -402,7 +413,8 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 12
   },
   {
     "name": "Glitter.no",
@@ -430,11 +442,12 @@
     ],
     "url": "https://www.guttelus.no",
     "description": "Guttelus tilbyr produkter for barn og baby, med fokus pÃ¥ kvalitet, komfort og lek.",
-    "topp25": false,
+    "topp25": true,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 13
   },
   {
     "name": "H&M",
@@ -450,7 +463,8 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 14
   },
   {
     "name": "HiFiKlubben.no",
@@ -482,7 +496,8 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 15
   },
   {
     "name": "iTech.no",
@@ -530,7 +545,8 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 16
   },
   {
     "name": "Kid Interiør",
@@ -547,7 +563,8 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 17
   },
   {
     "name": "Kjell.com",
@@ -579,7 +596,8 @@
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 18
   },
   {
     "name": "KomplettApotek.no",
@@ -627,7 +645,8 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 19
   },
   {
     "name": "Life.no",
@@ -776,7 +795,8 @@
       "cd",
       "blu-ray",
       "vinyl"
-    ]
+    ],
+    "rank": 20
   },
   {
     "name": "Power.no",
@@ -793,7 +813,8 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 21
   },
   {
     "name": "RiktigeLeker.no",
@@ -825,7 +846,8 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 22
   },
   {
     "name": "Soundgarden.no",
@@ -869,11 +891,12 @@
     ],
     "url": "https://www.sport1.no",
     "description": "Sport1.no tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
-    "topp25": false,
+    "topp25": true,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 23
   },
   {
     "name": "Sportamore",
@@ -889,7 +912,8 @@
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 24
   },
   {
     "name": "Sportshopen.no",
@@ -981,11 +1005,12 @@
     ],
     "url": "https://www.vinmonopolet.no",
     "description": "Vinmonopolet tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
-    "topp25": false,
+    "topp25": true,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": []
+    "tags": [],
+    "rank": 25
   },
   {
     "name": "Vitusapotek.no",
