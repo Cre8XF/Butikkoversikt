@@ -1,4 +1,4 @@
-// ✅ generate-topp25.js (oppdatert med sortering og vis mer/færre)
+// ✅ Fungerende generate-topp25.js med rank og vis mer/færre
 
 const topp25Container = document.getElementById("topp25-butikker");
 const visFlereBtn = document.getElementById("vis-flere-topp25");
@@ -43,8 +43,8 @@ function visTopp25() {
     topp25Container.appendChild(col);
   });
 
-  visFlereBtn.style.display = vistAntall >= topp25.length ? "none" : "inline-block";
-  visFaerreBtn.style.display = vistAntall > antallVisning ? "inline-block" : "none";
+  visFlereBtn.style.display = (vistAntall >= topp25.length) ? "none" : "inline-block";
+  visFaerreBtn.style.display = (vistAntall > antallVisning) ? "inline-block" : "none";
 }
 
 visFlereBtn.addEventListener("click", () => {
