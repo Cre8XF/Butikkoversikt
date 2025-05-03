@@ -20,7 +20,6 @@ Promise.all([
 })
 .catch(error => {
   console.error("❌ Feil ved lasting av data:", error);
-});
 
 
   const katSet = new Set();
