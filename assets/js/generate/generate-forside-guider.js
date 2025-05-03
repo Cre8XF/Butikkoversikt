@@ -1,32 +1,25 @@
-console.log("✅ generate-forside-guider.js er lastet og kjører!");
+fetch('assets/data/guider.json')
+  .then(response => response.json())
+  .then(data => {
+    const guider = data.filter(g => g.forside);
+    const container = document.getElementById('forside-guider');
 
+    guider.forEach(guide => {
+      const col = document.createElement('div');
+      col.className = 'col-md-4 fade-in';
 
-window.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("forside-guider");
-  if (!container) return;
-
-  fetch("assets/data/guider.json")
-    .then(res => res.json())
-    .then(guides => {
-      const selected = guides.filter(g => g.forside === true).slice(0, 3);
-
-      selected.forEach(guide => {
-        const html = `
-          <div class="col-md-4 fade-in">
-            <div class="card guide-card h-100 border-0 shadow-sm">
-              <img src="${guider.image}" class="card-img-top" alt="${guider.title}" loading="lazy">
-              <div class="card-body d-flex flex-column justify-content-between">
-                <div>
-                  <h5 class="card-title">${guider.title}</h5>
-                  <p class="card-text">${guider.description}</p>
-                </div>
-                <a href="guider/${guider.slug}.html" class="btn btn-primary mt-3">Les guide</a>
-              </div>
-            </div>
+      col.innerHTML = `
+        <div class="card h-100 border-0 shadow-sm guide-card">
+          <img src="${guide.image}" class="card-img-top" alt="${guide.title}" loading="lazy">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">${guide.title}</h5>
+            <p class="card-text">${guide.description}</p>
+            <a href="guider/${guide.slug}.html" class="btn btn-primary mt-3">Les guide</a>
           </div>
-        `;
-        container.insertAdjacentHTML("beforeend", html);
-      });
-    })
-    .catch(err => console.error("❌ Feil ved lasting av guider:", err));
-});
+        </div>
+      `;
+
+      container.appendChild(col);
+    });
+  })
+  .catch(error => console.error('Feil ved lasting av guider:', error));
