@@ -1,4 +1,5 @@
-// ✅ Fikset generate-topp25.js med riktig variabelnavn (topp25Liste)
+// Kjør kun hvis siden har containeren for topp 25
+if (!document.getElementById("topp25-butikker")) return;
 
 const topp25Container = document.getElementById("topp25-butikker");
 const visFlereBtn = document.getElementById("vis-flere-topp25");
