@@ -1,17 +1,17 @@
-// ✅ Fungerende generate-topp25.js med rank og vis mer/færre
+// ✅ Fikset generate-topp25.js med riktig variabelnavn (topp25Liste)
 
 const topp25Container = document.getElementById("topp25-butikker");
 const visFlereBtn = document.getElementById("vis-flere-topp25");
 const visFaerreBtn = document.getElementById("vis-faerre-topp25");
 
-let topp25 = [];
+let topp25Liste = [];
 let vistAntall = 0;
 const antallVisning = 8;
 
 fetch("assets/data/butikker.json")
   .then(res => res.json())
   .then(data => {
-    topp25 = data
+    topp25Liste = data
       .filter(b => b.topp25 && typeof b.rank === "number")
       .sort((a, b) => a.rank - b.rank);
 
@@ -23,7 +23,7 @@ fetch("assets/data/butikker.json")
 function visTopp25() {
   topp25Container.innerHTML = "";
 
-  topp25.slice(0, vistAntall).forEach(butikk => {
+  topp25Liste.slice(0, vistAntall).forEach(butikk => {
     const col = document.createElement("div");
     col.className = "col-md-3 mb-4";
     col.innerHTML = `
@@ -43,12 +43,12 @@ function visTopp25() {
     topp25Container.appendChild(col);
   });
 
-  visFlereBtn.style.display = (vistAntall >= topp25.length) ? "none" : "inline-block";
+  visFlereBtn.style.display = (vistAntall >= topp25Liste.length) ? "none" : "inline-block";
   visFaerreBtn.style.display = (vistAntall > antallVisning) ? "inline-block" : "none";
 }
 
 visFlereBtn.addEventListener("click", () => {
-  vistAntall = Math.min(vistAntall + antallVisning, topp25.length);
+  vistAntall = Math.min(vistAntall + antallVisning, topp25Liste.length);
   visTopp25();
 });
 
