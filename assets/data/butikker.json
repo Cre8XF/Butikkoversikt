@@ -162,7 +162,7 @@
     "url": "https://www.blivakker.no",
     "description": "Skjønnhetsprodukter og hudpleie pÃ¥ nett.",
     "topp25": false,
-    "forside": false,
+    "forside": true,
     "ny": false,
     "annonse": false,
     "tags": []
@@ -218,7 +218,7 @@
     "url": "https://cdon.no",
     "description": "CDON tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "topp25": true,
-    "forside": true,
+    "forside": false,
     "ny": false,
     "annonse": false,
     "tags": []
@@ -456,7 +456,7 @@
     "url": "https://www.jollyroom.no",
     "description": "Jollyroom tilbyr produkter for barn og baby, med fokus pÃ¥ kvalitet, komfort og lek.",
     "topp25": true,
-    "forside": false,
+    "forside": true,
     "ny": false,
     "annonse": false,
     "tags": []
@@ -666,7 +666,7 @@
     "url": "https://www.platekompaniet.no",
     "description": "Platekompaniet tilbyr bøker, spill og underholdning for hele familien.",
     "topp25": true,
-    "forside": true,
+    "forside": false,
     "ny": true,
     "annonse": false,
     "tags": ["cd", "blu-ray", "vinyl"]
@@ -764,7 +764,7 @@
     "url": "https://www.sportamore.no",
     "description": "Sportamore tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
     "topp25": true,
-    "forside": true,
+    "forside": false,
     "ny": false,
     "annonse": false,
     "tags": []
@@ -1464,7 +1464,7 @@
     "url": "https://www.getinspired.no/",
     "description": "",
     "topp25": false,
-    "forside": false,
+    "forside": true,
     "ny": false,
     "annonse": false,
     "tags": []
