@@ -55,3 +55,34 @@
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
 }
+
+.result-kategori {
+  margin-top: 3rem;
+}
+
+.result-subkategori {
+  margin-top: 1.5rem;
+}
+
+.result-wrapper {
+  background: var(--bg-white);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.result-kort {
+  transition: box-shadow 0.2s ease;
+}
+
+.result-kort:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  max-width: 600px;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--input-shadow);
+}

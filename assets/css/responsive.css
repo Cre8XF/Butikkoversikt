@@ -354,3 +354,14 @@
   border-color: var(--focus-color);
   box-shadow: 0 0 5px var(--focus-shadow);
 }
+
+/* søk */
+@media (max-width: 768px) {
+  .result-kort {
+    padding: 1rem;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+}
