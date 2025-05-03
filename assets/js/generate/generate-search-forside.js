@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     const guider = søkData.guider.filter(g =>
-      (g.title + g.description + g.tags.join(" ")).toLowerCase().includes(søkeord)
+      (g.title + g.description + (g.tags || []).join(" ")).toLowerCase().includes(søkeord)
     );
 
     if (matched.length > 0) {
