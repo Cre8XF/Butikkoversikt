@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
-  fetch("assets/data/guider.json")
+  fetch("../assets/data/guider.json")
     .then(res => res.json())
     .then(guides => {
       const container = document.getElementById("forside-guider");
