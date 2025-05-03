@@ -1,68 +1,47 @@
-/* ========================================= */
-/* 📂 KNAPPER */
-/* ========================================= */
-
-/* Generelle knapper */
+/* ✅ Globale knappestiler */
 .btn {
-  background-color: var(--btn-primary);
-  color: var(--card-bg);
-  border: none;
+  font-weight: 600;
   font-size: 1rem;
   padding: 0.6rem 1.5rem;
-  border-radius: 0.5rem;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-  font-weight: 600; /* gjør alle knapper tydeligere */
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05); /* lett skygge alltid */
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 3px 8px var(--btn-shadow);
+  border: none;
 }
 
-.btn:hover {
-  background-color: var(--btn-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12); /* sterkere løft */
-}
-
-/* Primær knapper (ekstra definisjon hvis brukt separat) */
+/* ✅ Primærknapp */
 .btn-primary {
   background-color: var(--btn-primary);
   border-color: var(--btn-primary);
+  color: var(--btn-primary-text);
 }
 
 .btn-primary:hover {
   background-color: var(--btn-hover);
+  box-shadow: 0 6px 14px var(--btn-shadow);
+  transform: translateY(-2px);
+}
+
+/* ✅ Sekundærknapp (f.eks. outline eller grå variant) */
+.btn-outline-secondary {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--btn-hover);
+  color: #fff;
   border-color: var(--btn-hover);
-  box-shadow: 0 4px 12px var(--btn-shadow);
-  transform: translateY(-2px);
 }
 
-/* Filterknapper */
-.filter-buttons {
-  margin-bottom: 30px;
-}
-
-.filter-buttons .btn {
-  border-radius: 30px;
-  padding: 8px 22px;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: all 0.2s ease;
-}
-
-.filter-buttons .btn.active {
-  background-color: var(--btn-hover);
-  color: var(--card-bg);
-  border: none;
-}
-
-/* Toggle "Vis alle butikker" knapp */
-#toggleStoresBtn {
-  font-size: 0.9rem;
-  padding: 0.4rem 1.4rem;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-#toggleStoresBtn:hover {
-  transform: translateY(-2px);
-  background-color: var(--btn-hover);
-  color: var(--card-bg);
+/* ✅ Knapp for mørkt tema (kan tilpasses med media queries) */
+@media (prefers-color-scheme: dark) {
+  .btn-outline-secondary:hover {
+    background-color: var(--btn-hover-dark, #333);
+    border-color: var(--btn-hover-dark, #333);
+  }
 }

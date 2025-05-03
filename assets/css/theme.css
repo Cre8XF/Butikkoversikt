@@ -32,6 +32,8 @@
   --btn-primary: #1a3e74;
   --btn-hover: #102d59;
   --btn-shadow: rgba(26, 62, 116, 0.25);
+  --btn-primary-text: #fff; /* Hvit tekst på knapper */
+  --btn-secondary: #f3f0ea; /* Sekundær knapp bakgrunn */
 
   /* 🛍️ SPESIELLE SEKSJONER */
   --offer-bg: #fff9e6; /* Ukens tilbud bakgrunn */

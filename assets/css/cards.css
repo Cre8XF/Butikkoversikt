@@ -38,7 +38,7 @@
 
 /* Hovereffekt på kortlenker */
 .card a {
-  color: inherit;
+  color: var(--text-muted, #777);
   text-decoration: none;
 }
 .card a:hover {
