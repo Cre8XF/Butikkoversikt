@@ -1,105 +1,110 @@
-// ✅ generate-search-forside.js med gruppert visning og ny stil
-
-let søkData = {
-  butikker: [],
-  guider: []
-};
-
 document.addEventListener("DOMContentLoaded", () => {
-  const søkInput = document.getElementById("search-input");
+  const input = document.getElementById("search-input");
   const resultContainer = document.getElementById("search-results");
 
-  Promise.all([
-    fetch("assets/data/butikker.json").then(res => res.json()),
-    fetch("assets/data/guider.json").then(res => res.json())
-  ])
-    .then(([butikkData, guideData]) => {
-      søkData.butikker = butikkData;
-      søkData.guider = guideData;
-    })
-    .catch(err => {
-      console.error("Feil ved lasting av data for søk:", err);
+  let butikker = [];
+  let guider = [];
+
+  fetch("assets/data/butikker.json")
+    .then(res => res.json())
+    .then(data => {
+      butikker = data;
     });
 
-  søkInput.addEventListener("input", () => {
-    const søkeord = søkInput.value.toLowerCase().trim();
+  fetch("assets/data/guider.json")
+    .then(res => res.json())
+    .then(data => {
+      guider = data;
+    });
+
+  input.addEventListener("input", () => {
+    const query = input.value.trim().toLowerCase();
     resultContainer.innerHTML = "";
-    if (!søkeord) return;
 
-    const matched = søkData.butikker.filter(b =>
-      (b.name + b.category + (b.subcategory || []).join(" ") + b.description + (b.tags || []).join(" ")).toLowerCase().includes(søkeord)
+    if (query.length === 0) return;
+
+    const matched = butikker.filter(b =>
+      b.name.toLowerCase().includes(query) ||
+      b.description.toLowerCase().includes(query) ||
+      b.category.toLowerCase().includes(query) ||
+      (b.subcategory && b.subcategory.some(sub => sub.toLowerCase().includes(query)))
     );
 
-    const guider = søkData.guider.filter(g =>
-      (g.title + g.description + (g.tags || []).join(" ")).toLowerCase().includes(søkeord)
+    const matchedGuider = guider.filter(g =>
+      g.title.toLowerCase().includes(query) ||
+      g.description.toLowerCase().includes(query)
     );
 
-    if (matched.length > 0) {
-      const grupper = {};
-      matched.forEach(b => {
-        const kat = b.category || "Annet";
-        const sub = (b.subcategory && b.subcategory[0]) || "Generelt";
-        grupper[kat] = grupper[kat] || {};
-        grupper[kat][sub] = grupper[kat][sub] || [];
-        grupper[kat][sub].push(b);
-      });
+    if (matched.length === 0 && matchedGuider.length === 0) {
+      resultContainer.innerHTML = "<p>Ingen treff funnet.</p>";
+      return;
+    }
 
-      Object.entries(grupper).forEach(([kategori, underkat]) => {
-        const katDiv = document.createElement("div");
-        katDiv.className = "sok-kategori";
-        katDiv.innerHTML = `<strong>📁 ${kategori}</strong>`;
-        resultContainer.appendChild(katDiv);
+    const grouped = {};
 
-        Object.entries(underkat).forEach(([sub, butikker]) => {
-          const subDiv = document.createElement("div");
-          subDiv.className = "sok-underkategori";
-          subDiv.innerHTML = `<strong>📌 ${sub}</strong>`;
-          resultContainer.appendChild(subDiv);
-
-          butikker.slice(0, 4).forEach(butikk => {
-            const kort = document.createElement("div");
-            kort.className = "sok-kort";
-            kort.innerHTML = `
-              <h6>${butikk.name}</h6>
-              <p class="small text-muted">${butikk.description}</p>
-              <a href="${butikk.url}" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Besøk</a>
-            `;
-            resultContainer.appendChild(kort);
-          });
-
-          if (butikker.length > 4) {
-            const flere = document.createElement("p");
-            flere.className = "small text-muted mb-4 ms-3";
-            flere.textContent = `... og ${butikker.length - 4} flere`;
-            resultContainer.appendChild(flere);
-          }
+    matched.forEach(b => {
+      if (!grouped[b.category]) grouped[b.category] = {};
+      if (b.subcategory && b.subcategory.length) {
+        b.subcategory.forEach(sub => {
+          if (!grouped[b.category][sub]) grouped[b.category][sub] = [];
+          grouped[b.category][sub].push(b);
         });
-      });
-    }
-
-    if (guider.length > 0) {
-      const guideHeader = document.createElement("div");
-      guideHeader.className = "sok-guider";
-      guideHeader.innerHTML = `<h5 class="mt-4">📘 Guider:</h5>`;
-      resultContainer.appendChild(guideHeader);
-
-      guider.slice(0, 3).forEach(guide => {
-        const guideKort = document.createElement("div");
-        guideKort.className = "sok-kort";
-        guideKort.innerHTML = `
-          <h6>${guide.title}</h6>
-          <p class="small text-muted">${guide.description}</p>
-          <a href="${guide.url}" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">Les mer</a>
-        `;
-        resultContainer.appendChild(guideKort);
-      });
-
-      if (guider.length > 3) {
-        const flere = document.createElement("p");
-        flere.className = "small text-muted mb-4 ms-3";
-        flere.textContent = `... og ${guider.length - 3} flere guider`;
-        resultContainer.appendChild(flere);
+      } else {
+        if (!grouped[b.category]["Uten underkategori"]) grouped[b.category]["Uten underkategori"] = [];
+        grouped[b.category]["Uten underkategori"].push(b);
       }
+    });
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "result-wrapper";
+
+    for (const kategori in grouped) {
+      const kategoriDiv = document.createElement("div");
+      kategoriDiv.className = "result-kategori";
+      kategoriDiv.innerHTML = `<h4>${kategori}</h4>`;
+
+      for (const sub in grouped[kategori]) {
+        const subDiv = document.createElement("div");
+        subDiv.className = "result-subkategori";
+        subDiv.innerHTML = `<h5><i class="bi bi-pin-angle-fill me-1"></i> ${sub}</h5>`;
+
+        grouped[kategori][sub].forEach(butikk => {
+          const resultKort = document.createElement("div");
+          resultKort.className = "result-kort";
+          resultKort.innerHTML = `
+            <strong>${butikk.name}</strong>
+            <br>
+            <p class="text-muted small">${butikk.description}</p>
+            <a href="${butikk.url}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Besøk</a>
+          `;
+          subDiv.appendChild(resultKort);
+        });
+
+        kategoriDiv.appendChild(subDiv);
+      }
+
+      wrapper.appendChild(kategoriDiv);
     }
+
+    if (matchedGuider.length) {
+      const guiderDiv = document.createElement("div");
+      guiderDiv.className = "result-kategori mt-5";
+      guiderDiv.innerHTML = `<h4>Guider</h4>`;
+
+      matchedGuider.forEach(guide => {
+        const guideDiv = document.createElement("div");
+        guideDiv.className = "guide-box mb-4 p-4 bg-light rounded shadow-sm";
+        guideDiv.innerHTML = `
+          <h5>Guide: ${guide.title}</h5>
+          <p class="text-muted">${guide.description}</p>
+          <a href="${guide.url}" class="btn btn-outline-primary btn-sm">Les guide</a>
+        `;
+        guiderDiv.appendChild(guideDiv);
+      });
+
+      wrapper.appendChild(guiderDiv);
+    }
+
+    resultContainer.appendChild(wrapper);
   });
 });

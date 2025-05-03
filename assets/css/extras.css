@@ -170,3 +170,79 @@
 .search-store small {
   color: var(--search-muted);
 }
+/* === Søkeresultat-stil === */
+.result-kategori {
+  margin-bottom: 2rem;
+}
+
+.result-kategori h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.result-subkategori {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--primary);
+}
+
+.result-subkategori h6 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.result-kort {
+  background: var(--bg-card);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ✅ Søkeresultat-wrapper */
+.result-wrapper {
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 12px var(--shadow-md);
+}
+
+/* Justering av hver kategori-blokk */
+.result-kategori {
+  margin-bottom: 2.5rem;
+}
+
+.result-kategori h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.result-subkategori h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.result-kort {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.result-kort:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px var(--shadow-sm);
+}
