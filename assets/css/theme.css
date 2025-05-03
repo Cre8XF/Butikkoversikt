@@ -72,6 +72,16 @@
   --guide-card-hover: var(--card-hover);
   --guide-card-shadow: var(--shadow-md);
   --guide-card-shadow-hover: var(--shadow-lg);
+
+  /* Søkeseksjon */
+  --search-bg: #fff;
+  --search-card-bg: #f9f9f9;
+  --search-border: #ddd;
+  --search-title-color: var(--text-dark);
+  --search-subcategory-color: #444;
+  --search-muted: #777;
+  --search-card-radius: 0.75rem;
+  --search-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 [data-theme="dark"] {

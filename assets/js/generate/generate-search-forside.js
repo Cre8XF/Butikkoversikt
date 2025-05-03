@@ -1,5 +1,5 @@
+// ✅ generate-search-forside.js med gruppert visning og ny stil
 
-// ✅ generate-search-forside.js uten konflikt med globale variabler
 let søkData = {
   butikker: [],
   guider: []
@@ -7,10 +7,8 @@ let søkData = {
 
 document.addEventListener("DOMContentLoaded", () => {
   const søkInput = document.getElementById("search-input");
-const resultContainer = document.getElementById("search-results");
+  const resultContainer = document.getElementById("search-results");
 
-
-  // Last inn data fra JSON-filer
   Promise.all([
     fetch("assets/data/butikker.json").then(res => res.json()),
     fetch("assets/data/guider.json").then(res => res.json())
@@ -22,69 +20,86 @@ const resultContainer = document.getElementById("search-results");
     .catch(err => {
       console.error("Feil ved lasting av data for søk:", err);
     });
-  // Lytt til input
+
   søkInput.addEventListener("input", () => {
     const søkeord = søkInput.value.toLowerCase().trim();
     resultContainer.innerHTML = "";
+    if (!søkeord) return;
 
-    if (søkeord === "") return;
-
-    const butikkTreff = søkData.butikker.filter(b =>
-      b.name.toLowerCase().includes(søkeord) ||
-      (b.description && b.description.toLowerCase().includes(søkeord)) ||
-      (b.kategori && b.kategori.toLowerCase().includes(søkeord))
+    const matched = søkData.butikker.filter(b =>
+      (b.name + b.category + (b.subcategory || []).join(" ") + b.description + (b.tags || []).join(" ")).toLowerCase().includes(søkeord)
     );
 
-    const guideTreff = søkData.guider.filter(g =>
-      g.title.toLowerCase().includes(søkeord) ||
-      (g.description && g.description.toLowerCase().includes(søkeord))
+    const guider = søkData.guider.filter(g =>
+      (g.title + g.description + g.tags.join(" ")).toLowerCase().includes(søkeord)
     );
 
-    if (butikkTreff.length === 0 && guideTreff.length === 0) {
-      resultContainer.innerHTML = "<p>Ingen treff.</p>";
-      return;
-    }
+    if (matched.length > 0) {
+      const grupper = {};
+      matched.forEach(b => {
+        const kat = b.category || "Annet";
+        const sub = (b.subcategory && b.subcategory[0]) || "Generelt";
+        grupper[kat] = grupper[kat] || {};
+        grupper[kat][sub] = grupper[kat][sub] || [];
+        grupper[kat][sub].push(b);
+      });
 
-    // Vis butikk-treff
-    if (butikkTreff.length > 0) {
-      const butikkHeader = document.createElement("h5");
-      butikkHeader.textContent = "Butikker:";
-      resultContainer.appendChild(butikkHeader);
+      Object.entries(grupper).forEach(([kategori, underkat]) => {
+        const katDiv = document.createElement("div");
+        katDiv.className = "sok-kategori";
+        katDiv.innerHTML = `<strong>📁 ${kategori}</strong>`;
+        resultContainer.appendChild(katDiv);
 
-      butikkTreff.forEach(b => {
-        const card = document.createElement("div");
-        card.className = "card mb-3";
-        card.innerHTML = `
-          <div class="card-body">
-            <h6 class="card-title">${b.name}</h6>
-            <p class="card-text">${b.description || ""}</p>
-            <a href="${b.url}" class="btn btn-primary btn-sm" target="_blank">Besøk</a>
-          </div>
-        `;
-        resultContainer.appendChild(card);
+        Object.entries(underkat).forEach(([sub, butikker]) => {
+          const subDiv = document.createElement("div");
+          subDiv.className = "sok-underkategori";
+          subDiv.innerHTML = `<strong>📌 ${sub}</strong>`;
+          resultContainer.appendChild(subDiv);
+
+          butikker.slice(0, 4).forEach(butikk => {
+            const kort = document.createElement("div");
+            kort.className = "sok-kort";
+            kort.innerHTML = `
+              <h6>${butikk.name}</h6>
+              <p class="small text-muted">${butikk.description}</p>
+              <a href="${butikk.url}" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Besøk</a>
+            `;
+            resultContainer.appendChild(kort);
+          });
+
+          if (butikker.length > 4) {
+            const flere = document.createElement("p");
+            flere.className = "small text-muted mb-4 ms-3";
+            flere.textContent = `... og ${butikker.length - 4} flere`;
+            resultContainer.appendChild(flere);
+          }
+        });
       });
     }
 
-    // Vis guide-treff
-    if (guideTreff.length > 0) {
-      const guideHeader = document.createElement("h5");
-      guideHeader.textContent = "Guider:";
+    if (guider.length > 0) {
+      const guideHeader = document.createElement("div");
+      guideHeader.className = "sok-guider";
+      guideHeader.innerHTML = `<h5 class="mt-4">📘 Guider:</h5>`;
       resultContainer.appendChild(guideHeader);
 
-      guideTreff.forEach(g => {
-        const card = document.createElement("div");
-        card.className = "card mb-3";
-        card.innerHTML = `
-          <div class="card-body">
-            <h6 class="card-title">${g.title}</h6>
-            <p class="card-text">${g.description || ""}</p>
-            <a href="${g.url}" class="btn btn-primary btn-sm">Les guide</a>
-          </div>
+      guider.slice(0, 3).forEach(guide => {
+        const guideKort = document.createElement("div");
+        guideKort.className = "sok-kort";
+        guideKort.innerHTML = `
+          <h6>${guide.title}</h6>
+          <p class="small text-muted">${guide.description}</p>
+          <a href="${guide.url}" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">Les mer</a>
         `;
-        resultContainer.appendChild(card);
+        resultContainer.appendChild(guideKort);
       });
+
+      if (guider.length > 3) {
+        const flere = document.createElement("p");
+        flere.className = "small text-muted mb-4 ms-3";
+        flere.textContent = `... og ${guider.length - 3} flere guider`;
+        resultContainer.appendChild(flere);
+      }
     }
   });
 });
-
-

@@ -130,3 +130,43 @@
   border-color: var(--focus-color);
   box-shadow: 0 0 5px var(--focus-shadow);
 }
+
+/* Søkefunksjon */
+.search-results {
+  padding-top: 2rem;
+}
+
+.search-category {
+  margin-bottom: 2rem;
+}
+
+.search-category h5 {
+  color: var(--search-title-color);
+  margin-bottom: 0.5rem;
+}
+
+.search-subcategory {
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--search-border);
+  margin-bottom: 1.5rem;
+}
+
+.search-subcategory h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--search-subcategory-color);
+}
+
+.search-store {
+  background-color: var(--search-card-bg);
+  border: 1px solid var(--search-border);
+  border-radius: var(--search-card-radius);
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: var(--search-shadow);
+}
+
+.search-store small {
+  color: var(--search-muted);
+}
