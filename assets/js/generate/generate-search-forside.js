@@ -1,62 +1,90 @@
-// ✅ Søkeskript som henter fra butikker.json og guider.json
 
-const sokefelt = document.getElementById("sokefelt");
-const resultatomrade = document.getElementById("sokeresultater");
+// ✅ generate-search-forside.js uten konflikt med globale variabler
+let søkData = {
+  butikker: [],
+  guider: []
+};
 
-let butikker = [];
-let guider = [];
-let kategorier = [];
-
-Promise.all([
-  fetch("assets/data/butikker.json").then(res => res.json()),
-  fetch("assets/data/guider.json").then(res => res.json())
-])
-.then(([butikkData, guideData]) => {
-  console.log("✅ Butikkdata lastet:", butikkData);
-  console.log("✅ Guider lastet:", guideData);
-
-  butikker = butikkData;
-  guider = guideData;
-})
-.catch(error => {
-  console.error("❌ Feil ved lasting av data:", error);
+document.addEventListener("DOMContentLoaded", () => {
+  const søkInput = document.getElementById("search-input");
+const resultContainer = document.getElementById("search-results");
 
 
-  const katSet = new Set();
-  butikker.forEach(b => {
-    if (b.category) katSet.add(b.category);
-    if (b.subcategory) katSet.add(b.subcategory);
+  // Last inn data fra JSON-filer
+  Promise.all([
+    fetch("assets/data/butikker.json").then(res => res.json()),
+    fetch("assets/data/guider.json").then(res => res.json())
+  ])
+    .then(([butikkData, guideData]) => {
+      søkData.butikker = butikkData;
+      søkData.guider = guideData;
+    })
+    .catch(err => {
+      console.error("Feil ved lasting av data for søk:", err);
+    });
+  // Lytt til input
+  søkInput.addEventListener("input", () => {
+    const søkeord = søkInput.value.toLowerCase().trim();
+    resultContainer.innerHTML = "";
+
+    if (søkeord === "") return;
+
+    const butikkTreff = søkData.butikker.filter(b =>
+      b.name.toLowerCase().includes(søkeord) ||
+      (b.description && b.description.toLowerCase().includes(søkeord)) ||
+      (b.kategori && b.kategori.toLowerCase().includes(søkeord))
+    );
+
+    const guideTreff = søkData.guider.filter(g =>
+      g.title.toLowerCase().includes(søkeord) ||
+      (g.description && g.description.toLowerCase().includes(søkeord))
+    );
+
+    if (butikkTreff.length === 0 && guideTreff.length === 0) {
+      resultContainer.innerHTML = "<p>Ingen treff.</p>";
+      return;
+    }
+
+    // Vis butikk-treff
+    if (butikkTreff.length > 0) {
+      const butikkHeader = document.createElement("h5");
+      butikkHeader.textContent = "Butikker:";
+      resultContainer.appendChild(butikkHeader);
+
+      butikkTreff.forEach(b => {
+        const card = document.createElement("div");
+        card.className = "card mb-3";
+        card.innerHTML = `
+          <div class="card-body">
+            <h6 class="card-title">${b.name}</h6>
+            <p class="card-text">${b.description || ""}</p>
+            <a href="${b.url}" class="btn btn-primary btn-sm" target="_blank">Besøk</a>
+          </div>
+        `;
+        resultContainer.appendChild(card);
+      });
+    }
+
+    // Vis guide-treff
+    if (guideTreff.length > 0) {
+      const guideHeader = document.createElement("h5");
+      guideHeader.textContent = "Guider:";
+      resultContainer.appendChild(guideHeader);
+
+      guideTreff.forEach(g => {
+        const card = document.createElement("div");
+        card.className = "card mb-3";
+        card.innerHTML = `
+          <div class="card-body">
+            <h6 class="card-title">${g.title}</h6>
+            <p class="card-text">${g.description || ""}</p>
+            <a href="${g.url}" class="btn btn-primary btn-sm">Les guide</a>
+          </div>
+        `;
+        resultContainer.appendChild(card);
+      });
+    }
   });
-  kategorier = Array.from(katSet);
 });
 
-sokefelt.addEventListener("input", () => {
-  const query = sokefelt.value.toLowerCase().trim();
-  resultatomrade.innerHTML = "";
 
-  if (!query) return;
-
-  const matcher = (text) => text && text.toLowerCase().includes(query);
-
-  const resultater = [];
-
-  butikker.forEach(b => {
-    if (matcher(b.name) || matcher(b.category) || matcher(b.subcategory)) {
-      resultater.push(`<div><a href="${b.url}" target="_blank">🛒 ${b.name}</a> <small class="text-muted">(${b.category})</small></div>`);
-    }
-  });
-
-  guider.forEach(g => {
-    if (matcher(g.title) || matcher(g.description)) {
-      resultater.push(`<div><a href="${g.url}">📘 ${g.title}</a></div>`);
-    }
-  });
-
-  kategorier.forEach(k => {
-    if (matcher(k)) {
-      resultater.push(`<div><a href="kategori.html?kat=${encodeURIComponent(k)}">📂 ${k}</a></div>`);
-    }
-  });
-
-  resultatomrade.innerHTML = resultater.length ? resultater.join("") : "<p>Ingen treff.</p>";
-});

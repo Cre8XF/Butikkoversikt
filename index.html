@@ -69,14 +69,14 @@
     </div>
   </section>
   
-  <section class="search-section py-5 bg-light text-center">
-    <div class="container">
-      <h2 class="mb-4">Hva ser du etter?</h2>
-      <input type="text" id="sokefelt" class="form-control form-control-lg mx-auto"
-        placeholder="Søk etter kategori, butikk eller guide..." style="max-width: 500px;">
-      <div id="sokeresultater" class="mt-4 text-start" style="max-width: 600px; margin: 0 auto;"></div>
+  <section class="search-section">
+    <div class="container text-center">
+      <h2>Hva ser du etter?</h2>
+      <input type="text" id="search-input" placeholder="Søk etter butikk, kategori eller guide" class="form-control" />
+      <div id="search-results" class="mt-4"></div>
     </div>
   </section>
+
   
   <!-- 3. ANBEFALTE BUTIKKER -->
   <section class="section bg-light-section py-5 fade-in">
@@ -195,7 +195,7 @@
   <script src="assets/js/generate/generate-kampanjer.js"></script>
   <script src="assets/js/generate/generate-forside-guider.js?v=1.2"></script>
   <script src="assets/js/generate/generate-topp25.js?v=1.6"></script>
-  <script src="assets/js/generate/generate-search-forside.js?v=1.1"></script>
+  <script src="assets/js/generate/generate-search-forside.js?v=1.3"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
