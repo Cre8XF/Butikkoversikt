@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => 
 fetch('assets/data/guider.json')
   .then(response => response.json())
   .then(data => {
