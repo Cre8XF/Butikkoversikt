@@ -9,61 +9,61 @@
   --shadow-default: 0 4px 8px rgba(0, 0, 0, 0.1); /* 🧱 Grunnskygge */
 }
 
-/* === LYST TEMA === */
+/* === LYST TEMA – OPPDATERT FOR 2025-TRENDER === */
 [data-theme="light"] {
   /* 🧱 BAKGRUNNSFARGER */
-  --bg-color: #cdd8e1; /* Bakgrunnsfarge for hele nettsiden */
-  --section-bg: #6d829dc9; /* Bakgrunn for standard seksjoner */
-  --section-alt-bg: #c1cbd4; /* Alternativ seksjonsbakgrunn (f.eks. annenhver) */
+  --bg-color: #f7e8d3; /* Bakgrunn for hele nettsiden */
+  --section-bg: #f2e5d0; /* Seksjonsbakgrunn */
+  --section-alt-bg: #e6dbc9; /* Alternativ seksjonsbakgrunn */
 
   /* 🧾 KORT / CARD */
-  --card-bg: #f8f9fa; /* Bakgrunn inni kort */
-  --card-hover: #e6edf2; /* Bakgrunn når du holder musen over kort */
+  --card-bg: #ffffff; /* Bakgrunn inni kort */
+  --card-hover: #f3f0ea; /* Hovereffekt på kort */
 
   /* 🧭 HEADER & FOOTER */
-  --header-bg: #4a6a8a; /* Toppmeny og bunntekst bakgrunn */
-  --footer-bg: #4a6a8a;
-  --footer-text: #f8fafc; /* Vanlig tekst i footer */
-  --footer-heading: #dce3e9; /* Overskrifter i footer */
-  --footer-muted: #b4bcc4; /* Dempet tekst i footer (småtekster) */
-  --footer-border: #3b556f; /* Linjer i footer */
+  --header-bg: #c99383; /* Toppmeny og footer */
+  --footer-bg: #c99383;
+  --footer-text: #fefefe; /* Tekst i footer */
+  --footer-heading: #f9f5f2; /* Footer-overskrifter */
+  --footer-muted: #d8c8bd; /* Dempet tekst i footer */
+  --footer-border: #a17668; /* Skillelinjer i footer */
 
   /* 🔘 KNAPPER */
-  --btn-primary: #7eb6cf; /* Hovedknapp */
-  --btn-hover: #d97d30; /* Hovereffekt for knapper */
-  --btn-shadow: rgba(217, 125, 48, 0.25); /* Skygge under knapp */
+  --btn-primary: #facf39; /* Gultoner for primærknapper */
+  --btn-hover: #f4b82d; /* Mørkere gul ved hover */
+  --btn-shadow: rgba(250, 207, 57, 0.25); /* Knappeskygge */
 
   /* 🛍️ SPESIELLE SEKSJONER */
-  --offer-bg: #fff4d6; /* Ukens tilbud - bakgrunn */
-  --offer-text: #8a4b00; /* Ukens tilbud - tekst */
-  --campaign-bg: #e1f0e6; /* Kampanjer - bakgrunn */
-  --campaign-text: #175e41; /* Kampanjer - tekst */
+  --offer-bg: #fff9e6; /* Ukens tilbud bakgrunn */
+  --offer-text: #8a4b00; /* Tekst i tilbudsseksjon */
+  --campaign-bg: #eaf7f1; /* Kampanje-bakgrunn */
+  --campaign-text: #175e41; /* Kampanjetekst */
 
   /* 🔗 LENKER OG TEKST */
-  --link-color: #2563eb; /* Standard lenkefarge */
-  --heading-color: #1a202c; /* Overskrifter generelt */
-  --text-color: #2d3748; /* Brødtekst (p, span...) */
-  --text-muted: #718096; /* Dempet tekst (brukes ofte i undertekster) */
+  --link-color: #137dc5; /* Klar blå aksentfarge */
+  --heading-color: #2d3748; /* Overskrifter */
+  --text-color: #2d3748; /* Vanlig tekst */
+  --text-muted: #718096; /* Dempet tekst */
 
   /* 🧱 RAMMER OG KANTER */
-  --border-color: #cbd5e1; /* Kantfarge rundt kort og seksjoner */
+  --border-color: #d9cfc6; /* Kantlinjer */
 
   /* 🦸 HERO-SEKSJON */
-  --hero-bg: #dfe9f0;
-  --hero-gradient-start: #f1f5f9;
-  --hero-gradient-end: #dbe4ec;
+  --hero-bg: #f0e4d8; /* Bakgrunn i helteseksjon */
+  --hero-gradient-start: #f9f5f1;
+  --hero-gradient-end: #f0e1cf;
 
-  --accent-color: #fcd34d; /* Gul aksentfarge (brukes lite foreløpig) */
+  --accent-color: #137dc5; /* Sekundær aksentfarge */
 
   /* 🌫️ SKYGGER */
-  --shadow-sm: rgba(0, 0, 0, 0.03);
-  --shadow-md: rgba(0, 0, 0, 0.06);
-  --shadow-lg: rgba(0, 0, 0, 0.1);
+  --shadow-sm: rgba(0, 0, 0, 0.02);
+  --shadow-md: rgba(0, 0, 0, 0.04);
+  --shadow-lg: rgba(0, 0, 0, 0.08);
 
   /* ✅ TILSTANDSFARGER */
-  --success-color: #10b981; /* Grønn suksess */
-  --warning-color: #f59e0b; /* Oransje advarsel */
-  --danger-color: #ef4444; /* Rød feil */
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
 
   /* 📚 GUIDER (egne kort) */
   --guide-card-bg: var(--card-bg);
