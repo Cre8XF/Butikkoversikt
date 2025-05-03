@@ -55,5 +55,6 @@ document.getElementById("vis-færre-butikker").addEventListener("click", () => {
 });
 
 // 4. Vis første sett ved lasting av siden
+vistAntall = antallViste;  // <--- Denne linjen er viktig!
 visButikker();
 
