@@ -58,17 +58,20 @@
       style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
   </header>
 
-  <!-- 1. HERO-SEKSJON -->
-  <section class="hero-section bg-hero text-center text-white py-5">
+  <!-- ✅ OPPDATERT OG STILIG FORSIDE-STRUKTUR (HTML-MAL) -->
+  
+  <!-- 1. HERO-SEKSJON MED GRADIENT OG IKON -->
+  <section class="hero-section bg-hero text-center text-white py-5 fade-in">
     <div class="container">
+      <img src="assets/icons/store-front.svg" alt="Handleikon" width="64" class="mb-3 fade-in">
       <h1 class="display-4">Finn de beste norske nettbutikkene</h1>
       <p class="lead">Utforsk, sammenlign og handle smartere – alt på ett sted</p>
       <a href="alle-butikker.html" class="btn btn-primary btn-lg mt-3">Se alle butikker</a>
     </div>
   </section>
   
-  <!-- 2. KATEGORIER -->
-  <section class="section section-alt-bg py-5">
+  <!-- 2. KATEGORIER MED BAKGRUNNSVARIASJON -->
+  <section class="section section-alt-bg py-5 fade-in">
     <div class="container">
       <h2 class="mb-4 text-center">🗂 Utforsk etter kategori</h2>
       <div class="row" id="index-kategorier">
@@ -78,7 +81,7 @@
   </section>
   
   <!-- 3. ANBEFALTE BUTIKKER -->
-  <section class="section bg-light-section py-5">
+  <section class="section bg-light-section py-5 fade-in">
     <div class="container">
       <h2 class="mb-4 text-center">⭐ Anbefalte butikker</h2>
       <div class="row g-4" id="anbefalte-butikker">
@@ -87,8 +90,8 @@
     </div>
   </section>
   
-  <!-- 4. KAMPANJER / TILBUD -->
-  <section class="section py-5" style="background-color: var(--offer-bg);">
+  <!-- 4. KAMPANJER / TILBUD MED MARKANT BAKGRUNN -->
+  <section class="section py-5 fade-in" style="background-color: var(--offer-bg);">
     <div class="container">
       <h2 class="mb-4 text-center" style="color: var(--offer-text);">🔥 Ukens kampanjer</h2>
       <div class="row g-4" id="kampanjer">
@@ -97,8 +100,8 @@
     </div>
   </section>
   
-  <!-- 5. TOPP 25 BUTIKKER -->
-  <section class="section section-alt-bg py-5">
+  <!-- 5. TOPP 25 BUTIKKER MED SKILLELINJE -->
+  <section class="section section-alt-bg py-5 fade-in" style="border-top: 1px solid var(--border-color);">
     <div class="container">
       <h2 class="mb-4 text-center">🏆 Topp 25 nettbutikker</h2>
       <div class="row g-4" id="topp25-butikker">
@@ -107,8 +110,8 @@
     </div>
   </section>
   
-  <!-- 6. GUIDER / TIPS -->
-  <section class="section bg-light-section py-5">
+  <!-- 6. GUIDER / TIPS MED UTJEVNING OG KNAPP -->
+  <section class="section bg-light-section py-5 fade-in">
     <div class="container">
       <h2 class="mb-4 text-center">📝 Nyttige guider og tips</h2>
       <div id="forside-guider" class="row g-4 justify-content-center">
@@ -120,14 +123,15 @@
     </div>
   </section>
   
-  <!-- 7. CTA SEKSJON / BLI INSPIRERT -->
-  <section class="section text-center py-5">
+  <!-- 7. CTA-SEKSJON MED FARGEKONTRAST -->
+  <section class="section text-center py-5 fade-in" style="background: linear-gradient(to right, #fcd34d, #fbbf24);">
     <div class="container">
-      <h2 class="mb-3">🎯 Klar til å finne din nye favorittbutikk?</h2>
-      <p class="mb-4">Bla gjennom hundrevis av butikker, filtrert etter det du trenger</p>
-      <a href="alle-butikker.html" class="btn btn-primary btn-lg">Start letingen</a>
+      <h2 class="mb-3 text-dark">🎯 Klar til å finne din nye favorittbutikk?</h2>
+      <p class="mb-4 text-dark">Bla gjennom hundrevis av butikker, filtrert etter det du trenger</p>
+      <a href="alle-butikker.html" class="btn btn-dark btn-lg">Start letingen</a>
     </div>
   </section>
+
 
   <!-- Footer -->
   <footer class="footer bg-header text-heading py-5 mt-5">
@@ -175,7 +179,7 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/effects/fade-in.js"></script>
+  <script src="assets/js/effects/fade-in.js?v=1.1"></script>
   <script src="assets/js/effects/menu-toggle.js"></script>
   <script src="assets/js/effects/theme-toggle.js"></script>
   <script src="assets/js/generate/generate-index-stores.js"></script>
