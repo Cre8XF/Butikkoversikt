@@ -46,6 +46,26 @@
 .hero p {
   font-size: 1.25rem;
 }
+.hero-section {
+  background: var(--hero-bg); /* eller en lys gradient hvis du ønsker det */
+  color: var(--text-color-on-light);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.hero-section .btn {
+  font-weight: 500;
+  border-radius: 8px;
+}
+.hero-title {
+  color: var(--text-primary);
+}
+
+.hero-subtitle {
+  color: var(--text-muted);
+}
+
+
 
 /* ========================================= */
 /*
