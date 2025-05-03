@@ -1,208 +1,3 @@
-/* ========================================= */
-/* 📂 DIVERSE - Tillegg (Rating, guider, filter, småklasser) */
-/* ========================================= */
-
-/* Rating-stjerner */
-.rating {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.5rem;
-}
-
-.rating-stars {
-  color: var(--rating-star-color);
-  font-size: 1.2rem;
-}
-
-/* Guide-kort */
-.guide-card {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  transition: box-shadow 0.3s ease;
-}
-
-.guide-card:hover {
-  box-shadow: 0 4px 14px var(--shadow-md);
-}
-
-.guide-img {
-  max-height: 100px;
-  object-fit: contain;
-  margin-bottom: 1rem;
-}
-
-/* Kommentarboks */
-.comment-box {
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 1rem;
-  margin-top: 1rem;
-  background-color: var(--card-bg);
-}
-
-.comment-input {
-  width: 100%;
-  padding: 0.5rem;
-  border-radius: 0.375rem;
-  border: 1px solid var(--border-color);
-}
-
-/* Filter-badge */
-.filter-badge {
-  display: inline-block;
-  background-color: var(--btn-primary);
-  color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  margin: 0.2rem;
-}
-
-/* Dropdown-element */
-.dropdown-item {
-  padding: 0.5rem 1rem;
-  color: var(--text-color);
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-item:hover {
-  background-color: var(--card-hover);
-}
-
-/* Små layout-utilities */
-.text-center {
-  text-align: center;
-}
-
-.text-muted {
-  color: var(--text-muted);
-}
-
-.float-right {
-  float: right;
-}
-
-.bg-white {
-  background-color: var(--card-bg);
-}
-
-.shadow-sm {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-.border-top {
-  border-top: 1px solid var(--border-color);
-}
-
-/* Ekstra liste-layouts */
-.list-container {
-  list-style: none;
-  padding: 0;
-}
-
-.list-item {
-  margin-bottom: 0.5rem;
-}
-
-/* Kategori-filter wrapper */
-.kategori-filter-wrapper {
-  text-align: center;
-}
-
-.filter-select {
-  display: inline-block;
-  width: 250px;
-  padding: 10px 15px;
-  font-size: 1.1rem;
-  border-radius: 12px;
-  border: 1px solid var(--border-color);
-  background-color: var(--card-bg);
-  color: var(--text-color);
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.filter-select:focus {
-  border-color: var(--focus-color);
-  box-shadow: 0 0 5px var(--focus-shadow);
-}
-
-/* Søkefunksjon */
-.search-results {
-  padding-top: 2rem;
-}
-
-.search-category {
-  margin-bottom: 2rem;
-}
-
-.search-category h5 {
-  color: var(--search-title-color);
-  margin-bottom: 0.5rem;
-}
-
-.search-subcategory {
-  margin-left: 1rem;
-  padding-left: 1rem;
-  border-left: 3px solid var(--search-border);
-  margin-bottom: 1.5rem;
-}
-
-.search-subcategory h6 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--search-subcategory-color);
-}
-
-.search-store {
-  background-color: var(--search-card-bg);
-  border: 1px solid var(--search-border);
-  border-radius: var(--search-card-radius);
-  padding: 0.75rem 1rem;
-  margin-bottom: 0.5rem;
-  box-shadow: var(--search-shadow);
-}
-
-.search-store small {
-  color: var(--search-muted);
-}
-/* === Søkeresultat-stil === */
-.result-kategori {
-  margin-bottom: 2rem;
-}
-
-.result-kategori h5 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: var(--text-color);
-}
-
-.result-subkategori {
-  margin-bottom: 1.5rem;
-  padding-left: 1rem;
-  border-left: 2px solid var(--primary);
-}
-
-.result-subkategori h6 {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  color: var(--text-color);
-}
-
-.result-kort {
-  background: var(--bg-card);
-  border-radius: 0.5rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
 /* ✅ Søkeresultat-wrapper */
 .result-wrapper {
   padding: 1rem;
@@ -225,6 +20,12 @@
   padding-bottom: 0.5rem;
 }
 
+.result-subkategori {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--primary);
+}
+
 .result-subkategori h5 {
   font-size: 1.2rem;
   font-weight: 600;
@@ -245,4 +46,12 @@
 .result-kort:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px var(--shadow-sm);
+}
+
+/* Guider */
+.guide-box {
+  background-color: var(--guide-card-bg, #f9f9f9);
+  border-left: 4px solid var(--primary);
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
 }
