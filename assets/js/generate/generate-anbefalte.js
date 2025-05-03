@@ -39,8 +39,8 @@ function visButikker() {
   });
 
   // Skjul/vis knapper
-  document.getElementById("vis-flere-butikker").style.display = (vistAntall >= butikker.length) ? "none" : "inline-block";
-  document.getElementById("vis-færre-butikker").style.display = (vistAntall > antallViste) ? "inline-block" : "none";
+document.getElementById("vis-flere-butikker").style.display = (vistAntall >= butikker.length) ? "none" : "inline-block";
+document.getElementById("vis-færre-butikker").style.display = (vistAntall > antallViste) ? "inline-block" : "none";
 }
 
 // 3. Lytt på knappene
@@ -53,3 +53,7 @@ document.getElementById("vis-færre-butikker").addEventListener("click", () => {
   vistAntall = antallViste;
   visButikker();
 });
+
+// 4. Vis første sett ved lasting av siden
+visButikker();
+
