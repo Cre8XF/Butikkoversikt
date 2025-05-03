@@ -11,43 +11,44 @@
 
 /* Light theme */
 [data-theme="light"] {
-  --bg-color: #e6eff7;
-  --section-bg: #d2e4ec;
-  --section-alt-bg: #c3dce6;
-  --card-bg: #ffffff;
-  --card-hover: #f0f6fa;
+  --bg-color: #e3e7ed; /* Lys blågrå bakgrunn */
+  --section-bg: #d0d8e0;
+  --section-alt-bg: #c1cbd4;
 
-  --header-bg: #476d9e;
-  --footer-bg: #476d9e;
-  --footer-text: #ffffff;
-  --footer-heading: #f1f5f9;
-  --footer-muted: #d1d5db;
-  --footer-border: #3b5d85;
+  --card-bg: #f8f9fa; /* Nesten hvit, men mindre skarp */
+  --card-hover: #e6edf2;
 
-  --btn-primary: #7cbcdb;
+  --header-bg: #4a6a8a; /* Dempet blå */
+  --footer-bg: #4a6a8a;
+  --footer-text: #f8fafc;
+  --footer-heading: #dce3e9;
+  --footer-muted: #b4bcc4;
+  --footer-border: #3b556f;
+
+  --btn-primary: #7eb6cf; /* Litt mørkere enn tidligere */
   --btn-hover: #d97d30;
-  --btn-shadow: rgba(244, 162, 89, 0.25);
+  --btn-shadow: rgba(217, 125, 48, 0.25);
 
-  --offer-bg: #fff3cd; /* Lys gul/oransje bakgrunn */
-  --offer-text: #7c3b00; /* Mørk varm brun for kontrast */
+  --offer-bg: #fff4d6;
+  --offer-text: #8a4b00;
 
-  --campaign-bg: #d1e7dd; /* Mild grønn (Bootstrap's success-light) */
-  --campaign-text: #0f5132; /* Mørk grønn tekst */
+  --campaign-bg: #e1f0e6;
+  --campaign-text: #175e41;
 
   --link-color: #2563eb;
-  --heading-color: #0f172a;
-  --text-color: #1f2937;
-  --text-muted: #6b7280;
+  --heading-color: #1a202c;
+  --text-color: #2d3748;
+  --text-muted: #718096;
 
   --border-color: #cbd5e1;
-  --hero-bg: #dcebf6;
-  --hero-gradient-start: #f6fafe;
-  --hero-gradient-end: #e1eef7;
+  --hero-bg: #dfe9f0;
+  --hero-gradient-start: #f1f5f9;
+  --hero-gradient-end: #dbe4ec;
   --accent-color: #fcd34d;
 
-  --shadow-sm: rgba(0, 0, 0, 0.04);
-  --shadow-md: rgba(0, 0, 0, 0.08);
-  --shadow-lg: rgba(0, 0, 0, 0.12);
+  --shadow-sm: rgba(0, 0, 0, 0.03);
+  --shadow-md: rgba(0, 0, 0, 0.06);
+  --shadow-lg: rgba(0, 0, 0, 0.1);
 
   --success-color: #10b981;
   --warning-color: #f59e0b;
