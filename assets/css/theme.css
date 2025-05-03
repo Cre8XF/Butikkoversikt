@@ -13,7 +13,7 @@
 [data-theme="light"] {
   /* 🧱 BAKGRUNNSFARGER */
   --bg-color: #cdd8e1; /* Bakgrunnsfarge for hele nettsiden */
-  --section-bg: #d0d8e0; /* Bakgrunn for standard seksjoner */
+  --section-bg: #6d829dc9; /* Bakgrunn for standard seksjoner */
   --section-alt-bg: #c1cbd4; /* Alternativ seksjonsbakgrunn (f.eks. annenhver) */
 
   /* 🧾 KORT / CARD */
