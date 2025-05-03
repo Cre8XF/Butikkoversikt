@@ -1,148 +1,117 @@
-📂 BASIS VARIABLER & BASIS STIL */
-/* ========================================= */
-/* === BASISSTIL FOR BEGGE TEMAER === */
+/* ==================================================
+   theme.css – Variabler for både lyst og mørkt tema
+   Brukt på Butikkoversikt.no
+   ================================================== */
+
+/* 🎨 Lyst tema (standard) */
 :root {
-  --transition-speed: 0.3s; /* 🌐 Hvor raskt overganger skjer (hover osv.) */
-  --border-radius: 0.5rem; /* 📐 Generell avrunding på knapper, kort osv. */
-  --font-family: "Inter", sans-serif; /* 🔤 Skrifttype brukt overalt */
-  --spacing-unit: 1rem; /* 📏 Standard avstand/margin/padding */
-  --shadow-default: 0 4px 8px rgba(0, 0, 0, 0.1); /* 🧱 Grunnskygge */
-}
+  /* Grunnoppsett */
+  --border-radius: 0.5rem; /* 📐 Generell avrunding */
+  --font-family: "Inter", sans-serif;
+  --spacing-unit: 1rem;
+  --transition-speed: 0.3s;
+  --shadow-default: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-/* === LYST TEMA – OPPDATERT FOR 2025-TRENDER === */
-[data-theme="light"] {
-  /* 🧱 BAKGRUNNSFARGER */
-  --bg-color: #f7e8d3; /* Bakgrunn for hele nettsiden */
-  --section-bg: #f2e5d0; /* Seksjonsbakgrunn */
-  --section-alt-bg: #e6dbc9; /* Alternativ seksjonsbakgrunn */
+  /* Farger – bakgrunner og seksjoner */
+  --bg-color: #ffffff;
+  --section-bg: #f9f9f9;
+  --section-alt-bg: #f1f5f9;
+  --card-bg: #ffffff;
+  --card-hover: #f3f4f6;
+  --guide-card-bg: var(--card-bg);
+  --guide-card-hover: var(--card-hover);
 
-  /* 🧾 KORT / CARD */
-  --card-bg: #ffffff; /* Bakgrunn inni kort */
-  --card-hover: #f3f0ea; /* Hovereffekt på kort */
+  /* Farger – tekst */
+  --text-color: #1e293b;
+  --text-muted: #64748b;
+  --heading-color: #0f172a;
+  --link-color: #2563eb;
+  --link-hover: #1d4ed8;
 
-  /* 🧭 HEADER & FOOTER */
-  --header-bg: #c99383; /* Toppmeny og footer */
-  --footer-bg: #c99383;
-  --footer-text: #fefefe; /* Tekst i footer */
-  --footer-heading: #f9f5f2; /* Footer-overskrifter */
-  --footer-muted: #d8c8bd; /* Dempet tekst i footer */
-  --footer-border: #a17668; /* Skillelinjer i footer */
+  /* Knapper */
+  --btn-primary: #2563eb;
+  --btn-primary-hover: #1d4ed8;
+  --btn-secondary: #e2e8f0;
+  --btn-secondary-hover: #cbd5e1;
+  --btn-outline-hover-bg: #f1f5f9;
+  --text-on-primary: #ffffff;
+  --text-on-secondary: #0f172a;
+  --btn-shadow: rgba(0, 0, 0, 0.05);
+  --btn-shadow-hover: rgba(0, 0, 0, 0.1);
 
-  /* 🔘 KNAPPER */
-  --btn-primary: #1a3e74;
-  --btn-hover: #102d59;
-  --btn-shadow: rgba(26, 62, 116, 0.25);
-  --btn-primary-text: #fff; /* Hvit tekst på knapper */
-  --btn-secondary: #f3f0ea; /* Sekundær knapp bakgrunn */
+  /* Kort og skygger */
+  --border-color: #e2e8f0;
+  --shadow-sm: rgba(0, 0, 0, 0.03);
+  --shadow-md: rgba(0, 0, 0, 0.06);
+  --shadow-lg: rgba(0, 0, 0, 0.1);
+  --guide-card-shadow: var(--shadow-md);
+  --guide-card-shadow-hover: var(--shadow-lg);
 
-  /* 🛍️ SPESIELLE SEKSJONER */
-  --offer-bg: #fff9e6; /* Ukens tilbud bakgrunn */
-  --offer-text: #8a4b00; /* Tekst i tilbudsseksjon */
-  --campaign-bg: #eaf7f1; /* Kampanje-bakgrunn */
-  --campaign-text: #175e41; /* Kampanjetekst */
+  /* Spesialseksjoner */
+  --hero-bg: #f8fafc;
+  --hero-gradient-start: #e0f2fe;
+  --hero-gradient-end: #bae6fd;
+  --offer-bg: #fcd34d;
+  --offer-text: #0f172a;
+  --campaign-bg: #4ade80;
+  --campaign-text: #064e3b;
 
-  /* 🔗 LENKER OG TEKST */
-  --link-color: #137dc5; /* Klar blå aksentfarge */
-  --heading-color: #2d3748; /* Overskrifter */
-  --text-color: #2d3748; /* Vanlig tekst */
-  --text-muted: #718096; /* Dempet tekst */
+  /* Footer og header */
+  --header-bg: #ffffff;
+  --footer-bg: #f1f5f9;
+  --footer-border: #e2e8f0;
+  --footer-heading: #0f172a;
+  --footer-muted: #64748b;
+  --footer-text: #1e293b;
 
-  /* 🧱 RAMMER OG KANTER */
-  --border-color: #d9cfc6; /* Kantlinjer */
-
-  /* 🦸 HERO-SEKSJON */
-  --hero-bg: #f0e4d8; /* Bakgrunn i helteseksjon */
-  --hero-gradient-start: #f9f5f1;
-  --hero-gradient-end: #f0e1cf;
-
-  --accent-color: #137dc5; /* Sekundær aksentfarge */
-
-  /* 🌫️ SKYGGER */
-  --shadow-sm: rgba(0, 0, 0, 0.02);
-  --shadow-md: rgba(0, 0, 0, 0.04);
-  --shadow-lg: rgba(0, 0, 0, 0.08);
-
-  /* ✅ TILSTANDSFARGER */
-  --success-color: #10b981;
+  /* Tilstandsfarger */
+  --success-color: #16a34a;
+  --danger-color: #dc2626;
   --warning-color: #f59e0b;
-  --danger-color: #ef4444;
-
-  /* 📚 GUIDER (egne kort) */
-  --guide-card-bg: var(--card-bg);
-  --guide-card-hover: var(--card-hover);
-  --guide-card-shadow: var(--shadow-md);
-  --guide-card-shadow-hover: var(--shadow-lg);
-
-  /* Søkeseksjon */
-  --search-bg: #fff;
-  --search-card-bg: #f9f9f9;
-  --search-border: #ddd;
-  --search-title-color: var(--text-dark);
-  --search-subcategory-color: #444;
-  --search-muted: #777;
-  --search-card-radius: 0.75rem;
-  --search-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --accent-color: #3b82f6;
 }
 
+/* 🌙 Mørkt tema */
 [data-theme="dark"] {
-  /* 🧱 BAKGRUNNSFARGER */
-  --bg-color: #0f172a; /* Hovedbakgrunn – mørkeblågrå */
-  --section-bg: #1e293b; /* Seksjonsbakgrunn */
-  --section-alt-bg: #334155; /* Alternativ seksjon (annenhver for kontrast) */
-
-  /* 🧾 KORT / CARD */
-  --card-bg: #1e293b; /* Kortbakgrunn */
-  --card-hover: #334155; /* Hovereffekt på kort */
-
-  /* 🧭 HEADER & FOOTER */
-  --header-bg: #0f172a; /* Meny / footer bakgrunn */
-  --footer-bg: #0f172a;
-  --footer-text: #f1f5f9; /* Vanlig tekst i footer */
-  --footer-heading: #e2e8f0; /* Overskrifter i footer */
-  --footer-muted: #94a3b8; /* Dempet tekst i footer */
-  --footer-border: #1e293b; /* Linjer eller skillefelt i footer */
-
-  /* 🔘 KNAPPER */
-  --btn-primary: #3b82f6; /* Blå knapp */
-  --btn-hover: #60a5fa; /* Lysere blå ved hover */
-  --btn-shadow: rgba(59, 130, 246, 0.3); /* Skygge under knapp */
-
-  /* 🛍️ SPESIELLE SEKSJONER */
-  --offer-bg: #facc15; /* Ukens tilbud – bakgrunn */
-  --offer-text: #1e293b; /* Ukens tilbud – tekst */
-
-  --campaign-bg: #4ade80; /* Kampanje – grønn bakgrunn */
-  --campaign-text: #064e3b; /* Kampanje – mørk tekst */
-
-  /* 🔗 LENKER OG TEKST */
-  --link-color: #93c5fd; /* Lenkefarge (lys blå) */
-  --heading-color: #f8fafc; /* Overskrifter */
-  --text-color: #e2e8f0; /* Brødtekst */
-  --text-muted: #94a3b8; /* Dempet tekst (undertekst, hjelpeinfo) */
-
-  /* 🧱 RAMMER OG KANTER */
-  --border-color: #334155; /* Kantfarge på kort og seksjoner */
-
-  /* 🦸 HERO-SEKSJON */
-  --hero-bg: #1e293b;
-  --hero-gradient-start: #0f172a;
-  --hero-gradient-end: #1e293b;
-
-  --accent-color: #fcd34d; /* Aksentfarge – gul */
-
-  /* 🌫️ SKYGGER */
-  --shadow-sm: rgba(255, 255, 255, 0.03);
-  --shadow-md: rgba(255, 255, 255, 0.06);
-  --shadow-lg: rgba(255, 255, 255, 0.1);
-
-  /* ✅ TILSTANDSFARGER */
-  --success-color: #22c55e;
-  --warning-color: #facc15;
+  --accent-color: #fcd34d;
+  --bg-color: #0f172a;
+  --border-color: #334155;
+  --btn-hover: #60a5fa;
+  --btn-primary: #3b82f6;
+  --btn-shadow: rgba(59, 130, 246, 0.3);
+  --campaign-bg: #4ade80;
+  --campaign-text: #064e3b;
+  --card-bg: #1e293b;
+  --card-hover: #334155;
   --danger-color: #ef4444;
-
-  /* 📚 GUIDER */
+  --footer-bg: #0f172a;
+  --footer-border: #1e293b;
+  --footer-heading: #e2e8f0;
+  --footer-muted: #94a3b8;
+  --footer-text: #f1f5f9;
   --guide-card-bg: var(--card-bg);
   --guide-card-hover: var(--card-hover);
-  --guide-card-shadow: var(--shadow-md);
   --guide-card-shadow-hover: var(--shadow-lg);
+  --guide-card-shadow: var(--shadow-md);
+  --header-bg: #0f172a;
+  --heading-color: #f8fafc;
+  --hero-bg: #1e293b;
+  --hero-gradient-end: #1e293b;
+  --hero-gradient-start: #0f172a;
+  --link-color: #93c5fd;
+  --offer-bg: #facc15;
+  --offer-text: #1e293b;
+  --section-alt-bg: #334155;
+  --section-bg: #1e293b;
+  --shadow-lg: rgba(255, 255, 255, 0.1);
+  --shadow-md: rgba(255, 255, 255, 0.06);
+  --shadow-sm: rgba(255, 255, 255, 0.03);
+  --success-color: #22c55e;
+  --text-color: #e2e8f0;
+  --text-muted: #94a3b8;
+  --warning-color: #facc15;
 }
+/* ==================================================
+   theme.css – Variabler for både lyst og mørkt tema
+   Brukt på Butikkoversikt.no
+   ================================================== */

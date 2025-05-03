@@ -1,47 +1,47 @@
-/* ✅ Globale knappestiler */
+/* ============================================
+   buttons.css – Knapper for Butikkoversikt.no
+   ============================================ */
+
 .btn {
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.6rem 1.5rem;
-  border-radius: var(--border-radius);
-  transition: all 0.2s ease-in-out;
   display: inline-block;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--btn-radius, 0.5rem);
+  border: 1px solid transparent;
+  cursor: pointer;
   text-align: center;
   text-decoration: none;
-  box-shadow: 0 3px 8px var(--btn-shadow);
-  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px var(--btn-shadow, rgba(0, 0, 0, 0.05));
 }
 
-/* ✅ Primærknapp */
 .btn-primary {
   background-color: var(--btn-primary);
-  border-color: var(--btn-primary);
-  color: var(--btn-primary-text);
+  color: var(--text-on-primary);
 }
 
 .btn-primary:hover {
-  background-color: var(--btn-hover);
-  box-shadow: 0 6px 14px var(--btn-shadow);
-  transform: translateY(-2px);
+  background-color: var(--btn-primary-hover);
+  box-shadow: 0 4px 8px var(--btn-shadow-hover, rgba(0, 0, 0, 0.1));
 }
 
-/* ✅ Sekundærknapp (f.eks. outline eller grå variant) */
-.btn-outline-secondary {
+.btn-secondary {
+  background-color: var(--btn-secondary);
+  color: var(--text-on-secondary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--btn-secondary-hover);
+  box-shadow: 0 4px 8px var(--btn-shadow-hover, rgba(0, 0, 0, 0.1));
+}
+
+.btn-outline {
   background-color: transparent;
-  color: var(--text-color);
   border: 1px solid var(--border-color);
+  color: var(--text-color);
 }
 
-.btn-outline-secondary:hover {
-  background-color: var(--btn-hover);
-  color: #fff;
-  border-color: var(--btn-hover);
-}
-
-/* ✅ Knapp for mørkt tema (kan tilpasses med media queries) */
-@media (prefers-color-scheme: dark) {
-  .btn-outline-secondary:hover {
-    background-color: var(--btn-hover-dark, #333);
-    border-color: var(--btn-hover-dark, #333);
-  }
+.btn-outline:hover {
+  background-color: var(--btn-outline-hover-bg, #f0f0f0);
 }

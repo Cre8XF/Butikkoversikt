@@ -1,17 +1,23 @@
-📂  BASIS STIL */
-
-/* Fade transitions */
-body, header, section, footer {
-  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
-}
-/* ========================================= */
+/* ============================================
+   base.css – Grunnleggende stil for Butikkoversikt.no
+   Avhenger av variabler definert i theme.css
+   ============================================ */
 
 body {
-  background-color: var(--bg-color);
-  font-family: "Inter", sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: var(--bg-body);
   color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
 }
 
 h1,
@@ -20,83 +26,40 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  line-height: 1.3;
+  color: var(--heading-color);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
 }
 
-.bg-header,
-header.bg-header {
-  background-color: var(--header-bg);
-  color: var(--text-heading);
-  border-bottom: 1px solid var(--border-color);
+.section {
+  padding: 3rem 0;
 }
 
-
-
-.bg-section {
-  background-color: var(--bg-color);
-}
-
-.bg-light-section {
-  background-color: var(--section-light);
-}
-
-.bg-muted {
-  background-color: var(--section-muted);
-}
-.bg-hero {
-  background: var(--hero-bg);
-}
-.bg-card {
-  background-color: var(--card-bg);
-  border: 1px solid var(--card-border);
-}
-.bg-offer {
-  background-color: var(--offer-bg);
-  color: var(--offer-text);
-}
-
-.bg-campaign {
-  background-color: var(--campaign-bg);
-  color: var(--campaign-text);
-}
-
-.section-alt {
-  background-color: var(--section-alt-bg);
-}
-.section-white {
-  background-color: var(--section-bg);
-}
-
-.section-gradient {
-  background: linear-gradient(
-    to right,
-    var(--section-alt-bg),
-    var(--section-bg)
-  );
-}
-.section-dark h2,
-.section-dark h3,
-.section-dark h5,
-.section-dark a,
-.section-dark p {
- color: var(--heading-color);
-}
-
-/* Øk luft under "Populære kategorier" */
-.section-gradient {
-  margin-bottom: 3rem;
-}
 .section-dark {
-  .section-dark {
-  background: linear-gradient(to right, var(--section-bg), var(--section-alt-bg));
-  color: var(--text-color);
-}
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  border-top: 1px solid var(--footer-border);
-  border-bottom: 1px solid var(--footer-border);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
 }
 
-/* ========================================= */
-/*
+.section-light {
+  background-color: var(--bg-light);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+  color: var(--text-on-primary);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.container {
+  max-width: 1140px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
