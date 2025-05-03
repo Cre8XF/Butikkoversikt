@@ -6,16 +6,16 @@
 /* 🎨 Lyst tema (standard) */
 :root {
   /* Grunnoppsett */
-  --border-radius: 0.5rem; /* 📐 Generell avrunding */
+  --border-radius: 0.5rem;
   --font-family: "Inter", sans-serif;
   --spacing-unit: 1rem;
   --transition-speed: 0.3s;
-  --shadow-default: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-default: 0 4px 8px rgba(0, 0, 0, 0.05);
 
   /* Farger – bakgrunner og seksjoner */
-  --bg-color: #ffffff;
-  --section-bg: #f9f9f9;
-  --section-alt-bg: #f1f5f9;
+  --bg-color: #f6f8fa;
+  --section-bg: #f9fafb;
+  --section-alt-bg: #f3f4f6;
   --card-bg: #ffffff;
   --card-hover: #f3f4f6;
   --guide-card-bg: var(--card-bg);
@@ -25,17 +25,17 @@
   --text-color: #1e293b;
   --text-muted: #64748b;
   --heading-color: #0f172a;
-  --link-color: #2563eb;
+  --link-color: #1e40af;
   --link-hover: #1d4ed8;
 
   /* Knapper */
-  --btn-primary: #2563eb;
+  --btn-primary: #1e40af;
   --btn-primary-hover: #1d4ed8;
-  --btn-secondary: #e2e8f0;
-  --btn-secondary-hover: #cbd5e1;
+  --btn-secondary: #e0e7ff;
+  --btn-secondary-hover: #c7d2fe;
   --btn-outline-hover-bg: #f1f5f9;
   --text-on-primary: #ffffff;
-  --text-on-secondary: #0f172a;
+  --text-on-secondary: #1e293b;
   --btn-shadow: rgba(0, 0, 0, 0.05);
   --btn-shadow-hover: rgba(0, 0, 0, 0.1);
 
@@ -65,10 +65,10 @@
   --footer-text: #1e293b;
 
   /* Tilstandsfarger */
-  --success-color: #16a34a;
-  --danger-color: #dc2626;
+  --success-color: #10b981;
+  --danger-color: #ef4444;
   --warning-color: #f59e0b;
-  --accent-color: #3b82f6;
+  --accent-color: #1d4ed8;
 }
 
 /* 🌙 Mørkt tema */
