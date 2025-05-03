@@ -1,113 +1,136 @@
 📂 BASIS VARIABLER & BASIS STIL */
 /* ========================================= */
+/* === BASISSTIL FOR BEGGE TEMAER === */
 :root {
-  /* Felles for begge temaene */
-  --transition-speed: 0.3s;
-  --border-radius: 0.5rem;
-  --font-family: "Inter", sans-serif;
-  --spacing-unit: 1rem;
-  --shadow-default: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s; /* 🌐 Hvor raskt overganger skjer (hover osv.) */
+  --border-radius: 0.5rem; /* 📐 Generell avrunding på knapper, kort osv. */
+  --font-family: "Inter", sans-serif; /* 🔤 Skrifttype brukt overalt */
+  --spacing-unit: 1rem; /* 📏 Standard avstand/margin/padding */
+  --shadow-default: 0 4px 8px rgba(0, 0, 0, 0.1); /* 🧱 Grunnskygge */
 }
 
-/* Light theme */
+/* === LYST TEMA === */
 [data-theme="light"] {
-  --bg-color: #e3e7ed; /* Lys blågrå bakgrunn */
-  --section-bg: #d0d8e0;
-  --section-alt-bg: #c1cbd4;
+  /* 🧱 BAKGRUNNSFARGER */
+  --bg-color: #cdd8e1; /* Bakgrunnsfarge for hele nettsiden */
+  --section-bg: #d0d8e0; /* Bakgrunn for standard seksjoner */
+  --section-alt-bg: #c1cbd4; /* Alternativ seksjonsbakgrunn (f.eks. annenhver) */
 
-  --card-bg: #f8f9fa; /* Nesten hvit, men mindre skarp */
-  --card-hover: #e6edf2;
+  /* 🧾 KORT / CARD */
+  --card-bg: #f8f9fa; /* Bakgrunn inni kort */
+  --card-hover: #e6edf2; /* Bakgrunn når du holder musen over kort */
 
-  --header-bg: #4a6a8a; /* Dempet blå */
+  /* 🧭 HEADER & FOOTER */
+  --header-bg: #4a6a8a; /* Toppmeny og bunntekst bakgrunn */
   --footer-bg: #4a6a8a;
-  --footer-text: #f8fafc;
-  --footer-heading: #dce3e9;
-  --footer-muted: #b4bcc4;
-  --footer-border: #3b556f;
+  --footer-text: #f8fafc; /* Vanlig tekst i footer */
+  --footer-heading: #dce3e9; /* Overskrifter i footer */
+  --footer-muted: #b4bcc4; /* Dempet tekst i footer (småtekster) */
+  --footer-border: #3b556f; /* Linjer i footer */
 
-  --btn-primary: #7eb6cf; /* Litt mørkere enn tidligere */
-  --btn-hover: #d97d30;
-  --btn-shadow: rgba(217, 125, 48, 0.25);
+  /* 🔘 KNAPPER */
+  --btn-primary: #7eb6cf; /* Hovedknapp */
+  --btn-hover: #d97d30; /* Hovereffekt for knapper */
+  --btn-shadow: rgba(217, 125, 48, 0.25); /* Skygge under knapp */
 
-  --offer-bg: #fff4d6;
-  --offer-text: #8a4b00;
+  /* 🛍️ SPESIELLE SEKSJONER */
+  --offer-bg: #fff4d6; /* Ukens tilbud - bakgrunn */
+  --offer-text: #8a4b00; /* Ukens tilbud - tekst */
+  --campaign-bg: #e1f0e6; /* Kampanjer - bakgrunn */
+  --campaign-text: #175e41; /* Kampanjer - tekst */
 
-  --campaign-bg: #e1f0e6;
-  --campaign-text: #175e41;
+  /* 🔗 LENKER OG TEKST */
+  --link-color: #2563eb; /* Standard lenkefarge */
+  --heading-color: #1a202c; /* Overskrifter generelt */
+  --text-color: #2d3748; /* Brødtekst (p, span...) */
+  --text-muted: #718096; /* Dempet tekst (brukes ofte i undertekster) */
 
-  --link-color: #2563eb;
-  --heading-color: #1a202c;
-  --text-color: #2d3748;
-  --text-muted: #718096;
+  /* 🧱 RAMMER OG KANTER */
+  --border-color: #cbd5e1; /* Kantfarge rundt kort og seksjoner */
 
-  --border-color: #cbd5e1;
+  /* 🦸 HERO-SEKSJON */
   --hero-bg: #dfe9f0;
   --hero-gradient-start: #f1f5f9;
   --hero-gradient-end: #dbe4ec;
-  --accent-color: #fcd34d;
 
+  --accent-color: #fcd34d; /* Gul aksentfarge (brukes lite foreløpig) */
+
+  /* 🌫️ SKYGGER */
   --shadow-sm: rgba(0, 0, 0, 0.03);
   --shadow-md: rgba(0, 0, 0, 0.06);
   --shadow-lg: rgba(0, 0, 0, 0.1);
 
-  --success-color: #10b981;
-  --warning-color: #f59e0b;
-  --danger-color: #ef4444;
+  /* ✅ TILSTANDSFARGER */
+  --success-color: #10b981; /* Grønn suksess */
+  --warning-color: #f59e0b; /* Oransje advarsel */
+  --danger-color: #ef4444; /* Rød feil */
 
+  /* 📚 GUIDER (egne kort) */
   --guide-card-bg: var(--card-bg);
   --guide-card-hover: var(--card-hover);
   --guide-card-shadow: var(--shadow-md);
   --guide-card-shadow-hover: var(--shadow-lg);
 }
 
-/* Dark Theme */
 [data-theme="dark"] {
-  --bg-color: #0f172a; /* 🔹 Bakgrunnsfarge for <body> */
-  --border-color: #475569; /* 📏 Standard border */
-  --btn-focus-shadow: rgba(147, 197, 253, 0.3); /* 🔘 Knapp i fokus */
-  --btn-hover: #2563eb; /* 🔘 Knapp hover */
-  --btn-primary: #3b82f6; /* 🔘 Primærknapp */
-  --btn-shadow: rgba(147, 197, 253, 0.25); /* 🔘 Knappeskygge */
-  --card-bg: #1e293b; /* 🧾 Kortbakgrunn */
-  --card-hover: #3b4c64; /* 🧾 Kort ved hover */
-  --danger-color: #ef4444; /* ❌ Feiltilstand */
-  --focus-color: #60a5fa; /* 🧾 Fokusrammefarge */
-  --focus-shadow: rgba(147, 197, 253, 0.3); /* 🧾 Fokus-skygge */
-  --footer-bg: #0f172a; /* 🦶 Footer bakgrunn */
-  --footer-border: #334155; /* 🦶 Footer kant */
-  --footer-heading: #e2e8f0; /* 🦶 Footer overskrift */
-  --footer-muted: #64748b; /* 🦶 Footer dempet tekst */
-  --footer-text: #94a3b8; /* 🦶 Footer tekst */
-  --heading-color: #f1f5f9; /* 🔤 Overskrifter */
-  --header-bg: #1e293b; /* 🗂️ Header bakgrunn */
-  --hero-bg: #0f172a; /* 🔹 Bakgrunn for helteområde */
-  --hero-gradient-end: #0f172a; /* 🔹 Gradientslutt for hero */
-  --hero-gradient-start: #1e293b; /* 🔹 Gradientstart for hero */
-  --icon-glow: rgba(147, 197, 253, 0.4); /* 🌟 Ikonglød */
-  --input-bg: #1e293b; /* 🧾 Skjemabakgrunn */
-  --link-color: #60a5fa; /* 🔗 Lenker */
-  --placeholder-color: #aaa; /* 🔤 Skjema-placeholdertekst */
-  --rating-star-color: #fbbf24; /* ⭐ Vurderingsstjerner */
-  --section-alt-bg: #334155; /* 🔹 Alternativ seksjonsbakgrunn */
-  --section-bg: #1e293b; /* 🔹 Seksjonsbakgrunn standard */
-  --section-dark-end: #1e293b; /* 🔹 Gradientslutt for mørk seksjon */
-  --section-dark-start: #0f172a; /* 🔹 Gradientstart for mørk seksjon */
-  --section-light: #1e293b; /* 🔹 Lys seksjon (ekstra) */
-  --section-muted: #334155; /* 🔹 Muted seksjon (grå) */
-  --section-white: #1e293b; /* 🔹 Helt hvit seksjon */
-  --shadow-lg: rgba(0, 0, 0, 0.25); /* 🌑 Skygge stor */
-  --shadow-md: rgba(0, 0, 0, 0.15); /* 🌑 Skygge medium */
-  --shadow-primary-glow: rgba(147, 197, 253, 0.25);
+  /* 🧱 BAKGRUNNSFARGER */
+  --bg-color: #0f172a; /* Hovedbakgrunn – mørkeblågrå */
+  --section-bg: #1e293b; /* Seksjonsbakgrunn */
+  --section-alt-bg: #334155; /* Alternativ seksjon (annenhver for kontrast) */
 
-  --guide-card-bg: #f9fafb; /* lett kontrast mot hvit bakgrunn */
-  --guide-card-hover: #eef2f7; /* subtil lys hover */
-  --guide-card-shadow: rgba(0, 0, 0, 0.08);
-  --guide-card-shadow-hover: rgba(0, 0, 0, 0.16);
+  /* 🧾 KORT / CARD */
+  --card-bg: #1e293b; /* Kortbakgrunn */
+  --card-hover: #334155; /* Hovereffekt på kort */
 
-  /* 🌟 Blå glød f.eks. kort hover */
-  --shadow-sm: rgba(0, 0, 0, 0.1); /* 🌑 Skygge liten */
-  --success-color: #10b981; /* ✅ Successtilstand */
-  --text-color: #e2e8f0; /* 🔤 Standard tekst */
-  --text-muted: #94a3b8; /* 🔤 Dempet tekst */
-  --warning-color: #f59e0b; /* ⚠️ Advarsel */
+  /* 🧭 HEADER & FOOTER */
+  --header-bg: #0f172a; /* Meny / footer bakgrunn */
+  --footer-bg: #0f172a;
+  --footer-text: #f1f5f9; /* Vanlig tekst i footer */
+  --footer-heading: #e2e8f0; /* Overskrifter i footer */
+  --footer-muted: #94a3b8; /* Dempet tekst i footer */
+  --footer-border: #1e293b; /* Linjer eller skillefelt i footer */
+
+  /* 🔘 KNAPPER */
+  --btn-primary: #3b82f6; /* Blå knapp */
+  --btn-hover: #60a5fa; /* Lysere blå ved hover */
+  --btn-shadow: rgba(59, 130, 246, 0.3); /* Skygge under knapp */
+
+  /* 🛍️ SPESIELLE SEKSJONER */
+  --offer-bg: #facc15; /* Ukens tilbud – bakgrunn */
+  --offer-text: #1e293b; /* Ukens tilbud – tekst */
+
+  --campaign-bg: #4ade80; /* Kampanje – grønn bakgrunn */
+  --campaign-text: #064e3b; /* Kampanje – mørk tekst */
+
+  /* 🔗 LENKER OG TEKST */
+  --link-color: #93c5fd; /* Lenkefarge (lys blå) */
+  --heading-color: #f8fafc; /* Overskrifter */
+  --text-color: #e2e8f0; /* Brødtekst */
+  --text-muted: #94a3b8; /* Dempet tekst (undertekst, hjelpeinfo) */
+
+  /* 🧱 RAMMER OG KANTER */
+  --border-color: #334155; /* Kantfarge på kort og seksjoner */
+
+  /* 🦸 HERO-SEKSJON */
+  --hero-bg: #1e293b;
+  --hero-gradient-start: #0f172a;
+  --hero-gradient-end: #1e293b;
+
+  --accent-color: #fcd34d; /* Aksentfarge – gul */
+
+  /* 🌫️ SKYGGER */
+  --shadow-sm: rgba(255, 255, 255, 0.03);
+  --shadow-md: rgba(255, 255, 255, 0.06);
+  --shadow-lg: rgba(255, 255, 255, 0.1);
+
+  /* ✅ TILSTANDSFARGER */
+  --success-color: #22c55e;
+  --warning-color: #facc15;
+  --danger-color: #ef4444;
+
+  /* 📚 GUIDER */
+  --guide-card-bg: var(--card-bg);
+  --guide-card-hover: var(--card-hover);
+  --guide-card-shadow: var(--shadow-md);
+  --guide-card-shadow-hover: var(--shadow-lg);
 }
