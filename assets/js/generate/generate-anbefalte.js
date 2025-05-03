@@ -40,7 +40,7 @@ function visButikker() {
 
   // Skjul/vis knapper
   document.getElementById("vis-flere-butikker").style.display = (vistAntall >= butikker.length) ? "none" : "inline-block";
-  document.getElementById("vis-faerre-butikker").style.display = (vistAntall > antallViste) ? "inline-block" : "none";
+  document.getElementById("vis-færre-butikker").style.display = (vistAntall > antallViste) ? "inline-block" : "none";
 }
 
 // 3. Lytt på knappene
@@ -49,7 +49,7 @@ document.getElementById("vis-flere-butikker").addEventListener("click", () => {
   visButikker();
 });
 
-document.getElementById("vis-faerre-butikker").addEventListener("click", () => {
+document.getElementById("vis-færre-butikker").addEventListener("click", () => {
   vistAntall = antallViste;
   visButikker();
 });
