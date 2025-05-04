@@ -48,6 +48,7 @@
   --offer-text: #1e293b;
   --campaign-bg: #bbf7d0; /* Grønn kampanjebakgrunn */
   --campaign-text: #064e3b;
+  --search-section-bg: #e8ecf9;
 
   /* ========= FOOTER OG HEADER ========= */
   --header-bg: #ffffff;
@@ -67,18 +68,18 @@
 /* 🌙 Mørkt tema */
 :root[data-theme="dark"] {
   /* ========= BAKGRUNN OG SEKSJONER ========= */
-  --bg-color: #0f172a;                   /* Hovedbakgrunn – nesten svartblå */
-  --section-bg: #1e293b;                /* Seksjonsbakgrunn – mørk blågrå */
-  --section-alt-bg: #273549;            /* Alternativ seksjon – gråblå */
-  --hero-bg: #334155;                   /* Hero – mørkere gråblå */
+  --bg-color: #0f172a; /* Hovedbakgrunn – nesten svartblå */
+  --section-bg: #1e293b; /* Seksjonsbakgrunn – mørk blågrå */
+  --section-alt-bg: #273549; /* Alternativ seksjon – gråblå */
+  --hero-bg: #334155; /* Hero – mørkere gråblå */
   --card-bg: #1e293b;
   --card-hover: #273549;
 
   /* ========= TEKST ========= */
-  --text-color: #f1f5f9;                /* Lys tekst */
-  --text-muted: #94a3b8;                /* Grålig tekst */
-  --heading-color: #e2e8f0;             /* Ekstra lys overskrift */
-  --link-color: #93c5fd;                /* Lys blå */
+  --text-color: #f1f5f9; /* Lys tekst */
+  --text-muted: #94a3b8; /* Grålig tekst */
+  --heading-color: #e2e8f0; /* Ekstra lys overskrift */
+  --link-color: #93c5fd; /* Lys blå */
   --link-hover: #60a5fa;
 
   /* ========= KNAPPER ========= */
@@ -109,6 +110,7 @@
   --offer-text: #1e293b;
   --campaign-bg: #22c55e;
   --campaign-text: #064e3b;
+  --search-section-bg: #59668f;
 
   /* ========= FOOTER OG HEADER ========= */
   --header-bg: #1e293b;
@@ -123,9 +125,16 @@
   --danger-color: #f87171;
   --warning-color: #fbbf24;
   --accent-color: #3b82f6;
+
+  /* ========= Søkefelt ========= */
+  --search-section-bg: #1e293b; /* Mørk, men ikke svart */
+  --search-input-bg: #0f172a; /* Inndatafelt – tydelig kontrast */
+  --search-input-text: #f1f5f9;
+  --search-input-border: #334155;
+  --search-result-bg: #273549;
+  --search-result-border: #334155;
 }
 
-}
 /* ==================================================
    theme.css – Variabler for både lyst og mørkt tema
    Brukt på Butikkoversikt.no

@@ -87,3 +87,28 @@
   max-width: 700px;
   margin: 0 auto;
 }
+
+[data-theme="dark"] .search-section {
+  background-color: var(--search-section-bg);
+}
+
+[data-theme="dark"] .search-input {
+  background-color: var(--search-input-bg);
+  color: var(--search-input-text);
+  border: 1px solid var(--search-input-border);
+  box-shadow: none;
+}
+
+[data-theme="dark"] .search-input::placeholder {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] #search-results {
+  background-color: transparent;
+}
+
+[data-theme="dark"] .result-kort {
+  background-color: var(--search-result-bg);
+  border: 1px solid var(--search-result-border);
+  box-shadow: var(--shadow-sm);
+}
