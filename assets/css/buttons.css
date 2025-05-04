@@ -19,21 +19,24 @@
 .btn-primary {
   background-color: var(--btn-primary);
   color: var(--text-on-primary);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-primary:hover {
   background-color: var(--btn-primary-hover);
-  box-shadow: 0 4px 8px var(--btn-shadow-hover, rgba(0, 0, 0, 0.1));
+  color: var(--text-on-primary);
+  box-shadow: var(--btn-shadow-hover);
 }
 
 .btn-secondary {
   background-color: var(--btn-secondary);
   color: var(--text-on-secondary);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
 .btn-secondary:hover {
   background-color: var(--btn-secondary-hover);
-  box-shadow: 0 4px 8px var(--btn-shadow-hover, rgba(0, 0, 0, 0.1));
+  color: var(--text-on-secondary);
+  box-shadow: var(--btn-shadow-hover);
 }
 
 .btn-outline {
@@ -44,4 +47,21 @@
 
 .btn-outline:hover {
   background-color: var(--btn-outline-hover-bg, #f0f0f0);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: scale(1.02);
+}
+.btn-primary,
+.btn-secondary {
+  transition: all 0.3s ease;
+}
+.btn:disabled,
+.btn.disabled {
+  background-color: var(--btn-secondary);
+  color: var(--text-on-secondary);
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: none;
 }

@@ -29,7 +29,7 @@
   --text-on-primary: #ffffff;
   --text-on-secondary: #1e293b;
   --btn-shadow: rgba(30, 64, 175, 0.1); /* Mørkeblå knappeskygge */
-  --btn-shadow-hover: rgba(30, 64, 175, 0.15);
+  --btn-shadow-hover: 0 4px 6px rgba(30, 64, 175, 0.3);
 
   /* ========= KORT OG SKYGGER ========= */
   --border-color: #e2e8f0;
