@@ -219,3 +219,21 @@
   padding: 8px 16px;
   border-radius: 999px;
 }
+.hero-section {
+  background: linear-gradient(
+    to bottom,
+    var(--hero-gradient-start),
+    var(--hero-gradient-end)
+  );
+  color: var(--heading-color);
+}
+
+.filter-section {
+  background-color: var(--filter-bg);
+  border-top: 1px solid var(--filter-border);
+  border-bottom: 1px solid var(--filter-border);
+}
+
+.store-grid-section {
+  background-color: var(--section-bg);
+}

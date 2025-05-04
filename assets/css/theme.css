@@ -63,7 +63,13 @@
   --danger-color: #ef4444;
   --warning-color: #f59e0b;
   --accent-color: #1d4ed8;
-}
+
+  --hero-title-size: 2.5rem;
+  --hero-subtitle-color: var(--text-muted);
+  --filter-bg: var(--section-bg);
+  --filter-border: var(--border-color);
+
+
 
 /* 🌙 Mørkt tema */
 :root[data-theme="dark"] {

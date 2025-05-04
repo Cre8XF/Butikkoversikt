@@ -41,12 +41,17 @@
     </header>
 
     <main>
-        <section class="section bg-light text-center py-5">
+        <!-- Ny layout for alle-butikker.html med forbedret struktur og visuell stil -->
+        
+        <section class="hero-section py-5 text-center">
             <div class="container">
-                <h1 class="mb-4">Utforsk Nettbutikker</h1>
-                <p class="mb-4">Finn butikker innenfor alle kategorier, eller bruk filteret for å finne det du leter
-                    etter!</p>
-
+                <h1 class="display-5 fw-bold">Utforsk nettbutikker</h1>
+                <p class="lead text-muted">Filtrer og bla gjennom kategorier for å finne det du leter etter</p>
+            </div>
+        </section>
+        
+        <section class="filter-section py-4">
+            <div class="container">
                 <div class="mb-4">
                     <h5 class="mb-2">Filtrer etter kategori:</h5>
                     <div id="kategori-tags" class="d-flex flex-wrap gap-2 justify-content-center"></div>
@@ -58,16 +63,16 @@
                 <div class="text-center mb-4">
                     <button id="nullstill-filter" class="btn btn-outline-secondary btn-sm">Nullstill filter</button>
                 </div>
-
-
-
-                <div id="butikk-teller" class="mt-3 mb-4 h6 text-muted"></div>
-                
-                <!-- Container for butikkortene -->
-                <div id="butikk-container" class="row g-4"></div>
-
+                <div id="butikk-teller" class="text-center text-muted mb-4 small"></div>
             </div>
         </section>
+        
+        <section class="store-grid-section pb-5">
+            <div class="container">
+                <div id="butikk-container" class="row g-4"></div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
