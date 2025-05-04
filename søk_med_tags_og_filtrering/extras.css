@@ -1,0 +1,48 @@
+
+/* 🎯 Underkategori-tag-stil */
+.subcategory-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.subcategory-tags .tag {
+  background-color: var(--btn-secondary);
+  color: var(--text-on-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subcategory-tags .tag:hover {
+  background-color: var(--btn-secondary-hover);
+}
+
+/* 🎯 Søkeresultater */
+.search-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px var(--shadow-sm);
+}
+
+.search-card-body {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.search-thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+}
