@@ -26,7 +26,7 @@
           <small class="text-muted-theme">Norges nettbutikk-guide</small>
         </div>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" title="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
@@ -49,6 +49,21 @@
       <a href="alle-butikker.html" class="btn btn-primary btn-lg mt-3 fade-in">Se alle butikker</a>
     </div>
   </section>
+
+  <section id="ukens-kampanje" class="campaign-banner d-none fade-in py-4">
+    <div class="container text-center">
+      <a id="kampanje-lenke" href="#" target="_blank" rel="noopener" class="text-decoration-none d-block">
+        <div class="campaign-content d-flex flex-column flex-md-row align-items-center gap-3 justify-content-center">
+          <img id="kampanje-bilde" src="" alt="Kampanjebilde" class="kampanje-img rounded shadow-sm" />
+          <div class="text-start">
+            <h5 id="kampanje-tittel" class="mb-1"></h5>
+            <p id="kampanje-beskrivelse" class="mb-0 text-muted small"></p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
 
   <!-- Søk -->
   <section class="search-section py-5" style="background-color: var(--search-section-bg);">
@@ -104,6 +119,8 @@
   <script src="assets/js/generate/generate-anbefalte.js?v=1.2"></script>
   <script src="assets/js/generate/generate-topp25.js?v=1.2"></script>
   <script src="assets/js/generate/generate-search-forside.js?v=1.2"></script>
+  <script src="assets/js/generate/generate-kampanjer.js?v=1.0"></script>
+
 </body>
 
 </html>

@@ -50,3 +50,40 @@
   background-color: var(--border-color);
   margin: 3rem 0;
 }
+
+/* ✅ Kampanjer */
+.campaign-banner {
+  background-color: var(--campaign-bg);
+  color: var(--campaign-text);
+  padding: 1.75rem 1.25rem;
+  margin: 2rem auto;
+  border-radius: 0.75rem;
+  max-width: 960px;
+  box-shadow: 0 4px 12px var(--shadow-md);
+}
+
+.campaign-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.kampanje-img {
+  width: 80px;
+  height: auto;
+  border-radius: 0.5rem;
+  background: #fff;
+  padding: 0.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#kampanje-tittel {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+#kampanje-beskrivelse {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}

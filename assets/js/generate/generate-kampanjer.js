@@ -1,51 +1,16 @@
-// generate-kategori.js
+fetch("assets/data/kampanjer.json")
+  .then(res => res.json())
+  .then(data => {
+    if (!data.length) return;
 
-document.addEventListener("DOMContentLoaded", () => {
-  const params = new URLSearchParams(window.location.search);
-  const valgtKategori = params.get("kategori");
+    const kampanje = data[0]; // evt. random: data[Math.floor(Math.random() * data.length)]
 
-  const kategoriTittel = document.getElementById("kategori-tittel");
-  const butikkContainer = document.getElementById("butikk-container");
+    document.getElementById("kampanje-tittel").textContent = kampanje.title;
+    document.getElementById("kampanje-beskrivelse").textContent = kampanje.description;
+    document.getElementById("kampanje-bilde").src = kampanje.image;
+    document.getElementById("kampanje-bilde").alt = kampanje.title;
+    document.getElementById("kampanje-lenke").href = kampanje.link;
 
-  if (!valgtKategori || !kategoriTittel || !butikkContainer) {
-    console.error("Mangler kategori eller container");
-    return;
-  }
-
-  fetch("assets/data/butikker.json")
-    .then(r => r.json())
-    .then(butikker => {
-      const filtrerteButikker = butikker.filter(b =>
-        b.category?.toLowerCase() === valgtKategori.toLowerCase()
-      );
-
-      kategoriTittel.textContent = valgtKategori;
-
-      if (filtrerteButikker.length === 0) {
-        butikkContainer.innerHTML = `<p class="text-muted">Ingen butikker funnet i denne kategorien.</p>`;
-        return;
-      }
-
-      butikkContainer.innerHTML = "";
-
-      filtrerteButikker.forEach(butikk => {
-        const col = document.createElement("div");
-        col.className = "col-6 col-md-4 col-lg-3";
-
-        col.innerHTML = `
-          <a href="${butikk.url}" target="_blank" rel="noopener" class="text-decoration-none">
-            <div class="card p-3 h-100">
-              <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" class="img-fluid mb-2" style="height: 100px; object-fit: contain;">
-              <h6 class="fw-bold">${butikk.name}</h6>
-              <p class="text-muted small">${butikk.description || ""}</p>
-            </div>
-          </a>
-        `;
-        butikkContainer.appendChild(col);
-      });
-    })
-    .catch(err => {
-      console.error("Feil ved lasting av butikker.json:", err);
-      butikkContainer.innerHTML = "<p>Kunne ikke laste butikkene.</p>";
-    });
-});
+    document.getElementById("ukens-kampanje").classList.remove("d-none");
+  })
+  .catch(err => console.error("Klarte ikke å hente kampanje:", err));
