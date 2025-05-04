@@ -1,10 +1,9 @@
-
 // generate-alle-butikker-filter-tags-enhanced-full.js – full støtte for tags/dropdowns + visningsbytte
 
 window.addEventListener("DOMContentLoaded", () => {
   fetch("assets/data/butikker.json")
-    .then(res => res.json())
-    .then(data => {
+    .then((res) => res.json())
+    .then((data) => {
       byggTagFilter(data);
       byggDropdownFilter(data);
       visButikker(data);
@@ -42,12 +41,15 @@ function byggTagFilter(butikker) {
   const underkategoriTags = document.getElementById("underkategori-tags");
   const nullstill = document.getElementById("nullstill-filter");
 
-  const kategorier = [...new Set(butikker.map(b => b.category).filter(Boolean))];
+  const kategorier = [
+    ...new Set(butikker.map((b) => b.category).filter(Boolean)),
+  ];
 
   function lagTag(text, type) {
     const btn = document.createElement("button");
     btn.textContent = text;
-    btn.className = "filter-tag " + (type === "kategori" ? "kategori" : "underkategori");
+    btn.className =
+      "filter-tag " + (type === "kategori" ? "kategori" : "underkategori");
     btn.addEventListener("click", () => {
       if (type === "kategori") {
         toggleTag(aktivKategoriTags, text, btn);
@@ -60,19 +62,20 @@ function byggTagFilter(butikker) {
     return btn;
   }
 
-  kategorier.forEach(k => kategoriTags.appendChild(lagTag(k, "kategori")));
+  kategorier.forEach((k) => kategoriTags.appendChild(lagTag(k, "kategori")));
 
   function oppdaterUnderkategoriTags() {
     underkategoriTags.innerHTML = "";
-    const relevanteButikker = aktivKategoriTags.size > 0
-      ? alleButikker.filter(b => aktivKategoriTags.has(b.category))
-      : alleButikker;
+    const relevanteButikker =
+      aktivKategoriTags.size > 0
+        ? alleButikker.filter((b) => aktivKategoriTags.has(b.category))
+        : alleButikker;
 
-    const underkategorier = [...new Set(
-      relevanteButikker.flatMap(b => b.subcategory || [])
-    )];
+    const underkategorier = [
+      ...new Set(relevanteButikker.flatMap((b) => b.subcategory || [])),
+    ];
 
-    underkategorier.forEach(sub => {
+    underkategorier.forEach((sub) => {
       const tag = lagTag(sub, "underkategori");
       underkategoriTags.appendChild(tag);
     });
@@ -81,7 +84,9 @@ function byggTagFilter(butikker) {
   nullstill.addEventListener("click", () => {
     aktivKategoriTags.clear();
     aktivUnderkategoriTags.clear();
-    document.querySelectorAll(".filter-tag").forEach(tag => tag.classList.remove("active"));
+    document
+      .querySelectorAll(".filter-tag")
+      .forEach((tag) => tag.classList.remove("active"));
     oppdaterUnderkategoriTags();
     filtrer();
   });
@@ -93,9 +98,11 @@ function byggDropdownFilter(butikker) {
   const kategoriSelect = document.getElementById("kategori-filter");
   const underkategoriSelect = document.getElementById("underkategori-filter");
 
-  const kategorier = [...new Set(butikker.map(b => b.category).filter(Boolean))];
+  const kategorier = [
+    ...new Set(butikker.map((b) => b.category).filter(Boolean)),
+  ];
 
-  kategorier.forEach(k => {
+  kategorier.forEach((k) => {
     const opt = document.createElement("option");
     opt.value = k;
     opt.textContent = k;
@@ -106,12 +113,13 @@ function byggDropdownFilter(butikker) {
     const valgtKategori = kategoriSelect.value;
     const subOptions = new Set(
       alleButikker
-        .filter(b => valgtKategori === "alle" || b.category === valgtKategori)
-        .flatMap(b => b.subcategory || [])
+        .filter((b) => valgtKategori === "alle" || b.category === valgtKategori)
+        .flatMap((b) => b.subcategory || [])
     );
 
-    underkategoriSelect.innerHTML = "<option value='alle'>Alle underkategorier</option>";
-    [...subOptions].forEach(sub => {
+    underkategoriSelect.innerHTML =
+      "<option value='alle'>Alle underkategorier</option>";
+    [...subOptions].forEach((sub) => {
       const opt = document.createElement("option");
       opt.value = sub;
       opt.textContent = sub;
@@ -135,10 +143,12 @@ function toggleTag(set, value, btn) {
 }
 
 function filtrer() {
-  const filtrerte = alleButikker.filter(b => {
-    const matchKategori = aktivKategoriTags.size === 0 || aktivKategoriTags.has(b.category);
-    const matchUnderkategori = aktivUnderkategoriTags.size === 0 ||
-      (b.subcategory || []).some(sub => aktivUnderkategoriTags.has(sub));
+  const filtrerte = alleButikker.filter((b) => {
+    const matchKategori =
+      aktivKategoriTags.size === 0 || aktivKategoriTags.has(b.category);
+    const matchUnderkategori =
+      aktivUnderkategoriTags.size === 0 ||
+      (b.subcategory || []).some((sub) => aktivUnderkategoriTags.has(sub));
     return matchKategori && matchUnderkategori;
   });
 
@@ -149,9 +159,10 @@ function filtrerDropdown() {
   const k = document.getElementById("kategori-filter").value;
   const u = document.getElementById("underkategori-filter").value;
 
-  const filtrerte = alleButikker.filter(b => {
+  const filtrerte = alleButikker.filter((b) => {
     const matchKategori = k === "alle" || b.category === k;
-    const matchUnderkategori = u === "alle" || (b.subcategory || []).includes(u);
+    const matchUnderkategori =
+      u === "alle" || (b.subcategory || []).includes(u);
     return matchKategori && matchUnderkategori;
   });
 
@@ -165,21 +176,53 @@ function visButikker(butikker) {
 
   butikker.forEach((butikk) => {
     const col = document.createElement("div");
-    col.className = "col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch";
+    col.className = "col-12 col-sm-6 col-md-4 col-lg-3 d-flex";
 
     const card = document.createElement("div");
-    card.className = "store-card top25-card text-center w-100";
+    card.className = "card category-card h-100 d-flex flex-column text-center";
 
-    card.innerHTML = `
-      <a href="${butikk.url}" target="_blank" rel="noopener" class="text-decoration-none text-dark">
-        <img src="${butikk.image}" alt="${butikk.name}" class="card-img-top p-3" style="height: 120px; object-fit: contain;" loading="lazy">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title mb-2">${butikk.name}</h5>
-          <p class="card-text small text-muted">${butikk.description || ""}</p>
-        </div>
-      </a>
-    `;
+    const imgLink = document.createElement("a");
+    imgLink.href = butikk.url;
+    imgLink.target = "_blank";
+    imgLink.rel = "noopener";
 
+    const img = document.createElement("img");
+    img.src = butikk.image;
+    img.alt = butikk.name;
+    img.className = "card-img-top p-3";
+    img.loading = "lazy";
+    img.style.height = "120px";
+    img.style.objectFit = "contain";
+
+    imgLink.appendChild(img);
+    card.appendChild(imgLink);
+
+    const body = document.createElement("div");
+    body.className = "card-body d-flex flex-column justify-content-between";
+
+    const bodyInner = document.createElement("div");
+    const title = document.createElement("h6");
+    title.className = "card-title";
+    title.textContent = butikk.name;
+
+    const desc = document.createElement("p");
+    desc.className = "card-text small text-muted";
+    desc.textContent = butikk.description || "";
+
+    bodyInner.appendChild(title);
+    bodyInner.appendChild(desc);
+
+    const btn = document.createElement("a");
+    btn.href = butikk.url;
+    btn.target = "_blank";
+    btn.rel = "noopener";
+    btn.className = "btn btn-primary mt-3";
+    btn.textContent = "Besøk";
+
+    body.appendChild(bodyInner);
+    body.appendChild(btn);
+
+    card.appendChild(body);
     col.appendChild(card);
     container.appendChild(col);
   });
