@@ -40,6 +40,8 @@
   --guide-card-hover: var(--card-hover);
   --guide-card-shadow: var(--shadow-md);
   --guide-card-shadow-hover: var(--shadow-lg);
+  --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  --card-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.1);
 
   /* ========= SPESIALSEKSJONER ========= */
   --hero-gradient-start: #cbd5e1;
@@ -68,8 +70,7 @@
   --hero-subtitle-color: var(--text-muted);
   --filter-bg: var(--section-bg);
   --filter-border: var(--border-color);
-
-
+}
 
 /* 🌙 Mørkt tema */
 :root[data-theme="dark"] {
