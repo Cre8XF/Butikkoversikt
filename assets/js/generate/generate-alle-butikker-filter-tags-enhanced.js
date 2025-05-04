@@ -1,13 +1,34 @@
 
-// generate-alle-butikker-filter-tags-enhanced.js – kategori visuell oppgradering + dynamiske underkategorier
+// generate-alle-butikker-filter-tags-enhanced-full.js – full støtte for tags/dropdowns + visningsbytte
 
 window.addEventListener("DOMContentLoaded", () => {
   fetch("assets/data/butikker.json")
     .then(res => res.json())
     .then(data => {
       byggTagFilter(data);
+      byggDropdownFilter(data);
       visButikker(data);
     });
+
+  // Visningsbytte
+  const toggleBtn = document.getElementById("filterViewToggle");
+  const tagWrapper = document.getElementById("tag-filter-wrapper");
+  const dropdownWrapper = document.getElementById("dropdown-filter-wrapper");
+
+  if (toggleBtn && tagWrapper && dropdownWrapper) {
+    toggleBtn.addEventListener("click", () => {
+      const brukerDropdown = dropdownWrapper.style.display !== "none";
+      if (brukerDropdown) {
+        dropdownWrapper.style.display = "none";
+        tagWrapper.style.display = "block";
+        toggleBtn.textContent = "Bytt til dropdown-visning";
+      } else {
+        dropdownWrapper.style.display = "block";
+        tagWrapper.style.display = "none";
+        toggleBtn.textContent = "Bytt til tag-visning";
+      }
+    });
+  }
 });
 
 let aktivKategoriTags = new Set();
@@ -30,7 +51,7 @@ function byggTagFilter(butikker) {
     btn.addEventListener("click", () => {
       if (type === "kategori") {
         toggleTag(aktivKategoriTags, text, btn);
-        oppdaterUnderkategoriTags(); // oppdater synlige underkategorier basert på valgte kategorier
+        oppdaterUnderkategoriTags();
       } else {
         toggleTag(aktivUnderkategoriTags, text, btn);
       }
@@ -65,7 +86,42 @@ function byggTagFilter(butikker) {
     filtrer();
   });
 
-  oppdaterUnderkategoriTags(); // init
+  oppdaterUnderkategoriTags();
+}
+
+function byggDropdownFilter(butikker) {
+  const kategoriSelect = document.getElementById("kategori-filter");
+  const underkategoriSelect = document.getElementById("underkategori-filter");
+
+  const kategorier = [...new Set(butikker.map(b => b.category).filter(Boolean))];
+
+  kategorier.forEach(k => {
+    const opt = document.createElement("option");
+    opt.value = k;
+    opt.textContent = k;
+    kategoriSelect.appendChild(opt);
+  });
+
+  kategoriSelect.addEventListener("change", () => {
+    const valgtKategori = kategoriSelect.value;
+    const subOptions = new Set(
+      alleButikker
+        .filter(b => valgtKategori === "alle" || b.category === valgtKategori)
+        .flatMap(b => b.subcategory || [])
+    );
+
+    underkategoriSelect.innerHTML = "<option value='alle'>Alle underkategorier</option>";
+    [...subOptions].forEach(sub => {
+      const opt = document.createElement("option");
+      opt.value = sub;
+      opt.textContent = sub;
+      underkategoriSelect.appendChild(opt);
+    });
+
+    filtrerDropdown();
+  });
+
+  underkategoriSelect.addEventListener("change", filtrerDropdown);
 }
 
 function toggleTag(set, value, btn) {
@@ -83,6 +139,19 @@ function filtrer() {
     const matchKategori = aktivKategoriTags.size === 0 || aktivKategoriTags.has(b.category);
     const matchUnderkategori = aktivUnderkategoriTags.size === 0 ||
       (b.subcategory || []).some(sub => aktivUnderkategoriTags.has(sub));
+    return matchKategori && matchUnderkategori;
+  });
+
+  visButikker(filtrerte);
+}
+
+function filtrerDropdown() {
+  const k = document.getElementById("kategori-filter").value;
+  const u = document.getElementById("underkategori-filter").value;
+
+  const filtrerte = alleButikker.filter(b => {
+    const matchKategori = k === "alle" || b.category === k;
+    const matchUnderkategori = u === "alle" || (b.subcategory || []).includes(u);
     return matchKategori && matchUnderkategori;
   });
 
