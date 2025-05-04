@@ -47,18 +47,18 @@
                 <p class="mb-4">Finn butikker innenfor alle kategorier, eller bruk filteret for å finne det du leter
                     etter!</p>
 
-                <div class="kategori-filter-wrapper mb-5">
-                    <label for="kategori-filter" class="form-label h5 mb-3">Velg kategori:</label><br>
-                    <select id="kategori-filter" class="form-select filter-select">
-                        <option value="alle">Alle kategorier</option>
-                    </select>
+                <div class="mb-4">
+                    <h5 class="mb-2">Filtrer etter kategori:</h5>
+                    <div id="kategori-tags" class="d-flex flex-wrap gap-2 justify-content-center"></div>
                 </div>
-                <div class="underkategori-filter-wrapper mb-4">
-                    <label for="underkategori-filter" class="form-label h6 mb-2">Velg underkategori:</label>
-                    <select id="underkategori-filter" class="form-select filter-select">
-                        <option value="alle">Alle underkategorier</option>
-                    </select>
+                <div class="mb-4">
+                    <h5 class="mb-2">Filtrer etter underkategori:</h5>
+                    <div id="underkategori-tags" class="d-flex flex-wrap gap-2 justify-content-center"></div>
                 </div>
+                <div class="text-center mb-4">
+                    <button id="nullstill-filter" class="btn btn-outline-secondary btn-sm">Nullstill filter</button>
+                </div>
+
 
 
                 <div id="butikk-teller" class="mt-3 mb-4 h6 text-muted"></div>
@@ -127,7 +127,8 @@
     <!-- Generatorer -->
     <script src="assets/js/generate/generate-index-stores.js"></script>
     <script src="assets/js/generate/generate-anbefalte.js"></script>
-    <script src="assets/js/generate/generate-alle-butikker-filter-dynamisk.js"></script>
+    <script src="assets/js/generate/generate-alle-butikker-filter-tags-enhanced.js"></script>
+
     
     
     <!-- Main -->

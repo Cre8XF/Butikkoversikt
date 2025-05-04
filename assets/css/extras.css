@@ -197,3 +197,25 @@
   border-radius: 0.5rem;
   border: 1px solid var(--border-color);
 }
+.filter-tag {
+  background-color: var(--tag-bg, #f1f3f5);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.filter-tag:hover {
+  background-color: #dbeafe;
+}
+.filter-tag.active {
+  background-color: #3b82f6;
+  color: white;
+}
+.filter-tag.kategori {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
