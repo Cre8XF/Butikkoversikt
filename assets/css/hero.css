@@ -47,11 +47,21 @@
   font-size: 1.25rem;
 }
 .hero-section {
-  background: var(--hero-bg); /* eller en lys gradient hvis du ønsker det */
-  color: var(--text-color-on-light);
+  background: 
+    linear-gradient(to bottom, var(--hero-gradient-start), var(--hero-gradient-end)),
+    url('assets/images/bg/hero-pattern.svg');
+  background-repeat: repeat;
+  background-size: 120px 120px;
+  background-position: top center;
+  background-blend-mode: overlay;
+
   padding-top: 5rem;
   padding-bottom: 5rem;
+  color: var(--text-color-on-light);
 }
+
+
+
 
 .hero-section .btn {
   font-weight: 500;
