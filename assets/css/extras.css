@@ -108,3 +108,24 @@
   border: 1px solid var(--search-result-border);
   box-shadow: var(--shadow-sm);
 }
+.header-hero-wrapper {
+  background: linear-gradient(
+    to bottom,
+    var(--header-hero-bg-start),
+    var(--header-hero-bg-mid),
+    var(--header-hero-bg-end)
+  );
+  color: var(--header-hero-text);
+  padding: 2rem 0 5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header-hero-wrapper h1,
+.header-hero-wrapper h2,
+.header-hero-wrapper p {
+  color: var(--header-hero-text);
+}
+
+.search-section {
+  background: transparent !important;
+}
