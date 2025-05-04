@@ -1,121 +1,109 @@
-<!-- ✅ Ny versjon av index.html med visuelle og strukturelle forbedringer -->
 <!DOCTYPE html>
 <html lang="no">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Butikkoversikt.no – Finn de beste nettbutikkene</title>
-  <link rel="stylesheet" href="assets/css/style.css?v=1.2">
+  <title>Butikkoversikt.no - Norges nettbutikk-guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
 </head>
 
 <body>
+  <!-- Kampanjebanner -->
+  <div class="campaign-banner text-center py-2 shadow-sm bg-warning-subtle">
+    <small><strong>Ukens kampanje:</strong> Få 20% på sportsklær hos <a href="#">XXL.no</a> – Kun i dag!</small>
+  </div>
 
-  <!-- 🌟 Ukens Kampanje (øverst, før header) -->
-  <section class="weekly-offer bg-warning text-dark py-2 text-center">
-    <strong>Ukens kampanje:</strong> Få 20% på sportsklær hos <a href="https://www.xxl.no" target="_blank"
-      class="text-dark fw-bold">XXL.no</a> – Kun i dag!
+  <!-- Header & Navigasjon -->
+  <header class="navbar navbar-expand-lg navbar-theme bg-header shadow-sm py-2 sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="assets/images/hero/hero.png" alt="Butikkoversikt logo" style="height: 60px;" class="me-2">
+        <div>
+          <strong class="fs-5">Butikkoversikt.no</strong><br>
+          <small class="text-muted-theme">Norges nettbutikk-guide</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="alle-butikker.html">Alle butikker</a></li>
+          <li class="nav-item"><a class="nav-link" href="kategori.html">Kategorier</a></li>
+          <li class="nav-item"><a class="nav-link" href="topp25.html">Topp 25</a></li>
+          <li class="nav-item"><a class="nav-link" href="guider/main-guider.html">Guider</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-section text-center text-white fade-in">
+    <div class="container">
+      <img src="assets/images/hero-bg.png" alt="Handleikon" width="80" class="mb-3 fade-in">
+      <h1 class="hero-title fade-in">Finn de beste norske nettbutikkene</h1>
+      <p class="lead hero-subtitle fade-in">Utforsk, sammenlign og handle smartere – alt på ett sted</p>
+      <a href="alle-butikker.html" class="btn btn-primary btn-lg mt-3 fade-in">Se alle butikker</a>
+    </div>
   </section>
 
-  <!-- 🔝 Header + Hero + Search (smelter sammen) -->
-  <section class="header-hero-wrapper hero-section text-white">
-    <header class="navbar navbar-expand-lg navbar-theme bg-transparent py-2 fade-in">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="/">
-          <img src="assets/images/hero/hero.png" alt="Logo" style="height: 80px;" class="me-2">
-          <div>
-            <strong style="font-size: 1.5rem;">Butikkoversikt.no</strong><br>
-            <small class="text-muted-theme">Norges nettbutikk-guide</small>
-          </div>
-        </a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNavbar" title="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="alle-butikker.html">Alle butikker</a></li>
-            <li class="nav-item"><a class="nav-link" href="kategori.html">Kategorier</a></li>
-            <li class="nav-item"><a class="nav-link" href="topp25.html">Topp 25</a></li>
-            <li class="nav-item"><a class="nav-link" href="guider/main-guider.html">Guider</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
-    <!-- 🎯 Hero-innhold -->
-    <div class="container text-center py-5 fade-in">
-      <img src="assets/images/hero-bg.png" alt="Handleikon" width="100" class="mb-3">
-      <h1 class="display-5 fw-bold">Finn de beste norske nettbutikkene</h1>
-      <p class="lead">Utforsk, sammenlign og handle smartere – alt på ett sted</p>
-      <a href="alle-butikker.html" class="btn btn-primary btn-lg mt-2">Se alle butikker</a>
-    </div>
-
-    <!-- 🔍 Søkeseksjon -->
-    <div class="container text-center mt-4 fade-in">
-      <h2 class="mb-3">Hva ser du etter?</h2>
-      <div class="search-wrapper d-flex justify-content-center align-items-center gap-2">
+  <!-- Søk -->
+  <section class="search-section py-5" style="background-color: var(--search-section-bg);">
+    <div class="container text-center">
+      <h2 class="mb-4 fade-in">Hva ser du etter?</h2>
+      <div class="search-wrapper d-flex justify-content-center align-items-center gap-2 fade-in">
         <i class="bi bi-search fs-4 text-muted"></i>
         <input type="text" id="search-input" placeholder="Søk etter butikk, kategori eller guide"
           class="form-control search-input" />
       </div>
-      <p class="text-muted mt-2">Skriv inn det du leter etter – vi finner butikker og guider for deg</p>
-      <div id="search-results" class="search-results mt-5 text-start"></div>
+      <p class="text-muted mt-3 fade-in">Skriv inn det du leter etter – vi finner butikker og guider for deg</p>
+      <div id="search-results" class="search-results mt-5 text-start fade-in"></div>
     </div>
   </section>
 
-  <hr class="my-5" />
-
-  <!-- ✅ Anbefalte butikker -->
-  <section class="py-5 fade-in">
+  <!-- Anbefalte butikker -->
+  <section class="section section-light py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Anbefalte butikker</h2>
-      <div id="anbefalte-butikker" class="row g-4 justify-content-center"></div>
-      <div class="text-center mt-3">
-        <button id="vis-flere-butikker" class="btn btn-outline-primary">Vis flere</button>
+      <h2 class="text-center mb-4 fade-in">Anbefalte nettbutikker</h2>
+      <div id="anbefalte-butikker" class="row g-4 justify-content-center fade-in"></div>
+      <div class="text-center mt-4">
+        <button id="vis-flere-butikker" class="btn btn-outline-primary me-2">Vis flere</button>
         <button id="vis-færre-butikker" class="btn btn-outline-secondary">Vis færre</button>
       </div>
     </div>
   </section>
 
-  <!-- 📚 Guider -->
-  <section class="section-alt-bg py-5 fade-in">
+  <!-- Topp 25 butikker -->
+  <section class="section section-alt py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Populære guider</h2>
-      <div id="forside-guider" class="row g-4 justify-content-center"></div>
-      <div class="text-center mt-3">
-        <a href="guider/main-guider.html" class="btn btn-outline-primary">Se alle guider</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ⭐ Topp 25 seksjon -->
-  <section class="py-5 fade-in">
-    <div class="container">
-      <h2 class="text-center mb-4">Topp 25 nettbutikker i Norge</h2>
-      <div id="topp25-butikker" class="row row-cols-2 row-cols-md-4 g-4"></div>
-      <div class="text-center mt-3">
-        <button id="vis-flere-topp25" class="btn btn-outline-primary">Vis flere</button>
+      <h2 class="text-center mb-4 fade-in">Topp 25 nettbutikker i Norge</h2>
+      <div id="topp25-butikker" class="row g-4 justify-content-center fade-in"></div>
+      <div class="text-center mt-4">
+        <button id="vis-flere-topp25" class="btn btn-outline-primary me-2">Vis flere</button>
         <button id="vis-færre-topp25" class="btn btn-outline-secondary">Vis færre</button>
       </div>
     </div>
   </section>
 
-  <!-- 💬 Scroll to top -->
-  <button id="scrollTopBtn" class="btn btn-sm btn-secondary position-fixed"
-    style="bottom: 1rem; right: 1rem; display: none;">↑</button>
+  <!-- Footer -->
+  <footer class="footer bg-header text-heading py-5 mt-5">
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2025 Butikkoversikt.no</p>
+      <p class="text-muted small">En oversikt over de beste norske nettbutikkene.</p>
+    </div>
+  </footer>
 
-  <!-- 🔧 Scripts -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/effects/fade-in.js"></script>
   <script src="assets/js/effects/theme-toggle.js"></script>
-  <script src="assets/js/effects/scroll-top.js"></script>
-  <script src="assets/js/generate/generate-index-stores.js?v=1.1"></script>
-  <script src="assets/js/generate/generate-anbefalte.js?v=1.1"></script>
-  <script src="assets/js/generate/generate-kampanjer.js"></script>
-  <script src="assets/js/generate/generate-forside-guider.js?v=1.1"></script>
-  <script src="assets/js/generate/generate-topp25.js?v=1.1"></script>
-  <script src="assets/js/generate/generate-search-forside.js?v=1.1"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/generate/generate-index-stores.js?v=1.2"></script>
+  <script src="assets/js/generate/generate-anbefalte.js?v=1.2"></script>
+  <script src="assets/js/generate/generate-topp25.js?v=1.2"></script>
+  <script src="assets/js/generate/generate-search-forside.js?v=1.2"></script>
 </body>
 
 </html>
