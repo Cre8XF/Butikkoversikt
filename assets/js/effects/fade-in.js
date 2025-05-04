@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // Stopp å observere etter fade-in
+        entry.target.classList.add('fade-in-visible');
+        observer.unobserve(entry.target); // Slutt å observere etter fade-in
       }
     });
   }, {
