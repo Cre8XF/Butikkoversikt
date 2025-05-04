@@ -23,8 +23,8 @@
 }
 
 .btn-primary:hover {
-  background-color: var(--btn-primary-hover);
-  color: var(--text-on-primary);
+  background-color: var(--btn-primary-hover) !important;
+  color: var(--text-on-primary) !important;
   box-shadow: var(--btn-shadow-hover);
 }
 
