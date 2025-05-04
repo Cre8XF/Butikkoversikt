@@ -11,11 +11,7 @@
 </head>
 
 <body>
-  <!-- Kampanjebanner -->
-  <div class="campaign-banner text-center py-2 shadow-sm bg-warning-subtle">
-    <small><strong>Ukens kampanje:</strong> Få 20% på sportsklær hos <a href="#">XXL.no</a> – Kun i dag!</small>
-  </div>
-
+ 
   <!-- Header & Navigasjon -->
   <header class="navbar navbar-expand-lg navbar-theme bg-header shadow-sm py-2 sticky-top">
     <div class="container">
@@ -50,19 +46,22 @@
     </div>
   </section>
 
-  <section id="ukens-kampanje" class="campaign-banner d-none fade-in py-4">
-    <div class="container text-center">
-      <a id="kampanje-lenke" href="#" target="_blank" rel="noopener" class="text-decoration-none d-block">
-        <div class="campaign-content d-flex flex-column flex-md-row align-items-center gap-3 justify-content-center">
-          <img id="kampanje-bilde" src="" alt="Kampanjebilde" class="kampanje-img rounded shadow-sm" />
-          <div class="text-start">
-            <h5 id="kampanje-tittel" class="mb-1"></h5>
-            <p id="kampanje-beskrivelse" class="mb-0 text-muted small"></p>
-          </div>
+<!-- Ukens kampanje -->
+<section id="ukens-kampanje" class="campaign-banner d-none fade-in py-4">
+  <div class="container" span class="campaign-badge">Ukens kampanje</span>
+    <a id="kampanje-lenke" href="#" target="_blank" rel="noopener" class="text-decoration-none">
+      <div
+        class="campaign-content d-flex flex-column flex-md-row align-items-center justify-content-center text-md-start gap-3">
+        <img id="kampanje-bilde" src="assets/images/kampanjer/dummy-kampanje2.jpg" alt="Kampanjebilde" class="kampanje-img" />
+        <div>
+          <h5 id="kampanje-tittel" class="mb-1 fw-semibold"></h5>
+          <p id="kampanje-beskrivelse" class="mb-0 text-muted small"></p>
         </div>
-      </a>
-    </div>
-  </section>
+      </div>
+    </a>
+  </div>
+</section>
+
 
 
   <!-- Søk -->

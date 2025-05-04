@@ -9,7 +9,7 @@
   --bg-color: #e9eefc; /* Hovedbakgrunn – veldig lys blågrå */
   --section-bg: #f9fafb; /* Standard seksjon – nesten hvit */
   --section-alt-bg: #f3f4f6; /* Alternativ seksjon – grålig */
-  --hero-bg: #cbd5e1; /* Lys blågrå bak hero */
+  --hero-bg: #f1f5f9; /* Lys blågrå bak hero */
   --card-bg: #ffffff;
   --card-hover: #f3f4f6;
 
@@ -42,8 +42,8 @@
   --guide-card-shadow-hover: var(--shadow-lg);
 
   /* ========= SPESIALSEKSJONER ========= */
-  --hero-gradient-start: #e0f2fe;
-  --hero-gradient-end: #bae6fd;
+  --hero-gradient-start: #cbd5e1;
+  --hero-gradient-end: #b9e0f5;
   --offer-bg: #fde68a; /* Gul – kampanjer */
   --offer-text: #1e293b;
   --campaign-bg: #bbf7d0; /* Grønn kampanjebakgrunn */

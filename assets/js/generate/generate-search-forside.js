@@ -61,18 +61,18 @@ document.addEventListener("DOMContentLoaded", () => {
     for (const kategori in grouped) {
       const kategoriDiv = document.createElement("div");
       kategoriDiv.className = "result-kategori";
-      kategoriDiv.innerHTML = `<h4>${kategori}</h4>`;
+      kategoriDiv.innerHTML = `<h4><i class="bi bi-folder2-open me-2"></i>${kategori}</h4>`;
 
       for (const sub in grouped[kategori]) {
         const subDiv = document.createElement("div");
         subDiv.className = "result-subkategori";
-        subDiv.innerHTML = `<h5><i class="bi bi-pin-angle-fill me-1"></i> ${sub}</h5>`;
+        subDiv.innerHTML = `<h5><i class="bi bi-tag-fill me-2 text-muted"></i>${sub} (${grouped[kategori][sub].length})</h5>`;
 
         grouped[kategori][sub].forEach(butikk => {
           const resultKort = document.createElement("div");
           resultKort.className = "result-kort";
           resultKort.innerHTML = `
-            <strong>${butikk.name}</strong>
+            <strong><i class="bi bi-shop me-1 text-primary"></i> ${butikk.name}</strong>
             <br>
             <p class="text-muted small">${butikk.description}</p>
             <a href="${butikk.url}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Besøk</a>

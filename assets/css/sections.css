@@ -52,20 +52,35 @@
 }
 
 /* ✅ Kampanjer */
+/* 🔥 Ukens kampanje seksjon */
 .campaign-banner {
-  background-color: var(--campaign-bg);
+  background: linear-gradient(
+    90deg,
+    var(--hero-gradient-start),
+    var(--hero-gradient-end)
+  );
   color: var(--campaign-text);
-  padding: 1.75rem 1.25rem;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
   margin: 2rem auto;
-  border-radius: 0.75rem;
   max-width: 960px;
   box-shadow: 0 4px 12px var(--shadow-md);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .campaign-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .campaign-content {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
 }
 
 .kampanje-img {
@@ -78,12 +93,24 @@
 }
 
 #kampanje-tittel {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 0.25rem;
+  color: var(--heading-color);
 }
 
 #kampanje-beskrivelse {
   font-size: 0.95rem;
   color: var(--text-muted);
+}
+
+.campaign-badge {
+  display: inline-block;
+  background-color: var(--campaign-bg);
+  color: var(--campaign-text);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 3px var(--shadow-sm);
 }
