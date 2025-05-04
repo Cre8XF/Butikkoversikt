@@ -5,30 +5,22 @@
 
 /* 🎨 Lyst tema (standard) */
 :root {
-  /* Grunnoppsett */
-  --border-radius: 0.5rem;
-  --font-family: "Inter", sans-serif;
-  --spacing-unit: 1rem;
-  --transition-speed: 0.3s;
-  --shadow-default: 0 4px 8px rgba(0, 0, 0, 0.05);
-
-  /* Farger – bakgrunner og seksjoner */
-  --bg-color: #f6f8fa;
-  --section-bg: #f9fafb;
-  --section-alt-bg: #f3f4f6;
+  /* ========= BAKGRUNN OG SEKSJONER ========= */
+  --bg-color: #e9eefc; /* Hovedbakgrunn – veldig lys blågrå */
+  --section-bg: #f9fafb; /* Standard seksjon – nesten hvit */
+  --section-alt-bg: #f3f4f6; /* Alternativ seksjon – grålig */
+  --hero-bg: #cbd5e1; /* Lys blågrå bak hero */
   --card-bg: #ffffff;
   --card-hover: #f3f4f6;
-  --guide-card-bg: var(--card-bg);
-  --guide-card-hover: var(--card-hover);
 
-  /* Farger – tekst */
-  --text-color: #1e293b;
-  --text-muted: #64748b;
-  --heading-color: #0f172a;
+  /* ========= TEKST ========= */
+  --text-color: #1e293b; /* Standard tekst – mørk blågrå */
+  --text-muted: #64748b; /* Gråblå – brukt til beskrivende tekst */
+  --heading-color: #0f172a; /* Ekstra mørk for overskrifter */
   --link-color: #1e40af;
   --link-hover: #1d4ed8;
 
-  /* Knapper */
+  /* ========= KNAPPER ========= */
   --btn-primary: #1e40af;
   --btn-primary-hover: #1d4ed8;
   --btn-secondary: #e0e7ff;
@@ -36,35 +28,36 @@
   --btn-outline-hover-bg: #f1f5f9;
   --text-on-primary: #ffffff;
   --text-on-secondary: #1e293b;
-  --btn-shadow: rgba(0, 0, 0, 0.05);
-  --btn-shadow-hover: rgba(0, 0, 0, 0.1);
+  --btn-shadow: rgba(30, 64, 175, 0.1); /* Mørkeblå knappeskygge */
+  --btn-shadow-hover: rgba(30, 64, 175, 0.15);
 
-  /* Kort og skygger */
+  /* ========= KORT OG SKYGGER ========= */
   --border-color: #e2e8f0;
   --shadow-sm: rgba(0, 0, 0, 0.03);
   --shadow-md: rgba(0, 0, 0, 0.06);
   --shadow-lg: rgba(0, 0, 0, 0.1);
+  --guide-card-bg: var(--card-bg);
+  --guide-card-hover: var(--card-hover);
   --guide-card-shadow: var(--shadow-md);
   --guide-card-shadow-hover: var(--shadow-lg);
 
-  /* Spesialseksjoner */
-  --hero-bg: #f8fafc;
+  /* ========= SPESIALSEKSJONER ========= */
   --hero-gradient-start: #e0f2fe;
   --hero-gradient-end: #bae6fd;
-  --offer-bg: #fcd34d;
-  --offer-text: #0f172a;
-  --campaign-bg: #4ade80;
+  --offer-bg: #fde68a; /* Gul – kampanjer */
+  --offer-text: #1e293b;
+  --campaign-bg: #bbf7d0; /* Grønn kampanjebakgrunn */
   --campaign-text: #064e3b;
 
-  /* Footer og header */
+  /* ========= FOOTER OG HEADER ========= */
   --header-bg: #ffffff;
   --footer-bg: #f1f5f9;
   --footer-border: #e2e8f0;
   --footer-heading: #0f172a;
-  --footer-muted: #64748b;
   --footer-text: #1e293b;
+  --footer-muted: #64748b;
 
-  /* Tilstandsfarger */
+  /* ========= STATUSFARGER ========= */
   --success-color: #10b981;
   --danger-color: #ef4444;
   --warning-color: #f59e0b;
@@ -72,44 +65,66 @@
 }
 
 /* 🌙 Mørkt tema */
-[data-theme="dark"] {
-  --accent-color: #fcd34d;
-  --bg-color: #0f172a;
-  --border-color: #334155;
-  --btn-hover: #60a5fa;
-  --btn-primary: #3b82f6;
-  --btn-shadow: rgba(59, 130, 246, 0.3);
-  --campaign-bg: #4ade80;
-  --campaign-text: #064e3b;
+:root[data-theme="dark"] {
+  /* ========= BAKGRUNN OG SEKSJONER ========= */
+  --bg-color: #0f172a;                   /* Hovedbakgrunn – nesten svartblå */
+  --section-bg: #1e293b;                /* Seksjonsbakgrunn – mørk blågrå */
+  --section-alt-bg: #273549;            /* Alternativ seksjon – gråblå */
+  --hero-bg: #334155;                   /* Hero – mørkere gråblå */
   --card-bg: #1e293b;
-  --card-hover: #334155;
-  --danger-color: #ef4444;
-  --footer-bg: #0f172a;
-  --footer-border: #1e293b;
-  --footer-heading: #e2e8f0;
-  --footer-muted: #94a3b8;
-  --footer-text: #f1f5f9;
+  --card-hover: #273549;
+
+  /* ========= TEKST ========= */
+  --text-color: #f1f5f9;                /* Lys tekst */
+  --text-muted: #94a3b8;                /* Grålig tekst */
+  --heading-color: #e2e8f0;             /* Ekstra lys overskrift */
+  --link-color: #93c5fd;                /* Lys blå */
+  --link-hover: #60a5fa;
+
+  /* ========= KNAPPER ========= */
+  --btn-primary: #3b82f6;
+  --btn-primary-hover: #2563eb;
+  --btn-secondary: #1e3a8a;
+  --btn-secondary-hover: #1d4ed8;
+  --btn-outline-hover-bg: #334155;
+  --text-on-primary: #ffffff;
+  --text-on-secondary: #e2e8f0;
+  --btn-shadow: rgba(0, 0, 0, 0.2);
+  --btn-shadow-hover: rgba(0, 0, 0, 0.3);
+
+  /* ========= KORT OG SKYGGER ========= */
+  --border-color: #334155;
+  --shadow-sm: rgba(0, 0, 0, 0.15);
+  --shadow-md: rgba(0, 0, 0, 0.25);
+  --shadow-lg: rgba(0, 0, 0, 0.4);
   --guide-card-bg: var(--card-bg);
   --guide-card-hover: var(--card-hover);
-  --guide-card-shadow-hover: var(--shadow-lg);
   --guide-card-shadow: var(--shadow-md);
-  --header-bg: #0f172a;
-  --heading-color: #f8fafc;
-  --hero-bg: #1e293b;
-  --hero-gradient-end: #1e293b;
-  --hero-gradient-start: #0f172a;
-  --link-color: #93c5fd;
+  --guide-card-shadow-hover: var(--shadow-lg);
+
+  /* ========= SPESIALSEKSJONER ========= */
+  --hero-gradient-start: #1e293b;
+  --hero-gradient-end: #334155;
   --offer-bg: #facc15;
   --offer-text: #1e293b;
-  --section-alt-bg: #334155;
-  --section-bg: #1e293b;
-  --shadow-lg: rgba(255, 255, 255, 0.1);
-  --shadow-md: rgba(255, 255, 255, 0.06);
-  --shadow-sm: rgba(255, 255, 255, 0.03);
-  --success-color: #22c55e;
-  --text-color: #e2e8f0;
-  --text-muted: #94a3b8;
-  --warning-color: #facc15;
+  --campaign-bg: #22c55e;
+  --campaign-text: #064e3b;
+
+  /* ========= FOOTER OG HEADER ========= */
+  --header-bg: #1e293b;
+  --footer-bg: #0f172a;
+  --footer-border: #334155;
+  --footer-heading: #e2e8f0;
+  --footer-text: #f1f5f9;
+  --footer-muted: #94a3b8;
+
+  /* ========= STATUSFARGER ========= */
+  --success-color: #34d399;
+  --danger-color: #f87171;
+  --warning-color: #fbbf24;
+  --accent-color: #3b82f6;
+}
+
 }
 /* ==================================================
    theme.css – Variabler for både lyst og mørkt tema
