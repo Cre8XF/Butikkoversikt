@@ -87,16 +87,16 @@
 
       <section class="filter-section py-4">
         <div class="container mb-4">
-          <div class="position-relative mx-auto" style="max-width: 500px">
-            <input
-              id="searchInput"
-              type="text"
-              class="form-control"
-              placeholder="Søk etter butikk, kategori eller underkategori"
-            />
-            <ul id="autocomplete-list" class="autocomplete-items"></ul>
+          <div class="d-flex flex-column flex-sm-row align-items-stretch justify-content-center gap-2 mb-3 flex-wrap">
+            <div class="position-relative" style="max-width: 500px; flex-grow: 1;">
+              <input id="searchInput" type="text" class="form-control"
+                placeholder="Søk etter butikk, kategori eller underkategori">
+              <ul id="autocomplete-list" class="autocomplete-items"></ul>
+            </div>
+          
+            <button id="filterViewToggle" class="btn btn-outline-primary">Bytt til dropdown-visning</button>
           </div>
-        </div>
+
 
         <div class="container">
           <div id="tag-filter-wrapper">
@@ -131,12 +131,6 @@
               class="btn btn-outline-secondary btn-sm"
             >
               Nullstill filter
-            </button>
-            <button
-              id="filterViewToggle"
-              class="btn btn-outline-primary btn-sm"
-            >
-              Bytt til dropdown-visning
             </button>
           </div>
 
