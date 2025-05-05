@@ -85,4 +85,9 @@
     padding: 0.75rem 1rem;
     font-size: 1.05rem;
   }
+  @media (max-width: 575.98px) {
+    #filterViewToggle {
+      width: 100%;
+    }
+  }
 }
