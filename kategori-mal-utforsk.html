@@ -2,12 +2,12 @@
 <html lang="no" data-theme="light">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Butikkoversikt.no - Utforsk alle kategorier</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/theme.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utforsk alle kategorier - Butikkoversikt.no</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
@@ -24,8 +24,19 @@
   </header>
 
   <main class="py-5">
-    <div class="container py-5">
+    <div class="container py-4">
       <h1 class="text-center mb-4">Utforsk alle butikker</h1>
+
+      <!-- Søkefelt -->
+      <div class="mb-4 text-center">
+        <input type="text" id="butikksok" class="form-control w-75 mx-auto"
+          placeholder="Søk etter butikk eller kategori..." />
+      </div>
+
+      <!-- Kategorinavigasjon -->
+      <nav id="kategoriMeny" class="mb-5 d-flex flex-wrap gap-2 justify-content-center"></nav>
+
+      <!-- Innhold -->
       <div id="kategoriContainer" class="row g-4"></div>
     </div>
   </main>
@@ -39,7 +50,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/effects/theme-toggle.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/generate/generate-utforsk-alle-kategorier.js"></script>
+  <script src="assets/js/generate/generate-utforsk-alle-kategorier-enhanced.js"></script>
 </body>
 
 </html>
