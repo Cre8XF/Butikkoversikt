@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         kort.setAttribute("data-kategori", kategori.toLowerCase());
 
         const link = document.createElement("a");
-        link.href = `kategori-mal.html?kategori=${encodeURIComponent(kategori)}`;
+        link.href = `kategori.html?kategori=${encodeURIComponent(kategori)}`;
         link.className = "text-decoration-none text-dark";
 
         const card = document.createElement("div");
