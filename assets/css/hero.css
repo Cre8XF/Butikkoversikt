@@ -59,6 +59,9 @@
   position: relative;
 }
 
+.hero-section p {
+  color: var(--text-muted);
+}
 
 
 
