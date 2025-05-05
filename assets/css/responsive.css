@@ -1,367 +1,88 @@
-📂 RESPONSIV DESIGN */
-/* ========================================= */
-
-/* Tilpasninger for store skjermer */
-@media (min-width: 1200px) {
+/* -------------------------------------------
+   Tilpasninger for store skjermer (≥ 992px)
+---------------------------------------------- */
+@media (min-width: 992px) {
   .container {
-    max-width: 1320px;
-  }
-
-  .sticky-ad {
-    display: block;
+    max-width: 960px;
   }
 }
 
-/* Tilpasninger for nettbrett og mindre skjermer */
-@media (max-width: 991.98px) {
-  .navbar-collapse {
-    background-color: var(--card-bg);
-    padding: 1rem;
-    border-radius: 0.5rem;
-  }
-
-  .card,
-  .category-card,
-  .anbefalt-card {
-    margin-bottom: 1.5rem;
-  }
-
+/* -------------------------------------------
+   Tilpasninger for mellomstore skjermer (≥ 768px)
+---------------------------------------------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
   .grid-container {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Tilpasninger for mobil */
-@media (max-width: 767.98px) {
-  .hero h1 {
-    font-size: 2rem;
+/* -------------------------------------------
+   Tilpasninger for små skjermer (≥ 576px)
+---------------------------------------------- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .hero p {
+  .search-section input[type="text"] {
     font-size: 1rem;
+    padding: 0.5rem 1rem;
   }
 
-  .section {
-    padding: 2rem 1rem;
-  }
-
-  .grid-container {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  .filter-tag {
+    font-size: 0.9rem;
   }
 }
 
-/* Ekstra små skjermer */
+/* -------------------------------------------
+   Tilpasninger for ekstra små skjermer (< 576px)
+---------------------------------------------- */
 @media (max-width: 575.98px) {
-  .navbar-brand {
-    font-size: 1.2rem;
+  /* Søkefelt og autocomplete */
+  .autocomplete-items {
+    font-size: 0.95rem;
+    max-height: 220px;
+    z-index: 1000;
+    list-style: none;
+    padding-left: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
-  .hero h1 {
-    font-size: 1.8rem;
+  .search-section input[type="text"] {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
   }
 
-  .card,
-  .category-card {
-    padding: 1rem;
-  }
-}
-
-/* ========================================= */
-/* 📂 DIVERSE (Ekstra effekter, småjusteringer) */
-/* ========================================= */
-
-/* Overlay bak side-meny */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  display: none;
-  z-index: 900;
-}
-
-.overlay.active {
-  display: block;
-}
-
-/* Side-meny (hamburger-meny på mobil) */
-.side-menu {
-  position: fixed;
-  top: 0;
-  left: -280px;
-  width: 250px;
-  max-height: 90vh;
-  background: linear-gradient(180deg, var(--card-bg) 0%, #f1f3f5 100%);
-  border-radius: 0 20px 20px 0;
-  box-shadow: 0 4px 14px var(--shadow-md);
-  overflow-y: auto;
-  transition: left 0.3s ease;
-  padding: 1rem;
-  z-index: 1001;
-}
-
-.side-menu.active {
-  left: 0;
-}
-
-/* Toggle knapp for side-meny */
-.menu-toggle {
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-/* Filter-badges */
-.filter-badge {
-  display: inline-block;
-  background-color: var(--btn-primary);
-  color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  margin: 0.2rem;
-}
-
-/* Liten justering for sticky ads på mobil */
-@media (max-width: 991.98px) {
-  .sticky-ad {
-    display: none;
-  }
-}
-/* ========================================= */
-/* 📂 DIVERSE - Tillegg (Rating, guider, filter, småklasser) */
-/* ========================================= */
-
-/* Rating-stjerner */
-.rating {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.5rem;
-}
-
-.rating-stars {
-  color: var(--rating-star-color);
-  font-size: 1.2rem;
-}
-
-/* Guide-kort */
-.guide-card {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  transition: box-shadow 0.3s ease;
-}
-
-.guide-card:hover {
-  box-shadow: 0 4px 14px var(--shadow-md);
-}
-
-.guide-img {
-  max-height: 100px;
-  object-fit: contain;
-  margin-bottom: 1rem;
-}
-
-/* Kommentarboks */
-.comment-box {
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 1rem;
-  margin-top: 1rem;
-  background-color: #ffffff;
-}
-
-.comment-input {
-  width: 100%;
-  padding: 0.5rem;
-  border-radius: 0.375rem;
-  border: 1px solid var(--border-color);
-}
-
-/* Filter-badge */
-.filter-badge {
-  display: inline-block;
-  background-color: var(--btn-primary);
-  color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  margin: 0.2rem;
-}
-
-/* Dropdown-element */
-.dropdown-item {
-  padding: 0.5rem 1rem;
-  color: var(--text-color);
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-item:hover {
-  background-color: var(--card-hover);
-}
-
-/* Små layout-utilities */
-.text-center {
-  text-align: center;
-}
-
-.text-muted {
-  color: var(--text-muted);
-}
-
-.float-right {
-  float: right;
-}
-
-.bg-white {
-  background-color: #ffffff;
-}
-
-.shadow-sm {
-  box-shadow: 0 4px 14px var(--shadow-md);
-}
-
-.border-top {
-  border-top: 1px solid var(--border-color);
-}
-
-/* Ekstra liste-layouts */
-.list-container {
-  list-style: none;
-  padding: 0;
-}
-
-.list-item {
-  margin-bottom: 0.5rem;
-}
-
-/* Store showcase kort */
-.store-showcase {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 1rem;
-  padding: 1.5rem;
-  text-align: center;
-}
-/* Butikkort for Alle Butikker siden */
-.butikKort,
-.butikkort {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.butikKort img,
-.butikkort img {
-  max-width: 120px;
-  max-height: 80px;
-  margin: 0 auto 15px;
-  object-fit: contain;
-}
-
-.butikKort h3,
-.butikkort h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: var(--text-color);
-}
-
-.butikKort p,
-.butikkort p {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  margin-bottom: 0;
-}
-
-.butikKort:hover,
-.butikkort:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px var(--shadow-lg);
-}
-/* Container for alle butikkort på alle-butikker.html */
-#butikk-container .card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#butikk-container .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px var(--shadow-lg);
-}
-
-#butikk-container .card img {
-  max-height: 80px;
-  object-fit: contain;
-  margin: 0 auto 1rem;
-}
-
-#butikk-container .card-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: var(--text-color);
-}
-
-#butikk-container .card-text {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-}
-
-#butikk-container .card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.kategori-filter-wrapper {
-  text-align: center;
-}
-
-.filter-select {
-  display: inline-block;
-  width: 250px;
-  padding: 10px 15px;
-  font-size: 1.1rem;
-  border-radius: 12px;
-  border: 1px solid var(--border-color);
-  background-color: var(--card-bg);
-  color: var(--text-color);
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.filter-select:focus {
-  border-color: var(--focus-color);
-  box-shadow: 0 0 5px var(--focus-shadow);
-}
-
-/* søk */
-@media (max-width: 768px) {
-  .result-kort {
-    padding: 1rem;
+  /* Butikkort */
+  .grid-container {
+    grid-template-columns: 1fr !important;
   }
 
-  .search-input {
-    width: 100%;
+  /* Filter-tagger */
+  #kategori-tags,
+  #underkategori-tags {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    gap: 0.5rem;
+  }
+
+  .filter-tag {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  /* Mobilmeny */
+  .side-menu {
+    padding-top: 2rem;
+  }
+
+  .side-menu a {
+    padding: 0.75rem 1rem;
+    font-size: 1.05rem;
   }
 }

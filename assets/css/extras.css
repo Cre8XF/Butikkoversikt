@@ -237,3 +237,35 @@
 .store-grid-section {
   background-color: var(--section-bg);
 }
+.search-section {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.autocomplete-items {
+  position: absolute;
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: auto;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.25rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.autocomplete-items {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.25rem;
+}
+.autocomplete-items li {
+  transition: background 0.2s ease;
+}
+
+.autocomplete-items li:hover {
+  background-color: var(--hover-bg, #f0f0f0);
+}
