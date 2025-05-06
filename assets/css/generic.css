@@ -1,0 +1,121 @@
+/* ✅ Spesialvisning for anbefalte */
+.featured-store-card {
+  background-color: var(--card-bg);
+  
+  border: 1px solid var(--border-color);
+  
+  border-radius: var(--card-radius, 0.75rem);
+  
+  padding: 1rem;
+  
+  text-align: center;
+  
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  
+  transition: box-shadow 0.3s ease;
+  
+}
+
+.featured-store-card:hover {
+  box-shadow: var(--shadow-md);
+  
+}
+
+.featured-store-card img {
+  max-height: 80px;
+  
+  object-fit: contain;
+  
+  margin-bottom: 0.5rem;
+  
+}
+
+/* ✅ Standard butikkort (brukes til utforsk alle butikker) */
+#kategoriMeny {
+  position: sticky;
+  
+  top: 80px;
+   /* Justeres etter høyde på headeren */
+  z-index: 10;
+  
+  background-color: var(--body-bg);
+   /* Sørg for å matche siden din */
+  padding-top: 1rem;
+  
+  padding-bottom: 1rem;
+  
+  border-bottom: 1px solid var(--border-color);
+   /* Valgfritt */
+}
+
+/* Fade-in */
+.fade-in {
+  animation: fadeInUp 0.8s ease both;
+  
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+  
+    transform: translateY(20px);
+  
+}
+
+to {
+  opacity: 1;
+  
+    transform: translateY(0);
+  
+}
+
+}
+
+.sticky-kategori-nav {
+  position: sticky;
+  
+  top: 60px;
+   /* justeres basert på header-høyde */
+  z-index: 999;
+  
+  background-color: var(--body-bg);
+   /* sørg for at dette matcher siden */
+  padding: 1rem 0;
+  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+   /* valgfritt */
+}
+
+#kategoriMeny {
+  position: sticky;
+  
+  top: 70px;
+   /* justeres etter navbar-høyde */
+  z-index: 999;
+  
+  background-color: var(--sticky-bg);
+  
+  padding: 1rem 0;
+  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  
+  border-bottom: 1px solid #ddd;
+  
+}
+
+/* Lager rom over seksjoner slik at ikke overskrifter havner bak meny */
+.kategori-seksjon {
+  scroll-margin-top: 120px;
+  
+}
+
+/* Eventuelt: legg til margin-top på første seksjon hvis ikke nok avstand */
+.kategori-seksjon:first-of-type {
+  margin-top: 2rem;
+  
+}
+
+#kategoriContainer {
+  padding-top: 120px;
+   /* slik at det er plass under sticky meny */
+}

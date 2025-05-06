@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const col = document.createElement("div");
       col.className = "col-md-3 mb-4";
       col.innerHTML = `
-        <div class="card category-card h-100 d-flex flex-column text-center">
+        <div class="card top25-card h-100 d-flex flex-column text-center">
           <a href="${butikk.url}" target="_blank" rel="noopener">
             <img src="${butikk.image}" alt="${butikk.name}" class="card-img-top p-3" style="max-height:80px; object-fit:contain;">
           </a>

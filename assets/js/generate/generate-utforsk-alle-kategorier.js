@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
           col.className = "col-6 col-md-4 col-lg-3";
 
           const card = document.createElement("div");
-          card.className = "card h-100 shadow-sm store-card";
+          card.className = "card h-100 shadow-sm store-card fade-in";
 
           const img = document.createElement("img");
           img.src = butikk.image || "assets/images/default.png";
@@ -71,6 +71,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
         kategoriDiv.appendChild(row);
         container.appendChild(kategoriDiv);
+
+
+// Aktiver fade-in når alt er ferdig lagt til
+setTimeout(() => {
+  document.querySelectorAll(".fade-in").forEach(el => {
+    el.style.opacity = "1";
+    el.style.transform = "translateY(0)";
+  });
+}, 50);
+
       });
     })
     .catch(err => {

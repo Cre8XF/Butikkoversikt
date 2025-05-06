@@ -1,0 +1,47 @@
+/* ✅ Guidekort */
+.guide-card {
+  background-color: var(--guide-card-bg, #fff);
+  
+  border-radius: 0.75rem;
+  
+  border: 1px solid var(--border-color, #ccc);
+  
+  box-shadow: 0 2px 6px var(--guide-card-shadow, rgba(0, 0, 0, 0.08));
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  overflow: hidden;
+  
+}
+
+.guide-card:hover {
+  transform: translateY(-5px);
+  
+  box-shadow: 0 6px 16px var(--guide-card-shadow-hover, rgba(0, 0, 0, 0.15));
+  
+}
+
+.guide-card img {
+  height: 180px;
+  
+  width: 100%;
+  
+  object-fit: cover;
+  
+}
+
+.guide-card .card-title {
+  font-size: 1.1rem;
+  
+  font-weight: 600;
+  
+  color: var(--heading-color, #000);
+  
+}
+
+.guide-card .card-text {
+  font-size: 0.95rem;
+  
+  color: var(--text-muted, #555);
+  
+}

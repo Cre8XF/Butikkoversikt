@@ -80,4 +80,13 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     })
     .catch(err => console.error("Feil ved lasting av butikker.json:", err));
+
+// Aktiver fade-in når alt er ferdig lagt til
+setTimeout(() => {
+  document.querySelectorAll(".fade-in").forEach(el => {
+    el.style.opacity = "1";
+    el.style.transform = "translateY(0)";
+  });
+}, 50);
+
 });

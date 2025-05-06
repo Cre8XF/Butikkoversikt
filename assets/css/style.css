@@ -1,6 +1,6 @@
 /* Grunnleggende oppsett og variabler */
 @import url("base.css");
-@import url("theme.css"); /* Hvis du ønsker den her for sentral kontroll */
+@import url("theme.css"); /* Sentral fargekontroll */
 
 /* Layout og struktur */
 @import url("header.css");
@@ -9,7 +9,11 @@
 @import url("sections.css");
 
 /* Komponenter */
-@import url("cards.css");
+@import url("category-card.css"); /* Kort for kategorier på forsiden */
+@import url("store-card.css"); /* Butikkort i kategori-/utforsk-sider */
+@import url("guide-card.css"); /* Kort for guider */
+@import url("promo-card.css"); /* Kampanjeseksjon / ukens tilbud */
+@import url("top25-card.css"); /* Topp 25 spesialkort */
 @import url("buttons.css");
 @import url("ads.css");
 
