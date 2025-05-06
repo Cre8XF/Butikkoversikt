@@ -1,0 +1,26 @@
+[
+  {
+    "title": "20% på egenpleie hos Apotek1",
+    "image": "assets/images/kampanjer/apotek1-tilbud.jpg",
+    "url": "https://www.apotek1.no",
+    "description": "Gyldig til 30. april 2025"
+  },
+  {
+    "title": "Spar opptil 40% på gaming hos Elkjøp",
+    "image": "assets/images/kampanjer/elkjop-kampanje.jpg",
+    "url": "https://www.elkjop.no",
+    "description": "Gaming-utstyr på tilbud nå!"
+  },
+  {
+    "title": "Vårsalg hos Boozt – opptil 50%",
+    "image": "assets/images/kampanjer/boozt-tilbud.jpg",
+    "url": "https://www.boozt.com",
+    "description": "Oppdater vårgarderoben med gode rabatter"
+  },
+  {
+    "title": "Kampanje på klær hos Zalando",
+    "image": "assets/images/kampanjer/zalando-kampanje.jpg",
+    "url": "https://www.zalando.no",
+    "description": "Rabatter på utvalgte merker"
+  }
+]
