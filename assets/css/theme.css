@@ -12,6 +12,7 @@
   --hero-bg: #f1f5f9; /* Lys blågrå bak hero */
   --card-bg: #ffffff;
   --card-hover: #f3f4f6;
+  --sticky-bg: #eef2fc; /* Sticky header bakgrunn */
 
   /* ========= TEKST ========= */
   --text-color: #1e293b; /* Standard tekst – mørk blågrå */

@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Menyknapp
         const knapp = document.createElement("a");
         knapp.href = `#${id}`;
-        knapp.className = "btn btn-outline-primary btn-sm";
+        knapp.className = "btn btn-outline-primary ";
         knapp.textContent = kategori;
         kategoriMeny.appendChild(knapp);
 

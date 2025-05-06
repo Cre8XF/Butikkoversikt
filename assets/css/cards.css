@@ -90,6 +90,16 @@
   margin-bottom: 0.5rem;
 }
 /* ✅ Standard butikkort (brukes til utforsk alle butikker) */
+#kategoriMeny {
+  position: sticky;
+  top: 80px; /* Justeres etter høyde på headeren */
+  z-index: 10;
+  background-color: var(--body-bg); /* Sørg for å matche siden din */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color); /* Valgfritt */
+}
+
 .store-card {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -142,4 +152,37 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.sticky-kategori-nav {
+  position: sticky;
+  top: 60px; /* justeres basert på header-høyde */
+  z-index: 999;
+  background-color: var(--body-bg); /* sørg for at dette matcher siden */
+  padding: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* valgfritt */
+}
+
+#kategoriMeny {
+  position: sticky;
+  top: 70px; /* justeres etter navbar-høyde */
+  z-index: 999;
+  background-color: var(--sticky-bg);
+  padding: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #ddd;
+}
+
+/* Lager rom over seksjoner slik at ikke overskrifter havner bak meny */
+.kategori-seksjon {
+  scroll-margin-top: 120px;
+}
+
+/* Eventuelt: legg til margin-top på første seksjon hvis ikke nok avstand */
+.kategori-seksjon:first-of-type {
+  margin-top: 2rem;
+}
+
+#kategoriContainer {
+  padding-top: 120px; /* slik at det er plass under sticky meny */
 }

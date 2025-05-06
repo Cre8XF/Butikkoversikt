@@ -24,22 +24,28 @@
   </header>
 
   <main class="py-5">
+  
     <div class="container py-4">
       <h1 class="text-center mb-4">Utforsk alle butikker</h1>
-
+  
       <!-- Søkefelt -->
       <div class="mb-4 text-center">
         <input type="text" id="butikksok" class="form-control w-75 mx-auto"
           placeholder="Søk etter butikk eller kategori..." />
       </div>
-
-      <!-- Kategorinavigasjon -->
-      <nav id="kategoriMeny" class="mb-5 d-flex flex-wrap gap-2 justify-content-center"></nav>
-
-      <!-- Innhold -->
+    </div> <!-- Lukk container riktig her -->
+  
+    <!-- Sticky kategori navigasjon -->
+    <nav id="kategoriMeny" class="mb-5 d-flex flex-wrap gap-2 justify-content-center">
+      <!-- Knapper genereres av JS -->
+    </nav>
+  
+    <div class="container">
       <div id="kategoriContainer" class="row g-4"></div>
     </div>
+  
   </main>
+
 
   <footer class="footer bg-header text-heading py-5 mt-5">
     <div class="container text-center">
