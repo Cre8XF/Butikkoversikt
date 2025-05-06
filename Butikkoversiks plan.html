@@ -1,0 +1,72 @@
+# Butikkoversikt.no - Oppsummering og Plan (Mai 2025)
+
+## ✅ Oppsummering av status
+
+### 🌐 Forside
+
+* Ny struktur:
+
+  * Hero-seksjon med søkefelt og interaktive tagger
+  * Kategorikort med ny visuell stil
+  * "Populære nettbutikker" seksjon (tidligere Topp 25)
+  * Kampanjeseksjon med data fra kampanjer-forside.json
+  * Knapp til full kampanjeoversikt (kampanjer.html)
+
+### 📄 Andre sider
+
+* **kategori.html** viser butikker fra valgt kategori via URL-parameter
+* **kategori-mal-utforsk.html** viser alle butikker etter kategori og underkategori
+* **alle-butikker.html** med nytt filtreringssystem (tags/dropdown-toggle)
+* **kampanjer.html** viser alle kampanjer fra kampanjer.json
+
+### 🎨 Design og layout
+
+* CSS er modulbasert (f.eks. cards.css, promo-card.css)
+* Fade-in aktivert på kort uten skjuling
+* Kategorikort og butikkort har en ren og moderne stil
+
+---
+
+## 🗺️ Plan fremover
+
+### 1. Forbedre navigasjon og brukeropplevelse
+
+* [ ] Sticky navigasjon for kategori/filter der det er relevant
+* [ ] Visuell indikator for aktiv side i menyen
+
+### 2. Utvid funksjonalitet
+
+* [ ] Filtrering og sortering på kampanjesiden
+* [ ] Tag-baserte filter for guider og populære butikker
+* [ ] Mulighet for å bytte mellom visningsmoduser (tags vs dropdown)
+
+### 3. Innhold og nye seksjoner
+
+* [ ] Redesign av guideseksjonen med kort og linker
+* [ ] Seksjoner på forsiden for:
+
+  * [ ] "Populære guider"
+  * [ ] "Ukens nyheter"
+  * [ ] "Ukens anbefaling"
+
+### 4. Ytelse og SEO
+
+* [ ] Optimalisere bilder og bruke WebP der det er mulig
+* [ ] Lazy loading på bilder
+* [ ] Dynamisk <title> og <meta description> for hver side
+* [ ] Generere sitemap + strukturerte data (JSON-LD)
+
+### 5. Inntekt og annonser
+
+* [ ] Sporingssystem for klikk/affiliate (f.eks. `?ref=` i URL)
+* [ ] Dynamiske annonser og kampanjer fra JSON
+* [ ] Nyhetsbrev-modul (ev. koblet mot Mailchimp eller lignende)
+
+---
+
+## 📅 Neste steg
+
+* [ ] Finjustere forsiden
+* [ ] Forbedre guider + nye guider
+* [ ] Legge til dynamiske seksjoner (annonser, guider, nye butikker)
+* [ ] Klargjøre for lansering med full SEO og ytelsesgjennomgang
