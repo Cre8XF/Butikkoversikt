@@ -2,45 +2,121 @@
   {
     "title": "20% på egenpleie hos Apotek1",
     "image": "assets/images/kampanjer/apotek1-tilbud.jpg",
-    "link": "https://www.apotek1.no",
-    "description": "Gyldig til 30. april 2025"
+    "url": "https://www.apotek1.no",
+    "description": "Få 20 % rabatt på egenpleieprodukter denne uken!",
+    "store": "Apotek1",
+    "expiry": "Gyldig til 30. april 2025"
   },
   {
-    "title": "Spar opptil 40% på gaming hos Elkjøp",
-    "image": "assets/images/kampanjer/elkjop-kampanje.jpg",
-    "link": "https://www.elkjop.no",
-    "description": "Gaming-utstyr på tilbud nå!"
+    "title": "Sommerkupp hos Elkjøp",
+    "image": "assets/images/kampanjer/elkjop-sommer.jpg",
+    "url": "https://www.elkjop.no",
+    "description": "Spar stort på elektronikk før ferien starter!",
+    "store": "Elkjøp",
+    "expiry": "Gyldig til 5. mai 2025"
   },
   {
-    "title": "Vårsalg hos Boozt – opptil 50%",
-    "image": "assets/images/kampanjer/boozt-tilbud.jpg",
-    "link": "https://www.boozt.com",
-    "description": "Oppdater vårgarderoben med gode rabatter"
-  },
-
-  {
-    "title": "Kampanje på klær hos Zalando",
-    "image": "assets/images/kampanjer/zalando-kampanje.jpg",
-    "link": "https://www.zalando.no",
-    "description": "Rabatter på utvalgte merker"
+    "title": "3 for 2 på barneklær hos Jollyroom",
+    "image": "assets/images/kampanjer/jollyroom-barn.jpg",
+    "url": "https://www.jollyroom.no",
+    "description": "Kjøp 3, betal for 2 – gjelder utvalgte klær!",
+    "store": "Jollyroom",
+    "expiry": "Gyldig til 10. mai 2025"
   },
   {
-    "title": "Spar 25% på sminke hos Kicks",
-    "image": "assets/images/kampanjer/kicks-tilbud.jpg",
-    "link": "https://www.kicks.no",
-    "description": "Gyldig til 1. juni 2025"
-  },
-
-  {
-    "title": "Spar 30% på utvalgte produkter hos H&M",
-    "image": "assets/images/kampanjer/hm-tilbud.jpg",
-    "link": "https://www.hm.com",
-    "description": "Gyldig til 15. mai 2025"
+    "title": "50% rabatt på utvalgte bøker hos Ark",
+    "image": "assets/images/kampanjer/ark-boker.jpg",
+    "url": "https://www.ark.no",
+    "description": "Få 50 % rabatt på utvalgte bøker denne uken!",
+    "store": "Ark",
+    "expiry": "Gyldig til 15. mai 2025"
   },
   {
-    "title": "Kampanje på elektronikk hos Power",
-    "image": "assets/images/kampanjer/power-kampanje.jpg",
-    "link": "https://www.power.no",
-    "description": "Rabatter på TV-er, datamaskiner og mer"
+    "title": "Kampanje på treningsutstyr hos XXL",
+    "image": "assets/images/kampanjer/xxl-trening.jpg",
+    "url": "https://www.xxl.no",
+    "description": "Spar penger på treningsutstyr og klær!",
+    "store": "XXL",
+    "expiry": "Gyldig til 20. mai 2025"
+  },
+  {
+    "title": "Rabatt på sminke hos Kicks",
+    "image": "assets/images/kampanjer/kicks-sminke.jpg",
+    "url": "https://www.kicks.no",
+    "description": "Få 30 % rabatt på utvalgte sminkeprodukter!",
+    "store": "Kicks",
+    "expiry": "Gyldig til 25. mai 2025"
+  },
+  {
+    "title": "Salg på sko hos Footway",
+    "image": "assets/images/kampanjer/footway-sko.jpg",
+    "url": "https://www.footway.no",
+    "description": "Spar opptil 50 % på utvalgte sko!",
+    "store": "Footway",
+    "expiry": "Gyldig til 30. mai 2025"
+  },
+  {
+    "title": "Kampanje på kjøkkenutstyr hos Jernia",
+    "image": "assets/images/kampanjer/jernia-kjokken.jpg",
+    "url": "https://www.jernia.no",
+    "description": "Få 20 % rabatt på kjøkkenutstyr denne uken!",
+    "store": "Jernia",
+    "expiry": "Gyldig til 5. juni 2025"
+  },
+  {
+    "title": "Salg på barneleker hos Lekmer",
+    "image": "assets/images/kampanjer/lekmer-leker.jpg",
+    "url": "https://www.lekmer.no",
+    "description": "Spar opptil 40 % på utvalgte barneleker!",
+    "store": "Lekmer",
+    "expiry": "Gyldig til 10. juni 2025"
+  },
+  {
+    "title": "Kampanje på sportsutstyr hos Intersport",
+    "image": "assets/images/kampanjer/intersport-sport.jpg",
+    "url": "https://www.intersport.no",
+    "description": "Få 25 % rabatt på utvalgte sportsprodukter!",
+    "store": "Intersport",
+    "expiry": "Gyldig til 15. juni 2025"
+  },
+  {
+    "title": "Salg på klær hos H&M",
+    "image": "assets/images/kampanjer/hm-klaer.jpg",
+    "url": "https://www.hm.com/no",
+    "description": "Spar opptil 60 % på utvalgte klær!",
+    "store": "H&M",
+    "expiry": "Gyldig til 20. juni 2025"
+  },
+  {
+    "title": "Rabatt på elektronikk hos Power",
+    "image": "assets/images/kampanjer/power-elektronikk.jpg",
+    "url": "https://www.power.no",
+    "description": "Få 15 % rabatt på utvalgte elektronikkprodukter!",
+    "store": "Power",
+    "expiry": "Gyldig til 25. juni 2025"
+  },
+  {
+    "title": "Kampanje på smykker hos Bjørklund",
+    "image": "assets/images/kampanjer/bjorklund-smykker.jpg",
+    "url": "https://www.bjorklund.no",
+    "description": "Få 20 % rabatt på utvalgte smykker!",
+    "store": "Bjørklund",
+    "expiry": "Gyldig til 30. juni 2025"
+  },
+  {
+    "title": "Salg på møbler hos Bohus",
+    "image": "assets/images/kampanjer/bohus-mobler.jpg",
+    "url": "https://www.bohus.no",
+    "description": "Spar opptil 50 % på utvalgte møbler!",
+    "store": "Bohus",
+    "expiry": "Gyldig til 5. juli 2025"
+  },
+  {
+    "title": "Kampanje på kosmetikk hos Vita",
+    "image": "assets/images/kampanjer/vita-kosmetikk.jpg",
+    "url": "https://www.vita.no",
+    "description": "Få 30 % rabatt på utvalgte kosmetikkprodukter!",
+    "store": "Vita",
+    "expiry": "Gyldig til 10. juli 2025"
   }
 ]
