@@ -1,188 +1,75 @@
-/* ============================================
-   cards.css – Kortkomponenter for Butikkoversikt.no
-   ============================================ */
+/* === Kortstruktur: Felles base === */
+.card-base {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--card-radius, 0.75rem);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-/* ✅ Standard kategorikort */
+/* === Butikk-kort === */
+.store-card {
+  overflow: hidden;
+}
+.store-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* === Kategorikort – forbedret utseende === */
 .category-card {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
-  border-radius: var(--card-radius, 0.75rem);
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.category-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-}
-
-.category-card img {
-  height: 100px;
-  object-fit: contain;
-  padding: 1rem;
-}
-
-/* ✅ Guidekort */
-.guide-card {
-  background-color: var(--guide-card-bg, #fff);
-  border-radius: 0.75rem;
-  border: 1px solid var(--border-color, #ccc);
-  box-shadow: 0 2px 6px var(--guide-card-shadow, rgba(0, 0, 0, 0.08));
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-}
-
-.guide-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px var(--guide-card-shadow-hover, rgba(0, 0, 0, 0.15));
-}
-
-.guide-card img {
-  height: 180px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.guide-card .card-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--heading-color, #000);
-}
-
-.guide-card .card-text {
-  font-size: 0.95rem;
-  color: var(--text-muted, #555);
-}
-
-/* ✅ Topp25 kort (felles layout) */
-.top25-card {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: var(--card-radius, 0.75rem);
-  box-shadow: var(--shadow-xs);
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  box-shadow: var(--card-shadow);
   text-align: center;
-  padding: 1rem;
-  transition: box-shadow 0.3s ease;
-}
-
-.top25-card:hover {
-  box-shadow: var(--shadow-md);
-}
-
-/* ✅ Spesialvisning for anbefalte */
-.featured-store-card {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: var(--card-radius, 0.75rem);
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.3s ease;
-}
-
-.featured-store-card:hover {
-  box-shadow: var(--shadow-md);
-}
-
-.featured-store-card img {
-  max-height: 80px;
-  object-fit: contain;
-  margin-bottom: 0.5rem;
-}
-/* ✅ Standard butikkort (brukes til utforsk alle butikker) */
-#kategoriMeny {
-  position: sticky;
-  top: 80px; /* Justeres etter høyde på headeren */
-  z-index: 10;
-  background-color: var(--body-bg); /* Sørg for å matche siden din */
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--border-color); /* Valgfritt */
-}
-
-.store-card {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 0.75rem;
-  box-shadow: var(--card-shadow, 0 1px 6px rgba(0, 0, 0, 0.1));
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  overflow: hidden;
-  padding: 1rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
-  opacity: 1 !important;
-  max-width: 100%;
 }
-
-.store-card:hover {
+.category-card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--card-shadow-hover, 0 4px 12px rgba(0, 0, 0, 0.15));
+  box-shadow: var(--card-shadow-hover);
 }
-
-.store-card .card-img-top {
-  height: 120px;
+.category-card .icon-circle {
+  background-color: var(--accent-bg, #f0f0f0);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category-card .icon-circle img {
+  width: 64px;
+  height: 64px;
   object-fit: contain;
-  margin-bottom: 1rem;
 }
-
-.store-card .card-title {
+.category-card h5 {
+  font-size: 1.1rem;
   font-weight: 600;
-  font-size: 1rem;
   margin-bottom: 0.25rem;
 }
-
-.store-card .card-text {
-  font-size: 0.9rem;
-  color: var(--text-muted, #666);
+.category-card p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  min-height: 40px;
+}
+.category-card .btn {
+  margin-top: 1rem;
 }
 
-/* Fade-in */
-.fade-in {
-  animation: fadeInUp 0.8s ease both;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.sticky-kategori-nav {
-  position: sticky;
-  top: 60px; /* justeres basert på header-høyde */
-  z-index: 999;
-  background-color: var(--body-bg); /* sørg for at dette matcher siden */
-  padding: 1rem 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* valgfritt */
-}
-
+/* === Sticky navigasjon for kategorimeny === */
 #kategoriMeny {
   position: sticky;
-  top: 70px; /* justeres etter navbar-høyde */
+  top: 70px;
   z-index: 999;
   background-color: var(--sticky-bg);
   padding: 1rem 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid #ddd;
-}
-
-/* Lager rom over seksjoner slik at ikke overskrifter havner bak meny */
-.kategori-seksjon {
-  scroll-margin-top: 120px;
-}
-
-/* Eventuelt: legg til margin-top på første seksjon hvis ikke nok avstand */
-.kategori-seksjon:first-of-type {
-  margin-top: 2rem;
-}
-
-#kategoriContainer {
-  padding-top: 120px; /* slik at det er plass under sticky meny */
 }
