@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const kategoriMeny = document.getElementById("kategoriMeny");
   const kategoriContainer = document.getElementById("kategoriContainer");
+  const OFFSET = 100; // Juster denne verdien for å kontrollere hvor langt ned siden scroller
 
   if (!kategoriMeny || !kategoriContainer) {
     console.error("❌ Kategori-meny eller container ikke funnet");
@@ -23,15 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
         kategoriMeny.appendChild(knapp);
       });
 
-      // Legg til smooth scroll og aktiv markering
+      // Smooth scroll med offset og aktiv markering
       document.querySelectorAll(".kategori-knapp").forEach(link => {
         link.addEventListener("click", function (e) {
           e.preventDefault();
           document.querySelectorAll(".kategori-knapp").forEach(a => a.classList.remove("active"));
           this.classList.add("active");
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
-          });
+
+          const targetElement = document.querySelector(this.getAttribute("href"));
+          const yOffset = -OFFSET; 
+          const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+          window.scrollTo({ top: y, behavior: "smooth" });
         });
       });
 

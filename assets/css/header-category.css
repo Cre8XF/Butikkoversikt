@@ -18,54 +18,60 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* =============================
-   Sticky Kategori Meny
-============================= */
-.sticky-category-nav {
+/* ============================
+   Sticky Kategori Meny (Uten horisontal scrolling)
+============================ */
+.kategori-nav-container {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
-  overflow-x: auto;
-  white-space: nowrap;
   padding: 10px 15px;
   background-color: white;
   border-bottom: 2px solid #007bff;
   width: 100%;
-  scroll-behavior: smooth;
-  z-index: 10;
+  transition: all 0.3s ease;
 }
 
-.sticky-category-nav a {
-  text-decoration: none;
-  color: #333;
+.kategori-nav-container a {
   padding: 8px 16px;
   border-radius: 4px;
-  background-color: var(--header-bg, #f8f9fa);
-  border: 1px solid #ccc;
-  transition: background-color 0.3s ease;
-  flex-shrink: 0; /* Forhindrer at de krymper */
+  background-color: #f8f9fa;
+  color: #007bff;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  flex: 1 1 calc(100% / 6 - 10px); /* Justerer antall i linje */
+  text-align: center;
 }
 
-.sticky-category-nav a:hover {
+.kategori-nav-container a:hover {
   background-color: #007bff;
   color: white;
 }
 
-.sticky-category-nav a.active {
+.kategori-nav-container a.active {
   background-color: #007bff;
   color: white;
-  border-color: #007bff;
+}
+.kategori-seksjon {
+  scroll-margin-top: 150px; /* Justerer hvor den stopper */
 }
 
-.sticky-category-nav::-webkit-scrollbar {
-  height: 6px;
+/* Responsiv justering */
+@media (max-width: 1200px) {
+  .kategori-nav-container a {
+    flex: 1 1 calc(100% / 4 - 10px);
+  }
 }
 
-.sticky-category-nav::-webkit-scrollbar-thumb {
-  background: #007bff;
-  border-radius: 3px;
+@media (max-width: 768px) {
+  .kategori-nav-container a {
+    flex: 1 1 calc(100% / 3 - 10px);
+  }
 }
 
-.sticky-category-nav::-webkit-scrollbar-track {
-  background: #f1f1f1;
+@media (max-width: 576px) {
+  .kategori-nav-container a {
+    flex: 1 1 calc(100% / 2 - 10px);
+  }
 }
