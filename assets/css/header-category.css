@@ -54,7 +54,7 @@ body {
   color: white;
 }
 .kategori-seksjon {
-  scroll-margin-top: 150px; /* Justerer hvor den stopper */
+  scroll-margin-top: 380px; /* Justerer hvor den stopper */
 }
 
 /* Responsiv justering */
