@@ -1,72 +1,79 @@
-// generate-kategorioversikt.js – Oppdatert og ryddet versjon
-
 document.addEventListener("DOMContentLoaded", () => {
-  const kategoriListe = document.getElementById("kategori-liste");
-  const kategoriSok = document.getElementById("kategori-sok");
+  const kategoriMeny = document.getElementById("kategoriMeny");
+  const kategoriContainer = document.getElementById("kategoriContainer");
 
-  if (!kategoriListe || !kategoriSok) {
-    console.error("Mangler elementer for kategorioversikt");
+  if (!kategoriMeny || !kategoriContainer) {
+    console.error("❌ Kategori-meny eller container ikke funnet");
     return;
   }
 
+  // Hent butikkene fra JSON
   fetch("assets/data/butikker.json")
     .then(res => res.json())
     .then(butikker => {
+      // Finn unike kategorier
       const hovedkategorier = Array.from(new Set(butikker.map(b => b.category))).filter(Boolean);
 
+      // Generer navigasjonsknapper
       hovedkategorier.forEach(kategori => {
-        // Generer ikon-navn basert på kategoritekst
-        const ikonNavn = kategori
-          .toLowerCase()
-          .replace(/æ/g, "ae")
-          .replace(/ø/g, "o")
-          .replace(/å/g, "a")
-          .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Fjern diakritiske tegn
-          .replace(/[^a-z0-9]+/g, "-")
-          .replace(/(^-|-$)/g, "") + ".png";
-
-        // Bygg HTML-struktur for kort
-        const kort = document.createElement("div");
-        kort.className = "col-6 col-md-4 col-lg-3 kategori-kort";
-        kort.setAttribute("data-kategori", kategori.toLowerCase());
-
-        const link = document.createElement("a");
-        link.href = `kategori.html?kategori=${encodeURIComponent(kategori)}`;
-        link.className = "text-decoration-none text-dark";
-
-        const card = document.createElement("div");
-        card.className = "card p-4 h-100 shadow-sm d-flex flex-column justify-content-center align-items-center";
-
-        const img = document.createElement("img");
-        img.src = `assets/images/ikoner/${ikonNavn}`;
-        img.alt = kategori;
-        img.className = "img-fluid mb-3";
-        img.style.height = "80px";
-        img.style.objectFit = "contain";
-
-        const tittel = document.createElement("h6");
-        tittel.className = "fw-bold";
-        tittel.textContent = kategori;
-
-        // Sett sammen kortet
-        card.appendChild(img);
-        card.appendChild(tittel);
-        link.appendChild(card);
-        kort.appendChild(link);
-        kategoriListe.appendChild(kort);
+        const knapp = document.createElement("a");
+        knapp.href = `#${kategori.toLowerCase().replace(/ /g, "-")}`;
+        knapp.className = "btn btn-outline-primary kategori-knapp";
+        knapp.textContent = kategori;
+        kategoriMeny.appendChild(knapp);
       });
 
-      // Søke/filter-funksjon
-      kategoriSok.addEventListener("input", () => {
-        const sok = kategoriSok.value.toLowerCase();
-        document.querySelectorAll(".kategori-kort").forEach(kort => {
-          const vis = kort.getAttribute("data-kategori").includes(sok);
-          kort.classList.toggle("d-none", !vis);
+      // Legg til eventlistener for aktiv kategori
+      document.querySelectorAll(".kategori-knapp").forEach(link => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelectorAll(".kategori-knapp").forEach(a => a.classList.remove("active"));
+          this.classList.add("active");
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+          });
         });
       });
+
+      // Generer kategoriseksjoner
+      hovedkategorier.forEach(kategori => {
+        const seksjon = document.createElement("div");
+        seksjon.id = kategori.toLowerCase().replace(/ /g, "-");
+        seksjon.className = "kategori-seksjon";
+
+        const overskrift = document.createElement("h2");
+        overskrift.textContent = kategori;
+        seksjon.appendChild(overskrift);
+
+        const row = document.createElement("div");
+        row.className = "row g-3";
+
+        const filteredStores = butikker.filter(butikk => butikk.category === kategori);
+        
+        filteredStores.forEach(butikk => {
+          const col = document.createElement("div");
+          col.className = "col-md-3";
+
+          col.innerHTML = `
+            <div class="card store-card h-100 shadow-sm">
+              <a href="${butikk.url}" target="_blank" rel="noopener">
+                <img src="${butikk.image}" alt="${butikk.name}" class="card-img-top p-3" style="max-height:100px; object-fit:contain;">
+              </a>
+              <div class="card-body">
+                <h6 class="card-title mb-1">${butikk.name}</h6>
+                <p class="small text-muted">${butikk.description}</p>
+              </div>
+            </div>
+          `;
+          row.appendChild(col);
+        });
+
+        seksjon.appendChild(row);
+        kategoriContainer.appendChild(seksjon);
+      });
     })
-    .catch(err => {
-      console.error("Feil ved lasting av kategorier:", err);
-      kategoriListe.innerHTML = "<p>Kunne ikke laste kategoriene.</p>";
+    .catch(error => {
+      console.error("🚨 Feil ved henting av butikker:", error);
+      kategoriContainer.innerHTML = "<p>Kunne ikke laste kategoriene.</p>";
     });
 });
