@@ -18,44 +18,54 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* ============================
+/* =============================
    Sticky Kategori Meny
-============================ */
+============================= */
 .sticky-category-nav {
-  position: sticky;
-  top: 70px;
-  z-index: 1000;
-  background-color: #ffffff;
-  border-bottom: 1px solid #eaeaea;
-  padding: 10px 15px;
-  margin-bottom: 20px;
   display: flex;
+  justify-content: flex-start;
   gap: 10px;
   overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 15px;
+  background-color: white;
+  border-bottom: 2px solid #007bff;
+  width: 100%;
+  scroll-behavior: smooth;
+  z-index: 10;
 }
 
-.sticky-category-nav button {
+.sticky-category-nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: var(--header-bg, #f8f9fa);
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0; /* Forhindrer at de krymper */
+}
+
+.sticky-category-nav a:hover {
   background-color: #007bff;
   color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 5px 15px;
-  transition: background-color 0.2s ease;
-  white-space: nowrap;
 }
 
-.sticky-category-nav button:hover {
-  background-color: #0056b3;
+.sticky-category-nav a.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
 }
 
-.sticky-category-nav button.active {
-  background-color: #0056b3;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.sticky-category-nav::-webkit-scrollbar {
+  height: 6px;
 }
 
-/* ============================
-   Smooth Scroll
-============================ */
-html {
-  scroll-behavior: smooth;
+.sticky-category-nav::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 3px;
+}
+
+.sticky-category-nav::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
