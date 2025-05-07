@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         kategoriMeny.appendChild(knapp);
       });
 
-      // Legg til eventlistener for aktiv kategori
+      // Legg til smooth scroll og aktiv markering
       document.querySelectorAll(".kategori-knapp").forEach(link => {
         link.addEventListener("click", function (e) {
           e.preventDefault();
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         row.className = "row g-3";
 
         const filteredStores = butikker.filter(butikk => butikk.category === kategori);
-        
+
         filteredStores.forEach(butikk => {
           const col = document.createElement("div");
           col.className = "col-md-3";

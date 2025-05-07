@@ -28,3 +28,12 @@
   font-size: 0.875rem;
   color: var(--text-muted);
 }
+.promo-card .discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff4757;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}

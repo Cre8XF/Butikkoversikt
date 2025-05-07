@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Butikkoversikt.no - Din guide til nettbutikker</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Temavariabler styres av theme.css -->
-  <link rel="stylesheet" href="assets/css/theme.css"> <!-- 🎨 Temavariabler -->
-  <link rel="stylesheet" href="assets/css/style.css"> <!-- 📦 Alt av struktur og layout -->
-
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/header-category.css">
+  <link rel="stylesheet" href="assets/css/category-store-card.css">
 </head>
 
-<body>
+<body class="kategori-side">
   <!-- Header -->
   <header class="navbar navbar-expand-lg navbar-theme bg-header shadow-sm py-2">
     <div class="container">
@@ -40,22 +40,26 @@
       style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
   </header>
 
+  <!-- Sticky Navigasjonsmeny -->
+  <nav id="kategoriMeny" class="sticky-category-nav mb-4">
+    <!-- JavaScript fyller inn menyknapper her -->
+  </nav>
+
   <!-- Innhold -->
   <main class="py-5">
     <div class="container">
       <a href="kategori.html" class="btn btn-outline-secondary mb-3">
         ← Tilbake til kategorier
       </a>
-  
+
       <h1 id="kategori-tittel" class="text-center mb-5">Vi henter butikker i denne kategorien...</h1>
-  
+
       <div id="subcategory-filter" class="mb-4 text-center"></div>
       <div id="butikk-container" class="row g-4 justify-content-center">
         <!-- Butikkortene fylles inn her av JavaScript -->
       </div>
     </div>
   </main>
-
 
   <!-- Footer -->
   <footer class="footer bg-header text-heading py-5 mt-5">
@@ -79,28 +83,12 @@
           <h6>Kontakt</h6>
           <p class="text-muted-theme mb-1">E-post: kontakt@butikkoversikt.no</p>
           <p class="text-muted-theme mb-2">Org.nr: 123 456 789</p>
-          <div>
-            <a href="#" class="text-heading me-3" title="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-heading me-3" title="Twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="text-heading" title="Instagram"><i class="bi bi-instagram"></i></a>
-          </div>
         </div>
-      </div>
-      <div class="newsletter-wrapper text-center mb-5">
-        <h5 class="mb-3">Få de beste tilbudene først!</h5>
-        <p class="text-muted-theme mb-4">Meld deg på vårt nyhetsbrev og få ukens beste nettbutikker, kampanjer og
-          rabatter
-          rett i innboksen.</p>
-        <form id="newsletter-form" class="d-flex flex-column flex-sm-row justify-content-center">
-          <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0" placeholder="Din e-postadresse" required>
-          <button type="submit" class="btn btn-primary">Meld meg på</button>
-        </form>
       </div>
       <hr class="border-secondary">
       <p class="text-center text-muted-theme mb-0">&copy; 2025 Butikkoversikt.no. Alle rettigheter forbeholdt.</p>
     </div>
   </footer>
-
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -109,7 +97,6 @@
   <script src="assets/js/effects/theme-toggle.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/generate/generate-kategori.js"></script>
-
 
 </body>
 

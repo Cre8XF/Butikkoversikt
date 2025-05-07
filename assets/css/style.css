@@ -1,22 +1,23 @@
 /* Grunnleggende oppsett og variabler */
 @import url("base.css");
-@import url("theme.css"); /* Sentral fargekontroll */
+@import url("theme.css");
 
 /* Layout og struktur */
 @import url("header.css");
 @import url("footer.css");
 @import url("hero.css");
 @import url("sections.css");
+@import url("header-category.css");
+@import url("front-category-card.css"); /* Forside kategorikort */
+@import url("category-store-card.css"); /* Kategorisider butikkort */
 
 /* Komponenter */
-@import url("category-card.css"); /* Kort for kategorier på forsiden */
-@import url("store-card.css"); /* Butikkort i kategori-/utforsk-sider */
-@import url("guide-card.css"); /* Kort for guider */
-@import url("promo-card.css"); /* Kampanjeseksjon / ukens tilbud */
-@import url("top25-card.css"); /* Topp 25 spesialkort */
+@import url("guide-card.css");
+@import url("promo-card.css");
+@import url("top25-card.css");
 @import url("buttons.css");
 @import url("ads.css");
-@import url("search.css"); /* Søkefunksjon */
+@import url("search.css");
 
 /* Ekstra og tilpasninger */
 @import url("responsive.css");

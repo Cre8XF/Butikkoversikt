@@ -3,7 +3,7 @@
 
 /* Header styling */
 body {
-  padding-top: 90px;
+  padding-top: 60px;
 }
 .nav-link:hover {
   text-decoration: underline;
@@ -11,20 +11,6 @@ body {
 }
 .dropdown-menu {
   margin-top: 8px;
-}
-header {
-  z-index: 1030;
-}
-.navbar-brand span {
-  font-family: "Poppins", sans-serif;
-}
-.input-group > .form-control {
-  background-color: var(--card-bg);
-  color: var(--btn-primary);
-}
-.input-group > .form-control:focus {
-  box-shadow: none;
-  border-color: var(--placeholder-color);
 }
 header {
   z-index: 1030;
@@ -40,7 +26,7 @@ header {
 }
 
 .navbar-brand span {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-link:hover {
@@ -74,5 +60,7 @@ header {
   margin-right: 0.25rem;
 }
 
-/* ========================================= */
-/*
+/* =============================
+   FJERNET:
+   Sticky kategori-meny er nå flyttet til header-category.css
+============================= */
