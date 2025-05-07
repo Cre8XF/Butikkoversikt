@@ -1,0 +1,46 @@
+#autocomplete-list {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px; /* rund hele boksen */
+  z-index: 10;
+  width: 75%;
+  max-height: 250px;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#autocomplete-list li {
+  padding: 12px 18px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s ease;
+  font-size: 1rem;
+}
+
+#autocomplete-list li:last-child {
+  border-bottom: none; /* fjern linje på siste element */
+}
+
+#autocomplete-list li:hover {
+  background-color: #f8f9fa;
+}
+.search-wrapper {
+  position: relative;
+  z-index: 2; /* sørg for at wrapper ligger over bakgrunn */
+}
+
+#searchInput {
+  position: relative;
+  z-index: 3; /* alltid over listen */
+}
+
+#autocomplete-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 4; /* over alt annet i wrapper */
+}

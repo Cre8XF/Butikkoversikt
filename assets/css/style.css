@@ -16,6 +16,7 @@
 @import url("top25-card.css"); /* Topp 25 spesialkort */
 @import url("buttons.css");
 @import url("ads.css");
+@import url("search.css"); /* Søkefunksjon */
 
 /* Ekstra og tilpasninger */
 @import url("responsive.css");
