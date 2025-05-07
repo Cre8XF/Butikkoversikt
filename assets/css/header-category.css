@@ -1,83 +1,61 @@
-/* =============================
-   Header Styling
-============================= */
-
+/* ============================
+   Sticky Header
+============================ */
 body {
-  padding-top: 90px;
   margin: 0;
   font-family: Arial, sans-serif;
+  padding-top: 90px;
 }
 
-/* =============================
-   Sticky Header Menu
-============================= */
 #header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 90px;
-  background-color: #fff;
+  background-color: #ffffff;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* =============================
-   Sticky Kategori Meny (kun på kategori-sider)
-============================= */
-body.kategori-side .kategori-meny {
+/* ============================
+   Sticky Kategori Meny
+============================ */
+.sticky-category-nav {
   position: sticky;
-  top: 90px;
-  z-index: 999;
-  background-color: white;
-  border-bottom: 1px solid #eee;
-  padding: 10px 0;
+  top: 70px;
+  z-index: 1000;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
 }
 
-body.kategori-side .kategori-meny a {
-  margin-right: 10px;
-  text-decoration: none;
-  color: #333;
-  padding: 5px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-body.kategori-side .kategori-meny a:hover,
-body.kategori-side .kategori-meny a.active {
+.sticky-category-nav button {
   background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 15px;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
 }
 
-/* =============================
+.sticky-category-nav button:hover {
+  background-color: #0056b3;
+}
+
+.sticky-category-nav button.active {
+  background-color: #0056b3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================
    Smooth Scroll
-============================= */
+============================ */
 html {
   scroll-behavior: smooth;
-}
-
-/* =============================
-   Kategori Seksjoner
-============================= */
-body.kategori-side .kategori-seksjon {
-  margin-bottom: 40px;
-}
-
-body.kategori-side .kategori-seksjon h2 {
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-}
-
-/* =============================
-   Store Cards (kun på kategori-sider)
-============================= */
-body.kategori-side .card.store-card {
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.2s;
-}
-
-body.kategori-side .card.store-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
