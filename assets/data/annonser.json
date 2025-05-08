@@ -1,23 +1,25 @@
 [
   {
-    "id": "ad-1",
     "image": "https://via.placeholder.com/728x90?text=Annonse+1",
-    "link": "https://example.com/produkt-1",
-    "alt": "Produkt 1 - Kjøp nå og spar!"
+    "url": "https://example.com/produkt-1",
+    "alt": "Produkt 1 - Kjøp nå og spar!",
+    "title": "Produkt 1",
+    "description": "Kjøp nå og spar stort!"
   },
   {
-    "id": "ad-2",
     "image": "https://via.placeholder.com/728x90?text=Annonse+2",
-    "link": "https://example.com/produkt-2",
-    "alt": "Produkt 2 - Begrenset tilbud!"
+    "url": "https://example.com/produkt-2",
+    "alt": "Produkt 2 - Begrenset tilbud!",
+    "title": "Produkt 2",
+    "description": "Begrenset tilbud, få den nå!"
   },
   {
-    "id": "ad-3",
     "image": "https://via.placeholder.com/728x90?text=Annonse+3",
-    "link": "https://example.com/produkt-3",
-    "alt": "Produkt 3 - Nyhet!"
+    "url": "https://example.com/produkt-3",
+    "alt": "Produkt 3 - Nyhet!",
+    "title": "Produkt 3",
+    "description": "Nyhet i sortimentet, sjekk ut nå!"
   },
-  
   {
     "image": "assets/images/annonser/sommer-tilbud.png",
     "alt": "Sommer Tilbud",
@@ -33,5 +35,3 @@
     "url": "https://butikkoversikt.no/nyhetsbrev"
   }
 ]
-
-  

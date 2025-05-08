@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const item = document.createElement('div');
             item.className = index === 0 ? 'carousel-item active' : 'carousel-item';
             item.innerHTML = `
-              <a href='${annonse.url}' target='_blank'>
+              <a href='${annonse.url ? annonse.url : '#'}' target='_blank'>
                 <img src='${annonse.image}' class='d-block w-100' alt='${annonse.alt}'>
               </a>
             `;
