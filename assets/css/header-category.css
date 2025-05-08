@@ -56,6 +56,29 @@ body {
 .kategori-seksjon {
   scroll-margin-top: 380px; /* Justerer hvor den stopper */
 }
+/* ============================
+   Navigasjonsmeny Styling
+============================ */
+.navbar-theme {
+  background-color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #333 !important;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #007bff !important;
+  color: white !important;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #0056b3 !important;
+  color: white !important;
+  border-radius: 4px;
+}
 
 /* Responsiv justering */
 @media (max-width: 1200px) {

@@ -29,6 +29,14 @@
 
 ## 🗺️ Plan fremover
 
+første prioritet!!
+
+Må finne ut hva innholdet på forsiden skal være. se over hva det er der nå og se om det kan forbedres.
+se hva jeg skal ha i menyen
+finne ut hva som skal skje når man trykker på en meny, kort eller knapper på forsiden. (hvor havner jeg og hva er hensikten?)
+
+
+
 ### 1. Forbedre navigasjon og brukeropplevelse
 
 * [ ] Sticky navigasjon for kategori/filter der det er relevant
@@ -70,3 +78,87 @@
 * [ ] Forbedre guider + nye guider
 * [ ] Legge til dynamiske seksjoner (annonser, guider, nye butikker)
 * [ ] Klargjøre for lansering med full SEO og ytelsesgjennomgang
+
+
+
+## Oversikt over HTML-filer og deres tilhørende JavaScript-filer
+
+### 1. index.html
+
+* generate-forside-guider.js
+* generate-anbefalte.js
+* generate-gaming-sections.js
+* generate-kategori-mal.js
+* generate-kampanjer-forside.js
+* generate-search.js
+* main.js
+* autocomplete-søk.js
+
+### 2. kategori.html
+
+* generate-kategori.js
+* generate-search.js
+* main.js
+
+### 3. kategori-mal-utforsk.html
+
+* generate-kategori-mal.js
+* generate-search.js
+* main.js
+
+### 4. alle-butikker.html
+
+* generate-alle-butikker-filter-tags-enhanced-toggle.js
+* generate-search.js
+* main.js
+
+### 5. topplisten.html
+
+* generate-topp25.js
+* generate-search.js
+* main.js
+
+### 6. kampanjer.html
+
+* generate-kampanjer.js
+* generate-search.js
+* main.js
+
+### 7. sok.html
+
+* generate-search.js
+* main.js
+
+### 8. main-guider.html
+
+* generate-guide.js
+* main.js
+
+### 9. guide-barn.html
+
+* main.js
+
+### 10. guide-billig-treningstoy.html
+
+* main.js
+
+### 11. guide-trygg-netthandel.html
+
+* main.js
+
+### 12. Butikkoversikt plan.html
+
+* Ingen JavaScript nødvendig
+
+### Kommentarer:
+
+* Enkelte filer mangler kanskje nødvendige scripts eller har overflødige som kan fjernes.
+* Vi kan se nærmere på optimalisering etter at strukturen er verifisert.
+* Det kan være smart å lage en "master"-script-loader for å unngå feil i referanser.
+
+### Neste steg:
+
+1. Verifisere at alle skript lastes korrekt på hver side.
+2. Fjerne overflødige referanser.
+3. Oppdatere "Butikkoversikt plan.html" med denne oversikten.
+4. Sjekke om noen eventuelle feilmeldinger relatert til skript fortsatt dukker opp.

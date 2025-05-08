@@ -13,31 +13,35 @@
 
 <body>
   <!-- Header -->
-  <header class="navbar navbar-expand-lg navbar-theme bg-header shadow-sm py-2">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="/">
-        <img src="assets/images/hero/hero.png" alt="Butikkoversikt logo" style="height: 100px;" class="me-2">
-        <div>
-          <strong style="font-size: 1.5rem;">Butikkoversikt.no</strong><br>
-          <small class="text-muted-theme" style="font-size: 1rem;">Norges nettbutikk-guide</small>
-        </div>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-        title="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="alle-butikker.html">Alle butikker</a></li>
-          <li class="nav-item"><a class="nav-link" href="kategori.html">Kategorier</a></li>
-          <li class="nav-item"><a class="nav-link" href="topp25.html">Topp 25</a></li>
-          <li class="nav-item"><a class="nav-link" href="guider/main-guider.html">Guider</a></li>
-        </ul>
+<header class="navbar navbar-expand-lg navbar-theme bg-header shadow-sm py-2 sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="assets/images/hero/hero.png" alt="Butikkoversikt logo" style="height: 60px;">
+      <div>
+        <strong class="fs-5">Butikkoversikt.no</strong><br>
+        <small class="text-muted-theme">Norges nettbutikk-guide</small>
       </div>
+    </a>
+
+    <!-- Meny for mobil -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      title="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Forside</a></li>
+        <li class="nav-item"><a class="nav-link" href="kategori.html">Kategorier</a></li>
+        <li class="nav-item"><a class="nav-link" href="topp25.html">Topp 25</a></li>
+        <li class="nav-item"><a class="nav-link" href="guider/main-guider.html">Guider</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt oss</a></li>
+      </ul>
     </div>
-    <button id="themeToggleBtn" class="btn btn-sm btn-primary"
-      style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
-  </header>
+  </div>
+  <button id="themeToggleBtn" class="btn btn-sm btn-primary"
+    style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
+</header>
 
   <main class="container py-5">
     <h1 class="text-center mb-4">Guider, Tips og Råd</h1>
