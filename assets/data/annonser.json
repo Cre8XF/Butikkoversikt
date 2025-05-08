@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ad-1",
+    "image": "https://via.placeholder.com/728x90?text=Annonse+1",
+    "link": "https://example.com/produkt-1",
+    "alt": "Produkt 1 - Kjøp nå og spar!"
+  },
+  {
+    "id": "ad-2",
+    "image": "https://via.placeholder.com/728x90?text=Annonse+2",
+    "link": "https://example.com/produkt-2",
+    "alt": "Produkt 2 - Begrenset tilbud!"
+  },
+  {
+    "id": "ad-3",
+    "image": "https://via.placeholder.com/728x90?text=Annonse+3",
+    "link": "https://example.com/produkt-3",
+    "alt": "Produkt 3 - Nyhet!"
+  },
+  
+  {
+    "image": "assets/images/annonser/sommer-tilbud.png",
+    "alt": "Sommer Tilbud",
+    "title": "Sommer Tilbud - 30% rabatt",
+    "description": "Spar stort på sommerens heteste produkter. Gjelder kun i en begrenset periode.",
+    "url": "https://butikkoversikt.no/tilbud/sommer-tilbud"
+  },
+  {
+    "image": "assets/images/annonser/nyhetsbrev-kampanje.png",
+    "alt": "Nyhetsbrev Kampanje",
+    "title": "Få eksklusive tilbud først",
+    "description": "Meld deg på vårt nyhetsbrev og få de beste tilbudene før alle andre.",
+    "url": "https://butikkoversikt.no/nyhetsbrev"
+  }
+]
+
+  
