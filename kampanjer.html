@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="no" data-theme="light">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Butikkoversikt.no - Norges nettbutikk-guide</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/theme.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampanjer | Butikkoversikt.no</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
 </head>
 
 <body>
@@ -43,71 +43,52 @@
             style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
     </header>
 
-<body>
+    <!-- Hero seksjon -->
+    <section class="hero-banner text-center p-5 mb-5">
+        <h1>Ukens Kampanjer</h1>
+        <p class="lead">Få med deg de beste tilbudene og kampanjene akkurat nå!</p>
+    </section>
 
-    <!-- Header & Navigasjon -->
-<header class="navbar navbar-expand-lg navbar-theme bg-header shadow-sm py-2 sticky-top">
-    <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="/">
-            <img src="assets/images/hero/hero.png" alt="Butikkoversikt logo" style="height: 60px;">
-            <div>
-                <strong class="fs-5">Butikkoversikt.no</strong><br>
-                <small class="text-muted-theme">Norges nettbutikk-guide</small>
+    <!-- Filtrering og sortering -->
+    <section class="container mb-5">
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <select id="filterKategori" class="form-select">
+                    <option value="alle">Alle kategorier</option>
+                    <option value="Elektronikk">Elektronikk</option>
+                    <option value="Klær og mote">Klær og mote</option>
+                    <option value="Helse og skjønnhet">Helse og skjønnhet</option>
+                </select>
             </div>
-        </a>
-
-        <!-- Meny for mobil -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-            title="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="index.html">Forside</a></li>
-                <li class="nav-item"><a class="nav-link" href="kategori.html">Kategorier</a></li>
-                <li class="nav-item"><a class="nav-link" href="topp25.html">Topp 25</a></li>
-                <li class="nav-item"><a class="nav-link" href="guider/main-guider.html">Guider</a></li>
-                <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt oss</a></li>
-            </ul>
+            <div class="col-md-6">
+                <select id="sortering" class="form-select">
+                    <option value="nyeste">Nyeste først</option>
+                    <option value="eldste">Eldste først</option>
+                    <option value="populaere">Mest populære</option>
+                </select>
+            </div>
         </div>
-    </div>
-    <button id="themeToggleBtn" class="btn btn-sm btn-primary"
-        style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
-</header>
+    </section>
 
-<body>
-    <!-- Header -->
-    <header>
-        <!-- Gjenbruk din eksisterende header her -->
-    </header>
+    <!-- Kampanjeoversikt -->
+    <section class="container mb-5">
+        <div id="kampanjer-oversikt" class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Kampanjekort blir generert her -->
+        </div>
+    </section>
 
-    <main class="py-5">
+    <footer class="footer bg-header text-heading py-5">
         <div class="container">
-            <h1 class="text-center mb-4">Alle kampanjer og tilbud</h1>
-            <div id="kampanje-seksjon" class="row g-4 justify-content-center">
-                <!-- Kampanjekort genereres med JavaScript -->
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer bg-header text-heading py-5 mt-5">
-        <div class="container text-center">
-            <p class="mb-1">&copy; 2025 Butikkoversikt.no</p>
-            <p class="text-muted small">En oversikt over de beste norske nettbutikkene.</p>
+            <p class="text-center text-muted-theme mb-0">&copy; 2025 Butikkoversikt.no. Alle rettigheter forbeholdt.</p>
         </div>
     </footer>
-    
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Effekter -->
-    <script src="assets/js/effects/fade-in.js"></script>
-    <script src="assets/js/effects/theme-toggle.js"></script>
 
     <!-- Scripts -->
-    <script src="assets/js/generate/generate-kampanjer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/effects/theme-toggle.js"></script>
+    <script src="assets/js/effects/menu-toggle.js"></script>
+    <script src="assets/js/generate/generate-kampanjer.js" defer></script>
+
 </body>
 
 </html>

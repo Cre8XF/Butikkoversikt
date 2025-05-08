@@ -1,46 +1,58 @@
-// generate-kampanjer.js
-fetch("assets/data/kampanjer.json")
-  .then((res) => res.json())
-  .then((kampanjer) => {
-    const container = document.getElementById("kampanje-seksjon");
+document.addEventListener('DOMContentLoaded', function () {
+  fetch('assets/data/kampanjer.json')
+    .then(response => response.json())
+    .then(kampanjer => {
+      const container = document.getElementById('kampanje-list');
+      container.innerHTML = '';
 
-    kampanjer.forEach((kampanje) => {
-      const col = document.createElement("div");
-      col.className = "col-12 col-md-6 col-lg-4";
+      kampanjer.forEach(kampanje => {
+        const col = document.createElement('div');
+        col.className = 'col';
 
-      const card = document.createElement("div");
-      card.className = "promo-card d-flex align-items-center";
+        const card = document.createElement('div');
+        card.className = 'card h-100 shadow-sm';
 
-      const img = document.createElement("img");
-      img.src = kampanje.image;
-      img.alt = kampanje.title;
-      img.className = "promo-img me-3";
+        const img = document.createElement('img');
+        img.src = kampanje.image;
+        img.alt = kampanje.title;
+        img.className = 'card-img-top';
 
-      const details = document.createElement("div");
-      details.className = "promo-details";
+        const cardBody = document.createElement('div');
+        cardBody.className = 'card-body';
 
-      const title = document.createElement("h5");
-      title.className = "promo-title mb-1";
-      title.textContent = kampanje.title;
+        const title = document.createElement('h5');
+        title.className = 'card-title';
+        title.textContent = kampanje.title;
 
-      const store = document.createElement("p");
-      store.className = "promo-store text-muted small mb-1";
-      store.textContent = `hos ${kampanje.store}`;
+        const store = document.createElement('p');
+        store.className = 'text-muted small';
+        store.textContent = kampanje.store;
 
-      const expiry = document.createElement("p");
-      expiry.className = "promo-expiry text-muted small";
-      expiry.textContent = kampanje.expiry;
+        const expiry = document.createElement('p');
+        expiry.className = 'text-muted small';
+        expiry.textContent = kampanje.expiry ? `Gyldig til: ${kampanje.expiry}` : '';
 
-      const link = document.createElement("a");
-      link.href = kampanje.url;
-      link.target = "_blank";
-      link.className = "btn btn-outline-primary btn-sm mt-2";
-      link.textContent = "Se tilbud";
+        const description = document.createElement('p');
+        description.className = 'card-text';
+        description.textContent = kampanje.description;
 
-      details.append(title, store, expiry, link);
-      card.append(img, details);
-      col.appendChild(card);
-      container.appendChild(col);
-    });
-  })
-  .catch((err) => console.error("Feil ved lasting av kampanjer:", err));
+        const button = document.createElement('a');
+        button.href = kampanje.url;
+        button.target = '_blank';
+        button.className = 'btn btn-primary mt-2';
+        button.textContent = 'Se tilbud';
+
+        cardBody.appendChild(title);
+        cardBody.appendChild(store);
+        cardBody.appendChild(expiry);
+        cardBody.appendChild(description);
+        cardBody.appendChild(button);
+
+        card.appendChild(img);
+        card.appendChild(cardBody);
+        col.appendChild(card);
+        container.appendChild(col);
+      });
+    })
+    .catch(error => console.error('Feil ved lasting av kampanjer:', error));
+});

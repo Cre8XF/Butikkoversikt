@@ -1,21 +1,21 @@
-/* ============================
+""/* ============================
    Sticky Navigasjon
 ============================ */
 #kategoriMeny {
   position: sticky;
-  top: 90px; /* Matcher høyden på header */
+  top: 90px;
   z-index: 999;
-  background-color: #ffffff; /* Fast farge, lettere å debugge */
+  background-color: var(--header-bg);
   padding: 0.5rem 0;
-  border-bottom: 2px solid #007bff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-bottom: 2px solid var(--link-color);
+  box-shadow: 0 2px 6px var(--shadow-sm);
 }
 
 /* ============================
    Kategori Seksjoner
 ============================ */
 .kategori-seksjon {
-  scroll-margin-top: 150px; /* Justerer for sticky header */
+  scroll-margin-top: 150px;
 }
 
 .kategori-seksjon:first-of-type {
@@ -23,24 +23,24 @@
 }
 
 #kategoriContainer {
-  padding-top: 20px; /* Mindre padding, ser ryddigere ut */
+  padding-top: 20px;
 }
 
 /* ============================
    Butikkortene
 ============================ */
 .featured-store-card {
-  background-color: #f9f9f9;
-  border: 1px solid #eaeaea;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 0.75rem;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 4px var(--shadow-sm);
   transition: box-shadow 0.3s ease;
 }
 
 .featured-store-card:hover {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 15px var(--shadow-lg);
 }
 
 .featured-store-card img {
@@ -48,3 +48,4 @@
   object-fit: contain;
   margin-bottom: 0.5rem;
 }
+""

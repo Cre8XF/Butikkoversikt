@@ -13,7 +13,7 @@ body {
   left: 0;
   width: 100%;
   height: 90px;
-  background-color: #ffffff;
+  background-color: var(--header-bg);
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -27,8 +27,8 @@ body {
   justify-content: center;
   gap: 10px;
   padding: 10px 15px;
-  background-color: white;
-  border-bottom: 2px solid #007bff;
+  background-color: var(--section-bg);
+  border-bottom: 2px solid var(--link-color);
   width: 100%;
   transition: all 0.3s ease;
 }
@@ -36,47 +36,47 @@ body {
 .kategori-nav-container a {
   padding: 8px 16px;
   border-radius: 4px;
-  background-color: #f8f9fa;
-  color: #007bff;
+  background-color: var(--card-bg);
+  color: var(--link-color);
   text-decoration: none;
   transition: background-color 0.2s;
-  flex: 1 1 calc(100% / 6 - 10px); /* Justerer antall i linje */
+  flex: 1 1 calc(100% / 6 - 10px);
   text-align: center;
 }
 
 .kategori-nav-container a:hover {
-  background-color: #007bff;
-  color: white;
+  background-color: var(--link-hover);
+  color: var(--text-on-primary);
 }
 
 .kategori-nav-container a.active {
-  background-color: #007bff;
-  color: white;
+  background-color: var(--btn-primary-hover);
+  color: var(--text-on-primary);
 }
 .kategori-seksjon {
-  scroll-margin-top: 380px; /* Justerer hvor den stopper */
+  scroll-margin-top: 380px;
 }
 /* ============================
    Navigasjonsmeny Styling
 ============================ */
 .navbar-theme {
-  background-color: #ffffff !important;
+  background-color: var(--header-bg) !important;
 }
 
 .navbar-nav .nav-link {
-  color: #333 !important;
+  color: var(--text-color) !important;
   padding: 8px 16px;
   transition: background-color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  background-color: #007bff !important;
-  color: white !important;
+  background-color: var(--btn-primary-hover) !important;
+  color: var(--text-on-primary) !important;
 }
 
 .navbar-nav .nav-link.active {
-  background-color: #0056b3 !important;
-  color: white !important;
+  background-color: var(--btn-primary) !important;
+  color: var(--text-on-primary) !important;
   border-radius: 4px;
 }
 
