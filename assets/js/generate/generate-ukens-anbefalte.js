@@ -46,25 +46,44 @@ document.addEventListener('DOMContentLoaded', () => {
           });
         });
 
-      // Henter annonser og samarbeid
+      // Henter annonser og oppretter slideshow
       fetch('assets/data/annonser.json')
         .then(response => response.json())
         .then(annonser => {
-          annonser.forEach(annonse => {
-            const card = document.createElement('div');
-            card.className = 'col';
-            card.innerHTML = `
-              <div class='card h-100 shadow-sm'>
-                <img src='${annonse.image}' class='card-img-top' alt='${annonse.alt}'>
-                <div class='card-body'>
-                  <h5 class='card-title'>${annonse.title}</h5>
-                  <p class='card-text'>${annonse.description}</p>
-                  <a href='${annonse.url}' class='btn btn-primary'>Les mer</a>
-                </div>
-              </div>
+          const sliderContainer = document.createElement('div');
+          sliderContainer.className = 'carousel slide';
+          sliderContainer.id = 'annonseCarousel';
+          sliderContainer.setAttribute('data-bs-ride', 'carousel');
+
+          const innerDiv = document.createElement('div');
+          innerDiv.className = 'carousel-inner';
+
+          annonser.forEach((annonse, index) => {
+            const item = document.createElement('div');
+            item.className = index === 0 ? 'carousel-item active' : 'carousel-item';
+            item.innerHTML = `
+              <a href='${annonse.url}' target='_blank'>
+                <img src='${annonse.image}' class='d-block w-100' alt='${annonse.alt}'>
+              </a>
             `;
-            annonserContainer.appendChild(card);
+            innerDiv.appendChild(item);
           });
+
+          sliderContainer.appendChild(innerDiv);
+
+          // Piler for navigering
+          sliderContainer.innerHTML += `
+            <button class="carousel-control-prev" type="button" data-bs-target="#annonseCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#annonseCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          `;
+
+          annonserContainer.appendChild(sliderContainer);
         });
 
     });
