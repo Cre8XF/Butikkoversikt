@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
   fetch('assets/data/kampanjer.json')
-    .then(response => response.json())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Feil ved lasting av kampanjer.json');
+      }
+      return response.json();
+    })
     .then(kampanjer => {
       const container = document.getElementById('kampanje-list');
       container.innerHTML = '';
@@ -26,11 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const store = document.createElement('p');
         store.className = 'text-muted small';
-        store.textContent = kampanje.store;
+        store.textContent = kampanje.store ? kampanje.store : 'Ukjent butikk';
 
         const expiry = document.createElement('p');
         expiry.className = 'text-muted small';
-        expiry.textContent = kampanje.expiry ? `Gyldig til: ${kampanje.expiry}` : '';
+        expiry.textContent = kampanje.expiry ? `Gyldig til: ${kampanje.expiry}` : 'Ukjent utløpsdato';
 
         const description = document.createElement('p');
         description.className = 'card-text';
@@ -54,5 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
         container.appendChild(col);
       });
     })
-    .catch(error => console.error('Feil ved lasting av kampanjer:', error));
+    .catch(error => {
+      console.error('Feil ved lasting av kampanjer:', error);
+      document.getElementById('kampanje-list').innerHTML = '<p>Kunne ikke laste kampanjer. Prøv igjen senere.</p>';
+    });
 });
