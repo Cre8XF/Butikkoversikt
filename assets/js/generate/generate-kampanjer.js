@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const container = document.getElementById('kampanje-list');
   const categoryFilter = document.getElementById('filterKategori');
   const sortFilter = document.getElementById('sortering');
+  const bannerContainer = document.getElementById('annonse-banner');
 
   function populateCategories() {
     const categories = [...new Set(kampanjerData.map(k => k.category))];
@@ -66,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
       card.appendChild(cardBody);
       col.appendChild(card);
 
-      // Fade-in effekt
       setTimeout(() => {
         card.style.opacity = 1;
       }, 100);
@@ -75,16 +75,38 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  function renderAnnonser(annonser) {
+    bannerContainer.innerHTML = `
+      <div id="annonseCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          ${annonser.map((annonse, index) => `
+            <div class="carousel-item ${index === 0 ? 'active' : ''}">
+              <a href="${annonse.url}" target="_blank">
+                <img src="${annonse.image}" class="d-block w-100" alt="${annonse.alt}">
+              </a>
+            </div>
+          `).join('')}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#annonseCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#annonseCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    `;
+  }
+
   function filterAndSort() {
     let filteredKampanjer = [...kampanjerData];
 
-    // Filtrer på kategori
     const selectedCategory = categoryFilter.value;
     if (selectedCategory !== 'alle') {
       filteredKampanjer = filteredKampanjer.filter(kampanje => kampanje.category === selectedCategory);
     }
 
-    // Sorter kampanjene
     const sortOrder = sortFilter.value;
     if (sortOrder === 'nyeste') {
       filteredKampanjer.sort((a, b) => new Date(b.expiry) - new Date(a.expiry));
@@ -111,6 +133,11 @@ document.addEventListener('DOMContentLoaded', function () {
       console.error('Feil ved lasting av kampanjer:', error);
       container.innerHTML = '<p>Kunne ikke laste kampanjer. Prøv igjen senere.</p>';
     });
+
+  fetch('assets/data/annonser.json')
+    .then(response => response.json())
+    .then(renderAnnonser)
+    .catch(error => console.error('Feil ved lasting av annonser:', error));
 
   categoryFilter.addEventListener('change', filterAndSort);
   sortFilter.addEventListener('change', filterAndSort);

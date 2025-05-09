@@ -43,6 +43,32 @@
             style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
     </header>
 
+    <!-- Annonsekarusell -->
+    <section class="container mb-5">
+        <h2 class="mb-4 text-center">Aktuelle Annonser</h2>
+        <div id="annonse-banner" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Annonsekort blir generert her -->
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#annonse-banner" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#annonse-banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#annonse-banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#annonse-banner" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#annonse-banner" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+  
+
+
     <!-- Hero seksjon -->
     <section class="hero-banner text-center p-5 mb-5">
         <h1>Ukens Kampanjer</h1>
@@ -72,12 +98,16 @@
         </div>
     </section>
 
+    
     <!-- Kampanjeoversikt -->
     <section class="container mb-5">
         <div id="kampanje-list" class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Kampanjekort blir generert her -->
         </div>
     </section>
+
+    
+
 
     <footer class="footer bg-header text-heading py-5">
         <div class="container">
