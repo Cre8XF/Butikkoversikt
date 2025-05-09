@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const butikkContainer = document.getElementById('butikk-container');
-    const categoryList = document.getElementById('categoryList');
-
-    // Kategorier og subkategorier
     const categories = [
         { name: "Elektronikk", icon: "💡", subcategories: ["TV", "Mobil", "PC"] },
         { name: "Klær og mote", icon: "👗", subcategories: ["Herreklær", "Dameklær", "Sko"] },
@@ -11,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { name: "Barn og baby", icon: "🍼", subcategories: ["Leker", "Barnevogner"] }
     ];
 
-    // Genererer kategori-listen dynamisk
+    const categoryList = document.getElementById('categoryList');
     categories.forEach(category => {
         const mainCategory = document.createElement('div');
         mainCategory.classList.add('form-check', 'mb-2');
@@ -43,46 +39,5 @@ document.addEventListener('DOMContentLoaded', function () {
             const label = el.querySelector('label').textContent.toLowerCase();
             el.style.display = label.includes(filter) ? '' : 'none';
         });
-    });
-
-    // Henter butikker fra JSON og filtrerer
-    async function fetchButikker(categories) {
-        const response = await fetch('assets/data/butikker.json');
-        const butikker = await response.json();
-        butikkContainer.innerHTML = '';
-
-        // Søk på delvis tekstmatch
-        const filtered = butikker.filter(butikk => 
-            categories.some(category => butikk.category.includes(category))
-        );
-
-        if (filtered.length > 0) {
-            filtered.forEach(butikk => {
-                const card = document.createElement('div');
-                card.classList.add('col-md-4');
-                card.innerHTML = `
-                    <div class="card shadow-sm">
-                        <img src="${butikk.image}" class="card-img-top" alt="${butikk.alt}">
-                        <div class="card-body">
-                            <h5 class="card-title">${butikk.name}</h5>
-                            <p class="card-text">${butikk.description}</p>
-                            <a href="${butikk.url}" class="btn btn-primary" target="_blank">Besøk butikk</a>
-                        </div>
-                    </div>
-                `;
-                butikkContainer.appendChild(card);
-            });
-        } else {
-            butikkContainer.innerHTML = '<p class="text-muted">Ingen treff i denne kategorien.</p>';
-        }
-    }
-
-    // Lytter på "Filtrer"-knappen
-    document.getElementById('applyFilter').addEventListener('click', () => {
-        const selectedCategories = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
-            .map(cat => cat.value);
-        if (selectedCategories.length > 0) {
-            fetchButikker(selectedCategories);
-        }
     });
 });
