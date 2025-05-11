@@ -1,3 +1,156 @@
+
+
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Butikkoversikt - HTML & Generate Mapping</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h1 class="mb-4">HTML-filer og tilhørende Generate-skript</h1>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>HTML-fil</th>
+          <th>Generate-skript</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>alle-butikker.html</td>
+          <td>generate-alle-butikker-filter-tags-enhanced.js,<br>generate-alle-butikker-filter-tags-enhanced-toggle.js
+          </td>
+        </tr>
+        <tr>
+          <td>kategori.html</td>
+          <td>generate-kategori.js,<br>generate-kategori-filter.js,<br>generate-kategorioversikt.js</td>
+        </tr>
+        <tr>
+          <td>kategori-filter.html</td>
+          <td>generate-kategori-filter.js</td>
+        </tr>
+        <tr>
+          <td>kategori-mal-utforsk.html</td>
+          <td>generate-kategori-mal.js,<br>generate-kategorioversikt.js</td>
+        </tr>
+        <tr>
+          <td>index.html</td>
+          <td>generate-index-stores.js</td>
+        </tr>
+        <tr>
+          <td>Ukens-Anbefalte.html</td>
+          <td>generate-ukens-anbefalte.js</td>
+        </tr>
+        <tr>
+          <td>kampanjer.html</td>
+          <td>generate-kampanjer-forside.js,<br>generate-kampanjer.js</td>
+        </tr>
+        <tr>
+          <td>main-guider.html</td>
+          <td>generate-forside-guider.js,<br>generate-guider.js</td>
+        </tr>
+        <tr>
+          <td>guide-barn.html</td>
+          <td>generate-guider.js</td>
+        </tr>
+        <tr>
+          <td>guide-billig-treningstoy.html</td>
+          <td>generate-guider.js</td>
+        </tr>
+        <tr>
+          <td>guide-trygg-netthandel.html</td>
+          <td>generate-guider.js</td>
+        </tr>
+        <tr>
+          <td>index-nyeste.html</td>
+          <td>generate-index-stores.js</td>
+        </tr>
+        <tr>
+          <td>kategori-mal-utforsk.html</td>
+          <td>generate-utforsk-alle-kategorier-enhanced.js,<br>generate-utforsk-alle-kategorier.js</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container mt-5">
+    <h1 class="mb-4">Optimalisert HTML-fil og Generate-skript Mapping</h1>
+    <h4 class="text-muted mb-4">Forslag til optimalisert mappestruktur</h4>
+  
+    <h5 class="mt-4">🗂️ Forslag til Mapper:</h5>
+    <ul>
+      <li><strong>pages/</strong> – Alle hovedsider (index, alle-butikker, kategori, kampanjer, etc.)</li>
+      <li><strong>pages/guides/</strong> – Alle guide-sider samlet på ett sted</li>
+      <li><strong>pages/categories/</strong> – Alle kategorisider, inkludert maler</li>
+      <li><strong>assets/js/generate/</strong> – Alle genereringsskript sortert etter type:</li>
+      <ul>
+        <li><strong>generate-categories.js</strong> – Genererer kategorier dynamisk</li>
+        <li><strong>generate-guides.js</strong> – Genererer guider dynamisk</li>
+        <li><strong>generate-campaigns.js</strong> – Genererer kampanjer dynamisk</li>
+        <li><strong>generate-stores.js</strong> – Genererer butikkvisning dynamisk</li>
+      </ul>
+      <li><strong>assets/data/</strong> – JSON-filer for butikker, guider og kampanjer</li>
+      <li><strong>assets/css/</strong> – CSS-filer for styling, sortert etter seksjon</li>
+    </ul>
+  
+    <h5 class="mt-4">📌 HTML til Generate-skript Mapping (Optimalisert):</h5>
+    <table class="table table-bordered table-striped">
+
+      <tr>
+        <td>pages/alle-butikker.html</td>
+        <td>generate-stores.js</td>
+      </tr>
+      <tr>
+        <td>pages/kategori.html</td>
+        <td>generate-categories.js</td>
+      </tr>
+      <tr>
+        <td>pages/kategori-filter.html</td>
+        <td>generate-categories.js</td>
+      </tr>
+      <tr>
+        <td>pages/categories/kategori-mal-utforsk.html</td>
+        <td>generate-categories.js</td>
+      </tr>
+      <tr>
+        <td>pages/index.html</td>
+        <td>generate-stores.js</td>
+      </tr>
+      <tr>
+        <td>pages/Ukens-Anbefalte.html</td>
+        <td>generate-campaigns.js</td>
+      </tr>
+      <tr>
+        <td>pages/kampanjer.html</td>
+        <td>generate-campaigns.js</td>
+      </tr>
+      <tr>
+        <td>pages/guides/main-guider.html</td>
+        <td>generate-guides.js</td>
+      </tr>
+      <tr>
+        <td>pages/guides/guide-barn.html</td>
+        <td>generate-guides.js</td>
+      </tr>
+      <tr>
+        <td>pages/guides/guide-billig-treningstoy.html</td>
+        <td>generate-guides.js</td>
+      </tr>
+      <tr>
+        <td>pages/guides/guide-trygg-netthandel.html</td>
+        <td>generate-guides.js</td>
+      </tr>
+
+</body>
+
+</html>
+
 # Butikkoversikt.no - Oppsummering og Plan (Mai 2025)
 
 ## ✅ Oppsummering av status
@@ -6,11 +159,11 @@
 
 * Ny struktur:
 
-  * Hero-seksjon med søkefelt og interaktive tagger
-  * Kategorikort med ny visuell stil
-  * "Populære nettbutikker" seksjon (tidligere Topp 25)
-  * Kampanjeseksjon med data fra kampanjer-forside.json
-  * Knapp til full kampanjeoversikt (kampanjer.html)
+* Hero-seksjon med søkefelt og interaktive tagger
+* Kategorikort med ny visuell stil
+* "Populære nettbutikker" seksjon (tidligere Topp 25)
+* Kampanjeseksjon med data fra kampanjer-forside.json
+* Knapp til full kampanjeoversikt (kampanjer.html)
 
 ### 📄 Andre sider
 
@@ -33,7 +186,8 @@ første prioritet!!
 
 Må finne ut hva innholdet på forsiden skal være. se over hva det er der nå og se om det kan forbedres.
 se hva jeg skal ha i menyen
-finne ut hva som skal skje når man trykker på en meny, kort eller knapper på forsiden. (hvor havner jeg og hva er hensikten?)
+finne ut hva som skal skje når man trykker på en meny, kort eller knapper på forsiden. (hvor havner jeg og hva er
+hensikten?)
 
 
 
@@ -53,112 +207,113 @@ finne ut hva som skal skje når man trykker på en meny, kort eller knapper på 
 * [ ] Redesign av guideseksjonen med kort og linker
 * [ ] Seksjoner på forsiden for:
 
-  * [ ] "Populære guider"
-  * [ ] "Ukens nyheter"
-  * [ ] "Ukens anbefaling"
+* [ ] "Populære guider"
+* [ ] "Ukens nyheter"
+* [ ] "Ukens anbefaling"
 
 ### 4. Ytelse og SEO
 
 * [ ] Optimalisere bilder og bruke WebP der det er mulig
 * [ ] Lazy loading på bilder
-* [ ] Dynamisk <title> og <meta description> for hver side
-* [ ] Generere sitemap + strukturerte data (JSON-LD)
+* [ ] Dynamisk <title> og
+  <meta description> for hver side
+  * [ ] Generere sitemap + strukturerte data (JSON-LD)
 
-### 5. Inntekt og annonser
+  ### 5. Inntekt og annonser
 
-* [ ] Sporingssystem for klikk/affiliate (f.eks. `?ref=` i URL)
-* [ ] Dynamiske annonser og kampanjer fra JSON
-* [ ] Nyhetsbrev-modul (ev. koblet mot Mailchimp eller lignende)
+  * [ ] Sporingssystem for klikk/affiliate (f.eks. `?ref=` i URL)
+  * [ ] Dynamiske annonser og kampanjer fra JSON
+  * [ ] Nyhetsbrev-modul (ev. koblet mot Mailchimp eller lignende)
 
----
+  ---
 
-## 📅 Neste steg
+  ## 📅 Neste steg
 
-* [ ] Finjustere forsiden
-* [ ] Forbedre guider + nye guider
-* [ ] Legge til dynamiske seksjoner (annonser, guider, nye butikker)
-* [ ] Klargjøre for lansering med full SEO og ytelsesgjennomgang
+  * [ ] Finjustere forsiden
+  * [ ] Forbedre guider + nye guider
+  * [ ] Legge til dynamiske seksjoner (annonser, guider, nye butikker)
+  * [ ] Klargjøre for lansering med full SEO og ytelsesgjennomgang
 
 
 
-## Oversikt over HTML-filer og deres tilhørende JavaScript-filer
+  ## Oversikt over HTML-filer og deres tilhørende JavaScript-filer
 
-### 1. index.html
+  ### 1. index.html
 
-* generate-forside-guider.js
-* generate-anbefalte.js
-* generate-gaming-sections.js
-* generate-kategori-mal.js
-* generate-kampanjer-forside.js
-* generate-search.js
-* main.js
-* autocomplete-søk.js
+  * generate-forside-guider.js
+  * generate-anbefalte.js
+  * generate-gaming-sections.js
+  * generate-kategori-mal.js
+  * generate-kampanjer-forside.js
+  * generate-search.js
+  * main.js
+  * autocomplete-søk.js
 
-### 2. kategori.html
+  ### 2. kategori.html
 
-* generate-kategori.js
-* generate-search.js
-* main.js
+  * generate-kategori.js
+  * generate-search.js
+  * main.js
 
-### 3. kategori-mal-utforsk.html
+  ### 3. kategori-mal-utforsk.html
 
-* generate-kategori-mal.js
-* generate-search.js
-* main.js
+  * generate-kategori-mal.js
+  * generate-search.js
+  * main.js
 
-### 4. alle-butikker.html
+  ### 4. alle-butikker.html
 
-* generate-alle-butikker-filter-tags-enhanced-toggle.js
-* generate-search.js
-* main.js
+  * generate-alle-butikker-filter-tags-enhanced-toggle.js
+  * generate-search.js
+  * main.js
 
-### 5. topplisten.html
+  ### 5. topplisten.html
 
-* generate-topp25.js
-* generate-search.js
-* main.js
+  * generate-topp25.js
+  * generate-search.js
+  * main.js
 
-### 6. kampanjer.html
+  ### 6. kampanjer.html
 
-* generate-kampanjer.js
-* generate-search.js
-* main.js
+  * generate-kampanjer.js
+  * generate-search.js
+  * main.js
 
-### 7. sok.html
+  ### 7. sok.html
 
-* generate-search.js
-* main.js
+  * generate-search.js
+  * main.js
 
-### 8. main-guider.html
+  ### 8. main-guider.html
 
-* generate-guide.js
-* main.js
+  * generate-guide.js
+  * main.js
 
-### 9. guide-barn.html
+  ### 9. guide-barn.html
 
-* main.js
+  * main.js
 
-### 10. guide-billig-treningstoy.html
+  ### 10. guide-billig-treningstoy.html
 
-* main.js
+  * main.js
 
-### 11. guide-trygg-netthandel.html
+  ### 11. guide-trygg-netthandel.html
 
-* main.js
+  * main.js
 
-### 12. Butikkoversikt plan.html
+  ### 12. Butikkoversikt plan.html
 
-* Ingen JavaScript nødvendig
+  * Ingen JavaScript nødvendig
 
-### Kommentarer:
+  ### Kommentarer:
 
-* Enkelte filer mangler kanskje nødvendige scripts eller har overflødige som kan fjernes.
-* Vi kan se nærmere på optimalisering etter at strukturen er verifisert.
-* Det kan være smart å lage en "master"-script-loader for å unngå feil i referanser.
+  * Enkelte filer mangler kanskje nødvendige scripts eller har overflødige som kan fjernes.
+  * Vi kan se nærmere på optimalisering etter at strukturen er verifisert.
+  * Det kan være smart å lage en "master"-script-loader for å unngå feil i referanser.
 
-### Neste steg:
+  ### Neste steg:
 
-1. Verifisere at alle skript lastes korrekt på hver side.
-2. Fjerne overflødige referanser.
-3. Oppdatere "Butikkoversikt plan.html" med denne oversikten.
-4. Sjekke om noen eventuelle feilmeldinger relatert til skript fortsatt dukker opp.
+  1. Verifisere at alle skript lastes korrekt på hver side.
+  2. Fjerne overflødige referanser.
+  3. Oppdatere "Butikkoversikt plan.html" med denne oversikten.
+  4. Sjekke om noen eventuelle feilmeldinger relatert til skript fortsatt dukker opp.

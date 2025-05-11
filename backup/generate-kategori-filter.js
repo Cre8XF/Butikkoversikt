@@ -1,27 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
     const butikkContainer = document.getElementById('butikk-container');
-    const searchInput = document.getElementById('searchInput');
+    const searchInput = document.getElementById('searchCategories');
     const filterButtons = document.querySelectorAll('.filter-button');
-    const visMerKnapp = document.getElementById('vis-mer-knapp');
-    const visFaerreKnapp = document.getElementById('vis-faerre-knapp');
-    let currentLimit = 12;
-    let butikkerData = [];
-
+    
     // Henter butikker fra JSON
     async function fetchButikker() {
         const response = await fetch('assets/data/butikker.json');
-        butikkerData = await response.json();
-        renderButikker(butikkerData, currentLimit);
+        const butikker = await response.json();
+        renderButikker(butikker);
     }
 
-    // Viser butikkortene på siden med limit
-    function renderButikker(butikker, limit) {
+    // Viser butikkortene på siden
+    function renderButikker(butikker) {
         butikkContainer.innerHTML = '';
 
-        const slicedData = butikker.slice(0, limit);
-
-        if (slicedData.length > 0) {
-            slicedData.forEach(butikk => {
+        if (butikker.length > 0) {
+            butikker.forEach(butikk => {
                 const card = document.createElement('div');
                 card.classList.add('col-md-4');
                 card.innerHTML = `
@@ -39,44 +33,33 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             butikkContainer.innerHTML = '<p class="text-muted">Ingen treff i denne kategorien.</p>';
         }
-
-        // Vis eller skjul "Vis flere" knappen
-        if (butikker.length > limit) {
-            visMerKnapp.style.display = 'block';
-        } else {
-            visMerKnapp.style.display = 'none';
-        }
     }
 
-    // Søker i butikker
-    searchInput.addEventListener('input', (e) => {
+    // Søkefunksjon
+    searchInput.addEventListener('input', async (e) => {
         const searchTerm = e.target.value.toLowerCase();
-        const filtered = butikkerData.filter(butikk => 
+        const response = await fetch('assets/data/butikker.json');
+        const butikker = await response.json();
+
+        const filtered = butikker.filter(butikk => 
             butikk.name.toLowerCase().includes(searchTerm) || 
             butikk.description.toLowerCase().includes(searchTerm) || 
             butikk.category.some(cat => cat.toLowerCase().includes(searchTerm))
         );
-        renderButikker(filtered, currentLimit);
+
+        renderButikker(filtered);
     });
 
     // Filtreringsknapper
     filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
+        button.addEventListener('click', async () => {
             const category = button.dataset.category;
-            const filtered = butikkerData.filter(butikk => butikk.category.includes(category));
-            renderButikker(filtered, currentLimit);
+            const response = await fetch('assets/data/butikker.json');
+            const butikker = await response.json();
+
+            const filtered = butikker.filter(butikk => butikk.category.includes(category));
+            renderButikker(filtered);
         });
-    });
-
-    // Paginering - Vis flere og færre
-    visMerKnapp.addEventListener('click', () => {
-        currentLimit += 12;
-        renderButikker(butikkerData, currentLimit);
-    });
-
-    visFaerreKnapp.addEventListener('click', () => {
-        currentLimit = Math.max(12, currentLimit - 12);
-        renderButikker(butikkerData, currentLimit);
     });
 
     // Hent butikker ved start
