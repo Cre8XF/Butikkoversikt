@@ -1,81 +1,46 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const kategoriMeny = document.getElementById("kategoriMeny");
-  const butikkContainer = document.getElementById("butikk-container");
-  const kategoriTittel = document.getElementById("kategori-tittel");
+document.addEventListener("DOMContentLoaded", async () => {
+  const kategoriContainer = document.getElementById("butikk-container");
+  const kategoriTittel = document.getElementById("kategoriTittel");
 
-  if (!kategoriMeny || !butikkContainer || !kategoriTittel) {
-    console.error("❌ Elementer mangler: kategoriMeny, butikkContainer eller kategoriTittel");
-    return;
-  }
+  // Hent kategori fra URL
+  const params = new URLSearchParams(window.location.search);
+  const kategori = params.get("kategori");
 
-  // Hent data fra JSON
-  fetch('assets/data/butikker.json')
-    .then(res => res.json())
-    .then(data => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const valgtKategori = urlParams.get("kategori");
-
-      if (valgtKategori) {
-        kategoriTittel.textContent = valgtKategori.replace(/-/g, " ");
-        genererKategoriNavigasjon(data, valgtKategori);
-        genererButikkKort(data, valgtKategori);
-      } else {
-        kategoriTittel.textContent = "Alle Kategorier";
-        genererKategoriNavigasjon(data);
-        genererButikkKort(data);
-      }
-    })
-    .catch(err => console.error("🚨 Feil ved lasting av butikker:", err));
-
-  // Generer navigasjonsmeny
-  function genererKategoriNavigasjon(butikker, valgtKategori = null) {
-    const kategorier = [...new Set(butikker.map(b => b.category))];
-    kategorier.forEach(kategori => {
-      const link = document.createElement("a");
-      link.href = `?kategori=${kategori.toLowerCase().replace(/ /g, "-")}`;
-      link.className = "btn btn-outline-primary me-2 mb-2";
-      link.textContent = kategori;
-
-      if (valgtKategori === kategori.toLowerCase().replace(/ /g, "-")) {
-        link.classList.add("active");
-      }
-
-      kategoriMeny.appendChild(link);
-    });
-  }
-
-  // Generer butikkort
-  function genererButikkKort(butikker, valgtKategori = null) {
-    butikkContainer.innerHTML = "";
-
-    const filtrerteButikker = valgtKategori
-      ? butikker.filter(b => b.category.toLowerCase().replace(/ /g, "-") === valgtKategori)
-      : butikker;
-
-    if (filtrerteButikker.length === 0) {
-      butikkContainer.innerHTML = "<p class='text-center text-muted'>Ingen butikker funnet i denne kategorien.</p>";
+  if (!kategoriContainer || !kategori) {
+      console.error("Elementer mangler: butikkContainer eller kategori er ikke definert.");
       return;
-    }
+  }
 
-    filtrerteButikker.forEach(butikk => {
-      const col = document.createElement("div");
-      col.className = "col-md-4";
+  kategoriTittel.textContent = kategori;
 
-      col.innerHTML = `
-  <div class="category-store-card shadow-sm">
-    <a href="${butikk.url}" target="_blank" rel="noopener">
-      <img src="${butikk.image}" alt="${butikk.name}" class="card-img-top p-3" style="max-height:150px; object-fit:contain;">
-    </a>
-    <div class="card-body">
-      <h5 class="card-title mb-1">${butikk.name}</h5>
-      <p class="small text-muted">${butikk.description}</p>
-      <a href="${butikk.url}" class="btn btn-primary w-100 mt-2">Besøk Butikk</a>
-    </div>
-  </div>
-`;
+  try {
+      const response = await axios.get("assets/data/butikker.json");
+      const butikker = response.data;
 
+      const filtrerteButikker = butikker.filter(butikk => butikk.category.includes(kategori));
 
-      butikkContainer.appendChild(col);
-    });
+      kategoriContainer.innerHTML = "";
+
+      filtrerteButikker.forEach(butikk => {
+          const butikkElement = `
+              <div class="col-md-4 mb-4">
+                  <div class="card shadow-sm h-100">
+                      <img src="${butikk.image}" class="card-img-top p-3" alt="${butikk.alt}">
+                      <div class="card-body d-flex flex-column">
+                          <h5 class="card-title">${butikk.name}</h5>
+                          <p class="card-text">${butikk.description}</p>
+                          <a href="${butikk.url}" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Besøk butikk</a>
+                      </div>
+                  </div>
+              </div>
+          `;
+          kategoriContainer.insertAdjacentHTML("beforeend", butikkElement);
+      });
+
+      if (filtrerteButikker.length === 0) {
+          kategoriContainer.innerHTML = `<p class="text-muted">Ingen butikker funnet i denne kategorien.</p>`;
+      }
+  } catch (error) {
+      console.error("Feil ved lasting av butikker: ", error);
   }
 });

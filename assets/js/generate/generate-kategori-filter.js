@@ -1,84 +1,63 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const butikkContainer = document.getElementById('butikk-container');
-    const searchInput = document.getElementById('searchInput');
-    const filterButtons = document.querySelectorAll('.filter-button');
-    const visMerKnapp = document.getElementById('vis-mer-knapp');
-    const visFaerreKnapp = document.getElementById('vis-faerre-knapp');
-    let currentLimit = 12;
-    let butikkerData = [];
+document.addEventListener("DOMContentLoaded", () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const kategori = urlParams.get("kategori");
 
-    // Henter butikker fra JSON
-    async function fetchButikker() {
-        const response = await fetch('assets/data/butikker.json');
-        butikkerData = await response.json();
-        renderButikker(butikkerData, currentLimit);
-    }
+  const butikkContainer = document.getElementById("butikk-container");
+  const subcategoryDropdown = document.getElementById("subcategoryMenu");
 
-    // Viser butikkortene på siden med limit
-    function renderButikker(butikker, limit) {
-        butikkContainer.innerHTML = '';
+  // Henter butikkdata
+  axios.get("assets/data/butikker.json")
+      .then((response) => {
+          const butikker = response.data;
+          
+          // Filtrerer butikkene basert på kategori
+          const filtrerteButikker = butikker.filter((butikk) =>
+              butikk.category.includes(kategori)
+          );
 
-        const slicedData = butikker.slice(0, limit);
+          // Populerer butikkortene
+          visButikker(filtrerteButikker);
 
-        if (slicedData.length > 0) {
-            slicedData.forEach(butikk => {
-                const card = document.createElement('div');
-                card.classList.add('col-md-4');
-                card.innerHTML = `
-                    <div class="card shadow-sm">
-                        <img src="${butikk.image}" class="card-img-top" alt="${butikk.alt}">
-                        <div class="card-body">
-                            <h5 class="card-title">${butikk.name}</h5>
-                            <p class="card-text">${butikk.description}</p>
-                            <a href="${butikk.url}" class="btn btn-primary" target="_blank">Besøk butikk</a>
-                        </div>
-                    </div>
-                `;
-                butikkContainer.appendChild(card);
-            });
-        } else {
-            butikkContainer.innerHTML = '<p class="text-muted">Ingen treff i denne kategorien.</p>';
-        }
+          // Henter unike underkategorier
+          const underkategorier = new Set();
+          filtrerteButikker.forEach((butikk) => {
+              butikk.subcategory.forEach((sub) => underkategorier.add(sub));
+          });
 
-        // Vis eller skjul "Vis flere" knappen
-        if (butikker.length > limit) {
-            visMerKnapp.style.display = 'block';
-        } else {
-            visMerKnapp.style.display = 'none';
-        }
-    }
+          // Legger underkategoriene til i dropdown-menyen
+          underkategorier.forEach((sub) => {
+              const listItem = document.createElement("li");
+              listItem.innerHTML = `<a class="dropdown-item" href="#">${sub}</a>`;
+              listItem.addEventListener("click", () => {
+                  const filtrerteUnderkategori = filtrerteButikker.filter((butikk) =>
+                      butikk.subcategory.includes(sub)
+                  );
+                  visButikker(filtrerteUnderkategori);
+              });
+              subcategoryDropdown.appendChild(listItem);
+          });
 
-    // Søker i butikker
-    searchInput.addEventListener('input', (e) => {
-        const searchTerm = e.target.value.toLowerCase();
-        const filtered = butikkerData.filter(butikk => 
-            butikk.name.toLowerCase().includes(searchTerm) || 
-            butikk.description.toLowerCase().includes(searchTerm) || 
-            butikk.category.some(cat => cat.toLowerCase().includes(searchTerm))
-        );
-        renderButikker(filtered, currentLimit);
-    });
+      })
+      .catch((error) => {
+          console.error("Feil ved lasting av butikkdata:", error);
+      });
 
-    // Filtreringsknapper
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const category = button.dataset.category;
-            const filtered = butikkerData.filter(butikk => butikk.category.includes(category));
-            renderButikker(filtered, currentLimit);
-        });
-    });
-
-    // Paginering - Vis flere og færre
-    visMerKnapp.addEventListener('click', () => {
-        currentLimit += 12;
-        renderButikker(butikkerData, currentLimit);
-    });
-
-    visFaerreKnapp.addEventListener('click', () => {
-        currentLimit = Math.max(12, currentLimit - 12);
-        renderButikker(butikkerData, currentLimit);
-    });
-
-    // Hent butikker ved start
-    fetchButikker();
+  function visButikker(butikker) {
+      butikkContainer.innerHTML = "";
+      butikker.forEach((butikk) => {
+          const card = document.createElement("div");
+          card.className = "col-md-4";
+          card.innerHTML = `
+              <div class="card border-0 shadow-sm">
+                  <img src="${butikk.image}" class="card-img-top" alt="${butikk.alt}">
+                  <div class="card-body">
+                      <h5 class="card-title">${butikk.name}</h5>
+                      <p class="card-text">${butikk.description}</p>
+                      <a href="${butikk.url}" class="btn btn-primary">Besøk butikk</a>
+                  </div>
+              </div>
+          `;
+          butikkContainer.appendChild(card);
+      });
+  }
 });
