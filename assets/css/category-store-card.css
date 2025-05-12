@@ -25,3 +25,18 @@
   object-fit: contain;
   padding: 1rem;
 }
+.dropdown {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.dropdown .btn-secondary {
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown .btn-secondary:hover {
+  background-color: #4a90e2; /* Juster fargen etter tema */
+}
