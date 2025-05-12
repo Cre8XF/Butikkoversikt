@@ -58,6 +58,59 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(err => console.error("Feil ved lasting av butikkdata:", err));
 });
 
+window.addEventListener("scroll", () => {
+  const scrollTopButton = document.getElementById("scrollTopButton");
+  if (scrollTopButton) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollTopButton.classList.add("show");
+      } else {
+        scrollTopButton.classList.remove("show");
+      }
+    });
+
+    scrollTopButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  }
+});
+
+
+document.getElementById("scrollTopButton").addEventListener("click", () => {
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
+});
+
+// Henter alle kategori-knappene
+document.querySelectorAll(".kategori-link").forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute("href"));
+
+    if (target) {
+      // Smooth scroll til seksjonen
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+      // Oppdater sticky header med valgt kategori
+      const kategoriNavn = link.textContent.trim();
+      const kategoriTittel = document.getElementById("kategoriTittel");
+      if (kategoriTittel) {
+        kategoriTittel.textContent = kategoriNavn;
+      }
+    }
+  });
+});
+
+
+
 function visButikker(butikker, underkategori = "") {
   const container = document.getElementById("butikk-container");
   container.innerHTML = "";
@@ -71,11 +124,8 @@ function visButikker(butikker, underkategori = "") {
     return;
   }
 
-  filtrert.forEach(b => {
-    const col = document.createElement("div");
-    col.className = "col-6 col-md-4 col-lg-3";
-
-    col.innerHTML = `
+  container.innerHTML = filtrert.map(b => `
+    <div class="col-6 col-md-4 col-lg-3">
       <div class="card h-100 shadow-sm">
         <img src="${b.image}" class="card-img-top" alt="${b.alt || b.name}">
         <div class="card-body text-center">
@@ -84,10 +134,9 @@ function visButikker(butikker, underkategori = "") {
           <a href="${b.url}" class="btn btn-outline-primary w-100" target="_blank" rel="noopener">Besøk butikk</a>
         </div>
       </div>
-    `;
-
-    container.appendChild(col);
-  });
+    </div>
+  `).join("");
 }
+
 
 

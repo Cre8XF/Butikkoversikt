@@ -45,11 +45,12 @@
 </header>
 
   <!-- Sticky Navigasjon og Søk -->
-  <div class="sticky-top bg-white shadow-sm">
-    <div class="container py-2">
-      <input type="text" id="butikksok" class="form-control" placeholder="Søk etter butikk eller kategori..." />
+  <div class="sticky-top bg-white shadow-sm" id="stickyHeader">
+    <div class="container py-2 d-flex justify-content-between">
+      <input type="text" id="butikksok" class="form-control me-3" placeholder="Søk etter butikk eller kategori..." />
+      <button id="scrollTopButton" class="btn btn-secondary">Til toppen ↑</button>
     </div>
-
+  
     <nav id="kategoriMeny" class="sticky-category-nav">
       <!-- Knapper genereres av JS -->
     </nav>
