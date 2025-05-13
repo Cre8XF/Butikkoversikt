@@ -13,7 +13,7 @@
 
 <body class="kategori-side">
   <!-- Header -->
-<header class="navbar navbar-expand-lg navbar-theme bg-header shadow-sm py-2 sticky-top">
+  <header class="navbar navbar-expand-lg navbar-theme bg-header shadow-sm py-2 sticky-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="/">
       <img src="assets/images/hero/hero.png" alt="Butikkoversikt logo" style="height: 60px;">
@@ -51,14 +51,19 @@
       <button id="scrollTopButton" class="btn btn-secondary">Til toppen ↑</button>
     </div>
   
-    <!-- Kategoriknapper med grid layout -->
-    <div class="container my-3">
-      <div class="row row-cols-2 row-cols-md-4 g-3" id="kategori-buttons">
-        <!-- Dynamiske knapper genereres her -->
-      </div>
-    </div>
+    <nav id="kategoriMeny" class="sticky-category-nav">
+      <!-- Knapper genereres av JS -->
+    </nav>
   </div>
 
+  <!-- Kategorikort -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4" id="kategoriContainer">
+        <!-- Her fylles kategorikortene inn av JavaScript -->
+      </div>
+    </div>
+  </main>
 
   <!-- Footer -->
   <footer class="footer bg-header text-heading py-5 mt-5">
