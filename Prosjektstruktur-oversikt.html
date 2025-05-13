@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prosjektstruktur – Butikkoversikt.no</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      padding: 2rem;
+      font-size: 0.95rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    code {
+      background: #f8f9fa;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    pre.markdown {
+      background-color: #f8f9fa;
+      padding: 1rem;
+      border-radius: 5px;
+      white-space: pre-wrap;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="mb-4">🗂️ Prosjektstruktur – Butikkoversikt.no</h1>
+
+    <h2>🌐 HTML-sider</h2>
+    <ul>
+      <li><code>index.html</code> – Forside med søk, kampanjer, anbefalinger</li>
+      <li><code>kategori.html</code> – Viser én valgt kategori med underkategori-filter</li>
+      <li><code>kategori-mal-utforsk.html</code> – Viser alle kategorier med scroll-meny</li>
+      <li><code>alle-butikker.html</code> – Komplett oversikt over alle butikker</li>
+      <li><code>ukens-anbefalte.html</code> – Ukens utvalgte butikker</li>
+      <li><code>kampanjer.html</code> – Alle kampanjer med filtrering</li>
+      <li><code>guider/main-guider.html</code> – Oversikt over guider</li>
+      <li><code>guider/guide-*.html</code> – Enkeltguider</li>
+    </ul>
+
+    <h2>🎨 CSS</h2>
+    <ul>
+      <li><code>style.css</code> – Hovedfil med @import av moduler</li>
+      <li><code>root.css</code> – CSS-variabler</li>
+      <li><code>header.css</code>, <code>footer.css</code>, <code>sections.css</code> – Struktur</li>
+      <li><code>promo-card.css</code>, <code>top25-card.css</code>, <code>guide-card.css</code> – Kort</li>
+      <li><code>responsive.css</code> – Mobiltilpasning</li>
+      <li><code>theme.css</code> – Lys/mørk modus</li>
+    </ul>
+
+    <h2>📊 JSON-data</h2>
+    <ul>
+      <li><code>butikker.json</code> – Liste over alle butikker</li>
+      <li><code>kampanjer.json</code> og <code>kampanjer-forside.json</code></li>
+      <li><code>guider.json</code> – Guider til oversikt</li>
+      <li><code>annonser.json</code> – Annonser for kampanje-/index</li>
+    </ul>
+
+    <h2>⚙️ JavaScript</h2>
+
+    <h5>/effects/</h5>
+    <ul>
+      <li><code>fade-in.js</code>, <code>theme-toggle.js</code> – UI-effekter</li>
+    </ul>
+
+    <h5>/generate/alle-butikker/</h5>
+    <ul>
+      <li><code>generate-anbefalte.js</code></li>
+      <li><code>generate-search.js</code></li>
+    </ul>
+
+    <h5>/generate/kategori/</h5>
+    <ul>
+      <li><code>generate-kategori.js</code> – brukt i <code>kategori.html</code></li>
+    </ul>
+
+    <h5>/generate/kategori-mal/</h5>
+    <ul>
+      <li><code>generate-kategorioversikt.js</code> – brukt i <code>kategori-mal-utforsk.html</code></li>
+    </ul>
+
+    <h5>/generate/guider/</h5>
+    <ul>
+      <li><code>generate-guider.js</code></li>
+      <li><code>generate-forside-guider.js</code></li>
+    </ul>
+
+    <h5>/generate/kampanjer/</h5>
+    <ul>
+      <li><code>generate-kampanjer.js</code></li>
+      <li><code>generate-kampanjer-forside.js</code></li>
+    </ul>
+
+    <h5>Øvrige</h5>
+    <ul>
+      <li><code>main.js</code> – generelt oppstarts-/støttescript</li>
+      <li><code>autocomplete-søk.js</code> – søkefeltet på forsiden</li>
+    </ul>
+
+    <h2>📄 Inkludert PROSJEKTSTRUKTUR.md</h2>
+    <pre class="markdown">
+# 🗂️ Prosjektstruktur – Butikkoversikt.no
+
+En organisert oversikt over prosjektets mapper, filer og hvordan de henger sammen.
+
+## 🌐 HTML-sider
+- index.html → Forside
+- kategori.html → Viser valgt kategori + underkategori-filter
+- kategori-mal-utforsk.html → Utforsk alle kategorier med meny
+- alle-butikker.html → Full liste
+- ukens-anbefalte.html → Ukens utvalgte
+- kampanjer.html → Kampanjeside
+- guider/main-guider.html → Guideoversikt
+- guider/guide-*.html → Enkeltguider
+
+## 🎨 CSS-stilark (i style.css via @import)
+- root.css, header.css, footer.css
+- guide-card.css, top25-card.css, promo-card.css
+- responsive.css, theme.css
+
+## 📊 JSON-data
+- butikker.json, kampanjer.json, guider.json, annonser.json
+
+## ⚙️ JS-filer
+- generate-kategori.js → kategori.html
+- generate-kategorioversikt.js → kategori-mal-utforsk.html
+- generate-guider.js → main-guider.html
+- generate-kampanjer-forside.js → kampanjer på forside
+- autocomplete-søk.js, theme-toggle.js, main.js → støttefiler
+    </pre>
+
+    <hr />
+    <p class="text-muted small">Oppdatert: 2025 – HTML-oversikt med integrert README</p>
+  </div>
+</body>
+
+</html>
