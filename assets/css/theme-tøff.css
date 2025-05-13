@@ -1,0 +1,102 @@
+/* ==================================================
+   theme-tøff.css – Et mer kontrastfylt, moderne tema
+   for Butikkoversikt.no
+   ================================================== */
+
+:root {
+  /* ======== FARGER ======== */
+  --bg-color: #f3f4f6; /* Myk grå bakgrunn */
+  --section-bg: #ffffff;
+  --section-alt-bg: #f9fafb;
+  --hero-bg: #f1f5f9;
+  --sticky-bg: #ffffff;
+
+  /* ======== TEKST ======== */
+  --text-color: #0f172a;
+  --text-muted: #64748b;
+  --heading-color: #1e293b;
+  --link-color: #6b21a8;
+  --link-hover: #581c87;
+
+  /* ======== KNAPPER ======== */
+  --btn-primary: #6b21a8;
+  --btn-primary-hover: #581c87;
+  --btn-secondary: #e0e7ff;
+  --btn-secondary-hover: #c7d2fe;
+  --text-on-primary: #ffffff;
+  --text-on-secondary: #1e293b;
+  --btn-shadow: rgba(107, 33, 168, 0.1);
+  --btn-shadow-hover: 0 4px 6px rgba(107, 33, 168, 0.3);
+
+  /* ======== KORT ======== */
+  --card-bg: #ffffff;
+  --card-hover: #f9f5ff;
+  --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  --card-shadow-hover: 0 6px 16px rgba(0, 0, 0, 0.1);
+
+  /* ======== SPESIAL ======== */
+  --hero-gradient-start: #e0e7ff;
+  --hero-gradient-end: #c084fc;
+  --offer-bg: #fcd34d;
+  --offer-text: #1e293b;
+  --campaign-bg: #bbf7d0;
+  --campaign-text: #064e3b;
+  --search-section-bg: #e0e7ff;
+
+  /* ======== HEADER & FOOTER ======== */
+  --header-bg: #ffffff;
+  --footer-bg: #f9fafb;
+  --footer-border: #e2e8f0;
+  --footer-heading: #1e293b;
+  --footer-text: #334155;
+  --footer-muted: #64748b;
+
+  /* ======== EFFEKTER ======== */
+  --hero-title-size: 2.75rem;
+  --hero-subtitle-color: var(--text-muted);
+  --filter-bg: var(--section-bg);
+  --filter-border: #d1d5db;
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --section-bg: #1e1b2e;
+  --section-alt-bg: #1e293b;
+  --hero-bg: #1e1b2e;
+  --sticky-bg: #1e293b;
+
+  --text-color: #f3f4f6;
+  --text-muted: #9ca3af;
+  --heading-color: #ffffff;
+  --link-color: #c084fc;
+  --link-hover: #a855f7;
+
+  --btn-primary: #a855f7;
+  --btn-primary-hover: #9333ea;
+  --btn-secondary: #4c1d95;
+  --btn-secondary-hover: #6b21a8;
+  --text-on-primary: #ffffff;
+  --text-on-secondary: #e0e7ff;
+  --btn-shadow: rgba(168, 85, 247, 0.2);
+  --btn-shadow-hover: rgba(168, 85, 247, 0.3);
+
+  --card-bg: #1e1b2e;
+  --card-hover: #2a2543;
+  --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  --card-shadow-hover: 0 6px 16px rgba(0, 0, 0, 0.3);
+
+  --hero-gradient-start: #312e81;
+  --hero-gradient-end: #6d28d9;
+  --offer-bg: #fbbf24;
+  --offer-text: #1f2937;
+  --campaign-bg: #22c55e;
+  --campaign-text: #064e3b;
+  --search-section-bg: #1e1b2e;
+
+  --header-bg: #1e1b2e;
+  --footer-bg: #0f172a;
+  --footer-border: #334155;
+  --footer-heading: #f3f4f6;
+  --footer-text: #e5e7eb;
+  --footer-muted: #9ca3af;
+}
