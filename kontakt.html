@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt oss – Butikkoversikt.no</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-theme bg-header shadow-sm py-2 sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/hero/hero.png" alt="Logo" style="height: 60px;">
+                <div>
+                    <strong class="fs-5">Butikkoversikt.no</strong><br>
+                    <small class="text-muted-theme">Norges nettbutikk-guide</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Forside</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kategori.html">Kategorier</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ukens-anbefalte.html">Ukens Anbefalte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kampanjer.html">Kampanjer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="guider/main-guider.html">Guider</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="kontakt.html">Kontakt
+                            oss</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="hero bg-hero">
+            <div class="container text-center">
+                <h2>🧭 Om Butikkoversikt.no</h2>
+                <p>Butikkoversikt.no er laget for å bli en av Norges mest komplette og brukervennlige oversikt over
+                    nettbutikker. Her finner du anbefalte butikker, aktuelle kampanjer og oversiktlige kategorier som
+                    gjør det enkelt å navigere. Vi fokuserer på en stilren, rask og mobilvennlig opplevelse –
+                    optimalisert for både brukervennlighet og synlighet i søkemotorer.</p>
+        </div>
+    </section>
+
+    <main class="py-5 bg-section">
+        <div class="container">
+            <h1 class="text-center mb-4">📬 Kontakt oss</h1>
+            <p class="lead text-center">Har du forslag til en ny nettbutikk, ønsker du å gi ris eller ros, eller har du
+                innspill til hva du savner? Vi hører gjerne fra deg!</p>
+
+            <div class="text-center my-4">
+                <p>
+                    ✉️ <strong>E-post:</strong>
+                    <a href="mailto:kontakt@butikkoversikt.no">kontakt@butikkoversikt.no</a>
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form action="mailto:kontakt@butikkoversikt.no" method="post" enctype="text/plain">
+                        <div class="mb-3">
+                            <label for="butikkforslag" class="form-label">💡 Foreslå en nettbutikk eller ny
+                                kategori:</label>
+                            <input type="text" class="form-control" name="butikkforslag" id="butikkforslag"
+                                placeholder="f.eks. www.eksempelbutikk.no eller ny kategori" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="risros" class="form-label">✍️ Har du ris, ros eller forslag til
+                                forbedringer?</label>
+                            <textarea class="form-control" name="risros" id="risros" rows="4"
+                                placeholder="Skriv inn dine tilbakemeldinger her..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send innspill</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <h5>💬 Vanlige spørsmål</h5>
+                <ul>
+                    <li><strong>Hvordan legger jeg til en nettbutikk?</strong><br>Send oss navn, URL og hvilken kategori
+                        den passer i.</li>
+                    <li><strong>Er dere ansvarlige for nettbutikkene?</strong><br>Nei, vi lenker kun til eksterne sider
+                        og står ikke ansvarlig for deres innhold.</li>
+                </ul>
+            </div>
+
+            
+        </div>
+    </main>
+
+    <footer class="bg-footer py-4 mt-5 border-top">
+        <div class="container text-center">
+            <p class="mb-0 text-muted">&copy; 2025 Butikkoversikt.no – Alle rettigheter forbeholdt.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
