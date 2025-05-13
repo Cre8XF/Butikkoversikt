@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="no">
 
@@ -12,7 +11,6 @@
 </head>
 
 <body>
-
   <!-- Header & Navigasjon -->
   <header class="navbar navbar-expand-lg navbar-theme bg-header shadow-sm py-2 sticky-top">
     <div class="container">
@@ -44,6 +42,11 @@
       style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
   </header>
 
+  <!-- Tittel for valgt kategori -->
+  <div class="container my-4">
+    <h1 id="kategoriTittel" class="text-center text-heading mb-4">Kategori</h1>
+  </div>
+
   <!-- Dropdown for underkategorier -->
   <div class="container">
     <div class="dropdown mb-4">
@@ -57,31 +60,25 @@
     </div>
   </div>
 
-<div class="container my-3">
-  <div class="row row-cols-2 row-cols-md-4 g-3" id="kategori-buttons">
-    <!-- Kategoriknapper fylles inn dynamisk -->
-  </div>
-</div>
-</div>
-
-<!-- Kategorikort -->
-<main class="py-5">
-  <div class="container">
-    <div class="row g-4" id="kategoriContainer">
-      <!-- Her fylles kategorikortene inn av JavaScript -->
+  <!-- Kategorikort -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4" id="butikk-container">
+        <!-- Her fylles kategorikortene inn av JavaScript -->
+      </div>
     </div>
-  </div>
-</main>
+  </main>
 
+  <!-- Vis flere/færre knapper -->
   <div class="container text-center mt-4">
     <button id="vis-mer-knapp" class="btn btn-outline-primary">Vis flere butikker</button>
     <button id="vis-faerre-knapp" class="btn btn-outline-secondary" style="display: none;">Vis færre</button>
   </div>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/generate/kategori/generate-kategori.js" defer></script>
-
 </body>
 
 </html>

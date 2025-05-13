@@ -70,3 +70,12 @@
   font-size: 1rem;
   border-radius: 0.5rem;
 }
+#scrollTopButton {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+#scrollTopButton.show {
+  opacity: 1;
+  pointer-events: auto;
+}

@@ -40,3 +40,14 @@
 .dropdown .btn-secondary:hover {
   background-color: #4a90e2; /* Juster fargen etter tema */
 }
+.kategori-knapp {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.kategori-knapp:hover {
+  transform: translateY(-2px);
+  background-color: var(--bs-primary);
+  color: white;
+}
