@@ -1,0 +1,44 @@
+/* ===================================================
+   hero-index.css – Spesialstil for forside-hero
+   Integrert sømløst med fancy header (layout-index.css)
+   =================================================== */
+
+.hero.hero-index {
+  padding-top: 0;
+  padding-bottom: 5rem;
+  margin-top: 0;
+  border-bottom: none;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.bg-hero-index {
+  background: linear-gradient(to bottom, #6366f1 0%, #e0f2fe 100%);
+  color: white;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero-index h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.hero-index p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #f1f5f9;
+}
+
+@media (max-width: 768px) {
+  .hero-index h1 {
+    font-size: 2rem;
+  }
+
+  .hero-index p {
+    font-size: 1rem;
+  }
+}

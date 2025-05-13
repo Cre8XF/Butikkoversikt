@@ -4,8 +4,10 @@
 
 /* Layout og struktur */
 @import url("layout-base.css");
+@import url("layout-index.css");
 @import url("footer.css");
 @import url("hero.css");
+@import url("hero-index.css");
 @import url("sections.css");
 
 @import url("category-card.css");

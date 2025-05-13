@@ -1,0 +1,69 @@
+/* ======================================================
+   layout-index.css – Fancy header kun for forsiden
+   Brukes i tillegg til layout-base.css
+   ====================================================== */
+
+.navbar {
+  background: linear-gradient(to right, #8b5cf6, #6366f1);
+  color: white;
+  padding: 0.75rem 0;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.navbar .nav-link {
+  color: white;
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #e0e7ff;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: 0.75rem;
+}
+
+#toggleThemeBtn {
+  background: linear-gradient(to right, #ec4899, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 0.45rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#toggleThemeBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar .nav-link {
+    margin-left: 0.5rem;
+    font-size: 0.95rem;
+  }
+}
