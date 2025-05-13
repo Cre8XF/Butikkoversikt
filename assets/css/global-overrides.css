@@ -1,0 +1,228 @@
+/* ===============================================
+   global-overrides.css – Samlet stil fra:
+   extras.css, generic.css, master-override.css
+   =============================================== */
+
+/* === BODY OG GRUNNSTIL === */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--btn-hover);
+}
+
+.nav-link {
+  color: var(--text-color);
+}
+
+.nav-link:hover {
+  color: var(--btn-primary);
+}
+
+/* === INPUT, FORM OG CARDS === */
+input,
+textarea,
+select,
+.form-control {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+.form-control:focus {
+  border-color: var(--btn-primary);
+  box-shadow: 0 0 0 0.25rem var(--btn-focus-shadow);
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.card:hover {
+  background-color: var(--card-hover);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px var(--shadow-lg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* === STICKY KATEGORIMENY === */
+#kategoriMeny {
+  position: sticky;
+  top: 90px;
+  z-index: 999;
+  background-color: var(--header-bg);
+  padding: 0.5rem 0;
+  border-bottom: 2px solid var(--link-color);
+  box-shadow: 0 2px 6px var(--shadow-sm);
+}
+
+/* === KATEGORI-INNHOLD === */
+.kategori-seksjon {
+  scroll-margin-top: 150px;
+}
+
+.kategori-seksjon:first-of-type {
+  margin-top: 2rem;
+}
+
+#kategoriContainer {
+  padding-top: 20px;
+}
+
+.featured-store-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 1px 4px var(--shadow-sm);
+  transition: box-shadow 0.3s ease;
+}
+
+.featured-store-card:hover {
+  box-shadow: 0 4px 15px var(--shadow-lg);
+}
+
+.featured-store-card img {
+  max-height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+/* === SØK & RESULTAT-STIL === */
+.result-wrapper,
+.result-kort,
+.search-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.result-kort:hover,
+.search-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.search-card-body {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.search-thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+
+/* === UNDERKATEGORI-TAGS === */
+.subcategory-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.subcategory-tags .tag {
+  background-color: var(--btn-secondary);
+  color: var(--text-on-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subcategory-tags .tag:hover {
+  background-color: var(--btn-secondary-hover);
+}
+
+/* === FILTER-TAGS === */
+.filter-tag {
+  background-color: var(--tag-bg, #f1f3f5);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filter-tag:hover {
+  background-color: #dbeafe;
+}
+
+.filter-tag.active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.filter-tag.kategori {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+/* === HELTESONE OG HEADER === */
+.hero-section,
+.header-hero-wrapper {
+  background: linear-gradient(
+    to bottom,
+    var(--hero-gradient-start),
+    var(--hero-gradient-end)
+  );
+  color: var(--heading-color);
+  padding: 2rem 0 5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header-hero-wrapper h1,
+.header-hero-wrapper h2,
+.header-hero-wrapper p {
+  color: var(--header-hero-text);
+}
+
+/* === DIVERSE === */
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.search-section {
+  background: transparent !important;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.store-grid-section {
+  background-color: var(--section-bg);
+}
+
+.filter-section {
+  background-color: var(--filter-bg);
+  border-top: 1px solid var(--filter-border);
+  border-bottom: 1px solid var(--filter-border);
+}

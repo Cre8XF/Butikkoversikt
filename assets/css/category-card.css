@@ -1,0 +1,105 @@
+/* ============================================
+   category-card.css – Samlet stil for kategorikort
+   ============================================ */
+
+/* === Generelle kortinnstillinger (felles stil) === */
+.category-card,
+.category-store-card,
+.front-category-card {
+  background-color: var(--card-bg, #fff);
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover,
+.category-store-card:hover,
+.front-category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* === Forsidekort – visning med ikoner === */
+.front-category-card {
+  text-align: center;
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+}
+
+.icon-circle img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.front-category-card h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.front-category-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.front-category-card .btn {
+  background-color: #007bff;
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.front-category-card .btn:hover {
+  background-color: #0056b3;
+}
+
+/* === Butikkategorikort: bildebasert === */
+.category-store-card img {
+  height: 100px;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+/* === Dropdown & filter-knapper (kategori-sider) === */
+.dropdown {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.dropdown .btn-secondary {
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown .btn-secondary:hover {
+  background-color: #4a90e2; /* Juster fargen etter tema */
+}
+
+.kategori-knapp {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.kategori-knapp:hover {
+  transform: translateY(-2px);
+  background-color: var(--bs-primary);
+  color: white;
+}

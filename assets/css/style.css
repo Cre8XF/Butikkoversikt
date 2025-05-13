@@ -3,24 +3,17 @@
 @import url("theme.css");
 
 /* Layout og struktur */
-@import url("header.css");
+@import url("layout-base.css");
 @import url("footer.css");
 @import url("hero.css");
 @import url("sections.css");
-@import url("header-category.css");
-@import url("front-category-card.css"); /* Forside kategorikort */
-@import url("category-store-card.css"); /* Kategorisider butikkort */
+
+@import url("category-card.css");
+@import url("content-cards.css");
 
 /* Komponenter */
-@import url("guide-card.css");
-@import url("promo-card.css");
-@import url("top25-card.css");
-@import url("buttons.css");
-@import url("ads.css");
-@import url("search.css");
+@import url("interface-ui.css");
 
 /* Ekstra og tilpasninger */
 @import url("responsive.css");
-@import url("extras.css");
-@import url("master-override.css");
-@import url("generic.css");
+@import url("global-overrides.css");

@@ -1,0 +1,99 @@
+/* ===================================================
+   content-cards.css – Samlet stil for innholdskort:
+   guider, kampanjer, topp 25
+   =================================================== */
+
+/* === GUIDE-KORT === */
+.guide-card {
+  background-color: var(--guide-card-bg, #fff);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-color, #ccc);
+  box-shadow: 0 2px 6px var(--guide-card-shadow, rgba(0, 0, 0, 0.08));
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.guide-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px var(--guide-card-shadow-hover, rgba(0, 0, 0, 0.15));
+}
+
+.guide-card img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.guide-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--heading-color, #000);
+}
+
+.guide-card .card-text {
+  font-size: 0.95rem;
+  color: var(--text-muted, #555);
+}
+
+/* === PROMO-KORT (Kampanjer) === */
+.promo-card {
+  background: var(--card-promo-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--card-shadow);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.promo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.promo-card .promo-image {
+  max-width: 100px;
+  border-radius: var(--radius-sm);
+}
+
+.promo-card .promo-text {
+  flex: 1;
+}
+
+.promo-card .promo-title {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.promo-card .promo-subtext {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.promo-card .discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff4757;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* === Topp 25 kort === */
+.top25-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--card-radius, 0.75rem);
+  box-shadow: var(--shadow-xs);
+  text-align: center;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.top25-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
