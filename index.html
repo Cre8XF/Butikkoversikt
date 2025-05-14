@@ -13,36 +13,7 @@
 <body>
 
   <!-- Header & Navigasjon -->
-  <header class="navbar navbar-expand-lg navbar-theme bg-header shadow-sm py-2 sticky-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="/">
-        <img src="assets/images/hero/hero.png" alt="Butikkoversikt logo" style="height: 60px;">
-        <div>
-          <strong class="fs-5">Butikkoversikt.no</strong><br>
-          <small class="text-muted-theme">Norges nettbutikk-guide</small>
-        </div>
-      </a>
-  
-      <!-- Meny for mobil -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-        title="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Forside</a></li>
-          <li class="nav-item"><a class="nav-link" href="kategori-mal-utforsk.html">Kategorier</a></li>
-          <li class="nav-item"><a class="nav-link" href="ukens-anbefalte.html">Ukens Anbefalte</a></li>
-          <li class="nav-item"><a class="nav-link" href="kampanjer.html">Kampanjer</a></li>
-          <li class="nav-item"><a class="nav-link" href="guider/main-guider.html">Guider</a></li>
-          <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt oss</a></li>
-        </ul>
-      </div>
-    </div>
-    <button id="themeToggleBtn" class="btn btn-sm btn-primary"
-      style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
-  </header>
+  <div id="header-placeholder"></div>
 
   <!-- Hero -->
   <section class="hero hero-index bg-hero-index text-center text-white fade-in">
@@ -359,7 +330,10 @@
   </section>
   <section class="py-5 bg-white">
     <div class="container">
-      <h2 class="text-center mb-4">🎯 Anbefalte produkter</h2>
+      <h2 class="text-center mb-2">💎 Eksklusive tilbud</h2>
+      <p class="text-center text-muted mb-4 small">
+        Tilbud og kampanjer fra utvalgte samarbeidspartnere – håndplukket for deg.
+      </p>
       <div class="row g-4">
         <div class="col-md-6">
           <a href="https://butikkoversikt.no/tilbud/sommer-tilbud"
@@ -368,7 +342,7 @@
             <img src="assets/images/annonser/sommer-tilbud.png" alt="Sommer Tilbud - 30% rabatt" class="img-fluid"
               style="max-height:80px;">
             <div>
-              <div class="fw-bold">Sommer Tilbud - 30% rabatt</div>
+              <div class="fw-bold">Sommer Tilbud – 30% rabatt</div>
               <div class="text-muted small">Spar stort på sommerens heteste produkter. Gjelder kun i en begrenset periode.
               </div>
             </div>
@@ -389,36 +363,37 @@
       </div>
     </div>
   </section>
+  
   </main>
+
+  <div id="footer-placeholder"></div>
   
   
-  <!-- Footer -->
-  <footer class="footer bg-header text-heading py-5 mt-5">
-    <div class="container text-center">
-      <p class="mb-1">&copy; 2025 Butikkoversikt.no</p>
-      <p class="text-muted small">En oversikt over de beste norske nettbutikkene.</p>
-    </div>
-  </footer>
   
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   
-<!-- Effekter -->
+<!-- Effekter og interaksjon -->
 <script src="assets/js/effects/fade-in.js"></script>
 <script src="assets/js/effects/theme-toggle.js"></script>
 
-<!-- Generatorer -->
-<script src="assets/js/generate/alle-butikker/generate-alle-butikker-filter-tags-enhanced.js"></script>
-<script src="assets/js/generate/alle-butikker/generate-anbefalte.js"></script>
+<!-- Forsidegeneratorer -->
 <script src="assets/js/generate/forsiden/generate-forside-anbefalte.js"></script>
 <script src="assets/js/generate/forsiden/generate-kampanjer-forside.js"></script>
+<script src="assets/js/generate/forsiden/generate-trender.js"></script>
+
+<!-- Fellesfunksjoner -->
 <script src="assets/js/generate/alle-butikker/generate-search.js"></script>
+<script src="assets/js/load-ads.js"></script>
 
 <!-- Hoved -->
 <script src="assets/js/main.js"></script>
 <script src="assets/js/autocomplete-søk.js" defer></script>
+<script src="assets/js/footer.js"></script>
+<script src="assets/js/header.js"></script>
 
-  
-  </body>
-  
-  </html>
+
+
+</body>
+
+</html>
