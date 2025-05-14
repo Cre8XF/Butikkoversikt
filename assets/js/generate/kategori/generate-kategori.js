@@ -1,39 +1,37 @@
+
 document.addEventListener("DOMContentLoaded", async () => {
     const kategoriContainer = document.getElementById("butikk-container");
     const kategoriTittel = document.getElementById("kategoriTittel");
     const subcategoryDropdown = document.getElementById("subcategoryMenu");
     const dropdownButton = document.getElementById("subcategoryDropdown");
-  
-    // Hent kategori fra URL
+
     const params = new URLSearchParams(window.location.search);
     const kategori = params.get("kategori");
-  
+    const valgtUnderkategori = decodeURIComponent(location.hash.slice(1));
+
     if (!kategoriContainer || !kategori) {
         console.error("Elementer mangler: butikkContainer eller kategori er ikke definert.");
         return;
     }
-  
+
     kategoriTittel.textContent = kategori;
-  
+
     try {
         const response = await axios.get("assets/data/butikker.json");
         const butikker = response.data;
-  
+
         const filtrerteButikker = butikker.filter(butikk =>
             (butikk.category && butikk.category.includes(kategori)) ||
             (butikk.subcategory && butikk.subcategory.includes(kategori))
         );
-        
-  
+
         kategoriContainer.innerHTML = "";
-  
-        // Hent unike underkategorier
+
         const underkategorier = new Set();
         filtrerteButikker.forEach((butikk) => {
-            butikk.subcategory.forEach((sub) => underkategorier.add(sub));
+            (butikk.subcategory || []).forEach((sub) => underkategorier.add(sub));
         });
-  
-        // Legg til "Vis alle" i dropdown
+
         const visAlleItem = document.createElement("li");
         visAlleItem.innerHTML = `<a class="dropdown-item" href="#">Vis alle</a>`;
         visAlleItem.addEventListener("click", () => {
@@ -41,32 +39,39 @@ document.addEventListener("DOMContentLoaded", async () => {
             dropdownButton.textContent = `Vis alle (${filtrerteButikker.length})`;
         });
         subcategoryDropdown.appendChild(visAlleItem);
-  
-        // Legg til underkategorier i dropdown-menyen
+
         underkategorier.forEach((sub) => {
             const listItem = document.createElement("li");
             listItem.innerHTML = `<a class="dropdown-item" href="#">${sub}</a>`;
-            
+
             listItem.addEventListener("click", () => {
                 const filtrerteUnderkategori = filtrerteButikker.filter((butikk) =>
                     butikk.subcategory.includes(sub)
                 );
                 visButikker(filtrerteUnderkategori);
-  
-                // Oppdater knappetekst med valgt underkategori og teller
                 dropdownButton.textContent = `${sub} (${filtrerteUnderkategori.length})`;
             });
-  
+
             subcategoryDropdown.appendChild(listItem);
+
+            // Aktiver underkategori hvis den matcher URL-hash
+            if (valgtUnderkategori && sub.toLowerCase() === valgtUnderkategori.toLowerCase()) {
+                const filtrerteUnderkategori = filtrerteButikker.filter((butikk) =>
+                    butikk.subcategory.includes(sub)
+                );
+                visButikker(filtrerteUnderkategori);
+                dropdownButton.textContent = `${sub} (${filtrerteUnderkategori.length})`;
+            }
         });
-  
-        // Vis alle butikker først
-        visButikker(filtrerteButikker);
-  
+
+        if (!valgtUnderkategori) {
+            visButikker(filtrerteButikker); // Vis alle hvis ingen hash
+        }
+
     } catch (error) {
         console.error("Feil ved lasting av butikker: ", error);
     }
-  
+
     function visButikker(butikker) {
         kategoriContainer.style.opacity = 0;
         setTimeout(() => {
@@ -89,5 +94,4 @@ document.addEventListener("DOMContentLoaded", async () => {
             kategoriContainer.style.opacity = 1;
         }, 300);
     }
-  });
-  
+});

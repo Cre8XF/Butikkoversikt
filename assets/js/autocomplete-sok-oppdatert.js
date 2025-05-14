@@ -1,5 +1,5 @@
 
-// autocomplete-sok.js – forbedret søk med riktig kategori for underkategorier
+// autocomplete-sok.js – forbedret søk basert på tags og filtrerte kategorier
 
 document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("autocompleteInput");
@@ -100,33 +100,24 @@ document.addEventListener("DOMContentLoaded", () => {
       icon: "🏷️"
     }));
 
-    const subkategoriMap = new Map();
+    const matchedSub = new Set();
+    const subkategoritreff = [];
 
     matchedButikker.forEach(b => {
       const subs = b.subcategory || [];
-      const cat = b.category;
+      const cats = b.category || [];
       subs.forEach(sub => {
-        const key = normalize(sub);
-        if (!subkategoriMap.has(key)) {
-          subkategoriMap.set(key, {
+        if (!matchedSub.has(sub)) {
+          matchedSub.add(sub);
+          const parentCat = cats[0] || "kategori";
+          subkategoritreff.push({
             name: sub,
-            url: `kategori.html?kategori=${encodeURIComponent(cat)}#${encodeURIComponent(sub)}`,
+            url: `kategori.html?kategori=${encodeURIComponent(parentCat)}#${encodeURIComponent(sub)}`,
             icon: "📁"
           });
-        } else {
-          const existing = subkategoriMap.get(key);
-          if (normalize(cat).includes(queryNormalized)) {
-            subkategoriMap.set(key, {
-              name: sub,
-              url: `kategori.html?kategori=${encodeURIComponent(cat)}#${encodeURIComponent(sub)}`,
-              icon: "📁"
-            });
-          }
         }
       });
     });
-
-    const subkategoritreff = Array.from(subkategoriMap.values());
 
     const guidetreff = guider
       .filter(g => matchFields(g, query, ["title", "description", "tags"]))
