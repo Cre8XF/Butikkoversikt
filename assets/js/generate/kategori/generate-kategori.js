@@ -19,7 +19,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         const response = await axios.get("assets/data/butikker.json");
         const butikker = response.data;
   
-        const filtrerteButikker = butikker.filter(butikk => butikk.category.includes(kategori));
+        const filtrerteButikker = butikker.filter(butikk =>
+            (butikk.category && butikk.category.includes(kategori)) ||
+            (butikk.subcategory && butikk.subcategory.includes(kategori))
+        );
+        
   
         kategoriContainer.innerHTML = "";
   

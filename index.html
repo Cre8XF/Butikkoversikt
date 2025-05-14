@@ -65,30 +65,30 @@
 
 
 
-  <!-- Søk -->
-  <section class="search-section py-5" style="background-color: var(--search-section-bg);">
-    <div class="container text-center">
-      <h2 class="mb-4 fade-in">Hva ser du etter?</h2>
-      <p class="text-muted mt-3 fade-in">Skriv inn det du leter etter – vi finner butikker og guider for deg</p>
-  
-      <div class="search-wrapper d-flex justify-content-center align-items-center gap-2 fade-in position-relative">
-        <i class="bi bi-search fs-4 text-muted"></i>
-  
-        <!-- Autocomplete-wrapper -->
-        <div class="position-relative w-100">
-          <input type="text" id="searchInput" placeholder="Søk etter butikk, kategori eller guide"
-            class="form-control search-input" />
-          <ul id="autocomplete-list" class="autocomplete-items"></ul>
-        </div>
+<!-- Søk -->
+<section class="search-section py-5" style="background-color: var(--search-section-bg);">
+  <div class="container text-center">
+    <h2 class="mb-4 fade-in">Hva ser du etter?</h2>
+    <p class="text-muted mt-3 fade-in">Skriv inn det du leter etter – vi finner butikker og guider for deg</p>
+
+    <div class="search-wrapper d-flex justify-content-center align-items-center gap-2 fade-in position-relative">
+      <i class="bi bi-search fs-4 text-muted"></i>
+
+      <!-- Autocomplete-wrapper -->
+      <div class="position-relative w-100">
+        <input type="text" id="autocompleteInput" placeholder="Søk etter butikk, kategori eller guide"
+          class="form-control search-input" />
+        <!-- Suggestions genereres dynamisk av JS -->
       </div>
-  
-      <!-- Interaktive tags -->
-      <div id="search-subcategory-tags" class="mt-4 d-flex flex-wrap justify-content-center gap-2 fade-in"></div>
-  
-      
-      <div id="search-results" class="search-results mt-5 text-start fade-in"></div>
     </div>
-  </section>
+
+    <!-- Interaktive tags -->
+    <div id="search-subcategory-tags" class="mt-4 d-flex flex-wrap justify-content-center gap-2 fade-in"></div>
+
+    <div id="search-results" class="search-results mt-5 text-start fade-in"></div>
+  </div>
+</section>
+
 
 
 
@@ -383,14 +383,13 @@
 <script src="assets/js/generate/forsiden/generate-trender.js"></script>
 
 <!-- Fellesfunksjoner -->
-<script src="assets/js/generate/alle-butikker/generate-search.js"></script>
 <script src="assets/js/load-ads.js"></script>
 
 <!-- Hoved -->
 <script src="assets/js/main.js"></script>
-<script src="assets/js/autocomplete-søk.js" defer></script>
 <script src="assets/js/footer.js"></script>
 <script src="assets/js/header.js"></script>
+<script src="assets/js/autocomplete-sok.js" defer></script>
 
 
 

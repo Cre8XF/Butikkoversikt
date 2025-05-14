@@ -1,0 +1,92 @@
+[
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "AliExpress;assets/images/butikker/aliexpress.png;;Alt-mulig butikker;\"[\"Gadgets og tilbehør\"]\";https://www.aliexpress.com;Verdens største markedsplass for billig tilbehør"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Temu;assets/images/butikker/temu.png;;Alt-mulig butikker;\"[\"Gadgets og tilbehør\"]\";https://www.temu.com;Temu tilbyr alt fra klær til gadgets med svært lave priser og rask frakt.;;;true;;['elektronikk'"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Wish;assets/images/butikker/wish.png;;Alt-mulig butikker;\"[\"Gadgets og tilbehør\"]\";https://www.wish.com;Wish er kjent for sine ekstremt lave priser på gadgets"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Banggood;assets/images/butikker/banggood.png;;Alt-mulig butikker;\"[\"Gadgets og tilbehør\"]\";https://www.banggood.com;Banggood tilbyr et bredt utvalg av gadgets"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Joom;assets/images/butikker/joom.png;;Alt-mulig butikker;\"[\"Gadgets og tilbehør\"]\";https://www.joom.com;Joom er en nettbutikk med fokus på lave priser og gratis frakt på et bredt utvalg av produkter.;;;true;;['elektronikk'"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Grandado;assets/images/butikker/grandado.png;;Alt-mulig butikker;\"[\"Gadgets og tilbehør\"]\";https://nor.grandado.com/;Grandado er en internasjonal nettbutikk med et bredt utvalg av rimelige produkter"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "DHGate;assets/images/butikker/dhgate.png;;Alt-mulig butikker;\"[\"Grossist og dropshipping\"]\";https://www.dhgate.com;Populær engrosplattform for dropshipping og grossistvarer. Alt fra gadgets til klær.;;;true;;['elektronikk'"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "LightInTheBox;assets/images/butikker/lightinthebox.png;;Alt-mulig butikker;\"[\"Kles- og livsstilsbutikker\"]\";https://www.lightinthebox.com/no;Kjent global nettbutikk med klær"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "AskeladdenNavnelapper.no;assets/images/butikker/askeladden.png;Askeladden;Barn og baby;\"[\"Babyutstyr\"]\";https://www.askeladdennavnelapper.no;Praktiske navnelapper for klær og utstyr.;false;false;false;false;['baby'"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Mimmis.no;assets/images/butikker/mimmis.png;Mimmis;Barn og baby;\"[\"Babyutstyr\"]\";https://www.mimmis.no;Bilstoler"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Lekeakademiet.no;assets/images/butikker/lekeakademiet.png;Lekeakademiet;Barn og baby;\"[\"Leker\"]\";https://www.lekeakademiet.no;Leker som stimulerer barns utvikling og læring.;false;false;false;false;['baby'"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Lekia;assets/images/butikker/lekia.png;Lekia;Barn og baby;\"[\"Leker\"]\";https://www.lekia.no;Lekia tilbyr produkter for barn og baby"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "RiktigeLeker.no;assets/images/butikker/sprell.png;Riktige Leker;Barn og baby;\"[\"Leker\"]\";https://www.riktigeleker.no;Kvalitetsleker og babyleker for alle aldre.;false;false;false;false;['baby'"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Ark.no;assets/images/butikker/ark.png;Ark.no;Bøker og media;\"[\"Barnebøker\"]\";https://www.ark.no;Bestselgere"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Bokkilden;assets/images/butikker/bokkilden.png;Bokkilden;Bøker og media;\"[\"Bøker og e-bøker\"]\";https://www.bokkilden.no;Bøker"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Adlibris;assets/images/butikker/adlibris.png;Adlibris;Bøker og media;\"[\"Bøker og e-bøker\"]\";https://www.adlibris.com/no;Bøker"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Norli.no;assets/images/butikker/norli.png;Norli;Bøker og media;\"[\"Bøker og e-bøker\"]\";https://www.norli.no;En av Norges største bokhandler med stort utvalg av bøker og e-bøker.;false;false;true;false;['barn'"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Fabel;assets/images/butikker/fabel.png;;Bøker og media;\"[\"Lyd- og lydbøker\"]\";https://www.fabel.no;Norsk strømmetjeneste for lydbøker og fortellinger.;;;true;;['barn'"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "CDON;assets/images/butikker/cdon.png;CDON;Elektronikk og data;\"[\"Elektronikk\"]\";https://cdon.no;CDON tilbyr alt innen elektronikk"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Clas Ohlson;assets/images/butikker/clasohlson.png;Clas Ohlson;Elektronikk og data;\"[\"Elektronikk\"]\";https://www.clasohlson.com/no/;Clas Ohlson tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.;true;false;false;false;['tech'"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "ClasOhlson.no;assets/images/butikker/clasohlson.png;Clas Ohlson;Elektronikk og data;\"[\"Elektronikk\"]\";https://www.clasohlson.no;Praktiske løsninger for hjemmet åogså hodetelefoner og lyd.;false;false;false;false;['tech'"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Elkjøp;assets/images/butikker/elkjop.png;Elkjøp;Elektronikk og data;\"[\"Elektronikk\"]\";https://www.elkjop.no;Elkjøp tilbyr alt innen elektronikk"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "HiFiKlubben.no;assets/images/butikker/hifiklubben.png;HiFi Klubben;Elektronikk og data;\"[\"Elektronikk\"]\";https://www.hifiklubben.no;Høyttalere"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "iTech.no;assets/images/butikker/itech.png;iTech;Elektronikk og data;\"[\"Elektronikk\"]\";https://www.itech.no;Apple-produkter og tilbehør.;false;false;false;false;['tech'"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Kjell.com;assets/images/butikker/kjell.png;Kjell & Company;Elektronikk og data;\"[\"Elektronikk\"]\";https://www.kjell.com;Smarthus"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Soundgarden.no;assets/images/butikker/soundgarden.png;Soundgarden;Elektronikk og data;\"[\"Elektronikk\"]\";https://www.soundgarden.no;Hi-fi og hjemmekino for entusiaster.;false;false;false;false;['tech'"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Tek.no;assets/images/butikker/tek.png;Tek.no;Elektronikk og data;\"[\"Elektronikk\"]\";https://www.tek.no;Teknologinyheter og produktanbefalinger.;false;false;false;false;['tech'"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Teknikmagasinet.no;assets/images/butikker/teknikmagasinet.png;Teknikmagasinet;Elektronikk og data;\"[\"Elektronikk\"]\";https://www.teknikmagasinet.no;Gadgets"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "Multicom.no;assets/images/butikker/multicom.png;Multicom;Elektronikk og data;\"[\"Elektronikk\"]\";https://www.multicom.no;Multicom tilbyr et bredt utvalg av datamaskiner"
+    },
+    {
+        "name;image;alt;category;subcategory;url;description;topp25;forside;ny;annonse;tags;rank;ukensAnbefalte\r": "NetOnNet.no;assets/images/butikker/netonnet.png;NetOnNet;Elektronikk og data;\"[\"Gamingutstyr og komponenter\""
+    }
+]
