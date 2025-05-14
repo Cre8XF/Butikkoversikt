@@ -1,9 +1,9 @@
-// autocomplete-sok.js – søk i butikker, tags, og vis tilhørende kategori/underkategori basert på treff
+// autocomplete-sok.js – Fiks: søkeresultat og riktig DOM-håndtering
 
 document.addEventListener("DOMContentLoaded", () => {
-  const searchInput = document.getElementById("searchInput");
+  const searchInput = document.getElementById("autocompleteInput");
   if (!searchInput) {
-    console.warn("searchInput ikke funnet i DOM");
+    console.warn("autocompleteInput ikke funnet i DOM");
     return;
   }
 
@@ -79,14 +79,15 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const qNorm = normalize(query);
+    const queryNormalized = normalize(query);
 
-    const matchButikker = butikker.filter(b => matchFields(b, qNorm, ["name", "description", "tags", "category", "subcategory"]));
-
-    const butikktreff = matchButikker.map(b => ({ name: b.name, url: b.url, icon: "🛒" }));
+    const butikktreff = butikker
+      .filter(b => matchFields(b, query, ["name", "description", "tags", "category", "subcategory"]))
+      .map(b => ({ name: b.name, url: b.url, icon: "🛒" }));
 
     const kategoritreff = [...new Set(
-      matchButikker.flatMap(b => b.category || [])
+      butikker.flatMap(b => b.category || [])
+        .filter(cat => normalize(cat).includes(queryNormalized))
     )].map(cat => ({
       name: cat,
       url: `kategori.html?kategori=${encodeURIComponent(cat)}`,
@@ -94,14 +95,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }));
 
     const subkategoritreff = [];
-    const matchedSubs = new Set();
+    const matchedSub = new Set();
 
-    matchButikker.forEach(b => {
+    butikker.forEach(b => {
       const subs = b.subcategory || [];
       const cats = b.category || [];
       subs.forEach(sub => {
-        if (!matchedSubs.has(sub)) {
-          matchedSubs.add(sub);
+        if (normalize(sub).includes(queryNormalized) && !matchedSub.has(sub)) {
+          matchedSub.add(sub);
           const parentCat = cats[0] || "kategori";
           subkategoritreff.push({
             name: sub,
@@ -113,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const guidetreff = guider
-      .filter(g => matchFields(g, qNorm, ["title", "description", "tags"]))
+      .filter(g => matchFields(g, query, ["title", "description", "tags"]))
       .map(g => ({ name: g.title, url: g.url, icon: "📘" }));
 
     renderGroupedSuggestions(
