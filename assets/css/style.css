@@ -15,6 +15,7 @@
 
 /* Komponenter */
 @import url("interface-ui.css");
+@import url("kampanje-forside.css");
 
 /* Ekstra og tilpasninger */
 @import url("responsive.css");
