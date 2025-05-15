@@ -31,19 +31,18 @@
 }
 
 .icon-circle {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 15px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: #f7f7f7;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1rem;
 }
 
 .icon-circle img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .front-category-card h5 {
@@ -66,6 +65,87 @@
 
 .front-category-card .btn:hover {
   background-color: #0056b3;
+}
+.image-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  border-radius: 16px;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-overlay {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.card-overlay h3,
+.card-overlay p {
+  margin: 0;
+  color: #fff;
+}
+
+.image-card-link {
+  text-decoration: none;
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.store-card {
+  display: block;
+  background: var(--card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.store-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.store-card-img {
+  background: #fff;
+  padding: 1rem;
+  text-align: center;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-card-img img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.store-card-body {
+  padding: 1rem;
+}
+
+.store-card-body h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.store-card-body p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
 }
 
 /* === Butikkategorikort: bildebasert === */
