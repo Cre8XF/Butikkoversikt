@@ -1,0 +1,76 @@
+:root {
+  --store-card-bg: #f9f9f9;
+  --store-card-img-bg: #fff;
+}
+
+[data-theme="dark"] {
+  --store-card-bg: #1f1f1f;
+  --store-card-img-bg: #2a2a2a;
+}
+
+/* Gjelder alle butikk-kort uansett klasse */
+.category-card,
+.category-store-card,
+.result-kort,
+.featured-store-card,
+.store-card {
+  background: var(--store-card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.store-card:hover,
+.category-card:hover,
+.category-store-card:hover,
+.result-kort:hover,
+.featured-store-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.store-card-img,
+.category-store-card .image,
+.result-kort .image,
+.featured-store-card .image {
+  background: var(--store-card-img-bg);
+  padding: 1rem;
+  text-align: center;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-card-img img,
+.category-store-card img,
+.result-kort img,
+.featured-store-card img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.store-card-body,
+.category-store-card .content,
+.result-kort .content,
+.featured-store-card .content {
+  padding: 1rem;
+}
+
+.store-card-body h4,
+.category-store-card h4,
+.result-kort h4,
+.featured-store-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.store-card-body p,
+.category-store-card p,
+.result-kort p,
+.featured-store-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
