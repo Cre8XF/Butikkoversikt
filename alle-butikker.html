@@ -116,26 +116,20 @@
         </div>
       </section>
 
-      <section class="store-grid-section pb-5">
+      <section class="py-5">
         <div class="container">
-          <div id="butikk-container" class="row g-4"></div>
-        </div>
-        <div
-          id="pagination-buttons"
-          class="d-flex justify-content-center gap-3 my-4"
-        >
-          <button id="vis-mer-knapp" class="btn btn-outline-primary">
-            Vis flere butikker
-          </button>
-          <button
-            id="vis-faerre-knapp"
-            class="btn btn-outline-secondary"
-            style="display: none"
-          >
-            Vis færre
-          </button>
+          <h2 class="text-center mb-4">Alle nettbutikker</h2>
+          <div id="alle-butikker-filter" class="mb-4"></div>
+          <div class="row g-4" id="butikk-container">
+            <!-- Butikkort genereres her av JavaScript -->
+          </div>
+          <div class="text-center mt-4">
+            <button id="vis-flere-butikker" class="btn btn-primary">Vis flere</button>
+            <button id="vis-færre-butikker" class="btn btn-outline-secondary">Vis færre</button>
+          </div>
         </div>
       </section>
+      
     </main>
 
     <!-- Footer -->

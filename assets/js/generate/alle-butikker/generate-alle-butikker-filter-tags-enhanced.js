@@ -1,12 +1,10 @@
-
-// generate-alle-butikker-filter-tags-enhanced.js – paginert + vis færre
+// generate-alle-butikker-filter-tags-enhanced-toggle.js – med tag/dropdown-visningsbytte
 
 window.addEventListener("DOMContentLoaded", () => {
   fetch("assets/data/butikker.json")
-    .then((res) => res.json())
-    .then((data) => {
+    .then(res => res.json())
+    .then(data => {
       byggTagFilter(data);
-      byggDropdownFilter(data);
       visButikker(data);
     });
 
@@ -28,26 +26,11 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
-  const knappMer = document.getElementById("vis-mer-knapp");
-  const knappFaerre = document.getElementById("vis-faerre-knapp");
-
-  if (knappMer) {
-    knappMer.addEventListener("click", visNesteSide);
-  }
-  if (knappFaerre) {
-    knappFaerre.addEventListener("click", () => {
-      visButikker(visteButikker); // tilbakestill til første side
-    });
-  }
 });
 
 let aktivKategoriTags = new Set();
 let aktivUnderkategoriTags = new Set();
 let alleButikker = [];
-let visteButikker = [];
-let sideIndeks = 0;
-const butikkPerSide = 20;
 
 function byggTagFilter(butikker) {
   alleButikker = butikker;
@@ -56,7 +39,7 @@ function byggTagFilter(butikker) {
   const underkategoriTags = document.getElementById("underkategori-tags");
   const nullstill = document.getElementById("nullstill-filter");
 
-  const kategorier = [...new Set(butikker.map((b) => b.category).filter(Boolean))];
+  const kategorier = [...new Set(butikker.map(b => b.category).filter(Boolean))];
 
   function lagTag(text, type) {
     const btn = document.createElement("button");
@@ -74,17 +57,19 @@ function byggTagFilter(butikker) {
     return btn;
   }
 
-  kategorier.forEach((k) => kategoriTags.appendChild(lagTag(k, "kategori")));
+  kategorier.forEach(k => kategoriTags.appendChild(lagTag(k, "kategori")));
 
   function oppdaterUnderkategoriTags() {
     underkategoriTags.innerHTML = "";
     const relevanteButikker = aktivKategoriTags.size > 0
-      ? alleButikker.filter((b) => aktivKategoriTags.has(b.category))
+      ? alleButikker.filter(b => aktivKategoriTags.has(b.category))
       : alleButikker;
 
-    const underkategorier = [...new Set(relevanteButikker.flatMap((b) => b.subcategory || []))];
+    const underkategorier = [...new Set(
+      relevanteButikker.flatMap(b => b.subcategory || [])
+    )];
 
-    underkategorier.forEach((sub) => {
+    underkategorier.forEach(sub => {
       const tag = lagTag(sub, "underkategori");
       underkategoriTags.appendChild(tag);
     });
@@ -93,47 +78,12 @@ function byggTagFilter(butikker) {
   nullstill.addEventListener("click", () => {
     aktivKategoriTags.clear();
     aktivUnderkategoriTags.clear();
-    document.querySelectorAll(".filter-tag").forEach((tag) => tag.classList.remove("active"));
+    document.querySelectorAll(".filter-tag").forEach(tag => tag.classList.remove("active"));
     oppdaterUnderkategoriTags();
     filtrer();
   });
 
   oppdaterUnderkategoriTags();
-}
-
-function byggDropdownFilter(butikker) {
-  const kategoriSelect = document.getElementById("kategori-filter");
-  const underkategoriSelect = document.getElementById("underkategori-filter");
-
-  const kategorier = [...new Set(butikker.map((b) => b.category).filter(Boolean))];
-
-  kategorier.forEach((k) => {
-    const opt = document.createElement("option");
-    opt.value = k;
-    opt.textContent = k;
-    kategoriSelect.appendChild(opt);
-  });
-
-  kategoriSelect.addEventListener("change", () => {
-    const valgtKategori = kategoriSelect.value;
-    const subOptions = new Set(
-      alleButikker
-        .filter((b) => valgtKategori === "alle" || b.category === valgtKategori)
-        .flatMap((b) => b.subcategory || [])
-    );
-
-    underkategoriSelect.innerHTML = "<option value='alle'>Alle underkategorier</option>";
-    [...subOptions].forEach((sub) => {
-      const opt = document.createElement("option");
-      opt.value = sub;
-      opt.textContent = sub;
-      underkategoriSelect.appendChild(opt);
-    });
-
-    filtrerDropdown();
-  });
-
-  underkategoriSelect.addEventListener("change", filtrerDropdown);
 }
 
 function toggleTag(set, value, btn) {
@@ -147,24 +97,10 @@ function toggleTag(set, value, btn) {
 }
 
 function filtrer() {
-  const filtrerte = alleButikker.filter((b) => {
+  const filtrerte = alleButikker.filter(b => {
     const matchKategori = aktivKategoriTags.size === 0 || aktivKategoriTags.has(b.category);
-    const matchUnderkategori =
-      aktivUnderkategoriTags.size === 0 ||
-      (b.subcategory || []).some((sub) => aktivUnderkategoriTags.has(sub));
-    return matchKategori && matchUnderkategori;
-  });
-
-  visButikker(filtrerte);
-}
-
-function filtrerDropdown() {
-  const k = document.getElementById("kategori-filter").value;
-  const u = document.getElementById("underkategori-filter").value;
-
-  const filtrerte = alleButikker.filter((b) => {
-    const matchKategori = k === "alle" || b.category === k;
-    const matchUnderkategori = u === "alle" || (b.subcategory || []).includes(u);
+    const matchUnderkategori = aktivUnderkategoriTags.size === 0 ||
+      (b.subcategory || []).some(sub => aktivUnderkategoriTags.has(sub));
     return matchKategori && matchUnderkategori;
   });
 
@@ -174,94 +110,33 @@ function filtrerDropdown() {
 function visButikker(butikker) {
   const container = document.getElementById("butikk-container");
   const teller = document.getElementById("butikk-teller");
-  const visMerKnapp = document.getElementById("vis-mer-knapp");
-  const visFaerreKnapp = document.getElementById("vis-faerre-knapp");
-
   container.innerHTML = "";
-  sideIndeks = 0;
-  visteButikker = butikker;
 
-  if (teller) {
-    teller.textContent = `Fant ${butikker.length} butikker`;
-  }
-
-  visNesteSide();
-
-  if (butikker.length > butikkPerSide) {
-    visMerKnapp.style.display = "inline-block";
-    visFaerreKnapp.style.display = "none";
-  } else {
-    visMerKnapp.style.display = "none";
-    visFaerreKnapp.style.display = "none";
-  }
-}
-
-function visNesteSide() {
-  const container = document.getElementById("butikk-container");
-  const visMerKnapp = document.getElementById("vis-mer-knapp");
-  const visFaerreKnapp = document.getElementById("vis-faerre-knapp");
-
-  const start = sideIndeks * butikkPerSide;
-  const slutt = start + butikkPerSide;
-  const butikkChunk = visteButikker.slice(start, slutt);
-
-  butikkChunk.forEach((butikk) => {
+  butikker.forEach((butikk) => {
     const col = document.createElement("div");
-    col.className = "col-12 col-sm-6 col-md-4 col-lg-3 d-flex";
+    col.className = "col-sm-6 col-md-4 col-lg-3 mb-4";
 
-    const card = document.createElement("div");
-    card.className = "card category-card h-100 d-flex flex-column text-center";
+    const card = document.createElement("a");
+    card.href = butikk.url;
+    card.target = "_blank";
+    card.rel = "noopener";
+    card.className = "store-card";
 
-    const imgLink = document.createElement("a");
-    imgLink.href = butikk.url;
-    imgLink.target = "_blank";
-    imgLink.rel = "noopener";
+    card.innerHTML = `
+      <div class="store-card-img">
+        <img src="${butikk.image}" alt="${butikk.alt || butikk.name}">
+      </div>
+      <div class="store-card-body">
+        <h4>${butikk.name}</h4>
+        <p>${butikk.description || ""}</p>
+      </div>
+    `;
 
-    const img = document.createElement("img");
-    img.src = butikk.image;
-    img.alt = butikk.name;
-    img.className = "card-img-top p-3";
-    img.loading = "lazy";
-    img.style.height = "120px";
-    img.style.objectFit = "contain";
-
-    imgLink.appendChild(img);
-    card.appendChild(imgLink);
-
-    const body = document.createElement("div");
-    body.className = "card-body d-flex flex-column justify-content-between";
-
-    const bodyInner = document.createElement("div");
-    const title = document.createElement("h6");
-    title.className = "card-title";
-    title.textContent = butikk.name;
-
-    const desc = document.createElement("p");
-    desc.className = "card-text small text-muted";
-    desc.textContent = butikk.description || "";
-
-    bodyInner.appendChild(title);
-    bodyInner.appendChild(desc);
-
-    const btn = document.createElement("a");
-    btn.href = butikk.url;
-    btn.target = "_blank";
-    btn.rel = "noopener";
-    btn.className = "btn btn-primary mt-3";
-    btn.textContent = "Besøk";
-
-    body.appendChild(bodyInner);
-    body.appendChild(btn);
-
-    card.appendChild(body);
     col.appendChild(card);
     container.appendChild(col);
   });
 
-  sideIndeks++;
-
-  if (sideIndeks * butikkPerSide >= visteButikker.length) {
-    visMerKnapp.style.display = "none";
-    visFaerreKnapp.style.display = "inline-block";
+  if (teller) {
+    teller.textContent = `Viser ${butikker.length} butikker`;
   }
 }

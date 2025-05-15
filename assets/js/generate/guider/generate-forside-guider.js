@@ -1,31 +1,30 @@
-window.addEventListener("DOMContentLoaded", () => {
-  fetch("../assets/data/guider.json")
-    .then(res => res.json())
-    .then(guides => {
-      const container = document.getElementById("forside-guider");
-      if (!container) return;
+// generate-forside-guider.js
 
-      const utvalgte = guides.filter(g => g.forside === true).slice(0, 3);
-
-      utvalgte.forEach(guide => {
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("assets/data/guider.json")
+    .then((response) => response.json())
+    .then((guider) => {
+      const container = document.getElementById("guide-container");
+      guider.slice(0, 3).forEach((guide) => {
         const col = document.createElement("div");
-        col.className = "col-md-4 col-sm-6";
+        col.className = "col-sm-6 col-md-4 mb-4";
 
-        col.innerHTML = `
-          <div class="card category-card h-100 border-0 shadow-sm">
-            <img src="${guide.image}" class="card-img-top" alt="${guide.title}" loading="lazy">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">${guide.title}</h5>
-              <p class="card-text">${guide.description}</p>
-              <a href="guider/${guide.slug}.html" class="btn btn-primary mt-auto">Les guide</a>
-            </div>
+        const card = document.createElement("a");
+        card.href = guide.url;
+        card.className = "guide-card d-block h-100";
+
+        card.innerHTML = `
+          <div class="guide-card-img">
+            <img src="${guide.image}" alt="${guide.title}" />
+          </div>
+          <div class="guide-card-body">
+            <h4>${guide.title}</h4>
+            <p>${guide.description}</p>
           </div>
         `;
 
+        col.appendChild(card);
         container.appendChild(col);
       });
-    })
-    .catch(err => {
-      console.error("Feil ved lasting av guider:", err);
     });
 });

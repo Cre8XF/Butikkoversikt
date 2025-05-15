@@ -26,17 +26,22 @@ document.addEventListener("DOMContentLoaded", () => {
           count++;
 
           const col = document.createElement("div");
-          col.className = "col";
+          col.className = "col-sm-6 col-md-4 col-lg-3 mb-4";
 
-          const card = document.createElement("div");
-          card.className = "category-card text-center";
+          const card = document.createElement("a");
+          card.href = butikk.url;
+          card.target = "_blank";
+          card.rel = "noopener";
+          card.className = "store-card";
 
           card.innerHTML = `
-            <a href="${butikk.url}" target="_blank" rel="noopener">
-              <img src="${butikk.image}" class="category-icon" alt="${butikk.alt}">
-              <h6 class="mt-3 mb-2">${butikk.name}</h6>
-              <p class="small text-muted">${butikk.description}</p>
-            </a>
+            <div class="store-card-img">
+              <img src="${butikk.image}" alt="${butikk.alt || butikk.name}">
+            </div>
+            <div class="store-card-body">
+              <h4>${butikk.name}</h4>
+              <p>${butikk.description}</p>
+            </div>
           `;
 
           col.appendChild(card);

@@ -5,34 +5,47 @@
 
 /* === GUIDE-KORT === */
 .guide-card {
-  background-color: var(--guide-card-bg, #fff);
-  border-radius: 0.75rem;
-  border: 1px solid var(--border-color, #ccc);
-  box-shadow: 0 2px 6px var(--guide-card-shadow, rgba(0, 0, 0, 0.08));
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--store-card-bg);
+  border-radius: 16px;
   overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .guide-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px var(--guide-card-shadow-hover, rgba(0, 0, 0, 0.15));
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.guide-card img {
-  height: 180px;
-  width: 100%;
-  object-fit: cover;
+.guide-card-img {
+  background: var(--store-card-img-bg);
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
-.guide-card .card-title {
+.guide-card-img img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.guide-card-body {
+  padding: 1rem;
+}
+
+.guide-card-body h4 {
   font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--heading-color, #000);
+  margin-bottom: 0.5rem;
 }
 
-.guide-card .card-text {
-  font-size: 0.95rem;
-  color: var(--text-muted, #555);
+.guide-card-body p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
 }
 
 /* === PROMO-KORT (Kampanjer) === */
