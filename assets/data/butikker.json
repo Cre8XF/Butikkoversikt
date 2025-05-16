@@ -1929,7 +1929,7 @@
     },
     {
       "name": "BeerGear",
-      "image": "assets/images/butikker-webp-webp/beergear.webp",
+      "image": "assets/images/butikker-webp/beergear.webp",
       "alt": "BeerGear",
       "category": "Mat og drikke",
       "subcategory": ["Vin og bartilbehør"],
@@ -1940,7 +1940,7 @@
     },
     {
       "name": "Brewshop",
-      "image": "assets/images/butikker-webp-webp/brewshop.webp",
+      "image": "assets/images/butikker-webp/brewshop.webp",
       "alt": "Brewshop",
       "category": "Mat og drikke",
       "subcategory": ["Vin og bartilbehør"],
@@ -1951,7 +1951,7 @@
     },
     {
       "name": "Netthandelen",
-      "image": "assets/images/butikker-webp-webp/netthandelen.webp",
+      "image": "assets/images/butikker-webp/netthandelen.webp",
       "alt": "Netthandelen",
       "category": "Mat og drikke",
       "subcategory": ["Vin og bartilbehør"],
@@ -1962,7 +1962,7 @@
     },
     {
       "name": "Ølbrygging.no",
-      "image": "assets/images/butikker-webp-webp/olbrygging.webp",
+      "image": "assets/images/butikker-webp/olbrygging.webp",
       "alt": "Ølbrygging.no",
       "category": "Mat og drikke",
       "subcategory": ["Vin og bartilbehør"],
@@ -1973,7 +1973,7 @@
     },
     {
       "name": "Vinlagringskompaniet",
-      "image": "assets/images/butikker-webp-webp/vinlagringskompaniet.webp",
+      "image": "assets/images/butikker-webp/vinlagringskompaniet.webp",
       "alt": "Vinlagringskompaniet",
       "category": "Mat og drikke",
       "subcategory": ["Vin og bartilbehør"],
@@ -1984,7 +1984,7 @@
     },
     {
       "name": "Vinskap.no",
-      "image": "assets/images/butikker-webp-webp/vinskap.webp",
+      "image": "assets/images/butikker-webp/vinskap.webp",
       "alt": "Vinskap.no",
       "category": "Mat og drikke",
       "subcategory": ["Vin og bartilbehør"],
@@ -1995,7 +1995,7 @@
     },
     {
       "name": "WineandBarrels",
-      "image": "assets/images/butikker-webp-webp/wineandbarrels.webp",
+      "image": "assets/images/butikker-webp/wineandbarrels.webp",
       "alt": "WineandBarrels",
       "category": "Mat og drikke",
       "subcategory": ["Vin og bartilbehør"],
@@ -2006,7 +2006,7 @@
     },
     {
       "name": "Adams Matkasse",
-      "image": "assets/images/butikker-webp-webp/adams-matkasse.webp",
+      "image": "assets/images/butikker-webp/adams.webp",
       "alt": "Adams Matkasse",
       "category": "Mat og drikke",
       "subcategory": ["Matkasser"],
@@ -2020,7 +2020,7 @@
     },
     {
       "name": "Godt Levert",
-      "image": "assets/images/butikker-webp-webp/godt-levert.webp",
+      "image": "assets/images/butikker-webp/godtlevert.webp",
       "alt": "Godt Levert",
       "category": "Mat og drikke",
       "subcategory": ["Matkasser"],
@@ -2034,7 +2034,7 @@
     },
     {
       "name": "HelloFresh",
-      "image": "assets/images/butikker-webp-webp/hellofresh.webp",
+      "image": "assets/images/butikker-webp/hellofresh.webp",
       "alt": "HelloFresh",
       "category": "Mat og drikke",
       "subcategory": ["Matkasser"],
@@ -2048,7 +2048,7 @@
     },
     {
       "name": "Kokkeløren",
-      "image": "assets/images/butikker-webp-webp/kokkeloeren.webp",
+      "image": "assets/images/butikker-webp/kokkeloren.webp",
       "alt": "Kokkeløren",
       "category": "Mat og drikke",
       "subcategory": ["Matkasser"],
@@ -2062,7 +2062,7 @@
     },
     {
       "name": "Oda",
-      "image": "assets/images/butikker-webp-webp/oda.webp",
+      "image": "assets/images/butikker-webp/oda.webp",
       "alt": "Oda",
       "category": "Mat og drikke",
       "subcategory": ["Dagligvarer"],
@@ -2076,7 +2076,7 @@
     },
     {
       "name": "Spis Riktig",
-      "image": "assets/images/butikker-webp-webp/spis-riktig.webp",
+      "image": "assets/images/butikker-webp/spis-riktig.webp",
       "alt": "Spis Riktig",
       "category": "Mat og drikke",
       "subcategory": ["Matkasser"],
@@ -2090,7 +2090,7 @@
     },
     {
       "name": "Lampegiganten",
-      "image": "assets/images/butikker-webp-webp/lampegiganten.webp",
+      "image": "assets/images/butikker-webp/lampegiganten.webp",
       "alt": "Lampegiganten",
       "category": "Møbler og interiør",
       "subcategory": ["Belysning"],
@@ -2106,7 +2106,7 @@
   },
   {
     "name": "Kid Interiør",
-    "image": "assets/images/butikker-webp-webp/kid.webp",
+    "image": "assets/images/butikker-webp/kid.webp",
     "alt": "Kid Interiør",
     "category": "Møbler og interiør",
     "subcategory": ["Dekor og interiør", "Møbler"],
@@ -2122,7 +2122,7 @@
   },
   {
     "name": "Nordic Nest",
-    "image": "assets/images/butikker-webp-webp/nordicnest.webp",
+    "image": "assets/images/butikker-webp/nordicnest.webp",
     "alt": "Nordic Nest",
     "category": "Møbler og interiør",
     "subcategory": ["Dekor og interiør"],
@@ -2138,7 +2138,7 @@
   },
   {
     "name": "IKEA",
-    "image": "assets/images/butikker-webp-webp/ikea.webp",
+    "image": "assets/images/butikker-webp/ikea.webp",
     "alt": "IKEA",
     "category": "Møbler og interiør",
     "subcategory": ["Møbler"],
@@ -2154,7 +2154,7 @@
   },
   {
     "name": "JYSK",
-    "image": "assets/images/butikker-webp-webp/jysk.webp",
+    "image": "assets/images/butikker-webp/jysk.webp",
     "alt": "JYSK",
     "category": "Møbler og interiør",
     "subcategory": ["Møbler"],
@@ -2170,7 +2170,7 @@
   },
   {
     "name": "Skeidar",
-    "image": "assets/images/butikker-webp-webp/skeidar.webp",
+    "image": "assets/images/butikker-webp/skeidar.webp",
     "alt": "Skeidar",
     "category": "Møbler og interiør",
     "subcategory": ["Møbler"],
@@ -2186,7 +2186,7 @@
   },
   {
     "name": "Chilli.no",
-    "image": "assets/images/butikker-webp-webp/chilli.webp",
+    "image": "assets/images/butikker-webp/chilli.webp",
     "alt": "Chilli",
     "category": "Møbler og interiør",
     "subcategory": ["Møbler"],
@@ -2202,7 +2202,7 @@
   },
   {
     "name": "Furniturebox.no",
-    "image": "assets/images/butikker-webp-webp/furniturebox.webp",
+    "image": "assets/images/butikker-webp/furniturebox.webp",
     "alt": "Furniturebox",
     "category": "Møbler og interiør",
     "subcategory": ["Møbler"],
@@ -2218,7 +2218,7 @@
   },
   {
     "name": "Møbelringen",
-    "image": "assets/images/butikker-webp-webp/mobelringen.webp",
+    "image": "assets/images/butikker-webp/mobelringen.webp",
     "alt": "Møbelringen",
     "category": "Møbler og interiør",
     "subcategory": ["Møbler"],
@@ -2234,7 +2234,7 @@
   },
   {
     "name": "Jotex",
-    "image": "assets/images/butikker-webp-webp/jotex.webp",
+    "image": "assets/images/butikker-webp/jotex.webp",
     "alt": "Jotex",
     "category": "Møbler og interiør",
     "subcategory": ["Møbler"],
@@ -2250,7 +2250,7 @@
   },
   {
     "name": "Morris",
-    "image": "assets/images/butikker-webp-webp/morris.webp",
+    "image": "assets/images/butikker-webp/morris.webp",
     "alt": "",
     "category": "Reise og opplevelser",
     "subcategory": ["Bager og kofferter"],
@@ -2266,7 +2266,7 @@
   },
   {
     "name": "Nomaden",
-    "image": "assets/images/butikker-webp-webp/nomaden.webp",
+    "image": "assets/images/butikker-webp/nomaden.webp",
     "alt": "",
     "category": "Reise og opplevelser",
     "subcategory": ["Reiseutstyr", "Kart og guider"],
@@ -2282,7 +2282,7 @@
   },
   {
     "name": "Trip.com",
-    "image": "assets/images/butikker-webp-webp/trip.webp",
+    "image": "assets/images/butikker-webp/trip.webp",
     "alt": "",
     "category": "Reise og opplevelser",
     "subcategory": ["Reiseutstyr"],
@@ -2298,7 +2298,7 @@
   },
   {
     "name": "Neo Tokyo",
-    "image": "assets/images/butikker-webp-webp/neotokyo.webp",
+    "image": "assets/images/butikker-webp/neotokyo.webp",
     "alt": "",
     "category": "Spill og underholdning",
     "subcategory": ["Anime og manga", "Figurer og samleobjekter"],
@@ -2314,7 +2314,7 @@
   },
   {
     "name": "Outland",
-    "image": "assets/images/butikker-webp-webp/outland.webp",
+    "image": "assets/images/butikker-webp/outland.webp",
     "alt": "",
     "category": "Spill og underholdning",
     "subcategory": ["Brettspill og kortspill", "Anime og manga"],
@@ -2330,7 +2330,7 @@
   },
   {
     "name": "Platekompaniet",
-    "image": "assets/images/butikker-webp-webp/platekompaniet.webp",
+    "image": "assets/images/butikker-webp/platekompaniet.webp",
     "alt": "Platekompaniet",
     "category": "Spill og underholdning",
     "subcategory": ["Film og musikk"],
@@ -2346,7 +2346,7 @@
   },
   {
     "name": "EMP Shop",
-    "image": "assets/images/butikker-webp-webp/emp.webp",
+    "image": "assets/images/butikker-webp/emp.webp",
     "alt": "",
     "category": "Spill og underholdning",
     "subcategory": ["Gaming merch"],
@@ -2362,7 +2362,7 @@
   },
   {
     "name": "Gamezone",
-    "image": "assets/images/butikker-webp-webp/gamezone.webp",
+    "image": "assets/images/butikker-webp/gamezone.webp",
     "alt": "Gamezone",
     "category": "Spill og underholdning",
     "subcategory": ["Konsoller og tilbehør", "Figurer og samleobjekter"],
@@ -2378,7 +2378,7 @@
   },
   {
     "name": "intersport.no",
-    "image": "assets/images/butikker-webp-webp/intersport.webp",
+    "image": "assets/images/butikker-webp/intersport.webp",
     "alt": "Gsport",
     "category": "Sport og fritid",
     "subcategory": ["Treningsklær"],
@@ -2394,7 +2394,7 @@
   },
   {
     "name": "Fjellsport.no",
-    "image": "assets/images/butikker-webp-webp/fjellsport.webp",
+    "image": "assets/images/butikker-webp/fjellsport.webp",
     "alt": "Fjellsport.no",
     "category": "Sport og fritid",
     "subcategory": ["Friluft og tur", "Treningsutstyr"],
@@ -2410,7 +2410,7 @@
   },
   {
     "name": "Outnorth.no",
-    "image": "assets/images/butikker-webp-webp/outnorth.webp",
+    "image": "assets/images/butikker-webp/outnorth.webp",
     "alt": "Outnorth.no",
     "category": "Sport og fritid",
     "subcategory": ["Friluft og tur"],
@@ -2426,7 +2426,7 @@
   },
   {
     "name": "Skitt Fiske",
-    "image": "assets/images/butikker-webp-webp/skittfiske.webp",
+    "image": "assets/images/butikker-webp/skittfiske.webp",
     "alt": "Skitt Fiske",
     "category": "Sport og fritid",
     "subcategory": ["Friluft og tur"],
@@ -2442,7 +2442,7 @@
   },
   {
     "name": "Milrab",
-    "image": "assets/images/butikker-webp-webp/milrab.webp",
+    "image": "assets/images/butikker-webp/milrab.webp",
     "alt": "Milrab",
     "category": "Sport og fritid",
     "subcategory": ["Friluft og tur"],
@@ -2458,7 +2458,7 @@
   },
   {
     "name": "AntonSport.no",
-    "image": "assets/images/butikker-webp-webp/antonsport.webp",
+    "image": "assets/images/butikker-webp/antonsport.webp",
     "alt": "Anton Sport",
     "category": "Sport og fritid",
     "subcategory": ["Friluft og tur", "Treningsklær"],
@@ -2474,7 +2474,7 @@
   },
   {
     "name": "Sportshopen.no",
-    "image": "assets/images/butikker-webp-webp/sportshopen.webp",
+    "image": "assets/images/butikker-webp/sportshopen.webp",
     "alt": "Sportshopen.no",
     "category": "Sport og fritid",
     "subcategory": ["Treningsutstyr"],
@@ -2490,7 +2490,7 @@
   },
   {
     "name": "sportsmaster",
-    "image": "assets/images/butikker-webp-webp/sportsmaster.webp",
+    "image": "assets/images/butikker-webp/sportsmaster.webp",
     "alt": "Sport24.no",
     "category": "Sport og fritid",
     "subcategory": ["Treningsutstyr"],
@@ -2506,7 +2506,7 @@
   },
   {
     "name": "Oslo Sportslager",
-    "image": "assets/images/butikker-webp-webp/oslosportslager.webp",
+    "image": "assets/images/butikker-webp/oslosportslager.webp",
     "alt": "Oslo Sportslager",
     "category": "Sport og fritid",
     "subcategory": ["Sykkel og sykkelutstyr"],
@@ -2522,7 +2522,7 @@
   },
     {
       "name": "Famme",
-      "image": "assets/images/butikker-webp-webp/famme.webp",
+      "image": "assets/images/butikker-webp/famme.webp",
       "alt": "Famme",
       "category": "Sport og fritid",
       "subcategory": ["Treningsklær"],
@@ -2538,7 +2538,7 @@
     },
     {
       "name": "Gymgrossisten",
-      "image": "assets/images/butikker-webp-webp/gymgrossisten.webp",
+      "image": "assets/images/butikker-webp/gymgrossisten.webp",
       "alt": "Gymgrossisten",
       "category": "Sport og fritid",
       "subcategory": ["Treningsutstyr"],
@@ -2554,7 +2554,7 @@
     },
     {
       "name": "Revir",
-      "image": "assets/images/butikker-webp-webp/revir.webp",
+      "image": "assets/images/butikker-webp/revir.webp",
       "alt": "Revir",
       "category": "Sport og fritid",
       "subcategory": ["Friluft og tur"],
@@ -2570,7 +2570,7 @@
     },
     {
       "name": "Sykkeloutlet",
-      "image": "assets/images/butikker-webp-webp/sykkeloutlet.webp",
+      "image": "assets/images/butikker-webp/sykkeloutlet.webp",
       "alt": "Sykkeloutlet",
       "category": "Sport og fritid",
       "subcategory": ["Sykkel og sykkelutstyr"],
@@ -2586,7 +2586,7 @@
     },
       {
         "name": "Nomaden",
-        "image": "assets/images/butikker-webp-webp/nomaden.webp",
+        "image": "assets/images/butikker-webp/nomaden.webp",
         "alt": "Nomaden",
         "category": "Reise og opplevelser",
         "subcategory": ["Reiseutstyr"],
@@ -2600,7 +2600,7 @@
       },
       {
         "name": "Superhelten.no",
-        "image": "assets/images/butikker-webp-webp/superhelten.webp",
+        "image": "assets/images/butikker-webp/superhelten.webp",
         "alt": "Superhelten.no",
         "category": "Spill og underholdning",
         "subcategory": ["Figurer og samleobjekter"],
@@ -2614,7 +2614,7 @@
       },
       {
         "name": "Kremmerhuset",
-        "image": "assets/images/butikker-webp-webp/kremmerhuset.webp",
+        "image": "assets/images/butikker-webp/kremmerhuset.webp",
         "alt": "Kremmerhuset",
         "category": "Møbler og interiør",
         "subcategory": ["Dekor og interiør"],
@@ -2628,7 +2628,7 @@
       },
       {
         "name": "Get Inspired",
-        "image": "assets/images/butikker-webp-webp/getinspired.webp",
+        "image": "assets/images/butikker-webp/getinspired.webp",
         "alt": "Get Inspired",
         "category": "Sport og fritid",
         "subcategory": ["Sportsklær"],
@@ -2642,7 +2642,7 @@
       },
       {
         "name": "Outland",
-        "image": "assets/images/butikker-webp-webp/outland.webp",
+        "image": "assets/images/butikker-webp/outland.webp",
         "alt": "Outland",
         "category": "Spill og underholdning",
         "subcategory": ["Anime og manga"],
@@ -2656,7 +2656,7 @@
       },
         {
           "name": "Nomaden",
-          "image": "assets/images/butikker-webp-webp/nomaden.webp",
+          "image": "assets/images/butikker-webp/nomaden.webp",
           "alt": "Nomaden",
           "category": "Reise og opplevelser",
           "subcategory": ["Reiseutstyr"],
@@ -2670,7 +2670,7 @@
         },
         {
           "name": "Superhelten.no",
-          "image": "assets/images/butikker-webp-webp/superhelten.webp",
+          "image": "assets/images/butikker-webp/superhelten.webp",
           "alt": "Superhelten.no",
           "category": "Spill og underholdning",
           "subcategory": ["Figurer og samleobjekter"],
@@ -2684,7 +2684,7 @@
         },
         {
           "name": "Kremmerhuset",
-          "image": "assets/images/butikker-webp-webp/kremmerhuset.webp",
+          "image": "assets/images/butikker-webp/kremmerhuset.webp",
           "alt": "Kremmerhuset",
           "category": "Møbler og interiør",
           "subcategory": ["Dekor og interiør"],
@@ -2698,7 +2698,7 @@
         },
         {
           "name": "Get Inspired",
-          "image": "assets/images/butikker-webp-webp/getinspired.webp",
+          "image": "assets/images/butikker-webp/getinspired.webp",
           "alt": "Get Inspired",
           "category": "Sport og fritid",
           "subcategory": ["Sportsklær"],
@@ -2712,7 +2712,7 @@
         },
         {
           "name": "Outland",
-          "image": "assets/images/butikker-webp-webp/outland.webp",
+          "image": "assets/images/butikker-webp/outland.webp",
           "alt": "Outland",
           "category": "Spill og underholdning",
           "subcategory": ["Anime og manga"],
@@ -2726,7 +2726,7 @@
         },
         {
           "name": "BikeBrother",
-          "image": "assets/images/butikker-webp-webp/bikebrother.webp",
+          "image": "assets/images/butikker-webp/bikebrother.webp",
           "alt": "BikeBrother",
           "category": "Sport og fritid",
           "subcategory": ["Sykkel og sykkelutstyr"],
@@ -2740,7 +2740,7 @@
         },
         {
           "name": "Norli",
-          "image": "assets/images/butikker-webp-webp/norli.webp",
+          "image": "assets/images/butikker-webp/norli.webp",
           "alt": "Norli",
           "category": "Bøker og media",
           "subcategory": ["Barnebøker"],
@@ -2754,7 +2754,7 @@
         },
         {
           "name": "Sunkost",
-          "image": "assets/images/butikker-webp-webp/sunkost.webp",
+          "image": "assets/images/butikker-webp/sunkost.webp",
           "alt": "Sunkost",
           "category": "Helse og egenpleie",
           "subcategory": ["Naturlige produkter"],
@@ -2768,7 +2768,7 @@
         },
         {
           "name": "Elkjøp",
-          "image": "assets/images/butikker-webp-webp/elkjop.webp",
+          "image": "assets/images/butikker-webp/elkjop.webp",
           "alt": "Elkjøp",
           "category": "Elektronikk og data",
           "subcategory": ["Mobil og nettbrett"],
@@ -2782,7 +2782,7 @@
         },
         {
           "name": "Fabel",
-          "image": "assets/images/butikker-webp-webp/fabel.webp",
+          "image": "assets/images/butikker-webp/fabel.webp",
           "alt": "Fabel",
           "category": "Bøker og media",
           "subcategory": ["Lyd- og lydbøker"],
@@ -2796,7 +2796,7 @@
         },
         {
           "name": "Power",
-          "image": "assets/images/butikker-webp-webp/power.webp",
+          "image": "assets/images/butikker-webp/power.webp",
           "alt": "Power",
           "category": "Elektronikk og data",
           "subcategory": ["Lyd og bilde"],
@@ -2810,7 +2810,7 @@
         },
         {
           "name": "Kartbutikken.no",
-          "image": "assets/images/butikker-webp-webp/kartbutikken.webp",
+          "image": "assets/images/butikker-webp/kartbutikken.webp",
           "alt": "Kartbutikken",
           "category": "Reise og opplevelser",
           "subcategory": ["Kart og guider"],
