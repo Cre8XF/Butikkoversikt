@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       console.log("Data hentet fra butikker.json:", data);
 
-      const anbefalteContainer = document.getElementById("anbefalte-butikker");
+      const anbefalteContainer = document.getElementById("ukens-anbefalte");
 
       if (!anbefalteContainer) {
         console.error("Container for anbefalte butikker ikke funnet!");
