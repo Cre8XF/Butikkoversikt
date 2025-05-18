@@ -1203,7 +1203,7 @@
   },
   {
     "name": "Babyshop",
-    "image": "assets/images/butikker-webp/babyshop-logo-200.jpg",
+    "image": "assets/images/butikker-webp/babyshop.webp",
     "alt": "Babyshop",
     "category": "Klær og mote",
     "subcategory": ["Barneklær"],
@@ -1283,7 +1283,7 @@
   },
   {
     "name": "Guttelus",
-    "image": "assets/images/butikker-webp/guttelus-logo--200x201.jpg",
+    "image": "assets/images/butikker-webp/guttelus.webp",
     "alt": "Guttelus",
     "category": "Klær og mote",
     "subcategory": ["Barneklær"],
@@ -1299,7 +1299,7 @@
   },
   {
     "name": "Jollyroom",
-    "image": "assets/images/butikker-webp/jollyroom.jpg",
+    "image": "assets/images/butikker-webp/jollyroom.webp",
     "alt": "Jollyroom",
     "category": "Klær og mote",
     "subcategory": ["Barneklær"],
@@ -1443,7 +1443,7 @@
   },
   {
     "name": "Aboutyou.no",
-    "image": "/assets/images/butikker/about-you.webp",
+    "image": "/assets/images/butikker-webp/about-you.webp",
     "alt": "About You",
     "category": "Klær og mote",
     "subcategory": ["Dameklær"],
@@ -2076,7 +2076,7 @@
     },
     {
       "name": "Spis Riktig",
-      "image": "assets/images/butikker-webp/spis-riktig.webp",
+      "image": "assets/images/butikker-webp/spisriktig.webp",
       "alt": "Spis Riktig",
       "category": "Mat og drikke",
       "subcategory": ["Matkasser"],
@@ -2976,34 +2976,6 @@
                 "annonse": false,
                 "tags": ["matkasse", "økologisk", "middag", "norsk"]
               },
-              {
-                "name": "Marked.no",
-                "image": "assets/images/butikker-webp/marked.webp",
-                "alt": "Marked.no",
-                "category": "Mat og drikke",
-                "subcategory": ["Dagligvarer"],
-                "url": "https://www.marked.no",
-                "description": "Nettbutikk med et bredt utvalg av dagligvarer levert rett hjem. Lavpris og ferskvarer.",
-                "topp25": false,
-                "forside": false,
-                "ny": true,
-                "annonse": false,
-                "tags": ["dagligvarer", "nettbutikk", "mat", "levering"]
-              },
-              {
-                "name": "Vinoble",
-                "image": "assets/images/butikker-webp/vinoble.webp",
-                "alt": "Vinoble",
-                "category": "Mat og drikke",
-                "subcategory": ["Vin og brennevin"],
-                "url": "https://www.vinoble.no",
-                "description": "Spesialbutikk for vin og brennevin – store utvalg fra hele verden, levert til døren.",
-                "topp25": false,
-                "forside": false,
-                "ny": true,
-                "annonse": false,
-                "tags": ["vin", "brennevin", "nettbutikk", "alkohol"]
-              },
                 {
                   "name": "Meny Nettbutikk",
                   "image": "assets/images/butikker-webp/meny.webp",
@@ -3017,20 +2989,6 @@
                   "ny": true,
                   "annonse": false,
                   "tags": ["dagligvarer", "meny", "mat", "nettbutikk"]
-                },
-                {
-                  "name": "REMA 1000 Nettbutikk",
-                  "image": "assets/images/butikker-webp/rema1000.webp",
-                  "alt": "REMA 1000",
-                  "category": "Mat og drikke",
-                  "subcategory": ["Dagligvarer"],
-                  "url": "https://kolonial.rema.no",
-                  "description": "Rema 1000 leverer dagligvarer til lave priser via sitt samarbeid med Oda og Kolonial.",
-                  "topp25": false,
-                  "forside": false,
-                  "ny": true,
-                  "annonse": false,
-                  "tags": ["rema", "mat", "dagligvarer", "billig"]
                 },
                 {
                   "name": "Sunkost",
