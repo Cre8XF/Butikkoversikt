@@ -2599,20 +2599,6 @@
         "tags": ["reise", "bag", "kart", "tur"]
       },
       {
-        "name": "Superhelten.no",
-        "image": "assets/images/butikker-webp/superhelten.webp",
-        "alt": "Superhelten.no",
-        "category": "Spill og underholdning",
-        "subcategory": ["Figurer og samleobjekter"],
-        "url": "https://www.superhelten.no",
-        "description": "Figurer, popkultur og samlerobjekter for entusiaster og fans.",
-        "forside": false,
-        "topp25": false,
-        "annonse": false,
-        "ny": true,
-        "tags": ["samleobjekter", "figurer", "funko", "superhelt"]
-      },
-      {
         "name": "Kremmerhuset",
         "image": "assets/images/butikker-webp/kremmerhuset.webp",
         "alt": "Kremmerhuset",

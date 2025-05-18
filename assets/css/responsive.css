@@ -1,44 +1,28 @@
-/* -------------------------------------------
-   Tilpasninger for store skjermer (≥ 992px)
----------------------------------------------- */
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-/* -------------------------------------------
-   Tilpasninger for mellomstore skjermer (≥ 768px)
----------------------------------------------- */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* -------------------------------------------
-   Tilpasninger for små skjermer (≥ 576px)
----------------------------------------------- */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
+/* Mobilvisning (små skjermer) */
+@media (max-width: 768px) {
+  .hero-index h1 {
+    font-size: 2rem;
   }
 
-  .search-section input[type="text"] {
+  .hero-index p {
     font-size: 1rem;
-    padding: 0.5rem 1rem;
   }
 
-  .filter-tag {
-    font-size: 0.9rem;
+  .campaign-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #kategoriMeny {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
   }
 }
 
-/* -------------------------------------------
-   Tilpasninger for ekstra små skjermer (< 576px)
----------------------------------------------- */
 @media (max-width: 575.98px) {
-  /* Søkefelt og autocomplete */
   .autocomplete-items {
     font-size: 0.95rem;
     max-height: 220px;
@@ -54,12 +38,11 @@
     padding: 0.5rem 0.75rem;
   }
 
-  /* Butikkort */
   .grid-container {
     grid-template-columns: 1fr !important;
+    gap: 1rem;
   }
 
-  /* Filter-tagger */
   #kategori-tags,
   #underkategori-tags {
     overflow-x: auto;
@@ -76,7 +59,6 @@
     padding: 0.4rem 0.75rem;
   }
 
-  /* Mobilmeny */
   .side-menu {
     padding-top: 2rem;
   }
@@ -85,9 +67,17 @@
     padding: 0.75rem 1rem;
     font-size: 1.05rem;
   }
-  @media (max-width: 575.98px) {
-    #filterViewToggle {
-      width: 100%;
-    }
+
+  #filterViewToggle {
+    width: 100%;
+  }
+
+  .card,
+  .category-card {
+    margin-bottom: 1rem;
+  }
+
+  section {
+    padding: 1rem 0.75rem;
   }
 }

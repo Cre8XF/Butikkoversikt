@@ -83,23 +83,16 @@
   color: white;
 }
 
-@media (max-width: 768px) {
-  .campaign-content {
-    flex-direction: column;
-    text-align: center;
-  }
+.kampanje-img {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
 
-  .kampanje-img {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-  }
+#kampanje-tittel {
+  font-size: 1.25rem;
+}
 
-  #kampanje-tittel {
-    font-size: 1.25rem;
-  }
-
-  #kampanje-beskrivelse {
-    font-size: 0.95rem;
-  }
+#kampanje-beskrivelse {
+  font-size: 0.95rem;
 }

@@ -220,9 +220,3 @@
   border: 1px solid var(--border-color);
   border-radius: 8px;
 }
-
-@media (max-width: 1200px) {
-  .sticky-ad {
-    display: none;
-  }
-}

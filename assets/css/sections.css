@@ -75,14 +75,6 @@
   gap: 1.5rem;
 }
 
-@media (min-width: 768px) {
-  .campaign-content {
-    flex-direction: row;
-    justify-content: center;
-    text-align: left;
-  }
-}
-
 .kampanje-img {
   width: 80px;
   height: auto;
