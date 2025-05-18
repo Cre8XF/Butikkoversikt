@@ -3186,7 +3186,7 @@
                         },
                         {
                           "name": "Nomatic",
-                          "image": "assets/images/butikker-webp/nomatic.webp",
+                          "image": "assets/images/butikker-webp/focus-nordic.webp",
                           "alt": "Nomatic",
                           "category": "Reise og opplevelser",
                           "subcategory": ["Reiseutstyr"],
@@ -3202,7 +3202,7 @@
                         },
                         {
                           "name": "Fjällräven",
-                          "image": "assets/images/butikker-webp/fjallraven.webp",
+                          "image": "assets/images/butikker-webp/fjallreven.webp",
                           "alt": "Fjällräven",
                           "category": "Reise og opplevelser",
                           "subcategory": ["Reiseutstyr", "Kart og guider"],
@@ -3217,24 +3217,8 @@
                           "ukensAnbefalte": false
                         },
                         {
-                          "name": "Globetrotter",
-                          "image": "assets/images/butikker-webp/globetrotter.webp",
-                          "alt": "Globetrotter",
-                          "category": "Reise og opplevelser",
-                          "subcategory": ["Reiseutstyr"],
-                          "url": "https://www.globetrotter.de",
-                          "description": "Tysk spesialist på frilufts- og reiseutstyr, fra telt og ryggsekker til guidebøker og kart.",
-                          "topp25": false,
-                          "forside": false,
-                          "ny": true,
-                          "annonse": false,
-                          "tags": ["reise", "utstyr", "friluft", "kart", "globetrotter"],
-                          "rank": "",
-                          "ukensAnbefalte": false
-                        },
-                        {
                           "name": "World Map Store",
-                          "image": "assets/images/butikker-webp/worldmapstore.webp",
+                          "image": "assets/images/butikker-webp/kartbutikken.webp",
                           "alt": "World Map Store",
                           "category": "Reise og opplevelser",
                           "subcategory": ["Kart og guider"],
