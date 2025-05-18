@@ -3215,21 +3215,5 @@
                           "tags": ["tur", "fjell", "sekk", "friluft", "kart"],
                           "rank": "",
                           "ukensAnbefalte": false
-                        },
-                        {
-                          "name": "World Map Store",
-                          "image": "assets/images/butikker-webp/kartbutikken.webp",
-                          "alt": "World Map Store",
-                          "category": "Reise og opplevelser",
-                          "subcategory": ["Kart og guider"],
-                          "url": "https://www.worldmapstore.com",
-                          "description": "Nettbutikk med verdens- og landkart, reiseguider og geografiske produkter for entusiaster.",
-                          "topp25": false,
-                          "forside": false,
-                          "ny": true,
-                          "annonse": false,
-                          "tags": ["kart", "reiseguide", "verdenskart", "kartbutikk"],
-                          "rank": "",
-                          "ukensAnbefalte": false
-                        }                      
+                        }
   ]
