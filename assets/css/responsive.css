@@ -80,4 +80,21 @@
   section {
     padding: 1rem 0.75rem;
   }
+  @media (max-width: 576px) {
+    #themeToggleBtn {
+      margin-top: 3rem;
+      right: 1rem;
+    }
+  }
+  @media (max-width: 576px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    #themeToggleBtn {
+      margin-top: 2rem;
+      right: 1rem;
+    }
+  }
 }
