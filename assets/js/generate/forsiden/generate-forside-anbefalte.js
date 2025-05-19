@@ -35,6 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="store-card-body">
           <h4>${butikk.name}</h4>
           <p>${butikk.description}</p>
+${butikk.eksternFrakt ? `<div class="frakt-info">🌍 <span class="tooltip-text" title="${butikk.fraktKommentar || 'Toll og MVA kan påløpe.'}">Sender fra utlandet</span></div>` : ""}
+
         </div>
       `;
 

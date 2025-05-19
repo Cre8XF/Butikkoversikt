@@ -80,15 +80,21 @@ document.addEventListener("DOMContentLoaded", async () => {
                 const card = document.createElement("div");
                 card.className = "col-lg-3 col-md-4 col-sm-6 mb-4";
                 card.innerHTML = `
-                    <div class="card shadow-sm h-100 hover-zoom">
-                        <img src="${butikk.image}" class="card-img-top p-2" alt="${butikk.alt}">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title mb-2">${butikk.name}</h5>
-                            <p class="card-text mb-3">${butikk.description}</p>
-                            <a href="${butikk.url}" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Besøk butikk</a>
-                        </div>
-                    </div>
-                `;
+  <div class="card shadow-sm h-100 hover-zoom">
+    <img src="${butikk.image}" class="card-img-top p-2" alt="${butikk.alt}">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title mb-2">${butikk.name}</h5>
+      <p class="card-text mb-3">${butikk.description}</p>
+      ${
+        butikk.eksternFrakt
+          ? `<div class="frakt-info mt-2">🌍 <span class="tooltip-text" title="${butikk.fraktKommentar || 'Toll og MVA kan påløpe.'}">Sender fra utlandet</span></div>`
+          : ""
+      }
+      <a href="${butikk.url}" target="_blank" rel="noopener" class="btn btn-primary mt-auto">Besøk butikk</a>
+    </div>
+  </div>
+`;
+
                 kategoriContainer.appendChild(card);
             });
             kategoriContainer.style.opacity = 1;

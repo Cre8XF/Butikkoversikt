@@ -34,6 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
           card.rel = "noopener";
           card.className = "store-card";
 
+          // Legg til fraktinfo hvis aktuelt
+          const fraktInfo = butikk.eksternFrakt
+            ? `<div class="frakt-info">🌍 <span class="tooltip-text" title="${butikk.fraktKommentar || 'Toll og MVA kan påløpe'}">Sender fra utlandet</span></div>`
+            : "";
+
           card.innerHTML = `
             <div class="store-card-img">
               <img src="${butikk.image}" alt="${butikk.alt || butikk.name}">
@@ -41,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="store-card-body">
               <h4>${butikk.name}</h4>
               <p>${butikk.description}</p>
+              ${fraktInfo}
             </div>
           `;
 

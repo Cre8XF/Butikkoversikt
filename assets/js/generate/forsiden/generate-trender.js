@@ -20,7 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}" loading="lazy">
             <div class="card-body text-center d-flex flex-column">
               <h5 class="card-title">${butikk.name}</h5>
-              <p class="card-text small">${butikk.description || ""}</p>
+              <p>${butikk.description}</p>
+${butikk.eksternFrakt ? `<div class="frakt-info">🌍 <span class="tooltip-text" title="${butikk.fraktKommentar || 'Toll og MVA kan påløpe.'}">Sender fra utlandet</span></div>` : ""}
+
               <a href="${butikk.url}" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary mt-auto">Besøk butikk</a>
             </div>
           </div>

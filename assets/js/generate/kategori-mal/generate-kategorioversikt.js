@@ -96,16 +96,18 @@ if (scrollTopButton) {
           col.className = "col-md-3";
 
           col.innerHTML = `
-            <div class=\"card store-card h-100 shadow-sm\">
-              <a href=\"${butikk.url}\" target=\"_blank\" rel=\"noopener\">
-                <img src=\"${butikk.image}\" alt=\"${butikk.name}\" class=\"card-img-top p-3\" style=\"max-height:100px; object-fit:contain;\">
-              </a>
-              <div class=\"card-body\">
-                <h6 class=\"card-title mb-1\">${butikk.name}</h6>
-                <p class=\"small text-muted\">${butikk.description}</p>
-              </div>
-            </div>
-          `;
+  <div class="card store-card h-100 shadow-sm">
+    <a href="${butikk.url}" target="_blank" rel="noopener">
+      <img src="${butikk.image}" alt="${butikk.name}" class="card-img-top p-3" style="max-height:100px; object-fit:contain;">
+    </a>
+    <div class="card-body">
+      <h6 class="card-title mb-1">${butikk.name}</h6>
+      <p class="small text-muted mb-2">${butikk.description || ""}</p>
+      ${butikk.eksternFrakt ? `<div class="frakt-info">🌍 <span class="tooltip-text" title="${butikk.fraktKommentar || 'Toll og MVA kan påløpe.'}">Sender fra utlandet</span></div>` : ""}
+    </div>
+  </div>
+`;
+
           row.appendChild(col);
         });
 

@@ -74,3 +74,20 @@
   font-size: 0.9rem;
   color: var(--text-muted);
 }
+.frakt-info {
+  font-size: 0.85rem;
+  color: #856404;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 4px 8px;
+  margin-top: 6px;
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.frakt-info .tooltip-text {
+  text-decoration: underline dotted;
+  cursor: help;
+}
