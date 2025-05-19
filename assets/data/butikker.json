@@ -3150,7 +3150,7 @@
   },
   {
     "name": "Funidelia.no",
-    "image": "assets/images/butikker/funidelia.png",
+    "image": "assets/images/butikker/funidelia.webp",
     "alt": "Funidelia",
     "category": "Underholdning og popkultur",
     "subcategory": ["Figurer og samleobjekter", "Anime og manga"],
@@ -3166,7 +3166,7 @@
   },
   {
     "name": "SharkGaming.no",
-    "image": "assets/images/butikker/sharkgaming.png",
+    "image": "assets/images/butikker/sharkgaming.webp",
     "alt": "Shark Gaming",
     "category": "Gaming og tilbehør",
     "subcategory": ["Gaming-PC og skjermer"],
@@ -3180,7 +3180,7 @@
   },
   {
     "name": "Webhallen",
-    "image": "assets/images/butikker/webhallen.png",
+    "image": "assets/images/butikker/webhallen.webp",
     "alt": "Webhallen",
     "category": "Gaming og tilbehør",
     "subcategory": ["Gaming-tilbehør"],
@@ -3196,7 +3196,7 @@
   },
   {
     "name": "Tegne.no",
-    "image": "assets/images/butikker/tegne.png",
+    "image": "assets/images/butikker/tegne.webp",
     "alt": "Tegne.no",
     "category": "Hobby og DIY",
     "subcategory": ["Kunst og tegneutstyr"],
@@ -3210,7 +3210,7 @@
   },
   {
     "name": "Fjellrevenshop.no",
-    "image": "assets/images/butikker/fjellrevenshop.png",
+    "image": "assets/images/butikker/fjellrevenshop.webp",
     "alt": "Fjellrevenshop",
     "category": "Reise og opplevelser",
     "subcategory": ["Tur- og friluftsutstyr"],
@@ -3224,7 +3224,7 @@
   },
   {
     "name": "Akademika.no",
-    "image": "assets/images/butikker/akademika.png",
+    "image": "assets/images/butikker/akademika.webp",
     "alt": "Akademika",
     "category": "Bøker og media",
     "subcategory": ["Fagbøker"],
@@ -3238,7 +3238,7 @@
   },
   {
     "name": "iPhonehuset.no",
-    "image": "assets/images/butikker/iphonehuset.png",
+    "image": "assets/images/butikker/iphonehuset.webp",
     "alt": "iPhonehuset",
     "category": "Elektronikk og data",
     "subcategory": ["Mobil og nettbrett"],
@@ -3252,7 +3252,7 @@
   },
   {
     "name": "Bookis.no",
-    "image": "assets/images/butikker/bookis.png",
+    "image": "assets/images/butikker/bookis.webp",
     "alt": "Bookis",
     "category": "Bøker og media",
     "subcategory": ["Bøker", "Bruktbøker"],
@@ -3266,7 +3266,7 @@
   },
   {
     "name": "eBok.no",
-    "image": "assets/images/butikker/ebok.png",
+    "image": "assets/images/butikker/ebok.webp",
     "alt": "eBok.no",
     "category": "Bøker og media",
     "subcategory": ["E-bøker", "Lyd- og lydbøker"],
@@ -3280,7 +3280,7 @@
   },
   {
     "name": "Storytel.no",
-    "image": "assets/images/butikker/storytel.png",
+    "image": "assets/images/butikker/storytel.webp",
     "alt": "Storytel",
     "category": "Bøker og media",
     "subcategory": ["Lyd- og lydbøker"],
@@ -3294,7 +3294,7 @@
   },
   {
     "name": "Book Depository",
-    "image": "assets/images/butikker/bookdepository.png",
+    "image": "assets/images/butikker/bookdepository.webp",
     "alt": "Book Depository",
     "category": "Bøker og media",
     "subcategory": ["Bøker"],
@@ -3310,7 +3310,7 @@
   },
   {
     "name": "Amazon Kindle Store",
-    "image": "assets/images/butikker/kindle.png",
+    "image": "assets/images/butikker/kindle.webp",
     "alt": "Kindle Store",
     "category": "Bøker og media",
     "subcategory": ["E-bøker"],
