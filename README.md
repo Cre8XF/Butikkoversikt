@@ -1,6 +1,3 @@
-# butikkoversikt
- Oversikt over norske nettbutikker
-
 # 👋 Hei, jeg er Roger – aka **CodeXFrame**
 
 Velkommen til profilen min! Jeg er en norsk utvikler med lidenskap for strukturert kode, brukervennlige løsninger og visuell presisjon.
