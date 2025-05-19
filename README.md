@@ -25,5 +25,5 @@ Du kan kontakte meg på [kontakt@butikkoversikt.no](mailto:kontakt@butikkoversik
 
 ---
 
-![Banner](assets/images/kategorikort/codexframe-banner.webp)
+![Banner](assets/images/codexframe-banner.webp)
 
