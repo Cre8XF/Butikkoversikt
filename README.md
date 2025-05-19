@@ -25,4 +25,5 @@ Du kan kontakte meg på [kontakt@butikkoversikt.no](mailto:kontakt@butikkoversik
 
 ---
 
-![Banner](https://via.placeholder.com/1000x200?text=CodeXFrame+%7C+Structured+Coding+%26+UX+Craftsmanship)
+![Banner](assets/images/kategorikort/codexframe-banner.webp)
+
