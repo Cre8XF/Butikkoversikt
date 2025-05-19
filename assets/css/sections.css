@@ -106,3 +106,26 @@
   margin-bottom: 0.5rem;
   box-shadow: 0 1px 3px var(--shadow-sm);
 }
+.info-highlight {
+  background-color: #f8f9fa;
+}
+
+.info-icon i {
+  font-size: 1.3rem;
+  color: #495057;
+  margin-bottom: 5px;
+}
+
+.info-icon:hover {
+  transform: scale(1.05);
+  color: #212529;
+}
+
+.info-icon strong {
+  display: block;
+  margin-top: 5px;
+}
+.info-highlight i.fas {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900;
+}
