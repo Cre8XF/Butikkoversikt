@@ -25,7 +25,7 @@ Du kan kontakte meg på [kontakt@butikkoversikt.no](mailto:kontakt@butikkoversik
 
 ---
 
-<img src="assets/images/codexframe.png" alt="CodeXFrame Banner">
+<img src="assets/images/codeXframe.png" alt="CodeXFrame Banner">
 
 
 
