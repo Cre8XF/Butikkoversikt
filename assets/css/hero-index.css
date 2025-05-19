@@ -32,3 +32,32 @@
   margin: 0 auto;
   color: #f1f5f9;
 }
+/* Hovedbakgrunn i hero */
+.hero {
+  background: linear-gradient(to bottom, #6a5acd, #a4b6f6);
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+/* Juster logo-størrelse hvis ønskelig */
+.navbar-brand img {
+  height: 72px;
+  max-width: 100%;
+}
+
+/* Overskrift i hero */
+.hero h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Knappejustering */
+.hero a.btn {
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+}
+.hero {
+  background: linear-gradient(to bottom, #6a5acd, #a4b6f6);
+}
