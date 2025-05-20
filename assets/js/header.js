@@ -8,21 +8,30 @@ document.addEventListener("DOMContentLoaded", () => {
     html.setAttribute("data-theme", savedTheme);
   }
 
-  // 2. Last inn headeren og aktiver knapp etterpå
+  // 2. Last inn header og aktiver knapp etterpå
   if (placeholder) {
     fetch("/components/header.html")
       .then((res) => res.text())
       .then((htmlContent) => {
         placeholder.innerHTML = htmlContent;
 
-        // Nå som headeren er lastet, legg til knapp-funksjonalitet
+        // Når headeren er lastet inn:
         const btn = document.getElementById("themeToggleBtn");
+
+        function setTheme(mode) {
+          html.setAttribute("data-theme", mode);
+          localStorage.setItem("theme", mode);
+          if (btn) btn.innerHTML = mode === "dark" ? "🌞 Lys" : "🌙 Mørk";
+        }
+
+        const stored = localStorage.getItem("theme") || "light";
+        setTheme(stored);
+
         if (btn) {
           btn.addEventListener("click", () => {
-            const current = html.getAttribute("data-theme");
-            const next = current === "dark" ? "light" : "dark";
-            html.setAttribute("data-theme", next);
-            localStorage.setItem("theme", next);
+            const current = localStorage.getItem("theme") || "light";
+            const next = current === "light" ? "dark" : "light";
+            setTheme(next);
           });
         }
       })

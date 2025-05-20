@@ -14,35 +14,7 @@
 <body>
 
   <!-- Header & Navigasjon -->
-  <header class="navbar navbar-expand-lg navbar-theme bg-header shadow-sm py-2 sticky-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="/">
-        <img src="/assets/images/hero/hero.webp" alt="Butikkoversikt logo" style="height: 60px;"> </a> 
-      <div>
-        <strong class="fs-5">Butikkoversikt.no</strong><br>
-        <small class="text-muted-theme">Norges nettbutikk-guide</small>
-      </div>
-
-      <!-- Meny for mobil -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-        title="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="/index.html">Forside</a></li>
-          <li class="nav-item"><a class="nav-link" href="/kategori-mal-utforsk.html">Kategorier</a></li>
-          <li class="nav-item"><a class="nav-link" href="/ukens-anbefalte.html">Ukens Anbefalte</a></li>
-          <li class="nav-item"><a class="nav-link" href="/kampanjer.html">Kampanjer</a></li>
-          <li class="nav-item"><a class="nav-link" href="/guider/main-guider.html">Guider</a></li>
-          <li class="nav-item"><a class="nav-link" href="/kontakt.html">Kontakt oss</a></li>
-        </ul>
-      </div>
-    </div>
-    <button id="themeToggleBtn" class="btn btn-sm btn-primary"
-      style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
-  </header>
+  <div id="header-placeholder"></div>
 
 <body>
   <!-- Header -->
@@ -98,49 +70,8 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer bg-header text-heading py-5 mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <h5>Butikkoversikt.no</h5>
-          <p class="text-muted-theme">Din guide til de beste norske nettbutikkene. Enkelt, trygt og oppdatert.</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h6>Nyttige lenker</h6>
-          <ul class="list-unstyled">
-            <li><a href="index.html" class="text-heading text-decoration-none">Hjem</a></li>
-            <li><a href="alle-butikker.html" class="text-heading text-decoration-none">Alle butikker</a></li>
-            <li><a href="kategori.html" class="text-heading text-decoration-none">Kategorier</a></li>
-            <li><a href="topp25.html" class="text-heading text-decoration-none">Topp 25</a></li>
-            <li><a href="main-guider.html" class="text-heading text-decoration-none">Guider</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h6>Kontakt</h6>
-          <p class="text-muted-theme mb-1">E-post: kontakt@butikkoversikt.no</p>
-          <p class="text-muted-theme mb-2">Org.nr: 123 456 789</p>
-          <div>
-            <a href="#" class="text-heading me-3" title="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-heading me-3" title="Twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="text-heading" title="Instagram"><i class="bi bi-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="newsletter-wrapper text-center mb-5">
-        <h5 class="mb-3">Få de beste tilbudene først!</h5>
-        <p class="text-muted-theme mb-4">Meld deg på vårt nyhetsbrev og få ukens beste nettbutikker, kampanjer og
-          rabatter
-          rett i innboksen.</p>
-        <form id="newsletter-form" class="d-flex flex-column flex-sm-row justify-content-center">
-          <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0" placeholder="Din e-postadresse" required>
-          <button type="submit" class="btn btn-primary">Meld meg på</button>
-        </form>
-      </div>
-      <hr class="border-secondary">
-      <p class="text-center text-muted-theme mb-0">&copy; 2025 Butikkoversikt.no. Alle rettigheter forbeholdt.</p>
-    </div>
-  </footer>
+<!-- Footer -->
+<div id="footer-placeholder"></div>
 
 
   <!-- Scripts -->
@@ -160,6 +91,8 @@
   
   <!-- Main -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/header.js"></script>
 </body>
 
 </html>
