@@ -5,16 +5,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Butikkoversikt.no - Norges nettbutikk-guide</title>
+  <!-- Bootstrap og Font Awesome -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/css/theme.css" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Egen stilark -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/theme-tøff.css">
 </head>
 
 
 <body>
 
-<!-- Header & Navigasjon -->
-<div id="header-placeholder"></div>
+  <!-- Sticky Header -->
+  <div class="sticky-top bg-white shadow-sm z-1030" id="stickyHeaderFull">
+    <div id="header-placeholder"></div>
+  </div>
 
 <body>
   <!-- Header -->
@@ -51,19 +58,18 @@
   <main>
     <section class="py-5">
       <div class="container">
-        <h1 class="text-center mb-4">Guide: Køp billig treningstøy</h1>
-        <p class="lead text-center mb-5">Få mest mulig for pengene når du handler sportsklær!</p>
+        <h1 class="text-center mb-4">Guide: Trygg netthandel</h1>
+        <p class="lead text-center mb-5">Slik handler du sikkert på nett og unngår svindel.</p>
         <div class="row justify-content-center">
           <div class="col-md-8">
-            <img src="assets/images/guider/billig-treningstoy.jpg" alt="Billig treningstøy"
-              class="img-fluid rounded mb-4">
-            <p>Du trenger ikke bruke en formue på treningstøy av god kvalitet. Ved å vite hvor du skal lete og hva du
-              bør se etter, kan du finne solide produkter til en brøkdel av prisen.</p>
-            <p>Tips for å finne billig treningstøy:</p>
+            <img src="assets/images/guider/trygg-netthandel.jpg" alt="Trygg netthandel" class="img-fluid rounded mb-4">
+            <p>Netthandel gir mange muligheter, men det er viktig å ta forholdsregler for å handle trygt. Her er noen
+              viktige tips:</p>
             <ul>
-              <li>Sjekk tilbudsseksjoner hos kjente sportskjeder.</li>
-              <li>Hold øye med kampanjer på spesielle merkedager som Black Friday.</li>
-              <li>Se etter generiske merker som ofte har samme kvalitet som de store merkene.</li>
+              <li>Sjekk at nettsiden har HTTPS (låsesymbol) i adressefeltet.</li>
+              <li>Bruk sikre betalingsmetoder som kredittkort eller Klarna.</li>
+              <li>Unngå å handle fra ukjente sider uten anmeldelser.</li>
+              <li>Les vilkår for retur og angrerett før du handler.</li>
             </ul>
           </div>
         </div>
@@ -94,7 +100,6 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/footer.js"></script>
   <script src="assets/js/header.js"></script>
-
 </body>
 
 </html>

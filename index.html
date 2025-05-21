@@ -9,32 +9,35 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/theme-tøff.css" />
+  <link rel="stylesheet" href="assets/css/theme-tøff.css">
 </head>
 
-<body>
+<body data-page="index">
 
-  <!-- Header & Navigasjon -->
-  <div id="header-placeholder"></div>
-
+  <!-- Sticky Header -->
+  <div class="sticky-top bg-white shadow-sm z-1030" id="stickyHeaderFull">
+    <div id="header-placeholder"></div>    
+  </div>
+  
+  
   <!-- Hero-seksjon -->
-  <section class="hero text-center text-white py-5">
+  <section class="hero-section py-5 text-center">
     <div class="container">
       <h2 class="display-5 fw-bold mb-3">Finn nettbutikker du kan stole på</h2>
-      <p class="lead mb-4">Utforsk norske og internasjonale butikker – med filtrering, guider og ukens anbefalinger</p>
+      <p class="lead.text-dempet">Utforsk norske og internasjonale butikker – med filtrering, guider og ukens anbefalinger</p>
       <a href="alle-butikker.html" class="btn btn-lg btn-primary shadow">Se alle butikker</a>
     </div>
   </section>
 
   <!-- Info-seksjon på forsiden -->
-  <div class="info-highlight bg-light py-3 px-2 border-top border-bottom">
+  <div class="info-highlight py-3 px-2 border-top border-bottom">
     <div class="container">
       <div class="text-center mb-2">
-        <p class="lead text-muted mb-2">
+        <p class="lead.text-dempet mb-2">
           Vi hjelper deg å finne trygge og relevante nettbutikker – med filtrering, guider og nyttig informasjon.
         </p>
       </div>
-      <div class="row justify-content-center text-center text-muted mb-4">
+      <div class="row justify-content-center text-center.text-dempet mb-4">
         <div class="col-6 col-md-3 mb-2">
           <p class="info-icon"><i class="fas fa-flag"></i><br><strong>Fokus på norske nettbutikker</strong></p>
         </div>
@@ -76,15 +79,15 @@
 <section class="search-section py-5" style="background-color: var(--search-section-bg);">
   <div class="container text-center">
     <h2 class="mb-4 fade-in">Hva ser du etter?</h2>
-    <p class="text-muted mt-3 fade-in">Skriv inn det du leter etter – vi finner butikker og guider for deg</p>
+    <p class="text-dempet mt-3 fade-in">Skriv inn det du leter etter – vi finner butikker og guider for deg</p>
 
     <div class="search-wrapper d-flex justify-content-center align-items-center gap-2 fade-in position-relative">
-      <i class="bi bi-search fs-4 text-muted"></i>
+      <i class="bi bi-search fs-4 text-dempet"></i>
 
       <!-- Autocomplete-wrapper -->
       <div class="position-relative w-100">
         <input type="text" id="autocompleteInput" placeholder="Søk etter butikk, kategori eller guide"
-          class="form-control search-input" />
+          class="form-control search-input text-dempet" />
         <!-- Suggestions genereres dynamisk av JS -->
       </div>
     </div>
@@ -337,10 +340,10 @@
       <div class="text-center mt-4"><a href="guider/main-guider.html" class="btn btn-secondary">Les alle guider</a></div>
     </div>
   </section>
-  <section class="py-5 bg-white">
+  <section class="py-5 section-white">
     <div class="container">
       <h2 class="text-center mb-2">💎 Eksklusive tilbud</h2>
-      <p class="text-center text-muted mb-4 small">
+      <p class="text-center text-dempet mb-4 small">
         Tilbud og kampanjer fra utvalgte samarbeidspartnere – håndplukket for deg.
       </p>
       <div class="row g-4">
@@ -352,7 +355,7 @@
               style="max-height:80px;">
             <div>
               <div class="fw-bold">Sommer Tilbud – 30% rabatt</div>
-              <div class="text-muted small">Spar stort på sommerens heteste produkter. Gjelder kun i en begrenset periode.
+              <div class=.text-dempet small">Spar stort på sommerens heteste produkter. Gjelder kun i en begrenset periode.
               </div>
             </div>
           </a>
@@ -365,7 +368,7 @@
               style="max-height:80px;">
             <div>
               <div class="fw-bold">Få eksklusive tilbud først</div>
-              <div class="text-muted small">Meld deg på vårt nyhetsbrev og få de beste tilbudene før alle andre.</div>
+              <div class=.text-dempet small">Meld deg på vårt nyhetsbrev og få de beste tilbudene før alle andre.</div>
             </div>
           </a>
         </div>
@@ -384,7 +387,6 @@
   
 <!-- Effekter og interaksjon -->
 <script src="assets/js/effects/fade-in.js"></script>
-<script src="assets/js/effects/theme-toggle.js"></script>
 
 <!-- Forsidegeneratorer -->
 <script src="assets/js/generate/forsiden/generate-forside-anbefalte.js"></script>

@@ -1,22 +1,33 @@
-/* ===================================================
-   hero-index.css – Spesialstil for forside-hero
-   Integrert sømløst med fancy header (layout-index.css)
-   =================================================== */
+/* hero-index.css – Optimalisert for fade-effekt og variabelkontroll */
 
-.hero.hero-index {
-  padding-top: 0;
-  padding-bottom: 5rem;
-  margin-top: 0;
-  border-bottom: none;
+.hero-fade {
   position: relative;
-  z-index: 1;
-  text-align: center;
+  z-index: 0;
+  background: var(--hero-bg); /* bruker CSS-variabel for hero */
 }
 
-.bg-hero-index {
-  background: linear-gradient(to bottom, #6366f1 0%, #e0f2fe 100%);
-  color: white;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+.hero-fade::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    var(--primary),
+    rgba(255, 255, 255, 0)
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Hero-seksjon med struktur og spacing */
+.hero.hero-index {
+  padding: 5rem 1rem;
+  text-align: center;
+  color: var(--text-inverse);
+  background: var(--hero-bg);
 }
 
 .hero-index h1 {
@@ -30,34 +41,11 @@
   font-size: 1.25rem;
   max-width: 800px;
   margin: 0 auto;
-  color: #f1f5f9;
-}
-/* Hovedbakgrunn i hero */
-.hero {
-  background: linear-gradient(to bottom, #6a5acd, #a4b6f6);
-  color: white;
-  padding: 5rem 1rem;
-  text-align: center;
-}
-
-/* Juster logo-størrelse hvis ønskelig */
-.navbar-brand img {
-  height: 72px;
-  max-width: 100%;
-}
-
-/* Overskrift i hero */
-.hero h2 {
-  font-weight: 700;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  color: var(--text-muted);
 }
 
 /* Knappejustering */
 .hero a.btn {
   font-size: 1.1rem;
   padding: 0.75rem 1.5rem;
-}
-.hero {
-  background: linear-gradient(to bottom, #6a5acd, #a4b6f6);
 }

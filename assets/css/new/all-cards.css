@@ -1,6 +1,6 @@
 :root {
   --store-card-bg: #f9f9f9;
-  --store-card-img-bg: var(--white);
+  --store-card-img-bg: #fff;
 }
 
 [data-theme="dark"] {
@@ -18,7 +18,7 @@
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 10px var(--shadow);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .store-card:hover,
@@ -27,7 +27,7 @@
 .result-kort:hover,
 .featured-store-card:hover {
   transform: scale(1.03);
-  box-shadow: 0 8px 20px var(--card-shadow);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .store-card-img,
@@ -76,9 +76,9 @@
 }
 .frakt-info {
   font-size: 0.85rem;
-  color: var(--text-warning);
-  background-color: var(--bg-warning);
-  border: 1px solid var(--border-warning);
+  color: #856404;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
   padding: 4px 8px;
   margin-top: 6px;
   border-radius: 4px;

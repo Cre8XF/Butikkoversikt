@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 2. Last inn header og aktiver knapp etterpå
   if (placeholder) {
-    fetch("/components/header.html")
+    fetch("components/header.html")
       .then((res) => res.text())
       .then((htmlContent) => {
         placeholder.innerHTML = htmlContent;

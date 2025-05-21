@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://butikkoversikt.no/sitemap.xml
+Disallow: /admin/

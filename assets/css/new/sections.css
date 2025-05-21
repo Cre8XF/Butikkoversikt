@@ -18,11 +18,12 @@
 }
 
 .section-white {
-  background-color: var(--bg-card); /* eller --bg-section */
+  background-color: #ffffff;
+  color: var(--text-color);
 }
 
 .section-alt {
-  background-color: var(--section-alt-bg, var(--bg-alt));
+  background-color: var(--section-alt-bg, #f5f5f5);
 }
 
 /* ✅ Seksjonstitler */
@@ -78,7 +79,7 @@
   width: 80px;
   height: auto;
   border-radius: 0.5rem;
-  background: var(--bg-lightest);
+  background: #fff;
   padding: 0.25rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
@@ -106,18 +107,18 @@
   box-shadow: 0 1px 3px var(--shadow-sm);
 }
 .info-highlight {
-  background-color: var(--info-bg);
+  background-color: #f8f9fa;
 }
 
 .info-icon i {
   font-size: 1.3rem;
-  color: var(--icon-color);
+  color: #495057;
   margin-bottom: 5px;
 }
 
 .info-icon:hover {
   transform: scale(1.05);
-  color: var(--icon-hover);
+  color: #212529;
 }
 
 .info-icon strong {

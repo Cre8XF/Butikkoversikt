@@ -10,13 +10,13 @@
   overflow: hidden;
   text-decoration: none;
   color: inherit;
-  box-shadow: 0 2px 10px var(--shadow);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .guide-card:hover {
   transform: scale(1.03);
-  box-shadow: 0 8px 20px var(--card-shadow);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .guide-card-img {
@@ -63,7 +63,7 @@
 
 .promo-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 12px var(--card-shadow);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
 }
 
 .promo-card .promo-image {
@@ -89,7 +89,7 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: var(--accent-color);
+  background-color: #ff4757;
   color: white;
   padding: 5px 10px;
   border-radius: 4px;
@@ -108,5 +108,5 @@
 
 .top25-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 15px var(--card-shadow);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }

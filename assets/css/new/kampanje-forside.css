@@ -2,13 +2,24 @@
    kampanje-forside.css – Stil for kampanjebanner på index
    =================================================== */
 
+.campaign-banner {
+  background: linear-gradient(to right, #c084fc, #a855f7);
+  color: white;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 960px;
+  transition: transform 0.3s ease;
+}
+
 .campaign-banner:hover {
   transform: scale(1.01);
 }
 
 .campaign-badge {
-  background-color: var(--card-bg);
-  color: var(--accent-color);
+  background-color: white;
+  color: #7c3aed;
   font-weight: 600;
   font-size: 0.875rem;
   padding: 0.4rem 0.8rem;
@@ -31,7 +42,7 @@
   width: 240px;
   height: auto;
   border-radius: 0.75rem;
-  box-shadow: 0 4px 10px var(--shadow);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
 }
 
@@ -42,20 +53,20 @@
 #kampanje-tittel {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--card-bg);
+  color: white;
   margin-bottom: 0.5rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 #kampanje-beskrivelse {
   font-size: 1rem;
-  color: var(--campaign-subtle-text);
+  color: #f3e8ff;
   margin-bottom: 1rem;
 }
 
 .kampanje-knapp {
-  background: var(--card-bg);
-  color: var(--accent-color);
+  background: white;
+  color: #7c3aed;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 999px;
@@ -68,8 +79,8 @@
 }
 
 .kampanje-knapp:hover {
-  background: var(--accent-color);
-  color: var(--card-bg);
+  background: #7c3aed;
+  color: white;
 }
 
 .kampanje-img {

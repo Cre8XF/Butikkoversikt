@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const kategoriMeny = document.getElementById("kategoriMeny");
   const kategoriContainer = document.getElementById("kategoriContainer");
-  const OFFSET = 250; // Juster denne verdien for å kontrollere hvor langt ned siden scroller
+  const OFFSET = 320; // Juster denne verdien for å kontrollere hvor langt ned siden scroller
 
   if (!kategoriMeny || !kategoriContainer) {
     console.error("❌ Kategori-meny eller container ikke funnet");

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Hent inn footer.html hvis placeholder finnes
     const footerPlaceholder = document.getElementById("footer-placeholder");
     if (footerPlaceholder) {
-      fetch("/components/footer.html")
+      fetch("components/footer.html")
         .then((res) => res.text())
         .then((html) => {
           footerPlaceholder.innerHTML = html;

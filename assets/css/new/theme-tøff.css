@@ -1,0 +1,189 @@
+/* ==================================================
+   theme-tøff.css – Et mer kontrastfylt, moderne tema
+   for Butikkoversikt.no
+   ================================================== */
+
+:root {
+  /* ======== FARGER ======== */
+  --bg-color: #e6eaf1; /* Myk grå bakgrunn */
+  --section-bg: #ffffff;
+  --section-alt-bg: #f9fafb;
+  --hero-bg: #f1f5f9;
+  --sticky-bg: #ffffff;
+
+  /* ======== TEKST ======== */
+  --text-color: #0f172a;
+  --text-muted: #64748b;
+  --heading-color: #1e293b;
+  --link-color: #6b21a8;
+  --link-hover: #581c87;
+
+  /* ======== KNAPPER ======== */
+  --btn-primary: #6b21a8;
+  --btn-primary-hover: #581c87;
+  --btn-secondary: #e0e7ff;
+  --btn-secondary-hover: #c7d2fe;
+  --text-on-primary: #ffffff;
+  --text-on-secondary: #1e293b;
+  --btn-shadow: rgba(107, 33, 168, 0.1);
+  --btn-shadow-hover: 0 4px 6px rgba(107, 33, 168, 0.3);
+
+  /* ======== KORT ======== */
+  --card-bg: #ffffff;
+  --card-hover: #f9f5ff;
+  --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  --card-shadow-hover: 0 6px 16px rgba(0, 0, 0, 0.1);
+  --store-card-bg: #8490fc75;
+  --store-card-img-bg: #8490fc75;
+
+  /* ======== SPESIAL ======== */
+  --hero-gradient-start: #e0e7ff;
+  --hero-gradient-end: #c084fc;
+  --offer-bg: #fcd34d;
+  --offer-text: #1e293b;
+  --campaign-bg: #bbf7d0;
+  --campaign-text: #064e3b;
+  --search-section-bg: #e0e7ff;
+
+  /* ======== HEADER & FOOTER ======== */
+  --header-bg: #ffffff;
+  --footer-bg: #f9fafb;
+  --footer-border: #e2e8f0;
+  --footer-heading: #1e293b;
+  --footer-text: #334155;
+  --footer-muted: #64748b;
+
+  /* ======== EFFEKTER ======== */
+  --hero-title-size: 2.75rem;
+  --hero-subtitle-color: var(--text-muted);
+  --filter-bg: var(--section-bg);
+  --filter-border: #d1d5db;
+
+  --text-strong: #333333;
+  --text-subtle: #666666;
+  --bg-warning: #fff3cd;
+  --text-warning: #856404;
+  --border-warning: #ffeeba;
+  --primary-hover: #0056b3;
+  --accent-color: #ff4757;
+  --card-shadow: rgba(
+    0,
+    0,
+    0,
+    0.15
+  ); /* gjerne definér også .06 og .1 hvis ønsket */
+
+  --border-color-light: #e2e8f0;
+  --gradient-start: #e0f2fe;
+  --gradient-end: #f8fafc;
+  --text-subtle: #475569;
+  --text-subtle-strong: #334155;
+  --text-strong: #1e293b;
+  --accent-from: #6b21a8;
+  --accent-to: #3b82f6;
+  --hero-gradient-start: #6366f1;
+  --hero-gradient-end: #a4b6f6;
+  --text-light: #f1f5f9;
+
+  --card-bg: #ffffff;
+  --border-color: #ccc;
+  --text-color: #333;
+  --subtle-bg: #f8f9fa;
+  --hover-bg: #f0f0f0;
+  --accent-hover: #f0f4ff;
+  --campaign-gradient: linear-gradient(to right, #c084fc, #a855f7);
+  --campaign-subtle-text: #f3e8ff;
+  --navbar-gradient: linear-gradient(to right, #8b5cf6, #6366f1);
+  --text-on-primary: #ffffff;
+  --text-muted-light: #e0e7ff;
+
+  --bg-lightest: #ffffff;
+  --bg-alt: #f5f5f5;
+  --info-bg: #f8f9fa;
+  --icon-color: #495057;
+  --icon-hover: #212529;
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --section-bg: #1e1b2e;
+  --section-alt-bg: #1e293b;
+  --hero-bg: #1e1b2e;
+  --sticky-bg: #1e293b;
+
+  --text-color: #f3f4f6;
+  --text-muted: #9ca3af;
+  --heading-color: #ffffff;
+  --link-color: #c084fc;
+  --link-hover: #a855f7;
+
+  --btn-primary: #a855f7;
+  --btn-primary-hover: #9333ea;
+  --btn-secondary: #4c1d95;
+  --btn-secondary-hover: #6b21a8;
+  --text-on-primary: #ffffff;
+  --text-on-secondary: #e0e7ff;
+  --btn-shadow: rgba(168, 85, 247, 0.2);
+  --btn-shadow-hover: rgba(168, 85, 247, 0.3);
+
+  --card-bg: #1e1b2e;
+  --card-hover: #2a2543;
+  --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  --card-shadow-hover: 0 6px 16px rgba(0, 0, 0, 0.3);
+  --store-card-bg: #1f1f1f;
+  --store-card-img-bg: #2a2a2a;
+
+  --hero-gradient-start: #312e81;
+  --hero-gradient-end: #6d28d9;
+  --offer-bg: #fbbf24;
+  --offer-text: #1f2937;
+  --campaign-bg: #22c55e;
+  --campaign-text: #064e3b;
+  --search-section-bg: #1e1b2e;
+
+  --header-bg: #1e1b2e;
+  --footer-bg: #0f172a;
+  --footer-border: #334155;
+  --footer-heading: #f3f4f6;
+  --footer-text: #e5e7eb;
+  --footer-muted: #9ca3af;
+
+  --text-strong: #f3f4f6;
+  --text-subtle: #9ca3af;
+  --bg-warning: #4c1d95;
+  --text-warning: #facc15;
+  --border-warning: #7c3aed;
+  --primary-hover: #9333ea;
+  --accent-color: #fb7185;
+  --card-shadow: rgba(0, 0, 0, 0.3); /* mørkere skygge i dark mode */
+
+  --border-color-light: #334155;
+  --gradient-start: #1e293b;
+  --gradient-end: #0f172a;
+  --text-subtle: #94a3b8;
+  --text-subtle-strong: #cbd5e1;
+  --text-strong: #f1f5f9;
+  --accent-from: #a78bfa;
+  --accent-to: #60a5fa;
+  --hero-gradient-start: #4f46e5;
+  --hero-gradient-end: #7c3aed;
+  --text-light: #e2e8f0;
+
+  --card-bg: #1e1e2f;
+  --border-color: #444;
+  --text-color: #f4f4f4;
+  --subtle-bg: #2a2a3d;
+  --hover-bg: #333;
+  --accent-hover: #2f3655;
+  --campaign-gradient: linear-gradient(to right, #7e22ce, #6d28d9);
+  --campaign-subtle-text: #d8b4fe;
+  --navbar-gradient: linear-gradient(to right, #4f46e5, #3730a3);
+  --text-on-primary: #f9fafb;
+  --text-muted-light: #a5b4fc;
+
+  --bg-lightest: #1e1e2f;
+  --bg-alt: #2c2c3f;
+  --info-bg: #2f3542;
+  --icon-color: #d1d5db;
+  --icon-hover: #ffffff;
+}

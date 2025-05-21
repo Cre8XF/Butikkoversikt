@@ -4,11 +4,7 @@
    ====================================================== */
 
 .navbar {
-  background: linear-gradient(
-    to right,
-    var(--navbar-gradient-from),
-    var(--navbar-gradient-to)
-  );
+  background: linear-gradient(to right, var(--navbar-gradient-from), var(--navbar-gradient-to));
   color: var(--card-bg);
   padding: 0.75rem 0;
   -webkit-backdrop-filter: blur(12px);
@@ -64,10 +60,4 @@
 .navbar .nav-link {
   margin-left: 0.5rem;
   font-size: 0.95rem;
-}
-#stickyHeaderFull {
-  -webkit-backdrop-filter: blur(8px); /* Safari 9+, iOS 9+ */
-  backdrop-filter: blur(8px); /* hvis ønsket glass-effekt */
-  border-bottom: 1px solid var(--gray-300);
-  z-index: 1030;
 }

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern lanseringsstatus</title>
+    <link rel="stylesheet" href="../assets/css/theme-tøff.css">
+    <style>
+        body {
+            padding: 2rem;
+            font-family: var(--font-base);
+        }
+
+        .status-box {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .category-group {
+            margin-bottom: 2rem;
+        }
+
+        .category-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .subcategory {
+            margin-left: 1rem;
+            color: var(--text-muted);
+        }
+
+        .todo-checklist {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .todo-checklist li {
+            margin-bottom: 0.4rem;
+        }
+        textarea,
+input[type="text"] {
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid var(--border-base, #ccc);
+  background-color: var(--bg-card, #fff);
+  color: var(--text-base, #111);
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>🚀 Intern lanseringsstatus</h1>
+
+    <section class="status-box">
+        <h2>Kategorier og TODO</h2>
+        <div id="kategoriStatus"></div>
+    </section>
+
+    <section class="status-box">
+        <h2>🔧 Kritisk før lansering</h2>
+        <ul class="todo-checklist">
+            <li><label><input type="checkbox" id="kritisk-1"> Alle kategorier og underkategorier er komplette</label>
+            </li>
+            <li><label><input type="checkbox" id="kritisk-8"> Dark mode er ferdig implementert og testet</label></li>
+            <li><label><input type="checkbox" id="kritisk-9"> Placeholder-tekst, filterknapper og kort fungerer i dark mode</label>
+            </li>
+            <li><label><input type="checkbox" id="kritisk-10"> Sticky header og bakgrunner fungerer i alle moduser</label></li>
+            <li><label><input type="checkbox" id="kritisk-11"> Alle `data-page`-verdier er satt og koblet til CSS</label></li>
+
+            <li><label><input type="checkbox" id="kritisk-2"> Bilder for kategorier og butikker</label><br>
+            <input type="text" id="kommentar-kritisk-2" placeholder="Kommentar..." class="form-control mt-1" /></li>
+            <li>
+                <label><input type="checkbox" id="kritisk-3"> Søke- og filtreringsfunksjon fungerer korrekt</label><br>
+                <input type="text" id="kommentar-kritisk-3" placeholder="Kommentar..." class="form-control mt-1" />
+            </li>
+              
+            <li><label><input type="checkbox" id="kritisk-4"> Mobilvisning optimalisert</label></li>
+            <li><label><input type="checkbox" id="kritisk-5"> SEO/meta for alle sider</label></li>
+            <li><label><input type="checkbox" id="kritisk-6"> Sitemap og robots.txt klar</label></li>
+            <li><label><input type="checkbox" id="kritisk-7"> Full funksjonstest (navigasjon, ytelse)</label></li>
+        </ul>
+    </section>
+
+    <section class="status-box">
+        <h2>✨ Viktig for brukeropplevelse</h2>
+        <ul class="todo-checklist">
+            <li><label><input type="checkbox" id="viktig-1"> Minst 3-5 aktive kampanjer lagt til</label></li>
+            <li><label><input type="checkbox" id="viktig-2"> Ukens anbefalte butikker vises</label></li>
+            <li><label><input type="checkbox" id="viktig-3"> Minst 3 guider er ferdige</label></li>
+            <li><label><input type="checkbox" id="viktig-4"> Testet i Chrome, Edge, Safari og Firefox</label></li>
+            <li><label><input type="checkbox" id="viktig-5"> Tracking-lenker testet (affiliate/inntekt)</label></li>
+            <li><label><input type="checkbox" id="viktig-6"> Footer ferdigstilt med kontakt og info</label></li>
+        </ul>
+    </section>
+
+    <section class="status-box">
+        <h2>💡 Valgfritt / videreutvikling</h2>
+        <ul class="todo-checklist">
+            <li><label><input type="checkbox" id="valg-1"> Statistikkmodul for trafikk eller logging</label></li>
+            <li><label><input type="checkbox" id="valg-2"> Passordbeskyttelse for beta-testing</label></li>
+            <li><label><input type="checkbox" id="valg-3"> Nyhetsbrev / e-postinnsamling</label></li>
+            <li><label><input type="checkbox" id="valg-4"> Lanseringskalender for nye funksjoner</label></li>
+            <li><label><input type="checkbox" id="valg-5"> Ferdig mørk/lys-modus med knapp</label></li>
+            <li><label><input type="checkbox" id="valg-6"> Optimalisert dark/light overgang med `transition`</label></li>
+            <li><label><input type="checkbox" id="valg-7"> Fargevariabler for alle komponenttyper (kort, input, hero,
+                    footer)</label></li>
+            <li><label><input type="checkbox" id="valg-8"> Ytelsesanalyse via Lighthouse og fjerning av unødvendig CSS</label></li>
+            <li><label><input type="checkbox" id="valg-9"> Enhetlig `
+            
+                    <head>`-mal for alle HTML-sider
+                </label></li>
+            <li><label><input type="checkbox" id="valg-10"> Dark mode toggle-lagring ved reload (localStorage bekreftet)</label>
+            </li>
+
+        </ul>
+    </section>
+
+    <script>
+        const persistChecklist = () => {
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                const id = checkbox.id;
+                checkbox.checked = localStorage.getItem(id) === 'true';
+                checkbox.addEventListener('change', () => {
+                    localStorage.setItem(id, checkbox.checked);
+                });
+            });
+        };
+
+        fetch('../assets/data/butikker.json')
+            .then(res => res.json())
+            .then(data => {
+                const kategorier = {};
+
+                data.forEach(butikk => {
+                    if (butikk.category) {
+                        const kategorierArray = Array.isArray(butikk.category) ? butikk.category : [butikk.category];
+
+                        kategorierArray.forEach(cat => {
+                            if (!kategorier[cat]) kategorier[cat] = {};
+
+                            if (butikk.subcategory) {
+                                const subArray = Array.isArray(butikk.subcategory) ? butikk.subcategory : [butikk.subcategory];
+                                subArray.forEach(sub => {
+                                    kategorier[cat][sub] = (kategorier[cat][sub] || 0) + 1;
+                                });
+                            }
+                        });
+                    }
+                });
+
+                const kategoriDiv = document.getElementById("kategoriStatus");
+
+                Object.entries(kategorier).forEach(([cat, subs]) => {
+                    const total = Object.values(subs).reduce((a, b) => a + b, 0);
+
+                    const group = document.createElement("div");
+                    group.className = "category-group";
+
+                    const title = document.createElement("div");
+                    title.className = "category-title";
+                    title.textContent = `${cat} (${total} butikker)`;
+                    group.appendChild(title);
+
+                    Object.entries(subs).forEach(([sub, count]) => {
+                        const line = document.createElement("div");
+                        line.className = "subcategory";
+                        line.textContent = `- ${sub} (${count})`;
+                        group.appendChild(line);
+                    });
+
+                    const checklist = document.createElement("ul");
+                    checklist.className = "todo-checklist";
+                    const todos = ["Bilder lagt til", "Underkategorier definert", "SEO klar"];
+
+                    todos.forEach((item, i) => {
+                        const id = `${cat.replace(/\s+/g, '_')}-todo-${i}`;
+                        const li = document.createElement("li");
+                        const label = document.createElement("label");
+                        const checkbox = document.createElement("input");
+                        checkbox.type = "checkbox";
+                        checkbox.id = id;
+                        checkbox.checked = localStorage.getItem(id) === 'true';
+                        checkbox.addEventListener('change', () => {
+                            localStorage.setItem(id, checkbox.checked);
+                        });
+                        label.appendChild(checkbox);
+                        label.appendChild(document.createTextNode(" " + item));
+                        li.appendChild(label);
+                        checklist.appendChild(li);
+                    });
+
+                    group.appendChild(checklist);
+                    kategoriDiv.appendChild(group);
+                });
+
+                persistChecklist();
+            });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const commentFields = document.querySelectorAll("textarea, input[type='text']");
+
+            commentFields.forEach((field) => {
+                const key = "kommentar-" + field.id;
+
+                // Hent tidligere lagret kommentar
+                const saved = localStorage.getItem(key);
+                if (saved) field.value = saved;
+
+                // Lagre ved skriving
+                field.addEventListener("input", () => {
+                    localStorage.setItem(key, field.value);
+                });
+            });
+        });
+    </script>
+      
+</body>
+
+</html>

@@ -6,7 +6,7 @@
 .category-card,
 .category-store-card,
 .front-category-card {
-  background-color: var(--card-bg, var(--white));
+  background-color: var(--card-bg, #fff);
   border: 1px solid var(--border-color, #ddd);
   border-radius: 1rem;
   padding: 1.5rem;
@@ -22,7 +22,7 @@
 .category-store-card:hover,
 .front-category-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 15px var(--card-shadow);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* === Forsidekort – visning med ikoner === */
@@ -48,23 +48,23 @@
 .front-category-card h5 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: var(--text-strong);
+  color: #333;
 }
 
 .front-category-card p {
-  color: var(--text-subtle);
+  color: #666;
   font-size: 0.9rem;
 }
 
 .front-category-card .btn {
-  background-color: var(--primary);
+  background-color: #007bff;
   color: white;
   margin-top: 10px;
   width: 100%;
 }
 
 .front-category-card .btn:hover {
-  background-color: var(--primary-hover);
+  background-color: #0056b3;
 }
 .image-card {
   position: relative;
@@ -73,7 +73,7 @@
   height: 250px;
   border-radius: 16px;
   overflow: hidden;
-  color: var(--white);
+  color: #fff;
   display: flex;
   align-items: flex-end;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -93,7 +93,7 @@
 .card-overlay h3,
 .card-overlay p {
   margin: 0;
-  color: var(--white);
+  color: #fff;
 }
 
 .image-card-link {
@@ -109,13 +109,13 @@
   overflow: hidden;
   text-decoration: none;
   color: inherit;
-  box-shadow: 0 2px 10px var(--shadow);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .store-card:hover {
   transform: scale(1.03);
-  box-shadow: 0 8px 20px var(--card-shadow);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .store-card-img {
@@ -169,7 +169,7 @@
 }
 
 .dropdown .btn-secondary:hover {
-  background-color: var(--primary-hover); /* Juster fargen etter tema */
+  background-color: #4a90e2; /* Juster fargen etter tema */
 }
 
 .kategori-knapp {

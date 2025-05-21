@@ -4,9 +4,14 @@
    =============================================== */
 
 /* === BODY OG GRUNNSTIL === */
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+/* Tving gradient for forsiden */
+body[data-page="index"] .navbar {
+  background: linear-gradient(
+    to right,
+    var(--navbar-gradient-from),
+    var(--navbar-gradient-to)
+  ) !important;
+  color: var(--navbar-text-color, var(--white));
 }
 
 a {
@@ -117,7 +122,7 @@ select:focus,
 .result-kort:hover,
 .search-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 16px var(--shadow);
 }
 
 .search-card-body {
@@ -195,7 +200,7 @@ select:focus,
   );
   color: var(--heading-color);
   padding: 2rem 0 5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px var(--shadow);
 }
 
 .header-hero-wrapper h1,

@@ -10,13 +10,13 @@
   --section-bg: #f9fafb; /* Standard seksjon – nesten hvit */
   --section-alt-bg: #f3f4f6; /* Alternativ seksjon – grålig */
   --hero-bg: #f1f5f9; /* Lys blågrå bak hero */
-  --card-bg: #ffffff;
+  --card-bg: var(--white);
   --card-hover: #f3f4f6;
   --sticky-bg: #eef2fc; /* Sticky header bakgrunn */
 
   /* ========= TEKST ========= */
-  --text-color: #1e293b; /* Standard tekst – mørk blågrå */
-  --text-muted: #64748b; /* Gråblå – brukt til beskrivende tekst */
+  --text-color: var(--text-base); /* Standard tekst – mørk blågrå */
+  --text-muted: var(--text-muted); /* Gråblå – brukt til beskrivende tekst */
   --heading-color: #0f172a; /* Ekstra mørk for overskrifter */
   --link-color: #1e40af;
   --link-hover: #1d4ed8;
@@ -27,8 +27,8 @@
   --btn-secondary: #e0e7ff;
   --btn-secondary-hover: #c7d2fe;
   --btn-outline-hover-bg: #f1f5f9;
-  --text-on-primary: #ffffff;
-  --text-on-secondary: #1e293b;
+  --text-on-primary: var(--white);
+  --text-on-secondary: var(--text-base);
   --btn-shadow: rgba(30, 64, 175, 0.1); /* Mørkeblå knappeskygge */
   --btn-shadow-hover: 0 4px 6px rgba(30, 64, 175, 0.3);
 
@@ -48,18 +48,18 @@
   --hero-gradient-start: #cbd5e1;
   --hero-gradient-end: #b9e0f5;
   --offer-bg: #fde68a; /* Gul – kampanjer */
-  --offer-text: #1e293b;
+  --offer-text: var(--text-base);
   --campaign-bg: #bbf7d0; /* Grønn kampanjebakgrunn */
   --campaign-text: #064e3b;
   --search-section-bg: #e8ecf9;
 
   /* ========= FOOTER OG HEADER ========= */
-  --header-bg: #ffffff;
+  --header-bg: var(--white);
   --footer-bg: #f1f5f9;
   --footer-border: #e2e8f0;
   --footer-heading: #0f172a;
-  --footer-text: #1e293b;
-  --footer-muted: #64748b;
+  --footer-text: var(--text-base);
+  --footer-muted: var(--text-muted);
 
   /* ========= STATUSFARGER ========= */
   --success-color: #10b981;
@@ -77,10 +77,10 @@
 :root[data-theme="dark"] {
   /* ========= BAKGRUNN OG SEKSJONER ========= */
   --bg-color: #0f172a; /* Hovedbakgrunn – nesten svartblå */
-  --section-bg: #1e293b; /* Seksjonsbakgrunn – mørk blågrå */
+  --section-bg: var(--text-base); /* Seksjonsbakgrunn – mørk blågrå */
   --section-alt-bg: #273549; /* Alternativ seksjon – gråblå */
   --hero-bg: #334155; /* Hero – mørkere gråblå */
-  --card-bg: #1e293b;
+  --card-bg: var(--text-base);
   --card-hover: #273549;
 
   /* ========= TEKST ========= */
@@ -96,7 +96,7 @@
   --btn-secondary: #1e3a8a;
   --btn-secondary-hover: #1d4ed8;
   --btn-outline-hover-bg: #334155;
-  --text-on-primary: #ffffff;
+  --text-on-primary: var(--white);
   --text-on-secondary: #e2e8f0;
   --btn-shadow: rgba(0, 0, 0, 0.2);
   --btn-shadow-hover: rgba(0, 0, 0, 0.3);
@@ -105,23 +105,23 @@
   --border-color: #334155;
   --shadow-sm: rgba(0, 0, 0, 0.15);
   --shadow-md: rgba(0, 0, 0, 0.25);
-  --shadow-lg: rgba(0, 0, 0, 0.4);
+  --shadow-lg: var(--shadow);
   --guide-card-bg: var(--card-bg);
   --guide-card-hover: var(--card-hover);
   --guide-card-shadow: var(--shadow-md);
   --guide-card-shadow-hover: var(--shadow-lg);
 
   /* ========= SPESIALSEKSJONER ========= */
-  --hero-gradient-start: #1e293b;
+  --hero-gradient-start: var(--text-base);
   --hero-gradient-end: #334155;
   --offer-bg: #facc15;
-  --offer-text: #1e293b;
+  --offer-text: var(--text-base);
   --campaign-bg: #22c55e;
   --campaign-text: #064e3b;
   --search-section-bg: #59668f;
 
   /* ========= FOOTER OG HEADER ========= */
-  --header-bg: #1e293b;
+  --header-bg: var(--text-base);
   --footer-bg: #0f172a;
   --footer-border: #334155;
   --footer-heading: #e2e8f0;
@@ -135,7 +135,7 @@
   --accent-color: #3b82f6;
 
   /* ========= Søkefelt ========= */
-  --search-section-bg: #1e293b; /* Mørk, men ikke svart */
+  --search-section-bg: var(--text-base); /* Mørk, men ikke svart */
   --search-input-bg: #0f172a; /* Inndatafelt – tydelig kontrast */
   --search-input-text: #f1f5f9;
   --search-input-border: #334155;

@@ -62,7 +62,7 @@ h6 {
   color: var(--primary);
 }
 
-.text-muted {
+.text-dempet {
   color: var(--text-muted);
 }
 
@@ -86,4 +86,49 @@ h6 {
   .butikkoversikt-logo {
     height: 48px;
   }
+}
+body {
+  background-color: var(--bg-body);
+  color: var(--text-base);
+  font-family: var(--font-base);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+  transition: var(--transition);
+}
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.info-section {
+  background-color: var(--info-bg);
+  color: var(--text-base);
+  padding: 2rem 1rem;
+  border-radius: var(--radius);
+}
+
+.campaign-section {
+  background-color: var(--campaign-bg);
+  color: var(--text-base);
+  padding: 2rem 1rem;
+  border-radius: var(--radius);
+}
+
+.card-style {
+  background-color: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  transition: var(--transition);
+}
+.card-style:hover {
+  background-color: var(--bg-hover);
+}
+
+.section-alt {
+  background-color: var(--section-alt-bg);
 }

@@ -37,15 +37,6 @@ footer .form-control {
   border: 1px solid var(--footer-border);
 }
 
-footer .btn {
-  background-color: var(--btn-primary);
-  color: white;
-  border: none;
-}
-
-footer .btn:hover {
-  background-color: var(--btn-hover);
-}
 .newsletter-wrapper {
   background-color: var(--section-muted);
   padding: 2rem;

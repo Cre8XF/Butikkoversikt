@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="no">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Intern lanseringsstatus</title>
+<link href="../assets/css/theme-tøff.css" rel="stylesheet"/>
+<style>
+        body {
+            padding: 2rem;
+            font-family: var(--font-base);
+        }
+
+        .status-box {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .category-group {
+            margin-bottom: 2rem;
+        }
+
+        .category-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .subcategory {
+            margin-left: 1rem;
+            color: var(--text-muted);
+        }
+
+        .todo-checklist {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .todo-checklist li {
+            margin-bottom: 0.4rem;
+        }
+    </style>
+</head>
+<body>
+<h1>🚀 Intern lanseringsstatus</h1>
+<section class="status-box">
+<h2>Kategorier og TODO</h2>
+<div id="kategoriStatus"></div>
+</section>
+<section class="status-box">
+<h2>🔧 Kritisk før lansering</h2>
+<ul class="todo-checklist">
+<li><label><input id="kritisk-1" type="checkbox"/> Alle kategorier og underkategorier er komplette</label>
+<br/><textarea class="form-control mt-1" id="kommentar-kritisk-1" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="kritisk-2" type="checkbox"/> Bilder for kategorier og butikker</label><br/><textarea class="form-control mt-1" id="kommentar-kritisk-2" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="kritisk-3" type="checkbox"/> Søke- og filtreringsfunksjon fungerer korrekt</label><br/><textarea class="form-control mt-1" id="kommentar-kritisk-3" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="kritisk-4" type="checkbox"/> Mobilvisning optimalisert</label><br/><textarea class="form-control mt-1" id="kommentar-kritisk-4" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="kritisk-5" type="checkbox"/> SEO/meta for alle sider</label><br/><textarea class="form-control mt-1" id="kommentar-kritisk-5" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="kritisk-6" type="checkbox"/> Sitemap og robots.txt klar</label><br/><textarea class="form-control mt-1" id="kommentar-kritisk-6" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="kritisk-7" type="checkbox"/> Full funksjonstest (navigasjon, ytelse)</label><br/><textarea class="form-control mt-1" id="kommentar-kritisk-7" placeholder="Kommentar..." rows="2"></textarea></li>
+</ul>
+</section>
+<section class="status-box">
+<h2>✨ Viktig for brukeropplevelse</h2>
+<ul class="todo-checklist">
+<li><label><input id="viktig-1" type="checkbox"/> Minst 3-5 aktive kampanjer lagt til</label><br/><textarea class="form-control mt-1" id="kommentar-viktig-1" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="viktig-2" type="checkbox"/> Ukens anbefalte butikker vises</label><br/><textarea class="form-control mt-1" id="kommentar-viktig-2" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="viktig-3" type="checkbox"/> Minst 3 guider er ferdige</label><br/><textarea class="form-control mt-1" id="kommentar-viktig-3" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="viktig-4" type="checkbox"/> Testet i Chrome, Edge, Safari og Firefox</label><br/><textarea class="form-control mt-1" id="kommentar-viktig-4" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="viktig-5" type="checkbox"/> Tracking-lenker testet (affiliate/inntekt)</label><br/><textarea class="form-control mt-1" id="kommentar-viktig-5" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="viktig-6" type="checkbox"/> Footer ferdigstilt med kontakt og info</label><br/><textarea class="form-control mt-1" id="kommentar-viktig-6" placeholder="Kommentar..." rows="2"></textarea></li>
+</ul>
+</section>
+<section class="status-box">
+<h2>💡 Valgfritt / videreutvikling</h2>
+<ul class="todo-checklist">
+<li><label><input id="valg-1" type="checkbox"/> Statistikkmodul for trafikk eller logging</label><br/><textarea class="form-control mt-1" id="kommentar-valg-1" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="valg-2" type="checkbox"/> Passordbeskyttelse for beta-testing</label><br/><textarea class="form-control mt-1" id="kommentar-valg-2" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="valg-3" type="checkbox"/> Nyhetsbrev / e-postinnsamling</label><br/><textarea class="form-control mt-1" id="kommentar-valg-3" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="valg-4" type="checkbox"/> Lanseringskalender for nye funksjoner</label><br/><textarea class="form-control mt-1" id="kommentar-valg-4" placeholder="Kommentar..." rows="2"></textarea></li>
+<li><label><input id="valg-5" type="checkbox"/> Ferdig mørk/lys-modus med knapp</label><br/><textarea class="form-control mt-1" id="kommentar-valg-5" placeholder="Kommentar..." rows="2"></textarea></li>
+</ul>
+</section>
+<script>
+        const persistChecklist = () => {
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                const id = checkbox.id;
+                checkbox.checked = localStorage.getItem(id) === 'true';
+                checkbox.addEventListener('change', () => {
+                    localStorage.setItem(id, checkbox.checked);
+                });
+            });
+        };
+
+        fetch('../assets/data/butikker.json')
+            .then(res => res.json())
+            .then(data => {
+                const kategorier = {};
+
+                data.forEach(butikk => {
+                    if (butikk.category) {
+                        const kategorierArray = Array.isArray(butikk.category) ? butikk.category : [butikk.category];
+
+                        kategorierArray.forEach(cat => {
+                            if (!kategorier[cat]) kategorier[cat] = {};
+
+                            if (butikk.subcategory) {
+                                const subArray = Array.isArray(butikk.subcategory) ? butikk.subcategory : [butikk.subcategory];
+                                subArray.forEach(sub => {
+                                    kategorier[cat][sub] = (kategorier[cat][sub] || 0) + 1;
+                                });
+                            }
+                        });
+                    }
+                });
+
+                const kategoriDiv = document.getElementById("kategoriStatus");
+
+                Object.entries(kategorier).forEach(([cat, subs]) => {
+                    const total = Object.values(subs).reduce((a, b) => a + b, 0);
+
+                    const group = document.createElement("div");
+                    group.className = "category-group";
+
+                    const title = document.createElement("div");
+                    title.className = "category-title";
+                    title.textContent = `${cat} (${total} butikker)`;
+                    group.appendChild(title);
+
+                    Object.entries(subs).forEach(([sub, count]) => {
+                        const line = document.createElement("div");
+                        line.className = "subcategory";
+                        line.textContent = `- ${sub} (${count})`;
+                        group.appendChild(line);
+                    });
+
+                    const checklist = document.createElement("ul");
+                    checklist.className = "todo-checklist";
+                    const todos = ["Bilder lagt til", "Underkategorier definert", "SEO klar"];
+
+                    todos.forEach((item, i) => {
+                        const id = `${cat.replace(/\s+/g, '_')}-todo-${i}`;
+                        const li = document.createElement("li");
+                        const label = document.createElement("label");
+                        const checkbox = document.createElement("input");
+                        checkbox.type = "checkbox";
+                        checkbox.id = id;
+                        checkbox.checked = localStorage.getItem(id) === 'true';
+                        checkbox.addEventListener('change', () => {
+                            localStorage.setItem(id, checkbox.checked);
+                        });
+                        label.appendChild(checkbox);
+                        label.appendChild(document.createTextNode(" " + item));
+                        li.appendChild(label);
+                        checklist.appendChild(li);
+                    });
+
+                    group.appendChild(checklist);
+                    kategoriDiv.appendChild(group);
+                });
+
+                persistChecklist();
+            });
+    </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const commentFields = document.querySelectorAll("textarea, input[type='text']");
+  commentFields.forEach((field) => {
+    const key = "kommentar-" + field.id;
+    const saved = localStorage.getItem(key);
+    if (saved) field.value = saved;
+    field.addEventListener("input", () => {
+      localStorage.setItem(key, field.value);
+    });
+  });
+});
+</script></body>
+</html>

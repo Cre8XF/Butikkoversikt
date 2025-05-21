@@ -5,50 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Butikkoversikt.no - Utforsk alle butikker</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/theme.css">
+  <!-- Bootstrap og Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Egen stilark -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/theme-tøff.css">
 </head>
 
-<body class="kategori-side">
+<body data-page="kategori">
   <!-- Header -->
   <!-- Sticky samlet header + meny -->
   <div class="sticky-top bg-white shadow-sm z-1030" id="stickyHeaderFull">
     <!-- Topplinje med logo og meny -->
-    <header class="navbar navbar-expand-lg navbar-theme bg-header py-2">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="/">
-          <img src="assets/images/hero/hero.webp" alt="Butikkoversikt logo" style="height: 60px;">
-          <div>
-            <strong class="fs-5">Butikkoversikt.no</strong><br>
-            <small class="text-muted-theme">Norges nettbutikk-guide</small>
-          </div>
-        </a>
-  
-        <!-- Mobilmeny -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-          title="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse" id="mainNavbar">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.html">Forside</a></li>
-            <li class="nav-item"><a class="nav-link" href="kategori-mal-utforsk.html">Kategorier</a></li>
-            <li class="nav-item"><a class="nav-link" href="ukens-anbefalte.html">Ukens Anbefalte</a></li>
-            <li class="nav-item"><a class="nav-link" href="kampanjer.html">Kampanjer</a></li>
-            <li class="nav-item"><a class="nav-link" href="guider/main-guider.html">Guider</a></li>
-            <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt oss</a></li>
-          </ul>
-        </div>
-      </div>
-      <button id="themeToggleBtn" class="btn btn-sm btn-primary"
-        style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">Bytt Tema</button>
-      </header>
+    <div id="header-placeholder"></div>
   
     <!-- Søk og scroll -->
-    <div class="container py-2 d-flex justify-content-between">
+    <div class="container-fluid py-2 d-flex justify-content-between">
       <button id="scrollTopButton" class="btn btn-secondary">Til toppen ↑</button>
     </div>
   
