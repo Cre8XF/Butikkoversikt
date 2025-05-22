@@ -135,19 +135,3 @@ window.addEventListener("scroll", () => {
     }
   }
 });
-document.querySelectorAll('[data-filter]').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    brukteFilterknapp = true;
-    const targetId = btn.getAttribute('data-filter');
-    const targetSection = document.getElementById(targetId);
-    if (targetSection) {
-      const offset = window.innerWidth < 768 ? 100 : 120;
-      const top = targetSection.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top, behavior: 'smooth' });
-
-      // Lukk offcanvas etter klikk (mobil)
-      const offcanvas = bootstrap.Offcanvas.getInstance(document.getElementById('mobilFilter'));
-      offcanvas?.hide();
-    }
-  });
-});
