@@ -1,100 +1,68 @@
-/* Mobilvisning (små skjermer) */
-@media (max-width: 768px) {
-  .hero-index h1 {
-    font-size: 2rem;
-  }
+/* responsive.css - oppdatert for optimal mobilvisning */
 
-  .hero-index p {
-    font-size: 1rem;
-  }
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 
-  .campaign-content {
-    flex-direction: column;
-    text-align: center;
-  }
+/* Standard padding og mellomrom på små skjermer */
+body {
+  padding: 1rem;
+}
 
-  #kategoriMeny {
-    padding: 0.75rem 0.5rem;
-  }
+/* Kategori-seksjoner må ha margin for sticky navigasjon */
+.kategori-seksjon {
+  scroll-margin-top: 100px;
+}
 
-  .navbar-brand {
-    font-size: 1.2rem;
+/* Gjør kortene fleksible og stabelbare på mobil */
+.store-card,
+.category-card {
+  width: 100% !important;
+  margin-bottom: 1rem;
+}
+
+/* Filtreringsmeny horisontal scroll for små skjermer */
+.filtreringsmeny {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 1rem;
+}
+
+/* Sikre at filterknapper ikke kuttes av */
+.filter-knapp {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* Juster padding for sticky top på mobil */
+.sticky-top {
+  top: 0;
+  z-index: 1020;
+}
+
+/* Responsiv grid for kategorikort */
+@media (min-width: 576px) {
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
   }
 }
 
+/* Skjul store elementer som ikke egner seg på mobil hvis ønskelig */
 @media (max-width: 575.98px) {
-  .autocomplete-items {
-    font-size: 0.95rem;
-    max-height: 220px;
-    z-index: 1000;
-    list-style: none;
-    padding-left: 0;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  .desktop-only {
+    display: none !important;
   }
-
-  .search-section input[type="text"] {
-    font-size: 1rem;
-    padding: 0.5rem 0.75rem;
-  }
-
-  .grid-container {
-    grid-template-columns: 1fr !important;
-    gap: 1rem;
-  }
-
-  #kategori-tags,
-  #underkategori-tags {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    gap: 0.5rem;
-  }
-
-  .filter-tag {
-    flex: 0 0 auto;
-    white-space: nowrap;
-    font-size: 0.85rem;
-    padding: 0.4rem 0.75rem;
-  }
-
-  .side-menu {
-    padding-top: 2rem;
-  }
-
-  .side-menu a {
-    padding: 0.75rem 1rem;
-    font-size: 1.05rem;
-  }
-
-  #filterViewToggle {
-    width: 100%;
-  }
-
-  .card,
-  .category-card {
-    margin-bottom: 1rem;
-  }
-
-  section {
-    padding: 1rem 0.75rem;
-  }
-  @media (max-width: 576px) {
-    #themeToggleBtn {
-      margin-top: 3rem;
-      right: 1rem;
-    }
-  }
-  @media (max-width: 576px) {
-    .container {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-
-    #themeToggleBtn {
-      margin-top: 4rem;
-      right: 1rem;
-    }
+  .category-card img {
+    max-height: 120px;
+    object-fit: contain;
   }
 }
