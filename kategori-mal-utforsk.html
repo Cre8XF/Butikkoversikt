@@ -32,6 +32,15 @@
       <!-- Genereres av JS -->
     </nav>
   </div>
+
+  <!-- Kategorikort -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4" id="kategoriContainer">
+        <!-- Her fylles kategorikortene inn av JavaScript -->
+      </div>
+    </div>
+  </main>
 <!-- Filtrer-knapp kun synlig på mobil -->
 <button class="btn btn-outline-primary d-md-none w-100 mb-3" data-bs-toggle="offcanvas" data-bs-target="#mobilFilter"
   aria-controls="mobilFilter">
@@ -47,35 +56,55 @@
   <div class="offcanvas-body">
     <!-- Her legger du inn filtreringsinnhold -->
     <div id="mobilFilterInnhold">
-      <nav class="category-filter">
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="alle">Alle</button>
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="barn-og-baby">Barn og baby</button>
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="klær-og-mote">Klær og mote</button>
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="elektronikk-og-data">Elektronikk og data</button>
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="gaming-og-tilbehør">Gaming og tilbehør</button>
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="gaver-og-gadgets">Gaver og gadgets</button>
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="bøker-og-media">Bøker og media</button>
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="møbler-og-interiør">Møbler og interiør</button>
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="sport-og-fritid">Sport og fritid</button>
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="helse-og-egenpleie">Helse og egenpleie</button>
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="mat-og-drikke">Mat og drikke</button>
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="hobby-og-diy">Hobby og DIY</button>
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="reise-og-opplevelser">Reise og opplevelser</button>
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="alt-mulig-butikker">Alt-mulig butikker</button>
-        <button class="btn btn-outline-primary btn-sm m-1" data-filter="underholdning-og-popkultur">Underholdning og popkultur</button>
+      <nav id="tagFilter" class="tag-filter d-flex flex-wrap">
+        <!-- Dynamisk tag-knapper genereres av JS -->
       </nav>
     </div>
   </div>
 </div>
 
-  <!-- Kategorikort -->
-  <main class="py-5">
-    <div class="container">
-      <div class="row g-4" id="kategoriContainer">
-        <!-- Her fylles kategorikortene inn av JavaScript -->
-      </div>
-    </div>
-  </main>
+<script>
+  // Eksempel på tags (du kan hente disse dynamisk fra JSON)
+  const tags = [
+    "barn", "baby", "barneklær", "leker", "klær", "sport", "elektronikk", "gaming",
+    "gaver", "bøker", "møbler", "skjønnhet", "mat", "hobby", "reise", "popkultur"
+  ];
+
+  const tagFilter = document.getElementById("tagFilter");
+  if (tagFilter) {
+    tags.forEach(tag => {
+      const btn = document.createElement("button");
+      btn.className = "btn btn-outline-primary btn-sm m-1";
+      btn.textContent = tag;
+      btn.setAttribute("data-tag", tag);
+      btn.onclick = () => {
+        // Scroll til toppen av liste, evt. kalle filterfunksjon her
+        const event = new CustomEvent("filterByTag", { detail: tag });
+        document.dispatchEvent(event);
+
+        const offcanvas = bootstrap.Offcanvas.getInstance(document.getElementById("mobilFilter"));
+        offcanvas?.hide();
+      };
+      tagFilter.appendChild(btn);
+    });
+  }
+</script>
+
+<!-- Husk å laste inn Bootstrap JS og CSS hvis det ikke er gjort -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Valgfritt: kun vis desktop filter på større skjermer -->
+<style>
+  @media (max-width: 767.98px) {
+    .sticky-category-nav {
+      display: none !important;
+    }
+  }
+</style>
+  
+
+ 
 
   <!-- Footer -->
   <div id="footer-placeholder"></div>
