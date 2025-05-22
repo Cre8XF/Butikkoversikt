@@ -1,3 +1,5 @@
+let brukteFilterknapp = false;
+
 document.addEventListener("DOMContentLoaded", () => {
   const kategoriMeny = document.getElementById("kategoriMeny");
   const kategoriContainer = document.getElementById("kategoriContainer");
@@ -135,6 +137,7 @@ window.addEventListener("scroll", () => {
 });
 document.querySelectorAll('[data-filter]').forEach((btn) => {
   btn.addEventListener('click', () => {
+    brukteFilterknapp = true;
     const targetId = btn.getAttribute('data-filter');
     const targetSection = document.getElementById(targetId);
     if (targetSection) {
