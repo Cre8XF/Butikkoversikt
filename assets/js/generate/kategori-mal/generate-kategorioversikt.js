@@ -132,16 +132,4 @@ window.addEventListener("scroll", () => {
       scrollTopButton.classList.remove("show");
     }
   }
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-  
-  window.addEventListener('scroll', () => {
-    const scrollBtn = document.getElementById('scrollTopButton');
-    if (!scrollBtn) return;
-    scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
-  });
-  
-  document.getElementById('scrollTopButton')?.addEventListener('click', scrollToTop);
-  
 });
