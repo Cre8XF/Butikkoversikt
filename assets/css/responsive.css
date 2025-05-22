@@ -132,3 +132,7 @@
     display: none !important;
   }
 }
+#mobilFilterToggle {
+  display: block;
+  margin-bottom: 1rem;
+}
