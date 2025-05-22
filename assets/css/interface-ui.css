@@ -162,6 +162,25 @@
   text-align: center;
 }
 
+.clear-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: var(--text-muted, #777);
+  cursor: pointer;
+  display: none;
+}
+.clear-btn:hover {
+  color: var(--text-base, #000);
+}
+.clear-btn:focus {
+  outline: none;
+}
+
 /* === ANNONSER === */
 .ad-banner-top,
 .ad-banner-mid {

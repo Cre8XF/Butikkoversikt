@@ -143,4 +143,15 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchSearchData().then(() => {
     searchInput.addEventListener("input", handleSearchInput);
   });
+    // Legg til ENTER-funksjon for full oversikt
+    searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault(); // hindrer evt. form submission
+        const søk = searchInput.value.trim();
+        if (søk.length > 0) {
+          window.location.href = `sokeresultater.html?q=${encodeURIComponent(søk)}`;
+        }
+      }
+    });
+  
 });
