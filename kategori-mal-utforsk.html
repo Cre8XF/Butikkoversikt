@@ -32,7 +32,32 @@
       <!-- Genereres av JS -->
     </nav>
   </div>
+<!-- Filtrer-knapp kun synlig på mobil -->
+<button class="btn btn-outline-primary d-md-none w-100 mb-3" data-bs-toggle="offcanvas" data-bs-target="#mobilFilter"
+  aria-controls="mobilFilter">
+  ☰ Filtrer
+</button>
 
+<!-- Offcanvas-meny for mobilfilter -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobilFilter" aria-labelledby="mobilFilterLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="mobilFilterLabel">Filtrer butikker</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Lukk"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- Her legger du inn filtreringsinnhold -->
+    <div id="mobilFilterInnhold">
+      <nav class="category-filter">
+        <button class="btn btn-outline-primary btn-sm m-1" data-filter="alle">Alle</button>
+        <button class="btn btn-outline-primary btn-sm m-1" data-filter="babyutstyr">Babyutstyr</button>
+        <button class="btn btn-outline-primary btn-sm m-1" data-filter="leker">Leker</button>
+        <button class="btn btn-outline-primary btn-sm m-1" data-filter="barnebøker">Barnebøker</button>
+        <button class="btn btn-outline-primary btn-sm m-1" data-filter="barnemøbler">Barnemøbler</button>
+        <!-- Legg til flere filterknapper her som matcher desktop -->
+      </nav>
+    </div>
+  </div>
+</div>
 
   <!-- Kategorikort -->
   <main class="py-5">
