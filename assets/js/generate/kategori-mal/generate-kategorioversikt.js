@@ -97,8 +97,10 @@ if (scrollTopButton) {
           const col = document.createElement("div");
           col.className = "col-md-3";
 
+          const dataTags = butikk.tags ? butikk.tags.join(", ").toLowerCase() : "";
+
           col.innerHTML = `
-  <div class="card store-card h-100 shadow-sm">
+  <div class="card store-card h-100 shadow-sm" data-tags="${dataTags}">
     <a href="${butikk.url}" target="_blank" rel="noopener">
       <img src="${butikk.image}" alt="${butikk.name}" class="card-img-top p-3" style="max-height:100px; object-fit:contain;">
     </a>
@@ -109,6 +111,7 @@ if (scrollTopButton) {
     </div>
   </div>
 `;
+
 
           row.appendChild(col);
         });

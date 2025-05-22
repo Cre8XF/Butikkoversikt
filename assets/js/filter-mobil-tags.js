@@ -1,6 +1,6 @@
 
 const tags = [
-  "barn", "baby", "barneklær", "leker", "klær", "sport", "elektronikk", "gaming",
+  "Barn og baby", "baby", "barneklær", "leker", "klær", "sport", "elektronikk", "gaming",
   "gaver", "bøker", "møbler", "skjønnhet", "mat", "hobby", "reise", "popkultur"
 ];
 
