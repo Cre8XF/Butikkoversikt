@@ -126,3 +126,9 @@
     display: block !important;
   }
 }
+/* Mobilvisning (små skjermer) */
+@media (max-width: 767.98px) {
+  .sticky-category-nav {
+    display: none !important;
+  }
+}
