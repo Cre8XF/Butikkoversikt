@@ -96,6 +96,8 @@ if (scrollTopButton) {
         filteredStores.forEach(butikk => {
           const col = document.createElement("div");
           col.className = "col-md-3";
+          col.setAttribute("data-category", butikk.category);
+
 
           const dataTags = butikk.tags ? butikk.tags.join(", ").toLowerCase() : "";
 
