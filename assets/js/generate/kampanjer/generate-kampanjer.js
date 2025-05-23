@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', function () {
       title.textContent = kampanje.title;
 
       const store = document.createElement('p');
-      store.className = 'text-muted small';
+      store.className = 'text-dempet mt-3 small';
       store.textContent = kampanje.store ? kampanje.store : 'Ukjent butikk';
 
       const expiry = document.createElement('p');
-      expiry.className = 'text-muted small';
+      expiry.className = 'text-dempet small';
       expiry.textContent = kampanje.expiry ? `Gyldig til: ${kampanje.expiry}` : 'Ukjent utløpsdato';
 
       const description = document.createElement('p');
