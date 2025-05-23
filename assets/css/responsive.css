@@ -1,78 +1,138 @@
-/* Ryddig responsive.css for mobil- og desktop-tilpasning */
-
-@media (max-width: 576px) {
-  .store-card .card-body {
-    padding: 0.75rem;
-  }
-
-  .store-card h6 {
-    font-size: 1rem;
-  }
-
-  .store-card .card-img-top {
-    max-height: 80px;
-  }
-
-  .category-card .card-body {
-    padding: 0.75rem;
-  }
-
-  .category-card h5 {
-    font-size: 1rem;
-  }
-
-  .category-card .card-img-top {
-    max-height: 80px;
-  }
-}
-
-/* Vis "Til toppen"-knapp kun på mobil når synlig */
+/* Mobilvisning (små skjermer) */
 @media (max-width: 768px) {
+  .hero-index h1 {
+    font-size: 2rem;
+  }
+
+  .hero-index p {
+    font-size: 1rem;
+  }
+
+  .campaign-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #kategoriMeny {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
   #scrollTopButton {
-    display: none;
     position: fixed;
-    bottom: 1rem;
+    bottom: 2rem;
     right: 1rem;
-    z-index: 1050;
-  }
-
-  #scrollTopButton.show {
-    display: block;
-  }
-}
-
-/* Egendefinert visningsklasse for mobil-knapper */
-.show-mobile-only {
-  display: block;
-}
-
-@media (min-width: 768px) {
-  .show-mobile-only {
-    display: none !important;
+    z-index: 999;
+    display: none;
+    padding: 12px 16px;
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color: var(--btn-primary, #007bff);
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 }
 
-/* Justering av offcanvas-lag */
-.offcanvas-backdrop.show {
-  z-index: 1040;
-}
+@media (max-width: 575.98px) {
+  .autocomplete-items {
+    font-size: 0.95rem;
+    max-height: 220px;
+    z-index: 1000;
+    list-style: none;
+    padding-left: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
 
-.offcanvas.show {
-  z-index: 1045;
-}
-@media (max-width: 767.98px) {
-  .sticky-category-nav {
-    display: none !important;
+  .search-section input[type="text"] {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  #kategori-tags,
+  #underkategori-tags {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    gap: 0.5rem;
+  }
+
+  .filter-tag {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .side-menu {
+    padding-top: 2rem;
+  }
+
+  .side-menu a {
+    padding: 0.75rem 1rem;
+    font-size: 1.05rem;
+  }
+
+  #filterViewToggle {
+    width: 100%;
+  }
+
+  .card,
+  .category-card {
+    margin-bottom: 1rem;
+  }
+
+  section {
+    padding: 1rem 0.75rem;
+  }
+  @media (max-width: 576px) {
+    #themeToggleBtn {
+      margin-top: 3rem;
+      right: 1rem;
+    }
+  }
+  @media (max-width: 576px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    #themeToggleBtn {
+      margin-top: 4rem;
+      right: 1rem;
+    }
+  }
+  #scrollTopButton {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    z-index: 999;
+    display: none;
+    padding: 12px 16px;
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color: var(--btn-primary, #007bff);
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
 }
 
-/* Vis dropdown bare på mobil */
-#mobilTagSelect {
-  display: block;
+@media (max-width: 768px) {
 }
 
-@media (min-width: 768px) {
-  #mobilTagSelect {
-    display: none !important;
-  }
+@media (min-width: 769px) {
+}
+
+.kategori-knapp.active {
+  background-color: var(--bs-primary, #0d6efd);
+  color: #fff;
+  border-color: var(--bs-primary, #0d6efd);
 }

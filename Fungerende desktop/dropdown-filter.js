@@ -9,4 +9,5 @@ document.addEventListener("DOMContentLoaded", function () {
       card.style.display = !valgtKategori || kategori === valgtKategori ? "block" : "none";
     });
   });
+  
 });
