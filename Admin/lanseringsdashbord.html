@@ -60,7 +60,58 @@
             border-radius: var(--radius);
             overflow-x: auto;
             font-size: 0.85rem;
+            
         }
+        .status-box {
+        background: var(--bg-card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .category-group {
+        margin-bottom: 2rem;
+    }
+
+    .category-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .subcategory {
+        margin-left: 1rem;
+        color: var(--text-muted);
+    }
+
+    .todo-checklist {
+        list-style: none;
+        padding-left: 1rem;
+    }
+
+    .todo-checklist li {
+        margin-bottom: 0.4rem;
+    }
+
+    textarea,
+    input[type="text"] {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 6px;
+        border-radius: 4px;
+        border: 1px solid var(--border-base, #ccc);
+        background-color: var(--bg-card, #fff);
+        color: var(--text-base, #111);
+    }
+
+    pre {
+        background: var(--bg-card);
+        padding: 1rem;
+        border-radius: var(--radius);
+        overflow-x: auto;
+        font-size: 0.85rem;
+    }
 
     </style>
 </head>
@@ -77,7 +128,25 @@
             gjennom annonser og affiliate-lenker.
         </h3>
     </section>
-      
+     
+    <h1>🚀 Intern lanseringsstatus</h1>
+    
+    <section class="status-box">
+        <h2>🆕 Husk dette for nye HTML-sider</h2>
+        <ul class="todo-checklist">
+            <li><label><input type="checkbox" /> Riktig og unik &lt;title&gt; og &lt;meta description&gt;</label></li>
+            <li><label><input type="checkbox" /> Inkluder Font Awesome, Bootstrap og stilark</label></li>
+            <li><label><input type="checkbox" /> Lys/mørk modus-støtte via theme-tøff.css</label></li>
+            <li><label><input type="checkbox" /> Favicon (link rel="icon") i &lt;head&gt;</label></li>
+            <li><label><input type="checkbox" /> Dynamisk &lt;meta&gt;-beskrivelse via JS ved behov (eks: søkesider)</label>
+            </li>
+            <li><label><input type="checkbox" /> Bruk gjenbrukbare kort via .store-card og grid-system</label></li>
+            <li><label><input type="checkbox" /> ID-er og strukturer som matcher header/footer
+                    (div#header-placeholder)</label></li>
+            <li><label><input type="checkbox" /> Legg til i sitemap.xml (manuelt eller med script)</label></li>
+            <li><label><input type="checkbox" /> Test i mobil og desktop</label></li>
+        </ul>
+    </section>
 
     <h1>🚀 Intern lanseringsstatus</h1>
     <section class="status-box">

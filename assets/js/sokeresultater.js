@@ -1,4 +1,10 @@
 const query = new URLSearchParams(window.location.search).get("q") || "";
+// Dynamisk metadata for SEO og deling
+document.title = `Søkeresultater for "${query}" – Butikkoversikt.no`;
+document.querySelector('meta[name="description"]')?.setAttribute(
+  "content",
+  `Se nettbutikker, kategorier og guider relatert til "${query}" på Butikkoversikt.no.`
+);
 document.getElementById("search-term").textContent = query;
 
 fetch("assets/data/butikker.json")
