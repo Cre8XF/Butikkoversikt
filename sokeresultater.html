@@ -1,23 +1,60 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="no" data-theme="light">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Søkeresultater - Butikkoversikt.no</title>
-    <link rel="stylesheet" href="assets/css/all-cards.css" />
-    <link rel="stylesheet" href="assets/css/category-card.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/sokeresultater.css" />
     <link rel="stylesheet" href="assets/css/theme-tøff.css" />
 </head>
 
-<body>
+<body data-page="Søkeresultater">
+
+    <!-- Sticky Header -->
+    <div class="sticky-top bg-white shadow-sm z-1030" id="stickyHeaderFull">
+        <div id="header-placeholder"></div>
+        </div>
+
     <main class="container">
         <h1>Søkeresultater for: <span id="search-term"></span></h1>
-        <div id="results" class="results-grid"></div>
-    </main>
+    
+        <div class="mb-4">
+            <a href="index.html" class="btn btn-outline-primary">
+                ← Tilbake til forsiden
+            </a>
+        </div>
+    
+        <div class="row" id="results"></div>
 
-    <script src="assets/js/sokeresultater.js"></script>
+    </main>
+      
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Effekter og interaksjon -->
+    <script src="assets/js/effects/fade-in.js"></script>
+    
+    <!-- Forsidegeneratorer -->
+    <script src="assets/js/generate/forsiden/generate-forside-anbefalte.js"></script>
+    <script src="assets/js/generate/forsiden/generate-kampanjer-forside.js"></script>
+    <script src="assets/js/generate/forsiden/generate-trender.js"></script>
+    
+    <!-- Fellesfunksjoner -->
+    <script src="assets/js/load-ads.js"></script>
+    
+    <!-- Hoved -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/autocomplete-sok.js" defer></script>
+    <script src="assets/js/sokeresultater.js" defer></script>
+    <script src="assets/js/scroll-to-top.js"></script>  
 </body>
 
 </html>

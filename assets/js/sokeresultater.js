@@ -28,20 +28,35 @@ fetch("assets/data/butikker.json")
     }
 
     resultater.forEach(butikk => {
-      const card = document.createElement("div");
-      card.className = "store-card";
-      card.innerHTML = `
+      const col = document.createElement("div");
+      col.className = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4";
+    
+      const link = document.createElement("a");
+      link.href = butikk.url;
+      link.target = "_blank";
+      link.rel = "noopener";
+      link.className = "store-card";
+    
+      link.innerHTML = `
         <div class="store-card-img">
           <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" />
         </div>
         <div class="store-card-body">
           <h4>${butikk.name}</h4>
           <p>${butikk.description || ""}</p>
-          <a href="${butikk.url}" target="_blank" rel="noopener">Besøk nettbutikken</a>
+          ${
+            butikk.eksternFrakt
+              ? `<div class="frakt-info">🌍 <span class="tooltip-text" title="${butikk.fraktKommentar || 'Toll og MVA kan påløpe.'}">Sender fra utlandet</span></div>`
+              : ""
+          }
         </div>
       `;
-        resultContainer.appendChild(card);
-      });
+    
+      col.appendChild(link);
+      resultContainer.appendChild(col);
+    });
+    
+    
     })
     .catch(error => {
       console.error("Error fetching or parsing butikker.json:", error);
