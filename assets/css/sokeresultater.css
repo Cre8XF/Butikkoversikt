@@ -72,3 +72,14 @@
   z-index: 5;
   position: relative;
 }
+#infoFilterStatus.sticky {
+  position: sticky;
+  top: 0.5rem;
+  z-index: 1020;
+}
+.sticky-info {
+  position: sticky;
+  top: 0; /* evt. f.eks. 60px om du har sticky navbar */
+  z-index: 1040;
+  cursor: pointer;
+}

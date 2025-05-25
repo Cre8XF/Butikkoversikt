@@ -88,4 +88,11 @@ document.addEventListener("DOMContentLoaded", () => {
       info.classList.remove("d-none");
     }
   }
+  document.getElementById("infoFilterStatus").addEventListener("click", () => {
+    const container = document.getElementById("kategoriContainer");
+    if (container) {
+      container.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+  
 });
