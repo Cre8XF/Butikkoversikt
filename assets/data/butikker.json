@@ -2416,32 +2416,6 @@
     "tagCount": 6
   },
   {
-    "name": "Terrariedyr.no",
-    "image": "assets/images/butikker-webp/terrariedyr.webp",
-    "alt": "Terrariedyr",
-    "category": "Dyrebutikker",
-    "subcategory": [
-      "Reptil og terrarie"
-    ],
-    "url": "https://www.terrariedyr.no",
-    "description": "Terrariedyr.no er en spesialbutikk for reptiler med alt av terrarier, lys, varme og fôr.",
-    "topp25": false,
-    "forside": false,
-    "ny": true,
-    "annonse": false,
-    "tags": [
-      "reptil",
-      "slange",
-      "skilpadde",
-      "terrarium",
-      "varmelampe",
-      "reptilfôr"
-    ],
-    "rank": "",
-    "ukensAnbefalte": "",
-    "tagCount": 6
-  },
-  {
     "name": "Elkjøp",
     "image": "assets/images/butikker-webp/elkjop.webp",
     "alt": "Elkjøp",
@@ -5162,7 +5136,7 @@
   },
   {
     "name": "Ateljé Margaretha",
-    "image": "assets/images/butikker-webp/atelje-margaretha.webp",
+    "image": "assets/images/butikker-webp/margaretha.webp",
     "alt": "Ateljé Margaretha",
     "category": "Gaver, gadgets og hobby",
     "subcategory": [
@@ -5195,7 +5169,7 @@
   },
   {
     "name": "Gamezone",
-    "image": "assets/images/butikker-webp/gamezone-no.webp",
+    "image": "assets/images/butikker-webp/gamezone.webp",
     "alt": "Gamezone",
     "category": "Gaming og tilbehør",
     "subcategory": [
@@ -6041,7 +6015,7 @@
   },
   {
     "name": "Gamezone.no",
-    "image": "assets/images/butikker-webp/gamezone-no.webp",
+    "image": "assets/images/butikker-webp/gamezone.webp",
     "alt": "Gamezone",
     "category": "Elektronikk og data",
     "subcategory": [
@@ -6103,7 +6077,7 @@
       "reseptfri",
       "hjemlevering"
     ],
-    "image": "assets/images/butikker-webp/apotek.webp",
+    "image": "assets/images/butikker-webp/apotekfordeg.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
     "forside": false,
@@ -6271,7 +6245,7 @@
       "grønn",
       "hårpleie"
     ],
-    "image": "assets/images/butikker-webp/rå.webp",
+    "image": "assets/images/butikker-webp/raa.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
     "forside": false,
@@ -6343,7 +6317,7 @@
       "vitaminer",
       "sunnhet"
     ],
-    "image": "assets/images/butikker-webp/isblå.no.webp",
+    "image": "assets/images/butikker-webp/isblaa.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
     "forside": false,
@@ -6391,7 +6365,7 @@
       "rimelig",
       "beauty"
     ],
-    "image": "assets/images/butikker-webp/makeup.webp",
+    "image": "assets/images/butikker-webp/makeupmekka.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
     "forside": false,
@@ -6583,7 +6557,7 @@
       "spill",
       "gamer"
     ],
-    "image": "assets/images/butikker-webp/gamezone-no.webp",
+    "image": "assets/images/butikker-webp/gamezone.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
     "forside": false,
@@ -6775,7 +6749,7 @@
       "nostalgi",
       "samler"
     ],
-    "image": "assets/images/butikker-webp/retro-norge-no.webp",
+    "image": "assets/images/butikker-webp/retronorge.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
     "forside": false,
