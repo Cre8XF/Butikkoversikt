@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="no">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Tag-verktøy - Adminpanel</title>
-    <link rel="stylesheet" href="../assets/css/theme-tøff.css">
+    <link href="../assets/css/theme-tøff.css" rel="stylesheet" />
     <style>
         body {
             font-family: var(--font-base);
@@ -88,16 +89,17 @@
 <body>
     <h1>🛠️ Tag-verktøy - Adminpanel</h1>
     <p id="storeCount"></p>
+    <button class="save-btn" onclick="leggTilTagsFraUnderkategori()">🏷️ Foreslå tags fra underkategori</button>
     <button class="save-btn" onclick="finnDubletter()">🔍 Finn dubletter</button>
     <button class="save-btn" onclick="eksporterJSON()">💾 Eksporter som JSON</button>
     <button class="save-btn" onclick="fjernUonskedeTags()">🧹 Fjern uønskede tags fra alle</button>
-    <input type="text" id="search" placeholder="Søk etter tag eller kategori...">
+    <input id="search" placeholder="Søk etter tag eller kategori..." type="text" />
     <table class="tag-table">
         <thead>
             <tr>
                 <th onclick="sortTableBy('category')">Kategori ⬍</th>
                 <th onclick="sortTableBy('name')">Butikknavn ⬍</th>
-                <th>Tags</th>
+                <th onclick="sortTableBy('tagCount')">Antall tags ⬍</th>
                 <th>Beskrivelse</th>
                 <th onclick="sortTableBy('forside')">Forside ⬍</th>
                 <th>Rediger tags</th>
@@ -111,7 +113,6 @@
         </thead>
         <tbody id="tagTableBody"></tbody>
     </table>
-
     <script>
         const uonskede = [
             "nettbutikk", "tilbehør", "alt mulig", "varer", "ting",
@@ -259,6 +260,161 @@
             });
             alert(`Fant ${resultat.length} butikker med dupliserte navn.`);
             renderTable(resultat);
+        }
+    </script>
+    <script>
+        function sortTableBy(key) {
+            if (currentSortKey === key) {
+                sortAscending = !sortAscending;
+            } else {
+                currentSortKey = key;
+                sortAscending = true;
+            }
+
+            globalData.forEach(b => {
+                if (key === 'tagCount') {
+                    b.tagCount = (b.tags || []).length;
+                }
+            });
+
+            globalData.sort((a, b) => {
+                let aVal = a[key];
+                let bVal = b[key];
+
+                if (typeof aVal === 'string') aVal = aVal.toLowerCase();
+                if (typeof bVal === 'string') bVal = bVal.toLowerCase();
+
+                if (aVal < bVal) return sortAscending ? -1 : 1;
+                if (aVal > bVal) return sortAscending ? 1 : -1;
+                return 0;
+            });
+
+            renderTable(globalData);
+        }
+    </script>
+    <script>
+        function leggTilTagsFraUnderkategori() {
+            const tagMal = {
+                // Klær og mote
+                "Dameklær": ["dameklær", "fashion", "mote", "outfit", "stil", "komfort"],
+                "Herreklær": ["herreklær", "herremote", "outfit", "casual", "formelt"],
+                "Barneklær": ["barneklær", "barnemote", "klær til barn", "komfort", "småbarnsklær"],
+                "Sko og tilbehør": ["sko", "sandaler", "boots", "sneakers", "vesker", "belte", "solbriller", "tilbehør", "hårpynt", "hansker"],
+                "Sportsklær": ["treningsklær", "løpeklær", "yogatøy", "funksjonstøy", "aktiv livsstil", "idrettsklær"],
+
+                // Barn og baby
+                "Babyutstyr": ["baby", "smokk", "flaske", "bleier", "stelleveske", "vogn", "barnesete", "amme", "babyshower"],
+                "Leker": ["leker", "leketøy", "spill", "puslespill", "pedagogisk", "kreativ lek", "bamse", "dukker", "lego"],
+
+                // Bøker og media
+                "Bøker": ["bøker", "romaner", "litteratur", "papirbok", "klassikere", "bokhandel"],
+                "E-bøker": ["e-bok", "digital bok", "kindle", "pdf-bok", "elektronisk", "lesebrett"],
+                "Fagbøker": ["fagbøker", "studier", "utdanning", "lærebok", "akademisk", "pensum"],
+                "Lyd- og lydbøker": ["lydbøker", "audiobok", "lyttebok", "opplesning", "fortelling"],
+
+                // Digitale tjenester
+                "Mobilabonnement": ["mobil", "mobilabonnement", "data", "4G", "5G", "telefoni", "SIM-kort"],
+                "Nettkurs": ["nettkurs", "e-læring", "utdanning", "kompetanse", "kurs", "online læring"],
+                "Strømleverandører": ["strøm", "strømleverandør", "strømavtale", "spotpris", "energileverandør"],
+                "Strømmetjenester": ["strømming", "filmer", "serier", "TV", "musikk", "streaming", "abonnement"],
+                "Treningsapper og programmer": ["treningsapp", "online trening", "fitness", "løping", "styrketrening"],
+                "VPN og Nettsikkerhet": ["VPN", "nettsikkerhet", "anonymitet", "personvern", "IP-skjuling", "kryptering"],
+                "Webhosting & Domene": ["webhotell", "hosting", "domene", "nettside", "e-post", "server", "cPanel"],
+
+                // Dyrebutikker
+                "Fisk og akvarium": ["akvarium", "fisk", "fiskefôr", "vanntest", "akvarieutstyr", "akvariedekor"],
+                "Fôr og ernæring": ["dyrefôr", "hundemat", "kattemat", "vitaminer", "dyreernæring", "kosthold"],
+                "Fugl": ["fugl", "bur", "fuglefrø", "papegøye", "kanarifugl", "fugleleker", "voliere"],
+                "Hund": ["hund", "halsbånd", "sele", "hundeseng", "hundeleker", "hundebur"],
+                "Reptil og terrarie": ["reptil", "slange", "skilpadde", "terrarium", "varmelampe", "reptilfôr"],
+
+                // Elektronikk og data
+                "Elektronikk": ["elektronikk", "teknologi", "smarte enheter", "kabler", "elektriske produkter"],
+                "Lyd og bilde": ["høyttaler", "headset", "TV", "projektor", "lydanlegg", "hjemmekino"],
+                "Mobil og nettbrett": ["mobil", "smarttelefon", "nettbrett", "telefondeksel", "Android", "iOS"],
+                "Smarthus og kabler": ["smarthus", "sensor", "smartlys", "home automation", "strømstyring"],
+                "Spill og konsoller": ["spill", "konsoll", "PlayStation", "Xbox", "Nintendo", "flerspiller"],
+                "Teknologinyheter": ["tech-nyheter", "gadgets", "produktomtaler", "lansering"],
+
+                // Gaming og tilbehør
+                "Brettspill": ["brettspill", "familiespill", "strategispill", "kortspill", "spillkveld"],
+                "E-sportutstyr": ["e-sport", "gamingmus", "gamingtastatur", "headset", "turnering"],
+                "Gaming-PC og skjermer": ["gaming-PC", "skjerm", "FPS", "grafikkort", "prosessor", "bygge PC"],
+                "Gaming-tilbehør": ["spillstol", "RGB", "musmatte", "headset-holder", "gamingutstyr"],
+                "Konsoller": ["PlayStation", "Xbox", "Nintendo Switch", "spillpakke", "familiespill"],
+                "PC og datatilbehør": ["mus", "tastatur", "USB-hub", "webkamera", "minnepinne"],
+
+                // Gaver og gadgets
+                "Gadgets og gaver": ["gadgets", "gaver", "smarte ting", "teknologi", "gaveideer", "personlig gave", "morsomme produkter"],
+                "Alt-mulig butikker": ["nettbutikk", "variert utvalg", "alt mulig", "stor katalog", "import"],
+                "Utenlandske": ["internasjonal", "import", "frakt", "utenlandsk butikk", "lav pris"],
+
+                // Helse og egenpleie
+                "Hud- og kroppspleie": ["hudpleie", "kroppskrem", "dusjsåpe", "fuktighetskrem", "naturlig hudpleie"],
+                "Hår- og skjønnhetspleie": ["shampoo", "hårkur", "styling", "skjønnhet", "hårpleie"],
+                "Kosmetikk og sminke": ["sminke", "leppestift", "øyenskygge", "foundation", "makeup"],
+                "Naturlige produkter": ["naturlig", "økologisk", "vegansk", "bærekraftig", "plantebasert"],
+                "Sminke og kosmetikk": ["sminke", "kosmetikk", "foundation", "makeup", "øyne"],
+                "Trening og velvære": ["trening", "kosttilskudd", "velvære", "yoga", "balanse", "energi"],
+
+                // Hobby og DIY
+                "DIY kits og prosjekter": ["DIY", "byggesett", "lim", "oppskrifter", "perler", "prosjekt", "hobby", "håndverk"],
+                "Garn og strikk": ["strikking", "garn", "hekling", "oppskrifter", "pinner", "ull", "håndarbeid"],
+                "Kunst og tegneutstyr": ["tegning", "maling", "akvarell", "blyanter", "skissebok", "kunstnerutstyr"],
+                "Radiostyrte produkter": ["RC", "radiostyrt", "bil", "båt", "drone", "motor", "modellbygging"],
+
+                // Mat og drikke
+                "Dagligvarer": ["dagligvarer", "pålegg", "kaffe", "frossenmat", "økologisk mat"],
+                "Frokost og levering": ["frokost", "brød", "morgenmat", "matlevering", "rask levering"],
+                "Matkasser": ["matkasse", "oppskrifter", "middag", "levering", "familievennlig"],
+                "Vin og bartilbehør": ["vin", "vinkjøler", "glass", "bartilbehør", "drinktilbehør"],
+                "Vin og brennevin": ["brennevin", "whisky", "cocktail", "smaking", "alkohol"],
+
+                // Møbler og interiør
+                "Belysning": ["lamper", "lys", "pærer", "taklampe", "stemningsbelysning"],
+                "Dekor og interiør": ["interiør", "dekor", "bilder", "pynt", "tepper", "nordisk design"],
+                "Møbler": ["sofa", "bord", "stoler", "seng", "oppbevaring", "skandinavisk stil"],
+
+                // Reise og opplevelser
+                "Bager og kofferter": ["koffert", "bag", "reiseveske", "bagasje", "trillebag"],
+                "Kart og guider": ["reiseguider", "kart", "turkart", "guidebok", "destinasjon"],
+                "Reiseutstyr": ["reiseadapter", "nakkepute", "toalettmappe", "organisering", "reiseutstyr"],
+                "Tur- og friluftsutstyr": ["friluft", "tur", "ryggsekk", "sovepose", "telt", "villmark"],
+
+                // Sport og fritid
+                "Friluft og tur": ["friluft", "tur", "sovepose", "villmark", "fjell", "telt", "utendørs"],
+                "Treningsklær": ["treningsklær", "tight", "sports-bh", "aktiv livsstil", "funksjonstøy"],
+                "Sykkel og sykkelutstyr": ["sykkel", "sykkelhjelm", "elsykkel", "sykkellykt", "verktøy"],
+                "Sportsklær": ["løpeklær", "sportstøy", "aktivitetsklær", "yogatøy", "funksjonsklær"],
+                "Treningsutstyr": ["manualer", "treningsmatte", "styrketrening", "strikk", "apparat"],
+
+                // Underholdning og popkultur
+                "Anime og manga": ["anime", "manga", "figurer", "otaku", "cosplay", "fanartikler"],
+                "Digitale spillnøkler": ["spillnøkkel", "Steam", "PC-spill", "nedlasting", "rabattkode"],
+                "Figurer og samleobjekter": ["samleobjekter", "figurer", "merch", "POP!", "statuetter"],
+                "Film og musikk": ["DVD", "blu-ray", "vinyl", "CD", "filmkveld", "platebutikk"]
+            };
+            // Oppdaterer alle butikker med tags basert på underkategori
+
+            globalData.forEach((butikk, index) => {
+                const sub = butikk.subcategory || [];
+                let nyeTags = [];
+                if (Array.isArray(sub)) {
+                    sub.forEach(underkat => {
+                        const tags = tagMal[underkat.trim()];
+                        if (tags) nyeTags.push(...tags);
+                    });
+                } else if (typeof sub === "string") {
+                    const tags = tagMal[sub.trim()];
+                    if (tags) nyeTags.push(...tags);
+                }
+                if (nyeTags.length > 0) {
+                    globalData[index].tags = [...new Set(nyeTags)];
+
+                }
+            });
+
+            renderTable(globalData);
         }
     </script>
 </body>

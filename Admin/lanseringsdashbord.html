@@ -351,76 +351,70 @@
         };
 
         fetch('../assets/data/butikker.json')
-            .then(res => res.json())
-            .then(data => {
-                const kategorier = {};
+                .then(res => res.json())
+                .then(data => {
+                    const kategorier = {};
 
-                data.forEach(butikk => {
-                    if (butikk.category) {
-                        const kategorierArray = Array.isArray(butikk.category) ? butikk.category : [butikk.category];
+                    data.forEach(butikk => {
+                        if (butikk.category) {
+                            const kat = butikk.category;
+                            if (!kategorier[kat]) kategorier[kat] = {};
 
-                        kategorierArray.forEach(cat => {
-                            if (!kategorier[cat]) kategorier[cat] = {};
-
-                            if (butikk.subcategory) {
-                                const subArray = Array.isArray(butikk.subcategory) ? butikk.subcategory : [butikk.subcategory];
-                                subArray.forEach(sub => {
-                                    kategorier[cat][sub] = (kategorier[cat][sub] || 0) + 1;
-                                });
-                            }
-                        });
-                    }
-                });
-
-                const kategoriDiv = document.getElementById("kategoriStatus");
-
-                Object.entries(kategorier).forEach(([cat, subs]) => {
-                    const total = Object.values(subs).reduce((a, b) => a + b, 0);
-
-                    const group = document.createElement("div");
-                    group.className = "category-group";
-
-                    const title = document.createElement("div");
-                    title.className = "category-title";
-                    title.textContent = `${cat} (${total} butikker)`;
-                    group.appendChild(title);
-
-                    Object.entries(subs).forEach(([sub, count]) => {
-                        const line = document.createElement("div");
-                        line.className = "subcategory";
-                        line.textContent = `- ${sub} (${count})`;
-                        group.appendChild(line);
+                            const subs = Array.isArray(butikk.subcategory) ? butikk.subcategory : [butikk.subcategory];
+                            subs.forEach(sub => {
+                                if (!kategorier[kat][sub]) kategorier[kat][sub] = { count: 0, butikker: [] };
+                                kategorier[kat][sub].count++;
+                                kategorier[kat][sub].butikker.push(butikk.name);
+                            });
+                        }
                     });
 
-                    const checklist = document.createElement("ul");
-                    checklist.className = "todo-checklist";
-                    const todos = ["Bilder lagt til", "Underkategorier definert", "SEO klar", "Tags gjennomgått og oppdatert"];
+                    const kategoriDiv = document.getElementById("kategoriStatus");
 
+                    Object.entries(kategorier).forEach(([cat, subs]) => {
+                        const total = Object.values(subs).reduce((sum, subdata) => sum + subdata.count, 0);
 
-                    todos.forEach((item, i) => {
-                        const id = `${cat.replace(/\s+/g, '_')}-todo-${i}`;
-                        const li = document.createElement("li");
-                        const label = document.createElement("label");
-                        const checkbox = document.createElement("input");
-                        checkbox.type = "checkbox";
-                        checkbox.id = id;
-                        checkbox.checked = localStorage.getItem(id) === 'true';
-                        checkbox.addEventListener('change', () => {
-                            localStorage.setItem(id, checkbox.checked);
+                        const group = document.createElement("div");
+                        group.className = "category-group";
+
+                        const title = document.createElement("div");
+                        title.className = "category-title";
+                        title.textContent = `${cat} (${total} butikker)`;
+                        group.appendChild(title);
+
+                        Object.entries(subs).forEach(([sub, data]) => {
+                            const subDiv = document.createElement("div");
+                            subDiv.className = "subcategory";
+                            subDiv.innerHTML = `- <strong>${sub}</strong> (${data.count})<br><small>${data.butikker.join(", ")}</small>`;
+                            group.appendChild(subDiv);
                         });
-                        label.appendChild(checkbox);
-                        label.appendChild(document.createTextNode(" " + item));
-                        li.appendChild(label);
-                        checklist.appendChild(li);
+
+                        const checklist = document.createElement("ul");
+                        checklist.className = "todo-checklist";
+                        const todos = ["Bilder lagt til", "Underkategorier definert", "SEO klar", "Tags gjennomgått og oppdatert"];
+
+                        todos.forEach((item, i) => {
+                            const id = `${cat.replace(/\s+/g, '_')}-todo-${i}`;
+                            const li = document.createElement("li");
+                            const label = document.createElement("label");
+                            const checkbox = document.createElement("input");
+                            checkbox.type = "checkbox";
+                            checkbox.id = id;
+                            checkbox.checked = localStorage.getItem(id) === 'true';
+                            checkbox.addEventListener('change', () => {
+                                localStorage.setItem(id, checkbox.checked);
+                            });
+                            label.appendChild(checkbox);
+                            label.appendChild(document.createTextNode(" " + item));
+                            li.appendChild(label);
+                            checklist.appendChild(li);
+                        });
+
+                        group.appendChild(checklist);
+                        kategoriDiv.appendChild(group);
                     });
-
-                    group.appendChild(checklist);
-                    kategoriDiv.appendChild(group);
                 });
-
-                persistChecklist();
-            });
-    </script>
+        </script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const commentFields = document.querySelectorAll("textarea, input[type='text']");

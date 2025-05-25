@@ -13,20 +13,21 @@ fetch("assets/data/butikker.json")
     const resultContainer = document.getElementById("results");
     const lowerQuery = query.toLowerCase();
 
-    const resultater = butikker.filter(butikk =>
-      butikk.name.toLowerCase().includes(lowerQuery) ||
-      (butikk.description && butikk.description.toLowerCase().includes(lowerQuery)) ||
-      ((Array.isArray(butikk.tags) ? butikk.tags.join(" ") : butikk.tags || "")
-        .toLowerCase()
-        .includes(lowerQuery)) ||
-      ((Array.isArray(butikk.category) ? butikk.category.join(" ") : butikk.category || "")
-        .toLowerCase()
-        .includes(lowerQuery)) ||
-      ((Array.isArray(butikk.subcategory) ? butikk.subcategory.join(" ") : butikk.subcategory || "")
-        .toLowerCase()
-        .includes(lowerQuery))
-    );
-    
+    const resultater = butikker.filter(butikk => {
+      const name = (butikk.name || "").toLowerCase();
+      const description = (butikk.description || "").toLowerCase();
+      const tags = Array.isArray(butikk.tags) ? butikk.tags.map(t => t.toLowerCase()) : [];
+      const category = (butikk.category || "").toLowerCase();
+      const subcategories = Array.isArray(butikk.subcategory) ? butikk.subcategory.map(s => s.toLowerCase()) : [];
+
+      return (
+        name.includes(lowerQuery) ||
+        tags.some(tag => tag === lowerQuery || tag.includes(lowerQuery)) ||
+        subcategories.some(sub => sub === lowerQuery || sub.includes(lowerQuery)) ||
+        category.includes(lowerQuery) ||
+        description.includes(lowerQuery)
+      );
+    });
 
     if (resultater.length === 0) {
       resultContainer.innerHTML = "<p>Ingen treff.</p>";
@@ -36,13 +37,13 @@ fetch("assets/data/butikker.json")
     resultater.forEach(butikk => {
       const col = document.createElement("div");
       col.className = "col-12 col-sm-6 col-md-4 col-lg-3 mb-4";
-    
+
       const link = document.createElement("a");
       link.href = butikk.url;
       link.target = "_blank";
       link.rel = "noopener";
       link.className = "store-card";
-    
+
       link.innerHTML = `
         <div class="store-card-img">
           <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" />
@@ -57,15 +58,12 @@ fetch("assets/data/butikker.json")
           }
         </div>
       `;
-    
+
       col.appendChild(link);
       resultContainer.appendChild(col);
     });
-    
-    
-    })
-    .catch(error => {
-      console.error("Error fetching or parsing butikker.json:", error);
-      document.getElementById("results").innerHTML = "<p>Kunne ikke hente butikkdata.</p>";
-    });
-    
+  })
+  .catch(error => {
+    console.error("Feil ved henting av butikker:", error);
+    document.getElementById("results").innerHTML = "<p>Kunne ikke laste søkeresultater.</p>";
+  });
