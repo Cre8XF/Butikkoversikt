@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const info = document.getElementById("infoFilterStatus");
     if (info) {
-      info.textContent = `🔎 Viser treff for “${kategoriNavn}” – bla ned for å se butikkene`;
+      info.textContent = `🔎 Viser nå treff for “${kategoriNavn}” – bla ned for å se butikkene`;
       info.classList.remove("d-none");
     }
   }
