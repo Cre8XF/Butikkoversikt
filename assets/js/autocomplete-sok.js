@@ -153,5 +153,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     });
-  
+    const visAlleWrapper = document.getElementById("seAlleTreffWrapper");
+  const visAlleKnapp = document.getElementById("visAlleTreff");
+
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.trim();
+    visAlleWrapper.style.display = query.length >= 2 ? "block" : "none";
+  });
+
+  visAlleKnapp?.addEventListener("click", () => {
+    const query = searchInput.value.trim();
+    if (query.length > 0) {
+      window.location.href = `sokeresultater.html?q=${encodeURIComponent(query)}`;
+    }
+  });
+
 });
