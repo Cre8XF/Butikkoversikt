@@ -1,74 +1,164 @@
 [
-  {
+    {
       "title": "20% på egenpleie hos Apotek1",
-      "image": "assets/images/kampanjer/apotek1-tilbud.jpg",
+      "image": "assets/images/kampanjer/apotek1-tilbud.webp",
       "url": "https://www.apotek1.no",
       "description": "Få 20 % rabatt på egenpleieprodukter denne uken!",
       "store": "Apotek1",
-      "expiry": "Gyldig til 30. april 2025",
-      "category": "Helse og skjønnhet"
-  },
-  {
+      "expiry": "2025-04-30",
+      "category": "Helse og skjønnhet",
+      "affiliate": false,
+      "affiliateUrl": "https://www.apotek1.no",
+      "highlight": false,
+      "priority": 0
+    },
+    {
       "title": "Sommerkupp hos Elkjøp",
-      "image": "assets/images/kampanjer/elkjop-sommer.jpg",
+      "image": "assets/images/kampanjer/elkjop-sommer.webp",
       "url": "https://www.elkjop.no",
       "description": "Spar stort på elektronikk før ferien starter!",
       "store": "Elkjøp",
-      "expiry": "Gyldig til 5. mai 2025",
-      "category": "Elektronikk"
-  },
-  {
+      "expiry": "",
+      "category": "Elektronikk",
+      "affiliate": false,
+      "affiliateUrl": "https://www.elkjop.no",
+      "highlight": false,
+      "priority": 0
+    },
+    {
       "title": "3 for 2 på barneklær hos Jollyroom",
-      "image": "assets/images/kampanjer/jollyroom-barn.jpg",
+      "image": "assets/images/kampanjer/jollyroom-barn.webp",
       "url": "https://www.jollyroom.no",
       "description": "Kjøp 3, betal for 2 – gjelder utvalgte klær!",
       "store": "Jollyroom",
-      "expiry": "Gyldig til 10. mai 2025",
-      "category": "Barn og Baby"
-  },
-  {
+      "expiry": "",
+      "category": "Barn og Baby",
+      "affiliate": false,
+      "affiliateUrl": "https://www.jollyroom.no",
+      "highlight": false,
+      "priority": 0
+    },
+    {
       "title": "50% rabatt på utvalgte bøker hos Ark",
-      "image": "assets/images/kampanjer/ark-boker.jpg",
+      "image": "assets/images/kampanjer/ark-boker.webp",
       "url": "https://www.ark.no",
       "description": "Få 50 % rabatt på utvalgte bøker denne uken!",
       "store": "Ark",
-      "expiry": "Gyldig til 15. mai 2025",
-      "category": "Bøker og Underholdning"
-  },
-  {
+      "expiry": "",
+      "category": "Bøker og Underholdning",
+      "affiliate": false,
+      "affiliateUrl": "https://www.ark.no",
+      "highlight": false,
+      "priority": 0
+    },
+    {
       "title": "Kampanje på treningsutstyr hos XXL",
-      "image": "assets/images/kampanjer/xxl-trening.jpg",
+      "image": "assets/images/kampanjer/xxl-trening.webp",
       "url": "https://www.xxl.no",
       "description": "Spar penger på treningsutstyr og klær!",
       "store": "XXL",
-      "expiry": "Gyldig til 20. mai 2025",
-      "category": "Sport og Fritid"
-  },
-  {
+      "expiry": "",
+      "category": "Sport og Fritid",
+      "affiliate": false,
+      "affiliateUrl": "https://www.xxl.no",
+      "highlight": false,
+      "priority": 0
+    },
+    {
       "title": "Salg på barneleker hos Lekmer",
-      "image": "assets/images/kampanjer/lekmer-leker.jpg",
+      "image": "assets/images/kampanjer/lekmer-leker.webp",
       "url": "https://www.lekmer.no",
       "description": "Spar opptil 40 % på utvalgte barneleker!",
       "store": "Lekmer",
-      "expiry": "Gyldig til 10. juni 2025",
-      "category": "Leker og Spill"
-  },
-  {
+      "expiry": "",
+      "category": "Leker og Spill",
+      "affiliate": false,
+      "affiliateUrl": "https://www.lekmer.no",
+      "highlight": false,
+      "priority": 0
+    },
+    {
       "title": "Rabatt på kjøkkenutstyr hos Jernia",
-      "image": "assets/images/kampanjer/jernia-kjokken.jpg",
+      "image": "assets/images/kampanjer/jernia-kjokken.webp",
       "url": "https://www.jernia.no",
       "description": "Få 20 % rabatt på kjøkkenutstyr denne uken!",
       "store": "Jernia",
-      "expiry": "Gyldig til 5. juni 2025",
-      "category": "Hjem og Interiør"
-  },
-  {
+      "expiry": "",
+      "category": "Hjem og Interiør",
+      "affiliate": false,
+      "affiliateUrl": "https://www.jernia.no",
+      "highlight": false,
+      "priority": 0
+    },
+    {
       "title": "Kampanje på smykker hos Bjørklund",
-      "image": "assets/images/kampanjer/bjorklund-smykker.jpg",
+      "image": "assets/images/kampanjer/bjorklund-smykker.webp",
       "url": "https://www.bjorklund.no",
       "description": "Få 20 % rabatt på utvalgte smykker!",
       "store": "Bjørklund",
-      "expiry": "Gyldig til 30. juni 2025",
-      "category": "Klær og Mote"
-  }
-]
+      "expiry": "",
+      "category": "Klær og Mote",
+      "affiliate": false,
+      "affiliateUrl": "https://www.bjorklund.no",
+      "highlight": false,
+      "priority": 0
+    },
+    [
+      {
+        "title": "Ukens tilbud hos Elkjøp",
+        "image": "assets/images/kampanjer/elkjop-ukens-tilbud.webp",
+        "url": "https://www.elkjop.no/kampanje/ukens-tilbud",
+        "description": "Spar stort på TV, data, gaming, mobil og hvitevarer.",
+        "expiry": "2025-06-02",
+        "affiliate": false,
+        "affiliateUrl": "",
+        "highlight": false,
+        "priority": 0
+      },
+      {
+        "title": "Månedens gamingdeals",
+        "image": "assets/images/kampanjer/komplett-gamingdeals.webp",
+        "url": "https://www.komplett.no/",
+        "description": "Gode tilbud på gamingprodukter hos Komplett.",
+        "expiry": "2025-06-30",
+        "affiliate": false,
+        "affiliateUrl": "",
+        "highlight": false,
+        "priority": 0
+      },
+      {
+        "title": "Ukens tilbud hos SPAR",
+        "image": "assets/images/kampanjer/spar-ukens-tilbud.webp",
+        "url": "https://spar.no/nettbutikk/varer/tilbud",
+        "description": "Gode tilbud på dagligvarer og husholdningsprodukter.",
+        "expiry": "2025-06-02",
+        "affiliate": false,
+        "affiliateUrl": "",
+        "highlight": false,
+        "priority": 0
+      },
+      {
+        "title": "Kampanjer hos Sport 1",
+        "image": "assets/images/kampanjer/sport1-kampanjer.webp",
+        "url": "https://www.sport1.no/kampanjer",
+        "description": "Fantastiske tilbud på sportsutstyr, klær og sko.",
+        "expiry": "2025-06-15",
+        "affiliate": false,
+        "affiliateUrl": "",
+        "highlight": false,
+        "priority": 0
+      },
+      {
+        "title": "Salg hos Clas Ohlson",
+        "image": "assets/images/kampanjer/clasohlson-salg.webp",
+        "url": "https://www.clasohlson.com",
+        "description": "Spar opptil 50% på utvalgte varer innen hjem og fritid.",
+        "expiry": "2025-06-10",
+        "affiliate": false,
+        "affiliateUrl": "",
+        "highlight": false,
+        "priority": 0
+      }
+    ]
+    
+  ]

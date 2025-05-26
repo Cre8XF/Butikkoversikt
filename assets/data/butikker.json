@@ -725,32 +725,36 @@
     "kampanje": ""
   },
   {
-    "name": "Lyko.no",
-    "image": "assets/images/butikker-webp/lyko.webp",
-    "alt": "Lyko.no",
+    "name": "Lyko",
+    "url": "https://www.lyko.com/no",
     "category": "Helse og egenpleie",
     "subcategory": [
       "Hår- og skjønnhetspleie"
     ],
-    "url": "https://www.lyko.com/no",
-    "description": "Lyko tilbyr et av Nordens største utvalg innen skjønnhet og hårpleie, med over 40 000 produkter og rask levering fra sitt lager i Sverige.",
-    "topp25": false,
+    "image": "assets/images/butikker-webp/lyko.webp",
+    "alt": "Lyko",
+    "description": "Lyko tilbyr produkter for hår, hud og skjønnhet med bredt utvalg og rask levering.",
+    "topp25": true,
     "forside": false,
     "ny": false,
-    "annonse": false,
+    "annonse": true,
     "tags": [
+      "hår",
+      "hud",
+      "sminke",
+      "produkter",
       "shampoo",
       "hårkur",
       "styling",
-      "skjønnhet",
       "hårpleie"
     ],
-    "rank": "",
-    "ukensAnbefalte": "",
     "tagCount": 5,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": ""
+    "partner": true,
+    "affiliate": true,
+    "affiliateUrl": "https://track.adtraction.com/t/t?a=xxxxxx&as=yyyyyy",
+    "kampanje": true,
+    "ukensAnbefalte": false,
+    "eksternFrakt": false
   },
   {
     "name": "nordicfeel.no",
@@ -808,32 +812,39 @@
     "ukensAnbefalte": ""
   },
   {
-    "name": "Blivakker.no",
-    "image": "assets/images/butikker-webp/blivakker.webp",
-    "alt": "BliVakker",
+    "name": "Blivakker",
+    "url": "https://www.blivakker.no/",
     "category": "Helse og egenpleie",
     "subcategory": [
-      "Hud- og kroppspleie"
+      "Hud- og kroppspleie",
+      "Kosmetikk og sminke"
     ],
-    "url": "https://www.blivakker.no",
-    "description": "Blivakker.no er en av Norges største nettbutikker for skjønnhet og egenpleie.",
-    "topp25": false,
-    "forside": false,
+    "image": "assets/images/butikker-webp/blivakker.webp",
+    "alt": "Blivakker",
+    "description": "Blivakker.no tilbyr skjønnhetsprodukter, sminke og hudpleie til svært gode priser.",
+    "topp25": true,
+    "forside": true,
     "ny": false,
-    "annonse": false,
+    "annonse": true,
     "tags": [
+      "sminke",
       "hudpleie",
+      "kosmetikk",
+      "skjønnhet",
+      "hår",
+      "parfyme",
       "kroppskrem",
       "dusjsåpe",
       "fuktighetskrem",
       "naturlig hudpleie"
     ],
-    "rank": "",
-    "ukensAnbefalte": "",
-    "tagCount": 5,
+    "tagCount": 6,
     "partner": true,
     "affiliate": true,
-    "kampanje": ""
+    "affiliateUrl": "https://track.adtraction.com/t/t?a=xxxxxx&as=yyyyyy",
+    "kampanje": true,
+    "ukensAnbefalte": true,
+    "eksternFrakt": false
   },
   {
     "name": "Barnevognhuset.no",
@@ -976,33 +987,40 @@
     "kampanje": ""
   },
   {
-    "name": "GetInspired.no",
-    "image": "assets/images/butikker-webp/getinspired.webp",
-    "alt": "GetInspired.no",
+    "name": "GetInspired",
+    "url": "https://www.getinspired.no/",
     "category": "Klær og mote",
     "subcategory": [
-      "Sportsklær"
+      "Sportsklær",
+      "Dameklær"
     ],
-    "url": "https://www.getinspired.no/",
-    "description": "GetInspired.no er en norsk nettbutikk med et imponerende utvalg av klær, sko og tilbehør til trening, friluft og fritid! I 2016, 2020 og 2021 ble vi kåret til Årets nettbutikk av Brings uavhengige fagjury!",
-    "topp25": false,
+    "image": "assets/images/butikker-webp/getinspired.webp",
+    "alt": "Get Inspired",
+    "description": "Get Inspired er en av Norges mest populære butikker for dameklær og treningstøy.",
+    "topp25": true,
     "forside": true,
     "ny": false,
-    "annonse": false,
+    "annonse": true,
     "tags": [
+      "trening",
+      "dameklær",
+      "mote",
+      "sportsklær",
+      "klær",
       "løpeklær",
       "sportstøy",
       "aktivitetsklær",
       "yogatøy",
       "funksjonsklær"
     ],
-    "rank": "",
-    "ukensAnbefalte": true,
     "tagCount": 5,
     "partner": true,
-    "affiliate": false,
-    "kampanje": true
-  },
+    "affiliate": true,
+    "affiliateUrl": "https://track.adtraction.com/t/t?a=xxxxxx&as=yyyyyy",
+    "kampanje": true,
+    "ukensAnbefalte": true,
+    "eksternFrakt": false
+  }
   {
     "name": "Guttelus",
     "image": "assets/images/butikker-webp/guttelus.webp",
@@ -2112,33 +2130,6 @@
     "kampanje": ""
   },
   {
-    "name": "Get Inspired",
-    "image": "assets/images/butikker-webp/getinspired.webp",
-    "alt": "Get Inspired",
-    "category": "Sport og fritid",
-    "subcategory": [
-      "Sportsklær"
-    ],
-    "url": "https://www.getinspired.no",
-    "description": "Treningsklær og sporty mote for kvinner.",
-    "forside": false,
-    "topp25": false,
-    "annonse": false,
-    "ny": true,
-    "tags": [
-      "løpeklær",
-      "sportstøy",
-      "aktivitetsklær",
-      "yogatøy",
-      "funksjonsklær"
-    ],
-    "tagCount": 5,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": false,
-    "ukensAnbefalte": ""
-  },
-  {
     "name": "Gymgrossisten",
     "image": "assets/images/butikker-webp/gymgrossisten.webp",
     "alt": "Gymgrossisten",
@@ -2770,9 +2761,9 @@
     ],
     "url": "https://www.elkjop.no",
     "description": "Stort utvalg av mobiler, nettbrett og tilbehør til konkurransedyktige priser.",
-    "forside": false,
-    "topp25": false,
-    "annonse": false,
+    "forside": true,
+    "topp25": true,
+    "annonse": true,
     "ny": true,
     "tags": [
       "mobil",
@@ -2780,13 +2771,19 @@
       "nettbrett",
       "telefondeksel",
       "Android",
+      "hvitevarer",
+      "gaming",
+      "tv",
+      "data",
+      "kjøkken",
       "iOS"
     ],
     "tagCount": 6,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": false,
-    "ukensAnbefalte": ""
+    "partner": true,
+    "affiliate": true,
+    "affiliateUrl": "https://track.adtraction.com/t/t?a=xxxxxx&as=yyyyyy",
+    "kampanje": true,
+    "ukensAnbefalte": true
   },
   {
     "name": "HiFi Klubben",
@@ -5019,36 +5016,36 @@
     "kampanje": ""
   },
   {
-    "name": "Sport1.no",
-    "image": "assets/images/butikker-webp/sport1.webp",
-    "alt": "Sport1.no",
-    "category": "Klær og mote",
+    "name": "Sport 1",
+    "url": "https://www.sport1.no/",
+    "category": "Sport og fritid",
     "subcategory": [
-      "Sko og tilbehør"
+      "Trening",
+      "Friluft",
+      "Sportsklær"
     ],
-    "url": "https://www.sport1.no",
-    "description": "Sport1.no tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
+    "image": "assets/images/butikker-webp/sport1.webp",
+    "alt": "Sport 1",
+    "description": "Sport 1 tilbyr kvalitetsutstyr for trening, friluft og sport med jevnlige kampanjer.",
     "topp25": true,
-    "forside": false,
+    "forside": true,
     "ny": false,
-    "annonse": false,
+    "annonse": true,
     "tags": [
+      "trening",
+      "friluft",
+      "klær",
       "sko",
-      "sandaler",
-      "boots",
-      "sneakers",
-      "vesker",
-      "belte",
-      "solbriller",
-      "hårpynt",
-      "hansker"
+      "sport",
+      "medlemspris"
     ],
-    "rank": 23,
-    "ukensAnbefalte": "",
-    "tagCount": 9,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": ""
+    "tagCount": 6,
+    "partner": true,
+    "affiliate": true,
+    "affiliateUrl": "https://track.adtraction.com/t/t?a=xxxxxx&as=yyyyyy",
+    "kampanje": true,
+    "ukensAnbefalte": true,
+    "eksternFrakt": false
   },
   {
     "name": "Sportamore",
@@ -5381,20 +5378,21 @@
   },
   {
     "name": "Komplett",
-    "image": "assets/images/butikker-webp/komplett.webp",
-    "alt": "Komplett",
-    "category": "Gaming og tilbehør",
+    "url": "https://www.komplett.no/",
+    "category": "Elektronikk og data",
     "subcategory": [
-      "Gaming-PC og skjermer",
+      "Gaming og tilbehør",
       "PC og datatilbehør"
     ],
-    "url": "https://www.komplett.no",
-    "description": "Komplett tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
+    "image": "assets/images/butikker-webp/komplett.webp",
+    "alt": "Komplett",
+    "description": "Komplett.no er ledende på gaming, PC-er og teknologiprodukter i Norge.",
     "topp25": true,
     "forside": true,
     "ny": false,
-    "annonse": false,
+    "annonse": true,
     "tags": [
+      "gaming",
       "gaming-PC",
       "skjerm",
       "FPS",
@@ -5405,14 +5403,19 @@
       "tastatur",
       "USB-hub",
       "webkamera",
-      "minnepinne"
+      "minnepinne",
+      "pc",
+      "komponenter",
+      "hardware",
+      "elektronikk"
     ],
-    "rank": 18,
-    "ukensAnbefalte": "",
-    "tagCount": 11,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": ""
+    "tagCount": 5,
+    "partner": true,
+    "affiliate": true,
+    "affiliateUrl": "https://track.adtraction.com/t/t?a=xxxxxx&as=yyyyyy",
+    "kampanje": true,
+    "ukensAnbefalte": true,
+    "eksternFrakt": false
   },
   {
     "name": "KomplettApotek.no",
@@ -5746,20 +5749,20 @@
   },
   {
     "name": "Farmasiet",
-    "image": "assets/images/butikker-webp/farmasiet.webp",
-    "alt": "Farmasiet",
+    "url": "https://www.farmasiet.no/",
     "category": "Helse og egenpleie",
     "subcategory": [
       "Apotek og helseprodukter"
     ],
-    "url": "https://www.farmasiet.no",
-    "description": "Farmasiet tilbyr et bredt utvalg av medisiner, egenpleieprodukter og apotektjenester åalt levert rett hjem.",
+    "image": "assets/images/butikker-webp/farmasiet.webp",
+    "alt": "Farmasiet",
+    "description": "Farmasiet er Norges største nettapotek med et bredt utvalg og raske leveranser.",
     "topp25": true,
-    "forside": true,
+    "forside": false,
     "ny": false,
-    "annonse": false,
+    "annonse": true,
     "tags": [
-      "apotek",
+     "apotek",
       "egenpleie",
       "helse",
       "hudpleie",
@@ -5773,12 +5776,13 @@
       "trivsel",
       "vitaminer"
     ],
-    "rank": 11,
-    "ukensAnbefalte": true,
-    "tagCount": 13,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": true
+    "tagCount": 4,
+    "partner": true,
+    "affiliate": true,
+    "affiliateUrl": "https://track.adtraction.com/t/t?a=xxxxxx&as=yyyyyy",
+    "kampanje": true,
+    "ukensAnbefalte": false,
+    "eksternFrakt": false
   },
   {
     "name": "Mecindo.no",
@@ -6182,21 +6186,21 @@
   },
   {
     "name": "Jollyroom",
-    "image": "assets/images/butikker-webp/jollyroom.webp",
-    "alt": "Jollyroom",
+    "url": "https://www.jollyroom.no/",
     "category": "Barn og baby",
     "subcategory": [
-      "Babyutstyr",
-      "Leker"
+      "Leker",
+      "Babyutstyr"
     ],
-    "url": "https://www.jollyroom.no",
-    "description": "Nordens største barnebutikk på nett – alt til gravide, babyer og barn.",
-    "forside": false,
-    "topp25": false,
+    "image": "assets/images/butikker-webp/jollyroom.webp",
+    "alt": "Jollyroom",
+    "description": "Jollyroom tilbyr alt av utstyr, klær og leker til barn og baby – med hyppige kampanjer.",
+    "topp25": true,
+    "forside": true,
+    "ny": false,
     "annonse": true,
-    "ny": true,
     "tags": [
-      "baby",
+    "baby",
       "smokk",
       "flaske",
       "bleier",
@@ -6215,11 +6219,13 @@
       "dukker",
       "lego"
     ],
-    "tagCount": 18,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": false,
-    "ukensAnbefalte": ""
+    "tagCount": 6,
+    "partner": true,
+    "affiliate": true,
+    "affiliateUrl": "https://track.adtraction.com/t/t?a=xxxxxx&as=yyyyyy",
+    "kampanje": true,
+    "ukensAnbefalte": true,
+    "eksternFrakt": false
   },
   {
     "name": "DHGate",
@@ -6433,34 +6439,7 @@
     "kampanje": false,
     "ukensAnbefalte": ""
   },
-  {
-    "name": "Komplett.no",
-    "image": "assets/images/butikker-webp/komplett.webp",
-    "alt": "Komplett",
-    "category": "Elektronikk og data",
-    "subcategory": [
-      "Elektronikk"
-    ],
-    "url": "https://www.komplett.no",
-    "description": "Norges største nettbutikk for elektronikk, data og gaming.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": [
-      "elektronikk",
-      "PC",
-      "komponenter",
-      "gaming",
-      "data",
-      "hardware"
-    ],
-    "rank": "",
-    "ukensAnbefalte": "",
-    "partner": true,
-    "affiliate": true,
-    "kampanje": ""
-  },
+
   {
     "name": "Dustinhome.no",
     "image": "assets/images/butikker-webp/dustin.webp",

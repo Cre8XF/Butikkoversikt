@@ -8,21 +8,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Fyller anbefalte butikker
       data.forEach(butikk => {
-        if (butikk.ukensAnbefalte) {
+        if (butikk.ukensAnbefalte === true) {
           const card = document.createElement('div');
           card.className = 'col';
           card.innerHTML = `
-  <div class='card h-100 shadow-sm'>
-    <img src='${butikk.image}' class='card-img-top' alt='${butikk.alt}'>
-    <div class='card-body'>
-      <h5 class='card-title'>${butikk.name}</h5>
-      <p class='card-text'>${butikk.description}</p>
-      ${butikk.eksternFrakt ? `<div class="frakt-info mt-2">🌍 <span class="tooltip-text" title="${butikk.fraktKommentar || 'Toll og MVA kan påløpe.'}">Sender fra utlandet</span></div>` : ""}
-      <a href='${butikk.url}' class='btn btn-primary mt-2'>Besøk butikk</a>
-    </div>
-  </div>
-`;
-
+          <div class='card h-100 shadow-sm'>
+            <img src='${butikk.image}' class='card-img-top' alt='${butikk.alt}'>
+            <div class='card-body'>
+              <h5 class='card-title'>${butikk.name}</h5>
+              <p class='card-text'>${butikk.description}</p>
+              ${butikk.partner ? `<span class="badge bg-success me-2">Partnerbutikk</span>` : ""}
+              ${butikk.kampanje ? `<span class="badge bg-warning text-dark">Kampanje</span>` : ""}
+              ${butikk.eksternFrakt ? `<div class="frakt-info mt-2">🌍 <span class="tooltip-text" title="${butikk.fraktKommentar || 'Toll og MVA kan påløpe.'}">Sender fra utlandet</span></div>` : ""}
+              <a href='${butikk.affiliateUrl || butikk.url}' class='btn btn-primary mt-2' target='_blank' rel='noopener'>Besøk butikk</a>
+            </div>
+          </div>
+        `;
           anbefalteContainer.appendChild(card);
         }
       });
