@@ -1,25 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://butikkoversikt.no/</loc>
-  </url>
-  <url>
-    <loc>https://butikkoversikt.no/alle-butikker.html</loc>
-  </url>
-  <url>
-    <loc>https://butikkoversikt.no/kategori.html</loc>
-  </url>
-  <url>
-    <loc>https://butikkoversikt.no/kategori-mal.html</loc>
-  </url>
-  <url>
-    <loc>https://butikkoversikt.no/topp25.html</loc>
-  </url>
-  <url>
-    <loc>https://butikkoversikt.no/sok.html</loc>
-  </url>
-  <url>
-    <loc>https://butikkoversikt.no/guider/main-guider.html</loc>
-  </url>
-  <!-- Legg til flere dynamiske URL-er etter behov -->
-</urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:ns0="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <ns0:url>
+    <ns0:loc>https://butikkoversikt.no/index.html</ns0:loc>
+    <ns0:lastmod>2025-05-23</ns0:lastmod>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://butikkoversikt.no/alle-butikker.html</ns0:loc>
+    <ns0:lastmod>2025-05-23</ns0:lastmod>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://butikkoversikt.no/kategori.html</ns0:loc>
+    <ns0:lastmod>2025-05-23</ns0:lastmod>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://butikkoversikt.no/kategori-mal-utforsk.html</ns0:loc>
+    <ns0:lastmod>2025-05-23</ns0:lastmod>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://butikkoversikt.no/kampanjer.html</ns0:loc>
+    <ns0:lastmod>2025-05-23</ns0:lastmod>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://butikkoversikt.no/Ukens-Anbefalte.html</ns0:loc>
+    <ns0:lastmod>2025-05-23</ns0:lastmod>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://butikkoversikt.no/sokeresultater.html</ns0:loc>
+    <ns0:lastmod>2025-05-23</ns0:lastmod>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://butikkoversikt.no/main-guider.html</ns0:loc>
+    <ns0:lastmod>2025-05-23</ns0:lastmod>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://butikkoversikt.no/guide-barn.html</ns0:loc>
+    <ns0:lastmod>2025-05-23</ns0:lastmod>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://butikkoversikt.no/guide-billig-treningstoy.html</ns0:loc>
+    <ns0:lastmod>2025-05-23</ns0:lastmod>
+  </ns0:url>
+  <ns0:url>
+    <ns0:loc>https://butikkoversikt.no/guide-trygg-netthandel.html</ns0:loc>
+    <ns0:lastmod>2025-05-23</ns0:lastmod>
+  </ns0:url>
+</ns0:urlset>
