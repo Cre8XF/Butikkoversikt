@@ -95,8 +95,10 @@
   }
   @media (max-width: 576px) {
     #themeToggleBtn {
-      margin-top: 3rem;
-      right: 1rem;
+      position: absolute;
+      top: 0.75rem; /* eller 0.5rem for enda høyere */
+      right: 0.75rem;
+      z-index: 1050;
     }
   }
   @media (max-width: 576px) {
@@ -106,8 +108,10 @@
     }
 
     #themeToggleBtn {
-      margin-top: 4rem;
-      right: 1rem;
+      position: absolute;
+      top: 0.75rem; /* eller 0.5rem for enda høyere */
+      right: 0.75rem;
+      z-index: 1050;
     }
   }
   #scrollTopButton {

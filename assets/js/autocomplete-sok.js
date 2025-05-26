@@ -154,18 +154,30 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
     const visAlleWrapper = document.getElementById("seAlleTreffWrapper");
-  const visAlleKnapp = document.getElementById("visAlleTreff");
+const visAlleKnapp = document.getElementById("visAlleTreff");
 
-  searchInput.addEventListener("input", () => {
-    const query = searchInput.value.trim();
-    visAlleWrapper.style.display = query.length >= 2 ? "block" : "none";
-  });
+// Skjul knappen ved lasting
+visAlleWrapper.style.display = "none";
 
-  visAlleKnapp?.addEventListener("click", () => {
-    const query = searchInput.value.trim();
-    if (query.length > 0) {
-      window.location.href = `sokeresultater.html?q=${encodeURIComponent(query)}`;
-    }
-  });
+// Reager på input i søkefeltet
+searchInput.addEventListener("input", () => {
+  const query = searchInput.value.trim();
 
+  if (query.length >= 2) {
+    visAlleKnapp.textContent = `🔎 klikk her å se alle treff for “${query}”`;
+    visAlleWrapper.style.display = "block";
+  } else {
+    visAlleWrapper.style.display = "none";
+  }
+});
+
+// Naviger til resultatside ved klikk
+visAlleKnapp?.addEventListener("click", () => {
+  const query = searchInput.value.trim();
+  if (query.length > 0) {
+    window.location.href = `sokeresultater.html?q=${encodeURIComponent(query)}`;
+  }
+});
+
+// <-- Add this closing brace to end the DOMContentLoaded event listener function
 });
