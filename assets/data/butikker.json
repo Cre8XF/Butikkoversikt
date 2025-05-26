@@ -2272,9 +2272,7 @@
     "image": "assets/images/butikker-webp/expressvpn.webp",
     "alt": "ExpressVPN",
     "category": "Digitale tjenester",
-    "subcategory": [
-      "VPN og Nettsikkerhet"
-    ],
+    "subcategory": ["VPN og Nettsikkerhet"],
     "url": "https://www.expressvpn.com",
     "description": "Høyhastighets VPN med servere i over 90 land og sterk kryptering.",
     "topp25": false,
@@ -2320,9 +2318,7 @@
     "image": "assets/images/butikker-webp/nordvpn.webp",
     "alt": "NordVPN",
     "category": "Digitale tjenester",
-    "subcategory": [
-      "VPN og Nettsikkerhet"
-    ],
+    "subcategory": ["VPN og Nettsikkerhet"],
     "url": "https://nordvpn.com/no/",
     "description": "En av de mest populære VPN-tjenestene med høy hastighet og sterk kryptering.",
     "topp25": false,
@@ -7380,5 +7376,103 @@
           "tags": [],
           "rank": "",
           "ukensAnbefalte": ""
-        }       
+        },
+          {
+            "name": "CyberGhostVPN",
+            "image": "assets/images/butikker-webp/cyberghostvpn.webp",
+            "alt": "CyberGhostVPN",
+            "category": "Digitale tjenester",
+            "subcategory": ["VPN og Nettsikkerhet"],
+            "url": "https://www.cyberghostvpn.com",
+            "description": "CyberGhostVPN tilbyr anonym surfing, tilgang til blokkert innhold og sterk kryptering for din sikkerhet online.",
+            "topp25": false,
+            "forside": false,
+            "ny": true,
+            "annonse": false,
+            "tags": ["vpn", "nettsikkerhet", "personvern", "anonym surfing", "internettbeskyttelse"]
+          },
+          {
+            "name": "Ivacy VPN",
+            "image": "assets/images/butikker-webp/ivacyvpn.webp",
+            "alt": "Ivacy VPN",
+            "category": "Digitale tjenester",
+            "subcategory": ["VPN og Nettsikkerhet"],
+            "url": "https://www.ivacy.com",
+            "description": "Ivacy VPN gir deg tilgang til globalt innhold, anonym tilkobling og beskyttelse mot sporing.",
+            "topp25": false,
+            "forside": false,
+            "ny": true,
+            "annonse": false,
+            "tags": ["vpn", "ivacy", "nettbeskyttelse", "anonymitet", "kryptering"]
+          },
+          {
+            "name": "NordLayer",
+            "image": "assets/images/butikker-webp/nordlayer.webp",
+            "alt": "NordLayer",
+            "category": "Digitale tjenester",
+            "subcategory": ["VPN og Nettsikkerhet"],
+            "url": "https://nordlayer.com",
+            "description": "NordLayer er en sikker nettverkstilgangsløsning for bedrifter, levert av skaperne av NordVPN.",
+            "topp25": false,
+            "forside": false,
+            "ny": true,
+            "annonse": false,
+            "tags": ["vpn", "bedriftssikkerhet", "nord", "sikker nettverkstilgang", "it-sikkerhet"]
+          },
+          {
+            "name": "NordPass",
+            "image": "assets/images/butikker-webp/nordpass.webp",
+            "alt": "NordPass",
+            "category": "Digitale tjenester",
+            "subcategory": ["VPN og Nettsikkerhet"],
+            "url": "https://nordpass.com",
+            "description": "NordPass er en sikker passordbehandler som beskytter og organiserer dine innloggingsdetaljer.",
+            "topp25": false,
+            "forside": false,
+            "ny": true,
+            "annonse": false,
+            "tags": ["passord", "sikkerhet", "nord", "passordbehandler", "nettsikkerhet"]
+          },
+          {
+            "name": "Norton",
+            "image": "assets/images/butikker-webp/norton.webp",
+            "alt": "Norton",
+            "category": "Digitale tjenester",
+            "subcategory": ["VPN og Nettsikkerhet"],
+            "url": "https://no.norton.com",
+            "description": "Norton tilbyr antivirus, VPN og totalbeskyttelse for dine digitale enheter og identitet.",
+            "topp25": false,
+            "forside": false,
+            "ny": true,
+            "annonse": false,
+            "tags": ["antivirus", "vpn", "sikkerhet", "beskyttelse", "internett"]
+          },
+          {
+            "name": "PureVPN",
+            "image": "assets/images/butikker-webp/purevpn.webp",
+            "alt": "PureVPN",
+            "category": "Digitale tjenester",
+            "subcategory": ["VPN og Nettsikkerhet"],
+            "url": "https://www.purevpn.com",
+            "description": "PureVPN gir rask og sikker tilgang til internett med over 6500 servere over hele verden.",
+            "topp25": false,
+            "forside": false,
+            "ny": true,
+            "annonse": false,
+            "tags": ["vpn", "purevpn", "personvern", "anonym surfing", "kryptering"]
+          },
+          {
+            "name": "Surfshark",
+            "image": "assets/images/butikker-webp/surfshark.webp",
+            "alt": "Surfshark",
+            "category": "Digitale tjenester",
+            "subcategory": ["VPN og Nettsikkerhet"],
+            "url": "https://surfshark.com",
+            "description": "Surfshark tilbyr kraftig VPN, antivirus og datasikkerhet med ubegrensede enheter.",
+            "topp25": false,
+            "forside": false,
+            "ny": true,
+            "annonse": false,
+            "tags": ["vpn", "surfshark", "internett", "sikkerhet", "cybersikkerhet"]
+          }               
 ]

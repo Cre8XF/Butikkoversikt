@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(res => res.json())
     .then(data => {
       visKategorier(data);
-      visButikker(data, "Alle kategorier");
+      visButikker(data);
 
       const knappContainer = document.getElementById("kategori-filter-knapper");
       if (knappContainer) {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
               ? data
               : data.filter(b => b.category === valgt);
 
-            visButikker(filtrert, valgt);
+            visButikker(filtrert);
           }
         });
       }
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  function visButikker(butikker, kategoriNavn) {
+  function visButikker(butikker) {
     const container = document.getElementById("kategoriContainer");
     container.innerHTML = "";
 
@@ -81,18 +81,5 @@ document.addEventListener("DOMContentLoaded", () => {
     if (teller) {
       teller.textContent = `Viser ${butikker.length} butikker`;
     }
-
-    const info = document.getElementById("infoFilterStatus");
-    if (info) {
-      info.textContent = `🔎 Viser nå treff for “${kategoriNavn}” – bla ned for å se butikkene`;
-      info.classList.remove("d-none");
-    }
   }
-  document.getElementById("infoFilterStatus").addEventListener("click", () => {
-    const container = document.getElementById("kategoriContainer");
-    if (container) {
-      container.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  });
-  
 });
