@@ -49,21 +49,23 @@ document.addEventListener("DOMContentLoaded", () => {
     container.innerHTML = "";
 
     butikker.forEach(butikk => {
+      const lenke = butikk.affiliateUrl?.trim() || butikk.url;  // 👈 NY linje
       const col = document.createElement("div");
       col.className = "col-sm-6 col-md-4 col-lg-3 mb-4";
-
+    
       const card = document.createElement("a");
-      card.href = butikk.url;
+      card.href = lenke;  // 👈 OPPDATERT
       card.target = "_blank";
       card.rel = "noopener";
       card.className = "store-card";
-
+    
       card.innerHTML = `
         <div class="store-card-img">
           <img src="${butikk.image}" alt="${butikk.alt || butikk.name}">
         </div>
         <div class="store-card-body">
           <h4>${butikk.name}</h4>
+    ${butikk.affiliate ? `<span class="affiliate-badge">💰 Gir provisjon</span>` : ""}
           <p>${butikk.description || ""}</p>
           ${
             butikk.eksternFrakt
@@ -72,10 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         </div>
       `;
-
+    
       col.appendChild(card);
       container.appendChild(col);
     });
+    
 
     const teller = document.getElementById("butikk-teller");
     if (teller) {

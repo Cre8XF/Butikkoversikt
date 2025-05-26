@@ -50,6 +50,7 @@ fetch("assets/data/butikker.json")
         </div>
         <div class="store-card-body">
           <h4>${butikk.name}</h4>
+    ${butikk.affiliate ? `<span class="affiliate-badge">💰 Gir provisjon</span>` : ""}
           <p>${butikk.description || ""}</p>
           ${
             butikk.eksternFrakt

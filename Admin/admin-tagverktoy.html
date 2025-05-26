@@ -83,6 +83,11 @@
             border-radius: 4px;
             cursor: pointer;
         }
+        .form-check {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
     </style>
 </head>
 
@@ -94,6 +99,26 @@
     <button class="save-btn" onclick="eksporterJSON()">💾 Eksporter som JSON</button>
     <button class="save-btn" onclick="fjernUonskedeTags()">🧹 Fjern uønskede tags fra alle</button>
     <input id="search" placeholder="Søk etter tag eller kategori..." type="text" />
+    <div class="form-check mt-2 mb-3">
+        <input class="form-check-input" type="checkbox" id="filter-partner-only-admin">
+        <label class="form-check-label" for="filter-partner-only-admin">
+            🔍 Vis kun partnere
+        </label>
+        <label>
+            <input type="checkbox" id="filter-affiliate-only-admin" />
+            Vis kun affiliate-butikker 💰
+        </label>
+        <label>
+            <input type="checkbox" id="filter-mangler-affiliate-url" />
+            Vis affiliate-butikker uten lenke 🚫
+          </label>
+        <h3>🔗 Importer affiliate-lenker (CSV)</h3>
+        <textarea id="affiliateCsvInput" rows="8" class="w-100 mb-2" placeholder="name,affiliateUrl"></textarea>
+        <button class="save-btn" onclick="importerAffiliateUrls()">📥 Importer fra CSV</button>
+        <div id="csvStatus" class="small text-success mt-2"></div>
+
+    </div>
+      
     <table class="tag-table">
         <thead>
             <tr>
@@ -164,8 +189,9 @@
 
                 const boolCheckbox = (key) => `<label><input type='checkbox' ${butikk[key] ? 'checked' : ''} onchange="globalData[${index}]['${key}']=this.checked"> ${key}</label>`;
 
-                const boolFields = ['forside', 'topp25', 'ny', 'annonse', 'ukensAnbefalte']
+                const boolFields = ['forside', 'topp25', 'ny', 'annonse', 'ukensAnbefalte', 'partner', 'affiliate', 'kampanje']
                     .map(k => boolCheckbox(k)).join("<br>");
+
 
                 const saveBtn = document.createElement("button");
                 saveBtn.textContent = "Lagre tags";
@@ -416,6 +442,49 @@
 
             renderTable(globalData);
         }
+
+  document.getElementById("filter-partner-only-admin").addEventListener("change", (e) => {
+    const kunPartnere = e.target.checked;
+                const filtrert = kunPartnere
+      ? globalData.filter(b => b.partner === true)
+                : globalData;
+                renderTable(filtrert);
+  });
+    document.getElementById("filter-affiliate-only-admin").addEventListener("change", (e) => {
+        const kunAffiliate = e.target.checked;
+        const filtrert = kunAffiliate
+            ? globalData.filter(b => b.affiliate === true)
+            : globalData;
+        renderTable(filtrert);
+    });
+    document.getElementById("filter-mangler-affiliate-url").addEventListener("change", (e) => {
+            const kunUtenLenke = e.target.checked;
+            const filtrert = kunUtenLenke
+                ? globalData.filter(b => b.affiliate && (!b.affiliateUrl || b.affiliateUrl.trim() === ""))
+                : globalData;
+            renderTable(filtrert);
+        });
+
+        function importerAffiliateUrls() {
+                const input = document.getElementById("affiliateCsvInput").value.trim();
+                const linjer = input.split("\n");
+                let oppdatert = 0;
+
+                linjer.forEach(linje => {
+                    const [navn, url] = linje.split(",");
+                    if (!navn || !url) return;
+
+                    const butikk = globalData.find(b => b.name.toLowerCase().trim() === navn.toLowerCase().trim());
+                    if (butikk) {
+                        butikk.affiliateUrl = url.trim();
+                        oppdatert++;
+                    }
+                });
+
+                renderTable(globalData); // Oppdater visning
+                document.getElementById("csvStatus").textContent = `✅ Oppdatert ${oppdatert} butikker.`;
+            }
+
     </script>
 </body>
 

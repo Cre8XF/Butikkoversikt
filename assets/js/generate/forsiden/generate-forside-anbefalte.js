@@ -19,11 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
     container.innerHTML = "";
     const utvalg = alleButikker.slice(0, visAntall);
     utvalg.forEach((butikk) => {
+      const lenke = butikk.affiliateUrl?.trim() || butikk.url;  // 👈 NY linje
       const col = document.createElement("div");
       col.className = "col-sm-6 col-md-4 col-lg-3 mb-4";
 
       const card = document.createElement("a");
-      card.href = butikk.url;
+      card.href = lenke;
       card.target = "_blank";
       card.rel = "noopener";
       card.className = "store-card";
@@ -34,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="store-card-body">
           <h4>${butikk.name}</h4>
+    ${butikk.affiliate ? `<span class="affiliate-badge">💰 Gir provisjon</span>` : ""}
           <p>${butikk.description}</p>
 ${butikk.eksternFrakt ? `<div class="frakt-info">🌍 <span class="tooltip-text" title="${butikk.fraktKommentar || 'Toll og MVA kan påløpe.'}">Sender fra utlandet</span></div>` : ""}
 
