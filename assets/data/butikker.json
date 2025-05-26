@@ -4,9 +4,7 @@
     "image": "assets/images/butikker-webp/clasohlson.webp",
     "alt": "Clas Ohlson",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Elektronikk"
-    ],
+    "subcategory": ["Elektronikk"],
     "url": "https://www.clasohlson.no",
     "description": "Praktiske løsninger for hjemmet åogså hodetelefoner og lyd.",
     "topp25": false,
@@ -33,9 +31,7 @@
     "image": "assets/images/butikker-webp/power.webp",
     "alt": "Power",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Elektronikk"
-    ],
+    "subcategory": ["Elektronikk"],
     "url": "https://www.power.no",
     "description": "Power.no tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "topp25": true,
@@ -63,9 +59,7 @@
     "image": "assets/images/butikker-webp/vitusapotek.webp",
     "alt": "Vitusapotek",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Apotek og helseprodukter"
-    ],
+    "subcategory": ["Apotek og helseprodukter"],
     "url": "https://www.vitusapotek.no",
     "description": "Trygt apotek på nett med legemidler, vitaminer, egenpleie og resepttjenester.",
     "topp25": false,
@@ -93,9 +87,7 @@
     "image": "assets/images/butikker-webp/banggood.webp",
     "alt": "Banggood",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Utenlandske butikker"
-    ],
+    "subcategory": ["Utenlandske butikker"],
     "url": "https://www.banggood.com/",
     "description": "Banggood spesialiserer seg på elektronikk og hobbyprodukter med rask frakt til Norge.",
     "topp25": false,
@@ -121,9 +113,7 @@
     "image": "assets/images/butikker-webp/storytel.webp",
     "alt": "Storytel",
     "category": "Bøker og media",
-    "subcategory": [
-      "Lyd- og lydbøker"
-    ],
+    "subcategory": ["Lyd- og lydbøker"],
     "url": "https://www.storytel.com/no",
     "description": "Abonnementstjeneste for lydbøker – populært alternativ til Audible.",
     "topp25": false,
@@ -149,9 +139,7 @@
     "image": "assets/images/butikker-webp/strava.webp",
     "alt": "Strava",
     "category": "Digitale tjenester",
-    "subcategory": [
-      "Treningsapper og programmer"
-    ],
+    "subcategory": ["Treningsapper og programmer"],
     "url": "https://www.strava.com",
     "description": "App for sykkel, løping og trening med deling og konkurranser.",
     "topp25": false,
@@ -172,9 +160,7 @@
     "image": "assets/images/butikker-webp/nike-training-club.webp",
     "alt": "Nike Training Club",
     "category": "Digitale tjenester",
-    "subcategory": [
-      "Treningsapper og programmer"
-    ],
+    "subcategory": ["Treningsapper og programmer"],
     "url": "https://www.nike.com/ntc-app",
     "description": "Treningsapp med et bredt utvalg av treningsøkter og programmer.",
     "topp25": false,
@@ -195,9 +181,7 @@
     "image": "assets/images/butikker-webp/teknikmagasinet.webp",
     "alt": "Teknikmagasinet",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Smarthus og kabler"
-    ],
+    "subcategory": ["Smarthus og kabler"],
     "url": "https://www.teknikmagasinet.no",
     "description": "Gadgets, gaming og duppeditter.",
     "topp25": false,
@@ -220,22 +204,14 @@
     "image": "assets/images/butikker-webp/hyperx.webp",
     "alt": "HyperX",
     "category": "Gaming og tilbehør",
-    "subcategory": [
-      "E-sportutstyr"
-    ],
+    "subcategory": ["E-sportutstyr"],
     "url": "https://www.hyperxgaming.com",
     "description": "HyperX leverer hodetelefoner, gaming-stoler og annet tilbehør for spillere.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "e-sport",
-      "gamingmus",
-      "gamingtastatur",
-      "headset",
-      "turnering"
-    ],
+    "tags": ["e-sport", "gamingmus", "gamingtastatur", "headset", "turnering"],
     "rank": "",
     "ukensAnbefalte": "",
     "eksternFrakt": true,
@@ -247,22 +223,14 @@
     "image": "assets/images/butikker-webp/kontorspar.webp",
     "alt": "Kontorspar",
     "category": "Gaming og tilbehør",
-    "subcategory": [
-      "Gaming-tilbehør"
-    ],
+    "subcategory": ["Gaming-tilbehør"],
     "url": "https://www.kontorspar.no",
     "description": "Selger bl.a. gamerstoler, skrivebord og ergonomisk utstyr til gamingrommet.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "spillstol",
-      "RGB",
-      "musmatte",
-      "headset-holder",
-      "gamingutstyr"
-    ],
+    "tags": ["spillstol", "RGB", "musmatte", "headset-holder", "gamingutstyr"],
     "rank": "",
     "ukensAnbefalte": false,
     "tagCount": 5
@@ -272,22 +240,14 @@
     "image": "assets/images/butikker-webp/maxgaming.webp",
     "alt": "MaxGaming",
     "category": "Gaming og tilbehør",
-    "subcategory": [
-      "Gaming-tilbehør"
-    ],
+    "subcategory": ["Gaming-tilbehør"],
     "url": "https://www.maxgaming.no",
     "description": "Nettbutikk spesialisert på gamingutstyr som tastatur, mus, headsets og esport-gear.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "spillstol",
-      "RGB",
-      "musmatte",
-      "headset-holder",
-      "gamingutstyr"
-    ],
+    "tags": ["spillstol", "RGB", "musmatte", "headset-holder", "gamingutstyr"],
     "rank": "",
     "ukensAnbefalte": false,
     "tagCount": 5
@@ -297,23 +257,14 @@
     "image": "assets/images/butikker-webp/multicom.webp",
     "alt": "Multicom",
     "category": "Gaming og tilbehør",
-    "subcategory": [
-      "PC og datatilbehør",
-      "Elektronikk"
-    ],
+    "subcategory": ["PC og datatilbehør", "Elektronikk"],
     "url": "https://www.multicom.no",
     "description": "Multicom tilbyr et bredt utvalg av datamaskiner, komponenter og tilbehør.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "mus",
-      "tastatur",
-      "USB-hub",
-      "webkamera",
-      "minnepinne"
-    ],
+    "tags": ["mus", "tastatur", "USB-hub", "webkamera", "minnepinne"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -323,9 +274,7 @@
     "image": "assets/images/butikker-webp/outland-no.webp",
     "alt": "Outland",
     "category": "Gaming og tilbehør",
-    "subcategory": [
-      "Brettspill"
-    ],
+    "subcategory": ["Brettspill"],
     "url": "https://www.outland.no",
     "description": "Stort utvalg av manga, anime-figurer og merch.",
     "forside": false,
@@ -346,22 +295,14 @@
     "image": "assets/images/butikker-webp/razer.webp",
     "alt": "Razer",
     "category": "Gaming og tilbehør",
-    "subcategory": [
-      "E-sportutstyr"
-    ],
+    "subcategory": ["E-sportutstyr"],
     "url": "https://www.razer.com/eu-en/",
     "description": "Razer tilbyr premium spillutstyr og tilbehør for gamere.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "e-sport",
-      "gamingmus",
-      "gamingtastatur",
-      "headset",
-      "turnering"
-    ],
+    "tags": ["e-sport", "gamingmus", "gamingtastatur", "headset", "turnering"],
     "rank": "",
     "ukensAnbefalte": "",
     "eksternFrakt": true,
@@ -373,9 +314,7 @@
     "image": "assets/images/butikker-webp/spillhandel.webp",
     "alt": "Spillhandel",
     "category": "Gaming og tilbehør",
-    "subcategory": [
-      "Konsoller"
-    ],
+    "subcategory": ["Konsoller"],
     "url": "https://www.spillhandel.no",
     "description": "Digitale spillnøkler og klassikere til PC og konsoll. Tilbyr ofte retrospill til gode priser.",
     "topp25": false,
@@ -398,22 +337,14 @@
     "image": "assets/images/butikker-webp/steelseries.webp",
     "alt": "SteelSeries",
     "category": "Gaming og tilbehør",
-    "subcategory": [
-      "E-sportutstyr"
-    ],
+    "subcategory": ["E-sportutstyr"],
     "url": "https://steelseries.com",
     "description": "Verdenskjent merke for profesjonelle gaming-headset, tastatur og mus.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "e-sport",
-      "gamingmus",
-      "gamingtastatur",
-      "headset",
-      "turnering"
-    ],
+    "tags": ["e-sport", "gamingmus", "gamingtastatur", "headset", "turnering"],
     "rank": "",
     "ukensAnbefalte": "",
     "eksternFrakt": true,
@@ -425,22 +356,14 @@
     "image": "assets/images/butikker-webp/webhallen.webp",
     "alt": "Webhallen",
     "category": "Gaming og tilbehør",
-    "subcategory": [
-      "Gaming-tilbehør"
-    ],
+    "subcategory": ["Gaming-tilbehør"],
     "url": "https://www.webhallen.com",
     "description": "Svensk butikk med alt innen spill, PC-deler og tilbehør. Frakter til Norge.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "spillstol",
-      "RGB",
-      "musmatte",
-      "headset-holder",
-      "gamingutstyr"
-    ],
+    "tags": ["spillstol", "RGB", "musmatte", "headset-holder", "gamingutstyr"],
     "eksternFrakt": true,
     "fraktKommentar": "Merk: Denne butikken sender fra utlandet. Toll, MVA og ekstra fraktkostnader kan påløpe.",
     "tagCount": 5
@@ -450,22 +373,14 @@
     "image": "assets/images/butikker-webp/temu.webp",
     "alt": "Temu",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Utenlandske butikker"
-    ],
+    "subcategory": ["Utenlandske butikker"],
     "url": "https://www.temu.com/",
     "description": "Temu tilbyr et bredt utvalg av rimelige gadgets, interiør og hverdagsprodukter med internasjonal frakt.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "billig",
-      "gadgets",
-      "internasjonal",
-      "frakt",
-      "rimelig"
-    ],
+    "tags": ["billig", "gadgets", "internasjonal", "frakt", "rimelig"],
     "tagCount": 5
   },
   {
@@ -473,22 +388,14 @@
     "image": "assets/images/butikker-webp/aliexpress.webp",
     "alt": "AliExpress",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Utenlandske butikker"
-    ],
+    "subcategory": ["Utenlandske butikker"],
     "url": "https://www.aliexpress.com/",
     "description": "AliExpress er en internasjonal markedsplass for rimelige produkter fra kinesiske leverandører.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "kinesisk",
-      "gadgets",
-      "rimelig",
-      "frakt",
-      "dropshipping"
-    ],
+    "tags": ["kinesisk", "gadgets", "rimelig", "frakt", "dropshipping"],
     "tagCount": 5
   },
   {
@@ -496,22 +403,14 @@
     "image": "assets/images/butikker-webp/miniinthebox.webp",
     "alt": "MiniInTheBox",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Utenlandske butikker"
-    ],
+    "subcategory": ["Utenlandske butikker"],
     "url": "https://www.miniinthebox.com/",
     "description": "MiniInTheBox tilbyr småelektronikk og tilbehør til lave priser med verdensomspennende frakt.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "usb",
-      "led",
-      "gadgets",
-      "rimelig",
-      "global"
-    ],
+    "tags": ["usb", "led", "gadgets", "rimelig", "global"],
     "tagCount": 5
   },
   {
@@ -519,22 +418,14 @@
     "image": "assets/images/butikker-webp/geekbuying.webp",
     "alt": "Geekbuying",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Utenlandske butikker"
-    ],
+    "subcategory": ["Utenlandske butikker"],
     "url": "https://www.geekbuying.com/",
     "description": "Geekbuying spesialiserer seg på smartteknologi, gadgets og tilbehør til hjem og fritid.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "smart",
-      "fritid",
-      "gadgets",
-      "internasjonal",
-      "hjem"
-    ],
+    "tags": ["smart", "fritid", "gadgets", "internasjonal", "hjem"],
     "tagCount": 5
   },
   {
@@ -542,22 +433,14 @@
     "image": "assets/images/butikker-webp/blush.webp",
     "alt": "Blush.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Hår- og skjønnhetspleie"
-    ],
+    "subcategory": ["Hår- og skjønnhetspleie"],
     "url": "https://www.blush.no/",
     "description": "Velkommen til Blush, en toppdestinasjon for skjønnhet og velvære, hvor bærekraftig emballasje, produkter av høy kvalitet og overkommelige priser er i sentrum.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "shampoo",
-      "hårkur",
-      "styling",
-      "skjønnhet",
-      "hårpleie"
-    ],
+    "tags": ["shampoo", "hårkur", "styling", "skjønnhet", "hårpleie"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -567,9 +450,7 @@
     "image": "assets/images/butikker-webp/coverbrands.webp",
     "alt": "Coverbrands.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Hud- og kroppspleie"
-    ],
+    "subcategory": ["Hud- og kroppspleie"],
     "url": "https://coverbrands.no/",
     "description": "Coverbrands er en nettbutikk innen kategorien skjønnhet med flere kjente merker i vårt sortiment. Hos oss finner du sminke, hudpleie, hårpleie, kosttilskudd og mye mer.",
     "topp25": false,
@@ -592,22 +473,14 @@
     "image": "assets/images/butikker-webp/life.webp",
     "alt": "Life",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Naturlige produkter"
-    ],
+    "subcategory": ["Naturlige produkter"],
     "url": "https://www.life.no",
     "description": "Helsekost og naturlig velvære.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "naturlig",
-      "økologisk",
-      "vegansk",
-      "bærekraftig",
-      "plantebasert"
-    ],
+    "tags": ["naturlig", "økologisk", "vegansk", "bærekraftig", "plantebasert"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -617,22 +490,14 @@
     "image": "assets/images/butikker-webp/lookfantastic.webp",
     "alt": "",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Kosmetikk og sminke"
-    ],
+    "subcategory": ["Kosmetikk og sminke"],
     "url": "https://no.lookfantastic.com/",
     "description": "Internasjonal skjønnhetsbutikk med stort utvalg og rask frakt til Norge.",
     "topp25": "",
     "forside": "",
     "ny": true,
     "annonse": "",
-    "tags": [
-      "sminke",
-      "leppestift",
-      "øyenskygge",
-      "foundation",
-      "makeup"
-    ],
+    "tags": ["sminke", "leppestift", "øyenskygge", "foundation", "makeup"],
     "rank": "",
     "ukensAnbefalte": "",
     "eksternFrakt": true,
@@ -644,22 +509,14 @@
     "image": "assets/images/butikker-webp/lyko.webp",
     "alt": "Lyko.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Hår- og skjønnhetspleie"
-    ],
+    "subcategory": ["Hår- og skjønnhetspleie"],
     "url": "https://www.lyko.com/no",
     "description": "Lyko tilbyr et av Nordens største utvalg innen skjønnhet og hårpleie, med over 40 000 produkter og rask levering fra sitt lager i Sverige.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "shampoo",
-      "hårkur",
-      "styling",
-      "skjønnhet",
-      "hårpleie"
-    ],
+    "tags": ["shampoo", "hårkur", "styling", "skjønnhet", "hårpleie"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -669,22 +526,14 @@
     "image": "assets/images/butikker-webp/nordicfeel.webp",
     "alt": "nordicfeel.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Sminke og kosmetikk"
-    ],
+    "subcategory": ["Sminke og kosmetikk"],
     "url": "https://www.nordicfeel.no/",
     "description": "Nordicfeel tilbyr over 25 000 skjønnhetsprodukter innen hudpleie, hårpleie, sminke og parfyme – med autorisert kvalitet, rask levering og personlig kundeservice.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "sminke",
-      "kosmetikk",
-      "foundation",
-      "makeup",
-      "øyne"
-    ],
+    "tags": ["sminke", "kosmetikk", "foundation", "makeup", "øyne"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -694,22 +543,14 @@
     "image": "assets/images/butikker-webp/sunkost.webp",
     "alt": "Sunkost",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Naturlige produkter"
-    ],
+    "subcategory": ["Naturlige produkter"],
     "url": "https://www.sunkost.no",
     "description": "Kosttilskudd, naturlige pleieprodukter og helsekost.",
     "forside": false,
     "topp25": false,
     "annonse": false,
     "ny": true,
-    "tags": [
-      "naturlig",
-      "økologisk",
-      "vegansk",
-      "bærekraftig",
-      "plantebasert"
-    ],
+    "tags": ["naturlig", "økologisk", "vegansk", "bærekraftig", "plantebasert"],
     "tagCount": 5
   },
   {
@@ -717,9 +558,7 @@
     "image": "assets/images/butikker-webp/blivakker.webp",
     "alt": "BliVakker",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Hud- og kroppspleie"
-    ],
+    "subcategory": ["Hud- og kroppspleie"],
     "url": "https://www.blivakker.no",
     "description": "Blivakker.no er en av Norges største nettbutikker for skjønnhet og egenpleie.",
     "topp25": true,
@@ -742,9 +581,7 @@
     "image": "assets/images/butikker-webp/barnevognhuset.webp",
     "alt": "Barnevognhuset",
     "category": "Klær og mote",
-    "subcategory": [
-      "Barneklær"
-    ],
+    "subcategory": ["Barneklær"],
     "url": "https://www.barnevognhuset.no",
     "description": "Barnevogner og alt til trilletur og reise.",
     "topp25": false,
@@ -767,22 +604,14 @@
     "image": "assets/images/butikker-webp/bjornklader.webp",
     "alt": "Bjørnklær.no",
     "category": "Klær og mote",
-    "subcategory": [
-      "Herreklær"
-    ],
+    "subcategory": ["Herreklær"],
     "url": "https://www.bjornklader.no",
     "description": "Arbeidsklær og fritidsklær for aktive mennesker.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "herreklær",
-      "herremote",
-      "outfit",
-      "casual",
-      "formelt"
-    ],
+    "tags": ["herreklær", "herremote", "outfit", "casual", "formelt"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -792,9 +621,7 @@
     "image": "assets/images/butikker-webp/cubus.webp",
     "alt": "Cubus",
     "category": "Klær og mote",
-    "subcategory": [
-      "Barneklær"
-    ],
+    "subcategory": ["Barneklær"],
     "url": "https://cubus.com/no/",
     "description": "Cubus.no tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
@@ -817,22 +644,14 @@
     "image": "assets/images/butikker-webp/dressmann.webp",
     "alt": "Dressmann",
     "category": "Klær og mote",
-    "subcategory": [
-      "Herreklær"
-    ],
+    "subcategory": ["Herreklær"],
     "url": "https://www.dressmann.com",
     "description": "Basisplagg og formelle klær.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "herreklær",
-      "herremote",
-      "outfit",
-      "casual",
-      "formelt"
-    ],
+    "tags": ["herreklær", "herremote", "outfit", "casual", "formelt"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -842,9 +661,7 @@
     "image": "assets/images/butikker-webp/ellos.webp",
     "alt": "Ellos",
     "category": "Klær og mote",
-    "subcategory": [
-      "Barneklær"
-    ],
+    "subcategory": ["Barneklær"],
     "url": "https://www.ellos.no",
     "description": "Ellos tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
@@ -867,9 +684,7 @@
     "image": "assets/images/butikker-webp/getinspired.webp",
     "alt": "GetInspired.no",
     "category": "Klær og mote",
-    "subcategory": [
-      "Sportsklær"
-    ],
+    "subcategory": ["Sportsklær"],
     "url": "https://www.getinspired.no/",
     "description": "GetInspired.no er en norsk nettbutikk med et imponerende utvalg av klær, sko og tilbehør til trening, friluft og fritid! I 2016, 2020 og 2021 ble vi kåret til Årets nettbutikk av Brings uavhengige fagjury!",
     "topp25": true,
@@ -892,9 +707,7 @@
     "image": "assets/images/butikker-webp/guttelus.webp",
     "alt": "Guttelus",
     "category": "Klær og mote",
-    "subcategory": [
-      "Barneklær"
-    ],
+    "subcategory": ["Barneklær"],
     "url": "https://www.guttelus.no",
     "description": "Guttelus tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
@@ -917,22 +730,14 @@
     "image": "assets/images/butikker-webp/jack-og-jones.webp",
     "alt": "Jack & Jones",
     "category": "Klær og mote",
-    "subcategory": [
-      "Herreklær"
-    ],
+    "subcategory": ["Herreklær"],
     "url": "https://www.jackjones.com",
     "description": "Moderne herremote for menn.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "herreklær",
-      "herremote",
-      "outfit",
-      "casual",
-      "formelt"
-    ],
+    "tags": ["herreklær", "herremote", "outfit", "casual", "formelt"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -942,9 +747,7 @@
     "image": "assets/images/butikker-webp/knerten-og-karoline.webp",
     "alt": "Knerten og Karoline",
     "category": "Klær og mote",
-    "subcategory": [
-      "Barneklær"
-    ],
+    "subcategory": ["Barneklær"],
     "url": "https://www.knertenogkaroline.no",
     "description": "Klær og tilbehør til barn i alle aldre med fokus på nordisk stil og kvalitet.",
     "forside": false,
@@ -965,9 +768,7 @@
     "image": "assets/images/butikker-webp/lekmer.webp",
     "alt": "Lekmer",
     "category": "Klær og mote",
-    "subcategory": [
-      "Barneklær"
-    ],
+    "subcategory": ["Barneklær"],
     "url": "https://lekmer.no",
     "description": "Lekmer.no tilbyr leker, klær og utstyr for barn i alle aldre.",
     "topp25": false,
@@ -990,9 +791,7 @@
     "image": "assets/images/butikker-webp/lilleprinsen.webp",
     "alt": "Lilleprinsen",
     "category": "Klær og mote",
-    "subcategory": [
-      "Barneklær"
-    ],
+    "subcategory": ["Barneklær"],
     "url": "https://www.lilleprinsen.no",
     "description": "Babyutstyr og barneprodukter med fokus på kvalitet.",
     "topp25": false,
@@ -1015,9 +814,7 @@
     "image": "assets/images/butikker-webp/nameit.webp",
     "alt": "Name It",
     "category": "Klær og mote",
-    "subcategory": [
-      "Barneklær"
-    ],
+    "subcategory": ["Barneklær"],
     "url": "https://www.nameit.com/no-no/home",
     "description": "Moderne barneklær og mammaklær.",
     "topp25": false,
@@ -1040,9 +837,7 @@
     "image": "assets/images/butikker-webp/protein.webp",
     "alt": "Protein.no",
     "category": "Klær og mote",
-    "subcategory": [
-      "Sportsklær"
-    ],
+    "subcategory": ["Sportsklær"],
     "url": "https://www.protein.no",
     "description": "Norsk kosttilskuddsbutikk med protein, shaker og treningsklær.",
     "topp25": false,
@@ -1065,9 +860,7 @@
     "image": "assets/images/butikker-webp/rudo.webp",
     "alt": "Rudo",
     "category": "Klær og mote",
-    "subcategory": [
-      "Barneklær"
-    ],
+    "subcategory": ["Barneklær"],
     "url": "https://www.rudo.no",
     "description": "Rudo tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
     "topp25": true,
@@ -1090,9 +883,7 @@
     "image": "assets/images/butikker-webp/smaaungene.webp",
     "alt": "Smaaungene",
     "category": "Klær og mote",
-    "subcategory": [
-      "Barneklær"
-    ],
+    "subcategory": ["Barneklær"],
     "url": "https://www.smaaungene.no",
     "description": "Ullklær og praktisk utstyr for baby og barn.",
     "topp25": false,
@@ -1115,22 +906,14 @@
     "image": "assets/images/butikker-webp/stayhard.webp",
     "alt": "Stayhard",
     "category": "Klær og mote",
-    "subcategory": [
-      "Herreklær"
-    ],
+    "subcategory": ["Herreklær"],
     "url": "https://www.stayhard.no",
     "description": "Trendy herremote og tilbehør for menn.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "herreklær",
-      "herremote",
-      "outfit",
-      "casual",
-      "formelt"
-    ],
+    "tags": ["herreklær", "herremote", "outfit", "casual", "formelt"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -1140,22 +923,14 @@
     "image": "assets/images/butikker-webp/volt.webp",
     "alt": "Volt",
     "category": "Klær og mote",
-    "subcategory": [
-      "Herreklær"
-    ],
+    "subcategory": ["Herreklær"],
     "url": "https://www.voltfashion.com/no/",
     "description": "Nordisk herremote med stil.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "herreklær",
-      "herremote",
-      "outfit",
-      "casual",
-      "formelt"
-    ],
+    "tags": ["herreklær", "herremote", "outfit", "casual", "formelt"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -1165,19 +940,11 @@
     "image": "assets/images/butikker-webp/barlife.webp",
     "alt": "Barlife",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Vin og bartilbehør"
-    ],
+    "subcategory": ["Vin og bartilbehør"],
     "url": "https://www.barlife.no",
     "description": "Alt du trenger for hjemmebaren – glass, shakere, bartilbehør og mer.",
     "ny": true,
-    "tags": [
-      "vin",
-      "vinkjøler",
-      "glass",
-      "bartilbehør",
-      "drinktilbehør"
-    ],
+    "tags": ["vin", "vinkjøler", "glass", "bartilbehør", "drinktilbehør"],
     "tagCount": 5
   },
   {
@@ -1185,19 +952,11 @@
     "image": "assets/images/butikker-webp/brewshop.webp",
     "alt": "Brewshop",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Vin og bartilbehør"
-    ],
+    "subcategory": ["Vin og bartilbehør"],
     "url": "https://www.brewshop.no",
     "description": "Alt innen bryggeutstyr for øl og vin. Ingredienser og tilbehør for hjemmebrygging.",
     "ny": true,
-    "tags": [
-      "vin",
-      "vinkjøler",
-      "glass",
-      "bartilbehør",
-      "drinktilbehør"
-    ],
+    "tags": ["vin", "vinkjøler", "glass", "bartilbehør", "drinktilbehør"],
     "tagCount": 5
   },
   {
@@ -1205,22 +964,14 @@
     "image": "assets/images/butikker-webp/godtlevert.webp",
     "alt": "Godt Levert",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Matkasser"
-    ],
+    "subcategory": ["Matkasser"],
     "url": "https://www.godtlevert.no",
     "description": "Godtlevert.no tilbyr matkasser med oppskrifter og ingredienser levert hjem. Ingen bindingstid. Hverdagskassen, Premium, Barnekassen m.fl.",
     "forside": false,
     "topp25": false,
     "annonse": false,
     "ny": true,
-    "tags": [
-      "matkasse",
-      "oppskrifter",
-      "middag",
-      "levering",
-      "familievennlig"
-    ],
+    "tags": ["matkasse", "oppskrifter", "middag", "levering", "familievennlig"],
     "tagCount": 5
   },
   {
@@ -1228,22 +979,14 @@
     "image": "assets/images/butikker-webp/hellofresh.webp",
     "alt": "HelloFresh",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Matkasser"
-    ],
+    "subcategory": ["Matkasser"],
     "url": "https://www.hellofresh.no",
     "description": "HelloFresh lar deg skreddersy din meny fra varierte oppskrifter. Ferske råvarer, vegetar, familievennlig og raskt. Rabatter på de første kassene.",
     "forside": false,
     "topp25": false,
     "annonse": false,
     "ny": true,
-    "tags": [
-      "matkasse",
-      "oppskrifter",
-      "middag",
-      "levering",
-      "familievennlig"
-    ],
+    "tags": ["matkasse", "oppskrifter", "middag", "levering", "familievennlig"],
     "tagCount": 5
   },
   {
@@ -1251,22 +994,14 @@
     "image": "assets/images/butikker-webp/kinsarvik.webp",
     "alt": "Kinsarvik Naturkost",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Dagligvarer"
-    ],
+    "subcategory": ["Dagligvarer"],
     "url": "https://www.kinsarvik.no",
     "description": "Stort utvalg av helsekost, økologiske matvarer og dagligvarer for allergikere og bevisste forbrukere.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "dagligvarer",
-      "pålegg",
-      "kaffe",
-      "frossenmat",
-      "økologisk mat"
-    ],
+    "tags": ["dagligvarer", "pålegg", "kaffe", "frossenmat", "økologisk mat"],
     "tagCount": 5
   },
   {
@@ -1274,22 +1009,14 @@
     "image": "assets/images/butikker-webp/kitchn.webp",
     "alt": "Kitch'n",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Vin og bartilbehør"
-    ],
+    "subcategory": ["Vin og bartilbehør"],
     "url": "https://www.kitchn.no",
     "description": "Stort utvalg av glass, vinutstyr og kjøkkenartikler med fokus på kvalitet og design.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "vin",
-      "vinkjøler",
-      "glass",
-      "bartilbehør",
-      "drinktilbehør"
-    ],
+    "tags": ["vin", "vinkjøler", "glass", "bartilbehør", "drinktilbehør"],
     "tagCount": 5
   },
   {
@@ -1297,22 +1024,14 @@
     "image": "assets/images/butikker-webp/kokkeloren.webp",
     "alt": "Kokkeløren",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Matkasser"
-    ],
+    "subcategory": ["Matkasser"],
     "url": "https://www.kokkeloeren.no",
     "description": "Kokkeløren tilbyr matkasser med gode råvarer. 3 middager hver uke med kjøtt, fisk eller vegetar. Levering i Oslo og Bærum.",
     "forside": false,
     "topp25": false,
     "annonse": false,
     "ny": true,
-    "tags": [
-      "matkasse",
-      "oppskrifter",
-      "middag",
-      "levering",
-      "familievennlig"
-    ],
+    "tags": ["matkasse", "oppskrifter", "middag", "levering", "familievennlig"],
     "tagCount": 5
   },
   {
@@ -1320,22 +1039,14 @@
     "image": "assets/images/butikker-webp/kolonihagen.webp",
     "alt": "Kolonihagen",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Matkasser"
-    ],
+    "subcategory": ["Matkasser"],
     "url": "https://www.kolonihagen.no",
     "description": "Økologiske matkasser med sesongens råvarer – levert hjem fra norske bønder.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "matkasse",
-      "oppskrifter",
-      "middag",
-      "levering",
-      "familievennlig"
-    ],
+    "tags": ["matkasse", "oppskrifter", "middag", "levering", "familievennlig"],
     "tagCount": 5
   },
   {
@@ -1343,22 +1054,14 @@
     "image": "assets/images/butikker-webp/meny.webp",
     "alt": "Meny",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Dagligvarer"
-    ],
+    "subcategory": ["Dagligvarer"],
     "url": "https://meny.no/nettbutikk",
     "description": "Meny tilbyr et bredt utvalg av ferskvarer og dagligvarer med fokus på kvalitet og lokalmat.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "dagligvarer",
-      "pålegg",
-      "kaffe",
-      "frossenmat",
-      "økologisk mat"
-    ],
+    "tags": ["dagligvarer", "pålegg", "kaffe", "frossenmat", "økologisk mat"],
     "tagCount": 5
   },
   {
@@ -1366,19 +1069,11 @@
     "image": "assets/images/butikker-webp/netthandelen.webp",
     "alt": "Netthandelen",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Vin og bartilbehør"
-    ],
+    "subcategory": ["Vin og bartilbehør"],
     "url": "https://www.netthandelen.no",
     "description": "Variert utvalg av produkter – også bryggeutstyr, glass og vinoppbevaring.",
     "ny": true,
-    "tags": [
-      "vin",
-      "vinkjøler",
-      "glass",
-      "bartilbehør",
-      "drinktilbehør"
-    ],
+    "tags": ["vin", "vinkjøler", "glass", "bartilbehør", "drinktilbehør"],
     "tagCount": 5
   },
   {
@@ -1386,22 +1081,14 @@
     "image": "assets/images/butikker-webp/oda.webp",
     "alt": "Oda",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Dagligvarer"
-    ],
+    "subcategory": ["Dagligvarer"],
     "url": "https://www.oda.com/no",
     "description": "Oda (tidl. Kolonial.no) leverer over 6000 varer hjem. App, hent selv eller få levert. 3 % rabatt, rask levering og høy kvalitet på ferskvarer.",
     "forside": false,
     "topp25": false,
     "annonse": false,
     "ny": true,
-    "tags": [
-      "dagligvarer",
-      "pålegg",
-      "kaffe",
-      "frossenmat",
-      "økologisk mat"
-    ],
+    "tags": ["dagligvarer", "pålegg", "kaffe", "frossenmat", "økologisk mat"],
     "tagCount": 5
   },
   {
@@ -1409,22 +1096,14 @@
     "image": "assets/images/butikker-webp/spisriktig.webp",
     "alt": "Spis Riktig",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Matkasser"
-    ],
+    "subcategory": ["Matkasser"],
     "url": "https://www.spisriktig.no",
     "description": "Spis Riktig tilbyr ferdiglagde og sunne måltider levert hjem, med fokus på kalorikontroll. Ingen bindingstid. Levering i deler av Østlandet.",
     "forside": false,
     "topp25": false,
     "annonse": false,
     "ny": true,
-    "tags": [
-      "matkasse",
-      "oppskrifter",
-      "middag",
-      "levering",
-      "familievennlig"
-    ],
+    "tags": ["matkasse", "oppskrifter", "middag", "levering", "familievennlig"],
     "tagCount": 5
   },
   {
@@ -1432,22 +1111,14 @@
     "image": "assets/images/butikker-webp/supermercado.webp",
     "alt": "Supermercado",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Dagligvarer"
-    ],
+    "subcategory": ["Dagligvarer"],
     "url": "https://www.supermercado.no",
     "description": "Importert mat og dagligvarer fra hele verden – spesielt latinamerikanske og spanske spesialiteter.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "dagligvarer",
-      "pålegg",
-      "kaffe",
-      "frossenmat",
-      "økologisk mat"
-    ],
+    "tags": ["dagligvarer", "pålegg", "kaffe", "frossenmat", "økologisk mat"],
     "tagCount": 5
   },
   {
@@ -1455,19 +1126,11 @@
     "image": "assets/images/butikker-webp/vinlagringskompaniet.webp",
     "alt": "Vinlagringskompaniet",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Vin og bartilbehør"
-    ],
+    "subcategory": ["Vin og bartilbehør"],
     "url": "https://www.vinlagringskompaniet.no",
     "description": "Vinlagringsskap, hyller, termometre og kjølesystemer for vin.",
     "ny": true,
-    "tags": [
-      "vin",
-      "vinkjøler",
-      "glass",
-      "bartilbehør",
-      "drinktilbehør"
-    ],
+    "tags": ["vin", "vinkjøler", "glass", "bartilbehør", "drinktilbehør"],
     "tagCount": 5
   },
   {
@@ -1475,9 +1138,7 @@
     "image": "assets/images/butikker-webp/vinmonopolet.webp",
     "alt": "Vinmonopolet",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Vin og brennevin"
-    ],
+    "subcategory": ["Vin og brennevin"],
     "url": "https://www.vinmonopolet.no",
     "description": "Vinmonopolet tilbyr smarte og morsomme gaver og gadgets som skiller seg ut.",
     "topp25": true,
@@ -1502,19 +1163,11 @@
     "image": "assets/images/butikker-webp/vinskap.webp",
     "alt": "Vinskap.no",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Vin og bartilbehør"
-    ],
+    "subcategory": ["Vin og bartilbehør"],
     "url": "https://www.vinskap.no",
     "description": "Eksperter på vinskap, kjøling og tilbehør. For vinkjellere og hjem.",
     "ny": true,
-    "tags": [
-      "vin",
-      "vinkjøler",
-      "glass",
-      "bartilbehør",
-      "drinktilbehør"
-    ],
+    "tags": ["vin", "vinkjøler", "glass", "bartilbehør", "drinktilbehør"],
     "tagCount": 5
   },
   {
@@ -1522,19 +1175,11 @@
     "image": "assets/images/butikker-webp/wineandbarrels.webp",
     "alt": "WineandBarrels",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Vin og bartilbehør"
-    ],
+    "subcategory": ["Vin og bartilbehør"],
     "url": "https://www.wineandbarrels.no",
     "description": "Eksklusive produkter for vinelskere – oppbevaring, fat og gaveartikler.",
     "ny": true,
-    "tags": [
-      "vin",
-      "vinkjøler",
-      "glass",
-      "bartilbehør",
-      "drinktilbehør"
-    ],
+    "tags": ["vin", "vinkjøler", "glass", "bartilbehør", "drinktilbehør"],
     "tagCount": 5
   },
   {
@@ -1542,19 +1187,11 @@
     "image": "assets/images/butikker-webp/olbrygging.webp",
     "alt": "Ølbrygging.no",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Vin og bartilbehør"
-    ],
+    "subcategory": ["Vin og bartilbehør"],
     "url": "https://www.olbrygging.no",
     "description": "Utstyr og gadgets for ølentusiaster – glass, tappesystemer, tilbehør.",
     "ny": true,
-    "tags": [
-      "vin",
-      "vinkjøler",
-      "glass",
-      "bartilbehør",
-      "drinktilbehør"
-    ],
+    "tags": ["vin", "vinkjøler", "glass", "bartilbehør", "drinktilbehør"],
     "tagCount": 5
   },
   {
@@ -1562,22 +1199,14 @@
     "image": "assets/images/butikker-webp/godtlevert.webp",
     "alt": "Godtlevert",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Matkasser"
-    ],
+    "subcategory": ["Matkasser"],
     "url": "https://www.godtlevert.no",
     "description": "Godtlevert tilbyr matkasser med ferske ingredienser og oppskrifter levert på døren.",
     "topp25": true,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "matkasse",
-      "oppskrifter",
-      "middag",
-      "levering",
-      "familievennlig"
-    ],
+    "tags": ["matkasse", "oppskrifter", "middag", "levering", "familievennlig"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -1587,22 +1216,14 @@
     "image": "assets/images/butikker-webp/morgenlevering.webp",
     "alt": "Morgenlevering",
     "category": "Mat og drikke",
-    "subcategory": [
-      "Frokost og levering"
-    ],
+    "subcategory": ["Frokost og levering"],
     "url": "https://www.morgenlevering.no",
     "description": "Ferske bakervarer og frokost levert hjem på døren tidlig om morgenen.",
     "topp25": true,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "frokost",
-      "brød",
-      "morgenmat",
-      "matlevering",
-      "rask levering"
-    ],
+    "tags": ["frokost", "brød", "morgenmat", "matlevering", "rask levering"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -1612,22 +1233,14 @@
     "image": "assets/images/butikker-webp/lampegiganten.webp",
     "alt": "Lampegiganten",
     "category": "Møbler og interiør",
-    "subcategory": [
-      "Belysning"
-    ],
+    "subcategory": ["Belysning"],
     "url": "https://www.lampegiganten.no",
     "description": "Alt innen belysning åtaklamper, vegglamper og LED.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "lamper",
-      "lys",
-      "pærer",
-      "taklampe",
-      "stemningsbelysning"
-    ],
+    "tags": ["lamper", "lys", "pærer", "taklampe", "stemningsbelysning"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -1637,22 +1250,14 @@
     "image": "assets/images/butikker-webp/fjellreven.webp",
     "alt": "Fjällräven",
     "category": "Reise og opplevelser",
-    "subcategory": [
-      "Kart og guider"
-    ],
+    "subcategory": ["Kart og guider"],
     "url": "https://www.fjallraven.no",
     "description": "Klassiske tursekker, klær og friluftsutstyr – perfekt for både reise og opplevelser i naturen.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "reiseguider",
-      "kart",
-      "turkart",
-      "guidebok",
-      "destinasjon"
-    ],
+    "tags": ["reiseguider", "kart", "turkart", "guidebok", "destinasjon"],
     "rank": "",
     "ukensAnbefalte": false,
     "tagCount": 5
@@ -1662,22 +1267,14 @@
     "image": "assets/images/butikker-webp/kart-butikken.webp",
     "alt": "Kartbutikken",
     "category": "Reise og opplevelser",
-    "subcategory": [
-      "Kart og guider"
-    ],
+    "subcategory": ["Kart og guider"],
     "url": "https://www.kartbutikken.no",
     "description": "Norges ledende leverandør av kart, turguider og orienteringsmateriell.",
     "forside": false,
     "topp25": false,
     "annonse": false,
     "ny": true,
-    "tags": [
-      "reiseguider",
-      "kart",
-      "turkart",
-      "guidebok",
-      "destinasjon"
-    ],
+    "tags": ["reiseguider", "kart", "turkart", "guidebok", "destinasjon"],
     "tagCount": 5
   },
   {
@@ -1685,22 +1282,14 @@
     "image": "assets/images/butikker-webp/morris.webp",
     "alt": "",
     "category": "Reise og opplevelser",
-    "subcategory": [
-      "Bager og kofferter"
-    ],
+    "subcategory": ["Bager og kofferter"],
     "url": "https://www.morris.no",
     "description": "Stort utvalg av kofferter, bager og reisetilbehør.",
     "topp25": "",
     "forside": "",
     "ny": true,
     "annonse": "",
-    "tags": [
-      "koffert",
-      "bag",
-      "reiseveske",
-      "bagasje",
-      "trillebag"
-    ],
+    "tags": ["koffert", "bag", "reiseveske", "bagasje", "trillebag"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -1710,9 +1299,7 @@
     "image": "assets/images/butikker-webp/nomaden.webp",
     "alt": "Nomaden",
     "category": "Reise og opplevelser",
-    "subcategory": [
-      "Reiseutstyr"
-    ],
+    "subcategory": ["Reiseutstyr"],
     "url": "https://www.nomaden.no",
     "description": "Alt innen reiseutstyr, guidebøker, kart og pakkeløsninger.",
     "forside": false,
@@ -1733,9 +1320,7 @@
     "image": "assets/images/butikker-webp/focus-nordic.webp",
     "alt": "Nomatic",
     "category": "Reise og opplevelser",
-    "subcategory": [
-      "Reiseutstyr"
-    ],
+    "subcategory": ["Reiseutstyr"],
     "url": "https://www.nomatic.com",
     "description": "Innovative reiseprodukter som kombinerer funksjon, stil og fleksibilitet for moderne reisende.",
     "topp25": false,
@@ -1758,22 +1343,14 @@
     "image": "assets/images/butikker-webp/samsonite.webp",
     "alt": "Samsonite",
     "category": "Reise og opplevelser",
-    "subcategory": [
-      "Bager og kofferter"
-    ],
+    "subcategory": ["Bager og kofferter"],
     "url": "https://www.samsonite.no",
     "description": "Ledende merke innen kofferter, vesker og reiseutstyr med fokus på kvalitet og innovasjon.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "koffert",
-      "bag",
-      "reiseveske",
-      "bagasje",
-      "trillebag"
-    ],
+    "tags": ["koffert", "bag", "reiseveske", "bagasje", "trillebag"],
     "rank": "",
     "ukensAnbefalte": false,
     "tagCount": 5
@@ -1783,9 +1360,7 @@
     "image": "assets/images/butikker-webp/trip.webp",
     "alt": "",
     "category": "Reise og opplevelser",
-    "subcategory": [
-      "Reiseutstyr"
-    ],
+    "subcategory": ["Reiseutstyr"],
     "url": "https://www.trip.com",
     "description": "En av verdens største reiseplattformer med hotell, fly og tog. Affiliate-støttet.",
     "topp25": "",
@@ -1808,9 +1383,7 @@
     "image": "assets/images/butikker-webp/famme.webp",
     "alt": "Famme",
     "category": "Sport og fritid",
-    "subcategory": [
-      "Treningsklær"
-    ],
+    "subcategory": ["Treningsklær"],
     "url": "https://famme.no",
     "description": "Spesialiserer seg på treningsklær og athleisure for kvinner.",
     "topp25": false,
@@ -1833,9 +1406,7 @@
     "image": "assets/images/butikker-webp/getinspired.webp",
     "alt": "Get Inspired",
     "category": "Sport og fritid",
-    "subcategory": [
-      "Sportsklær"
-    ],
+    "subcategory": ["Sportsklær"],
     "url": "https://www.getinspired.no",
     "description": "Treningsklær og sporty mote for kvinner.",
     "forside": false,
@@ -1856,22 +1427,14 @@
     "image": "assets/images/butikker-webp/gymgrossisten.webp",
     "alt": "Gymgrossisten",
     "category": "Sport og fritid",
-    "subcategory": [
-      "Treningsutstyr"
-    ],
+    "subcategory": ["Treningsutstyr"],
     "url": "https://www.gymgrossisten.no",
     "description": "Kosttilskudd, treningsklær og treningsutstyr.",
     "topp25": true,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "manualer",
-      "treningsmatte",
-      "styrketrening",
-      "strikk",
-      "apparat"
-    ],
+    "tags": ["manualer", "treningsmatte", "styrketrening", "strikk", "apparat"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -1881,9 +1444,7 @@
     "image": "assets/images/butikker-webp/intersport.webp",
     "alt": "Gsport",
     "category": "Sport og fritid",
-    "subcategory": [
-      "Treningsklær"
-    ],
+    "subcategory": ["Treningsklær"],
     "url": "https://www.intersport.no",
     "description": "Alt innen sport og fritid, inkludert klær, sko og treningsutstyr.",
     "topp25": false,
@@ -1906,22 +1467,14 @@
     "image": "assets/images/butikker-webp/oslosportslager.webp",
     "alt": "Oslo Sportslager",
     "category": "Sport og fritid",
-    "subcategory": [
-      "Sykkel og sykkelutstyr"
-    ],
+    "subcategory": ["Sykkel og sykkelutstyr"],
     "url": "https://www.oslosportslager.no",
     "description": "Spesialister på ski, løping, sykkel og trening.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "sykkel",
-      "sykkelhjelm",
-      "elsykkel",
-      "sykkellykt",
-      "verktøy"
-    ],
+    "tags": ["sykkel", "sykkelhjelm", "elsykkel", "sykkellykt", "verktøy"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -1931,22 +1484,14 @@
     "image": "assets/images/butikker-webp/sportshopen.webp",
     "alt": "Sportshopen.no",
     "category": "Sport og fritid",
-    "subcategory": [
-      "Treningsutstyr"
-    ],
+    "subcategory": ["Treningsutstyr"],
     "url": "https://www.sportshopen.no",
     "description": "Utstyr for sport og fritid til gode priser.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "manualer",
-      "treningsmatte",
-      "styrketrening",
-      "strikk",
-      "apparat"
-    ],
+    "tags": ["manualer", "treningsmatte", "styrketrening", "strikk", "apparat"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -1956,22 +1501,14 @@
     "image": "assets/images/butikker-webp/sportsmaster.webp",
     "alt": "Sport24.no",
     "category": "Sport og fritid",
-    "subcategory": [
-      "Treningsutstyr"
-    ],
+    "subcategory": ["Treningsutstyr"],
     "url": "https://www.sportsmaster.no",
     "description": "Sportsmaster er en spesialforretning og leverer alt av treningsapparater direkte fra fabrikk uten fordyrende mellomledd.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "manualer",
-      "treningsmatte",
-      "styrketrening",
-      "strikk",
-      "apparat"
-    ],
+    "tags": ["manualer", "treningsmatte", "styrketrening", "strikk", "apparat"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -1981,22 +1518,14 @@
     "image": "assets/images/butikker-webp/sykkeloutlet.webp",
     "alt": "Sykkeloutlet",
     "category": "Sport og fritid",
-    "subcategory": [
-      "Sykkel og sykkelutstyr"
-    ],
+    "subcategory": ["Sykkel og sykkelutstyr"],
     "url": "https://www.sykkeloutlet.no",
     "description": "Norges billigste sykkelbutikk med stort utvalg av utstyr.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "sykkel",
-      "sykkelhjelm",
-      "elsykkel",
-      "sykkellykt",
-      "verktøy"
-    ],
+    "tags": ["sykkel", "sykkelhjelm", "elsykkel", "sykkellykt", "verktøy"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -2006,22 +1535,14 @@
     "image": "assets/images/butikker-webp/cdkeys.webp",
     "alt": "CDKeys",
     "category": "Underholdning og popkultur",
-    "subcategory": [
-      "Digitale spillnøkler"
-    ],
+    "subcategory": ["Digitale spillnøkler"],
     "url": "https://www.cdkeys.com",
     "description": "Kjøp digitale spillnøkler til PC og konsoll til rabatterte priser. Umiddelbar levering via e-post.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "spillnøkkel",
-      "Steam",
-      "PC-spill",
-      "nedlasting",
-      "rabattkode"
-    ],
+    "tags": ["spillnøkkel", "Steam", "PC-spill", "nedlasting", "rabattkode"],
     "tagCount": 5
   },
   {
@@ -2029,22 +1550,14 @@
     "image": "assets/images/butikker-webp/emp.webp",
     "alt": "",
     "category": "Underholdning og popkultur",
-    "subcategory": [
-      "Figurer og samleobjekter"
-    ],
+    "subcategory": ["Figurer og samleobjekter"],
     "url": "https://www.emp-shop.no",
     "description": "Merch og klær inspirert av spill, musikk og popkultur.",
     "topp25": "",
     "forside": "",
     "ny": true,
     "annonse": "",
-    "tags": [
-      "samleobjekter",
-      "figurer",
-      "merch",
-      "POP!",
-      "statuetter"
-    ],
+    "tags": ["samleobjekter", "figurer", "merch", "POP!", "statuetter"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 5
@@ -2054,22 +1567,14 @@
     "image": "assets/images/butikker-webp/epicgames.webp",
     "alt": "Epic Games Store",
     "category": "Underholdning og popkultur",
-    "subcategory": [
-      "Digitale spillnøkler"
-    ],
+    "subcategory": ["Digitale spillnøkler"],
     "url": "https://www.epicgames.com/store",
     "description": "Kjøp og last ned spill direkte fra Epic Games. Ukentlige gratis spill og eksklusive titler.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "spillnøkkel",
-      "Steam",
-      "PC-spill",
-      "nedlasting",
-      "rabattkode"
-    ],
+    "tags": ["spillnøkkel", "Steam", "PC-spill", "nedlasting", "rabattkode"],
     "tagCount": 5
   },
   {
@@ -2077,22 +1582,14 @@
     "image": "assets/images/butikker-webp/g2a.webp",
     "alt": "G2A",
     "category": "Underholdning og popkultur",
-    "subcategory": [
-      "Digitale spillnøkler"
-    ],
+    "subcategory": ["Digitale spillnøkler"],
     "url": "https://www.g2a.com",
     "description": "En markedsplass for digitale spillnøkler og programvare med store rabatter og hurtig levering.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "spillnøkkel",
-      "Steam",
-      "PC-spill",
-      "nedlasting",
-      "rabattkode"
-    ],
+    "tags": ["spillnøkkel", "Steam", "PC-spill", "nedlasting", "rabattkode"],
     "tagCount": 5
   },
   {
@@ -2100,22 +1597,14 @@
     "image": "assets/images/butikker-webp/humble.webp",
     "alt": "Humble Bundle",
     "category": "Underholdning og popkultur",
-    "subcategory": [
-      "Digitale spillnøkler"
-    ],
+    "subcategory": ["Digitale spillnøkler"],
     "url": "https://www.humblebundle.com",
     "description": "Kjøp spillpakker med donasjoner til veldedighet. Store rabatter på spillnøkler for Steam og mer.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "spillnøkkel",
-      "Steam",
-      "PC-spill",
-      "nedlasting",
-      "rabattkode"
-    ],
+    "tags": ["spillnøkkel", "Steam", "PC-spill", "nedlasting", "rabattkode"],
     "tagCount": 5
   },
   {
@@ -2123,22 +1612,14 @@
     "image": "assets/images/butikker-webp/kinguin.webp",
     "alt": "Kinguin",
     "category": "Underholdning og popkultur",
-    "subcategory": [
-      "Digitale spillnøkler"
-    ],
+    "subcategory": ["Digitale spillnøkler"],
     "url": "https://www.kinguin.net",
     "description": "Spillnøkler for Steam, Origin og mer. Et populært alternativ for å kjøpe spill til lav pris.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "spillnøkkel",
-      "Steam",
-      "PC-spill",
-      "nedlasting",
-      "rabattkode"
-    ],
+    "tags": ["spillnøkkel", "Steam", "PC-spill", "nedlasting", "rabattkode"],
     "tagCount": 5
   },
   {
@@ -2146,9 +1627,7 @@
     "image": "assets/images/butikker-webp/akademika.webp",
     "alt": "Akademika",
     "category": "Bøker og media",
-    "subcategory": [
-      "Fagbøker"
-    ],
+    "subcategory": ["Fagbøker"],
     "url": "https://www.akademika.no",
     "description": "Norges største fagbokhandel med bøker for studenter og fagpersoner.",
     "topp25": false,
@@ -2170,9 +1649,7 @@
     "image": "assets/images/butikker-webp/kindle.webp",
     "alt": "Kindle Store",
     "category": "Bøker og media",
-    "subcategory": [
-      "E-bøker"
-    ],
+    "subcategory": ["E-bøker"],
     "url": "https://www.amazon.com/Kindle-eBooks",
     "description": "Verdens største utvalg av e-bøker for Kindle-enheter og app.",
     "topp25": false,
@@ -2196,9 +1673,7 @@
     "image": "assets/images/butikker-webp/bokkilden.webp",
     "alt": "Bokkilden",
     "category": "Bøker og media",
-    "subcategory": [
-      "Bøker"
-    ],
+    "subcategory": ["Bøker"],
     "url": "https://www.bokkilden.no",
     "description": "Bøker, filmer, musikk og spill.",
     "topp25": false,
@@ -2222,9 +1697,7 @@
     "image": "assets/images/butikker-webp/fabel.webp",
     "alt": "",
     "category": "Bøker og media",
-    "subcategory": [
-      "Bøker"
-    ],
+    "subcategory": ["Bøker"],
     "url": "https://www.fabel.no",
     "description": "Norsk strømmetjeneste for lydbøker og fortellinger.",
     "topp25": "",
@@ -2248,9 +1721,7 @@
     "image": "assets/images/butikker-webp/norli-no.webp",
     "alt": "Norli",
     "category": "Bøker og media",
-    "subcategory": [
-      "Bøker"
-    ],
+    "subcategory": ["Bøker"],
     "url": "https://www.norli.no",
     "description": "Bredt utvalg av bøker for barn i alle aldre, inkludert skole- og eventyrbøker.",
     "forside": false,
@@ -2294,9 +1765,7 @@
     "image": "assets/images/butikker-webp/utdannet.webp",
     "alt": "Utdannet.no",
     "category": "Digitale tjenester",
-    "subcategory": [
-      "Nettkurs"
-    ],
+    "subcategory": ["Nettkurs"],
     "url": "https://www.utdannet.no",
     "description": "Norske nettkurs i alt fra økonomi og markedsføring til data og HR.",
     "topp25": false,
@@ -2340,9 +1809,7 @@
     "image": "assets/images/butikker-webp/digitalnorway.webp",
     "alt": "Digital Norway",
     "category": "Digitale tjenester",
-    "subcategory": [
-      "Nettkurs"
-    ],
+    "subcategory": ["Nettkurs"],
     "url": "https://digitalnorway.com/kurs/",
     "description": "Tilbyr gratis nettkurs innen digital kompetanse og teknologi.",
     "topp25": false,
@@ -2364,23 +1831,14 @@
     "image": "assets/images/butikker-webp/buddy.webp",
     "alt": "Buddy Dyrebutikk",
     "category": "Dyrebutikker",
-    "subcategory": [
-      "Hund"
-    ],
+    "subcategory": ["Hund"],
     "url": "https://www.buddy.no",
     "description": "Buddy.no tilbyr kvalitetsprodukter for hunder, inkludert fôr, leker og utstyr.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "hund",
-      "halsbånd",
-      "sele",
-      "hundeseng",
-      "hundeleker",
-      "hundebur"
-    ],
+    "tags": ["hund", "halsbånd", "sele", "hundeseng", "hundeleker", "hundebur"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 6
@@ -2390,9 +1848,7 @@
     "image": "assets/images/butikker-webp/elkjop.webp",
     "alt": "Elkjøp",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Mobil og nettbrett"
-    ],
+    "subcategory": ["Mobil og nettbrett"],
     "url": "https://www.elkjop.no",
     "description": "Stort utvalg av mobiler, nettbrett og tilbehør til konkurransedyktige priser.",
     "forside": false,
@@ -2414,9 +1870,7 @@
     "image": "assets/images/butikker-webp/hifiklubben.webp",
     "alt": "HiFi Klubben",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Lyd og bilde"
-    ],
+    "subcategory": ["Lyd og bilde"],
     "url": "https://www.hifiklubben.no/",
     "description": "I HiFi Klubben handler alt om lyd og bilde – ikke kjøleskap, vaskemaskiner og stavmiksere. Hos oss får du musikk- og filmopplevelser for hver eneste krone",
     "topp25": false,
@@ -2440,9 +1894,7 @@
     "image": "assets/images/butikker-webp/hifiklubben.webp",
     "alt": "HiFi Klubben",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Lyd og bilde"
-    ],
+    "subcategory": ["Lyd og bilde"],
     "url": "https://www.hifiklubben.no",
     "description": "Høyttalere, forsterkere og lydprodukter i toppklasse.",
     "topp25": false,
@@ -2466,9 +1918,7 @@
     "image": "assets/images/butikker-webp/iphonehuset.webp",
     "alt": "iPhonehuset",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Mobil og nettbrett"
-    ],
+    "subcategory": ["Mobil og nettbrett"],
     "url": "https://www.iphonehuset.no",
     "description": "Mobiltilbehør, skjermbeskyttere, ladere og deksler.",
     "topp25": false,
@@ -2490,9 +1940,7 @@
     "image": "assets/images/butikker-webp/power.webp",
     "alt": "Power",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Spill og konsoller"
-    ],
+    "subcategory": ["Spill og konsoller"],
     "url": "https://www.power.no",
     "description": "Power tilbyr et stort utvalg av spill, konsoller og tilbehør til både casual og pro-gamere.",
     "topp25": false,
@@ -2516,9 +1964,7 @@
     "image": "assets/images/butikker-webp/retrospill-kongen.webp",
     "alt": "Retrospillkongen",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Spill og konsoller"
-    ],
+    "subcategory": ["Spill og konsoller"],
     "url": "https://www.retrospillkongen.no",
     "description": "Spesialist på retrospill til Nintendo, Sega, PlayStation og mer. Samlekassetter, konsoller og tilbehør.",
     "topp25": false,
@@ -2542,9 +1988,7 @@
     "image": "assets/images/butikker-webp/soundgarden.webp",
     "alt": "Soundgarden",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Lyd og bilde"
-    ],
+    "subcategory": ["Lyd og bilde"],
     "url": "https://www.soundgarden.no",
     "description": "Hi-fi og hjemmekino for entusiaster.",
     "topp25": false,
@@ -2568,9 +2012,7 @@
     "image": "assets/images/butikker-webp/telenor.webp",
     "alt": "Telenor.no",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Mobil og nettbrett"
-    ],
+    "subcategory": ["Mobil og nettbrett"],
     "url": "https://www.telenor.no/",
     "description": "Telenor Norge er landets største digitale tjenesteleverandør innenfor mobil, bredbånd og TV-tjenester. Hver dag jobber vi for å lede an i digitaliseringen av Norge og utvikle de beste digitale sikkerhetstjenestene for våre kunder.",
     "topp25": false,
@@ -2594,9 +2036,7 @@
     "image": "assets/images/butikker-webp/telia.webp",
     "alt": "Telia.no",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Mobil og nettbrett"
-    ],
+    "subcategory": ["Mobil og nettbrett"],
     "url": "https://www.telia.no/",
     "description": "Telia er Nordens største leverandør av mobiltjenester - og det skal vi fortsette å være. ",
     "topp25": false,
@@ -2620,9 +2060,7 @@
     "image": "assets/images/butikker-webp/sharkgaming.webp",
     "alt": "Shark Gaming",
     "category": "Gaming og tilbehør",
-    "subcategory": [
-      "Gaming-PC og skjermer"
-    ],
+    "subcategory": ["Gaming-PC og skjermer"],
     "url": "https://www.sharkgaming.no",
     "description": "Norsk nettbutikk for gaming-PCer, skjermer og e-sport-utstyr.",
     "topp25": false,
@@ -2644,23 +2082,14 @@
     "image": "assets/images/butikker-webp/gymgrossisten.webp",
     "alt": "Gymgrossisten.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Trening og velvære"
-    ],
+    "subcategory": ["Trening og velvære"],
     "url": "https://www.gymgrossisten.no/",
     "description": "Kosttilskudd, treningsutstyr og helseprodukter.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "trening",
-      "kosttilskudd",
-      "velvære",
-      "yoga",
-      "balanse",
-      "energi"
-    ],
+    "tags": ["trening", "kosttilskudd", "velvære", "yoga", "balanse", "energi"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 6
@@ -2670,23 +2099,14 @@
     "image": "/assets/images/butikker-webp/about-you.webp",
     "alt": "About You",
     "category": "Klær og mote",
-    "subcategory": [
-      "Dameklær"
-    ],
+    "subcategory": ["Dameklær"],
     "url": "https://www.aboutyou.no",
     "description": "Stort utvalg av merker og mote.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "dameklær",
-      "fashion",
-      "mote",
-      "outfit",
-      "stil",
-      "komfort"
-    ],
+    "tags": ["dameklær", "fashion", "mote", "outfit", "stil", "komfort"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 6
@@ -2696,23 +2116,14 @@
     "image": "assets/images/butikker-webp/boozt.webp",
     "alt": "Boozt",
     "category": "Klær og mote",
-    "subcategory": [
-      "Dameklær"
-    ],
+    "subcategory": ["Dameklær"],
     "url": "https://www.boozt.com",
     "description": "Boozt tilbyr moderne og tidløse klær for alle anledninger åbåde til dame, herre og barn.",
     "topp25": true,
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "dameklær",
-      "fashion",
-      "mote",
-      "outfit",
-      "stil",
-      "komfort"
-    ],
+    "tags": ["dameklær", "fashion", "mote", "outfit", "stil", "komfort"],
     "rank": 5,
     "ukensAnbefalte": "",
     "tagCount": 6
@@ -2722,23 +2133,14 @@
     "image": "assets/images/butikker-webp/bubbleroom.webp",
     "alt": "Bubbleroom",
     "category": "Klær og mote",
-    "subcategory": [
-      "Dameklær"
-    ],
+    "subcategory": ["Dameklær"],
     "url": "https://www.bubbleroom.com",
     "description": "Kjoler og festklær til dame.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "dameklær",
-      "fashion",
-      "mote",
-      "outfit",
-      "stil",
-      "komfort"
-    ],
+    "tags": ["dameklær", "fashion", "mote", "outfit", "stil", "komfort"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 6
@@ -2748,23 +2150,14 @@
     "image": "assets/images/butikker-webp/hm.webp",
     "alt": "H&M",
     "category": "Klær og mote",
-    "subcategory": [
-      "Dameklær"
-    ],
+    "subcategory": ["Dameklær"],
     "url": "https://www.hm.com/no",
     "description": "H&M tilbyr moderne og tidløse klær for alle anledninger åbåde til dame, herre og barn.",
     "topp25": true,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "dameklær",
-      "fashion",
-      "mote",
-      "outfit",
-      "stil",
-      "komfort"
-    ],
+    "tags": ["dameklær", "fashion", "mote", "outfit", "stil", "komfort"],
     "rank": 14,
     "ukensAnbefalte": "",
     "tagCount": 6
@@ -2774,23 +2167,14 @@
     "image": "assets/images/butikker-webp/lindex.webp",
     "alt": "Lindex",
     "category": "Klær og mote",
-    "subcategory": [
-      "Dameklær"
-    ],
+    "subcategory": ["Dameklær"],
     "url": "https://www.lindex.no",
     "description": "Klær og undertøy til dame og barn.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "dameklær",
-      "fashion",
-      "mote",
-      "outfit",
-      "stil",
-      "komfort"
-    ],
+    "tags": ["dameklær", "fashion", "mote", "outfit", "stil", "komfort"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 6
@@ -2800,23 +2184,14 @@
     "image": "assets/images/butikker-webp/miinto.webp",
     "alt": "Miinto",
     "category": "Klær og mote",
-    "subcategory": [
-      "Dameklær"
-    ],
+    "subcategory": ["Dameklær"],
     "url": "https://www.miinto.no",
     "description": "Miinto samler klær og mote fra lokale butikker i Norge.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "dameklær",
-      "fashion",
-      "mote",
-      "outfit",
-      "stil",
-      "komfort"
-    ],
+    "tags": ["dameklær", "fashion", "mote", "outfit", "stil", "komfort"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 6
@@ -2826,23 +2201,14 @@
     "image": "assets/images/butikker-webp/nelly.webp",
     "alt": "Nelly",
     "category": "Klær og mote",
-    "subcategory": [
-      "Dameklær"
-    ],
+    "subcategory": ["Dameklær"],
     "url": "https://www.nelly.com",
     "description": "Trendklær og kjoler for damer.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "dameklær",
-      "fashion",
-      "mote",
-      "outfit",
-      "stil",
-      "komfort"
-    ],
+    "tags": ["dameklær", "fashion", "mote", "outfit", "stil", "komfort"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 6
@@ -2852,23 +2218,14 @@
     "image": "assets/images/butikker-webp/zalando.webp",
     "alt": "Zalando",
     "category": "Klær og mote",
-    "subcategory": [
-      "Dameklær"
-    ],
+    "subcategory": ["Dameklær"],
     "url": "https://www.zalando.no",
     "description": "Zalando tilbyr moderne og tidløse klær for alle anledninger åbåde til dame, herre og barn.",
     "topp25": true,
     "forside": true,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "dameklær",
-      "fashion",
-      "mote",
-      "outfit",
-      "stil",
-      "komfort"
-    ],
+    "tags": ["dameklær", "fashion", "mote", "outfit", "stil", "komfort"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 6
@@ -2878,23 +2235,14 @@
     "image": "assets/images/butikker-webp/zizzi.webp",
     "alt": "Zizzi",
     "category": "Klær og mote",
-    "subcategory": [
-      "Dameklær"
-    ],
+    "subcategory": ["Dameklær"],
     "url": "https://www.zizzi.no",
     "description": "Zizzi tilbyr moderne plussize-mote for kvinner med fokus på komfort og stil.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "dameklær",
-      "fashion",
-      "mote",
-      "outfit",
-      "stil",
-      "komfort"
-    ],
+    "tags": ["dameklær", "fashion", "mote", "outfit", "stil", "komfort"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 6
@@ -2904,9 +2252,7 @@
     "image": "assets/images/butikker-webp/chilli.webp",
     "alt": "Chilli",
     "category": "Møbler og interiør",
-    "subcategory": [
-      "Møbler"
-    ],
+    "subcategory": ["Møbler"],
     "url": "https://www.chilli.no",
     "description": "Moderne møbler og interiør til gode priser.",
     "topp25": false,
@@ -2930,9 +2276,7 @@
     "image": "assets/images/butikker-webp/furniturebox.webp",
     "alt": "Furniturebox",
     "category": "Møbler og interiør",
-    "subcategory": [
-      "Møbler"
-    ],
+    "subcategory": ["Møbler"],
     "url": "https://www.furniturebox.no",
     "description": "Stort utvalg av møbler og interiør med rask levering.",
     "topp25": false,
@@ -2956,9 +2300,7 @@
     "image": "assets/images/butikker-webp/ikea.webp",
     "alt": "IKEA",
     "category": "Møbler og interiør",
-    "subcategory": [
-      "Møbler"
-    ],
+    "subcategory": ["Møbler"],
     "url": "https://www.ikea.com/no/no",
     "description": "IKEA tilbyr praktiske og stilrene møbler og interiør til alle rom i hjemmet.",
     "topp25": true,
@@ -2982,9 +2324,7 @@
     "image": "assets/images/butikker-webp/jotex.webp",
     "alt": "Jotex",
     "category": "Møbler og interiør",
-    "subcategory": [
-      "Møbler"
-    ],
+    "subcategory": ["Møbler"],
     "url": "https://www.jotex.no",
     "description": "Stilrene tekstiler, interiør og småmøbler til hjemmet.",
     "topp25": false,
@@ -3008,9 +2348,7 @@
     "image": "assets/images/butikker-webp/jysk.webp",
     "alt": "JYSK",
     "category": "Møbler og interiør",
-    "subcategory": [
-      "Møbler"
-    ],
+    "subcategory": ["Møbler"],
     "url": "https://jysk.no/",
     "description": "Skandinavisk interiør og møbler til gode priser.",
     "topp25": false,
@@ -3034,9 +2372,7 @@
     "image": "assets/images/butikker-webp/kid.webp",
     "alt": "Kid Interiør",
     "category": "Møbler og interiør",
-    "subcategory": [
-      "Møbler"
-    ],
+    "subcategory": ["Møbler"],
     "url": "https://www.kid.no",
     "description": "Kid Interiør tilbyr praktiske og stilrene møbler og interiør til alle rom i hjemmet.",
     "topp25": true,
@@ -3060,23 +2396,14 @@
     "image": "assets/images/butikker-webp/kremmerhuset.webp",
     "alt": "Kremmerhuset",
     "category": "Møbler og interiør",
-    "subcategory": [
-      "Dekor og interiør"
-    ],
+    "subcategory": ["Dekor og interiør"],
     "url": "https://www.kremmerhuset.no",
     "description": "Interiør og pynt til alle hjem – stilrent og moderne.",
     "forside": false,
     "topp25": false,
     "annonse": false,
     "ny": true,
-    "tags": [
-      "interiør",
-      "dekor",
-      "bilder",
-      "pynt",
-      "tepper",
-      "nordisk design"
-    ],
+    "tags": ["interiør", "dekor", "bilder", "pynt", "tepper", "nordisk design"],
     "tagCount": 6
   },
   {
@@ -3084,9 +2411,7 @@
     "image": "assets/images/butikker-webp/mobelringen.webp",
     "alt": "Møbelringen",
     "category": "Møbler og interiør",
-    "subcategory": [
-      "Møbler"
-    ],
+    "subcategory": ["Møbler"],
     "url": "https://www.mobelringen.no",
     "description": "Møbler og interiør til stue, soverom, kjøkken og mer.",
     "topp25": false,
@@ -3110,23 +2435,14 @@
     "image": "assets/images/butikker-webp/nordicnest.webp",
     "alt": "Nordic Nest",
     "category": "Møbler og interiør",
-    "subcategory": [
-      "Dekor og interiør"
-    ],
+    "subcategory": ["Dekor og interiør"],
     "url": "https://www.nordicnest.no",
     "description": "Skandinavisk design ådekor, belysning og interiørprodukter.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "interiør",
-      "dekor",
-      "bilder",
-      "pynt",
-      "tepper",
-      "nordisk design"
-    ],
+    "tags": ["interiør", "dekor", "bilder", "pynt", "tepper", "nordisk design"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 6
@@ -3136,9 +2452,7 @@
     "image": "assets/images/butikker-webp/skeidar.webp",
     "alt": "Skeidar",
     "category": "Møbler og interiør",
-    "subcategory": [
-      "Møbler"
-    ],
+    "subcategory": ["Møbler"],
     "url": "https://www.skeidar.no",
     "description": "Kvalitetsmøbler og interiør til hjemmet.",
     "topp25": false,
@@ -3162,23 +2476,14 @@
     "image": "assets/images/butikker-webp/fjellrevenshop.webp",
     "alt": "Fjellrevenshop",
     "category": "Reise og opplevelser",
-    "subcategory": [
-      "Tur- og friluftsutstyr"
-    ],
+    "subcategory": ["Tur- og friluftsutstyr"],
     "url": "https://www.fjellrevenshop.no",
     "description": "Spesialbutikk for Fjällräven turklær, sekker og turutstyr.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "friluft",
-      "tur",
-      "ryggsekk",
-      "sovepose",
-      "telt",
-      "villmark"
-    ],
+    "tags": ["friluft", "tur", "ryggsekk", "sovepose", "telt", "villmark"],
     "tagCount": 6
   },
   {
@@ -3186,23 +2491,14 @@
     "image": "assets/images/butikker-webp/cdon.webp",
     "alt": "CDON",
     "category": "Underholdning og popkultur",
-    "subcategory": [
-      "Film og musikk"
-    ],
+    "subcategory": ["Film og musikk"],
     "url": "https://www.cdon.no",
     "description": "CDON tilbyr et bredt spekter av spill til alle plattformer samt konsoller og gaming-tilbehør.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "DVD",
-      "blu-ray",
-      "vinyl",
-      "CD",
-      "filmkveld",
-      "platebutikk"
-    ],
+    "tags": ["DVD", "blu-ray", "vinyl", "CD", "filmkveld", "platebutikk"],
     "rank": "",
     "ukensAnbefalte": false,
     "tagCount": 6
@@ -3212,23 +2508,14 @@
     "image": "assets/images/butikker-webp/neotokyo.webp",
     "alt": "",
     "category": "Underholdning og popkultur",
-    "subcategory": [
-      "Anime og manga"
-    ],
+    "subcategory": ["Anime og manga"],
     "url": "https://neotokyo.no",
     "description": "Norges beste utvalg i japansk popkultur, figurer og manga.",
     "topp25": "",
     "forside": "",
     "ny": true,
     "annonse": "",
-    "tags": [
-      "anime",
-      "manga",
-      "figurer",
-      "otaku",
-      "cosplay",
-      "fanartikler"
-    ],
+    "tags": ["anime", "manga", "figurer", "otaku", "cosplay", "fanartikler"],
     "rank": "",
     "ukensAnbefalte": "",
     "tagCount": 6
@@ -3238,23 +2525,14 @@
     "image": "assets/images/butikker-webp/platekompaniet.webp",
     "alt": "Platekompaniet",
     "category": "Underholdning og popkultur",
-    "subcategory": [
-      "Film og musikk"
-    ],
+    "subcategory": ["Film og musikk"],
     "url": "https://www.platekompaniet.no",
     "description": "Platekompaniet tilbyr bøker, Elektronikk og data for hele familien.",
     "topp25": true,
     "forside": false,
     "ny": true,
     "annonse": false,
-    "tags": [
-      "DVD",
-      "blu-ray",
-      "vinyl",
-      "CD",
-      "filmkveld",
-      "platebutikk"
-    ],
+    "tags": ["DVD", "blu-ray", "vinyl", "CD", "filmkveld", "platebutikk"],
     "rank": 20,
     "ukensAnbefalte": "",
     "tagCount": 6
@@ -3264,9 +2542,7 @@
     "image": "assets/images/butikker-webp/onecom.webp",
     "alt": "One.com",
     "category": "Digitale tjenester",
-    "subcategory": [
-      "Webhosting & Domene"
-    ],
+    "subcategory": ["Webhosting & Domene"],
     "url": "https://www.one.com",
     "description": "Webhotell, e-post og nettsidebygger – alt i én løsning for privat og bedrift.",
     "topp25": false,
@@ -3289,9 +2565,7 @@
     "image": "assets/images/butikker-webp/chilimobil.webp",
     "alt": "Chilimobil",
     "category": "Digitale tjenester",
-    "subcategory": [
-      "Mobilabonnement"
-    ],
+    "subcategory": ["Mobilabonnement"],
     "url": "https://www.chilimobil.no",
     "description": "Enkel mobilabonnement uten bindingstid med fri data og lave priser.",
     "topp25": false,
@@ -3314,9 +2588,7 @@
     "image": "assets/images/butikker-webp/domene-no.webp",
     "alt": "Domene.no",
     "category": "Digitale tjenester",
-    "subcategory": [
-      "Webhosting & Domene"
-    ],
+    "subcategory": ["Webhosting & Domene"],
     "url": "https://www.domene.no/",
     "description": "Tilbyr webhotell og domener til konkurransedyktige priser.",
     "topp25": false,
@@ -3339,9 +2611,7 @@
     "image": "assets/images/butikker-webp/netflix.webp",
     "alt": "Netflix",
     "category": "Digitale tjenester",
-    "subcategory": [
-      "Strømmetjenester"
-    ],
+    "subcategory": ["Strømmetjenester"],
     "url": "https://www.netflix.com/no/",
     "description": "Ledende strømmetjeneste med et bredt utvalg av filmer og serier.",
     "topp25": false,
@@ -3364,9 +2634,7 @@
     "image": "assets/images/butikker-webp/ice.webp",
     "alt": "Ice",
     "category": "Digitale tjenester",
-    "subcategory": [
-      "Mobilabonnement"
-    ],
+    "subcategory": ["Mobilabonnement"],
     "url": "https://www.ice.no/mobilabonnement/",
     "description": "Mobiloperatør med konkurransedyktige priser og god dekning.",
     "topp25": false,
@@ -3389,9 +2657,7 @@
     "image": "assets/images/butikker-webp/elefun.webp",
     "alt": "Elefun",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Radiostyrte produkter"
-    ],
+    "subcategory": ["Radiostyrte produkter"],
     "url": "https://www.elefun.no",
     "description": "Norges største utvalg av radiostyrte produkter som biler, fly, båter og droner. Rask levering.",
     "topp25": false,
@@ -3416,9 +2682,7 @@
     "image": "assets/images/butikker-webp/printoz.webp",
     "alt": "Printoz",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Gadgets og gaver"
-    ],
+    "subcategory": ["Gadgets og gaver"],
     "url": "https://www.printoz.no",
     "description": "Personlige gaver, firmagaver og profilprodukter med trykk.",
     "topp25": false,
@@ -3443,9 +2707,7 @@
     "image": "assets/images/butikker-webp/ting.webp",
     "alt": "Ting",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Gadgets og gaver"
-    ],
+    "subcategory": ["Gadgets og gaver"],
     "url": "https://www.ting.no",
     "description": "Gaver, design og morsomme produkter for hjemmet.",
     "topp25": false,
@@ -3470,9 +2732,7 @@
     "image": "assets/images/butikker-webp/coolstuff.webp",
     "alt": "CoolStuff",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Gadgets og gaver"
-    ],
+    "subcategory": ["Gadgets og gaver"],
     "url": "https://www.coolstuff.no/",
     "description": "CoolStuff tilbyr unike og morsomme gaver og gadgets for alle anledninger.",
     "topp25": false,
@@ -3495,9 +2755,7 @@
     "image": "assets/images/butikker-webp/enklereliv.webp",
     "alt": "EnklereLiv",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Gadgets og gaver"
-    ],
+    "subcategory": ["Gadgets og gaver"],
     "url": "https://www.enklereliv.no/",
     "description": "EnklereLiv selger smarte produkter og løsninger for en enklere hverdag.",
     "topp25": false,
@@ -3520,9 +2778,7 @@
     "image": "assets/images/butikker-webp/firebox.webp",
     "alt": "Firebox",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Gadgets og gaver"
-    ],
+    "subcategory": ["Gadgets og gaver"],
     "url": "https://www.firebox.com/",
     "description": "Firebox er en britisk butikk med originale og kreative gaveideer.",
     "topp25": false,
@@ -3545,9 +2801,7 @@
     "image": "assets/images/butikker-webp/smartasaker.webp",
     "alt": "SmartaSaker",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Gadgets og gaver"
-    ],
+    "subcategory": ["Gadgets og gaver"],
     "url": "https://www.smartasaker.no/",
     "description": "SmartaSaker tilbyr innovative og smarte produkter for praktisk bruk og gaver.",
     "topp25": false,
@@ -3570,9 +2824,7 @@
     "image": "assets/images/butikker-webp/temashop.webp",
     "alt": "Temashop",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Gadgets og gaver"
-    ],
+    "subcategory": ["Gadgets og gaver"],
     "url": "https://www.temashop.no/gadgets",
     "description": "Temashop har gadgets, kostymer og festartikler for spesielle anledninger.",
     "topp25": false,
@@ -3595,9 +2847,7 @@
     "image": "assets/images/butikker-webp/superkul.webp",
     "alt": "Superkul",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Gadgets og gaver"
-    ],
+    "subcategory": ["Gadgets og gaver"],
     "url": "https://www.superkul.no/tusen-ting/cool-stuff",
     "description": "Superkul.no tilbyr tusenvis av morsomme og kule produkter og gadgets.",
     "topp25": false,
@@ -3620,9 +2870,7 @@
     "image": "assets/images/butikker-webp/coolmania.webp",
     "alt": "Cool Mania",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Gadgets og gaver"
-    ],
+    "subcategory": ["Gadgets og gaver"],
     "url": "https://www.cool-mania.no/",
     "description": "Cool Mania selger unike gadgets og spionkameraer med verdensomspennende frakt.",
     "topp25": false,
@@ -3645,9 +2893,7 @@
     "image": "assets/images/butikker-webp/milrab.webp",
     "alt": "Milrab",
     "category": "Sport og fritid",
-    "subcategory": [
-      "Friluft og tur"
-    ],
+    "subcategory": ["Friluft og tur"],
     "url": "https://www.milrab.no",
     "description": "Utstyr for tur, taktisk bruk og friluftsliv med militær vri.",
     "topp25": false,
@@ -3672,9 +2918,7 @@
     "image": "assets/images/butikker-webp/outnorth.webp",
     "alt": "Outnorth.no",
     "category": "Sport og fritid",
-    "subcategory": [
-      "Friluft og tur"
-    ],
+    "subcategory": ["Friluft og tur"],
     "url": "https://www.outnorth.no",
     "description": "Friluftsliv og turprodukter av høy kvalitet.",
     "topp25": false,
@@ -3699,9 +2943,7 @@
     "image": "assets/images/butikker-webp/revir.webp",
     "alt": "Revir",
     "category": "Sport og fritid",
-    "subcategory": [
-      "Friluft og tur"
-    ],
+    "subcategory": ["Friluft og tur"],
     "url": "https://revir.no",
     "description": "Entusiastdrevet friluftslivsbutikk med fokus på kvalitet og unike produkter.",
     "topp25": false,
@@ -3726,9 +2968,7 @@
     "image": "assets/images/butikker-webp/skittfiske.webp",
     "alt": "Skitt Fiske",
     "category": "Sport og fritid",
-    "subcategory": [
-      "Friluft og tur"
-    ],
+    "subcategory": ["Friluft og tur"],
     "url": "https://www.skittfiske.no",
     "description": "Fiskeutstyr, friluftsprodukter og jaktutstyr å for hobby og tur.",
     "topp25": false,
@@ -3753,9 +2993,7 @@
     "image": "assets/images/butikker-webp/lekeakademiet.webp",
     "alt": "Lekeakademiet",
     "category": "Barn og baby",
-    "subcategory": [
-      "Leker"
-    ],
+    "subcategory": ["Leker"],
     "url": "https://www.lekeakademiet.no",
     "description": "Leker som stimulerer barns utvikling og læring.",
     "topp25": false,
@@ -3782,9 +3020,7 @@
     "image": "assets/images/butikker-webp/lekekassen.webp",
     "alt": "Lekekassen",
     "category": "Barn og baby",
-    "subcategory": [
-      "Leker"
-    ],
+    "subcategory": ["Leker"],
     "url": "https://www.lekekassen.no",
     "description": "Lekekassen.no har et stort utvalg av leker for barn i alle aldre.",
     "topp25": true,
@@ -3811,9 +3047,7 @@
     "image": "assets/images/butikker-webp/extra-leker-no.webp",
     "alt": "Extra Leker",
     "category": "Barn og baby",
-    "subcategory": [
-      "Leker"
-    ],
+    "subcategory": ["Leker"],
     "url": "https://www.extra-leker.no/",
     "description": "Extra Leker tilbyr et enormt utvalg av leker, figurer, byggesett og uteleker for barn.",
     "topp25": false,
@@ -3838,9 +3072,7 @@
     "image": "assets/images/butikker-webp/lekia.webp",
     "alt": "Lekia",
     "category": "Barn og baby",
-    "subcategory": [
-      "Leker"
-    ],
+    "subcategory": ["Leker"],
     "url": "https://www.lekia.no/",
     "description": "Lekia har et stort utvalg av leketøy og eksklusive produkter for barn i alle aldre.",
     "topp25": false,
@@ -3865,9 +3097,7 @@
     "image": "assets/images/butikker-webp/ringo.webp",
     "alt": "Ringo",
     "category": "Barn og baby",
-    "subcategory": [
-      "Leker"
-    ],
+    "subcategory": ["Leker"],
     "url": "https://www.ringo.no/",
     "description": "Ringo er en av Norges største leketøyskjeder med bredt utvalg av leker og spill.",
     "topp25": false,
@@ -3892,9 +3122,7 @@
     "image": "assets/images/butikker-webp/coolshop.webp",
     "alt": "Coolshop",
     "category": "Barn og baby",
-    "subcategory": [
-      "Leker"
-    ],
+    "subcategory": ["Leker"],
     "url": "https://no.coolshop.com/leker/",
     "description": "Coolshop tilbyr kvalitetsleker som LEGO, Playmobil og Barbie – med gratis frakt.",
     "topp25": false,
@@ -3919,9 +3147,7 @@
     "image": "assets/images/butikker-webp/yes.webp",
     "alt": "Yes! Vi leker",
     "category": "Barn og baby",
-    "subcategory": [
-      "Leker"
-    ],
+    "subcategory": ["Leker"],
     "url": "https://yesvileker.no/",
     "description": "Yes! Vi leker er en landsdekkende leketøyskjede med bredt sortiment for barn.",
     "topp25": false,
@@ -3946,9 +3172,7 @@
     "image": "assets/images/butikker-webp/lekeakademiet.webp",
     "alt": "Lekeakademiet",
     "category": "Barn og baby",
-    "subcategory": [
-      "Leker"
-    ],
+    "subcategory": ["Leker"],
     "url": "https://lekeakademiet.no/",
     "description": "Lekeakademiet spesialiserer seg på utviklende og pedagogiske leker for barn i alle aldre.",
     "topp25": false,
@@ -3973,9 +3197,7 @@
     "image": "assets/images/butikker-webp/lekekassen.webp",
     "alt": "Lekekassen",
     "category": "Barn og baby",
-    "subcategory": [
-      "Leker"
-    ],
+    "subcategory": ["Leker"],
     "url": "https://www.lekekassen.no/",
     "description": "Lekekassen har et bredt utvalg av leker, byggesett og figurer for barn i alle aldre.",
     "topp25": false,
@@ -4000,9 +3222,7 @@
     "image": "assets/images/butikker-webp/lekmer.webp",
     "alt": "Lekmer",
     "category": "Barn og baby",
-    "subcategory": [
-      "Leker"
-    ],
+    "subcategory": ["Leker"],
     "url": "https://www.lekmer.no/",
     "description": "Lekmer har stort utvalg av leker, barneutstyr og kreative produkter for små barn.",
     "topp25": false,
@@ -4027,9 +3247,7 @@
     "image": "assets/images/butikker-webp/eurotoys.webp",
     "alt": "Eurotoys",
     "category": "Barn og baby",
-    "subcategory": [
-      "Leker"
-    ],
+    "subcategory": ["Leker"],
     "url": "https://www.eurotoys.net/",
     "description": "Eurotoys.net tilbyr mer enn 10 000 leker og barneprodukter med rask levering.",
     "topp25": false,
@@ -4054,9 +3272,7 @@
     "image": "assets/images/butikker-webp/barnashus.webp",
     "alt": "Barnas Hus",
     "category": "Barn og baby",
-    "subcategory": [
-      "Babyutstyr"
-    ],
+    "subcategory": ["Babyutstyr"],
     "url": "https://www.barnashus.no",
     "description": "Barnas Hus tilbyr et bredt utvalg av barnevogner, bilstoler, stelleprodukter og annet barneutstyr.",
     "topp25": false,
@@ -4081,9 +3297,7 @@
     "image": "assets/images/butikker-webp/mimmis.webp",
     "alt": "Mimmis",
     "category": "Barn og baby",
-    "subcategory": [
-      "Babyutstyr"
-    ],
+    "subcategory": ["Babyutstyr"],
     "url": "https://www.mimmis.no",
     "description": "Mimmis er en moderne faghandel for babyutstyr, barnevogner, reiseutstyr og interiør til barnerom.",
     "topp25": false,
@@ -4108,9 +3322,7 @@
     "image": "assets/images/butikker-webp/jollyroom.webp",
     "alt": "Jollyroom",
     "category": "Barn og baby",
-    "subcategory": [
-      "Babyutstyr"
-    ],
+    "subcategory": ["Babyutstyr"],
     "url": "https://www.jollyroom.no",
     "description": "Jollyroom har et enormt sortiment av babyutstyr, barnevogner, bilstoler, interiør og leker.",
     "topp25": false,
@@ -4135,9 +3347,7 @@
     "image": "assets/images/butikker-webp/babycare.webp",
     "alt": "Babycare",
     "category": "Barn og baby",
-    "subcategory": [
-      "Babyutstyr"
-    ],
+    "subcategory": ["Babyutstyr"],
     "url": "https://www.babycare.no",
     "description": "Babycare er en stor norsk babyutstyrskjede med alt du trenger til småbarnsperioden.",
     "topp25": false,
@@ -4162,9 +3372,7 @@
     "image": "assets/images/butikker-webp/sprell.webp",
     "alt": "Sprell",
     "category": "Barn og baby",
-    "subcategory": [
-      "Babyutstyr"
-    ],
+    "subcategory": ["Babyutstyr"],
     "url": "https://www.sprell.no",
     "description": "Sprell tilbyr håndplukkede kvalitetsprodukter innen babyutstyr og barneromsinteriør.",
     "topp25": false,
@@ -4189,9 +3397,7 @@
     "image": "assets/images/butikker-webp/ohdearbaby.webp",
     "alt": "OhDearBaby",
     "category": "Barn og baby",
-    "subcategory": [
-      "Babyutstyr"
-    ],
+    "subcategory": ["Babyutstyr"],
     "url": "https://www.ohdearbaby.no",
     "description": "OhDearBaby spesialiserer seg på naturlige og trygge babyprodukter med fokus på design og kvalitet.",
     "topp25": false,
@@ -4216,9 +3422,7 @@
     "image": "assets/images/butikker-webp/rudo.webp",
     "alt": "Rudo",
     "category": "Barn og baby",
-    "subcategory": [
-      "Babyutstyr"
-    ],
+    "subcategory": ["Babyutstyr"],
     "url": "https://www.rudo.no",
     "description": "Rudo har lang erfaring og tilbyr et stort utvalg av kvalitetsutstyr til baby og småbarn.",
     "topp25": false,
@@ -4243,9 +3447,7 @@
     "image": "assets/images/butikker-webp/denlillebarnebutikken.webp",
     "alt": "Den Lille Barnebutikken",
     "category": "Barn og baby",
-    "subcategory": [
-      "Babyutstyr"
-    ],
+    "subcategory": ["Babyutstyr"],
     "url": "https://denlillebarnebutikken.no",
     "description": "En liten og personlig butikk som tilbyr babyutstyr og utvalgte produkter til nybakte foreldre.",
     "topp25": false,
@@ -4270,9 +3472,7 @@
     "image": "assets/images/butikker-webp/footway.webp",
     "alt": "Footway",
     "category": "Klær og mote",
-    "subcategory": [
-      "Sko og tilbehør"
-    ],
+    "subcategory": ["Sko og tilbehør"],
     "url": "https://www.footway.no",
     "description": "Footway tilbyr et bredt utvalg av sko og tilbehør for hele familien.",
     "topp25": false,
@@ -4299,9 +3499,7 @@
     "image": "assets/images/butikker-webp/glitter.webp",
     "alt": "Glitter",
     "category": "Klær og mote",
-    "subcategory": [
-      "Sko og tilbehør"
-    ],
+    "subcategory": ["Sko og tilbehør"],
     "url": "https://www.glitter.no",
     "description": "Smykker og hårtilbehør.",
     "topp25": false,
@@ -4328,9 +3526,7 @@
     "image": "assets/images/butikker-webp/morris.webp",
     "alt": "Morris",
     "category": "Klær og mote",
-    "subcategory": [
-      "Sko og tilbehør"
-    ],
+    "subcategory": ["Sko og tilbehør"],
     "url": "https://morrisstockholm.com/sv",
     "description": "Vesker, lommebøker og reisetilbehør.",
     "topp25": false,
@@ -4357,9 +3553,7 @@
     "image": "assets/images/butikker-webp/specsavers.webp",
     "alt": "Specsavers",
     "category": "Klær og mote",
-    "subcategory": [
-      "Sko og tilbehør"
-    ],
+    "subcategory": ["Sko og tilbehør"],
     "url": "https://www.specsavers.no",
     "description": "Briller, solbriller og tilbehør.",
     "topp25": false,
@@ -4386,9 +3580,7 @@
     "image": "assets/images/butikker-webp/sport1.webp",
     "alt": "Sport1.no",
     "category": "Klær og mote",
-    "subcategory": [
-      "Sko og tilbehør"
-    ],
+    "subcategory": ["Sko og tilbehør"],
     "url": "https://www.sport1.no",
     "description": "Sport1.no tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
     "topp25": true,
@@ -4415,9 +3607,7 @@
     "image": "assets/images/butikker-webp/sportamore.webp",
     "alt": "Sportamore",
     "category": "Klær og mote",
-    "subcategory": [
-      "Sko og tilbehør"
-    ],
+    "subcategory": ["Sko og tilbehør"],
     "url": "https://www.sportamore.no",
     "description": "Sportamore tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
     "topp25": true,
@@ -4444,9 +3634,7 @@
     "image": "assets/images/butikker-webp/sykkelpikene.webp",
     "alt": "Sykkelpikene",
     "category": "Klær og mote",
-    "subcategory": [
-      "Sko og tilbehør"
-    ],
+    "subcategory": ["Sko og tilbehør"],
     "url": "https://www.sykkelpikene.no",
     "description": "Norges koseligste nettbutikk for sykler og tilbehør.",
     "topp25": false,
@@ -4473,9 +3661,7 @@
     "image": "assets/images/butikker-webp/xxl.webp",
     "alt": "XXL",
     "category": "Klær og mote",
-    "subcategory": [
-      "Sko og tilbehør"
-    ],
+    "subcategory": ["Sko og tilbehør"],
     "url": "https://www.xxl.no",
     "description": "XXL tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
     "topp25": true,
@@ -4502,9 +3688,7 @@
     "image": "assets/images/butikker-webp/wish.webp",
     "alt": "",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Alt-mulig butikker"
-    ],
+    "subcategory": ["Alt-mulig butikker"],
     "url": "https://www.wish.com",
     "description": "Wish er kjent for sine ekstremt lave priser på gadgets, klær og tilbehør.",
     "topp25": "",
@@ -4534,10 +3718,7 @@
     "image": "assets/images/butikker-webp/joom.webp",
     "alt": "Joom",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Alt-mulig butikker",
-      "Utenlandske butikker"
-    ],
+    "subcategory": ["Alt-mulig butikker", "Utenlandske butikker"],
     "url": "https://www.joom.com/",
     "description": "Joom er en global markedsplass med alt fra gadgets til hjem og fritid.",
     "topp25": false,
@@ -4563,9 +3744,7 @@
     "image": "assets/images/butikker-webp/utstyrsbutikken.webp",
     "alt": "Utstyrsbutikken",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Alt-mulig butikker"
-    ],
+    "subcategory": ["Alt-mulig butikker"],
     "url": "https://www.utstyrsbutikken.no/",
     "description": "Utstyrsbutikken tilbyr alt fra bilutstyr til kjøkkenredskaper og hverdagsprodukter.",
     "topp25": false,
@@ -4591,9 +3770,7 @@
     "image": "assets/images/butikker-webp/lovenorway.webp",
     "alt": "LoveNorway",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Alt-mulig butikker"
-    ],
+    "subcategory": ["Alt-mulig butikker"],
     "url": "https://www.lovenorway.no/",
     "description": "LoveNorway tilbyr varer innen kjøkken, trening og hjem – alt på ett sted.",
     "topp25": false,
@@ -4619,9 +3796,7 @@
     "image": "assets/images/butikker-webp/amazon.webp",
     "alt": "Amazon",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Utenlandske butikker"
-    ],
+    "subcategory": ["Utenlandske butikker"],
     "url": "https://www.amazon.com/",
     "description": "Amazon tilbyr alt fra bøker og elektronikk til gadgets og hjemprodukter med global frakt.",
     "topp25": false,
@@ -4647,10 +3822,7 @@
     "image": "assets/images/butikker-webp/funidelia.webp",
     "alt": "Funidelia",
     "category": "Underholdning og popkultur",
-    "subcategory": [
-      "Figurer og samleobjekter",
-      "Anime og manga"
-    ],
+    "subcategory": ["Figurer og samleobjekter", "Anime og manga"],
     "url": "https://www.funidelia.no",
     "description": "Cosplay, kostymer og nerdete gaver og effekter.",
     "topp25": false,
@@ -4678,10 +3850,7 @@
     "image": "assets/images/butikker-webp/ebok.webp",
     "alt": "eBok.no",
     "category": "Bøker og media",
-    "subcategory": [
-      "E-bøker",
-      "Lyd- og lydbøker"
-    ],
+    "subcategory": ["E-bøker", "Lyd- og lydbøker"],
     "url": "https://www.ebok.no",
     "description": "Norges største samling av e-bøker og lydbøker, eid av Gyldendal.",
     "topp25": false,
@@ -4708,10 +3877,7 @@
     "image": "assets/images/butikker-webp/komplett.webp",
     "alt": "Komplett",
     "category": "Gaming og tilbehør",
-    "subcategory": [
-      "Gaming-PC og skjermer",
-      "PC og datatilbehør"
-    ],
+    "subcategory": ["Gaming-PC og skjermer", "PC og datatilbehør"],
     "url": "https://www.komplett.no",
     "description": "Komplett tilbyr alt innen elektronikk, lyd, bilde og teknologi til konkurransedyktige priser.",
     "topp25": true,
@@ -4740,10 +3906,7 @@
     "image": "assets/images/butikker-webp/komplettapotek.webp",
     "alt": "Komplett Apotek",
     "category": "Gaming og tilbehør",
-    "subcategory": [
-      "Gaming-PC og skjermer",
-      "PC og datatilbehør"
-    ],
+    "subcategory": ["Gaming-PC og skjermer", "PC og datatilbehør"],
     "url": "https://www.komplettapotek.no",
     "description": "Digitalt apotek med lave priser og reseptbestilling rett på nett.",
     "topp25": false,
@@ -4805,10 +3968,7 @@
     "image": "assets/images/butikker-webp/proshop.webp",
     "alt": "Proshop",
     "category": "Gaming og tilbehør",
-    "subcategory": [
-      "Gaming-PC og skjermer",
-      "PC og datatilbehør"
-    ],
+    "subcategory": ["Gaming-PC og skjermer", "PC og datatilbehør"],
     "url": "https://www.proshop.no",
     "description": "Stort utvalg av gaming-PC-er, skjermkort, skjermer og periferiutstyr. Perfekt for gamere og tech-entusiaster.",
     "topp25": false,
@@ -4874,12 +4034,7 @@
     "image": "assets/images/butikker-webp/dyrekassen.webp",
     "alt": "Dyrekassen",
     "category": "Dyrebutikker",
-    "subcategory": [
-      "Fôr og ernæring",
-      "Hund",
-      "Katt",
-      "Smådyr"
-    ],
+    "subcategory": ["Fôr og ernæring", "Hund", "Katt", "Smådyr"],
     "url": "https://www.dyrekassen.no",
     "description": "Dyrekassen leverer hundemat og utstyr hjem på døren, med fokus på kvalitet og bekvemmelighet.",
     "topp25": false,
@@ -4909,10 +4064,7 @@
     "image": "assets/images/butikker-webp/fjellsport.webp",
     "alt": "Fjellsport.no",
     "category": "Sport og fritid",
-    "subcategory": [
-      "Friluft og tur",
-      "Treningsutstyr"
-    ],
+    "subcategory": ["Friluft og tur", "Treningsutstyr"],
     "url": "https://www.fjellsport.no",
     "description": "Fjellsport.no tilbyr sportsutstyr, fritidsklær og tilbehør for aktive livsstiler.",
     "topp25": true,
@@ -4942,11 +4094,7 @@
     "image": "assets/images/butikker-webp/musti.webp",
     "alt": "Musti",
     "category": "Dyrebutikker",
-    "subcategory": [
-      "Fugl",
-      "Fôr og ernæring",
-      "Katt"
-    ],
+    "subcategory": ["Fugl", "Fôr og ernæring", "Katt"],
     "url": "https://www.musti.no",
     "description": "Musti.no er en velkjent butikk for katteprodukter som kattemat, møbler og helsekost.",
     "topp25": false,
@@ -4977,9 +4125,7 @@
     "image": "assets/images/butikker-webp/apotek1.webp",
     "alt": "Apotek 1",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Apotek og helseprodukter"
-    ],
+    "subcategory": ["Apotek og helseprodukter"],
     "url": "https://www.apotek1.no",
     "description": "Apotek1.no tilbyr et bredt utvalg av medisiner, egenpleieprodukter og apotektjenester åalt levert rett hjem.",
     "topp25": true,
@@ -5010,9 +4156,7 @@
     "image": "assets/images/butikker-webp/apotera.webp",
     "alt": "Apotera",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Apotek og helseprodukter"
-    ],
+    "subcategory": ["Apotek og helseprodukter"],
     "url": "https://www.apotera.no",
     "description": "Nytt nettapotek med stort fokus på pris og brukervennlighet.",
     "topp25": false,
@@ -5043,9 +4187,7 @@
     "image": "assets/images/butikker-webp/farmasiet.webp",
     "alt": "Farmasiet",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Apotek og helseprodukter"
-    ],
+    "subcategory": ["Apotek og helseprodukter"],
     "url": "https://www.farmasiet.no",
     "description": "Farmasiet tilbyr et bredt utvalg av medisiner, egenpleieprodukter og apotektjenester åalt levert rett hjem.",
     "topp25": true,
@@ -5076,9 +4218,7 @@
     "image": "assets/images/butikker-webp/mecindo.webp",
     "alt": "Mecindo.no",
     "category": "Helse og egenpleie",
-    "subcategory": [
-      "Apotek og helseprodukter"
-    ],
+    "subcategory": ["Apotek og helseprodukter"],
     "url": "https://www.mecindo.no/",
     "description": "Mecindo.no tilbyr et bredt sortiment innen helse- og skjønnhetsprodukter, lave priser og utmerket kundeservice.",
     "topp25": false,
@@ -5109,9 +4249,7 @@
     "image": "assets/images/butikker-webp/margaretha.webp",
     "alt": "Ateljé Margaretha",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Broderi og håndarbeid"
-    ],
+    "subcategory": ["Broderi og håndarbeid"],
     "url": "https://www.margaretha.no",
     "description": "Nettbutikk med broderier, garn, oppskrifter og tilbehør. Alt til dine hobbyprosjekter.",
     "topp25": "",
@@ -5142,11 +4280,7 @@
     "image": "assets/images/butikker-webp/gamezone.webp",
     "alt": "Gamezone",
     "category": "Gaming og tilbehør",
-    "subcategory": [
-      "Brettspill",
-      "Gaming-tilbehør",
-      "Konsoller"
-    ],
+    "subcategory": ["Brettspill", "Gaming-tilbehør", "Konsoller"],
     "url": "https://www.gamezone.no",
     "description": "Gamezone fører retrospill og tilbehør til eldre konsoller. Også nytt spillutstyr, figurer og samlegjenstander.",
     "topp25": false,
@@ -5178,9 +4312,7 @@
     "image": "assets/images/butikker-webp/cchobby.webp",
     "alt": "CChobby",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Hobby og hobbysett"
-    ],
+    "subcategory": ["Hobby og hobbysett"],
     "url": "https://www.cchobby.no",
     "description": "Stor hobbybutikk med kreative produkter, DIY-kits og alt innen maling, papir, pynt og tilbehør.",
     "topp25": false,
@@ -5209,9 +4341,7 @@
       "image": "assets/images/butikker-webp/clubcreo.webp",
       "alt": "Club Creo",
       "category": "Gaver, gadgets og hobby",
-      "subcategory": [
-        "DIY kits og prosjekter"
-      ],
+      "subcategory": ["DIY kits og prosjekter"],
       "url": "https://www.clubcreo.com/no",
       "description": "Prisvinnende abonnementstjeneste med kreative hobbykit for barn. Ny pakke hver måned, ingen bindingstid.",
       "topp25": false,
@@ -5244,9 +4374,7 @@
     "image": "assets/images/butikker-webp/hobby247.webp",
     "alt": "hobby247",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Hobby og hobbysett"
-    ],
+    "subcategory": ["Hobby og hobbysett"],
     "url": "https://www.hobby247.no",
     "description": "Svensk hobbybutikk med norsk side. Alt innen strikking, sying, veving, leker og tilbehør. Toll og moms inkludert.",
     "topp25": false,
@@ -5278,9 +4406,7 @@
     "image": "assets/images/butikker-webp/hobbyhjornet.webp",
     "alt": "Hobbyhjørnet",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Hobby og hobbysett"
-    ],
+    "subcategory": ["Hobby og hobbysett"],
     "url": "https://www.hobbyhjornet.no",
     "description": "Nettbutikk med hobbyartikler som perler, papir, skala modeller og dekor. Fri frakt over 1000 kr.",
     "topp25": false,
@@ -5312,9 +4438,7 @@
     "image": "assets/images/butikker-webp/panduro.webp",
     "alt": "",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Hobby og hobbysett"
-    ],
+    "subcategory": ["Hobby og hobbysett"],
     "url": "https://www.panduro.com/nb-no",
     "description": "Skandinavias største hobbybutikk â€“ maling, perler og DIY.",
     "topp25": "",
@@ -5346,9 +4470,7 @@
     "image": "assets/images/butikker-webp/strikkemekka.webp",
     "alt": "",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Hobby og hobbysett"
-    ],
+    "subcategory": ["Hobby og hobbysett"],
     "url": "https://www.strikkemekka.no",
     "description": "Alt du trenger til strikking â€“ garn, pinner og oppskrifter.",
     "topp25": "",
@@ -5380,9 +4502,7 @@
     "image": "assets/images/butikker-webp/tegne.webp",
     "alt": "Tegne.no",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Kreativitet og tegning"
-    ],
+    "subcategory": ["Kreativitet og tegning"],
     "url": "https://www.tegne.no",
     "description": "Norsk butikk for kunstnere og tegneinteresserte.",
     "topp25": false,
@@ -5415,10 +4535,7 @@
     "image": "assets/images/butikker-webp/jollyroom.webp",
     "alt": "Jollyroom",
     "category": "Barn og baby",
-    "subcategory": [
-      "Babyutstyr",
-      "Leker"
-    ],
+    "subcategory": ["Babyutstyr", "Leker"],
     "url": "https://www.jollyroom.no",
     "description": "Nordens største barnebutikk på nett – alt til gravide, babyer og barn.",
     "forside": false,
@@ -5452,9 +4569,7 @@
     "image": "assets/images/butikker-webp/dhgate.webp",
     "alt": "",
     "category": "Gaver, gadgets og hobby",
-    "subcategory": [
-      "Grossist og dropshipping"
-    ],
+    "subcategory": ["Grossist og dropshipping"],
     "url": "https://www.dhgate.com",
     "description": "Populær engrosplattform for dropshipping og grossistvarer. Alt fra gadgets til klær.",
     "topp25": "",
@@ -5545,10 +4660,7 @@
     "image": "assets/images/butikker-webp/adlibris.webp",
     "alt": "Adlibris",
     "category": "Bøker og media",
-    "subcategory": [
-      "Bøker",
-      "Fagbøker"
-    ],
+    "subcategory": ["Bøker", "Fagbøker"],
     "url": "https://www.adlibris.com/nb",
     "description": "Nordens største nettbokhandel med stort utvalg av faglitteratur, pensum og skolebøker.",
     "topp25": false,
@@ -5571,10 +4683,7 @@
     "image": "assets/images/butikker-webp/ark.webp",
     "alt": "ARK Bokhandel",
     "category": "Bøker og media",
-    "subcategory": [
-      "Bøker",
-      "Fagbøker"
-    ],
+    "subcategory": ["Bøker", "Fagbøker"],
     "url": "https://www.ark.no",
     "description": "Norsk bokhandel med stort utvalg innen fagbøker og pensum til studenter og elever.",
     "topp25": false,
@@ -5597,9 +4706,7 @@
     "image": "assets/images/butikker-webp/bookis.webp",
     "alt": "Bookis",
     "category": "Bøker og media",
-    "subcategory": [
-      "Fagbøker"
-    ],
+    "subcategory": ["Fagbøker"],
     "url": "https://bookis.com",
     "description": "Kjøp og selg nye og brukte fagbøker enkelt via Bookis sin markedsplass.",
     "topp25": false,
@@ -5620,9 +4727,7 @@
     "image": "assets/images/butikker-webp/bokia-no.webp",
     "alt": "Bokia",
     "category": "Bøker og media",
-    "subcategory": [
-      "Fagbøker"
-    ],
+    "subcategory": ["Fagbøker"],
     "url": "https://bokia.no",
     "description": "Spesialist på brukte fagbøker og pensum til skole og studier. Miljøvennlig og rimelig alternativ.",
     "topp25": false,
@@ -5644,9 +4749,7 @@
     "image": "assets/images/butikker-webp/ibok-no.webp",
     "alt": "iBok",
     "category": "Bøker og media",
-    "subcategory": [
-      "Fagbøker"
-    ],
+    "subcategory": ["Fagbøker"],
     "url": "https://ibok.no",
     "description": "Norges største markedsplass for brukte pensumbøker. Kjøp og selg billig faglitteratur.",
     "topp25": false,
@@ -5668,23 +4771,14 @@
     "image": "assets/images/butikker-webp/komplett.webp",
     "alt": "Komplett",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Elektronikk"
-    ],
+    "subcategory": ["Elektronikk"],
     "url": "https://www.komplett.no",
     "description": "Norges største nettbutikk for elektronikk, data og gaming.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "elektronikk",
-      "PC",
-      "komponenter",
-      "gaming",
-      "data",
-      "hardware"
-    ],
+    "tags": ["elektronikk", "PC", "komponenter", "gaming", "data", "hardware"],
     "rank": "",
     "ukensAnbefalte": ""
   },
@@ -5693,23 +4787,14 @@
     "image": "assets/images/butikker-webp/dustin.webp",
     "alt": "Dustin Home",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Elektronikk"
-    ],
+    "subcategory": ["Elektronikk"],
     "url": "https://www.dustinhome.no",
     "description": "Elektronikk og kontorutstyr for både privatpersoner og bedrifter.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "kontor",
-      "elektronikk",
-      "data",
-      "IT",
-      "nettverk",
-      "utstyr"
-    ],
+    "tags": ["kontor", "elektronikk", "data", "IT", "nettverk", "utstyr"],
     "rank": "",
     "ukensAnbefalte": ""
   },
@@ -5718,9 +4803,7 @@
     "image": "assets/images/butikker-webp/kjell.webp",
     "alt": "Kjell & Company",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Smarthus og kabler"
-    ],
+    "subcategory": ["Smarthus og kabler"],
     "url": "https://www.kjell.com/no",
     "description": "Stort utvalg av smarthusprodukter, kabler og teknisk utstyr.",
     "topp25": false,
@@ -5743,9 +4826,7 @@
     "image": "assets/images/butikker-webp/elko-no.webp",
     "alt": "Elko",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Smarthus og kabler"
-    ],
+    "subcategory": ["Smarthus og kabler"],
     "url": "https://www.elko.no",
     "description": "Smarthusprodukter, stikkontakter og elektrisk materiell.",
     "topp25": false,
@@ -5767,9 +4848,7 @@
     "image": "assets/images/butikker-webp/elefun.webp",
     "alt": "Elefun",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Smarthus og kabler"
-    ],
+    "subcategory": ["Smarthus og kabler"],
     "url": "https://www.elefun.no",
     "description": "Elektronikk og komponenter for hobby og smarthusprosjekter.",
     "topp25": false,
@@ -5792,23 +4871,14 @@
     "image": "assets/images/butikker-webp/futurehome.webp",
     "alt": "Futurehome",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Smarthus og kabler"
-    ],
+    "subcategory": ["Smarthus og kabler"],
     "url": "https://www.futurehome.io",
     "description": "Norsk plattform for styring av smarthjem og energiløsninger.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "smarthus",
-      "energi",
-      "styring",
-      "hjem",
-      "IoT",
-      "smart hjem"
-    ],
+    "tags": ["smarthus", "energi", "styring", "hjem", "IoT", "smart hjem"],
     "rank": "",
     "ukensAnbefalte": ""
   },
@@ -5817,22 +4887,14 @@
     "image": "assets/images/butikker-webp/teleoutlet-no.webp",
     "alt": "Teleoutlet",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Mobil og nettbrett"
-    ],
+    "subcategory": ["Mobil og nettbrett"],
     "url": "https://www.teleoutlet.no",
     "description": "Brukte og nye mobiler med garanti og lave priser.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "mobil",
-      "smarttelefon",
-      "brukte mobiler",
-      "tilbud",
-      "nettbutikk"
-    ],
+    "tags": ["mobil", "smarttelefon", "brukte mobiler", "tilbud", "nettbutikk"],
     "rank": "",
     "ukensAnbefalte": ""
   },
@@ -5841,23 +4903,14 @@
     "image": "assets/images/butikker-webp/eplehuset-no.webp",
     "alt": "Eplehuset",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Mobil og nettbrett"
-    ],
+    "subcategory": ["Mobil og nettbrett"],
     "url": "https://www.eplehuset.no",
     "description": "Apple-produkter, iPhone, iPad og tilbehør fra norsk forhandler.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "Apple",
-      "iPhone",
-      "iPad",
-      "tilbehør",
-      "Mac",
-      "watch"
-    ],
+    "tags": ["Apple", "iPhone", "iPad", "tilbehør", "Mac", "watch"],
     "rank": "",
     "ukensAnbefalte": ""
   },
@@ -5866,22 +4919,14 @@
     "image": "assets/images/butikker-webp/ice.webp",
     "alt": "Ice",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Mobil og nettbrett"
-    ],
+    "subcategory": ["Mobil og nettbrett"],
     "url": "https://www.ice.no",
     "description": "Mobilabonnement og telefoner med god dekning og kundeservice.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "mobilabonnement",
-      "telefon",
-      "SIM",
-      "nett",
-      "dekning"
-    ],
+    "tags": ["mobilabonnement", "telefon", "SIM", "nett", "dekning"],
     "rank": "",
     "ukensAnbefalte": ""
   },
@@ -5890,9 +4935,7 @@
     "image": "assets/images/butikker-webp/mytrendyphone-no.webp",
     "alt": "MyTrendyPhone",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Mobil og nettbrett"
-    ],
+    "subcategory": ["Mobil og nettbrett"],
     "url": "https://www.mytrendyphone.no",
     "description": "Mobiltilbehør, reservedeler og gadgets til lave priser.",
     "topp25": false,
@@ -5914,23 +4957,14 @@
     "image": "assets/images/butikker-webp/soundstorexl-no.webp",
     "alt": "SoundStore XL",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Lyd og bilde"
-    ],
+    "subcategory": ["Lyd og bilde"],
     "url": "https://www.soundstorexl.no",
     "description": "Proff og hjemme lydutstyr til gode priser.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "lyd",
-      "mikrofon",
-      "høyttaler",
-      "PA",
-      "studio",
-      "bilde"
-    ],
+    "tags": ["lyd", "mikrofon", "høyttaler", "PA", "studio", "bilde"],
     "rank": "",
     "ukensAnbefalte": ""
   },
@@ -5939,22 +4973,14 @@
     "image": "assets/images/butikker-webp/surround-no.webp",
     "alt": "Surround",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Lyd og bilde"
-    ],
+    "subcategory": ["Lyd og bilde"],
     "url": "https://www.surround.no",
     "description": "Eksklusive lydsystemer og hifi-anlegg for entusiaster.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "lyd",
-      "hifi",
-      "høyttalere",
-      "lydanlegg",
-      "hjemmekino"
-    ],
+    "tags": ["lyd", "hifi", "høyttalere", "lydanlegg", "hjemmekino"],
     "rank": "",
     "ukensAnbefalte": ""
   },
@@ -5963,23 +4989,14 @@
     "image": "assets/images/butikker-webp/maxgaming.webp",
     "alt": "MaxGaming",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Spill og konsoller"
-    ],
+    "subcategory": ["Spill og konsoller"],
     "url": "https://www.maxgaming.no",
     "description": "Spill og gamingutstyr for seriøse gamere.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "gaming",
-      "konsoller",
-      "mus",
-      "tastatur",
-      "spill",
-      "tilbehør"
-    ],
+    "tags": ["gaming", "konsoller", "mus", "tastatur", "spill", "tilbehør"],
     "rank": "",
     "ukensAnbefalte": ""
   },
@@ -5988,32 +5005,21 @@
     "image": "assets/images/butikker-webp/gamezone.webp",
     "alt": "Gamezone",
     "category": "Elektronikk og data",
-    "subcategory": [
-      "Spill og konsoller"
-    ],
+    "subcategory": ["Spill og konsoller"],
     "url": "https://www.gamezone.no",
     "description": "Brettspill, konsollspill og retrospill på nett.",
     "topp25": false,
     "forside": false,
     "ny": false,
     "annonse": false,
-    "tags": [
-      "spill",
-      "konsoll",
-      "brettspill",
-      "retro",
-      "figurer",
-      "gamer"
-    ],
+    "tags": ["spill", "konsoll", "brettspill", "retro", "figurer", "gamer"],
     "rank": "",
     "ukensAnbefalte": ""
   },
   {
     "name": "Boots Apotek",
     "alt": "Boots Apotek",
-    "subcategory": [
-      "Apotek og helseprodukter"
-    ],
+    "subcategory": ["Apotek og helseprodukter"],
     "url": "https://www.boots.no",
     "description": "Internasjonalt apotek med bredt utvalg av reseptfrie og reseptbelagte legemidler, samt helse- og velværeprodukter.",
     "tags": [
@@ -6035,18 +5041,10 @@
   {
     "name": "Apotek For Deg",
     "alt": "Apotek For Deg",
-    "subcategory": [
-      "Apotek og helseprodukter"
-    ],
+    "subcategory": ["Apotek og helseprodukter"],
     "url": "https://www.apotekfordeg.no",
     "description": "Norsk nettapotek med fokus på lave priser og rask levering av apotekvarer og legemidler.",
-    "tags": [
-      "apotek",
-      "medisin",
-      "helse",
-      "reseptfri",
-      "hjemlevering"
-    ],
+    "tags": ["apotek", "medisin", "helse", "reseptfri", "hjemlevering"],
     "image": "assets/images/butikker-webp/apotekfordeg.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6059,18 +5057,10 @@
   {
     "name": "Med24.no",
     "alt": "Med24",
-    "subcategory": [
-      "Apotek og helseprodukter"
-    ],
+    "subcategory": ["Apotek og helseprodukter"],
     "url": "https://www.med24.no",
     "description": "Stort utvalg innen helse, skjønnhet og livsstil, inkludert kosttilskudd og hudpleie.",
-    "tags": [
-      "helse",
-      "kosttilskudd",
-      "hudpleie",
-      "vitaminer",
-      "livsstil"
-    ],
+    "tags": ["helse", "kosttilskudd", "hudpleie", "vitaminer", "livsstil"],
     "image": "assets/images/butikker-webp/med24-no.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6083,18 +5073,10 @@
   {
     "name": "Bangerhead.no",
     "alt": "Bangerhead",
-    "subcategory": [
-      "Hår- og skjønnhetspleie"
-    ],
+    "subcategory": ["Hår- og skjønnhetspleie"],
     "url": "https://www.bangerhead.no",
     "description": "Skjønnhetsprodukter innen hårpleie, hudpleie og makeup fra kjente merkevarer.",
-    "tags": [
-      "hårpleie",
-      "hudpleie",
-      "sminke",
-      "skjønnhet",
-      "makeup"
-    ],
+    "tags": ["hårpleie", "hudpleie", "sminke", "skjønnhet", "makeup"],
     "image": "assets/images/butikker-webp/bangerhead-no.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6107,18 +5089,10 @@
   {
     "name": "Beautycos.no",
     "alt": "Beautycos",
-    "subcategory": [
-      "Hår- og skjønnhetspleie"
-    ],
+    "subcategory": ["Hår- og skjønnhetspleie"],
     "url": "https://www.beautycos.no",
     "description": "Hårprodukter, parfymer og sminke fra en rekke populære merker.",
-    "tags": [
-      "hår",
-      "parfyme",
-      "hudpleie",
-      "makeup",
-      "skjønnhet"
-    ],
+    "tags": ["hår", "parfyme", "hudpleie", "makeup", "skjønnhet"],
     "image": "assets/images/butikker-webp/beautycos-no.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6131,18 +5105,10 @@
   {
     "name": "Karma.no",
     "alt": "Karma",
-    "subcategory": [
-      "Hår- og skjønnhetspleie"
-    ],
+    "subcategory": ["Hår- og skjønnhetspleie"],
     "url": "https://www.karma.no",
     "description": "Nettbutikk med fokus på naturlige og trygge produkter for hud og hår.",
-    "tags": [
-      "naturlig",
-      "hudpleie",
-      "hårpleie",
-      "økologisk",
-      "skjønnhet"
-    ],
+    "tags": ["naturlig", "hudpleie", "hårpleie", "økologisk", "skjønnhet"],
     "image": "assets/images/butikker-webp/karma-no.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6155,18 +5121,10 @@
   {
     "name": "SkinSecret.no",
     "alt": "SkinSecret",
-    "subcategory": [
-      "Hud- og kroppspleie"
-    ],
+    "subcategory": ["Hud- og kroppspleie"],
     "url": "https://skinsecret.no",
     "description": "Norsk nettbutikk med spesialisering på koreansk hudpleie fra ledende merker.",
-    "tags": [
-      "hudpleie",
-      "koreansk",
-      "k-beauty",
-      "skincare",
-      "ansiktspleie"
-    ],
+    "tags": ["hudpleie", "koreansk", "k-beauty", "skincare", "ansiktspleie"],
     "image": "assets/images/butikker-webp/skinsecret-no.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6179,18 +5137,10 @@
   {
     "name": "Fredrik & Louisa",
     "alt": "Fredrik og Louisa",
-    "subcategory": [
-      "Hud- og kroppspleie"
-    ],
+    "subcategory": ["Hud- og kroppspleie"],
     "url": "https://fredrikoglouisa.no",
     "description": "Hudpleieprodukter fra luksusmerker som Chanel, Dior og Lancôme.",
-    "tags": [
-      "hudpleie",
-      "parfyme",
-      "kosmetikk",
-      "skjønnhet",
-      "luksus"
-    ],
+    "tags": ["hudpleie", "parfyme", "kosmetikk", "skjønnhet", "luksus"],
     "image": "assets/images/butikker-webp/fredrik.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6203,18 +5153,10 @@
   {
     "name": "RÅ SHOP",
     "alt": "RÅ SHOP",
-    "subcategory": [
-      "Hud- og kroppspleie"
-    ],
+    "subcategory": ["Hud- og kroppspleie"],
     "url": "https://raashop.no",
     "description": "Sertifisert grønn nettbutikk med fokus på trygg hudpleie og naturlige ingredienser.",
-    "tags": [
-      "hudpleie",
-      "naturlig",
-      "økologisk",
-      "grønn",
-      "hårpleie"
-    ],
+    "tags": ["hudpleie", "naturlig", "økologisk", "grønn", "hårpleie"],
     "image": "assets/images/butikker-webp/raa.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6227,9 +5169,7 @@
   {
     "name": "BeeOrganic.no",
     "alt": "BeeOrganic",
-    "subcategory": [
-      "Naturlige produkter"
-    ],
+    "subcategory": ["Naturlige produkter"],
     "url": "https://www.beeorganic.no",
     "description": "Fokus på plastfrie, naturlige og økologiske produkter med færre miljøgifter.",
     "tags": [
@@ -6251,9 +5191,7 @@
   {
     "name": "Kinsarvik Naturkost",
     "alt": "Kinsarvik Naturkost",
-    "subcategory": [
-      "Naturlige produkter"
-    ],
+    "subcategory": ["Naturlige produkter"],
     "url": "https://www.kinsarvik.no",
     "description": "Allergivennlige matvarer, kosttilskudd og naturlige helseprodukter.",
     "tags": [
@@ -6275,18 +5213,10 @@
   {
     "name": "Isblå.no",
     "alt": "Isblå",
-    "subcategory": [
-      "Naturlige produkter"
-    ],
+    "subcategory": ["Naturlige produkter"],
     "url": "https://isbla.no",
     "description": "Nettbutikk med helsekostprodukter og naturlige løsninger for god helse.",
-    "tags": [
-      "helsekost",
-      "naturlig",
-      "kosttilskudd",
-      "vitaminer",
-      "sunnhet"
-    ],
+    "tags": ["helsekost", "naturlig", "kosttilskudd", "vitaminer", "sunnhet"],
     "image": "assets/images/butikker-webp/isblaa.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6299,18 +5229,10 @@
   {
     "name": "KICKS.no",
     "alt": "KICKS",
-    "subcategory": [
-      "Kosmetikk og sminke"
-    ],
+    "subcategory": ["Kosmetikk og sminke"],
     "url": "https://www.kicks.no",
     "description": "En av Norges største kosmetikkjeder med stort utvalg innen makeup og skjønnhet.",
-    "tags": [
-      "kosmetikk",
-      "makeup",
-      "skjønnhet",
-      "parfyme",
-      "sminke"
-    ],
+    "tags": ["kosmetikk", "makeup", "skjønnhet", "parfyme", "sminke"],
     "image": "assets/images/butikker-webp/kicks-no.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6323,18 +5245,10 @@
   {
     "name": "Makeup Mekka",
     "alt": "Makeup Mekka",
-    "subcategory": [
-      "Kosmetikk og sminke"
-    ],
+    "subcategory": ["Kosmetikk og sminke"],
     "url": "https://www.makeupmekka.com/no-no",
     "description": "Norsk nettbutikk med eget sminkemerke og lave priser.",
-    "tags": [
-      "sminke",
-      "kosmetikk",
-      "makeup",
-      "rimelig",
-      "beauty"
-    ],
+    "tags": ["sminke", "kosmetikk", "makeup", "rimelig", "beauty"],
     "image": "assets/images/butikker-webp/makeupmekka.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6347,18 +5261,10 @@
   {
     "name": "CAIA Cosmetics",
     "alt": "CAIA Cosmetics",
-    "subcategory": [
-      "Kosmetikk og sminke"
-    ],
+    "subcategory": ["Kosmetikk og sminke"],
     "url": "https://caiacosmetics.no",
     "description": "Sminke av høy kvalitet utviklet av influencere og eksperter.",
-    "tags": [
-      "sminke",
-      "kosmetikk",
-      "leppestift",
-      "foundation",
-      "beauty"
-    ],
+    "tags": ["sminke", "kosmetikk", "leppestift", "foundation", "beauty"],
     "image": "assets/images/butikker-webp/caia.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6371,18 +5277,10 @@
   {
     "name": "Tights.no",
     "alt": "Tights.no",
-    "subcategory": [
-      "Trening og velvære"
-    ],
+    "subcategory": ["Trening og velvære"],
     "url": "https://www.tights.no",
     "description": "Alt innen treningstøy, kosttilskudd og helseprodukter.",
-    "tags": [
-      "trening",
-      "kosttilskudd",
-      "helse",
-      "velvære",
-      "fitness"
-    ],
+    "tags": ["trening", "kosttilskudd", "helse", "velvære", "fitness"],
     "image": "assets/images/butikker-webp/tights-no.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6395,18 +5293,10 @@
   {
     "name": "Treningsgiganten.no",
     "alt": "Treningsgiganten",
-    "subcategory": [
-      "Trening og velvære"
-    ],
+    "subcategory": ["Trening og velvære"],
     "url": "https://www.treningsgiganten.no",
     "description": "Stort utvalg av treningsapparater og helsefremmende produkter.",
-    "tags": [
-      "trening",
-      "helse",
-      "utstyr",
-      "styrketrening",
-      "apparater"
-    ],
+    "tags": ["trening", "helse", "utstyr", "styrketrening", "apparater"],
     "image": "assets/images/butikker-webp/treningsgiganten-no.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6419,18 +5309,10 @@
   {
     "name": "Trygg-helse.no",
     "alt": "Trygg Helse",
-    "subcategory": [
-      "Trening og velvære"
-    ],
+    "subcategory": ["Trening og velvære"],
     "url": "https://trygg-helse.no",
     "description": "Produkter for velvære, smertelindring og stressmestring.",
-    "tags": [
-      "helse",
-      "massasje",
-      "eteriske oljer",
-      "stress",
-      "velvære"
-    ],
+    "tags": ["helse", "massasje", "eteriske oljer", "stress", "velvære"],
     "image": "assets/images/butikker-webp/trygg-helse-no.webp",
     "category": "Helse og egenpleie",
     "topp25": false,
@@ -6443,9 +5325,7 @@
   {
     "name": "GameKeys.no",
     "alt": "GameKeys",
-    "subcategory": [
-      "Digitale spillnøkler"
-    ],
+    "subcategory": ["Digitale spillnøkler"],
     "url": "https://www.gamekeys.no",
     "description": "Norsk nettbutikk for produktnøkler til spill og programvare med rask levering.",
     "tags": [
@@ -6467,18 +5347,10 @@
   {
     "name": "Keysforgames.no",
     "alt": "Keysforgames",
-    "subcategory": [
-      "Digitale spillnøkler"
-    ],
+    "subcategory": ["Digitale spillnøkler"],
     "url": "https://www.keysforgames.no",
     "description": "Sammenligningsplattform for priser på digitale spillnøkler.",
-    "tags": [
-      "spillnøkler",
-      "sammenligning",
-      "rabatt",
-      "digital",
-      "prisjakt"
-    ],
+    "tags": ["spillnøkler", "sammenligning", "rabatt", "digital", "prisjakt"],
     "image": "assets/images/butikker-webp/keysforgames-no.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6491,18 +5363,10 @@
   {
     "name": "Livecards.net",
     "alt": "Livecards",
-    "subcategory": [
-      "Digitale spillnøkler"
-    ],
+    "subcategory": ["Digitale spillnøkler"],
     "url": "https://livecards.net/no",
     "description": "Internasjonal leverandør av billige digitale spillnøkler med rask levering.",
-    "tags": [
-      "digital",
-      "spillnøkkel",
-      "rask levering",
-      "spill",
-      "billig"
-    ],
+    "tags": ["digital", "spillnøkkel", "rask levering", "spill", "billig"],
     "image": "assets/images/butikker-webp/livecards-net.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6515,18 +5379,10 @@
   {
     "name": "Gamezone.no",
     "alt": "Gamezone",
-    "subcategory": [
-      "Figurer og samleobjekter"
-    ],
+    "subcategory": ["Figurer og samleobjekter"],
     "url": "https://gamezone.no",
     "description": "Brettspill, samlerfigurer og alt for spillentusiaster og samlere.",
-    "tags": [
-      "figurer",
-      "samleobjekter",
-      "brettspill",
-      "spill",
-      "gamer"
-    ],
+    "tags": ["figurer", "samleobjekter", "brettspill", "spill", "gamer"],
     "image": "assets/images/butikker-webp/gamezone.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6539,18 +5395,10 @@
   {
     "name": "Supernerds.no",
     "alt": "Supernerds",
-    "subcategory": [
-      "Figurer og samleobjekter"
-    ],
+    "subcategory": ["Figurer og samleobjekter"],
     "url": "https://supernerds.no",
     "description": "Samleobjekter og figurer fra filmer, spill og serier.",
-    "tags": [
-      "samlefigurer",
-      "film",
-      "spill",
-      "anime",
-      "figurer"
-    ],
+    "tags": ["samlefigurer", "film", "spill", "anime", "figurer"],
     "image": "assets/images/butikker-webp/supernerds-no.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6563,18 +5411,10 @@
   {
     "name": "Collectible.no",
     "alt": "Collectible",
-    "subcategory": [
-      "Figurer og samleobjekter"
-    ],
+    "subcategory": ["Figurer og samleobjekter"],
     "url": "https://www.collectible.no",
     "description": "Spesialbutikk for Pokémon-kort og samlerfigurer.",
-    "tags": [
-      "pokémon",
-      "kort",
-      "samleobjekter",
-      "figurer",
-      "spill"
-    ],
+    "tags": ["pokémon", "kort", "samleobjekter", "figurer", "spill"],
     "image": "assets/images/butikker-webp/collectible-no.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6587,18 +5427,10 @@
   {
     "name": "Extra-leker.no",
     "alt": "Extra-leker",
-    "subcategory": [
-      "Figurer og samleobjekter"
-    ],
+    "subcategory": ["Figurer og samleobjekter"],
     "url": "https://www.extra-leker.no",
     "description": "Funko POP!-figurer og samleobjekter fra kjente univers.",
-    "tags": [
-      "funko",
-      "figurer",
-      "samleobjekter",
-      "leker",
-      "popkultur"
-    ],
+    "tags": ["funko", "figurer", "samleobjekter", "leker", "popkultur"],
     "image": "assets/images/butikker-webp/extra-leker-no.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6611,18 +5443,10 @@
   {
     "name": "NordCollectibles.no",
     "alt": "NordCollectibles",
-    "subcategory": [
-      "Figurer og samleobjekter"
-    ],
+    "subcategory": ["Figurer og samleobjekter"],
     "url": "https://nordcollectibles.no",
     "description": "Autentiske blind boxes og figurer fra Pop Mart og Labubu.",
-    "tags": [
-      "blind box",
-      "figurer",
-      "popmart",
-      "labubu",
-      "anime"
-    ],
+    "tags": ["blind box", "figurer", "popmart", "labubu", "anime"],
     "image": "assets/images/butikker-webp/nordcollectibles-no.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6635,18 +5459,10 @@
   {
     "name": "iMusic.no",
     "alt": "iMusic",
-    "subcategory": [
-      "Film og musikk"
-    ],
+    "subcategory": ["Film og musikk"],
     "url": "https://imusic.no",
     "description": "Nordens største musikkforhandler med stort utvalg av film og musikk.",
-    "tags": [
-      "musikk",
-      "film",
-      "vinyl",
-      "CD",
-      "samling"
-    ],
+    "tags": ["musikk", "film", "vinyl", "CD", "samling"],
     "image": "assets/images/butikker-webp/imusic-no.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6659,18 +5475,10 @@
   {
     "name": "Bladkongen.no",
     "alt": "Bladkongen",
-    "subcategory": [
-      "Film og musikk"
-    ],
+    "subcategory": ["Film og musikk"],
     "url": "https://www.bladkongen.no",
     "description": "Magasinabonnement innen film og musikk.",
-    "tags": [
-      "magasin",
-      "film",
-      "musikk",
-      "abonnement",
-      "blad"
-    ],
+    "tags": ["magasin", "film", "musikk", "abonnement", "blad"],
     "image": "assets/images/butikker-webp/bladkongen-no.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6683,18 +5491,10 @@
   {
     "name": "AtTheMoviesShop.com",
     "alt": "At The Movies Shop",
-    "subcategory": [
-      "Film og musikk"
-    ],
+    "subcategory": ["Film og musikk"],
     "url": "https://atthemoviesshop.com",
     "description": "Eksklusive vinylutgivelser av filmmusikk og soundtracks.",
-    "tags": [
-      "vinyl",
-      "filmmusikk",
-      "soundtrack",
-      "film",
-      "samler"
-    ],
+    "tags": ["vinyl", "filmmusikk", "soundtrack", "film", "samler"],
     "image": "assets/images/butikker-webp/atthemoviesshop-com.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6707,18 +5507,10 @@
   {
     "name": "RetroNorge.no",
     "alt": "RetroNorge",
-    "subcategory": [
-      "Film og musikk"
-    ],
+    "subcategory": ["Film og musikk"],
     "url": "https://www.retronorge.no",
     "description": "Retrofilmer og musikkprodukter for samlere og nostalgikere.",
-    "tags": [
-      "retro",
-      "film",
-      "musikk",
-      "nostalgi",
-      "samler"
-    ],
+    "tags": ["retro", "film", "musikk", "nostalgi", "samler"],
     "image": "assets/images/butikker-webp/retronorge.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6731,18 +5523,10 @@
   {
     "name": "Outland.no",
     "alt": "Outland",
-    "subcategory": [
-      "Anime og manga"
-    ],
+    "subcategory": ["Anime og manga"],
     "url": "https://www.outland.no",
     "description": "Stort utvalg av manga, animefigurer og tilbehør.",
-    "tags": [
-      "anime",
-      "manga",
-      "figurer",
-      "japan",
-      "outland"
-    ],
+    "tags": ["anime", "manga", "figurer", "japan", "outland"],
     "image": "assets/images/butikker-webp/outland-no.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6755,18 +5539,10 @@
   {
     "name": "Norli.no",
     "alt": "Norli",
-    "subcategory": [
-      "Anime og manga"
-    ],
+    "subcategory": ["Anime og manga"],
     "url": "https://www.norli.no",
     "description": "Bokhandel med stort utvalg av manga og tegneserier.",
-    "tags": [
-      "manga",
-      "bøker",
-      "tegneserier",
-      "anime",
-      "serier"
-    ],
+    "tags": ["manga", "bøker", "tegneserier", "anime", "serier"],
     "image": "assets/images/butikker-webp/norli-no.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6779,18 +5555,10 @@
   {
     "name": "Crunchyroll Store",
     "alt": "Crunchyroll Store",
-    "subcategory": [
-      "Anime og manga"
-    ],
+    "subcategory": ["Anime og manga"],
     "url": "https://store.crunchyroll.com/eu/no/en/home",
     "description": "Offisiell butikk med klær og figurer fra populære anime-serier.",
-    "tags": [
-      "anime",
-      "figurer",
-      "merch",
-      "klær",
-      "crunchyroll"
-    ],
+    "tags": ["anime", "figurer", "merch", "klær", "crunchyroll"],
     "image": "assets/images/butikker-webp/crunchyroll.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6803,18 +5571,10 @@
   {
     "name": "Manga Sekai Shop",
     "alt": "Manga Sekai Shop",
-    "subcategory": [
-      "Anime og manga"
-    ],
+    "subcategory": ["Anime og manga"],
     "url": "https://mangasekaishop.com",
     "description": "Anime-inspirerte produkter og dekorasjoner for fans.",
-    "tags": [
-      "anime",
-      "LED",
-      "dekor",
-      "fans",
-      "japan"
-    ],
+    "tags": ["anime", "LED", "dekor", "fans", "japan"],
     "image": "assets/images/butikker-webp/manga.webp",
     "category": "Underholdning og popkultur",
     "topp25": false,
@@ -6824,655 +5584,769 @@
     "rank": "",
     "ukensAnbefalte": ""
   },
-    {
-      "name": "Bohus",
-      "url": "https://www.bohus.no",
-      "category": "Møbler og interiør",
-      "subcategory": ["Møbler"],
-      "description": "En av Norges største møbel- og interiørkjeder med både nettbutikk og fysiske butikker.",
-      "tags": ["møbler", "interiør", "norsk kjede"],
-      "image": "assets/images/butikker-webp/bohus-no.webp",
-      "alt": "Bohus",
-      "topp25": false,
-      "forside": false,
-      "ny": true,
-      "annonse": false,
-      "rank": "",
-      "ukensAnbefalte": ""
-    },
-    {
-      "name": "Homeroom",
-      "url": "https://www.homeroom.no",
-      "category": "Møbler og interiør",
-      "subcategory": ["Møbler"],
-      "description": "Stort utvalg av møbler og interiør i nordisk stil, med raske leveranser.",
-      "tags": ["møbler", "nordisk design", "interiør"],
-      "image": "assets/images/butikker-webp/homeroom-no.webp",
-      "alt": "Homeroom",
-      "topp25": false,
-      "forside": false,
-      "ny": true,
-      "annonse": false,
-      "rank": "",
-      "ukensAnbefalte": ""
-    },
-    {
-      "name": "Lunehjem.no",
-      "url": "https://www.lunehjem.no",
-      "category": "Møbler og interiør",
-      "subcategory": ["Møbler"],
-      "description": "Designmøbler og interiørprodukter fra kjente merkevarer som HAY og Muuto.",
-      "tags": ["design", "interiør", "nordisk", "møbler"],
-      "image": "assets/images/butikker-webp/lunehjem-no.webp",
-      "alt": "Lunehjem.no",
-      "topp25": false,
-      "forside": false,
-      "ny": true,
-      "annonse": false,
-      "rank": "",
-      "ukensAnbefalte": ""
-    },
-    {
-      "name": "Rum21",
-      "url": "https://www.rum21.no",
-      "category": "Møbler og interiør",
-      "subcategory": ["Møbler"],
-      "description": "Design og kvalitetsmøbler fra ledende merker – for et moderne hjem.",
-      "tags": ["moderne", "møbler", "design", "interiør"],
-      "image": "assets/images/butikker-webp/rum21-no.webp",
-      "alt": "Rum21",
-      "topp25": false,
-      "forside": false,
-      "ny": true,
-      "annonse": false,
-      "rank": "",
-      "ukensAnbefalte": ""
-    },
-    {
-      "name": "Bolina",
-      "url": "https://www.bolina.no",
-      "category": "Møbler og interiør",
-      "subcategory": ["Møbler"],
-      "description": "Unik nisjebutikk med møbler og interiørprodukter i høy kvalitet.",
-      "tags": ["nisje", "interiør", "design", "møbler"],
-      "image": "assets/images/butikker-webp/bolina-no.webp",
-      "alt": "Bolina",
-      "topp25": false,
-      "forside": false,
-      "ny": true,
-      "annonse": false,
-      "rank": "",
-      "ukensAnbefalte": ""
-    },
-    {
-      "name": "Lysbutikken",
-      "url": "https://www.lysbutikken.no",
-      "category": "Møbler og interiør",
-      "subcategory": ["Belysning"],
-      "description": "Alt av lamper og belysning i alle prisklasser og stilarter.",
-      "tags": ["lys", "lamper", "belysning"],
-      "image": "assets/images/butikker-webp/lysbutikken-no.webp",
-      "alt": "Lysbutikken",
-      "topp25": false,
-      "forside": false,
-      "ny": true,
-      "annonse": false,
-      "rank": "",
-      "ukensAnbefalte": ""
-    },
-    {
-      "name": "Lampehuset",
-      "url": "https://www.lampehuset.no",
-      "category": "Møbler og interiør",
-      "subcategory": ["Belysning"],
-      "description": "Stilfulle og funksjonelle belysningsløsninger for hjemmet.",
-      "tags": ["belysning", "lamper", "interiør"],
-      "image": "assets/images/butikker-webp/lampehuset-no.webp",
-      "alt": "Lampehuset",
-      "topp25": false,
-      "forside": false,
-      "ny": true,
-      "annonse": false,
-      "rank": "",
-      "ukensAnbefalte": ""
-    },
-    {
-      "name": "Lightup",
-      "url": "https://www.lightup.no",
-      "category": "Møbler og interiør",
-      "subcategory": ["Belysning"],
-      "description": "Stort utvalg av lamper og lysprodukter til gode priser.",
-      "tags": ["belysning", "lys", "lamper"],
-      "image": "assets/images/butikker-webp/lightup-no.webp",
-      "alt": "Lightup",
-      "topp25": false,
-      "forside": false,
-      "ny": true,
-      "annonse": false,
-      "rank": "",
-      "ukensAnbefalte": ""
-    },
-    {
-      "name": "Christiania Belysning",
-      "url": "https://www.christiania-belysning.no",
-      "category": "Møbler og interiør",
-      "subcategory": ["Belysning"],
-      "description": "Faghandel for lamper og belysning med veiledning og service.",
-      "tags": ["lys", "belysning", "designlamper"],
-      "image": "assets/images/butikker-webp/christiania-belysning-no.webp",
-      "alt": "Christiania Belysning",
-      "topp25": false,
-      "forside": false,
-      "ny": true,
-      "annonse": false,
-      "rank": "",
-      "ukensAnbefalte": ""
-    },
-    {
-      "name": "Feel",
-      "url": "https://feel.no",
-      "category": "Møbler og interiør",
-      "subcategory": ["Dekor og interiør"],
-      "description": "Interiørbutikk med produkter som skaper stemning i hjemmet.",
-      "tags": ["interiør", "dekor", "hjem"],
-      "image": "assets/images/butikker-webp/feel-no.webp",
-      "alt": "Feel",
-      "topp25": false,
-      "forside": false,
-      "ny": true,
-      "annonse": false,
-      "rank": "",
-      "ukensAnbefalte": ""
-    },
-    {
-      "name": "Multitrend",
-      "url": "https://www.multitrend.no",
-      "category": "Møbler og interiør",
-      "subcategory": ["Dekor og interiør"],
-      "description": "En av Norges største nettbutikker innen interiør og hjem.",
-      "tags": ["interiør", "kjøkken", "hjem", "gaver"],
-      "image": "assets/images/butikker-webp/multitrend-no.webp",
-      "alt": "Multitrend",
-      "topp25": false,
-      "forside": false,
-      "ny": true,
-      "annonse": false,
-      "rank": "",
-      "ukensAnbefalte": ""
-    },
-    {
-      "name": "Landromantikk",
-      "url": "https://landromantikk.no",
-      "category": "Møbler og interiør",
-      "subcategory": ["Dekor og interiør"],
-      "description": "Rustikk og landlig interiørstil for både hjem og hytte.",
-      "tags": ["rustikk", "hytte", "landlig", "interiør"],
-      "image": "assets/images/butikker-webp/landromantikk-no.webp",
-      "alt": "Landromantikk",
-      "topp25": false,
-      "forside": false,
-      "ny": true,
-      "annonse": false,
-      "rank": "",
-      "ukensAnbefalte": ""
-    },
-    {
-      "name": "Eske Interiør",
-      "url": "https://eskeinterior.no",
-      "category": "Møbler og interiør",
-      "subcategory": ["Dekor og interiør"],
-      "description": "Nettbutikk med fokus på nøye kuraterte produkter innen moderne interiør.",
-      "tags": ["design", "interiør", "norsk", "moderne"],
-      "image": "assets/images/butikker-webp/eskeinterior-no.webp",
-      "alt": "Eske Interiør",
-      "topp25": false,
-      "forside": false,
-      "ny": true,
-      "annonse": false,
-      "rank": "",
-      "ukensAnbefalte": ""
-    },
-      {
-        "name": "Ark",
-        "url": "https://www.ark.no",
-        "subcategory": ["Kart og guider"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/ark-no.webp",
-        "alt": "Ark",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "Norli",
-        "url": "https://www.norli.no",
-        "subcategory": ["Kart og guider"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/norli-no.webp",
-        "alt": "Norli",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "Bagorama",
-        "url": "https://www.bagorama.no",
-        "subcategory": ["Bager og kofferter"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/bagorama-no.webp",
-        "alt": "Bagorama",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "LeGanz",
-        "url": "https://www.leganz.no",
-        "subcategory": ["Bager og kofferter"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/leganz-no.webp",
-        "alt": "LeGanz",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "BagBrokers",
-        "url": "https://bagbrokers.no",
-        "subcategory": ["Bager og kofferter"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/bagbrokers-no.webp",
-        "alt": "BagBrokers",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "MyBag",
-        "url": "https://mybag.no",
-        "subcategory": ["Bager og kofferter"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/mybag-no.webp",
-        "alt": "MyBag",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "Shoppingvogner.no",
-        "url": "https://shoppingvogner.no",
-        "subcategory": ["Bager og kofferter"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/shoppingvogner-no.webp",
-        "alt": "Shoppingvogner.no",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "Europris",
-        "url": "https://www.europris.no",
-        "subcategory": ["Bager og kofferter"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/europris-no.webp",
-        "alt": "Europris",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "Travelstuff",
-        "url": "https://www.travelstuff.no",
-        "subcategory": ["Reiseutstyr"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/travelstuff-no.webp",
-        "alt": "Travelstuff",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "Chillout",
-        "url": "https://chillout.no",
-        "subcategory": ["Reiseutstyr"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/chillout-no.webp",
-        "alt": "Chillout",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "Fjellsport",
-        "url": "https://www.fjellsport.no",
-        "subcategory": ["Tur- og friluftsutstyr"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/fjellsport-no.webp",
-        "alt": "Fjellsport",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "Hekta På Tur",
-        "url": "https://www.hektapatur.no",
-        "subcategory": ["Tur- og friluftsutstyr"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/hektapatur-no.webp",
-        "alt": "Hekta På Tur",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "Magasinet",
-        "url": "https://www.magasinet.no",
-        "subcategory": ["Tur- og friluftsutstyr"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/magasinet-no.webp",
-        "alt": "Magasinet",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "123friluft",
-        "url": "https://www.123friluft.no",
-        "subcategory": ["Tur- og friluftsutstyr"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/123friluft-no.webp",
-        "alt": "123friluft",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "Sportsnett",
-        "url": "https://www.sportsnett.no",
-        "subcategory": ["Tur- og friluftsutstyr"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/sportsnett-no.webp",
-        "alt": "Sportsnett",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-      {
-        "name": "DNTbutikken",
-        "url": "https://www.dntbutikken.no",
-        "subcategory": ["Tur- og friluftsutstyr"],
-        "category": "Reise og opplevelser",
-        "image": "assets/images/butikker-webp/dntbutikken-no.webp",
-        "alt": "DNTbutikken",
-        "topp25": false,
-        "forside": false,
-        "ny": true,
-        "annonse": false,
-        "tags": [],
-        "rank": "",
-        "ukensAnbefalte": ""
-      },
-        {
-          "name": "VetZoo",
-          "url": "https://vetzoo.no",
-          "category": "Dyrebutikker",
-          "subcategory": [],
-          "image": "assets/images/butikker-webp/vetzoo-no.webp",
-          "alt": "VetZoo",
-          "topp25": false,
-          "forside": false,
-          "ny": true,
-          "annonse": false,
-          "tags": [],
-          "rank": "",
-          "ukensAnbefalte": ""
-        },
-        {
-          "name": "PetXL",
-          "url": "https://www.petxl.no",
-          "category": "Dyrebutikker",
-          "subcategory": [],
-          "image": "assets/images/butikker-webp/petxl-no.webp",
-          "alt": "PetXL",
-          "topp25": false,
-          "forside": false,
-          "ny": true,
-          "annonse": false,
-          "tags": [],
-          "rank": "",
-          "ukensAnbefalte": ""
-        },
-        {
-          "name": "Pets",
-          "url": "https://www.pets.no",
-          "category": "Dyrebutikker",
-          "subcategory": [],
-          "image": "assets/images/butikker-webp/pets-no.webp",
-          "alt": "Pets",
-          "topp25": false,
-          "forside": false,
-          "ny": true,
-          "annonse": false,
-          "tags": [],
-          "rank": "",
-          "ukensAnbefalte": ""
-        },
-        {
-          "name": "Tropehagen",
-          "url": "https://tropehagen.no",
-          "category": "Dyrebutikker",
-          "subcategory": [],
-          "image": "assets/images/butikker-webp/tropehagen-no.webp",
-          "alt": "Tropehagen",
-          "topp25": false,
-          "forside": false,
-          "ny": true,
-          "annonse": false,
-          "tags": [],
-          "rank": "",
-          "ukensAnbefalte": ""
-        },
-        {
-          "name": "Dogman",
-          "url": "https://dogman.no",
-          "category": "Dyrebutikker",
-          "subcategory": [],
-          "image": "assets/images/butikker-webp/dogman-no.webp",
-          "alt": "Dogman",
-          "topp25": false,
-          "forside": false,
-          "ny": true,
-          "annonse": false,
-          "tags": [],
-          "rank": "",
-          "ukensAnbefalte": ""
-        },
-        {
-          "name": "Nettdyret",
-          "url": "https://nettdyret.no",
-          "category": "Dyrebutikker",
-          "subcategory": [],
-          "image": "assets/images/butikker-webp/nettdyret-no.webp",
-          "alt": "Nettdyret",
-          "topp25": false,
-          "forside": false,
-          "ny": true,
-          "annonse": false,
-          "tags": [],
-          "rank": "",
-          "ukensAnbefalte": ""
-        },
-        {
-          "name": "ZOO.no",
-          "url": "https://www.zoo.no",
-          "category": "Dyrebutikker",
-          "subcategory": [],
-          "image": "assets/images/butikker-webp/zoo-no.webp",
-          "alt": "ZOO.no",
-          "topp25": false,
-          "forside": false,
-          "ny": true,
-          "annonse": false,
-          "tags": [],
-          "rank": "",
-          "ukensAnbefalte": ""
-        },
-          {
-            "name": "CyberGhostVPN",
-            "image": "assets/images/butikker-webp/cyberghostvpn.webp",
-            "alt": "CyberGhostVPN",
-            "category": "Digitale tjenester",
-            "subcategory": ["VPN og Nettsikkerhet"],
-            "url": "https://www.cyberghostvpn.com",
-            "description": "CyberGhostVPN tilbyr anonym surfing, tilgang til blokkert innhold og sterk kryptering for din sikkerhet online.",
-            "topp25": false,
-            "forside": false,
-            "ny": true,
-            "annonse": false,
-            "tags": ["vpn", "nettsikkerhet", "personvern", "anonym surfing", "internettbeskyttelse"]
-          },
-          {
-            "name": "Ivacy VPN",
-            "image": "assets/images/butikker-webp/ivacyvpn.webp",
-            "alt": "Ivacy VPN",
-            "category": "Digitale tjenester",
-            "subcategory": ["VPN og Nettsikkerhet"],
-            "url": "https://www.ivacy.com",
-            "description": "Ivacy VPN gir deg tilgang til globalt innhold, anonym tilkobling og beskyttelse mot sporing.",
-            "topp25": false,
-            "forside": false,
-            "ny": true,
-            "annonse": false,
-            "tags": ["vpn", "ivacy", "nettbeskyttelse", "anonymitet", "kryptering"]
-          },
-          {
-            "name": "NordLayer",
-            "image": "assets/images/butikker-webp/nordlayer.webp",
-            "alt": "NordLayer",
-            "category": "Digitale tjenester",
-            "subcategory": ["VPN og Nettsikkerhet"],
-            "url": "https://nordlayer.com",
-            "description": "NordLayer er en sikker nettverkstilgangsløsning for bedrifter, levert av skaperne av NordVPN.",
-            "topp25": false,
-            "forside": false,
-            "ny": true,
-            "annonse": false,
-            "tags": ["vpn", "bedriftssikkerhet", "nord", "sikker nettverkstilgang", "it-sikkerhet"]
-          },
-          {
-            "name": "NordPass",
-            "image": "assets/images/butikker-webp/nordpass.webp",
-            "alt": "NordPass",
-            "category": "Digitale tjenester",
-            "subcategory": ["VPN og Nettsikkerhet"],
-            "url": "https://nordpass.com",
-            "description": "NordPass er en sikker passordbehandler som beskytter og organiserer dine innloggingsdetaljer.",
-            "topp25": false,
-            "forside": false,
-            "ny": true,
-            "annonse": false,
-            "tags": ["passord", "sikkerhet", "nord", "passordbehandler", "nettsikkerhet"]
-          },
-          {
-            "name": "Norton",
-            "image": "assets/images/butikker-webp/norton.webp",
-            "alt": "Norton",
-            "category": "Digitale tjenester",
-            "subcategory": ["VPN og Nettsikkerhet"],
-            "url": "https://no.norton.com",
-            "description": "Norton tilbyr antivirus, VPN og totalbeskyttelse for dine digitale enheter og identitet.",
-            "topp25": false,
-            "forside": false,
-            "ny": true,
-            "annonse": false,
-            "tags": ["antivirus", "vpn", "sikkerhet", "beskyttelse", "internett"]
-          },
-          {
-            "name": "PureVPN",
-            "image": "assets/images/butikker-webp/purevpn.webp",
-            "alt": "PureVPN",
-            "category": "Digitale tjenester",
-            "subcategory": ["VPN og Nettsikkerhet"],
-            "url": "https://www.purevpn.com",
-            "description": "PureVPN gir rask og sikker tilgang til internett med over 6500 servere over hele verden.",
-            "topp25": false,
-            "forside": false,
-            "ny": true,
-            "annonse": false,
-            "tags": ["vpn", "purevpn", "personvern", "anonym surfing", "kryptering"]
-          },
-          {
-            "name": "Surfshark",
-            "image": "assets/images/butikker-webp/surfshark.webp",
-            "alt": "Surfshark",
-            "category": "Digitale tjenester",
-            "subcategory": ["VPN og Nettsikkerhet"],
-            "url": "https://surfshark.com",
-            "description": "Surfshark tilbyr kraftig VPN, antivirus og datasikkerhet med ubegrensede enheter.",
-            "topp25": false,
-            "forside": false,
-            "ny": true,
-            "annonse": false,
-            "tags": ["vpn", "surfshark", "internett", "sikkerhet", "cybersikkerhet"]
-          }               
+  {
+    "name": "Bohus",
+    "url": "https://www.bohus.no",
+    "category": "Møbler og interiør",
+    "subcategory": ["Møbler"],
+    "description": "En av Norges største møbel- og interiørkjeder med både nettbutikk og fysiske butikker.",
+    "tags": ["møbler", "interiør", "norsk kjede"],
+    "image": "assets/images/butikker-webp/bohus-no.webp",
+    "alt": "Bohus",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Homeroom",
+    "url": "https://www.homeroom.no",
+    "category": "Møbler og interiør",
+    "subcategory": ["Møbler"],
+    "description": "Stort utvalg av møbler og interiør i nordisk stil, med raske leveranser.",
+    "tags": ["møbler", "nordisk design", "interiør"],
+    "image": "assets/images/butikker-webp/homeroom-no.webp",
+    "alt": "Homeroom",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Lunehjem.no",
+    "url": "https://www.lunehjem.no",
+    "category": "Møbler og interiør",
+    "subcategory": ["Møbler"],
+    "description": "Designmøbler og interiørprodukter fra kjente merkevarer som HAY og Muuto.",
+    "tags": ["design", "interiør", "nordisk", "møbler"],
+    "image": "assets/images/butikker-webp/lunehjem-no.webp",
+    "alt": "Lunehjem.no",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Rum21",
+    "url": "https://www.rum21.no",
+    "category": "Møbler og interiør",
+    "subcategory": ["Møbler"],
+    "description": "Design og kvalitetsmøbler fra ledende merker – for et moderne hjem.",
+    "tags": ["moderne", "møbler", "design", "interiør"],
+    "image": "assets/images/butikker-webp/rum21-no.webp",
+    "alt": "Rum21",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Bolina",
+    "url": "https://www.bolina.no",
+    "category": "Møbler og interiør",
+    "subcategory": ["Møbler"],
+    "description": "Unik nisjebutikk med møbler og interiørprodukter i høy kvalitet.",
+    "tags": ["nisje", "interiør", "design", "møbler"],
+    "image": "assets/images/butikker-webp/bolina-no.webp",
+    "alt": "Bolina",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Lysbutikken",
+    "url": "https://www.lysbutikken.no",
+    "category": "Møbler og interiør",
+    "subcategory": ["Belysning"],
+    "description": "Alt av lamper og belysning i alle prisklasser og stilarter.",
+    "tags": ["lys", "lamper", "belysning"],
+    "image": "assets/images/butikker-webp/lysbutikken-no.webp",
+    "alt": "Lysbutikken",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Lampehuset",
+    "url": "https://www.lampehuset.no",
+    "category": "Møbler og interiør",
+    "subcategory": ["Belysning"],
+    "description": "Stilfulle og funksjonelle belysningsløsninger for hjemmet.",
+    "tags": ["belysning", "lamper", "interiør"],
+    "image": "assets/images/butikker-webp/lampehuset-no.webp",
+    "alt": "Lampehuset",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Lightup",
+    "url": "https://www.lightup.no",
+    "category": "Møbler og interiør",
+    "subcategory": ["Belysning"],
+    "description": "Stort utvalg av lamper og lysprodukter til gode priser.",
+    "tags": ["belysning", "lys", "lamper"],
+    "image": "assets/images/butikker-webp/lightup-no.webp",
+    "alt": "Lightup",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Christiania Belysning",
+    "url": "https://www.christiania-belysning.no",
+    "category": "Møbler og interiør",
+    "subcategory": ["Belysning"],
+    "description": "Faghandel for lamper og belysning med veiledning og service.",
+    "tags": ["lys", "belysning", "designlamper"],
+    "image": "assets/images/butikker-webp/christiania-belysning-no.webp",
+    "alt": "Christiania Belysning",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Feel",
+    "url": "https://feel.no",
+    "category": "Møbler og interiør",
+    "subcategory": ["Dekor og interiør"],
+    "description": "Interiørbutikk med produkter som skaper stemning i hjemmet.",
+    "tags": ["interiør", "dekor", "hjem"],
+    "image": "assets/images/butikker-webp/feel-no.webp",
+    "alt": "Feel",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Multitrend",
+    "url": "https://www.multitrend.no",
+    "category": "Møbler og interiør",
+    "subcategory": ["Dekor og interiør"],
+    "description": "En av Norges største nettbutikker innen interiør og hjem.",
+    "tags": ["interiør", "kjøkken", "hjem", "gaver"],
+    "image": "assets/images/butikker-webp/multitrend-no.webp",
+    "alt": "Multitrend",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Landromantikk",
+    "url": "https://landromantikk.no",
+    "category": "Møbler og interiør",
+    "subcategory": ["Dekor og interiør"],
+    "description": "Rustikk og landlig interiørstil for både hjem og hytte.",
+    "tags": ["rustikk", "hytte", "landlig", "interiør"],
+    "image": "assets/images/butikker-webp/landromantikk-no.webp",
+    "alt": "Landromantikk",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Eske Interiør",
+    "url": "https://eskeinterior.no",
+    "category": "Møbler og interiør",
+    "subcategory": ["Dekor og interiør"],
+    "description": "Nettbutikk med fokus på nøye kuraterte produkter innen moderne interiør.",
+    "tags": ["design", "interiør", "norsk", "moderne"],
+    "image": "assets/images/butikker-webp/eskeinterior-no.webp",
+    "alt": "Eske Interiør",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Ark",
+    "url": "https://www.ark.no",
+    "subcategory": ["Kart og guider"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/ark-no.webp",
+    "alt": "Ark",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["kart", "reiseguider", "norgekart", "bøker", "reise"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Norli",
+    "url": "https://www.norli.no",
+    "subcategory": ["Kart og guider"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/norli-no.webp",
+    "alt": "Norli",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["kart", "reiseguider", "norgekart", "bøker", "reise"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Bagorama",
+    "url": "https://www.bagorama.no",
+    "subcategory": ["Bager og kofferter"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/bagorama-no.webp",
+    "alt": "Bagorama",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["bag", "koffert", "reiseutstyr", "trillekoffert", "weekendbag"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "LeGanz",
+    "url": "https://www.leganz.no",
+    "subcategory": ["Bager og kofferter"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/leganz-no.webp",
+    "alt": "LeGanz",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["bag", "koffert", "reiseutstyr", "trillekoffert", "weekendbag"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "BagBrokers",
+    "url": "https://bagbrokers.no",
+    "subcategory": ["Bager og kofferter"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/bagbrokers-no.webp",
+    "alt": "BagBrokers",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["bag", "koffert", "reiseutstyr", "trillekoffert", "weekendbag"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "MyBag",
+    "url": "https://mybag.no",
+    "subcategory": ["Bager og kofferter"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/mybag-no.webp",
+    "alt": "MyBag",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["bag", "koffert", "reiseutstyr", "trillekoffert", "weekendbag"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Shoppingvogner.no",
+    "url": "https://shoppingvogner.no",
+    "subcategory": ["Bager og kofferter"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/shoppingvogner-no.webp",
+    "alt": "Shoppingvogner.no",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["bag", "koffert", "reiseutstyr", "trillekoffert", "weekendbag"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Europris",
+    "url": "https://www.europris.no",
+    "subcategory": ["Bager og kofferter"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/europris-no.webp",
+    "alt": "Europris",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["bag", "koffert", "reiseutstyr", "trillekoffert", "weekendbag"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Travelstuff",
+    "url": "https://www.travelstuff.no",
+    "subcategory": ["Reiseutstyr"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/travelstuff-no.webp",
+    "alt": "Travelstuff",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["reise", "reiseutstyr", "tur", "adapter", "bagasjevekt"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Chillout",
+    "url": "https://chillout.no",
+    "subcategory": ["Reiseutstyr"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/chillout-no.webp",
+    "alt": "Chillout",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["reise", "reiseutstyr", "tur", "adapter", "bagasjevekt"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Fjellsport",
+    "url": "https://www.fjellsport.no",
+    "subcategory": ["Tur- og friluftsutstyr"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/fjellsport-no.webp",
+    "alt": "Fjellsport",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["friluft", "tur", "telt", "ryggsekk", "utendørs"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Hekta På Tur",
+    "url": "https://www.hektapatur.no",
+    "subcategory": ["Tur- og friluftsutstyr"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/hektapatur-no.webp",
+    "alt": "Hekta På Tur",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["friluft", "tur", "telt", "ryggsekk", "utendørs"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Magasinet",
+    "url": "https://www.magasinet.no",
+    "subcategory": ["Tur- og friluftsutstyr"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/magasinet-no.webp",
+    "alt": "Magasinet",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["friluft", "tur", "telt", "ryggsekk", "utendørs"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "123friluft",
+    "url": "https://www.123friluft.no",
+    "subcategory": ["Tur- og friluftsutstyr"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/123friluft-no.webp",
+    "alt": "123friluft",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["friluft", "tur", "telt", "ryggsekk", "utendørs"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Sportsnett",
+    "url": "https://www.sportsnett.no",
+    "subcategory": ["Tur- og friluftsutstyr"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/sportsnett-no.webp",
+    "alt": "Sportsnett",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["friluft", "tur", "telt", "ryggsekk", "utendørs"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "DNTbutikken",
+    "url": "https://www.dntbutikken.no",
+    "subcategory": ["Tur- og friluftsutstyr"],
+    "category": "Reise og opplevelser",
+    "image": "assets/images/butikker-webp/dntbutikken-no.webp",
+    "alt": "DNTbutikken",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["friluft", "tur", "telt", "ryggsekk", "utendørs"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "VetZoo",
+    "url": "https://vetzoo.no",
+    "category": "Dyrebutikker",
+    "subcategory": [],
+    "image": "assets/images/butikker-webp/vetzoo-no.webp",
+    "alt": "VetZoo",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["hund", "katt", "fôr", "dyr", "kjæledyr"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "PetXL",
+    "url": "https://www.petxl.no",
+    "category": "Dyrebutikker",
+    "subcategory": [],
+    "image": "assets/images/butikker-webp/petxl-no.webp",
+    "alt": "PetXL",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["hund", "katt", "fôr", "dyr", "kjæledyr"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Pets",
+    "url": "https://www.pets.no",
+    "category": "Dyrebutikker",
+    "subcategory": [],
+    "image": "assets/images/butikker-webp/pets-no.webp",
+    "alt": "Pets",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["hund", "katt", "fôr", "dyr", "kjæledyr"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Tropehagen",
+    "url": "https://tropehagen.no",
+    "category": "Dyrebutikker",
+    "subcategory": [],
+    "image": "assets/images/butikker-webp/tropehagen-no.webp",
+    "alt": "Tropehagen",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["hund", "katt", "fôr", "dyr", "kjæledyr"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Dogman",
+    "url": "https://dogman.no",
+    "category": "Dyrebutikker",
+    "subcategory": [],
+    "image": "assets/images/butikker-webp/dogman-no.webp",
+    "alt": "Dogman",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["hund", "katt", "fôr", "dyr", "kjæledyr"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "Nettdyret",
+    "url": "https://nettdyret.no",
+    "category": "Dyrebutikker",
+    "subcategory": [],
+    "image": "assets/images/butikker-webp/nettdyret-no.webp",
+    "alt": "Nettdyret",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["hund", "katt", "fôr", "dyr", "kjæledyr"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "ZOO.no",
+    "url": "https://www.zoo.no",
+    "category": "Dyrebutikker",
+    "subcategory": [],
+    "image": "assets/images/butikker-webp/zoo-no.webp",
+    "alt": "ZOO.no",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["hund", "katt", "fôr", "dyr", "kjæledyr"],
+    "rank": "",
+    "ukensAnbefalte": ""
+  },
+  {
+    "name": "CyberGhostVPN",
+    "image": "assets/images/butikker-webp/cyberghostvpn.webp",
+    "alt": "CyberGhostVPN",
+    "category": "Digitale tjenester",
+    "subcategory": ["VPN og Nettsikkerhet"],
+    "url": "https://www.cyberghostvpn.com",
+    "description": "CyberGhostVPN tilbyr anonym surfing, tilgang til blokkert innhold og sterk kryptering for din sikkerhet online.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": [
+      "vpn",
+      "nettsikkerhet",
+      "personvern",
+      "anonym surfing",
+      "internettbeskyttelse"
+    ]
+  },
+  {
+    "name": "Ivacy VPN",
+    "image": "assets/images/butikker-webp/ivacyvpn.webp",
+    "alt": "Ivacy VPN",
+    "category": "Digitale tjenester",
+    "subcategory": ["VPN og Nettsikkerhet"],
+    "url": "https://www.ivacy.com",
+    "description": "Ivacy VPN gir deg tilgang til globalt innhold, anonym tilkobling og beskyttelse mot sporing.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["vpn", "ivacy", "nettbeskyttelse", "anonymitet", "kryptering"]
+  },
+  {
+    "name": "NordLayer",
+    "image": "assets/images/butikker-webp/nordlayer.webp",
+    "alt": "NordLayer",
+    "category": "Digitale tjenester",
+    "subcategory": ["VPN og Nettsikkerhet"],
+    "url": "https://nordlayer.com",
+    "description": "NordLayer er en sikker nettverkstilgangsløsning for bedrifter, levert av skaperne av NordVPN.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": [
+      "vpn",
+      "bedriftssikkerhet",
+      "nord",
+      "sikker nettverkstilgang",
+      "it-sikkerhet"
+    ]
+  },
+  {
+    "name": "NordPass",
+    "image": "assets/images/butikker-webp/nordpass.webp",
+    "alt": "NordPass",
+    "category": "Digitale tjenester",
+    "subcategory": ["VPN og Nettsikkerhet"],
+    "url": "https://nordpass.com",
+    "description": "NordPass er en sikker passordbehandler som beskytter og organiserer dine innloggingsdetaljer.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": [
+      "passord",
+      "sikkerhet",
+      "nord",
+      "passordbehandler",
+      "nettsikkerhet"
+    ]
+  },
+  {
+    "name": "Norton",
+    "image": "assets/images/butikker-webp/norton.webp",
+    "alt": "Norton",
+    "category": "Digitale tjenester",
+    "subcategory": ["VPN og Nettsikkerhet"],
+    "url": "https://no.norton.com",
+    "description": "Norton tilbyr antivirus, VPN og totalbeskyttelse for dine digitale enheter og identitet.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["antivirus", "vpn", "sikkerhet", "beskyttelse", "internett"]
+  },
+  {
+    "name": "PureVPN",
+    "image": "assets/images/butikker-webp/purevpn.webp",
+    "alt": "PureVPN",
+    "category": "Digitale tjenester",
+    "subcategory": ["VPN og Nettsikkerhet"],
+    "url": "https://www.purevpn.com",
+    "description": "PureVPN gir rask og sikker tilgang til internett med over 6500 servere over hele verden.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["vpn", "purevpn", "personvern", "anonym surfing", "kryptering"]
+  },
+  {
+    "name": "Surfshark",
+    "image": "assets/images/butikker-webp/surfshark.webp",
+    "alt": "Surfshark",
+    "category": "Digitale tjenester",
+    "subcategory": ["VPN og Nettsikkerhet"],
+    "url": "https://surfshark.com",
+    "description": "Surfshark tilbyr kraftig VPN, antivirus og datasikkerhet med ubegrensede enheter.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["vpn", "surfshark", "internett", "sikkerhet", "cybersikkerhet"]
+  },
+  {
+    "name": "Ivacy VPN",
+    "image": "assets/images/butikker-webp/ivacyvpn.webp",
+    "alt": "Ivacy VPN",
+    "category": "Digitale tjenester",
+    "subcategory": ["VPN og Nettsikkerhet"],
+    "url": "https://www.ivacy.com",
+    "description": "Ivacy VPN gir deg tilgang til globalt innhold, anonym tilkobling og beskyttelse mot sporing.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["vpn", "ivacy", "nettbeskyttelse", "anonymitet", "kryptering"]
+  },
+  {
+    "name": "NordLayer",
+    "image": "assets/images/butikker-webp/nordlayer.webp",
+    "alt": "NordLayer",
+    "category": "Digitale tjenester",
+    "subcategory": ["VPN og Nettsikkerhet"],
+    "url": "https://nordlayer.com",
+    "description": "NordLayer er en sikker nettverkstilgangsløsning for bedrifter, levert av skaperne av NordVPN.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": [
+      "vpn",
+      "bedriftssikkerhet",
+      "nord",
+      "sikker nettverkstilgang",
+      "it-sikkerhet"
+    ]
+  },
+  {
+    "name": "NordPass",
+    "image": "assets/images/butikker-webp/nordpass.webp",
+    "alt": "NordPass",
+    "category": "Digitale tjenester",
+    "subcategory": ["VPN og Nettsikkerhet"],
+    "url": "https://nordpass.com",
+    "description": "NordPass er en sikker passordbehandler som beskytter og organiserer dine innloggingsdetaljer.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": [
+      "passord",
+      "sikkerhet",
+      "nord",
+      "passordbehandler",
+      "nettsikkerhet"
+    ]
+  },
+  {
+    "name": "Norton",
+    "image": "assets/images/butikker-webp/norton.webp",
+    "alt": "Norton",
+    "category": "Digitale tjenester",
+    "subcategory": ["VPN og Nettsikkerhet"],
+    "url": "https://no.norton.com",
+    "description": "Norton tilbyr antivirus, VPN og totalbeskyttelse for dine digitale enheter og identitet.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["antivirus", "vpn", "sikkerhet", "beskyttelse", "internett"]
+  },
+  {
+    "name": "PureVPN",
+    "image": "assets/images/butikker-webp/purevpn.webp",
+    "alt": "PureVPN",
+    "category": "Digitale tjenester",
+    "subcategory": ["VPN og Nettsikkerhet"],
+    "url": "https://www.purevpn.com",
+    "description": "PureVPN gir rask og sikker tilgang til internett med over 6500 servere over hele verden.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["vpn", "purevpn", "personvern", "anonym surfing", "kryptering"]
+  },
+  {
+    "name": "Surfshark",
+    "image": "assets/images/butikker-webp/surfshark.webp",
+    "alt": "Surfshark",
+    "category": "Digitale tjenester",
+    "subcategory": ["VPN og Nettsikkerhet"],
+    "url": "https://surfshark.com",
+    "description": "Surfshark tilbyr kraftig VPN, antivirus og datasikkerhet med ubegrensede enheter.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": ["vpn", "surfshark", "internett", "sikkerhet", "cybersikkerhet"]
+  }
 ]
