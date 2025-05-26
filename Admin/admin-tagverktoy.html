@@ -116,6 +116,10 @@
             <input type="checkbox" id="filter-eksternFrakt-only-admin" />
             Vis kun butikker med ekstern frakt 🌍
         </label>
+        <label>
+            <input type="checkbox" id="filter-ukensAnbefalte-only-admin" />
+            Vis kun ukens anbefalte butikker 🌟
+        </label>
         <h3>🔗 Importer affiliate-lenker (CSV)</h3>
         <textarea id="affiliateCsvInput" rows="8" class="w-100 mb-2" placeholder="name,affiliateUrl"></textarea>
         <button class="save-btn" onclick="importerAffiliateUrls()">📥 Importer fra CSV</button>
@@ -468,13 +472,14 @@
                 : globalData;
             renderTable(filtrert);
         });
-        document.getElementById("filter-eksternFrakt-only-admin").addEventListener("change", (e) => {
-            const kunEksternFrakt = e.target.checked;
-            const filtrert = kunEksternFrakt
-                ? globalData.filter(b => b.eksternFrakt === true)
-                : globalData;
-            renderTable(filtrert);
-        });
+
+        document.getElementById("filter-ukensAnbefalte-only-admin").addEventListener("change", (e) => {
+                const kunUkensAnbefalte = e.target.checked;
+                const filtrert = kunUkensAnbefalte
+                    ? globalData.filter(b => b.ukensAnbefalte === true)
+                    : globalData;
+                renderTable(filtrert);
+            });
 
         function importerAffiliateUrls() {
                 const input = document.getElementById("affiliateCsvInput").value.trim();
