@@ -34,7 +34,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/theme-tøff.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    </head>
+</head>
 
 <body data-page="kontakt-oss">
     <!-- Sticky Header -->
@@ -48,11 +48,11 @@
             <p class="lead">
                 Butikkoversikt.no er laget for å bli en av Norges mest komplette og brukervennlige oversikter over
                 nettbutikker. Her finner du anbefalte butikker, aktuelle kampanjer og oversiktlige kategorier som
-                gjør det enkelt å navigere. Vi fokuserer på en stilren, rask og mobilvennlig opplevelse –
-                optimalisert for både brukervennlighet og synlighet i søkemotorer.
+                gjør det enkelt å navigere. Vi fokuserer på en stilren, rask og mobilvennlig opplevelse – optimalisert
+                for både brukervennlighet og synlighet i søkemotorer.
             </p>
         </div>
-        </section>
+    </section>
 
     <main class="py-5 bg-section">
         <div class="container">
@@ -69,7 +69,12 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <form action="mailto:kontakt@butikkoversikt.no" method="post" enctype="text/plain">
+                    <form name="kontakt" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="kontakt">
+                        <div class="mb-3">
+                            <label for="navn" class="form-label">👤 Navn (valgfritt):</label>
+                            <input type="text" class="form-control" name="navn" id="navn" placeholder="Ditt navn">
+                        </div>
                         <div class="mb-3">
                             <label for="butikkforslag" class="form-label">💡 Foreslå en nettbutikk eller ny
                                 kategori:</label>
@@ -96,8 +101,6 @@
                         og står ikke ansvarlig for deres innhold.</li>
                 </ul>
             </div>
-
-            
         </div>
     </main>
 
