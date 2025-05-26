@@ -112,6 +112,10 @@
             <input type="checkbox" id="filter-mangler-affiliate-url" />
             Vis affiliate-butikker uten lenke 🚫
           </label>
+        <label>
+            <input type="checkbox" id="filter-eksternFrakt-only-admin" />
+            Vis kun butikker med ekstern frakt 🌍
+        </label>
         <h3>🔗 Importer affiliate-lenker (CSV)</h3>
         <textarea id="affiliateCsvInput" rows="8" class="w-100 mb-2" placeholder="name,affiliateUrl"></textarea>
         <button class="save-btn" onclick="importerAffiliateUrls()">📥 Importer fra CSV</button>
@@ -189,7 +193,7 @@
 
                 const boolCheckbox = (key) => `<label><input type='checkbox' ${butikk[key] ? 'checked' : ''} onchange="globalData[${index}]['${key}']=this.checked"> ${key}</label>`;
 
-                const boolFields = ['forside', 'topp25', 'ny', 'annonse', 'ukensAnbefalte', 'partner', 'affiliate', 'kampanje']
+                const boolFields = ['forside', 'topp25', 'ny', 'annonse', 'ukensAnbefalte', 'partner', 'affiliate', 'kampanje', 'eksternFrakt']	
                     .map(k => boolCheckbox(k)).join("<br>");
 
 
@@ -461,6 +465,13 @@
             const kunUtenLenke = e.target.checked;
             const filtrert = kunUtenLenke
                 ? globalData.filter(b => b.affiliate && (!b.affiliateUrl || b.affiliateUrl.trim() === ""))
+                : globalData;
+            renderTable(filtrert);
+        });
+        document.getElementById("filter-eksternFrakt-only-admin").addEventListener("change", (e) => {
+            const kunEksternFrakt = e.target.checked;
+            const filtrert = kunEksternFrakt
+                ? globalData.filter(b => b.eksternFrakt === true)
                 : globalData;
             renderTable(filtrert);
         });

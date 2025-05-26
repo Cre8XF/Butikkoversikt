@@ -30,17 +30,23 @@ document.addEventListener("DOMContentLoaded", () => {
       card.className = "store-card";
 
       card.innerHTML = `
-        <div class="store-card-img">
-          <img src="${butikk.image}" alt="${butikk.alt || butikk.name}">
-        </div>
-        <div class="store-card-body">
-          <h4>${butikk.name}</h4>
-    ${butikk.affiliate ? `<span class="affiliate-badge">💰 Gir provisjon</span>` : ""}
-          <p>${butikk.description}</p>
-${butikk.eksternFrakt ? `<div class="frakt-info">🌍 <span class="tooltip-text" title="${butikk.fraktKommentar || 'Toll og MVA kan påløpe.'}">Sender fra utlandet</span></div>` : ""}
+  <div class="store-card-img">
+    <img src="${butikk.image}" alt="${butikk.alt || butikk.name}">
+  </div>
+  <div class="store-card-body">
+    <h4>${butikk.name}</h4>
+    <p>${butikk.description || ""}</p>
 
-        </div>
-      `;
+    ${(butikk.affiliate && butikk.affiliateUrl) || butikk.eksternFrakt ? `
+      <div class="store-tags mt-2 small text-muted">
+        ${butikk.affiliate && butikk.affiliateUrl ? `🔗 Affiliatebutikk` : ""}
+        ${butikk.affiliate && butikk.affiliateUrl && butikk.eksternFrakt ? " • " : ""}
+        ${butikk.eksternFrakt ? `🌍 Sender fra utlandet` : ""}
+      </div>
+    ` : ""}
+  </div>
+`;
+
 
       col.appendChild(card);
       container.appendChild(col);

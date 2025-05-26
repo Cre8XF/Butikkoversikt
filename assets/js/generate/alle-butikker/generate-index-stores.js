@@ -39,17 +39,24 @@ document.addEventListener("DOMContentLoaded", () => {
             ? `<div class="frakt-info">🌍 <span class="tooltip-text" title="${butikk.fraktKommentar || 'Toll og MVA kan påløpe'}">Sender fra utlandet</span></div>`
             : "";
 
-          card.innerHTML = `
+            card.innerHTML = `
             <div class="store-card-img">
               <img src="${butikk.image}" alt="${butikk.alt || butikk.name}">
             </div>
             <div class="store-card-body">
               <h4>${butikk.name}</h4>
-    ${butikk.affiliate ? `<span class="affiliate-badge">💰 Gir provisjon</span>` : ""}
-              <p>${butikk.description}</p>
-              ${fraktInfo}
+              <p>${butikk.description || ""}</p>
+          
+              ${(butikk.affiliate && butikk.affiliateUrl) || butikk.eksternFrakt ? `
+                <div class="store-tags mt-2 small text-muted d-flex flex-column gap-1">
+                  ${butikk.affiliate && butikk.affiliateUrl ? `<div>🔗 Affiliatebutikk</div>` : ""}
+                  ${butikk.eksternFrakt ? `<div>🌍 Sender fra utlandet</div>` : ""}
+                </div>
+              ` : ""}
+              
             </div>
           `;
+          
 
           col.appendChild(card);
           anbefalteContainer.appendChild(col);

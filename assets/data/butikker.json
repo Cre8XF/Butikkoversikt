@@ -28,7 +28,8 @@
     "partner": false,
     "affiliate": false,
     "kampanje": "",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "eksternFrakt": true
   },
   {
     "name": "Power.no",
@@ -60,7 +61,8 @@
     "partner": false,
     "affiliate": false,
     "kampanje": "",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "eksternFrakt": true
   },
   {
     "name": "Vitusapotek.no",
@@ -92,7 +94,8 @@
     "partner": false,
     "affiliate": false,
     "kampanje": "",
-    "affiliateUrl": ""
+    "affiliateUrl": "",
+    "eksternFrakt": true
   },
   {
     "name": "Banggood",
@@ -122,7 +125,8 @@
     "partner": false,
     "affiliate": true,
     "kampanje": false,
-    "affiliateUrl": "https://www.banggood.com/"
+    "affiliateUrl": "https://www.banggood.com/",
+    "eksternFrakt": true
   },
   {
     "name": "Storytel.no",
@@ -152,7 +156,8 @@
     "partner": false,
     "affiliate": true,
     "kampanje": false,
-    "affiliateUrl": "https://www.storytel.com/no"
+    "affiliateUrl": "https://www.storytel.com/no",
+    "eksternFrakt": false
   },
   {
     "name": "Strava",
@@ -491,7 +496,8 @@
     "partner": false,
     "affiliate": true,
     "kampanje": false,
-    "affiliateUrl": "https://www.miniinthebox.com/"
+    "affiliateUrl": "https://www.miniinthebox.com/",
+    "eksternFrakt": true
   },
   {
     "name": "Geekbuying",

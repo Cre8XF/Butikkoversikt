@@ -101,3 +101,13 @@
   margin-top: 4px;
   font-weight: 500;
 }
+.affiliate-info {
+  font-size: 0.85rem;
+  color: var(--primary);
+  opacity: 0.8;
+}
+.store-tags {
+  font-size: 0.85rem;
+  color: var(--primary);
+  opacity: 0.85;
+}
