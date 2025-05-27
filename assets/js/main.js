@@ -1,3 +1,23 @@
+// 📊 Google Analytics 4-sporing
+(function () {
+  const GA_MEASUREMENT_ID = 'G-H7E9JLM5J1'; // ← BYTT UT denne med din ekte ID fra GA4
+
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+  document.head.appendChild(script);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  window.gtag = gtag;
+
+  gtag('js', new Date());
+  gtag('config', GA_MEASUREMENT_ID);
+})();
+
+
 document.addEventListener("DOMContentLoaded", () => {
   // Søkefelt
   const searchToggle = document.querySelector(".search-toggle");
