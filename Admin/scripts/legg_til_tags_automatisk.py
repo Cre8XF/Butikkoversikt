@@ -1,8 +1,5 @@
 import json
-from pathlib import Path
-
-# 🔧 Juster sti hvis nødvendig
-filsti = Path("../../assets/data/Butikker.json")
+from utils.config import BUTIKKDATA_PATH  # 👈 henter felles sti
 
 # Ordbok med nøkkelord per kategori og underkategori
 tag_ordsamling = {
@@ -18,8 +15,8 @@ tag_ordsamling = {
     "Bøker og media": ["bøker", "ebok", "lydbok", "fagbøker", "lesing", "studier"]
 }
 
-# Last inn data
-with open(filsti, encoding="utf-8") as f:
+# Last inn butikkdata
+with open(BUTIKKDATA_PATH, encoding="utf-8") as f:
     butikker = json.load(f)
 
 antall_oppdatert = 0

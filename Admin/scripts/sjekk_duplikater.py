@@ -1,10 +1,8 @@
 import json
-from pathlib import Path
-
-# 🔧 Filsti til butikkdata
-filsti = Path("../../assets/data/Butikker.json")
+from utils.config import BUTIKKDATA_PATH  # 👈 henter felles sti
 
 # Last inn butikkdata
+filsti = BUTIKKDATA_PATH
 with open(filsti, encoding="utf-8") as f:
     butikker = json.load(f)
 

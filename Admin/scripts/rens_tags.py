@@ -1,8 +1,5 @@
 import json
-from pathlib import Path
-
-# 🔧 Juster sti hvis nødvendig
-filsti = Path("../../assets/data/Butikker.json")
+from utils.config import BUTIKKDATA_PATH  # 👈 henter felles sti
 
 # Sett med irrelevante eller overflødige tags du ønsker å fjerne
 ugyldige_tags = {
@@ -10,7 +7,7 @@ ugyldige_tags = {
 }
 
 # Last inn butikkdata
-with open(filsti, encoding="utf-8") as f:
+with open(BUTIKKDATA_PATH, encoding="utf-8") as f:
     butikker = json.load(f)
 
 endret = 0

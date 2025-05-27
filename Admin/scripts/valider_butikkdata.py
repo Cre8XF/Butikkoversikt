@@ -1,11 +1,8 @@
 import json
-from pathlib import Path
-
-# 🔧 Endre denne hvis du har en annen sti til filen
-filsti = Path("../../assets/data/Butikker.json")
+from utils.config import BUTIKKDATA_PATH  # 👈 henter felles sti
 
 # Last inn butikkdata
-with open(filsti, encoding="utf-8") as f:
+with open(BUTIKKDATA_PATH, encoding="utf-8") as f:
     butikker = json.load(f)
 
 # Initier liste for å samle butikker med feil
