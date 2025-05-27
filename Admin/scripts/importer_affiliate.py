@@ -1,17 +1,13 @@
 import csv
 import json
-from pathlib import Path
-
-# 🔧 Stier
-csv_fil = Path("Admin/data/affiliate-import.csv")  # CSV du lager selv
-json_fil = Path("../../assets/data/Butikker.json")
+from utils.config import BUTIKKDATA_PATH, AFFILIATE_IMPORT_CSV
 
 # 🔄 Laster inn butikkdata
-with open(json_fil, encoding="utf-8") as f:
+with open(BUTIKKDATA_PATH, encoding="utf-8") as f:
     butikker = json.load(f)
 
 # 📥 Leser CSV med affiliate-lenker
-with open(csv_fil, encoding="utf-8") as f:
+with open(AFFILIATE_IMPORT_CSV, encoding="utf-8") as f:
     reader = csv.DictReader(f)
     oppdateringer = list(reader)
 
@@ -30,7 +26,7 @@ for rad in oppdateringer:
             break
 
 # 💾 Lagre tilbake
-with open(json_fil, "w", encoding="utf-8") as f:
+with open(BUTIKKDATA_PATH, "w", encoding="utf-8") as f:
     json.dump(butikker, f, indent=2, ensure_ascii=False)
 
 print(f"✅ {antall_endret} butikker ble oppdatert med affiliate-lenker.")

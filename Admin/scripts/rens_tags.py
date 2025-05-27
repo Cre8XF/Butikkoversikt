@@ -29,8 +29,8 @@ for butikk in butikker:
         butikk["tagCount"] = len(renset)
         endret += 1
 
-# Skriv tilbake til samme fil (eller lag en kopi hvis ønskelig)
-with open(filsti, "w", encoding="utf-8") as f:
+# Lagre endringer
+with open(BUTIKKDATA_PATH, "w", encoding="utf-8") as f:
     json.dump(butikker, f, indent=2, ensure_ascii=False)
 
 print(f"✅ Ferdig! {endret} butikker fikk oppdaterte tags.")

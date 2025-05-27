@@ -48,7 +48,7 @@ for butikk in butikker:
         antall_oppdatert += 1
 
 # Lagre tilbake
-with open(filsti, "w", encoding="utf-8") as f:
+with open(BUTIKKDATA_PATH, "w", encoding="utf-8") as f:
     json.dump(butikker, f, indent=2, ensure_ascii=False)
 
 print(f"✅ Foreslåtte tags lagt til for {antall_oppdatert} butikker.")

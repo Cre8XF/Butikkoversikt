@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adminoversikt – Butikkoversikt.no</title>
+    <link href="../assets/css/theme-tøff.css" rel="stylesheet" />
+    <style>
+        body {
+            padding: 2rem;
+            font-family: var(--font-base);
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        .admin-link {
+            display: block;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: var(--bg-card);
+            border-left: 4px solid var(--accent);
+            text-decoration: none;
+            color: var(--text);
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .admin-link:hover {
+            background: var(--bg-muted);
+        }
+
+        .note {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: block;
+            margin-top: 0.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>📋 Adminoversikt – Kontrollpanel</h1>
+
+    <a href="admin-tagverktoy.html" class="admin-link">
+        🏷️ Tag-verktøy
+        <span class="note">Administrer tags, beskrivelser og filtre</span>
+    </a>
+
+    <a href="lanseringsdashbord.html" class="admin-link">
+        🚀 Lanseringsdashbord
+        <span class="note">Oversikt over kategorier, butikker og status</span>
+    </a>
+
+    <a href="data/manglende-logoer-clearbit-urls.txt" class="admin-link">
+        📂 Manglende logoer
+        <span class="note">Liste over butikker som mangler logo</span>
+    </a>
+
+    <a href="scripts" class="admin-link">
+        🐍 Python-skript
+        <span class="note">Kjør kommandoer manuelt i terminal (se README eller config.py)</span>
+    </a>
+
+    <a href="https://analytics.google.com/analytics/web/" class="admin-link" target="_blank">
+        📊 Google Analytics
+        <span class="note">Overvåk besøk og aktivitet på nettstedet</span>
+    </a>
+
+</body>
+
+</html>

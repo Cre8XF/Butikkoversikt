@@ -1,52 +1,42 @@
 import json
 import os
 from urllib.parse import urlparse
+from utils.config import BUTIKKDATA_PATH, ROOT_DIR
 
-# Korrekte stier
-json_fil = "../assets/data/Butikker.json"
-bilde_mappe = "../assets/images/butikker-webp"
-logg_fil = "mangler-bilder-logg.txt"
+# 📁 Mappen der WebP-logoer ligger
+logomappe = ROOT_DIR / "assets" / "images" / "butikker-webp"
+logomappe.mkdir(parents=True, exist_ok=True)
 
-# Last inn butikkdata
-with open(json_fil, "r", encoding="utf-8") as f:
+# 📄 Loggfil for manglende logo-URL-er
+utfil = ROOT_DIR / "Admin" / "data" / "manglende-logoer-clearbit-urls.txt"
+utfil.parent.mkdir(parents=True, exist_ok=True)
+
+# 📖 Last inn butikker
+with open(BUTIKKDATA_PATH, encoding="utf-8") as f:
     butikker = json.load(f)
 
-# Hent tilgjengelige bilde-filer
-filnavn = os.listdir(bilde_mappe)
-filnavn_renset = {
-    f.replace(".webp", "").replace("-", "").replace(".", "").lower(): f
-    for f in filnavn
-}
-
-oppdatert = 0
-mangler = []
+# 🔎 Sjekk hvilke som mangler logoer i mappen
+mangler_logo = []
 
 for butikk in butikker:
-    url = butikk.get("url", "")
-    if not url:
-        mangler.append(butikk["name"])
+    navn = butikk.get("name", "").strip()
+    url = butikk.get("url", "").strip()
+    image_path = butikk.get("image", "").strip()
+
+    if not navn or not url or not image_path:
         continue
 
-    parsed = urlparse(url)
-    host = parsed.hostname or ""
-    domain = host.replace("www.", "").replace("-", "").replace(".", "").lower()
+    expected_file = logomappe / os.path.basename(image_path)
+    if not expected_file.exists():
+        domain = urlparse(url).netloc.replace("www.", "")
+        logo_url = f"https://logo.clearbit.com/{domain}"
+        mangler_logo.append(logo_url)
 
-    bilde_fil = filnavn_renset.get(domain)
-    if bilde_fil:
-        butikk["image"] = f"assets/images/butikker-webp/{bilde_fil}"
-        oppdatert += 1
-    else:
-        mangler.append(butikk["name"])
+# 💾 Lagre listen til fil
+with open(utfil, "w", encoding="utf-8") as f:
+    for logo_url in sorted(set(mangler_logo)):
+        f.write(f"{logo_url}\n")
 
-# Skriv tilbake til JSON
-with open(json_fil, "w", encoding="utf-8") as f:
-    json.dump(butikker, f, ensure_ascii=False, indent=2)
-
-# Valgfri logg
-if mangler:
-    with open(logg_fil, "w", encoding="utf-8") as f:
-        f.write("\n".join(mangler))
-
-print(f"\n✅ Oppdatert {oppdatert} butikker med bildebaner.")
-if mangler:
-    print(f"⚠️ {len(mangler)} butikker mangler fortsatt bilder (se '{logg_fil}')")
+print(f"🔍 Ferdig! Fant {len(mangler_logo)} butikker som mangler logo.")
+print(f"📄 Liste lagret i: {utfil}")
+# 📂 Opprett mappen for manglende logoer hvis den ikke finnes
