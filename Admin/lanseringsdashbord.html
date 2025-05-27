@@ -298,9 +298,24 @@
         <h2>📂 Full filstruktur</h2>
         <p>Denne strukturen viser alle filer og mapper i prosjektet slik det ser ut nå:</p>
         <pre><strong>Prosjekt-Nettbutikk-main</strong>/
-        ├── Admin/
-        │   ├── lanseringsdashbord.html
-        │   └── Prosjektstruktur-oversikt.html
+        Admin/
+        ├── admin-tagverktoy.html # GUI for tag- og metadataredigering
+        ├── lanseringsdashbord.html # Oversikt over fremdrift og butikkstatus
+        ├── data/
+        │ └── manglende-logoer-clearbit-urls.txt # Liste med butikker som mangler logo
+        ├── scripts/
+        │ ├── last_ned_logos.py # Laster ned manglende logoer
+        │ ├── legg_til_ukens_anbefalte.py # Setter ukens anbefalte flagg
+        │ ├── oppdater_bildebaner.py # Oppdaterer bildebane for butikkbilder
+        │ ├── png-to-webp.py # Konverterer .png til .webp for optimalisering
+        │ └── kommende/
+        │   ├── sjekk_duplikater.py # (NY) Finner duplikater i JSON på navn/URL
+        │   ├── rens_tags.py # (NY) Fjerner irrelevante tags fra alle butikker
+        │   ├── legg_til_tags_automatisk.py # (NY) Foreslår tags basert på kategori/tekst
+        │   ├── importer_affiliate.py # (NY) Importer affiliate-URLer fra CSV
+        │   └── valider_butikkdata.py # (NY) Validerer JSON-struktur og mangler
+        └── utils/
+        └── config.py # (NY) Felles innstillinger, paths, variabler
         ├── assets/
         │   ├── backup/
         │   ├── css/

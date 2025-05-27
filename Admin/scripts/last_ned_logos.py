@@ -4,7 +4,7 @@ from PIL import Image
 from io import BytesIO
 
 # Les logo-URLer fra fil
-with open("Admin/manglende-logoer-clearbit-urls.txt", "r", encoding="utf-8") as f:
+with open("Admin/data/manglende-logoer-clearbit-urls.txt", "r", encoding="utf-8") as f:
     urls = [line.strip() for line in f if line.strip()]
 
 # Opprett output-mappe
