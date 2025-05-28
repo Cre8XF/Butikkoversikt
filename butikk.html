@@ -1,0 +1,3114 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+<head>
+
+
+    <!-- Clarity -->
+    <script type="text/javascript">
+        window.onload = function () {
+            (function (c, l, a, r, i, t, y) {
+                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+            })(window, document, "clarity", "script", "jqvuviups6");
+
+            window.takeover = false;
+
+            function setClarityAttributes() {
+                clarity("consent");
+
+
+                clarity("set", "role", "affiliate");
+
+
+                clarity("set", "takeover", window.takeover);
+                clarity("set", "serverType", "prod");
+            }
+
+            function waitForClarity(maxWaitTime = 10000) {
+                return new Promise((resolve, reject) => {
+                    const startTime = Date.now();
+
+                    function checkClarity() {
+                        if (typeof clarity === 'function') {
+                            resolve();
+                        } else if (Date.now() - startTime >= maxWaitTime) {
+                            reject(new Error('Clarity failed to load within ' + maxWaitTime + 'ms'));
+                        } else {
+                            setTimeout(checkClarity, 100);
+                        }
+                    }
+
+                    checkClarity();
+                });
+            }
+
+            waitForClarity()
+                .then(() => {
+                    setClarityAttributes();
+                })
+                .catch((error) => {
+                    console.error('Error setting Clarity attributes:', error);
+                });
+        };
+    </script>
+    <!-- End Clarity -->
+
+
+
+    <!-- Fathom -->
+    <script type="text/javascript">
+        window.takeover = false;
+
+        function loadFathomScript() {
+            return new Promise((resolve) => {
+                const script = document.createElement('script');
+                script.src = "https://cdn.usefathom.com/script.js";
+
+
+                script.setAttribute('data-site', 'WYMIOYZX');
+                script.setAttribute('data-spa', 'auto');
+
+
+                script.defer = true;
+                script.onload = () => resolve();
+                document.head.appendChild(script);
+            });
+        }
+
+        function fireFathomEvent() {
+            fathom_loaded = true;
+
+            if (fathom_loaded == null || !fathom_loaded) {
+                loadFathomScript().then(() => {
+
+
+                    if (window.takeover) {
+                        window.fathom.trackEvent("partner takeover true");
+                    } else {
+                        window.fathom.trackEvent("partner takeover false");
+                    }
+
+
+                });
+            }
+        }
+        fireFathomEvent();
+    </script>
+    <!-- End Fathom -->
+
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T2M6F9');</script>
+    <!-- End Google Tag Manager -->
+    <script src="/js/elastic-apm-rum.umd.min.js" crossorigin></script>
+    <script>
+        elasticApm.init({
+            serviceName: 'web-rum',
+            serverUrl: 'https://6d7e27f658cf40b0ad7e8e7dc6fd406b.apm.eu-central-1.aws.cloud.es.io:443',
+            environment: 'production_default',
+            serviceVersion: '13.9.1'
+        })
+    </script>
+    <title>Mote</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="shortcut icon" href="https://adtraction.com/media/ocihdtjx/favicon.png?width=48&height=48" />
+    <link rel="icon" sizes="192x192" type="image/png"
+        href="https://adtraction.com/media/ocihdtjx/favicon.png?width=192&height=192">
+    <link rel="apple-touch-icon" href="https://adtraction.com/media/ocihdtjx/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76"
+        href="https://adtraction.com/media/ocihdtjx/favicon.png?width=76&height=76">
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="https://adtraction.com/media/ocihdtjx/favicon.png?width=120&height=120">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="https://adtraction.com/media/ocihdtjx/favicon.png?width=152&height=152">
+
+    <link href="/css/bootstrap/bootstrap.min.css?v=11.2" rel="stylesheet" />
+    <link href="/css/bootstrap/bootstrap-xl-xxl.css?v=11.2" rel="stylesheet" />
+    <link href="/css/bootstrap/bootstrap-overrides.css?v=11.2" type="text/css" rel="stylesheet" />
+    <link href="/css/lib/select2.css?v=11.2" type="text/css" rel="stylesheet" />
+    <link href="/css/lib/select2-overrides.css?v=11.2" type="text/css" rel="stylesheet" />
+    <link href="/css/lib/jquery-ui-1.10.2.custom.css?v=11.2" rel="stylesheet" type="text/css" />
+    <link href="/css/lib/font-awesome.min.css?v=11.2" type="text/css" rel="stylesheet" />
+    <link href="/css/layout.css?v=11.2" type="text/css" rel="stylesheet" />
+    <link href="/css/form-showcase.css?v=11.2" type="text/css" rel="stylesheet" />
+    <link href="/css/elements.css?v=11.2" type="text/css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- scripts -->
+    <script src="/js/jquery-1.10.2.min.js"></script>
+    <script src="/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/select2.full.min.js"></script>
+    <script src="/js/theme.min.js"></script>
+    <script src="/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="https://cdn.statuspage.io/se-v2.js"></script>
+    <script>
+        var sp = new StatusPage.page({ page: 'jtdvzhdqjjc7' });
+        sp.status({
+            success: function (data) {
+                $('.color-description').text(data.status.description);
+                $('.color-dot').addClass(data.status.indicator);
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2M6F9" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script>
+        dataLayer = [{
+
+            'takeover': 'false',
+
+
+            'role': 'affiliate',
+
+
+            'server': 'prod',
+
+
+            'user': 'rogsor80@gmail.com',
+
+
+            'lang': "no"
+
+        }];
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="/js/autocomplete/jquery.autocomplete.js?v=11.2"></script>
+    <script type="text/javascript">
+
+        function toggleViewMode() {
+            $.ajax({
+                url: "/partner/ajax/toggleviewmode.json",
+                async: true,
+                dataType: 'json',
+                success: function (msg) {
+                    document.location.reload();
+                }, error: function () {
+                    document.location.reload();
+                }
+            });
+        }
+
+        function changeLocale(language) {
+            $.ajax({
+                url: "/partner/ajax/changeLocale.json",
+                data: "lang=" + language,
+                async: true,
+                dataType: 'json',
+                success: function (msg) {
+                    document.location.reload();
+                }, error: function () {
+                    document.location.reload();
+                }
+            });
+        }
+
+        var options, a;
+        jQuery(function () {
+            options = { serviceUrl: 'affm_searchPrg.json', minChars: 2, type: 'POST', dataType: 'json', noCache: true, onSelect: function (suggestion) { selectProgram(suggestion); } };
+            a = $('#qsname').autocomplete(options);
+        });
+
+        function selectProgram(suggestion) {
+
+            // Set prgname
+            prgName = suggestion.value;
+            var u = "program.htm?apid=" + suggestion.data
+            location.href = "https://" + location.hostname + "/" + location.pathname.split("/")[1] + "/" + u;
+        }
+
+    </script>
+
+    <!-- navbar -->
+    <header class="navbar navbar-inverse" role="banner" style="z-index: 1029;">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" id="menu-toggler">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="fa fa-bars"></span>
+            </button>
+
+            <a href="/partner/partner.htm">
+                <div class="navbar-brand" style="color:#FFF"><img src="/img/adtraction.svg?v=2"
+                        style="width:130px; border:none" /></div>
+            </a>
+
+        </div>
+
+        <ul class="nav navbar-nav pull-right hidden-xs">
+
+            <li class="hidden-xs hidden-sm">
+                <form id="advertprogram" name="qsprograms" action="#" onsubmit="return false;" method="post">
+                    <input id="qsname" name="qsname" class="search" placeholder="Søk etter annonsør" type="text">
+                </form>
+            </li>
+            <li class="settings">
+                <a href="#" id="latestprograms" class="dropdown-toggle" data-toggle="dropdown">
+                    Logg
+                </a>
+                <ul class="dropdown-menu" id="latestprogramslist"></ul>
+            </li>
+            <li class="settings">
+                <a href="/partner/viewadvertprogramstatus.htm">Lenker</a>
+            </li>
+
+            <li class="settings">
+                <a id="channelslink" href="/partner/channels.htm">Kanaler</a>
+            </li>
+
+
+
+            <li class="notification-dropdown">
+                <a href="#" title="Velg språk" data-toggle="tooltip" data-placement="bottom" data-container="body"
+                    class="trigger">
+
+                    <img src="/img/flags/48_flat/no.png" class="langselect" />
+
+                </a>
+                <div class="pop-dialog">
+                    <div class="pointer right">
+                        <div class="arrow"></div>
+                        <div class="arrow_border"></div>
+                    </div>
+                    <div class="body">
+                        <a href="#" class="close-icon"><i class="fa fa-times-circle"></i></a>
+                        <div class="notifications">
+                            <h3>Velg språk</h3>
+
+                            <a class="item" style="padding-left:20px" onclick="changeLocale('en');" href="#"><img
+                                    src="/img/flags/48_flat/gb.png" class="langselect" /> Engelsk</a>
+
+                            <a class="item" style="padding-left:20px" onclick="changeLocale('sv');" href="#"><img
+                                    src="/img/flags/48_flat/se.png" class="langselect" /> Svensk</a>
+
+                            <a class="item" style="padding-left:20px" onclick="changeLocale('fi');" href="#"><img
+                                    src="/img/flags/48_flat/fi.png" class="langselect" /> Finsk</a>
+
+                            <a class="item" style="padding-left:20px" onclick="changeLocale('no');" href="#"><img
+                                    src="/img/flags/48_flat/no.png" class="langselect" /> Norsk</a>
+
+                            <a class="item" style="padding-left:20px" onclick="changeLocale('da');" href="#"><img
+                                    src="/img/flags/48_flat/dk.png" class="langselect" /> Dansk</a>
+
+                            <a class="item" style="padding-left:20px" onclick="changeLocale('es');" href="#"><img
+                                    src="/img/flags/48_flat/es.png" class="langselect" /> Spansk</a>
+
+                            <a class="item" style="padding-left:20px" onclick="changeLocale('pl');" href="#"><img
+                                    src="/img/flags/48_flat/pl.png" class="langselect" /> Polsk</a>
+
+                            <a class="item" style="padding-left:20px" onclick="changeLocale('de');" href="#"><img
+                                    src="/img/flags/48_flat/de.png" class="langselect" /> Tysk</a>
+
+                            <a class="item" style="padding-left:20px" onclick="changeLocale('nl');" href="#"><img
+                                    src="/img/flags/48_flat/nl.png" class="langselect" /> Nederlandsk</a>
+
+                            <a class="item" style="padding-left:20px" onclick="changeLocale('fr');" href="#"><img
+                                    src="/img/flags/48_flat/fr.png" class="langselect" /> Fransk</a>
+
+                            <a class="item" style="padding-left:20px" onclick="changeLocale('it');" href="#"><img
+                                    src="/img/flags/48_flat/it.png" class="langselect" /> Italian</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a data-testid="logoutdropdown" href="#" class="dropdown-toggle hidden-xs" data-toggle="dropdown">
+                    rogsor80@gmail.com
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="https://status.adtraction.com/" target="_blank"><span class="color-description"></span>
+                            <span class="color-dot"></span></a>
+                    </li>
+                    <li><a id="account-id-vl" href="#" style="cursor:default">Konto-ID: 1956409521</a></li>
+                    <li><a href="/logout.htm" data-testid="logoutbutton">Logg ut</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <!-- end navbar -->
+
+    <!-- sidebar -->
+    <div id="sidebar-nav" style="z-index: 1028;">
+        <ul id="dashboard-menu">
+            <li id="homehead">
+                <a id="affiliatehome" href="/partner/partner.htm">
+                    <i class="fa fa-home"></i>
+                    <span>Hjem</span>
+                </a>
+            </li>
+            <li id="reportshead">
+                <a class="dropdown-toggle" href="#">
+                    <i class="fa fa-signal"></i>
+                    <span>Rapporter</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul id="reports" class="submenu">
+                    <li><a id="programreportlink" href="/partner/reports/programs.htm">Programmer</a></li>
+                    <li><a id="channelreportlink" href="/partner/reports/channels.htm">Kanaler</a></li>
+                    <li><a id="advertreportlink" href="/partner/reports/ads.htm">Annonser</a></li>
+                    <li><a id="trendreportlink" href="/partner/reports/trend.htm">Trend</a></li>
+                    <li><a id="transactionreportlink" href="/partner/reports/transactions.htm">Transaksjoner</a></li>
+                    <li><a id="comparereportlink" href="/partner/reports/comparison.htm">Sammenligning</a></li>
+                    <li><a id="epireportlink" href="/partner/reports/epi.htm">EPI</a></li>
+                    <li><a id="paymentreportlink" href="/partner/reports/commission.htm">Provisjonsstatus</a></li>
+                    <li><a id="errorreportlink" href="/partner/reports/invalid-links.htm">Feilaktige lenker</a></li>
+                    <li><a id="mailsubscriptionlink" href="/partner/reports/mailsubscription.htm">Abonnementer</a></li>
+                </ul>
+            </li>
+            <li id="programshead">
+                <a class="dropdown-toggle" href="#">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span>Annonsører</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul id="programs" class="submenu">
+                    <li><a id="myprograms" href="/partner/viewadvertprogramstatus.htm">Mine annonsører</a></li>
+                    <li><a id="directory" href="/partner/programs.htm">Alle annonsører</a></li>
+                    <li><a id="couponcodes" href="/partner/coupons.htm">Rabattkoder</a></li>
+                </ul>
+            </li>
+            <li id="toolshead">
+                <a class="dropdown-toggle" href="#">
+                    <i class="fa fa-wrench"></i>
+                    <span>Verktøy</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul id="tools" class="submenu">
+                    <li><a id="product" href="/partner/productbrowser.htm">Bla gjennom produkter</a></li>
+                    <li><a id="feed" href="/partner/productfeed.htm">Produktfiler</a></li>
+                    <li><a id="datafeeds" href="/partner/datafeeds.htm">Datafeeds</a></li>
+                    <li><a id="gads" href="/partner/gads.htm">Google Ads</a></li>
+                    <li><a id="callback" href="/partner/callback.htm">Callbacks</a></li>
+
+                    <li><a target="_blank"
+                            href="https://chromewebstore.google.com/detail/adtraction/inbfddpmobpdpkanhpmjhdjnmfjeeceh">Chrome-utvidelse</a>
+                    </li>
+                    <li><a target="_blank" href="https://api.adtraction.com">API</a></li>
+                </ul>
+            </li>
+            <li id="accounthead">
+                <a class="dropdown-toggle" href="#">
+                    <i class="fa fa-user"></i>
+                    <span>Konto</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul id="account" class="submenu">
+
+                    <li><a id="channels" href="/partner/channels.htm">Mine kanaler</a></li>
+                    <li><a id="balance" href="/partner/affiliatebalance.htm">Saldo</a></li>
+                    <li><a id="payments" href="/partner/viewpayments.htm">Utbetalinger</a></li>
+                    <li><a id="settings" href="/partner/settings.htm">Innstillinger</a></li>
+
+                    <li><a id="users" href="/partner/users.htm">Brukere</a></li>
+
+                </ul>
+            </li>
+            <li id="helphead">
+                <a class="dropdown-toggle" href="#">
+                    <i class="fa fa-question-circle"></i>
+                    <span>Hjelp</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul id="help" class="submenu">
+                    <li><a target="_blank" href="https://help.adtraction.com">Brukerstøtte</a></li>
+                    <li><a style="cursor:pointer" onclick="Intercom('show')">Kontakt support</a></li>
+                </ul>
+            </li>
+
+            <li class="visible-xs visible-sm">
+                <a href="#" onclick="toggleViewMode();"><i class="fa fa-expand"></i>
+                    <span>Desktop</span>
+                </a>
+            </li>
+
+
+            <li class="visible-xs">
+                <a href="/logout.htm"><i class="fa fa-sign-out"></i>
+                    <span>Logg ut</span>
+                </a>
+            </li>
+        </ul>
+        <div id="dashboard-bottom-filler"></div>
+    </div>
+    <!-- end sidebar -->
+
+    <script>
+        document.getElementById("latestprograms").onclick = function () { getLatestPrograms() };
+
+        function getLatestPrograms() {
+
+            $.ajax({
+                url: '/partner/ajax/getLatestPrograms.json',
+                success: function (data) {
+
+                    var ul = document.getElementById("latestprogramslist");
+                    ul.innerHTML = '';
+
+                    for (i = 0; i < data.length; i += 2) {
+                        var li1 = document.createElement("li");
+                        var latestProgAnchor = document.createElement("a");
+
+                        // Alternates the list with name and ID via the data variable
+                        latestProgAnchor.textContent = data[i];
+                        latestProgAnchor.setAttribute('href', "program.htm?apid=" + data[i + 1]);
+                        li1.appendChild(latestProgAnchor);
+                        ul.appendChild(li1);
+                    }
+
+                }
+            })
+        }
+    </script>
+
+
+
+
+    <style>
+        .select2 {
+            visibility: hidden;
+        }
+
+        #sidebar-nav #dashboard-menu #programshead ul.submenu {
+            display: block
+        }
+
+        #programshead,
+        #sidebar-nav #dashboard-menu #programshead #programs #directory {
+            font-weight: bold
+        }
+
+        #sidebar-nav #dashboard-menu #programshead i {
+            opacity: 1;
+        }
+
+        #sidebar-nav #dashboard-menu #programshead .dropdown-toggle {
+            border-bottom: 0px;
+            box-shadow: none;
+        }
+
+        .badge {
+            border-radius: 50%;
+            padding: 6px 9px;
+            font-size: 12px !important;
+            font-weight: bold !important;
+            margin-right: 5px;
+        }
+    </style>
+    <script src="/js/jquery.dataTables.min.js?v=11.2"></script>
+    <script src="/js/jquery.datatables.extras.js?v=11.2"></script>
+    <!-- main container -->
+    <div class="content">
+
+        <div id="pad-wrapper" class="form-page">
+
+            <form id="advertprogram" action="/partner/listadvertprograms.htm?cId=9&amp;asonly=false" method="post">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <a class="blue" style="cursor:pointer" onclick="linkPrograms()">Alle annonsører</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="/img/categories/9.svg"
+                            style="width:40px; float:left; opacity:0.5; margin-top:-2px; margin-right:15px" />
+                        <h3>Mote</h3>
+                    </div>
+                </div>
+
+
+                <div class="row" style="margin-bottom:20px">
+                    <div class="col-md-12">
+                        <div class="field-box">
+                            <select id="affiliateSiteId" name="affiliateSiteId" class="select2">
+                                <option value="1978629723" selected="selected">butikkoversikt.no</option>
+                            </select>
+                            <input type="submit" class="btn-flat primary" value="Vis">
+                            <input id="categoryId" name="categoryId" type="hidden" value="9" />
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="row">
+                    <div class="col-md-12">
+
+
+                        <table id="data" class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="hidden-xs">&nbsp;</th>
+                                    <th>Annonsør</th>
+                                    <th style="width:10px" class="visible-lg"></th>
+
+                                    <th style="width:10px" class="visible-lg"></th>
+
+                                    <th class="visible-lg" style="text-align:right">EPC</th>
+                                    <th>Provisjon</th>
+
+                                    <th class="hidden-xs">Status</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1118337865&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1118337865&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1118337863" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1118337865
+							&sid=1978629723">Bubbleroom NO</a>
+
+                                        <br />
+                                        Mote & Klær online
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        3.46 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+
+
+                                        Order: 6.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+                                        <span class="label label-warning">Under behandling</span><br />
+
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1858255976&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1858255976&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1858255975" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1858255976
+							&sid=1978629723">Gina Tricot NO</a>
+
+                                        <br />
+                                        Klær og mote på nett
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        1.08 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 8.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+                                        <span class="label label-warning">Under behandling</span><br />
+
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1200828696&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1200828696&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1200828694" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1200828696
+							&sid=1978629723">Lindex NO</a>
+
+                                        <br />
+                                        Klær til dame og barn, undertøy, mote & skjønnhet
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        1.45 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 10.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+                                        <span class="label label-warning">Under behandling</span><br />
+
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1874789235&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1874789235&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1874789234" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1874789235
+							&sid=1978629723">Kouture NO</a>
+
+                                        <br />
+                                        Unike varemerker som man føler seg flott i
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        1.13 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Ordre: 8.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1874789235&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1123997289&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1123997289&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1123997287" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1123997289
+							&sid=1978629723">Extra Optical NO</a>
+
+                                        <br />
+                                        Norges ledende optiker på nett!
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        7.98 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 8.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1123997289&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1869677751&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1869677751&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1869677750" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1869677751
+							&sid=1978629723">Brando NO</a>
+
+                                        <br />
+                                        Feels like home
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        2.88 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 9.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1869677751&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1323818220&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1323818220&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1323818218" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1323818220
+							&sid=1978629723">COS NO</a>
+
+                                        <br />
+                                        Garderobe essentials, bærekraftige kolleksjoner - COS er et motemerke for
+                                        kvinner, menn og barn.
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        1.15 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 8.5
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1323818220&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1887444808&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1887444808&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1887444807" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1887444808
+							&sid=1978629723">Björn Borg NO</a>
+
+                                        <br />
+                                        Sportmode Online
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        5.12 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Sale: 9.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+                                        <span class="label label-warning">Under behandling</span><br />
+
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1611943890&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1611943890&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1611943888" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1611943890
+							&sid=1978629723">Brilleland NO</a>
+
+                                        <br />
+                                        En av Norges ledende optikerkjeder
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        1.90 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 8.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1611943890&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1909754885&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1909754885&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1909754884" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1909754885
+							&sid=1978629723">Camilla Pihl NO</a>
+
+                                        <br />
+                                        Timeless and essential
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        5.66 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Affiliate Sales: 7.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1909754885&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1842803173&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1842803173&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1842803172" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1842803173
+							&sid=1978629723">4 Men 4 Women</a>
+
+                                        <br />
+                                        Tilbyr merkeklær fra anerkjente motehus
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        2.22 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Salg: 8.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1842803173&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1959416917&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1959416917&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1959416916" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1959416917
+							&sid=1978629723">Urban Pioneers Concept Store NO</a>
+
+                                        <br />
+                                        Din destinasjon for skandinavisk mote!
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        3.81 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Ordre: 8.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1959416917&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1717731573&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1717731573&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1717731572" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1717731573
+							&sid=1978629723">Interoptik NO</a>
+
+                                        <br />
+                                        Det finnes optikere. Og det finnes interoptikere.
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        5.39 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 8.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1717731573&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1930098535&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1930098535&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1930098534" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1930098535
+							&sid=1978629723">Maanesten NO</a>
+
+                                        <br />
+                                        Smykker fra Maanesten i konstant bevegelse
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        3.03 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Sale: 11.5
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1930098535&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1937525273&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1937525273&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1937525272" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1937525273
+							&sid=1978629723">You & I NO</a>
+
+                                        <br />
+                                        Feminine og klassiske plagg
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        2.29 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Ordre: 8.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1937525273&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1924802612&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1924802612&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1924802611" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1924802612
+							&sid=1978629723">Urban Pioneers NO</a>
+
+                                        <br />
+                                        Urban Pioneers
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        1.79 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Ordre: 8.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1924802612&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1827691447&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1827691447&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1827691446" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1827691447
+							&sid=1978629723">Kayani NO</a>
+
+                                        <br />
+                                        Embrace uniqueness and feel chosen
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        1.17 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 10.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1827691447&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1036556443&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1036556443&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1036556441" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1036556443
+							&sid=1978629723">Timarco NO</a>
+
+                                        <br />
+                                        Merkesundertøy på nettet
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        2.69 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Sale standard: 10.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+
+
+                                        Sale campaign: 5.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1036556443&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1445461266&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1445461266&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1445461264" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1445461266
+							&sid=1978629723">Ferner Jacobsen NO</a>
+
+                                        <br />
+                                        Trygghet i kvalitet.
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        0.94 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 8.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1445461266&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1118341530&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1118341530&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1118341528" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1118341530
+							&sid=1978629723">Cellbes NO</a>
+
+                                        <br />
+                                        Mote & Klær online
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        8.54 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order new customer: 7.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+
+
+                                        Order: 7.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1118341530&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1922334164&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1922334164&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1922334163" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1922334164
+							&sid=1978629723">Safira NO</a>
+
+                                        <br />
+                                        Smykker for alle anledninger
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        5.54 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 6.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1922334164&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1963349674&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1963349674&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1963349672" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1963349674
+							&sid=1978629723">Barbershop.no</a>
+
+                                        <br />
+                                        Quality products for shaving.
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+                                        Ingen data
+
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Sale 10: 10.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1963349674&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1954030623&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1954030623&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1954030610" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1954030623
+							&sid=1978629723">Sportshopen NO</a>
+
+                                        <br />
+                                        Hos Sportshopen finner du det største utvalget fra de beste merkene til de beste
+                                        prisene.
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+                                        Ingen data
+
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Sale 4: 4.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1954030623&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1885212415&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1885212415&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1885212414" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1885212415
+							&sid=1978629723">SWIMS NO</a>
+
+                                        <br />
+                                        klær, sko, bagger og tilbehør av høyeste kvalitet.
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        9.59 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Salg: 8.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1885212415&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1954033927&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1954033927&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1954033925" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1954033927
+							&sid=1978629723">Prydligt NO</a>
+
+                                        <br />
+                                        Wide and varied range of watches and accessories for both men and women
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+                                        Ingen data
+
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 10.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1954033927&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1314004009&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1314004009&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1314004007" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1314004009
+							&sid=1978629723">Weekday NO</a>
+
+                                        <br />
+                                        Skandinavisk streetwear mote
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        0.84 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 6.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1314004009&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1305924517&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1305924517&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1305924515" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1305924517
+							&sid=1978629723">Monki NO</a>
+
+                                        <br />
+                                        En annen moteverden - kjøp denim, kjoler, bukser, topper og mye mer
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        0.24 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 8.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1305924517&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1961090473&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1961090473&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1961090472" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1961090473
+							&sid=1978629723">Teeshoppen NO</a>
+
+                                        <br />
+                                        Nordens billigste og mest omfattende utvalg av basic moteklær.
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+                                        Ingen data
+
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Sale: 10.5
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1961090473&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1936919221&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1936919221&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1936919220" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1936919221
+							&sid=1978629723">Pilgrim NO</a>
+
+                                        <br />
+                                        En ærlig og autentisk tilnærming
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        0.55 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 10.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1936919221&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1748172717&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1748172717&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1748172716" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1748172717
+							&sid=1978629723">Munk Store NO</a>
+
+                                        <br />
+                                        Mer enn 50 av de beste merkene til menn og kvinner
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        0.87 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 8.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1748172717&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1657214553&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1657214553&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1657214551" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1657214553
+							&sid=1978629723">Daniel Wellington NO</a>
+
+                                        <br />
+                                        Klokker, accessories og smykker for alle anledninger
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+
+                                        2.13 NOK
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 10.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1657214553&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1956298970&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1956298970&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1956298969" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1956298970
+							&sid=1978629723">STAR STUDIO NO</a>
+
+                                        <br />
+                                        Fashion is what you buy, but remember that style is what you do with it!
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Denne annonsøren tilbyr en produktfeed.">F</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+                                        Ingen data
+
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Order: 10.0
+
+                                        %
+
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1956298970&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                                <tr style="cursor:pointer"
+                                    onclick="document.location = 'program.htm?apid=1852993715&sid=1978629723';">
+                                    <td class="logo hidden-xs" style="white-space:nowrap; width:100px" valign="top">
+                                        <a class="advprog" href="program.htm?apid=1852993715&sid=1978629723">
+                                            <img class="advertiserlogo" src="/image.htm?imgId=1852993714" />
+                                        </a>
+                                    </td>
+                                    <td valign="top">
+                                        <a class="advprog" href="program.htm?apid=1852993715
+							&sid=1978629723">Abonera NO</a>
+
+                                        <br />
+                                        Vi løser sokkeproblemene! Aldri mer ulike par, hullete eller partnerløse sokker.
+                                    </td>
+                                    <td class="visible-lg" valign="top">
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top">
+
+                                        <div class="label label-info" data-toggle="tooltip" style="margin:5px"
+                                            title="Provisjonen du tjener fra denne annonsøren kvalifiserer til forskuddsbetaling.">
+                                            P</div>
+
+                                    </td>
+
+                                    <td class="visible-lg" valign="top" align="right">
+
+
+                                        Ingen data
+
+
+
+                                    </td>
+                                    <td valign="top">
+
+
+
+                                        Salg: 100,00
+
+
+                                        NOK
+
+                                        <br />
+
+
+
+                                    </td>
+
+
+
+                                    <td class="hidden-xs" valign="top">
+
+
+
+
+                                        <a class="advprog" data-testid="statusapply" class="btn-flat primary small"
+                                            href="program.htm?apid=1852993715&sid=1978629723">
+                                            Søk på program</a>
+                                        <br />
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+            </form>
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        function linkPrograms() {
+            location.href = "/" + location.pathname.split("/")[1] + "/programs.htm"
+        }
+
+        jQuery.extend(jQuery.fn.dataTableExt.oSort, {
+            "num-string-pre": function (a) {
+                var x = a.replace(/[^0-9.,]/g, "");
+                x = (isNaN(parseFloat(x)) ? 0 : parseFloat(x));
+                return x;
+            },
+
+            "num-string-asc": function (a, b) {
+                return a - b;
+            },
+
+            "num-string-desc": function (a, b) {
+                return b - a;
+            },
+        });
+
+        $(document).ready(function () {
+
+            oTable = $('#data').dataTable({
+                "bPaginate": false,
+                "bAutoWidth": false,
+                "bInfo": false,
+                "bFilter": false,
+                "orderClasses": false,
+                "aoColumnDefs": [
+                    { "bSortable": false, "aTargets": [0] },
+                    { "sType": "html", "aTargets": [1] },
+                    { "sType": "string", "aTargets": [2, 3] },
+                    { "sType": "num-string", "aTargets": [4] },
+                    { "sType": "string", "aTargets": [5, 6] }
+                ],
+                "aoColumns": [
+                    { "bSortable": false },
+                    {
+                        "bSortable": true, "mRender": function (data, type, row) {
+                            if (type === 'sort') {
+                                return $(data).text().toLowerCase();
+                            }
+                            return data;
+                        }
+                    },
+                    null,
+
+
+                    null,
+                    null,
+                    null
+
+                ]
+            });
+
+            $('#programshead').addClass('active');
+            $('#programs').addClass('active');
+            $('#directory').addClass('active');
+
+            $(".select2").css("visibility", "visible");
+            $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+        });
+
+        if ($(window).width() > 768) {
+
+            $('#affiliateSiteId').select2({
+                minimumResultsForSearch: 7
+            });
+
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+    <div class="modal" id="loader" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content"
+                style="background: none; text-align:center; border:none; box-shadow: none; padding-top:100px">
+                <div class="modal-body">
+                    <svg class="lds-spinner" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"
+                        style="background: none;">
+                        <g transform="rotate(0 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                                    begin="-0.9333333333333333s" repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                        <g transform="rotate(24 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                                    begin="-0.8666666666666667s" repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                        <g transform="rotate(48 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8s"
+                                    repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                        <g transform="rotate(72 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                                    begin="-0.7333333333333333s" repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                        <g transform="rotate(96 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                                    begin="-0.6666666666666666s" repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                        <g transform="rotate(120 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6s"
+                                    repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                        <g transform="rotate(144 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                                    begin="-0.5333333333333333s" repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                        <g transform="rotate(168 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                                    begin="-0.4666666666666667s" repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                        <g transform="rotate(192 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4s"
+                                    repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                        <g transform="rotate(216 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                                    begin="-0.3333333333333333s" repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                        <g transform="rotate(240 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                                    begin="-0.26666666666666666s" repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                        <g transform="rotate(264 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.2s"
+                                    repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                        <g transform="rotate(288 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                                    begin="-0.13333333333333333s" repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                        <g transform="rotate(312 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s"
+                                    begin="-0.06666666666666667s" repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                        <g transform="rotate(336 50 50)">
+                            <rect x="47" y="12.5" rx="9.4" ry="2.5" width="6" height="15" fill="#444444">
+                                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s"
+                                    repeatCount="indefinite"></animate>
+                            </rect>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        window.intercomSettings = {
+
+            created_at: 1740553679,
+            app_id: "hhj23vct ",
+
+
+
+
+
+
+
+
+
+
+
+
+            name: "Roger Sørqvist",
+
+            "user_hash": "891AFD05C7CE358C69499EB240B398DA12BCE8F34BA56F56C5A47B8380D87ED4",
+            "user_id": "1956409521",
+            "channel": "butikkoversikt.no",
+            "payments": 0,
+            "fbnew": null,
+
+            "has_payment_info": "true",
+
+            "role": "affiliate",
+            "lang": "no"
+
+        };
+    </script>
+
+    <script>(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/hhj23vct'; s.charset = "UTF-8"; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()</script>
+
+
+
+    <script>
+        if ($.fn.dataTable) {
+            $.fn.dataTable.ext.type.order['html-pre'] = function (a) {
+                return !a ? '' : a.replace ? $.trim(a.replace(/<.*?>/g, "")
+                    .toLowerCase()) : a + '';
+            };
+        }
+    </script>
+    <script src="https://jtdvzhdqjjc7.statuspage.io/embed/script.js"></script>
+</body>
+
+</html>

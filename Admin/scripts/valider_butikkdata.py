@@ -1,5 +1,10 @@
+import sys
+from pathlib import Path
 import json
-from utils.config import BUTIKKDATA_PATH  # 👈 henter felles sti
+
+# Legg til prosjektets rotmappe i path slik at utils kan importeres
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+from utils.config import BUTIKKDATA_PATH
 
 # Last inn butikkdata
 with open(BUTIKKDATA_PATH, encoding="utf-8") as f:
@@ -37,7 +42,6 @@ for butikk in butikker:
     if not isinstance(tags, list) or len(tags) < 3:
         feil.append("Få eller ugyldige tags")
 
-    # Legg til i listen hvis noen feil er funnet
     if feil:
         feil_liste.append({
             "name": navn,
@@ -45,13 +49,13 @@ for butikk in butikker:
             "feil": ", ".join(feil)
         })
 
-# Skriv resultat til fil
-output_fil = Path("Admin/data/butikkdata-valideringsrapport.txt")
-output_fil.parent.mkdir(parents=True, exist_ok=True)
+# Lagre rapport
+rapport_fil = Path("Admin/data/butikkdata-valideringsrapport.txt")
+rapport_fil.parent.mkdir(parents=True, exist_ok=True)
 
-with open(output_fil, "w", encoding="utf-8") as f:
+with open(rapport_fil, "w", encoding="utf-8") as f:
     for linje in feil_liste:
         f.write(f"{linje['name']} | {linje['url']} | {linje['feil']}\n")
 
-print(f"✅ Ferdig! {len(feil_liste)} butikker har mangler.")
-print(f"📝 Rapport lagret i: {output_fil}")
+print(f"[OK] {len(feil_liste)} butikker har mangler.")
+print(f"[Fil] {rapport_fil}")
