@@ -1217,34 +1217,6 @@
     "kampanje": ""
   },
   {
-    "name": "Rudo",
-    "image": "assets/images/butikker-webp/rudo.webp",
-    "alt": "Rudo",
-    "category": "Klær og mote",
-    "subcategory": [
-      "Barneklær"
-    ],
-    "url": "https://www.rudo.no",
-    "description": "Rudo tilbyr produkter for barn og baby, med fokus på kvalitet, komfort og lek.",
-    "topp25": true,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": [
-      "barneklær",
-      "barnemote",
-      "klær til barn",
-      "komfort",
-      "småbarnsklær"
-    ],
-    "rank": 22,
-    "ukensAnbefalte": "",
-    "tagCount": 5,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": ""
-  },
-  {
     "name": "Smaaungene.no",
     "image": "assets/images/butikker-webp/smaaungene.webp",
     "alt": "Smaaungene",
@@ -1380,33 +1352,6 @@
     "affiliate": false,
     "kampanje": false,
     "annonse": false,
-    "ukensAnbefalte": ""
-  },
-  {
-    "name": "Godt Levert",
-    "image": "assets/images/butikker-webp/godtlevert.webp",
-    "alt": "Godt Levert",
-    "category": "Mat og drikke",
-    "subcategory": [
-      "Matkasser"
-    ],
-    "url": "https://www.godtlevert.no",
-    "description": "Godtlevert.no tilbyr matkasser med oppskrifter og ingredienser levert hjem. Ingen bindingstid. Hverdagskassen, Premium, Barnekassen m.fl.",
-    "forside": false,
-    "topp25": false,
-    "annonse": false,
-    "ny": true,
-    "tags": [
-      "matkasse",
-      "oppskrifter",
-      "middag",
-      "levering",
-      "familievennlig"
-    ],
-    "tagCount": 5,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": false,
     "ukensAnbefalte": ""
   },
   {
@@ -2130,34 +2075,6 @@
     "kampanje": ""
   },
   {
-    "name": "Gymgrossisten",
-    "image": "assets/images/butikker-webp/gymgrossisten.webp",
-    "alt": "Gymgrossisten",
-    "category": "Sport og fritid",
-    "subcategory": [
-      "Treningsutstyr"
-    ],
-    "url": "https://www.gymgrossisten.no",
-    "description": "Kosttilskudd, treningsklær og treningsutstyr.",
-    "topp25": false,
-    "forside": false,
-    "ny": true,
-    "annonse": false,
-    "tags": [
-      "manualer",
-      "treningsmatte",
-      "styrketrening",
-      "strikk",
-      "apparat"
-    ],
-    "rank": "",
-    "ukensAnbefalte": "",
-    "tagCount": 5,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": ""
-  },
-  {
     "name": "intersport.no",
     "image": "assets/images/butikker-webp/intersport.webp",
     "alt": "Gsport",
@@ -2815,35 +2732,6 @@
     "kampanje": ""
   },
   {
-    "name": "HiFiKlubben.no",
-    "image": "assets/images/butikker-webp/hifiklubben.webp",
-    "alt": "HiFi Klubben",
-    "category": "Elektronikk og data",
-    "subcategory": [
-      "Lyd og bilde"
-    ],
-    "url": "https://www.hifiklubben.no",
-    "description": "Høyttalere, forsterkere og lydprodukter i toppklasse.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": [
-      "høyttaler",
-      "headset",
-      "TV",
-      "projektor",
-      "lydanlegg",
-      "hjemmekino"
-    ],
-    "rank": "",
-    "ukensAnbefalte": "",
-    "tagCount": 6,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": ""
-  },
-  {
     "name": "iPhonehuset.no",
     "image": "assets/images/butikker-webp/iphonehuset.webp",
     "alt": "iPhonehuset",
@@ -2870,35 +2758,6 @@
     "affiliate": false,
     "kampanje": false,
     "ukensAnbefalte": ""
-  },
-  {
-    "name": "Power",
-    "image": "assets/images/butikker-webp/power.webp",
-    "alt": "Power",
-    "category": "Elektronikk og data",
-    "subcategory": [
-      "Spill og konsoller"
-    ],
-    "url": "https://www.power.no",
-    "description": "Power tilbyr et stort utvalg av spill, konsoller og tilbehør til både casual og pro-gamere.",
-    "topp25": false,
-    "forside": false,
-    "ny": true,
-    "annonse": false,
-    "tags": [
-      "spill",
-      "konsoll",
-      "PlayStation",
-      "Xbox",
-      "Nintendo",
-      "flerspiller"
-    ],
-    "rank": "",
-    "ukensAnbefalte": false,
-    "tagCount": 6,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": false
   },
   {
     "name": "Retrospillkongen",
@@ -3043,35 +2902,6 @@
     "affiliate": false,
     "kampanje": false,
     "ukensAnbefalte": ""
-  },
-  {
-    "name": "Gymgrossisten.no",
-    "image": "assets/images/butikker-webp/gymgrossisten.webp",
-    "alt": "Gymgrossisten.no",
-    "category": "Helse og egenpleie",
-    "subcategory": [
-      "Trening og velvære"
-    ],
-    "url": "https://www.gymgrossisten.no/",
-    "description": "Kosttilskudd, treningsutstyr og helseprodukter.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": [
-      "trening",
-      "kosttilskudd",
-      "velvære",
-      "yoga",
-      "balanse",
-      "energi"
-    ],
-    "rank": "",
-    "ukensAnbefalte": "",
-    "tagCount": 6,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": ""
   },
   {
     "name": "Aboutyou.no",
@@ -4547,37 +4377,6 @@
     "ukensAnbefalte": ""
   },
   {
-    "name": "Lekekassen",
-    "image": "assets/images/butikker-webp/lekekassen.webp",
-    "alt": "Lekekassen",
-    "category": "Barn og baby",
-    "subcategory": [
-      "Leker"
-    ],
-    "url": "https://www.lekekassen.no/",
-    "description": "Lekekassen har et bredt utvalg av leker, byggesett og figurer for barn i alle aldre.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": [
-      "leker",
-      "leketøy",
-      "spill",
-      "puslespill",
-      "pedagogisk",
-      "kreativ lek",
-      "bamse",
-      "dukker",
-      "lego"
-    ],
-    "tagCount": 9,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": false,
-    "ukensAnbefalte": ""
-  },
-  {
     "name": "Lekmer",
     "image": "assets/images/butikker-webp/lekmer.webp",
     "alt": "Lekmer",
@@ -5524,44 +5323,6 @@
     "partner": false,
     "affiliate": false,
     "kampanje": false
-  },
-  {
-    "name": "Proshop.no",
-    "image": "assets/images/butikker-webp/proshop.webp",
-    "alt": "Proshop.no",
-    "category": "Gaming og tilbehør",
-    "subcategory": [
-      "Gaming-PC og skjermer",
-      "PC og datatilbehør",
-      "Elektronikk"
-    ],
-    "url": "https://www.proshop.no/",
-    "description": "Proshop tilbyr over 200 000 produkter innen IT, elektronikk og gadgets – med fokus på attraktive priser og god kundeservice. Selskapet har røtter tilbake til 1996 og opererer i hele Norden og Europa.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": [
-      "gaming-PC",
-      "skjerm",
-      "FPS",
-      "grafikkort",
-      "prosessor",
-      "bygge PC",
-      "mus",
-      "tastatur",
-      "USB-hub",
-      "webkamera",
-      "minnepinne"
-    ],
-    "rank": "",
-    "ukensAnbefalte": "",
-    "eksternFrakt": true,
-    "fraktKommentar": "Merk: Denne butikken sender fra utlandet. Toll, MVA og ekstra fraktkostnader kan påløpe.",
-    "tagCount": 11,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": ""
   },
   {
     "name": "Dyrekassen.no",

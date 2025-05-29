@@ -20,7 +20,7 @@ for butikk in butikker:
     url = butikk.get("url", "").strip().lower().rstrip('/')
 
     # Lag en identifikator for duplikatkontroll
-    identifikator = f"{navn}|{url}"
+    identifikator = url
 
     if navn in navn_sett or url in url_sett:
         duplikater.append({
