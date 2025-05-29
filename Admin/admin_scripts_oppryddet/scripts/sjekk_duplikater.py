@@ -5,9 +5,7 @@ from pathlib import Path
 # Legg til stien til prosjektroten slik at vi får tak i config
 sys.path.append(str(Path(__file__).resolve().parent.parent))  # dette legger til 'Admin'
 
-from utils.config import BUTIKKDATA_PATH
 # Last inn butikkdata
-filsti = BUTIKKDATA_PATH
 with open(filsti, encoding="utf-8") as f:
     butikker = json.load(f)
 
