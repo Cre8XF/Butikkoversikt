@@ -1,42 +1,33 @@
 import json
-import os
-from urllib.parse import urlparse
-from utils.config import BUTIKKDATA_PATH, ROOT_DIR
+from pathlib import Path
 
-# 📁 Mappen der WebP-logoer ligger
-logomappe = ROOT_DIR / "assets" / "images" / "butikker-webp"
-logomappe.mkdir(parents=True, exist_ok=True)
+json_path = Path("assets/data/butikker.json")
+bilder_path = Path("assets/images/butikker-webp")
 
-# 📄 Loggfil for manglende logo-URL-er
-utfil = ROOT_DIR / "Admin" / "data" / "manglende-logoer-clearbit-urls.txt"
-utfil.parent.mkdir(parents=True, exist_ok=True)
-
-# 📖 Last inn butikker
-with open(BUTIKKDATA_PATH, encoding="utf-8") as f:
+# Last inn JSON-data
+with open(json_path, "r", encoding="utf-8") as f:
     butikker = json.load(f)
 
-# 🔎 Sjekk hvilke som mangler logoer i mappen
-mangler_logo = []
+# Hent tilgjengelige bilde-filer
+bilder = {f.stem.lower(): f.name for f in bilder_path.glob("*.webp")}
+
+oppdatert = 0
 
 for butikk in butikker:
-    navn = butikk.get("name", "").strip()
-    url = butikk.get("url", "").strip()
-    image_path = butikk.get("image", "").strip()
+    # Lag en søkenøkkel som matcher lettere
+    navn_key = butikk["name"].lower().replace(" ", "").replace("-", "").replace(".", "")
+    
+    # Finn bilde som matcher nøkkelen
+    match = next((filename for key, filename in bilder.items() if navn_key in key), None)
+    
+    if match:
+        ny_sti = f"assets/images/butikker-webp/{match}"
+        if butikk["image"] != ny_sti:
+            butikk["image"] = ny_sti
+            oppdatert += 1
 
-    if not navn or not url or not image_path:
-        continue
+# Lagre tilbake
+with open(json_path, "w", encoding="utf-8") as f:
+    json.dump(butikker, f, ensure_ascii=False, indent=2)
 
-    expected_file = logomappe / os.path.basename(image_path)
-    if not expected_file.exists():
-        domain = urlparse(url).netloc.replace("www.", "")
-        logo_url = f"https://logo.clearbit.com/{domain}"
-        mangler_logo.append(logo_url)
-
-# 💾 Lagre listen til fil
-with open(utfil, "w", encoding="utf-8") as f:
-    for logo_url in sorted(set(mangler_logo)):
-        f.write(f"{logo_url}\n")
-
-print(f"🔍 Ferdig! Fant {len(mangler_logo)} butikker som mangler logo.")
-print(f"📄 Liste lagret i: {utfil}")
-# 📂 Opprett mappen for manglende logoer hvis den ikke finnes
+print(f"✅ Oppdaterte bildebane for {oppdatert} butikker.")
