@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="no"><head><meta charset="UTF-8" />
+<title>Kampanjeverktøy</title><link rel="stylesheet" href="/assets/css/theme-tøff.css" />
+<style>body { padding: 2rem; font-family: sans-serif; }</style></head><body>
+<h1>📢 Rediger kampanjer</h1>
+<label for="kampanjeInput">Lim inn JSON-array for kampanjer:</label><br/>
+<textarea id="kampanjeInput" rows="10" style="width:100%%;"></textarea><br/>
+<button onclick="valider()">Valider format</button>
+<p id="status"></p>
+<script>
+function valider() {
+  try {
+    const json = JSON.parse(document.getElementById("kampanjeInput").value);
+    if (!Array.isArray(json)) throw new Error("Ikke en array.");
+    const test = json.map(k => k.tittel && k.beskrivelse ? true : false);
+    document.getElementById("status").textContent = "✅ Gyldig kampanjeliste med " + json.length + " kampanjer.";
+  } catch (e) {
+    document.getElementById("status").textContent = "🚫 Feil i JSON: " + e.message;
+  }
+}
+</script></body></html>

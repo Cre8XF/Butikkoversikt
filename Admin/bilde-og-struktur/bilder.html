@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manglende bilder</title>
+  <link rel="stylesheet" href="/assets/css/theme-tøff.css" />
+  <style>
+    body {
+      padding: 2rem;
+      font-family: sans-serif;
+    }
+
+    ul {
+      margin-top: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .ok {
+      color: green;
+    }
+
+    .feil {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🖼️ Manglende bilder (basert på image-path)</h1>
+  <p id="status">🔄 Sjekker bildefiler...</p>
+  <ul id="bildeliste"></ul>
+
+  <script>
+    fetch("../../assets/data/butikker.json")
+      .then(res => res.json())
+      .then(butikker => {
+        const ul = document.getElementById("bildeliste");
+        const status = document.getElementById("status");
+        let mangler = 0;
+
+        const checks = butikker.map(b => {
+          const bildeRelativ = b.image || "";
+          const bildeURL = "/" + bildeRelativ.replace(/^\.?\/*/, "");
+
+          if (!bildeRelativ || bildeRelativ.includes("mangler") || !bildeRelativ.endsWith(".webp")) {
+            const li = document.createElement("li");
+            li.classList.add("feil");
+            li.textContent = `${b.name}: Mangler bilde eller feil filtype (${bildeRelativ || "Ingen oppgitt"})`;
+            ul.appendChild(li);
+            mangler++;
+            return Promise.resolve();
+          }
+
+          return fetch(bildeURL, { method: "HEAD" })
+            .then(resp => {
+              if (!resp.ok) {
+                const li = document.createElement("li");
+                li.classList.add("feil");
+                li.textContent = `${b.name}: Fant ikke bilde på ${bildeURL}`;
+                ul.appendChild(li);
+                mangler++;
+              }
+            })
+            .catch(() => {
+              const li = document.createElement("li");
+              li.classList.add("feil");
+              li.textContent = `${b.name}: Ugyldig URL eller fetch-feil (${bildeURL})`;
+              ul.appendChild(li);
+              mangler++;
+            });
+        });
+
+        Promise.all(checks).then(() => {
+          status.textContent = mangler === 0
+            ? "✅ Fant ingen manglende eller feil bilder."
+            : `❌ Fant ${mangler} butikker med manglende eller feil bilder.`;
+        });
+      });
+  </script>
+</body>
+
+</html>

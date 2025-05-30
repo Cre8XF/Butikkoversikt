@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Legg til tags automatisk basert på underkategori</title>
+    <link rel="stylesheet" href="/assets/css/theme-tøff.css">
+    <script src="/assets/js/init.js" defer></script>
+</head>
+<body>
+    <main class="admin-panel">
+        <h1>Legg til tags automatisk basert på underkategori</h1>
+        <div id="app-content">
+            <!DOCTYPE html>
+            <html lang="no">
+            
+            <head>
+                <meta charset="UTF-8">
+                <title>Tag-verktøy – Automatisk tagging</title>
+                <link rel="stylesheet" href="/assets/css/theme-tøff.css">
+                <style>
+                    body {
+                        font-family: sans-serif;
+                        padding: 2rem;
+                    }
+            
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 1rem;
+                    }
+            
+                    th,
+                    td {
+                        padding: 0.5rem;
+                        border: 1px solid #ccc;
+                        vertical-align: top;
+                    }
+            
+                    .tag {
+                        display: inline-block;
+                        background: #eef;
+                        margin: 2px;
+                        padding: 3px 6px;
+                        border-radius: 4px;
+                        font-size: 0.8rem;
+                    }
+            
+                    textarea {
+                        width: 100%;
+                        height: 2.5em;
+                        margin-top: 0.25rem;
+                    }
+            
+                    button {
+                        margin-bottom: 1rem;
+                        padding: 0.5rem 1rem;
+                    }
+                </style>
+            </head>
+            
+            <body>
+                <h1>🏷️ Tag-verktøy</h1>
+                <p class="hint">Foreslår tags basert på butikkens underkategori.</p>
+                <button onclick="leggTilTags()">✨ Legg til anbefalte tags</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Navn</th>
+                            <th>Kategori</th>
+                            <th>Underkategori(er)</th>
+                            <th>Tags (redigerbar)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tagTable"></tbody>
+                </table>
+                <pre id="status" class="hint"></pre>
+            
+                <script>
+                    let butikker = [];
+
+                    const tagMal = {
+                        "Dameklær": ["dameklær", "fashion", "mote"],
+                        "Herreklær": ["herreklær", "outfit", "stil"],
+                        "Elektronikk": ["elektronikk", "kabler", "tech"],
+                        "Gaming-tilbehør": ["spillstol", "RGB", "headset-holder"],
+                        "Leker": ["leker", "bamse", "spill"],
+                        "Trening og velvære": ["trening", "yoga", "kosttilskudd"]
+                        // ... legg til flere etter behov
+                    };
+
+                    fetch("../../assets/data/butikker.json")
+                        .then(res => res.json())
+                        .then(data => {
+                            butikker = data;
+                            visTabell();
+                        });
+
+                    function visTabell() {
+                        const tbody = document.getElementById("tagTable");
+                        tbody.innerHTML = "";
+                        butikker.forEach((b, i) => {
+                            const underkat = Array.isArray(b.subcategory) ? b.subcategory.join(", ") : (b.subcategory || "");
+                            const tags = (b.tags || []).map(t => `<span class="tag">${t}</span>`).join(" ");
+                            const rediger = `<textarea id="tags-${i}">${(b.tags || []).join(", ")}</textarea>`;
+
+                            tbody.innerHTML += `
+                                  <tr>
+                                    <td>${b.name || "Uten navn"}</td>
+                                    <td>${b.category || "-"}</td>
+                                    <td>${underkat}</td>
+                                    <td>${tags}<br>${rediger}</td>
+                                  </tr>
+                                `;
+                        });
+                    }
+
+                    function leggTilTags() {
+                        butikker.forEach((b, i) => {
+                            const eksisterende = new Set(b.tags || []);
+                            const underkatListe = Array.isArray(b.subcategory)
+                                ? b.subcategory
+                                : (b.subcategory ? [b.subcategory] : []);
+
+                            underkatListe.forEach(kat => {
+                                const forslag = tagMal[kat.trim()];
+                                if (forslag) forslag.forEach(tag => eksisterende.add(tag));
+                            });
+
+                            b.tags = Array.from(eksisterende);
+                            const textarea = document.getElementById(`tags-${i}`);
+                            if (textarea) textarea.value = b.tags.join(", ");
+                        });
+
+                        document.getElementById("status").textContent = "✅ Tags foreslått og lagt til. Husk å lagre om ønskelig.";
+                        visTabell(); // Oppdater visningen
+                    }
+                </script>
+            </body>
+            
+            </html>
+            
+        </div>
+    </main>
+</body>
+</html>

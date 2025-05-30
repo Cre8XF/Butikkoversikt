@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Filnavnrenser</title>
+  <link rel="stylesheet" href="/assets/css/theme-tøff.css" />
+  <style>
+    body {
+      padding: 2rem;
+      font-family: sans-serif;
+    }
+
+    ul {
+      margin-top: 1rem;
+    }
+
+    .mangler {
+      color: red;
+    }
+
+    .finnes {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🔧 Filnavnsjekk for butikkbilder</h1>
+  <ul id="filnavnListe"></ul>
+
+  <script>
+    function sluggify(str) {
+      return str.toLowerCase()
+        .replace(/å/g, "a").replace(/ø/g, "o").replace(/æ/g, "ae")
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/(^-|-$)/g, "");
+    }
+
+    async function fetchImageList() {
+      // Denne må inneholde en forhåndsgenerert liste over filer i mappe
+      const res = await fetch("../../assets/data/butikker-webp-index.json");
+      return res.ok ? await res.json() : [];
+    }
+
+    async function init() {
+      const ul = document.getElementById("filnavnListe");
+      const bildeFiler = await fetchImageList();
+
+      fetch("../../assets/data/butikker.json")
+        .then(res => res.json())
+        .then(butikker => {
+          butikker.forEach(b => {
+            const navn = b.name || "ukjent";
+            const slug = sluggify(navn);
+            const foreslåttFil = `${slug}.webp`;
+            const finnes = bildeFiler.includes(foreslåttFil);
+
+            const li = document.createElement("li");
+            li.innerHTML = `${navn} → <code>assets/images/butikker-webp/${foreslåttFil}</code>` +
+              ` <strong class="${finnes ? 'finnes' : 'mangler'}">[${finnes ? '✓ finnes' : '✗ mangler'}]</strong>`;
+            ul.appendChild(li);
+          });
+        });
+    }
+
+    init();
+  </script>
+</body>
+
+</html>

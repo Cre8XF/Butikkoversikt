@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Adminpanel – Oversikt</title>
+  <link rel="stylesheet" href="/assets/css/theme-tøff.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      font-weight: bold;
+      color: #0051a2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .desc {
+      font-size: 0.95rem;
+      color: #333;
+      margin-left: 1rem;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🛠️ Adminpanel – Verktøyoversikt</h1>
+
+  <h2>📦 Butikkredigering</h2>
+  <ul>
+    <li>
+      <a href="butikk-redigering/butikk-rediger.html">✏️ Rediger butikker én og én</a>
+      <span class="desc">Endre navn, URL, affiliate, tags, kategori og mer for én butikk av gangen.</span>
+    </li>
+    <li>
+      <a href="butikk-redigering/tag-verktøy.html">🏷️ Tag-verktøy (automatisk tagging)</a>
+      <span class="desc">Foreslår tags basert på underkategori. Lar deg rydde eller redigere tags manuelt.</span>
+    </li>
+    <li>
+      <a href="butikk-redigering/import-affiliate.html">🔗 Importer affiliate-URLer (CSV)</a>
+      <span class="desc">Lim inn CSV-liste med navn og affiliate-lenke for å oppdatere flere butikker raskt.</span>
+    </li>
+    <li>
+      <a href="butikk-redigering/affiliate-status.html">💰 Affiliate-status oversikt</a>
+      <span class="desc">Gir deg oversikt over hvilke butikker som er affiliate, partner eller mangler lenke.</span>
+    </li>
+    <li>
+      <a href="butikk-redigering/validator.html">✅ Validator for duplikater og mangler</a>
+      <span class="desc">Oppdager duplikater, tomme felter og feil i `butikker.json`.</span>
+    </li>
+  </ul>
+
+  <h2>🖼️ Bilder og struktur</h2>
+  <ul>
+    <li>
+      <a href="bilde-og-struktur/bilder.html">🖼 Finn manglende bilder</a>
+      <span class="desc">Sjekker hvilke butikker som mangler `.webp`-logo eller har feil bildebane.</span>
+    </li>
+    <li>
+      <a href="bilde-og-struktur/struktur.html">📂 Rediger kategori/underkategori</a>
+      <span class="desc">Flytt butikker mellom kategorier eller legg inn manglende strukturinformasjon.</span>
+    </li>
+    <li>
+      <a href="bilde-og-struktur/filnavnrenser.html">🔧 Lag slugs til bildefilnavn</a>
+      <span class="desc">Konverter butikknavn til filvennlige navn som kan brukes til bilde-URL.</span>
+    </li>
+  </ul>
+
+  <h2>📢 Metadata og kampanjer</h2>
+  <ul>
+    <li>
+      <a href="metadata-og-kampanjer/seo-verktøy.html">🔍 SEO: tittel + meta-beskrivelse</a>
+      <span class="desc">Legg til `seoTitle` og `seoDesc` som brukes i `
+
+        <head>`-metadata på nettsiden.
+      </span>
+    </li>
+    <li>
+      <a href="metadata-og-kampanjer/ukens-anbefalte-verktøy.html">🌟 Ukens anbefalte butikker</a>
+      <span class="desc">Merk butikker som anbefalt og skriv en kort begrunnelse som vises på forsiden.</span>
+    </li>
+    <li>
+      <a href="metadata-og-kampanjer/kampanje-verktøy.html">📢 Kampanjer (JSON validering)</a>
+      <span class="desc">Lim inn eller test kampanjestruktur i JSON. Brukes for kampanjeseksjoner.</span>
+    </li>
+  </ul>
+
+  <h2>🧠 Avanserte funksjoner</h2>
+  <ul>
+    <li>
+      <a href="avansert-funksjonalitet/avansert-sok.html">🔎 Avansert søk og filtrering</a>
+      <span class="desc">Globalt søk i alle butikker (grunnstruktur for videre utvikling).</span>
+    </li>
+    <li>
+      <a href="avansert-funksjonalitet/ai-tagging.html">🤖 AI-forslag til tags</a>
+      <span class="desc">Viser eksempel på hvordan man kan generere relevante tags fra tekstbeskrivelse.</span>
+    </li>
+    <li>
+      <a href="avansert-funksjonalitet/batch-redigering.html">✏️ Batch-redigering via JSON</a>
+      <span class="desc">Lim inn flere butikker i JSON og gjør masseendringer samtidig.</span>
+    </li>
+  </ul>
+
+</body>
+
+</html>

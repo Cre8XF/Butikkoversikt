@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Valider JSON-data (dubletter, tomme felt osv.)</title>
+    <link rel="stylesheet" href="/assets/css/theme-tøff.css">
+    <script src="/assets/js/init.js" defer></script>
+</head>
+<body>
+    <main class="admin-panel">
+        <h1>Valider JSON-data (dubletter, tomme felt osv.)</h1>
+        <div id="app-content">
+            <!DOCTYPE html>
+            <html lang="no">
+            
+            <head>
+                <meta charset="UTF-8" />
+                <title>Validator – Feilsøk butikkdata</title>
+                <link rel="stylesheet" href="/assets/css/theme-tøff.css" />
+                <style>
+                    body {
+                        font-family: sans-serif;
+                        padding: 2rem;
+                    }
+            
+                    h2 {
+                        margin-top: 2rem;
+                    }
+            
+                    ul {
+                        margin-bottom: 1.5rem;
+                    }
+            
+                    .ok {
+                        color: green;
+                    }
+            
+                    .feil {
+                        color: darkred;
+                    }
+            
+                    .hint {
+                        font-style: italic;
+                        font-size: 0.9rem;
+                        color: gray;
+                    }
+                </style>
+            </head>
+            
+            <body>
+                <h1>🔎 Validator for butikkdata</h1>
+                <div id="status" class="hint">Laster inn butikkdata...</div>
+                <div id="rapport"></div>
+            
+                <script>
+                    fetch("../../assets/data/butikker.json")
+                        .then(res => res.json())
+                        .then(butikker => {
+                            document.getElementById("status").textContent = `✅ Fant ${butikker.length} butikker – sjekker...`;
+                            const rapportDiv = document.getElementById("rapport");
+
+                            const manglerNavn = butikker.filter(b => !b.name || b.name.trim() === "");
+                            const manglerUrl = butikker.filter(b => !b.url || b.url.trim() === "");
+                            const manglerKategori = butikker.filter(b => !b.category || b.category.trim() === "");
+                            const duplikatNavn = finnDuplikater(butikker.map(b => (b.name || "").toLowerCase().trim()));
+                            const duplikatUrl = finnDuplikater(butikker.map(b => (b.url || "").toLowerCase().trim()));
+
+                            rapportDiv.innerHTML = `
+                                  <h2>🚫 Mangler navn (${manglerNavn.length})</h2>
+                                  <ul>${manglerNavn.map(b => `<li class="feil">${JSON.stringify(b)}</li>`).join("")}</ul>
+                        
+                                  <h2>🚫 Mangler URL (${manglerUrl.length})</h2>
+                                  <ul>${manglerUrl.map(b => `<li class="feil">${b.name || "Uten navn"}</li>`).join("")}</ul>
+                        
+                                  <h2>🚫 Mangler kategori (${manglerKategori.length})</h2>
+                                  <ul>${manglerKategori.map(b => `<li class="feil">${b.name || "Uten navn"}</li>`).join("")}</ul>
+                        
+                                  <h2>⚠️ Duplikat navn (${duplikatNavn.length})</h2>
+                                  <ul>${duplikatNavn.map(navn => `<li>${navn}</li>`).join("")}</ul>
+                        
+                                  <h2>⚠️ Duplikat URL (${duplikatUrl.length})</h2>
+                                  <ul>${duplikatUrl.map(url => `<li>${url}</li>`).join("")}</ul>
+                                `;
+                        });
+
+                    function finnDuplikater(arr) {
+                        const count = {};
+                        arr.forEach(val => {
+                            if (!val) return;
+                            count[val] = (count[val] || 0) + 1;
+                        });
+                        return Object.keys(count).filter(k => count[k] > 1);
+                    }
+                </script>
+            </body>
+            
+            </html>
+            
+        </div>
+    </main>
+</body>
+</html>

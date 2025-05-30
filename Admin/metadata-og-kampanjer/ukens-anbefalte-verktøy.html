@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="no"><head><meta charset="UTF-8" />
+<title>Ukens anbefalte</title><link rel="stylesheet" href="/assets/css/theme-tøff.css" />
+<style>body { padding: 2rem; font-family: sans-serif; }</style></head><body>
+<h1>🌟 Ukens anbefalte butikker</h1>
+<select id="butikkVelger"></select>
+<label><input type="checkbox" id="ukensFlagg" /> Merk som ukens anbefalte</label><br/>
+<label>Beskrivelse: <textarea id="ukensTekst"></textarea></label><br/>
+<button onclick="lagreUkens()">Lagre</button>
+<p id="status"></p>
+<script>
+let butikker = []; let valgt = -1;
+fetch("../../assets/data/butikker.json").then(r => r.json()).then(data => {
+  butikker = data;
+  const velger = document.getElementById("butikkVelger");
+  data.forEach((b, i) => {
+    const o = document.createElement("option");
+    o.value = i; o.textContent = b.name || "Uten navn";
+    velger.appendChild(o);
+  });
+  velger.addEventListener("change", () => vis(velger.value));
+});
+function vis(i) {
+  valgt = i;
+  document.getElementById("ukensFlagg").checked = butikker[i].ukensAnbefalte === true;
+  document.getElementById("ukensTekst").value = butikker[i].ukensTekst || "";
+}
+function lagreUkens() {
+  if (valgt < 0) return;
+  butikker[valgt].ukensAnbefalte = document.getElementById("ukensFlagg").checked;
+  butikker[valgt].ukensTekst = document.getElementById("ukensTekst").value;
+  document.getElementById("status").textContent = "✅ Lagret endringer i minnet.";
+}
+</script></body></html>

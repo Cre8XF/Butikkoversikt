@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="no"><head><meta charset="UTF-8" />
+<title>Rediger kategori-struktur</title><link rel="stylesheet" href="/assets/css/theme-tøff.css" />
+<style>body { padding: 2rem; font-family: sans-serif; } select, input { margin-bottom: 0.5rem; width: 100%%; }</style></head><body>
+<h1>🗂️ Rediger kategorier og underkategorier</h1>
+<label for="butikkVelger">Velg butikk:</label>
+<select id="butikkVelger"></select>
+<input id="kategori" placeholder="Ny kategori" />
+<input id="underkategori" placeholder="Ny underkategori (komma-separert)" />
+<button onclick="lagre()">Lagre endringer</button>
+<p id="status"></p>
+<script>
+let butikker = []; let aktivIndex = -1;
+fetch("../../assets/data/butikker.json").then(res => res.json()).then(data => {
+  butikker = data;
+  const velger = document.getElementById("butikkVelger");
+  butikker.forEach((b, i) => {
+    const opt = document.createElement("option");
+    opt.value = i; opt.textContent = b.name;
+    velger.appendChild(opt);
+  });
+  velger.addEventListener("change", () => vis(velger.value));
+});
+function vis(i) {
+  aktivIndex = i;
+  const b = butikker[i];
+  document.getElementById("kategori").value = b.category || "";
+  document.getElementById("underkategori").value = (b.subcategory || []).join(", ");
+}
+function lagre() {
+  if (aktivIndex < 0) return;
+  butikker[aktivIndex].category = document.getElementById("kategori").value;
+  butikker[aktivIndex].subcategory = document.getElementById("underkategori").value.split(",").map(s => s.trim());
+  document.getElementById("status").textContent = "✅ Lagret i minnet.";
+}
+</script>
+</body></html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Vis butikker med manglende affiliate-informasjon</title>
+    <link rel="stylesheet" href="/assets/css/theme-tøff.css">
+    <script src="/assets/js/init.js" defer></script>
+</head>
+<body>
+    <main class="admin-panel">
+        <h1>Vis butikker med manglende affiliate-informasjon</h1>
+        <div id="app-content">
+            <!DOCTYPE html>
+            <html lang="no">
+            
+            <head>
+                <meta charset="UTF-8" />
+                <title>Affiliate-status – Oversikt</title>
+                <link rel="stylesheet" href="/assets/css/theme-tøff.css" />
+                <style>
+                    body {
+                        font-family: sans-serif;
+                        padding: 2rem;
+                    }
+            
+                    h2 {
+                        margin-top: 2rem;
+                    }
+            
+                    ul {
+                        margin-bottom: 2rem;
+                    }
+            
+                    .ok {
+                        color: green;
+                    }
+            
+                    .mangler {
+                        color: darkorange;
+                    }
+            
+                    .feil {
+                        color: red;
+                    }
+            
+                    .hint {
+                        font-style: italic;
+                        font-size: 0.9rem;
+                        color: gray;
+                    }
+                </style>
+            </head>
+            
+            <body>
+                <h1>💰 Affiliate-status</h1>
+                <p class="hint">Viser status på affiliate-feltene per butikk</p>
+                <div id="rapport"></div>
+            
+                <script>
+                    fetch("../../assets/data/butikker.json")
+                        .then(res => res.json())
+                        .then(butikker => {
+                            const medAlt = butikker.filter(b => b.affiliate && b.affiliateUrl && b.affiliateUrl.trim() !== "");
+                            const utenUrl = butikker.filter(b => b.affiliate && (!b.affiliateUrl || b.affiliateUrl.trim() === ""));
+                            const utenBegge = butikker.filter(b => !b.affiliate && (!b.affiliateUrl || b.affiliateUrl.trim() === ""));
+
+                            const div = document.getElementById("rapport");
+
+                            div.innerHTML = `
+                                  <h2 class="ok">✅ Fullt aktiv affiliate (${medAlt.length})</h2>
+                                  <ul>${medAlt.map(b => `<li>${b.name}</li>`).join("")}</ul>
+                        
+                                  <h2 class="mangler">⚠️ Mangler affiliate-url (${utenUrl.length})</h2>
+                                  <ul>${utenUrl.map(b => `<li>${b.name}</li>`).join("")}</ul>
+                        
+                                  <h2 class="feil">❌ Ikke markert som affiliate (${utenBegge.length})</h2>
+                                  <ul>${utenBegge.map(b => `<li>${b.name}</li>`).join("")}</ul>
+                                `;
+                        });
+                </script>
+            </body>
+            
+            </html>
+            
+        </div>
+    </main>
+</body>
+</html>

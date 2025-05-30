@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="no"><head><meta charset="UTF-8" />
+<title>SEO-verktøy</title><link rel="stylesheet" href="/assets/css/theme-tøff.css" />
+<style>body { padding: 2rem; font-family: sans-serif; } textarea { width: 100%%; height: 4em; }</style></head><body>
+<h1>🔍 SEO-tittel og beskrivelse</h1>
+<select id="butikkVelger"></select>
+<label>Tittel: <textarea id="seoTitle"></textarea></label><br/>
+<label>Meta-beskrivelse: <textarea id="seoDesc"></textarea></label><br/>
+<button onclick="lagreSEO()">Lagre SEO-data</button>
+<p id="status"></p>
+<script>
+let butikker = []; let aktiv = -1;
+fetch("../../assets/data/butikker.json").then(r => r.json()).then(data => {
+  butikker = data;
+  const velger = document.getElementById("butikkVelger");
+  data.forEach((b, i) => {
+    const o = document.createElement("option");
+    o.value = i; o.textContent = b.name || "Uten navn";
+    velger.appendChild(o);
+  });
+  velger.addEventListener("change", () => vis(velger.value));
+});
+function vis(i) {
+  aktiv = i;
+  document.getElementById("seoTitle").value = butikker[i].seoTitle || "";
+  document.getElementById("seoDesc").value = butikker[i].seoDesc || "";
+}
+function lagreSEO() {
+  if (aktiv < 0) return;
+  butikker[aktiv].seoTitle = document.getElementById("seoTitle").value;
+  butikker[aktiv].seoDesc = document.getElementById("seoDesc").value;
+  document.getElementById("status").textContent = "✅ Lagret SEO i minnet.";
+}
+</script></body></html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rediger butikker én og én</title>
+    <link rel="stylesheet" href="/assets/css/theme-tøff.css">
+    <style>
+        textarea,
+        input,
+        select {
+            width: 100%;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+        }
+
+        .store-editor {
+            border: 1px solid var(--border);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: var(--rounded);
+            background-color: var(--card);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="admin-panel">
+        <h1>Rediger butikker én og én</h1>
+        <label for="butikkVelger">Velg butikk:</label>
+        <select id="butikkVelger"></select>
+        <label for="sokefelt">Søk butikk:</label>
+        <input type="text" id="sokefelt" placeholder="Skriv navn..." />
+        <div class="store-editor">
+            <button onclick="slettButikk()">🗑 Slett butikk</button>
+            <label>Navn: <input id="navn" /></label>
+            <label>Beskrivelse: <textarea id="beskrivelse"></textarea></label>
+            <label>URL: <input id="url" /></label>
+            <label>Affiliate: <input type="checkbox" id="affiliate" /></label>
+            <label>Affiliate URL: <input id="affiliateUrl" /></label>
+            <label>Kategori: <input id="kategori" /></label>
+            <label>Underkategori: <input id="underkategori" /></label>
+            <label>Tags (kommaseparert): <input id="tags" /></label>
+            <button onclick="lagreEndringer()">💾 Lagre endringer</button>
+            <button onclick="eksporterJSON()">📤 Eksporter data som JSON</button>
+            <h3>📥 Importer JSON fra fil</h3>
+            <input type="file" id="jsonFilVelger" accept=".json" />
+            <button onclick="importerJSON()">Importer</button>
+
+
+        </div>
+        <pre id="status"></pre>
+    </main>
+
+    <script>
+        let butikker = [];
+        let aktivIndex = -1;
+
+        fetch("../../assets/data/butikker.json")
+            .then(response => response.json())
+            .then(data => {
+                butikker = data;
+                const velger = document.getElementById("butikkVelger");
+                butikker.forEach((butikk, i) => {
+                    const option = document.createElement("option");
+                    option.value = i;
+                    option.textContent = butikk.name || "Uten navn";
+                    velger.appendChild(option);
+                });
+                velger.addEventListener("change", () => visButikk(velger.value));
+            });
+
+        function visButikk(index) {
+            aktivIndex = index;
+            const b = butikker[index];
+            document.getElementById("navn").value = b.name || "";
+            document.getElementById("beskrivelse").value = b.description || "";
+            document.getElementById("url").value = b.url || "";
+            document.getElementById("affiliate").checked = !!b.affiliate;
+            document.getElementById("affiliateUrl").value = b.affiliateUrl || "";
+            document.getElementById("kategori").value = b.category || "";
+            document.getElementById("underkategori").value = (Array.isArray(b.subcategory) ? b.subcategory.join(", ") : b.subcategory) || "";
+            document.getElementById("tags").value = (b.tags || []).join(", ");
+        }
+
+        function lagreEndringer() {
+            if (aktivIndex < 0) return;
+            const b = butikker[aktivIndex];
+            b.name = document.getElementById("navn").value;
+            b.description = document.getElementById("beskrivelse").value;
+            b.url = document.getElementById("url").value;
+            b.affiliate = document.getElementById("affiliate").checked;
+            b.affiliateUrl = document.getElementById("affiliateUrl").value;
+            b.category = document.getElementById("kategori").value;
+            b.subcategory = document.getElementById("underkategori").value.split(",").map(x => x.trim());
+            b.tags = document.getElementById("tags").value.split(",").map(x => x.trim());
+
+            document.getElementById("status").textContent = "✅ Endringer lagret i minnet. Husk å eksportere eller bruke devtools for å lagre.";
+        }
+        document.getElementById("sokefelt").addEventListener("input", e => {
+                const filter = e.target.value.toLowerCase();
+                const velger = document.getElementById("butikkVelger");
+                velger.innerHTML = "";
+
+                let førsteIndex = null;
+
+                butikker.forEach((butikk, i) => {
+                    if ((butikk.name || "").toLowerCase().includes(filter)) {
+                        const option = document.createElement("option");
+                        option.value = i;
+                        option.textContent = butikk.name || "Uten navn";
+                        velger.appendChild(option);
+                        if (førsteIndex === null) førsteIndex = i;
+                    }
+                });
+
+                if (førsteIndex !== null) {
+                    velger.value = førsteIndex;
+                    visButikk(førsteIndex);
+                }
+            });
+
+                function slettButikk() {
+                    if (aktivIndex < 0) return;
+                    const navn = butikker[aktivIndex].name || "ukjent";
+                    if (!confirm(`Er du sikker på at du vil slette "${navn}"?`)) return;
+
+                    butikker.splice(aktivIndex, 1);
+                    aktivIndex = -1;
+
+                    const velger = document.getElementById("butikkVelger");
+                    velger.innerHTML = "";
+                    butikker.forEach((butikk, i) => {
+                        const option = document.createElement("option");
+                        option.value = i;
+                        option.textContent = butikk.name || "Uten navn";
+                        velger.appendChild(option);
+                    });
+
+                    document.getElementById("status").textContent = `🗑 "${navn}" er fjernet fra listen.`;
+                }
+                    function eksporterJSON() {
+                        const blob = new Blob([JSON.stringify(butikker, null, 2)], { type: "application/json" });
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement("a");
+                        a.href = url;
+                        a.download = "butikker-redigert.json";
+                        a.click();
+                        URL.revokeObjectURL(url);
+                    }
+                        function importerJSON() {
+                            const input = document.getElementById("jsonFilVelger");
+                            const fil = input.files[0];
+                            if (!fil) {
+                                alert("Velg en JSON-fil først.");
+                                return;
+                            }
+
+                            const reader = new FileReader();
+                            reader.onload = function (e) {
+                                try {
+                                    const nyData = JSON.parse(e.target.result);
+
+                                    if (!Array.isArray(nyData)) {
+                                        alert("🚫 JSON-filen må være en liste med butikker.");
+                                        return;
+                                    }
+
+                                    if (!confirm("Er du sikker på at du vil erstatte alle eksisterende butikker med filen?")) return;
+
+                                    butikker = nyData;
+                                    const velger = document.getElementById("butikkVelger");
+                                    velger.innerHTML = "";
+                                    butikker.forEach((butikk, i) => {
+                                        const option = document.createElement("option");
+                                        option.value = i;
+                                        option.textContent = butikk.name || "Uten navn";
+                                        velger.appendChild(option);
+                                    });
+
+                                    aktivIndex = 0;
+                                    visButikk(0);
+                                    document.getElementById("status").textContent = `✅ Importert ${butikker.length} butikker fra fil.`;
+                                } catch (err) {
+                                    alert("🚫 Klarte ikke å lese JSON: " + err.message);
+                                }
+                            };
+
+                            reader.readAsText(fil);
+                        }
+
+    </script>
+</body>
+
+</html>

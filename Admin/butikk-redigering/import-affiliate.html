@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Importer affiliate-url fra CSV</title>
+    <link rel="stylesheet" href="/assets/css/theme-tøff.css">
+    <script src="/assets/js/init.js" defer></script>
+</head>
+<body>
+    <main class="admin-panel">
+        <h1>Importer affiliate-url fra CSV</h1>
+        <div id="app-content">
+            <!DOCTYPE html>
+            <html lang="no">
+            
+            <head>
+                <meta charset="UTF-8" />
+                <title>Importer affiliate-lenker</title>
+                <link rel="stylesheet" href="/assets/css/theme-tøff.css" />
+                <style>
+                    body {
+                        font-family: sans-serif;
+                        padding: 2rem;
+                    }
+            
+                    textarea {
+                        width: 100%;
+                        height: 200px;
+                        margin-bottom: 1rem;
+                        font-family: monospace;
+                    }
+            
+                    button {
+                        padding: 0.5rem 1rem;
+                    }
+            
+                    .hint {
+                        font-style: italic;
+                        font-size: 0.9rem;
+                        color: gray;
+                    }
+            
+                    .success {
+                        color: green;
+                    }
+            
+                    .feil {
+                        color: darkred;
+                    }
+                </style>
+            </head>
+            
+            <body>
+                <h1>📥 Importer affiliate-lenker (CSV)</h1>
+                <p class="hint">Format: <code>navn,affiliateUrl</code></p>
+                <textarea id="csvInput" placeholder="MaxGaming,https://affiliate-url.com/..."></textarea>
+                <button onclick="importerAffiliate()">Importer</button>
+                <p id="status" class="hint"></p>
+            
+                <script>
+                    let butikker = [];
+
+                    fetch("../../assets/data/butikker.json")
+                        .then(res => res.json())
+                        .then(data => butikker = data);
+
+                    function importerAffiliate() {
+                        const csv = document.getElementById("csvInput").value.trim();
+                        const linjer = csv.split("\n");
+                        let oppdatert = 0;
+                        let ikkeFunnet = [];
+
+                        linjer.forEach(linje => {
+                            const [navn, url] = linje.split(",");
+                            if (!navn || !url) return;
+
+                            const butikk = butikker.find(b => b.name?.toLowerCase().trim() === navn.toLowerCase().trim());
+                            if (butikk) {
+                                butikk.affiliateUrl = url.trim();
+                                butikk.affiliate = true;
+                                oppdatert++;
+                            } else {
+                                ikkeFunnet.push(navn);
+                            }
+                        });
+
+                        let status = `✅ Oppdatert ${oppdatert} butikker.`;
+                        if (ikkeFunnet.length > 0) {
+                            status += ` 🚫 Fant ikke: ${ikkeFunnet.join(", ")}`;
+                        }
+
+                        document.getElementById("status").textContent = status;
+                    }
+                </script>
+            </body>
+            
+            </html>
+            
+        </div>
+    </main>
+</body>
+</html>
