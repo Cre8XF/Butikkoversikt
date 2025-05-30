@@ -432,7 +432,7 @@
     "tagCount": 6,
     "partner": true,
     "affiliate": false,
-    "affiliateUrl": "https://track.adtraction.com/t/t?a=xxxxxx&as=yyyyyy",
+    "affiliateUrl": "https://go.blivakker.no/t/t?a=1786465255&as=1978629723&t=2&tk=1",
     "kampanje": true,
     "ukensAnbefalte": true,
     "eksternFrakt": false
@@ -2055,26 +2055,6 @@
     "subcategory": ["Møbler"],
     "url": "https://www.chilli.no",
     "description": "Moderne møbler og interiør til gode priser.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ["sofa", "bord", "stoler", "seng", "oppbevaring", "skandinavisk stil"],
-    "rank": "",
-    "ukensAnbefalte": "",
-    "tagCount": 6,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": ""
-  },
-  {
-    "name": "furniturebox",
-    "image": "assets/images/butikker-webp/furniturebox.webp",
-    "alt": "Furniturebox",
-    "category": "Møbler og interiør",
-    "subcategory": ["Møbler"],
-    "url": "https://www.furniturebox.no",
-    "description": "Stort utvalg av møbler og interiør med rask levering.",
     "topp25": false,
     "forside": false,
     "ny": false,
@@ -6087,5 +6067,34 @@
     "kampanje": false,
     "ukensAnbefalte": "",
     "rank": 1
+  },
+  {
+    "name": "Trademax",
+    "image": "assets/images/butikker-webp/trademax.webp",
+    "alt": "Trademax",
+    "category": "Møbler og interiør",
+    "subcategory": [
+      "Møbler"
+    ],
+    "url": "https://www.trademax.no/",
+    "description": "Hos Trademax finner du alt til hjemmet! Vi har et stort utvalg av sofaer, senger & hagemøbler. Raske leveranser av lagervarer innen 5-10 dager & 14 dagers angrerett!",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": true,
+    "tags": [
+      "sofa",
+      "bord",
+      "stoler",
+      "seng",
+      "oppbevaring",
+      "skandinavisk stil"
+    ],
+    "partner": false,
+    "affiliate": true,
+    "affiliateUrl": "",
+    "kampanje": false,
+    "ukensAnbefalte": "",
+    "rank": null
   }
 ]

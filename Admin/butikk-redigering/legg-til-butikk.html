@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>➕ Legg til ny butikk</title>
+  <link rel="stylesheet" href="/assets/css/theme-tøff.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 1rem;
+      display: block;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    #jsonResult {
+      background: #fafafa;
+      padding: 1rem;
+      border: 1px solid #eee;
+      margin-top: 2rem;
+    }
+
+    .smaller {
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    button {
+      padding: 0.7rem 1.5rem;
+    }
+
+    .tag-list {
+      margin: 0 0 1em 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tag-list li {
+      display: inline-block;
+      background: #e6f3ff;
+      border-radius: 8px;
+      padding: 2px 10px;
+      margin: 2px 5px 2px 0;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>➕ Legg til ny butikk</h1>
+  <form id="butikkForm" autocomplete="off">
+    <label for="name">Butikknavn</label>
+    <input id="name" placeholder="F.eks. Trademax" required />
+
+    <label for="url">Nettadresse (URL)</label>
+    <input id="url" placeholder="https://www.trademax.no/" required />
+
+    <button type="button" onclick="hentBeskrivelse()">🔍 Hent beskrivelse</button>
+
+    <label for="category">Kategori</label>
+    <select id="category" required onchange="oppdaterUnderkategorier()">
+      <option value="">Velg kategori</option>
+      <option>Elektronikk og data</option>
+      <option>Klær og mote</option>
+      <option>Møbler og interiør</option>
+      <option>Sport og friluftsliv</option>
+      <option>Helse og egenpleie</option>
+      <option>Barn og baby</option>
+      <option>Underholdning og popkultur</option>
+      <option>Alt-mulig butikker</option>
+      <option>Gaver og gadgets</option>
+      <option>Mat og drikke</option>
+      <option>Hobby og DIY</option>
+      <option>Bøker og media</option>
+      <option>Dyrebutikker</option>
+      <option>Print og foto</option>
+      <option>Kreative tjenester</option>
+    </select>
+
+    <label for="subcategory">Underkategori(er) <span class="smaller">(hold Ctrl/Cmd for å velge flere)</span></label>
+    <select id="subcategory" multiple size="4"></select>
+
+    <label for="tags">Ekstra tags <span class="smaller">(komma-separert, frivillig)</span></label>
+    <input id="tags" placeholder="F.eks. sofa, hjemmemøbler, design" />
+
+    <label for="description">Beskrivelse</label>
+    <textarea id="description" rows="4" placeholder="Skriv en beskrivelse her"></textarea>
+
+    <button type="submit">💾 Generer JSON</button>
+  </form>
+
+  <h2>🗂️ Forslåtte tags</h2>
+  <ul id="autoTags" class="tag-list"></ul>
+
+  <h2>📋 JSON-resultat</h2>
+  <pre id="jsonResult"></pre>
+
+  <script>
+    // Underkategori-mapping (minimumseksempler – legg til etter behov!)
+    const underkatMap = {
+      "Elektronikk og data": ["Elektronikk", "Gamingutstyr", "Lyd og bilde", "Mobil og nettbrett", "PC og tilbehør"],
+      "Klær og mote": ["Dameklær", "Herreklær", "Barneklær", "Sko og tilbehør", "Sportsklær"],
+      "Møbler og interiør": ["Møbler", "Belysning", "Dekor og interiør"],
+      "Sport og friluftsliv": ["Treningsklær", "Friluft og tur", "Sykkel og sykkelutstyr", "Treningsutstyr", "Sportsklær"],
+      "Helse og egenpleie": ["Apotek og helseprodukter", "Hud- og kroppspleie", "Sminke og kosmetikk", "Trening og velvære"],
+      "Barn og baby": ["Babyutstyr", "Leker"],
+      "Underholdning og popkultur": ["Anime og manga", "Figurer og samleobjekter", "Brettspill og kortspill", "Film og musikk", "Digitale spillnøkler", "Konsoller"],
+      "Alt-mulig butikker": ["Gadgets og tilbehør", "Grossist og dropshipping", "Kles- og livsstilsbutikker"],
+      "Gaver og gadgets": ["Gadgets og gaver"],
+      "Mat og drikke": ["Dagligvarer", "Frokost og levering", "Matkasser", "Vin og bartilbehør"],
+      "Hobby og DIY": ["DIY kits og prosjekter", "Garn og strikk", "Kunst og tegneutstyr", "Radiostyrte produkter"],
+      "Bøker og media": ["Barnebøker", "Bøker og e-bøker", "Lyd- og lydbøker", "Fagbøker"],
+      "Dyrebutikker": ["Hund", "Katt", "Smådyr", "Fugl", "Fisk", "Hest", "Reptil og terrarie", "Fôr og ernæring", "Hundeklær", "Katteklor og møbler", "Akvarieutstyr"],
+      "Print og foto": ["Fotobøker", "Fremkalling", "Plakater og print-on-demand", "Fotoutstyr", "Kameradroner"],
+      "Kreative tjenester": ["Design og logo", "Tegneserier og manga", "AI-tjenester", "Illustrasjon og kunst", "Merch og t-skjorter"]
+    };
+
+    // Tag-mal for autogenerering (minimumseksempler – utvid etter behov!)
+    const tagMal = {
+      // Klær og mote
+          "Dameklær": ["dameklær", "fashion", "mote", "outfit", "stil", "komfort"],
+          "Herreklær": ["herreklær", "herremote", "outfit", "casual", "formelt"],
+          "Barneklær": ["barneklær", "barnemote", "klær til barn", "komfort", "småbarnsklær"],
+          "Sko og tilbehør": ["sko", "sandaler", "boots", "sneakers", "vesker", "belte", "solbriller", "tilbehør", "hårpynt", "hansker"],
+          "Sportsklær": ["treningsklær", "løpeklær", "yogatøy", "funksjonstøy", "aktiv livsstil", "idrettsklær"],
+
+          // Barn og baby
+          "Babyutstyr": ["baby", "smokk", "flaske", "bleier", "stelleveske", "vogn", "barnesete", "amme", "babyshower"],
+          "Leker": ["leker", "leketøy", "spill", "puslespill", "pedagogisk", "kreativ lek", "bamse", "dukker", "lego"],
+
+          // Bøker og media
+          "Bøker": ["bøker", "romaner", "litteratur", "papirbok", "klassikere", "bokhandel"],
+          "E-bøker": ["e-bok", "digital bok", "kindle", "pdf-bok", "elektronisk", "lesebrett"],
+          "Fagbøker": ["fagbøker", "studier", "utdanning", "lærebok", "akademisk", "pensum"],
+          "Lyd- og lydbøker": ["lydbøker", "audiobok", "lyttebok", "opplesning", "fortelling"],
+
+          // Digitale tjenester
+          "Mobilabonnement": ["mobil", "mobilabonnement", "data", "4G", "5G", "telefoni", "SIM-kort"],
+          "Nettkurs": ["nettkurs", "e-læring", "utdanning", "kompetanse", "kurs", "online læring"],
+          "Strømleverandører": ["strøm", "strømleverandør", "strømavtale", "spotpris", "energileverandør"],
+          "Strømmetjenester": ["strømming", "filmer", "serier", "TV", "musikk", "streaming", "abonnement"],
+          "Treningsapper og programmer": ["treningsapp", "online trening", "fitness", "løping", "styrketrening"],
+          "VPN og Nettsikkerhet": ["VPN", "nettsikkerhet", "anonymitet", "personvern", "IP-skjuling", "kryptering"],
+          "Webhosting & Domene": ["webhotell", "hosting", "domene", "nettside", "e-post", "server", "cPanel"],
+
+          // Dyrebutikker
+          "Fisk og akvarium": ["akvarium", "fisk", "fiskefôr", "vanntest", "akvarieutstyr", "akvariedekor"],
+          "Fôr og ernæring": ["dyrefôr", "hundemat", "kattemat", "vitaminer", "dyreernæring", "kosthold"],
+          "Fugl": ["fugl", "bur", "fuglefrø", "papegøye", "kanarifugl", "fugleleker", "voliere"],
+          "Hund": ["hund", "halsbånd", "sele", "hundeseng", "hundeleker", "hundebur"],
+          "Reptil og terrarie": ["reptil", "slange", "skilpadde", "terrarium", "varmelampe", "reptilfôr"],
+
+          // Elektronikk og data
+          "Elektronikk": ["elektronikk", "teknologi", "smarte enheter", "kabler", "elektriske produkter"],
+          "Lyd og bilde": ["høyttaler", "headset", "TV", "projektor", "lydanlegg", "hjemmekino"],
+          "Mobil og nettbrett": ["mobil", "smarttelefon", "nettbrett", "telefondeksel", "Android", "iOS"],
+          "Smarthus og kabler": ["smarthus", "sensor", "smartlys", "home automation", "strømstyring"],
+          "Spill og konsoller": ["spill", "konsoll", "PlayStation", "Xbox", "Nintendo", "flerspiller"],
+          "Teknologinyheter": ["tech-nyheter", "gadgets", "produktomtaler", "lansering"],
+
+          // Gaming og tilbehør
+          "Brettspill": ["brettspill", "familiespill", "strategispill", "kortspill", "spillkveld"],
+          "E-sportutstyr": ["e-sport", "gamingmus", "gamingtastatur", "headset", "turnering"],
+          "Gaming-PC og skjermer": ["gaming-PC", "skjerm", "FPS", "grafikkort", "prosessor", "bygge PC"],
+          "Gaming-tilbehør": ["spillstol", "RGB", "musmatte", "headset-holder", "gamingutstyr"],
+          "Konsoller": ["PlayStation", "Xbox", "Nintendo Switch", "spillpakke", "familiespill"],
+          "PC og datatilbehør": ["mus", "tastatur", "USB-hub", "webkamera", "minnepinne"],
+
+          // Gaver og gadgets
+          "Gadgets og gaver": ["gadgets", "gaver", "smarte ting", "teknologi", "gaveideer", "personlig gave", "morsomme produkter"],
+          "Alt-mulig butikker": ["nettbutikk", "variert utvalg", "alt mulig", "stor katalog", "import"],
+          "Utenlandske": ["internasjonal", "import", "frakt", "utenlandsk butikk", "lav pris"],
+
+          // Helse og egenpleie
+          "Hud- og kroppspleie": ["hudpleie", "kroppskrem", "dusjsåpe", "fuktighetskrem", "naturlig hudpleie"],
+          "Hår- og skjønnhetspleie": ["shampoo", "hårkur", "styling", "skjønnhet", "hårpleie"],
+          "Kosmetikk og sminke": ["sminke", "leppestift", "øyenskygge", "foundation", "makeup"],
+          "Naturlige produkter": ["naturlig", "økologisk", "vegansk", "bærekraftig", "plantebasert"],
+          "Sminke og kosmetikk": ["sminke", "kosmetikk", "foundation", "makeup", "øyne"],
+          "Trening og velvære": ["trening", "kosttilskudd", "velvære", "yoga", "balanse", "energi"],
+
+          // Hobby og DIY
+          "DIY kits og prosjekter": ["DIY", "byggesett", "lim", "oppskrifter", "perler", "prosjekt", "hobby", "håndverk"],
+          "Garn og strikk": ["strikking", "garn", "hekling", "oppskrifter", "pinner", "ull", "håndarbeid"],
+          "Kunst og tegneutstyr": ["tegning", "maling", "akvarell", "blyanter", "skissebok", "kunstnerutstyr"],
+          "Radiostyrte produkter": ["RC", "radiostyrt", "bil", "båt", "drone", "motor", "modellbygging"],
+
+          // Mat og drikke
+          "Dagligvarer": ["dagligvarer", "pålegg", "kaffe", "frossenmat", "økologisk mat"],
+          "Frokost og levering": ["frokost", "brød", "morgenmat", "matlevering", "rask levering"],
+          "Matkasser": ["matkasse", "oppskrifter", "middag", "levering", "familievennlig"],
+          "Vin og bartilbehør": ["vin", "vinkjøler", "glass", "bartilbehør", "drinktilbehør"],
+          "Vin og brennevin": ["brennevin", "whisky", "cocktail", "smaking", "alkohol"],
+
+          // Møbler og interiør
+          "Belysning": ["lamper", "lys", "pærer", "taklampe", "stemningsbelysning"],
+          "Dekor og interiør": ["interiør", "dekor", "bilder", "pynt", "tepper", "nordisk design"],
+          "Møbler": ["sofa", "bord", "stoler", "seng", "oppbevaring", "skandinavisk stil"],
+
+          // Reise og opplevelser
+          "Bager og kofferter": ["koffert", "bag", "reiseveske", "bagasje", "trillebag"],
+          "Kart og guider": ["reiseguider", "kart", "turkart", "guidebok", "destinasjon"],
+          "Reiseutstyr": ["reiseadapter", "nakkepute", "toalettmappe", "organisering", "reiseutstyr"],
+          "Tur- og friluftsutstyr": ["friluft", "tur", "ryggsekk", "sovepose", "telt", "villmark"],
+
+          // Sport og fritid
+          "Friluft og tur": ["friluft", "tur", "sovepose", "villmark", "fjell", "telt", "utendørs"],
+          "Treningsklær": ["treningsklær", "tight", "sports-bh", "aktiv livsstil", "funksjonstøy"],
+          "Sykkel og sykkelutstyr": ["sykkel", "sykkelhjelm", "elsykkel", "sykkellykt", "verktøy"],
+          "Sportsklær": ["løpeklær", "sportstøy", "aktivitetsklær", "yogatøy", "funksjonsklær"],
+          "Treningsutstyr": ["manualer", "treningsmatte", "styrketrening", "strikk", "apparat"],
+
+          // Underholdning og popkultur
+          "Anime og manga": ["anime", "manga", "figurer", "otaku", "cosplay", "fanartikler"],
+          "Digitale spillnøkler": ["spillnøkkel", "Steam", "PC-spill", "nedlasting", "rabattkode"],
+          "Figurer og samleobjekter": ["samleobjekter", "figurer", "merch", "POP!", "statuetter"],
+          "Film og musikk": ["DVD", "blu-ray", "vinyl", "CD", "filmkveld", "platebutikk"]
+        };
+        // Oppdaterer alle butikker med tags basert på underkategori
+
+    function oppdaterUnderkategorier() {
+      const kat = document.getElementById("category").value;
+      const subSelect = document.getElementById("subcategory");
+      subSelect.innerHTML = ""; // Tøm
+      if (kat && underkatMap[kat]) {
+        underkatMap[kat].forEach(u => {
+          const opt = document.createElement("option");
+          opt.value = u;
+          opt.textContent = u;
+          subSelect.appendChild(opt);
+        });
+      }
+      visAutoTags(); // Oppdater automatisk når kategori endres
+    }
+
+    function visAutoTags() {
+      const subSelect = document.getElementById("subcategory");
+      const ul = document.getElementById("autoTags");
+      ul.innerHTML = "";
+      let tags = [];
+      for (const opt of subSelect.selectedOptions) {
+        if (tagMal[opt.value]) {
+          tags.push(...tagMal[opt.value]);
+        }
+      }
+      tags = [...new Set(tags)]; // Unik liste
+      tags.forEach(tag => {
+        const li = document.createElement("li");
+        li.textContent = tag;
+        ul.appendChild(li);
+      });
+    }
+    document.getElementById("subcategory").addEventListener("change", visAutoTags);
+
+    async function hentBeskrivelse() {
+      const url = document.getElementById("url").value;
+      if (!url) return alert("Skriv inn butikkens URL først.");
+      try {
+        const res = await fetch("http://127.0.0.1:5000/api/meta?url=" + encodeURIComponent(url));
+        const data = await res.json();
+        if (data.description) {
+          document.getElementById("description").value = data.description;
+        } else if (data.error) {
+          alert("Feil fra server: " + data.error);
+        } else {
+          alert("Fant ingen beskrivelse.");
+        }
+      } catch (err) {
+        alert("Kunne ikke hente beskrivelse fra serveren.");
+        console.error(err);
+      }
+    }
+
+    document.getElementById("butikkForm").addEventListener("submit", e => {
+      e.preventDefault();
+      // Hent verdier
+      const name = document.getElementById("name").value.trim();
+      const url = document.getElementById("url").value.trim();
+      const category = document.getElementById("category").value.trim();
+
+      // Samle alle valgte underkategorier
+      const subcats = [];
+      for (const opt of document.getElementById("subcategory").selectedOptions) {
+        subcats.push(opt.value);
+      }
+      const description = document.getElementById("description").value.trim();
+
+      // Tags: autogenererte fra tagMal + ekstra fra input
+      let tags = [];
+      subcats.forEach(uk => {
+        if (tagMal[uk]) tags.push(...tagMal[uk]);
+      });
+      const extraTags = document.getElementById("tags").value.split(",").map(t => t.trim()).filter(Boolean);
+      tags = [...new Set([...tags, ...extraTags])];
+
+      // Generer image-path (slugify)
+      const slug = name
+        .toLowerCase()
+        .replace(/å/g, 'a').replace(/ø/g, 'o').replace(/æ/g, 'ae')
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+      const imagePath = `assets/images/butikker-webp/${slug}.webp`;
+
+      // Lag JSON-objekt
+      const butikkObj = {
+        "name": name,
+        "image": imagePath,
+        "alt": name,
+        "category": category,
+        "subcategory": subcats,
+        "url": url,
+        "description": description,
+        "topp25": false,
+        "forside": false,
+        "ny": true,
+        "annonse": true,
+        "tags": tags,
+        "partner": false,
+        "affiliate": true,
+        "affiliateUrl": "",
+        "kampanje": false,
+        "ukensAnbefalte": "",
+        "rank": null
+      };
+
+      document.getElementById("jsonResult").textContent = JSON.stringify(butikkObj, null, 2);
+    });
+
+    // Første last, init underkategori hvis valgt kategori
+    document.addEventListener("DOMContentLoaded", oppdaterUnderkategorier);
+  </script>
+</body>
+
+</html>
