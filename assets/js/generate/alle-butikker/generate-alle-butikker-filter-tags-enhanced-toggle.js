@@ -155,7 +155,9 @@ function visButikker(butikker) {
   container.innerHTML = "";
 
   butikker.forEach((butikk) => {
-    const lenke = butikk.affiliateUrl?.trim() || butikk.url;  // 👈 NY linje
+    const lenke = (butikk.affiliate && butikk.affiliateUrl && butikk.affiliateUrl.trim() !== "")
+  ? butikk.affiliateUrl
+  : butikk.url;
     const col = document.createElement("div");
     col.className = "col-sm-6 col-md-4 col-lg-3 mb-4";
 
