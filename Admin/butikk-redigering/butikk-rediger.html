@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rediger butikker én og én</title>
     <link rel="stylesheet" href="/assets/css/theme-tøff.css">
     <style>
@@ -44,7 +45,8 @@
             <button onclick="lagreEndringer()">💾 Lagre endringer</button>
             <button onclick="eksporterJSON()">📤 Eksporter data som JSON</button>
             <h3>📥 Importer JSON fra fil</h3>
-            <input type="file" id="jsonFilVelger" accept=".json" />
+            <label for="jsonFilVelger">Velg JSON-fil:</label>
+            <input type="file" id="jsonFilVelger" accept=".json" title="Velg en JSON-fil for import" />
             <button onclick="importerJSON()">Importer</button>
 
 
