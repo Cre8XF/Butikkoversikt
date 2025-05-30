@@ -431,7 +431,7 @@
     "tags": ["sminke", "hudpleie", "kosmetikk", "skjønnhet", "hår", "parfyme", "kroppskrem", "dusjsåpe", "fuktighetskrem", "naturlig hudpleie"],
     "tagCount": 6,
     "partner": true,
-    "affiliate": false,
+    "affiliate": true,
     "affiliateUrl": "https://go.blivakker.no/t/t?a=1786465255&as=1978629723&t=2&tk=1",
     "kampanje": true,
     "ukensAnbefalte": true,
@@ -5589,26 +5589,6 @@
     "rank": 1
   },
   {
-    "name": "bjorn-borg",
-    "image": "assets/images/butikker-webp/bjorn-borg.webp",
-    "alt": "Björn Borg",
-    "category": "Klær og mote",
-    "subcategory": ["Herreklær", "Dameklær", "Sportsklær"],
-    "url": "https://www.bjornborg.com/no/",
-    "description": "Björn Borg tilbyr stilige og funksjonelle klær og undertøy for både sport og hverdag – kjent for kvalitet, passform og svensk design.",
-    "topp25": false,
-    "forside": false,
-    "ny": true,
-    "annonse": true,
-    "tags": ["undertøy", "sportsklær", "herreklær", "dameklær", "trening", "mote", "aktiv livsstil", "svensk design", "fashion"],
-    "partner": false,
-    "affiliate": true,
-    "affiliateUrl": "https://to.bjornborg.com/t/t?a=1887444812&as=1978629723&t=2&tk=1",
-    "kampanje": false,
-    "ukensAnbefalte": "",
-    "rank": 2
-  },
-  {
     "name": "framsport-no",
     "image": "assets/images/butikker-webp/framsport-no.webp",
     "alt": "Framsport",
@@ -6092,7 +6072,35 @@
     ],
     "partner": false,
     "affiliate": true,
-    "affiliateUrl": "",
+    "affiliateUrl": "https://go.trademax.no/t/t?a=1918739935&as=1978629723&t=2&tk=1",
+    "kampanje": false,
+    "ukensAnbefalte": "",
+    "rank": null
+  },
+  {
+    "name": "Bjørn Borg",
+    "image": "assets/images/butikker-webp/bjorn-borg.webp",
+    "alt": "Bjørn Borg",
+    "category": "Klær og mote",
+    "subcategory": [
+      "Sportsklær"
+    ],
+    "url": "https://www.bjornborg.com/no/",
+    "description": "Björn Borg er synonymt med produkter av høy kvalitet. Inspirert av det sporty arvet fra personen og tennisspilleren Björn Borg, er designet fargerikt, kreativt og morsomt. I tillegg til undertøy, som er vår kjernevirksomhet, selger vi også klær, sko og vesker.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": true,
+    "tags": [
+      "løpeklær",
+      "sportstøy",
+      "aktivitetsklær",
+      "yogatøy",
+      "funksjonsklær"
+    ],
+    "partner": false,
+    "affiliate": true,
+    "affiliateUrl": "https://to.bjornborg.com/t/t?a=1887444812&as=1978629723&t=2&tk=1",
     "kampanje": false,
     "ukensAnbefalte": "",
     "rank": null
