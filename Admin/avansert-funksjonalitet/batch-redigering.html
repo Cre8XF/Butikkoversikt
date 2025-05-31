@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <title>Batch-redigering av butikker</title>
+  <link rel="stylesheet" href="/assets/css/theme-tøff.css">
+  <style>
+    body { padding:2rem; font-family: sans-serif;}
+    textarea { width:100%; min-height:7em; margin-bottom:1em; font-size:1em;}
+    .json-output { background:#f9f9f9; padding:1em; border-radius:8px; margin-top:1em; font-family:monospace;}
+    label { display:block; margin-bottom:0.4em;}
+  </style>
+</head>
+<body>
+  <h1>✏️ Batch-redigering</h1>
+  <label for="inn">Lim inn butikk-JSON (array):</label>
+  <textarea id="inn" placeholder='[{"name":"Butikk1", ...}, {...}]'></textarea>
+  <label for="nyttFelt">Sett/endre felt (eks: partner=true):</label>
+  <input id="nyttFelt" type="text" placeholder="felt=verdi (eks: partner=true, affiliate=false)"/>
+  <button id="batchBtn">Oppdater</button>
+  <div id="ut" class="json-output"></div>
+  <script src="batch-redigering.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <title>Avansert søk – Butikkadmin</title>
+  <link rel="stylesheet" href="/assets/css/theme-tøff.css">
+  <style>
+    body { padding:2rem; font-family: sans-serif;}
+    input[type="search"] { width:100%; padding:0.5em; font-size:1.1em;}
+    .search-result { margin-top:1.5em; }
+    .result-card { background: var(--bg-card, #f6f8fa); margin-bottom: 1em; padding: 1em; border-radius: 10px;}
+    .result-card h4 { margin:0; font-size: 1.1em;}
+    .tags { font-size: 0.95em; color: #555; margin-top: 0.5em;}
+    .highlight { background: #ffe23c; }
+  </style>
+</head>
+<body>
+  <h1>🔎 Avansert søk</h1>
+  <input id="sokefelt" type="search" placeholder="Søk etter navn, beskrivelse, kategori, tags..." autocomplete="off"/>
+  <div class="search-result" id="resultat"></div>
+  <script src="avansert-sok.js"></script>
+</body>
+</html>

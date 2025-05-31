@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tag-verktøy - Adminpanel</title>
+    <link href="../assets/css/theme-tøff.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: var(--font-base);
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        .tag-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+
+        .tag-table th,
+        .tag-table td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+            vertical-align: top;
+        }
+
+        .tag-table th {
+            background-color: var(--bg-muted);
+            cursor: pointer;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--bg-card);
+            padding: 2px 6px;
+            margin: 2px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .tag.bad {
+            background: #ffd2d2;
+            color: #a00;
+        }
+
+        .tag.good {
+            background: #d2ffe1;
+            color: #084;
+        }
+
+        .tag-edit {
+            margin-top: 0.5rem;
+            display: block;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 0.3rem;
+            font-size: 0.9rem;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 60px;
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+        }
+
+        button.save-btn {
+            padding: 6px 12px;
+            margin-top: 4px;
+            font-size: 0.8rem;
+            background: var(--btn-primary, #007bff);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .top-actions {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🛠️ Tag-verktøy - Adminpanel</h1>
+    <p id="storeCount"></p>
+    <div class="top-actions">
+        <button class="save-btn" onclick="leggTilTagsFraUnderkategori()">🏷️ Foreslå tags fra underkategori</button>
+        <button class="save-btn" onclick="finnDubletter()">🔍 Finn dubletter</button>
+        <button class="save-btn" onclick="eksporterJSON()">💾 Eksporter som JSON</button>
+        <button class="save-btn" onclick="fjernUonskedeTags()">🧹 Fjern uønskede tags fra alle</button>
+        <button class="save-btn" onclick="fjernValgte()">🗑 Fjern valgte</button>
+    </div>
+    <input id="search" placeholder="Søk etter tag eller kategori..." type="text" />
+    <table class="tag-table">
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="checkAll" title="Merk alle" onclick="toggleAlle(this)"></th>
+                <th onclick="sortTableBy('category')">Kategori ⬍</th>
+                <th onclick="sortTableBy('name')">Butikknavn ⬍</th>
+                <th onclick="sortTableBy('tagCount')">Antall tags ⬍</th>
+                <th>Beskrivelse</th>
+                <th onclick="sortTableBy('forside')">Forside ⬍</th>
+                <th>Rediger tags</th>
+            </tr>
+        </thead>
+        <tbody id="tagTableBody"></tbody>
+    </table>
+    <pre id="jsonResultat" class="json-output"></pre>
+    <script>
+        // Uønskede tags
+        const uonskede = [
+            "nettbutikk", "tilbehør", "alt mulig", "varer", "ting",
+            "ting og tang", "diverse", "elektronikk", "butikk",
+            "kjøp", "online", "digital", "netthandel", "rabatt",
+            "shopping", "handel"
+        ];
+
+        // Tag-mal brukt for underkategori/kategori
+        const tagMal = {
+            // ... (din tagMal som før) ...
+            "Dameklær": ["dameklær", "fashion", "mote", "outfit", "stil", "komfort"],
+            "Herreklær": ["herreklær", "herremote", "outfit", "casual", "formelt"],
+            "Barneklær": ["barneklær", "barnemote", "klær til barn", "komfort", "småbarnsklær"],
+            "Sko og tilbehør": ["sko", "sandaler", "boots", "sneakers", "vesker", "belte", "solbriller", "tilbehør", "hårpynt", "hansker"],
+            "Sportsklær": ["treningsklær", "løpeklær", "yogatøy", "funksjonstøy", "aktiv livsstil", "idrettsklær"],
+            "Babyutstyr": ["baby", "smokk", "flaske", "bleier", "stelleveske", "vogn", "barnesete", "amme", "babyshower"],
+            "Leker": ["leker", "leketøy", "spill", "puslespill", "pedagogisk", "kreativ lek", "bamse", "dukker", "lego"],
+            "Bøker": ["bøker", "romaner", "litteratur", "papirbok", "klassikere", "bokhandel"],
+            "E-bøker": ["e-bok", "digital bok", "kindle", "pdf-bok", "elektronisk", "lesebrett"],
+            "Fagbøker": ["fagbøker", "studier", "utdanning", "lærebok", "akademisk", "pensum"],
+            "Lyd- og lydbøker": ["lydbøker", "audiobok", "lyttebok", "opplesning", "fortelling"],
+            "Mobilabonnement": ["mobil", "mobilabonnement", "data", "4G", "5G", "telefoni", "SIM-kort"],
+            "Nettkurs": ["nettkurs", "e-læring", "utdanning", "kompetanse", "kurs", "online læring"],
+            "Strømleverandører": ["strøm", "strømleverandør", "strømavtale", "spotpris", "energileverandør"],
+            "Strømmetjenester": ["strømming", "filmer", "serier", "TV", "musikk", "streaming", "abonnement"],
+            "Treningsapper og programmer": ["treningsapp", "online trening", "fitness", "løping", "styrketrening"],
+            "VPN og Nettsikkerhet": ["VPN", "nettsikkerhet", "anonymitet", "personvern", "IP-skjuling", "kryptering"],
+            "Webhosting & Domene": ["webhotell", "hosting", "domene", "nettside", "e-post", "server", "cPanel"],
+            "Fisk og akvarium": ["akvarium", "fisk", "fiskefôr", "vanntest", "akvarieutstyr", "akvariedekor"],
+            "Fôr og ernæring": ["dyrefôr", "hundemat", "kattemat", "vitaminer", "dyreernæring", "kosthold"],
+            "Fugl": ["fugl", "bur", "fuglefrø", "papegøye", "kanarifugl", "fugleleker", "voliere"],
+            "Hund": ["hund", "halsbånd", "sele", "hundeseng", "hundeleker", "hundebur"],
+            "Reptil og terrarie": ["reptil", "slange", "skilpadde", "terrarium", "varmelampe", "reptilfôr"],
+            "Elektronikk": ["elektronikk", "teknologi", "smarte enheter", "kabler", "elektriske produkter"],
+            "Lyd og bilde": ["høyttaler", "headset", "TV", "projektor", "lydanlegg", "hjemmekino"],
+            "Mobil og nettbrett": ["mobil", "smarttelefon", "nettbrett", "telefondeksel", "Android", "iOS"],
+            "Smarthus og kabler": ["smarthus", "sensor", "smartlys", "home automation", "strømstyring"],
+            "Spill og konsoller": ["spill", "konsoll", "PlayStation", "Xbox", "Nintendo", "flerspiller"],
+            "Teknologinyheter": ["tech-nyheter", "gadgets", "produktomtaler", "lansering"],
+            "Brettspill": ["brettspill", "familiespill", "strategispill", "kortspill", "spillkveld"],
+            "E-sportutstyr": ["e-sport", "gamingmus", "gamingtastatur", "headset", "turnering"],
+            "Gaming-PC og skjermer": ["gaming-PC", "skjerm", "FPS", "grafikkort", "prosessor", "bygge PC"],
+            "Gaming-tilbehør": ["spillstol", "RGB", "musmatte", "headset-holder", "gamingutstyr"],
+            "Konsoller": ["PlayStation", "Xbox", "Nintendo Switch", "spillpakke", "familiespill"],
+            "PC og datatilbehør": ["mus", "tastatur", "USB-hub", "webkamera", "minnepinne"],
+            "Gadgets og gaver": ["gadgets", "gaver", "smarte ting", "teknologi", "gaveideer", "personlig gave", "morsomme produkter"],
+            "Alt-mulig butikker": ["nettbutikk", "variert utvalg", "alt mulig", "stor katalog", "import"],
+            "Utenlandske": ["internasjonal", "import", "frakt", "utenlandsk butikk", "lav pris"],
+            "Hud- og kroppspleie": ["hudpleie", "kroppskrem", "dusjsåpe", "fuktighetskrem", "naturlig hudpleie"],
+            "Hår- og skjønnhetspleie": ["shampoo", "hårkur", "styling", "skjønnhet", "hårpleie"],
+            "Kosmetikk og sminke": ["sminke", "leppestift", "øyenskygge", "foundation", "makeup"],
+            "Naturlige produkter": ["naturlig", "økologisk", "vegansk", "bærekraftig", "plantebasert"],
+            "Sminke og kosmetikk": ["sminke", "kosmetikk", "foundation", "makeup", "øyne"],
+            "Trening og velvære": ["trening", "kosttilskudd", "velvære", "yoga", "balanse", "energi"],
+            "DIY kits og prosjekter": ["DIY", "byggesett", "lim", "oppskrifter", "perler", "prosjekt", "hobby", "håndverk"],
+            "Garn og strikk": ["strikking", "garn", "hekling", "oppskrifter", "pinner", "ull", "håndarbeid"],
+            "Kunst og tegneutstyr": ["tegning", "maling", "akvarell", "blyanter", "skissebok", "kunstnerutstyr"],
+            "Radiostyrte produkter": ["RC", "radiostyrt", "bil", "båt", "drone", "motor", "modellbygging"],
+            "Dagligvarer": ["dagligvarer", "pålegg", "kaffe", "frossenmat", "økologisk mat"],
+            "Frokost og levering": ["frokost", "brød", "morgenmat", "matlevering", "rask levering"],
+            "Matkasser": ["matkasse", "oppskrifter", "middag", "levering", "familievennlig"],
+            "Vin og bartilbehør": ["vin", "vinkjøler", "glass", "bartilbehør", "drinktilbehør"],
+            "Vin og brennevin": ["brennevin", "whisky", "cocktail", "smaking", "alkohol"],
+            "Belysning": ["lamper", "lys", "pærer", "taklampe", "stemningsbelysning"],
+            "Dekor og interiør": ["interiør", "dekor", "bilder", "pynt", "tepper", "nordisk design"],
+            "Møbler": ["sofa", "bord", "stoler", "seng", "oppbevaring", "skandinavisk stil"],
+            "Bager og kofferter": ["koffert", "bag", "reiseveske", "bagasje", "trillebag"],
+            "Kart og guider": ["reiseguider", "kart", "turkart", "guidebok", "destinasjon"],
+            "Reiseutstyr": ["reiseadapter", "nakkepute", "toalettmappe", "organisering", "reiseutstyr"],
+            "Tur- og friluftsutstyr": ["friluft", "tur", "ryggsekk", "sovepose", "telt", "villmark"],
+            "Friluft og tur": ["friluft", "tur", "sovepose", "villmark", "fjell", "telt", "utendørs"],
+            "Treningsklær": ["treningsklær", "tight", "sports-bh", "aktiv livsstil", "funksjonstøy"],
+            "Sykkel og sykkelutstyr": ["sykkel", "sykkelhjelm", "elsykkel", "sykkellykt", "verktøy"],
+            "Sportsklær": ["løpeklær", "sportstøy", "aktivitetsklær", "yogatøy", "funksjonsklær"],
+            "Treningsutstyr": ["manualer", "treningsmatte", "styrketrening", "strikk", "apparat"],
+            "Anime og manga": ["anime", "manga", "figurer", "otaku", "cosplay", "fanartikler"],
+            "Digitale spillnøkler": ["spillnøkkel", "Steam", "PC-spill", "nedlasting", "rabattkode"],
+            "Figurer og samleobjekter": ["samleobjekter", "figurer", "merch", "POP!", "statuetter"],
+            "Film og musikk": ["DVD", "blu-ray", "vinyl", "CD", "filmkveld", "platebutikk"]
+        };
+
+        let globalData = [];
+        let currentSortKey = null;
+        let sortAscending = true;
+
+        // Hent JSON-data
+        fetch("../../assets/data/butikker.json")
+            .then(res => res.json())
+            .then(butikker => {
+                globalData = butikker;
+                renderTable(globalData);
+            });
+
+        // Tabell-render
+        function renderTable(butikker) {
+            const tbody = document.getElementById("tagTableBody");
+            document.getElementById("storeCount").innerText = `Butikker i listen: ${butikker.length}`;
+            tbody.innerHTML = "";
+            butikker.forEach((butikk, index) => {
+                const tr = document.createElement("tr");
+                const kategori = butikk.category || "";
+                const navn = butikk.name || "";
+                const tags = butikk.tags || [];
+                const beskrivelse = butikk.description || "";
+                const forside = butikk.forside === true;
+
+                // Avkryssningsboks for valg
+                const checked = butikk._selected ? 'checked' : '';
+                const checkBox = `<input type="checkbox" onchange="velgRad(${index}, this.checked)" ${checked}>`;
+
+                const tagsHTML = tags.map(tag => {
+                    // "good" hvis finnes i underkategori/kategori-tagMal, "bad" hvis i uønskede, ellers normal
+                    let cls = "";
+                    if (uonskede.includes(tag.toLowerCase())) {
+                        cls = "tag bad";
+                    } else if (
+                        (butikk.subcategory && (Array.isArray(butikk.subcategory) ? butikk.subcategory.some(sk => tagMal[sk]?.includes(tag)) : tagMal[butikk.subcategory]?.includes(tag)))
+                        || (tagMal[kategori] && tagMal[kategori].includes(tag))
+                    ) {
+                        cls = "tag good";
+                    } else {
+                        cls = "tag";
+                    }
+                    return `<span class="${cls}">${tag}</span>`;
+                }).join(" ");
+
+                // Redigerbare felt
+                const catInput = `<input type='text' value="${kategori}" onchange="globalData[${index}].category=this.value">`;
+                const nameInput = `<input type='text' value="${navn}" onchange="globalData[${index}].name=this.value">`;
+                const descInput = `<textarea onchange="globalData[${index}].description=this.value">${beskrivelse}</textarea>`;
+                const urlInput = `<input type='text' value="${butikk.url || ''}" onchange="globalData[${index}].url=this.value">`;
+                const subInput = `<input type='text' value="${(butikk.subcategory || []).join(', ')}" onchange="globalData[${index}].subcategory=this.value.split(',').map(s => s.trim())">`;
+                const imgInput = `<input type='text' value="${butikk.image || ''}" onchange="globalData[${index}].image=this.value">`;
+                const altInput = `<input type='text' value="${butikk.alt || ''}" onchange="globalData[${index}].alt=this.value">`;
+                const rankInput = `<input type='text' value="${butikk.rank || ''}" onchange="globalData[${index}].rank=this.value">`;
+
+                const boolCheckbox = (key) => `<label><input type='checkbox' ${butikk[key] ? 'checked' : ''} onchange="globalData[${index}]['${key}']=this.checked"> ${key}</label>`;
+                const boolFields = ['forside', 'topp25', 'ny', 'annonse', 'ukensAnbefalte']
+                    .map(k => boolCheckbox(k)).join("<br>");
+
+                const tagEditor = document.createElement("textarea");
+                tagEditor.value = tags.join(", ");
+                tagEditor.className = "tag-edit";
+                tagEditor.id = `edit-tags-${index}`;
+
+                const saveBtn = document.createElement("button");
+                saveBtn.textContent = "Lagre tags";
+                saveBtn.className = "save-btn";
+                saveBtn.onclick = () => {
+                    const updated = tagEditor.value.split(",").map(t => t.trim()).filter(Boolean);
+                    globalData[index].tags = updated;
+                    renderTable(globalData);
+                };
+
+                tr.innerHTML = `
+                  <td>${checkBox}</td>
+                  <td>${catInput}</td>
+                  <td>${nameInput}<br>${urlInput}<br>${imgInput}<br>${altInput}<br>${subInput}</td>
+                  <td>${tagsHTML}</td>
+                  <td>${descInput}</td>
+                  <td style="text-align:center;">${forside ? '✅' : ''}<br>${boolFields}<br>${rankInput}</td>
+                  <td></td>
+                `;
+                tr.children[6].appendChild(tagEditor);
+                tr.children[6].appendChild(saveBtn);
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Marker rad
+        function velgRad(idx, checked) {
+            globalData[idx]._selected = checked;
+        }
+
+        // Merk/avmerk alle
+        function toggleAlle(source) {
+            globalData.forEach(b => b._selected = source.checked);
+            renderTable(globalData);
+            document.getElementById("checkAll").checked = source.checked;
+        }
+
+        // Søkefunksjon
+        document.getElementById("search").addEventListener("input", (e) => {
+            const query = e.target.value.toLowerCase();
+            const filtered = globalData.filter(butikk => {
+                const tekst = `${butikk.category} ${butikk.name} ${(butikk.tags || []).join(" ")}`.toLowerCase();
+                return tekst.includes(query);
+            });
+            renderTable(filtered);
+            document.getElementById("checkAll").checked = false;
+        });
+
+        // Sortering
+        function sortTableBy(key) {
+            if (currentSortKey === key) {
+                sortAscending = !sortAscending;
+            } else {
+                currentSortKey = key;
+                sortAscending = true;
+            }
+            globalData.forEach(b => {
+                if (key === 'tagCount') b.tagCount = (b.tags || []).length;
+            });
+            globalData.sort((a, b) => {
+                let aVal = a[key];
+                let bVal = b[key];
+                if (typeof aVal === 'string') aVal = aVal.toLowerCase();
+                if (typeof bVal === 'string') bVal = bVal.toLowerCase();
+                if (aVal < bVal) return sortAscending ? -1 : 1;
+                if (aVal > bVal) return sortAscending ? 1 : -1;
+                return 0;
+            });
+            renderTable(globalData);
+            document.getElementById("checkAll").checked = false;
+        }
+
+        // Legg til tags fra underkategori (eller kategori som fallback, kun unike)
+        function leggTilTagsFraUnderkategori() {
+            globalData.forEach((butikk, index) => {
+                let nyeTags = [];
+                if (butikk.subcategory) {
+                    (Array.isArray(butikk.subcategory) ? butikk.subcategory : [butikk.subcategory]).forEach(sk => {
+                        if (tagMal[sk]) nyeTags.push(...tagMal[sk]);
+                    });
+                }
+                // Fallback til kategori
+                if (nyeTags.length === 0 && tagMal[butikk.category]) {
+                    nyeTags = tagMal[butikk.category];
+                }
+                // Legg til, ikke erstatt!
+                if (nyeTags.length > 0) {
+                    const eksisterende = new Set(globalData[index].tags || []);
+                    nyeTags.forEach(tag => eksisterende.add(tag));
+                    globalData[index].tags = Array.from(eksisterende);
+                }
+            });
+            renderTable(globalData);
+        }
+
+        // Finn dubletter
+        function finnDubletter() {
+            const navnMap = {};
+            const dubletter = [];
+            globalData.forEach((butikk) => {
+                const navn = butikk.name?.toLowerCase().trim();
+                if (navn) {
+                    if (!navnMap[navn]) navnMap[navn] = [];
+                    navnMap[navn].push(butikk);
+                }
+            });
+            const resultat = [];
+            Object.values(navnMap).forEach(gruppe => {
+                if (gruppe.length > 1) resultat.push(...gruppe);
+            });
+            alert(`Fant ${resultat.length} butikker med dupliserte navn.`);
+            renderTable(resultat);
+            document.getElementById("checkAll").checked = false;
+        }
+
+        // Fjern valgte butikker
+        function fjernValgte() {
+            if (!confirm('Er du sikker på at du vil slette de valgte butikkene?')) return;
+            globalData = globalData.filter(butikk => !butikk._selected);
+            renderTable(globalData);
+            document.getElementById("checkAll").checked = false;
+        }
+
+        // Eksporter som JSON
+        function eksporterJSON() {
+            document.getElementById("jsonResultat").textContent = JSON.stringify(globalData, null, 2);
+        }
+
+        // Fjern uønskede tags fra alle butikker
+        function fjernUonskedeTags() {
+            globalData.forEach((butikk, index) => {
+                butikk.tags = (butikk.tags || []).filter(tag => !uonskede.includes(tag.toLowerCase()));
+            });
+            renderTable(globalData);
+        }
+    </script>
+</body>
+
+</html>
