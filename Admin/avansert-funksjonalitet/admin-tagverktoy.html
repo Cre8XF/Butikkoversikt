@@ -129,77 +129,230 @@
 
         // Tag-mal brukt for underkategori/kategori
         const tagMal = {
-            // ... (din tagMal som før) ...
-            "Dameklær": ["dameklær", "fashion", "mote", "outfit", "stil", "komfort"],
-            "Herreklær": ["herreklær", "herremote", "outfit", "casual", "formelt"],
-            "Barneklær": ["barneklær", "barnemote", "klær til barn", "komfort", "småbarnsklær"],
-            "Sko og tilbehør": ["sko", "sandaler", "boots", "sneakers", "vesker", "belte", "solbriller", "tilbehør", "hårpynt", "hansker"],
-            "Sportsklær": ["treningsklær", "løpeklær", "yogatøy", "funksjonstøy", "aktiv livsstil", "idrettsklær"],
-            "Babyutstyr": ["baby", "smokk", "flaske", "bleier", "stelleveske", "vogn", "barnesete", "amme", "babyshower"],
-            "Leker": ["leker", "leketøy", "spill", "puslespill", "pedagogisk", "kreativ lek", "bamse", "dukker", "lego"],
-            "Bøker": ["bøker", "romaner", "litteratur", "papirbok", "klassikere", "bokhandel"],
-            "E-bøker": ["e-bok", "digital bok", "kindle", "pdf-bok", "elektronisk", "lesebrett"],
-            "Fagbøker": ["fagbøker", "studier", "utdanning", "lærebok", "akademisk", "pensum"],
-            "Lyd- og lydbøker": ["lydbøker", "audiobok", "lyttebok", "opplesning", "fortelling"],
-            "Mobilabonnement": ["mobil", "mobilabonnement", "data", "4G", "5G", "telefoni", "SIM-kort"],
-            "Nettkurs": ["nettkurs", "e-læring", "utdanning", "kompetanse", "kurs", "online læring"],
-            "Strømleverandører": ["strøm", "strømleverandør", "strømavtale", "spotpris", "energileverandør"],
-            "Strømmetjenester": ["strømming", "filmer", "serier", "TV", "musikk", "streaming", "abonnement"],
-            "Treningsapper og programmer": ["treningsapp", "online trening", "fitness", "løping", "styrketrening"],
-            "VPN og Nettsikkerhet": ["VPN", "nettsikkerhet", "anonymitet", "personvern", "IP-skjuling", "kryptering"],
-            "Webhosting & Domene": ["webhotell", "hosting", "domene", "nettside", "e-post", "server", "cPanel"],
-            "Fisk og akvarium": ["akvarium", "fisk", "fiskefôr", "vanntest", "akvarieutstyr", "akvariedekor"],
-            "Fôr og ernæring": ["dyrefôr", "hundemat", "kattemat", "vitaminer", "dyreernæring", "kosthold"],
-            "Fugl": ["fugl", "bur", "fuglefrø", "papegøye", "kanarifugl", "fugleleker", "voliere"],
-            "Hund": ["hund", "halsbånd", "sele", "hundeseng", "hundeleker", "hundebur"],
-            "Reptil og terrarie": ["reptil", "slange", "skilpadde", "terrarium", "varmelampe", "reptilfôr"],
-            "Elektronikk": ["elektronikk", "teknologi", "smarte enheter", "kabler", "elektriske produkter"],
-            "Lyd og bilde": ["høyttaler", "headset", "TV", "projektor", "lydanlegg", "hjemmekino"],
-            "Mobil og nettbrett": ["mobil", "smarttelefon", "nettbrett", "telefondeksel", "Android", "iOS"],
-            "Smarthus og kabler": ["smarthus", "sensor", "smartlys", "home automation", "strømstyring"],
-            "Spill og konsoller": ["spill", "konsoll", "PlayStation", "Xbox", "Nintendo", "flerspiller"],
-            "Teknologinyheter": ["tech-nyheter", "gadgets", "produktomtaler", "lansering"],
-            "Brettspill": ["brettspill", "familiespill", "strategispill", "kortspill", "spillkveld"],
-            "E-sportutstyr": ["e-sport", "gamingmus", "gamingtastatur", "headset", "turnering"],
-            "Gaming-PC og skjermer": ["gaming-PC", "skjerm", "FPS", "grafikkort", "prosessor", "bygge PC"],
-            "Gaming-tilbehør": ["spillstol", "RGB", "musmatte", "headset-holder", "gamingutstyr"],
-            "Konsoller": ["PlayStation", "Xbox", "Nintendo Switch", "spillpakke", "familiespill"],
-            "PC og datatilbehør": ["mus", "tastatur", "USB-hub", "webkamera", "minnepinne"],
-            "Gadgets og gaver": ["gadgets", "gaver", "smarte ting", "teknologi", "gaveideer", "personlig gave", "morsomme produkter"],
-            "Alt-mulig butikker": ["nettbutikk", "variert utvalg", "alt mulig", "stor katalog", "import"],
-            "Utenlandske": ["internasjonal", "import", "frakt", "utenlandsk butikk", "lav pris"],
-            "Hud- og kroppspleie": ["hudpleie", "kroppskrem", "dusjsåpe", "fuktighetskrem", "naturlig hudpleie"],
-            "Hår- og skjønnhetspleie": ["shampoo", "hårkur", "styling", "skjønnhet", "hårpleie"],
-            "Kosmetikk og sminke": ["sminke", "leppestift", "øyenskygge", "foundation", "makeup"],
-            "Naturlige produkter": ["naturlig", "økologisk", "vegansk", "bærekraftig", "plantebasert"],
-            "Sminke og kosmetikk": ["sminke", "kosmetikk", "foundation", "makeup", "øyne"],
-            "Trening og velvære": ["trening", "kosttilskudd", "velvære", "yoga", "balanse", "energi"],
-            "DIY kits og prosjekter": ["DIY", "byggesett", "lim", "oppskrifter", "perler", "prosjekt", "hobby", "håndverk"],
-            "Garn og strikk": ["strikking", "garn", "hekling", "oppskrifter", "pinner", "ull", "håndarbeid"],
-            "Kunst og tegneutstyr": ["tegning", "maling", "akvarell", "blyanter", "skissebok", "kunstnerutstyr"],
-            "Radiostyrte produkter": ["RC", "radiostyrt", "bil", "båt", "drone", "motor", "modellbygging"],
-            "Dagligvarer": ["dagligvarer", "pålegg", "kaffe", "frossenmat", "økologisk mat"],
-            "Frokost og levering": ["frokost", "brød", "morgenmat", "matlevering", "rask levering"],
-            "Matkasser": ["matkasse", "oppskrifter", "middag", "levering", "familievennlig"],
-            "Vin og bartilbehør": ["vin", "vinkjøler", "glass", "bartilbehør", "drinktilbehør"],
-            "Vin og brennevin": ["brennevin", "whisky", "cocktail", "smaking", "alkohol"],
-            "Belysning": ["lamper", "lys", "pærer", "taklampe", "stemningsbelysning"],
-            "Dekor og interiør": ["interiør", "dekor", "bilder", "pynt", "tepper", "nordisk design"],
-            "Møbler": ["sofa", "bord", "stoler", "seng", "oppbevaring", "skandinavisk stil"],
-            "Bager og kofferter": ["koffert", "bag", "reiseveske", "bagasje", "trillebag"],
-            "Kart og guider": ["reiseguider", "kart", "turkart", "guidebok", "destinasjon"],
-            "Reiseutstyr": ["reiseadapter", "nakkepute", "toalettmappe", "organisering", "reiseutstyr"],
-            "Tur- og friluftsutstyr": ["friluft", "tur", "ryggsekk", "sovepose", "telt", "villmark"],
-            "Friluft og tur": ["friluft", "tur", "sovepose", "villmark", "fjell", "telt", "utendørs"],
-            "Treningsklær": ["treningsklær", "tight", "sports-bh", "aktiv livsstil", "funksjonstøy"],
-            "Sykkel og sykkelutstyr": ["sykkel", "sykkelhjelm", "elsykkel", "sykkellykt", "verktøy"],
-            "Sportsklær": ["løpeklær", "sportstøy", "aktivitetsklær", "yogatøy", "funksjonsklær"],
-            "Treningsutstyr": ["manualer", "treningsmatte", "styrketrening", "strikk", "apparat"],
-            "Anime og manga": ["anime", "manga", "figurer", "otaku", "cosplay", "fanartikler"],
-            "Digitale spillnøkler": ["spillnøkkel", "Steam", "PC-spill", "nedlasting", "rabattkode"],
-            "Figurer og samleobjekter": ["samleobjekter", "figurer", "merch", "POP!", "statuetter"],
-            "Film og musikk": ["DVD", "blu-ray", "vinyl", "CD", "filmkveld", "platebutikk"]
-        };
+                "Dameklær": [
+                    "bærekraftig", "casual", "damebutikk", "dameklær", "fashion", "jeans",
+                    "kjole", "komfort", "motebutikk", "mote", "nyheter", "outfit", "plus size",
+                    "skjørt", "stil", "sustainable", "trend"
+                ],
+                "Herreklær": [
+                    "business", "casual", "casual wear", "dress", "formelt", "herrebutikk", "herreklær",
+                    "herremote", "jeans", "outfit", "skjorte", "sustainable"
+                ],
+                "Barneklær": [
+                    "babyklær", "barnebutikk", "barneklær", "barnemote", "barnesko", "gutt", "jente",
+                    "komfort", "klær til barn", "småbarnsklær", "ullklær", "økologisk"
+                ],
+                "Sko og tilbehør": [
+                    "barnesko", "belte", "boots", "komfort", "pensko", "sandaler", "sko", "sko butikk",
+                    "sko online", "sneakers", "solbriller", "støvler", "tilbehør", "vesker", "hansker", "hårpynt"
+                ],
+                "Sportsklær": [
+                    "aktiv livsstil", "funksjonstøy", "idrettsklær", "jogging", "løpeklær", "outdoor", "skiklær",
+                    "sport", "sportsklær", "sportsbutikk", "sykkelklær", "trening", "treningsklær"
+                ],
+                "Babyutstyr": [
+                    "amme", "baby", "babybutikk", "babyleker", "babyshower", "barnemat", "barnesete", "bæresele",
+                    "bleier", "gravid", "smokk", "småbarn", "stelleveske", "vippestol", "vogn"
+                ],
+                "Leker": [
+                    "babyleker", "barneleker", "bamse", "dukker", "gave", "kreativ lek", "leker",
+                    "leketøy", "outdoor", "pedagogisk", "puslespill", "spill", "spillbutikk", "utendørsleker"
+                ],
+                "Bøker": [
+                    "barnebøker", "billige bøker", "bokhandel", "bokklubb", "bøker", "fagbøker",
+                    "klassikere", "litteratur", "papirbok", "roman"
+                ],
+                "E-bøker": [
+                    "digital bok", "e-bok", "elektronisk", "kindle", "lesebrett", "pdf-bok"
+                ],
+                "Fagbøker": [
+                    "akademisk", "fagbøker", "lærebok", "pensum", "studier", "utdanning"
+                ],
+                "Lyd- og lydbøker": [
+                    "audiobok", "fortelling", "lydbøker", "lyttebok", "opplesning"
+                ],
+                "Mobilabonnement": [
+                    "4G", "5G", "data", "mobil", "mobilabonnement", "SIM-kort", "telefoni"
+                ],
+                "Nettkurs": [
+                    "e-læring", "kompetanse", "kurs", "nettkurs", "online læring", "utdanning"
+                ],
+                "Strømleverandører": [
+                    "energileverandør", "spotpris", "strøm", "strømavtale", "strømleverandør"
+                ],
+                "Strømmetjenester": [
+                    "abonnement", "filmer", "musikk", "serier", "streaming", "strømming", "TV"
+                ],
+                "Treningsapper og programmer": [
+                    "fitness", "løping", "online trening", "styrketrening", "treningsapp"
+                ],
+                "VPN og Nettsikkerhet": [
+                    "IP-skjuling", "VPN", "anonymitet", "kryptering", "nettsikkerhet", "personvern"
+                ],
+                "Webhosting & Domene": [
+                    "cPanel", "domene", "e-post", "hosting", "nettside", "server", "webhotell"
+                ],
+                "Fisk og akvarium": [
+                    "akvariedekor", "akvarieutstyr", "akvarium", "fisk", "fiskefôr", "vanntest"
+                ],
+                "Fôr og ernæring": [
+                    "dyreernæring", "dyrefôr", "hundemat", "kattemat", "kosthold", "vitaminer"
+                ],
+                "Fugl": [
+                    "bur", "fugl", "fuglefrø", "fugleleker", "kanarifugl", "papegøye", "voliere"
+                ],
+                "Hund": [
+                    "halsbånd", "hund", "hundebur", "hundeleker", "hundeseng", "sele"
+                ],
+                "Reptil og terrarie": [
+                    "reptil", "reptilfôr", "skilpadde", "slange", "terrarium", "varmelampe"
+                ],
+                "Elektronikk": [
+                    "elbil", "elektriske produkter", "elektronikk", "elektronikkbutikk", "gadgets",
+                    "mobiltelefon", "nettbutikk", "smarthus", "teknologi"
+                ],
+                "Lyd og bilde": [
+                    "bluetooth", "headset", "hjemmekino", "høyttalere", "høyttaler", "lydanlegg", "projektor",
+                    "radio", "trådløst", "tv butikk", "TV"
+                ],
+                "Mobil og nettbrett": [
+                    "Android", "iPad", "mobil", "mobilbutikk", "nettbrett", "smartklokke", "smarttelefon", "tablet", "telefondeksel"
+                ],
+                "Smarthus og kabler": [
+                    "home automation", "sensor", "smartlys", "smarthus", "strømstyring"
+                ],
+                "Spill og konsoller": [
+                    "dataspill", "familiespill", "flerspiller", "gamer", "gaming", "konsoll", "Nintendo",
+                    "pc-spill", "PlayStation", "spill", "spillbutikk", "spillutstyr", "Xbox"
+                ],
+                "Teknologinyheter": [
+                    "gadgets", "lansering", "produktomtaler", "tech-nyheter"
+                ],
+                "Brettspill": [
+                    "brettspill", "familiespill", "kortspill", "spillkveld", "strategispill"
+                ],
+                "E-sportutstyr": [
+                    "e-sport", "gamingmus", "gamingtastatur", "headset", "turnering"
+                ],
+                "Gaming-PC og skjermer": [
+                    "bygge PC", "FPS", "gaming-PC", "grafikkort", "prosessor", "skjerm"
+                ],
+                "Gaming-tilbehør": [
+                    "gamingutstyr", "headset-holder", "musmatte", "RGB", "spillstol"
+                ],
+                "Konsoller": [
+                    "familiespill", "Nintendo Switch", "PlayStation", "spillpakke", "Xbox"
+                ],
+                "PC og datatilbehør": [
+                    "minnepinne", "mus", "tastatur", "USB-hub", "webkamera"
+                ],
+                "Gadgets og gaver": [
+                    "bursdagsgave", "dings", "gaveideer", "gaver", "julegave", "morsomme produkter",
+                    "personlig gave", "smarte ting", "smartklokke", "teknologigave", "teknologi"
+                ],
+                "Alt-mulig butikker": [
+                    "alt mulig", "import", "nettbutikk", "stor katalog", "variert utvalg"
+                ],
+                "Utenlandske": [
+                    "frakt", "internasjonal", "lav pris", "import", "utenlandsk butikk"
+                ],
+                "Hud- og kroppspleie": [
+                    "ansiktsmaske", "fuktighetskrem", "hudpleie", "hudpleiesalong", "kroppskrem", "kroppsolje",
+                    "naturlig hudpleie", "parfymeri", "solkrem", "dusjsåpe"
+                ],
+                "Hår- og skjønnhetspleie": [
+                    "hårkur", "hårpleie", "shampoo", "skjønnhet", "styling"
+                ],
+                "Kosmetikk og sminke": [
+                    "foundation", "leppestift", "makeup", "øyenskygge", "sminke"
+                ],
+                "Naturlige produkter": [
+                    "bærekraftig", "eco", "klimanøytral", "miljøvennlig", "naturlig", "økologisk", "plantebasert", "sustainable", "vegansk"
+                ],
+                "Sminke og kosmetikk": [
+                    "foundation", "makeup", "øyne", "kosmetikk", "sminke"
+                ],
+                "Trening og velvære": [
+                    "balanse", "energi", "kosttilskudd", "trening", "velvære", "yoga"
+                ],
+                "DIY kits og prosjekter": [
+                    "byggesett", "DIY", "hobby", "håndverk", "lim", "oppskrifter", "perler", "prosjekt"
+                ],
+                "Garn og strikk": [
+                    "garn", "hekling", "håndarbeid", "oppskrifter", "pinner", "strikking", "ull"
+                ],
+                "Kunst og tegneutstyr": [
+                    "akvarell", "blyanter", "kunstnerutstyr", "maling", "skissebok", "tegning"
+                ],
+                "Radiostyrte produkter": [
+                    "bil", "båt", "drone", "modellbygging", "motor", "RC", "radiostyrt"
+                ],
+                "Dagligvarer": [
+                    "dagligvarer", "frossenmat", "kaffe", "nettbutikk", "økologisk mat", "pålegg"
+                ],
+                "Frokost og levering": [
+                    "brød", "frokost", "matlevering", "morgenmat", "rask levering"
+                ],
+                "Matkasser": [
+                    "familiepakke", "ferdigmat", "matkasse", "matlevering", "middag", "middagstips", "oppskrifter", "sunn mat", "levering", "familievennlig"
+                ],
+                "Vin og bartilbehør": [
+                    "bartilbehør", "drinktilbehør", "glass", "vinkjøler", "vin"
+                ],
+                "Vin og brennevin": [
+                    "alkohol", "brennevin", "cocktail", "smaking", "whisky"
+                ],
+                "Belysning": [
+                    "lamper", "lys", "pærer", "stemningsbelysning", "taklampe"
+                ],
+                "Dekor og interiør": [
+                    "bilder", "dekor", "interiør", "nordisk design", "pynt", "tepper"
+                ],
+                "Møbler": [
+                    "barnerom", "bord", "designmøbler", "interiørbutikk", "oppbevaring", "outlet", "seng",
+                    "skandinavisk stil", "sofa", "sofa på nett", "stoler", "utemøbler"
+                ],
+                "Bager og kofferter": [
+                    "bag", "bagasje", "koffert", "reiseveske", "trillebag"
+                ],
+                "Kart og guider": [
+                    "destinasjon", "guidebok", "kart", "reiseguider", "turkart"
+                ],
+                "Reiseutstyr": [
+                    "nakkepute", "organisering", "reiseadapter", "reiseutstyr", "toalettmappe"
+                ],
+                "Tur- og friluftsutstyr": [
+                    "friluft", "ryggsekk", "sovepose", "tel", "tur", "telt", "villmark"
+                ],
+                "Friluft og tur": [
+                    "fjelltur", "friluft", "outdoor", "sportsbutikk", "sovepose", "tel", "tur", "turklær", "telt", "teltbutikk", "utendørs", "villmark"
+                ],
+                "Treningsklær": [
+                    "aktiv livsstil", "funksjonstøy", "sports-bh", "tight", "treningsklær"
+                ],
+                "Sykkel og sykkelutstyr": [
+                    "elsykkel", "sykkel", "sykkelhjelm", "sykkellykt", "verktøy"
+                ],
+                "Sportsklær": [
+                    "aktivitetsklær", "funksjonsklær", "løpeklær", "sportstøy", "yogatøy"
+                ],
+                "Treningsutstyr": [
+                    "apparat", "manualer", "styrketrening", "strikk", "treningsmatte"
+                ],
+                "Anime og manga": [
+                    "anime", "cosplay", "fanartikler", "figurer", "manga", "otaku"
+                ],
+                "Digitale spillnøkler": [
+                    "nedlasting", "PC-spill", "rabattkode", "spillnøkkel", "Steam"
+                ],
+                "Figurer og samleobjekter": [
+                    "figurer", "merch", "POP!", "samleobjekter", "statuetter"
+                ],
+                "Film og musikk": [
+                    "blu-ray", "CD", "cd-plater", "dvd butikk", "DVD", "filmkveld", "film", "musikkbutikk", "platesamling", "platebutikk", "vinyl"
+                ]
+            };
+
 
         let globalData = [];
         let currentSortKey = null;

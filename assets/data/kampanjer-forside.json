@@ -1,26 +1,24 @@
 [
   {
-    "title": "20% på egenpleie hos Apotek1",
-    "image": "assets/images/kampanjer/apotek1-tilbud.jpg",
-    "url": "https://www.apotek1.no",
-    "description": "Gyldig til 30. april 2025"
+    "title": "Sommersalg hos Blivakker – opptil 40%",
+    "image": "https://track.adtraction.com/t/t?a=1794737850&as=1978629723&t=1&tk=1&i=1",
+    "url": "https://go.blivakker.no/t/t?a=1794737850&as=1978629723&t=2&tk=1",
+    "alt": "Blivakker sommersalg",
+    "description": "Sommersalg – opptil 40% rabatt på skjønnhetsprodukter hos Blivakker!",
+    "expiry": "2024-06-25"
   },
   {
-    "title": "Spar opptil 40% på gaming hos Elkjøp",
-    "image": "assets/images/kampanjer/elkjop-kampanje.jpg",
-    "url": "https://www.elkjop.no",
-    "description": "Gaming-utstyr på tilbud nå!"
+    "title": "Gina Tricot – Opptil 50% rabatt og 3 for 2 på utvalgte varer",
+    "image": "assets/images/kampanjer/gina-tricot-tilbud.png",
+    "url": "https://do.ginatricot.com/t/t?a=1858255980&as=1978629723&t=2&tk=1&url=https://www.ginatricot.com/no/tilbud",
+    "description": "Sjekk ut opptil 50% rabatt og 3 for 2 på utvalgte basisplagg og truser hos Gina Tricot!",
+    "expiry": "2024-06-10"
   },
   {
-    "title": "Vårsalg hos Boozt – opptil 50%",
-    "image": "assets/images/kampanjer/boozt-tilbud.jpg",
-    "url": "https://www.boozt.com",
-    "description": "Oppdater vårgarderoben med gode rabatter"
-  },
-  {
-    "title": "Kampanje på klær hos Zalando",
-    "image": "assets/images/kampanjer/zalando-kampanje.jpg",
-    "url": "https://www.zalando.no",
-    "description": "Rabatter på utvalgte merker"
+    "title": "Storselgere – Sofaer & Senger hos Trademax",
+    "image": "assets/images/kampanjer/trademax-kampanje.png",
+    "url": "https://go.trademax.no/t/t?a=1918739935&as=1978629723&t=2&tk=1&url=https://www.trademax.no/kampanjer/storselgere-sofaer-senger?categoryCodes=TM10004628",
+    "description": "Se bestselgere innen sofaer og senger hos Trademax – kampanjepriser akkurat nå!",
+    "expiry": "2024-06-15"
   }
 ]

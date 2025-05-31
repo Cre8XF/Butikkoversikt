@@ -28,11 +28,15 @@
 }
 
 .kampanje-img {
-  width: 240px;
-  height: auto;
+  width: 100%;
+  max-width: 320px; /* kan justeres, f.eks. 320px eller 400px */
+  height: 160px; /* Fikser alle bilder til samme høyde */
+  object-fit: cover; /* "Cropper" bildet slik at det alltid fyller rammen */
   border-radius: 0.75rem;
   box-shadow: 0 4px 10px var(--shadow);
-  transition: transform 0.3s ease;
+  margin: 0 auto;
+  display: block;
+  background: #f4f4f4;
 }
 
 .kampanje-img:hover {
