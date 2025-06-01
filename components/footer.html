@@ -21,29 +21,31 @@
                     </li>
                 </ul>
             </div>
-            <iframe width="540" height="305"
-                src="https://sibforms.com/serve/MUIFAOxTMYj1FYQkr3e2KmOXkUwata44H8illePx9SB25fe4bDF42IiEV6SeD8R_XVZ-WtuidpA3Wl2LVHeAzS9Nj0xP7huEMlwP76P5kLVO_E0rzRwlB5qsiiJx5cx33zE36anboHH6Jg8rw_Vc8RGQLM1dAwIVbAWWG4nc4qYToq6KyHlw3Gsu01146C4KDfpfDy7aHQwwjwJ6"
-                frameborder="0" scrolling="auto" allowfullscreen
-                class="footer-iframe"
-                title="Nyhetsbrev påmelding"></iframe>
-            
-                  
-                <div class="mt-3">
-                    <a href="#" class="text-heading me-3"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="text-heading me-3"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="text-heading"><i class="bi bi-twitter-x"></i></a>
-                </div>
+        <!-- Brevo nyhetsbrevskjema -->
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+                <h2>Meld deg på vårt nyhetsbrev</h2>
+                <p>Få eksklusive tilbud, kampanjer og de beste nettbutikkene rett i innboksen din!</p>
+        
+                <form
+                    action="https://sibforms.com/serve/MUIFANL7E4t6y9DszSLZsUd4cav0Kfedze_mbeob7-sXsP69jB-DF6UqXu5l_3E3fctPW8qytML4sF-GspHYBAg84ZLscxmskUZ7YjQ82NYifhHt0BAfgVC30jPjyrWpV1eAv17dnSnnUapcMR3U-QrGPVCor97Nu2jEHZ-vVkzOGKz1oyO6InzE8ip9Mp3H23g_CNSYd75lH55H"
+                    method="POST" class="newsletter-form">
+                    <div class="input-group">
+                        <label for="EMAIL">Skriv inn din e-postadresse</label>
+                        <input type="email" id="EMAIL" name="EMAIL" placeholder="e-post" required>
+                        <small class="input-help">Eks: navn@dittdomene.no</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Meld meg på</button>
+                </form>
+        
+                <div class="form-message success-message" hidden>Takk for påmeldingen! Sjekk e-posten din for å bekrefte.</div>
+                <div class="form-message error-message" hidden>Noe gikk galt, prøv igjen senere.</div>
             </div>
-        </div>
-</footer>
+        </section>
+          
+        
+        <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
   
-<style>
-.footer-iframe {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-}
-</style>
+
 </footer>
   
