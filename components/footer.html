@@ -1,51 +1,66 @@
-<footer class="bg-footer text-light-theme pt-5 pb-4">
+<footer class="footer pt-5 pb-4">
     <div class="container">
         <div class="row gy-4">
             <div class="col-md-4 text-center text-md-start">
                 <h5 class="fw-bold text-heading">Butikkoversikt.no</h5>
-                <p class="text-dempet-theme">Din guide til trygge og relevante nettbutikker – kategorisert, anbefalt og
-                    enkelt å finne frem.</p>
-                <p class="text-dempet-theme small">© 2025 Butikkoversikt.no<br>Org.nr: 999 999 999</p>
+                <p class="text-muted">Din guide til trygge og relevante nettbutikker – kategorisert, anbefalt og enkelt
+                    å finne frem.</p>
+                <p class="small text-muted">© 2025 Butikkoversikt.no<br>Org.nr: 999 999 999</p>
             </div>
             <div class="col-md-4 text-center">
                 <h6 class="fw-bold mb-3 text-heading">Nyttige lenker</h6>
                 <ul class="list-unstyled">
-                    <li><a href="/" class="text-heading text-decoration-none">Hjem</a></li>
-                    <li><a href="/kategori.html" class="text-heading text-decoration-none">Kategorier</a></li>
-                    <li><a href="/main-guider.html" class="text-heading text-decoration-none">Guider</a></li>
-                    <li><a href="/kampanjer.html" class="text-heading text-decoration-none">Kampanjer</a></li>
-                    <li><a href="/Ukens-Anbefalte.html" class="text-heading text-decoration-none">Ukens anbefalte</a>
-                    </li>
-                    <li><a href="/kontakt.html" class="text-heading text-decoration-none">Kontakt oss</a></li>
-                    <li><a href="/personvern.html" class="text-heading text-decoration-none">Personvernerklæring</a>
-                    </li>
+                    <li><a href="/">Hjem</a></li>
+                    <li><a href="/kategori.html">Kategorier</a></li>
+                    <li><a href="/main-guider.html">Guider</a></li>
+                    <li><a href="/kampanjer.html">Kampanjer</a></li>
+                    <li><a href="/Ukens-Anbefalte.html">Ukens anbefalte</a></li>
+                    <li><a href="/kontakt.html">Kontakt oss</a></li>
+                    <li><a href="/personvern.html">Personvernerklæring</a></li>
                 </ul>
             </div>
-        <!-- Brevo nyhetsbrevskjema -->
-        <section class="newsletter-section">
-            <div class="newsletter-container">
-                <h2>Meld deg på vårt nyhetsbrev</h2>
-                <p>Få eksklusive tilbud, kampanjer og de beste nettbutikkene rett i innboksen din!</p>
-        
-                <form
-                    action="https://sibforms.com/serve/MUIFANL7E4t6y9DszSLZsUd4cav0Kfedze_mbeob7-sXsP69jB-DF6UqXu5l_3E3fctPW8qytML4sF-GspHYBAg84ZLscxmskUZ7YjQ82NYifhHt0BAfgVC30jPjyrWpV1eAv17dnSnnUapcMR3U-QrGPVCor97Nu2jEHZ-vVkzOGKz1oyO6InzE8ip9Mp3H23g_CNSYd75lH55H"
-                    method="POST" class="newsletter-form">
-                    <div class="input-group">
-                        <label for="EMAIL">Skriv inn din e-postadresse</label>
-                        <input type="email" id="EMAIL" name="EMAIL" placeholder="e-post" required>
-                        <small class="input-help">Eks: navn@dittdomene.no</small>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Meld meg på</button>
-                </form>
-        
-                <div class="form-message success-message" hidden>Takk for påmeldingen! Sjekk e-posten din for å bekrefte.</div>
-                <div class="form-message error-message" hidden>Noe gikk galt, prøv igjen senere.</div>
+            <div class="col-md-4">
+                <div class="newsletter-container">
+                    <h2>Meld deg på nyhetsbrevet</h2>
+                    <p>Eksklusive tilbud, kampanjer og de beste nettbutikkene rett i innboksen.</p>
+                    <form id="sib-form" method="POST" action="https://sibforms.com/serve/MUIFAJXDmcSddPOJ...">
+                        <div class="input-group">
+                            <label for="EMAIL">E-postadresse *</label>
+                            <input type="email" name="EMAIL" id="EMAIL" placeholder="din@epost.no" required />
+                            <div class="input-help">Vi sender kun relevante nyheter og tilbud.</div>
+                        </div>
+                        <div class="input-group">
+                            <label>
+                                <input type="checkbox" name="gdpr" required />
+                                Jeg godtar <a href="/personvern.html" target="_blank"
+                                    rel="noopener">personvernerklæringen</a>
+                            </label>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary">Meld meg på</button>
+                        </div>
+                        <div class="form-message success-message" style="display: none;">Takk for påmeldingen!</div>
+                        <div class="form-message error-message" style="display: none;">Noe gikk galt, prøv igjen.</div>
+                        <p class="text-sm mt-3">
+                            Vi bruker Brevo. Ved innsending godtar du <a
+                                href="https://www.brevo.com/legal/privacypolicy/" target="_blank" rel="noopener">Brevos
+                                personvern</a>.
+                        </p>
+                        <input type="text" name="email_address_check" class="hidden" title="Ikke fyll ut dette feltet" placeholder="La stå tomt" aria-label="Ikke fyll ut dette feltet" />
+                        <input type="hidden" name="locale" value="no" />
+                    </form>
+                </div>
             </div>
-        </section>
-          
-        
-        <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-  
-
+        </div>
+    </div>
+    <script>
+        window.REQUIRED_CODE_ERROR_MESSAGE = 'Vennligst velg landskode';
+        window.LOCALE = 'no';
+        window.EMAIL_INVALID_MESSAGE = 'Ugyldig e-postadresse.';
+        window.REQUIRED_ERROR_MESSAGE = 'Dette feltet må fylles ut.';
+        window.GENERIC_INVALID_MESSAGE = 'Ugyldig e-postadresse.';
+        var AUTOHIDE = Boolean(0);
+    </script>
+    <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 </footer>
   
