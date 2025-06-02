@@ -21,7 +21,6 @@
   {
     "name": "power",
     "image": "assets/images/butikker-webp/power.webp",
-    "alt": "Power",
     "category": "Elektronikk og data",
     "subcategory": ["Elektronikk"],
     "url": "https://www.power.no",
@@ -6053,23 +6052,14 @@
     "image": "assets/images/butikker-webp/trademax.webp",
     "alt": "Trademax",
     "category": "Møbler og interiør",
-    "subcategory": [
-      "Møbler"
-    ],
+    "subcategory": ["Møbler"],
     "url": "https://www.trademax.no/",
     "description": "Hos Trademax finner du alt til hjemmet! Vi har et stort utvalg av sofaer, senger & hagemøbler. Raske leveranser av lagervarer innen 5-10 dager & 14 dagers angrerett!",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": true,
-    "tags": [
-      "sofa",
-      "bord",
-      "stoler",
-      "seng",
-      "oppbevaring",
-      "skandinavisk stil"
-    ],
+    "tags": ["sofa", "bord", "stoler", "seng", "oppbevaring", "skandinavisk stil"],
     "partner": false,
     "affiliate": true,
     "affiliateUrl": "https://go.trademax.no/t/t?a=1918739935&as=1978629723&t=2&tk=1",
@@ -6082,27 +6072,67 @@
     "image": "assets/images/butikker-webp/bjorn-borg.webp",
     "alt": "Bjørn Borg",
     "category": "Klær og mote",
-    "subcategory": [
-      "Sportsklær"
-    ],
+    "subcategory": ["Sportsklær"],
     "url": "https://www.bjornborg.com/no/",
     "description": "Björn Borg er synonymt med produkter av høy kvalitet. Inspirert av det sporty arvet fra personen og tennisspilleren Björn Borg, er designet fargerikt, kreativt og morsomt. I tillegg til undertøy, som er vår kjernevirksomhet, selger vi også klær, sko og vesker.",
     "topp25": false,
     "forside": false,
     "ny": true,
     "annonse": true,
-    "tags": [
-      "løpeklær",
-      "sportstøy",
-      "aktivitetsklær",
-      "yogatøy",
-      "funksjonsklær"
-    ],
+    "tags": ["løpeklær", "sportstøy", "aktivitetsklær", "yogatøy", "funksjonsklær"],
     "partner": false,
     "affiliate": true,
     "affiliateUrl": "https://to.bjornborg.com/t/t?a=1887444812&as=1978629723&t=2&tk=1",
     "kampanje": false,
     "ukensAnbefalte": "",
     "rank": null
+  },
+  {
+    "name": "Askeladden Navnelapper",
+    "image": "assets/images/butikker-webp/askeladden-navnelapper.webp",
+    "alt": "Askeladden Navnelapper",
+    "category": "Barn og baby",
+    "subcategory": ["Navnelapper og merking"],
+    "url": "https://www.askeladden-navnelapper.no",
+    "description": "Design dine egne navnelapper hos Askeladden – perfekt for klær, sko og utstyr i barnehagen eller på skolen.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": [
+      "navnelapper", "merking", "barn", "klær", "sko", "barnehage", "skole", "personlige navnelapper", "etiketter"
+    ]
+  },
+  {
+    "name": "Nordicprint",
+    "image": "assets/images/butikker-webp/nordicprint.webp",
+    "alt": "Nordicprint",
+    "category": "Barn og baby",
+    "subcategory": ["Navnelapper og merking"],
+    "url": "https://www.nordicprint.no",
+    "description": "Nordicprint tilbyr verdens tøffeste navnelapper som tåler vask og røff bruk. Rask levering og høy kvalitet.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": [
+      "navnelapper", "navnelapp", "barneutstyr", "nordicprint", "tøffe design", "tåler vask", "personlige merkelapper"
+    ]
+  },
+  {
+    "name": "Lappeliten",
+    "image": "assets/images/butikker-webp/lappeliten.webp",
+    "alt": "Lappeliten",
+    "category": "Barn og baby",
+    "subcategory": ["Navnelapper og merking"],
+    "url": "https://lappeliten.no",
+    "description": "Lappeliten tilbyr strykefrie navnelapper som tåler vask og brukes til merking av klær og andre tekstiler.",
+    "topp25": false,
+    "forside": false,
+    "ny": true,
+    "annonse": false,
+    "tags": [
+      "navnelapper", "lappeliten", "merking av klær", "barn", "barnehage", "skole", "tekstilmerking", "strykefri"
+    ]
   }
 ]
