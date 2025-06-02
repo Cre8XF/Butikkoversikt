@@ -8,14 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
     html.setAttribute("data-theme", savedTheme);
   }
 
-  // 2. Last inn header og aktiver knapp etterpå
   if (placeholder) {
     fetch("components/header.html")
       .then((res) => res.text())
       .then((htmlContent) => {
         placeholder.innerHTML = htmlContent;
 
-        // Når headeren er lastet inn:
+        // 🌗 Theme-knapp
         const btn = document.getElementById("themeToggleBtn");
 
         function setTheme(mode) {
@@ -34,9 +33,16 @@ document.addEventListener("DOMContentLoaded", () => {
             setTheme(next);
           });
         }
+
+        // 🔎 Last inn søkescript etter at header er lagt inn
+        const script = document.createElement("script");
+        script.src = "/assets/js/autocomplete-sok.js";
+        script.defer = true;
+        document.body.appendChild(script);
       })
       .catch((err) => {
         console.error("Kunne ikke laste header:", err);
       });
   }
 });
+  

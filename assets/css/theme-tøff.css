@@ -1,5 +1,5 @@
 :root {
-  --primary: #3b82f6;
+  --primary: #3b8cf6;
   --primary-light: #93c5fd;
   --primary-dark: #1e40af;
   --secondary: #64748b;
@@ -37,16 +37,12 @@
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   --transition: all 0.2s ease;
   --spacing-unit: 1rem;
-  --font-base: "Inter", sans-serif;
+  --font-base: 'Inter', sans-serif;
   --border-base: var(--gray-300); /* lys grå ramme */
 
   --hero-gradient-start: var(--primary);
   --hero-gradient-end: var(--primary-light);
-  --hero-bg: linear-gradient(
-    to bottom,
-    var(--hero-gradient-start),
-    var(--hero-gradient-end)
-  );
+  --hero-bg: linear-gradient(to bottom, var(--hero-gradient-start), var(--hero-gradient-end));
   --header-gradient-start: var(--primary);
   --header-gradient-end: var(--primary-light);
   --header-text-color: var(--white);
@@ -59,7 +55,7 @@
   --section-alt-bg: var(--gray-50);
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   --bg-body: #0f172a;
   --bg-section: #1e293b;
   --bg-section-alt: #1e2737;
@@ -76,11 +72,7 @@
 
   --hero-gradient-start: #1e3a8a;
   --hero-gradient-end: #3b82f6;
-  --hero-bg: linear-gradient(
-    to bottom,
-    var(--hero-gradient-start),
-    var(--hero-gradient-end)
-  );
+  --hero-bg: linear-gradient(to bottom, var(--hero-gradient-start), var(--hero-gradient-end));
 
   --header-gradient-start: #1e3a8a;
   --header-gradient-end: #3b82f6;
@@ -99,26 +91,26 @@
 }
 
 /* Hvite nav-lenker for sider med farget eller mørk header-bakgrunn */
-body[data-page="index"] .navbar .nav-link,
-body[data-page="kategori"] .navbar .nav-link,
-body[data-page="ukens-anbefalte"] .navbar .nav-link,
-body[data-page="kampanjer"] .navbar .nav-link,
-body[data-page="guider"] .navbar .nav-link,
-body[data-page="kontakt-oss"] .navbar .nav-link,
-body[data-page="alle-butikker"] .navbar .nav-link {
+body[data-page='index'] .navbar .nav-link,
+body[data-page='kategori'] .navbar .nav-link,
+body[data-page='ukens-anbefalte'] .navbar .nav-link,
+body[data-page='kampanjer'] .navbar .nav-link,
+body[data-page='guider'] .navbar .nav-link,
+body[data-page='kontakt-oss'] .navbar .nav-link,
+body[data-page='alle-butikker'] .navbar .nav-link {
   color: white;
 }
 /* Hvitt merkenavn/logo på sider med blå header */
-body[data-page="index"] .navbar-brand,
-body[data-page="kategori"] .navbar-brand,
-body[data-page="ukens-anbefalte"] .navbar-brand,
-body[data-page="kampanjer"] .navbar-brand,
-body[data-page="guider"] .navbar-brand,
-body[data-page="kontakt-oss"] .navbar-brand,
-body[data-page="alle-butikker"] .navbar-brand {
+body[data-page='index'] .navbar-brand,
+body[data-page='kategori'] .navbar-brand,
+body[data-page='ukens-anbefalte'] .navbar-brand,
+body[data-page='kampanjer'] .navbar-brand,
+body[data-page='guider'] .navbar-brand,
+body[data-page='kontakt-oss'] .navbar-brand,
+body[data-page='alle-butikker'] .navbar-brand {
   color: white;
 }
-[data-theme="dark"] .search-input::placeholder {
+[data-theme='dark'] .search-input::placeholder {
   color: var(--text-muted);
   opacity: 1;
 }
@@ -141,56 +133,54 @@ body[data-page="alle-butikker"] .navbar-brand {
 }
 
 /* Standard mørk nav-lenke for alle andre sider */
-body:not([data-page="index"]):not([data-page="kategori"]):not(
-    [data-page="ukens-anbefalte"]
-  ):not([data-page="kampanjer"]):not([data-page="alle-butikker"]):not(
-    [data-page="guider"]
-  ):not([data-page="kontakt-oss"])
+body:not([data-page='index']):not([data-page='kategori']):not([data-page='ukens-anbefalte']):not([data-page='kampanjer']):not([data-page='alle-butikker']):not([data-page='guider']):not(
+    [data-page='kontakt-oss']
+  )
   .navbar
   .nav-link {
   color: var(--text-base);
 }
-[data-theme="dark"] #kategoriMeny .btn {
+[data-theme='dark'] #kategoriMeny .btn {
   background-color: var(--bg-card);
   color: var(--text-base);
   border: 1px solid var(--border-base);
 }
 
-[data-theme="dark"] #kategoriMeny .btn:hover {
+[data-theme='dark'] #kategoriMeny .btn:hover {
   background-color: var(--bg-hover);
   color: var(--text-inverse);
   border-color: var(--primary);
 }
 
-[data-theme="dark"] #kategoriMeny .btn.active {
+[data-theme='dark'] #kategoriMeny .btn.active {
   background-color: var(--primary);
   color: var(--white);
   border-color: var(--primary-dark);
 }
-body[data-theme="dark"] p.text-muted {
+body[data-theme='dark'] p.text-muted {
   color: var(--text-muted) !important;
 }
-[data-theme="dark"] #kategoriMeny {
+[data-theme='dark'] #kategoriMeny {
   background-color: var(--bg-card); /* eller en ny variabel du ønsker */
   border-color: var(--border-color);
   box-shadow: 0 2px 6px var(--shadow-sm);
 }
-[data-theme="dark"] .sticky-top .container-fluid.py-2 {
+[data-theme='dark'] .sticky-top .container-fluid.py-2 {
   background-color: var(--bg-card);
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
 /* Placeholder-tekst i dark mode */
-[data-theme="dark"] ::placeholder {
+[data-theme='dark'] ::placeholder {
   color: var(--text-muted); /* Eller for eksempel: #9ca3af */
   opacity: 1; /* Sørg for at den ikke er gjennomsiktig */
 }
 
 /* Eventuell hjelpe- eller instruksjonstekst i formular */
-[data-theme="dark"] .form-text,
-[data-theme="dark"] .form-label,
-[data-theme="dark"] label,
-[data-theme="dark"] small,
-[data-theme="dark"] .text-muted {
-  color: var(--text-muted);
+[data-theme='dark'] .form-text,
+[data-theme='dark'] .form-label,
+[data-theme='dark'] label,
+[data-theme='dark'] small,
+[data-theme='dark'] .text-muted {
+  color: var(--text-muted) !important;
 }

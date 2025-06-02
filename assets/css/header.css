@@ -1,0 +1,18 @@
+.navbar {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.navbar-brand img {
+  height: 36px;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.25rem 0.75rem;
+  font-weight: 500;
+}
+
+#themeToggleBtn {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+}
