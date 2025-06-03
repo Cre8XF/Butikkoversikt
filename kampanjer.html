@@ -43,8 +43,14 @@
         <div id="header-placeholder"></div>
     </div>
 
+    <div class="alert alert-info text-center mb-4" role="alert">
+        <strong>Merk:</strong> Kampanjene som vises her er foreløpig eksempler (dummy-data) og skal byttes ut med ekte
+        kampanjer før lansering.
+    </div>
+
+    
     <!-- Annonsekarusell -->
-    <section class="container mb-5">
+    <section class="container mb-5" aria-label="Aktuelle annonser">
         <h2 class="mb-4 text-center">Aktuelle Annonser</h2>
         <div id="annonse-banner" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -70,13 +76,13 @@
 
 
     <!-- Hero seksjon -->
-    <section class="hero-banner text-center p-5 mb-5">
+    <section class="hero-banner text-center p-5 mb-5" aria-label="Introduksjon til kampanjer">
         <h1>Ukens Kampanjer</h1>
         <p class="lead">Få med deg de beste tilbudene og kampanjene akkurat nå!</p>
     </section>
 
     <!-- Filtrering og sortering -->
-    <section class="container mb-5">
+    <section class="container mb-5" aria-label="Filtrering og sortering av kampanjer">
         <div class="row mb-4">
             <div class="col-md-6">
                 <label for="filterKategori" class="form-label">Velg kategori:</label>
@@ -100,7 +106,7 @@
 
     
     <!-- Kampanjeoversikt -->
-    <section class="container mb-5">
+    <section class="container mb-5" aria-label="Oversikt over kampanjer">
         <div id="kampanje-list" class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Kampanjekort blir generert her -->
         </div>
@@ -117,8 +123,9 @@
     <script src="assets/js/effects/menu-toggle.js"></script>
     <script src="assets/js/generate/kampanjer/generate-kampanjer.js" defer></script>
     <script src="assets/js/generate/kampanjer/generate-kampanjer-forside.js" defer></script>
-    <script src="assets/js/footer.js"></script>
-    <script src="assets/js/header.js"></script>
+    <script src="assets/js/footer.js" defer></script>
+    <script src="assets/js/header.js" defer></script>
+
 </body>
 
 </html>

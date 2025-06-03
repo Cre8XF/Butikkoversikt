@@ -9,6 +9,7 @@
     content="Utforsk Norges beste nettbutikker organisert etter kategori. Finn tilbud, kampanjer og guider – alt på ett sted." />
   <meta name="keywords" content="nettbutikker, shopping, netthandel, tilbud, kampanjer, norske butikker" />
   <meta name="author" content="Butikkoversikt.no" />
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -39,327 +40,340 @@
 
 
 <body data-page="index">
+  <main id="main-content">
 
-  <!-- Sticky Header -->
-  <div class="sticky-top bg-white shadow-sm z-1030" id="stickyHeaderFull">
-    <div id="header-placeholder"></div>    
-  </div>
-  
-  
-  <!-- Hero-seksjon -->
-  <section class="hero-banner text-center p-5 mb-5">
+    <!-- Sticky Header -->
+    <div class="sticky-top bg-white shadow-sm z-1030" id="stickyHeaderFull">
+      <div id="header-placeholder"></div>
+    </div>
+
+
+    <!-- Hero-seksjon -->
+    <section class="hero-banner text-center p-5 mb-5">
       <h1>Finn nettbutikker du kan stole på</h1>
-      <p class="lead.text-dempet">Utforsk norske og internasjonale butikker – med filtrering, guider og ukens anbefalinger</p>
-    </div>
-    <div class="container text-center">
-      <h2 class="mb-4 fade-in">Hva ser du etter?</h2>
-      <p class="text-dempet mt-3 fade-in">Skriv inn det du leter etter – vi finner butikker og guider for deg</p>
-    
-      <!-- Legg denne HER, innenfor .container -->
-      <div id="seAlleTreffWrapper" class="text-center mt-3 fade-in">
-        <button id="visAlleTreff" class="btn btn-primary w-80">🔎 Se alle treff</button>
+      <p class="lead text-dempet">Utforsk norske og internasjonale butikker – med filtrering, guider og ukens
+        anbefalinger</p>
       </div>
-      <div class="search-wrapper d-flex justify-content-center align-items-center gap-2 fade-in position-relative">
-        <i class="bi bi-search fs-4 text-dempet"></i>
-    
-        <!-- Autocomplete-wrapper -->
-        <div class="position-relative w-100">
-          <input type="text" id="autocompleteInput" placeholder="Søk etter butikk, kategori eller guide"
-            class="form-control search-input text-dempet" />
-          <!-- Suggestions genereres dynamisk av JS -->
+      <div class="container text-center">
+        <h2 class="mb-4 fade-in">Hva ser du etter?</h2>
+        <p class="text-dempet mt-3 fade-in">Skriv inn det du leter etter – vi finner butikker og guider for deg</p>
+
+        <!-- Legg denne HER, innenfor .container -->
+        <div id="seAlleTreffWrapper" class="text-center mt-3 fade-in">
+          <button id="visAlleTreff" class="btn btn-primary w-80">🔎 Se alle treff</button>
+        </div>
+        <div class="search-wrapper d-flex justify-content-center align-items-center gap-2 fade-in position-relative">
+          <i class="bi bi-search fs-4 text-dempet"></i>
+
+          <!-- Autocomplete-wrapper -->
+          <div class="position-relative w-100">
+            <input type="text" id="autocompleteInput" placeholder="Søk etter butikk, kategori eller guide"
+              class="form-control search-input text-dempet" />
+            <!-- Suggestions genereres dynamisk av JS -->
+          </div>
+        </div>
+
+        <!-- Interaktive tags -->
+        <div id="search-subcategory-tags" class="mt-4 d-flex flex-wrap justify-content-center gap-2 fade-in"></div>
+
+        <div id="search-results" class="search-results mt-5 text-start fade-in"></div>
+
+
+      </div>
+    </section>
+
+    <!-- Info-seksjon på forsiden -->
+    <div class="info-highlight py-3 px-2 border-top border-bottom">
+      <div class="container">
+        <div class="text-center mb-2">
+          <p class="lead text-dempet mb-2">
+            Vi hjelper deg å finne trygge og relevante nettbutikker – med filtrering, guider og nyttig informasjon.
+          </p>
+        </div>
+        <div class="row justify-content-center text-center text-dempet mb-4">
+          <div class="col-6 col-md-3 mb-2">
+            <p class="info-icon"><i class="fas fa-flag"></i><br><strong>Fokus på norske nettbutikker</strong></p>
+          </div>
+          <div class="col-6 col-md-3 mb-2">
+            <p class="info-icon"><i class="fas fa-globe-europe"></i><br><strong>Utenlandske butikker merkes
+                tydelig</strong></p>
+          </div>
+          <div class="col-6 col-md-3 mb-2">
+            <p class="info-icon"><i class="fas fa-book-open"></i><br><strong>Praktiske guider og kjøpsråd</strong></p>
+          </div>
+          <div class="col-6 col-md-3 mb-2">
+            <p class="info-icon"><i class="fas fa-filter"></i><br><strong>Filtrer etter kategori og tags</strong></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <section id="ukens-kampanje" class="campaign-banner fade-in py-4">
+      <div class="container">
+        <span class="campaign-badge">Ukens kampanje</span>
+        <div class="campaign-content">
+          <img id="kampanje-bilde" src="" alt="Kampanjebilde" class="kampanje-img" />
+          <div class="text-content">
+            <h5 id="kampanje-tittel"></h5>
+            <p id="kampanje-beskrivelse"></p>
+            <a id="kampanje-lenke" href="#" target="_blank" rel="noopener" class="kampanje-knapp">Se tilbud</a>
+          </div>
         </div>
       </div>
-    
-      <!-- Interaktive tags -->
-      <div id="search-subcategory-tags" class="mt-4 d-flex flex-wrap justify-content-center gap-2 fade-in"></div>
-    
-      <div id="search-results" class="search-results mt-5 text-start fade-in"></div>
-    
-    
-    </div>
-  </section>
+    </section>
 
-  <!-- Info-seksjon på forsiden -->
-  <div class="info-highlight py-3 px-2 border-top border-bottom">
-    <div class="container">
-      <div class="text-center mb-2">
-        <p class="lead.text-dempet mb-2">
-          Vi hjelper deg å finne trygge og relevante nettbutikker – med filtrering, guider og nyttig informasjon.
+
+
+
+    <!-- Anbefalte butikker -->
+    <section class="section section-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 fade-in">Anbefalte nettbutikker</h2>
+        <div id="ukens-anbefalte" class="row g-4 justify-content-center fade-in"></div>
+        <div class="text-center mt-4">
+          <button id="vis-flere-butikker" class="btn btn-outline-primary me-2">Vis flere</button>
+          <button id="vis-færre-butikker" class="btn btn-outline-secondary">Vis færre</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Utforsk populære kategorier</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-center">
+
+          <div class="col">
+            <a href="kategori.html?kategori=Gaver, gadgets og hobby" class="image-card-link">
+              <div class="image-card" style="background-image: url('assets/images/kategorikort/gadget-og-gaver.webp')">
+                <div class="card-overlay">
+                  <h3>Gaver, gadgets og hobby</h3>
+                  <p>Morsomme og kreative nettbutikker</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="kategori.html?kategori=Barn og baby" class="image-card-link">
+              <div class="image-card" style="background-image: url('assets/images/kategorikort/barn-og-baby.webp')">
+                <div class="card-overlay">
+                  <h3>Barn og baby</h3>
+                  <p>Utstyr, leker og babyartikler</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="kategori.html?kategori=Bøker og media" class="image-card-link">
+              <div class="image-card" style="background-image: url('assets/images/kategorikort/boker-og-media.webp')">
+                <div class="card-overlay">
+                  <h3>Bøker og media</h3>
+                  <p>Bøker, e-bøker og lydbøker</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="kategori.html?kategori=Digitale tjenester" class="image-card-link">
+              <div class="image-card"
+                style="background-image: url('assets/images/kategorikort/digitale-tjenester.webp')">
+                <div class="card-overlay">
+                  <h3>Digitale tjenester</h3>
+                  <p>VPN, strømmetjenester og nettkurs</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="kategori.html?kategori=Dyrebutikker" class="image-card-link">
+              <div class="image-card" style="background-image: url('assets/images/kategorikort/dyrebutikker.webp')">
+                <div class="card-overlay">
+                  <h3>Dyrebutikker</h3>
+                  <p>Alt til hund, katt og smådyr</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="kategori.html?kategori=Elektronikk og data" class="image-card-link">
+              <div class="image-card"
+                style="background-image: url('assets/images/kategorikort/elektronikk-og-data.webp')">
+                <div class="card-overlay">
+                  <h3>Elektronikk og data</h3>
+                  <p>Mobil, PC, lyd og tilbehør</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="kategori.html?kategori=Gaming og tilbehør" class="image-card-link">
+              <div class="image-card" style="background-image: url('assets/images/kategorikort/Gamers.webp')">
+                <div class="card-overlay">
+                  <h3>Gaming og tilbehør</h3>
+                  <p>Gamingutstyr, konsoller og e-sport</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="kategori.html?kategori=Helse og egenpleie" class="image-card-link">
+              <div class="image-card"
+                style="background-image: url('assets/images/kategorikort/helse-og-egenpleie.webp')">
+                <div class="card-overlay">
+                  <h3>Helse og egenpleie</h3>
+                  <p>Apotek, skjønnhet og velvære</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="kategori.html?kategori=Klær og mote" class="image-card-link">
+              <div class="image-card" style="background-image: url('assets/images/kategorikort/klaer-og-mote.webp')">
+                <div class="card-overlay">
+                  <h3>Klær og mote</h3>
+                  <p>Dame, herre og barneklær</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="kategori.html?kategori=Mat og drikke" class="image-card-link">
+              <div class="image-card" style="background-image: url('assets/images/kategorikort/mat-og-drikke.webp')">
+                <div class="card-overlay">
+                  <h3>Mat og drikke</h3>
+                  <p>Matkasser, vin og snacks</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="kategori.html?kategori=Møbler og interiør" class="image-card-link">
+              <div class="image-card"
+                style="background-image: url('assets/images/kategorikort/mobler-og-interior.webp')">
+                <div class="card-overlay">
+                  <h3>Møbler og interiør</h3>
+                  <p>Møbler, dekor og belysning</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="kategori.html?kategori=Reise og opplevelser" class="image-card-link">
+              <div class="image-card"
+                style="background-image: url('assets/images/kategorikort/reise-og-opplevelser.webp')">
+                <div class="card-overlay">
+                  <h3>Reise og opplevelser</h3>
+                  <p>Utstyr og inspirasjon til reisen</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="kategori.html?kategori=Sport og fritid" class="image-card-link">
+              <div class="image-card" style="background-image: url('assets/images/kategorikort/sport-og-fritid.webp')">
+                <div class="card-overlay">
+                  <h3>Sport og fritid</h3>
+                  <p>Trening, tur og sykkel</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col">
+            <a href="kategori.html?kategori=Underholdning og popkultur" class="image-card-link">
+              <div class="image-card"
+                style="background-image: url('assets/images/kategorikort/spill-og-underholdning.webp')">
+                <div class="card-overlay">
+                  <h3>Underholdning og popkultur</h3>
+                  <p>Spill, figurer og anime</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CTA til kategorier -->
+    <section class="text-center py-5">
+      <div class="container">
+        <h3 class="mb-4">Leter du etter noe spesielt?</h3>
+        <a href="alle-butikker.html" class="btn btn-lg btn-primary shadow">Se alle butikker</a>
+      </div>
+    </section>
+
+    <section class="py-5 bg-section">
+      <div class="container">
+        <h2 class="text-center mb-4">🔥 Aktuelle kampanjer</h2>
+        <section id="forside-kampanjer" class="row gy-4"></section>
+        <div class="text-center mt-4"><a href="kampanjer.html" class="btn btn-primary">Se alle kampanjer</a></div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-section-alt">
+      <div class="container">
+        <h2 class="text-center mb-4">📘 Nyttige guider</h2>
+        <section id="forside-guider" class="row gy-4"></section>
+        <div class="text-center mt-4"><a href="/main-guider.html" class="btn btn-secondary">Les alle guider</a></div>
+      </div>
+    </section>
+
+    <section class="py-5 section-white">
+      <div class="container">
+        <h2 class="text-center mb-2">💎 Eksklusive tilbud</h2>
+        <p class="text-center text-dempet mb-4 small">
+          Tilbud og kampanjer fra utvalgte samarbeidspartnere – håndplukket for deg.
         </p>
+        <section id="forside-annonser" class="row gy-4"></section>
       </div>
-      <div class="row justify-content-center text-center.text-dempet mb-4">
-        <div class="col-6 col-md-3 mb-2">
-          <p class="info-icon"><i class="fas fa-flag"></i><br><strong>Fokus på norske nettbutikker</strong></p>
-        </div>
-        <div class="col-6 col-md-3 mb-2">
-          <p class="info-icon"><i class="fas fa-globe-europe"></i><br><strong>Utenlandske butikker merkes tydelig</strong></p>
-        </div>
-        <div class="col-6 col-md-3 mb-2">
-          <p class="info-icon"><i class="fas fa-book-open"></i><br><strong>Praktiske guider og kjøpsråd</strong></p>
-        </div>
-        <div class="col-6 col-md-3 mb-2">
-          <p class="info-icon"><i class="fas fa-filter"></i><br><strong>Filtrer etter kategori og tags</strong></p>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
+    </section>
 
 
-  <!-- Ukens kampanje -->
-  <section id="ukens-kampanje" class="campaign-banner fade-in py-4">
-    <div class="container">
-      <span class="campaign-badge">Ukens kampanje</span>
-      <div class="campaign-content">
-        <img id="kampanje-bilde" src="assets/images/kampanjer/dummy-kampanje2.jpg" alt="Kampanjebilde" class="kampanje-img" />
-        <div class="text-content">
-          <h5 id="kampanje-tittel">Kampanje: Gratis frakt i helgen</h5>
-          <p id="kampanje-beskrivelse">Gjelder alle ordre over 499 kr hos EksempelShop.no</p>
-          <a id="kampanje-lenke" href="#" target="_blank" rel="noopener" class="kampanje-knapp">Se tilbud</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Din dynamiske footer -->
+  </main>
 
-
-  <!-- Anbefalte butikker -->
-  <section class="section section-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4 fade-in">Anbefalte nettbutikker</h2>
-      <div id="ukens-anbefalte" class="row g-4 justify-content-center fade-in"></div>
-      <div class="text-center mt-4">
-        <button id="vis-flere-butikker" class="btn btn-outline-primary me-2">Vis flere</button>
-        <button id="vis-færre-butikker" class="btn btn-outline-secondary">Vis færre</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-5 bg-section">
-    <div class="container">
-      <h2 class="text-center mb-5">Utforsk populære kategorier</h2>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-center">
-  
-        <div class="col">
-          <a href="kategori.html?kategori=Gaver, gadgets og hobby" class="image-card-link">
-            <div class="image-card"
-              style="background-image: url('assets/images/kategorikort/gadget-og-gaver.webp')">
-              <div class="card-overlay">
-                <h3>Gaver, gadgets og hobby</h3>
-                <p>Morsomme og kreative nettbutikker</p>
-              </div>
-            </div>
-          </a>
-        </div>
-  
-        <div class="col">
-          <a href="kategori.html?kategori=Barn og baby" class="image-card-link">
-            <div class="image-card" style="background-image: url('assets/images/kategorikort/barn-og-baby.webp')">
-              <div class="card-overlay">
-                <h3>Barn og baby</h3>
-                <p>Utstyr, leker og babyartikler</p>
-              </div>
-            </div>
-          </a>
-        </div>
-  
-        <div class="col">
-          <a href="kategori.html?kategori=Bøker og media" class="image-card-link">
-            <div class="image-card" style="background-image: url('assets/images/kategorikort/boker-og-media.webp')">
-              <div class="card-overlay">
-                <h3>Bøker og media</h3>
-                <p>Bøker, e-bøker og lydbøker</p>
-              </div>
-            </div>
-          </a>
-        </div>
-  
-        <div class="col">
-          <a href="kategori.html?kategori=Digitale tjenester" class="image-card-link">
-            <div class="image-card" style="background-image: url('assets/images/kategorikort/digitale-tjenester.webp')">
-              <div class="card-overlay">
-                <h3>Digitale tjenester</h3>
-                <p>VPN, strømmetjenester og nettkurs</p>
-              </div>
-            </div>
-          </a>
-        </div>
-  
-        <div class="col">
-          <a href="kategori.html?kategori=Dyrebutikker" class="image-card-link">
-            <div class="image-card" style="background-image: url('assets/images/kategorikort/dyrebutikker.webp')">
-              <div class="card-overlay">
-                <h3>Dyrebutikker</h3>
-                <p>Alt til hund, katt og smådyr</p>
-              </div>
-            </div>
-          </a>
-        </div>
-  
-        <div class="col">
-          <a href="kategori.html?kategori=Elektronikk og data" class="image-card-link">
-            <div class="image-card" style="background-image: url('assets/images/kategorikort/elektronikk-og-data.webp')">
-              <div class="card-overlay">
-                <h3>Elektronikk og data</h3>
-                <p>Mobil, PC, lyd og tilbehør</p>
-              </div>
-            </div>
-          </a>
-        </div>
-  
-        <div class="col">
-          <a href="kategori.html?kategori=Gaming og tilbehør" class="image-card-link">
-            <div class="image-card" style="background-image: url('assets/images/kategorikort/Gamers.webp')">
-              <div class="card-overlay">
-                <h3>Gaming og tilbehør</h3>
-                <p>Gamingutstyr, konsoller og e-sport</p>
-              </div>
-            </div>
-          </a>
-        </div>
-  
-        <div class="col">
-          <a href="kategori.html?kategori=Helse og egenpleie" class="image-card-link">
-            <div class="image-card" style="background-image: url('assets/images/kategorikort/helse-og-egenpleie.webp')">
-              <div class="card-overlay">
-                <h3>Helse og egenpleie</h3>
-                <p>Apotek, skjønnhet og velvære</p>
-              </div>
-            </div>
-          </a>
-        </div>
-  
-        <div class="col">
-          <a href="kategori.html?kategori=Klær og mote" class="image-card-link">
-            <div class="image-card" style="background-image: url('assets/images/kategorikort/klaer-og-mote.webp')">
-              <div class="card-overlay">
-                <h3>Klær og mote</h3>
-                <p>Dame, herre og barneklær</p>
-              </div>
-            </div>
-          </a>
-        </div>
-  
-        <div class="col">
-          <a href="kategori.html?kategori=Mat og drikke" class="image-card-link">
-            <div class="image-card" style="background-image: url('assets/images/kategorikort/mat-og-drikke.webp')">
-              <div class="card-overlay">
-                <h3>Mat og drikke</h3>
-                <p>Matkasser, vin og snacks</p>
-              </div>
-            </div>
-          </a>
-        </div>
-  
-        <div class="col">
-          <a href="kategori.html?kategori=Møbler og interiør" class="image-card-link">
-            <div class="image-card" style="background-image: url('assets/images/kategorikort/mobler-og-interior.webp')">
-              <div class="card-overlay">
-                <h3>Møbler og interiør</h3>
-                <p>Møbler, dekor og belysning</p>
-              </div>
-            </div>
-          </a>
-        </div>
-  
-        <div class="col">
-          <a href="kategori.html?kategori=Reise og opplevelser" class="image-card-link">
-            <div class="image-card" style="background-image: url('assets/images/kategorikort/reise-og-opplevelser.webp')">
-              <div class="card-overlay">
-                <h3>Reise og opplevelser</h3>
-                <p>Utstyr og inspirasjon til reisen</p>
-              </div>
-            </div>
-          </a>
-        </div>
-  
-        <div class="col">
-          <a href="kategori.html?kategori=Sport og fritid" class="image-card-link">
-            <div class="image-card" style="background-image: url('assets/images/kategorikort/sport-og-fritid.webp')">
-              <div class="card-overlay">
-                <h3>Sport og fritid</h3>
-                <p>Trening, tur og sykkel</p>
-              </div>
-            </div>
-          </a>
-        </div>
-  
-        <div class="col">
-          <a href="kategori.html?kategori=Underholdning og popkultur" class="image-card-link">
-            <div class="image-card"
-              style="background-image: url('assets/images/kategorikort/spill-og-underholdning.webp')">
-              <div class="card-overlay">
-                <h3>Underholdning og popkultur</h3>
-                <p>Spill, figurer og anime</p>
-              </div>
-            </div>
-          </a>
-        </div>
-  
-      </div>
-    </div>
-  </section>
-
-
-  <!-- CTA til kategorier -->
-  <section class="text-center py-5">
-    <div class="container">
-      <h3 class="mb-4">Leter du etter noe spesielt?</h3>
-      <a href="alle-butikker.html" class="btn btn-lg btn-primary shadow">Se alle butikker</a>
-    </div>
-  </section>
-
-  <section class="py-5 bg-section">
-    <div class="container">
-      <h2 class="text-center mb-4">🔥 Aktuelle kampanjer</h2>
-      <section id="forside-kampanjer" class="row gy-4"></section>
-      <div class="text-center mt-4"><a href="kampanjer.html" class="btn btn-primary">Se alle kampanjer</a></div>
-    </div>
-  </section>
-  
-  <section class="py-5 bg-section-alt">
-    <div class="container">
-      <h2 class="text-center mb-4">📘 Nyttige guider</h2>
-      <section id="forside-guider" class="row gy-4"></section>
-      <div class="text-center mt-4"><a href="/main-guider.html" class="btn btn-secondary">Les alle guider</a></div>
-    </div>
-  </section>
-  
-  <section class="py-5 section-white">
-    <div class="container">
-      <h2 class="text-center mb-2">💎 Eksklusive tilbud</h2>
-      <p class="text-center text-dempet mb-4 small">
-        Tilbud og kampanjer fra utvalgte samarbeidspartnere – håndplukket for deg.
-      </p>
-      <section id="forside-annonser" class="row gy-4"></section>
-    </div>
-  </section>
-  
-
-<!-- Din dynamiske footer -->
-<div id="footer-placeholder"></div>
+  <!-- Din dynamiske footer -->
+  <div id="footer-placeholder"></div>
 
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  
-<!-- Effekter og interaksjon -->
-<script src="assets/js/effects/fade-in.js"></script>
 
-<!-- Forsidegeneratorer -->
-<script src="assets/js/generate/forsiden/generate-forside-anbefalte.js"></script>
-<script src="assets/js/generate/forsiden/generate-kampanjer-forside.js"></script>
-<script src="assets/js/generate/forsiden/generate-trender.js"></script>
-<script src="assets/js/generate/forsiden/generate-forside-innhold.js"></script>
+  <!-- Effekter og interaksjon -->
+  <script src="assets/js/effects/fade-in.js"></script>
 
-<!-- Fellesfunksjoner -->
-<script src="assets/js/load-ads.js"></script>
+  <!-- Forsidegeneratorer -->
+  <script src="assets/js/generate/forsiden/generate-forside-anbefalte.js"></script>
+  <script src="assets/js/generate/forsiden/generate-kampanjer-forside.js"></script>
+  <script src="assets/js/generate/forsiden/generate-trender.js"></script>
+  <script src="assets/js/generate/forsiden/generate-forside-innhold.js"></script>
+  <script src="assets/js/generate/forsiden/generate-ukens-kampanje.js"></script>
 
-<!-- Hoved -->
-<script src="assets/js/main.js"></script>
-<script src="assets/js/footer.js"></script>
-<script src="assets/js/header.js"></script>
-<script src="assets/js/autocomplete-sok.js" defer></script>
+
+  <!-- Fellesfunksjoner -->
+  <script src="assets/js/load-ads.js"></script>
+
+  <!-- Hoved -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/autocomplete-sok.js" defer></script>
 
 
 

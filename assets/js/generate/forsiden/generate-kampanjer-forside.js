@@ -12,46 +12,54 @@ fetch("assets/data/kampanjer-forside.json")
       return;
     }
 
-    kampanjer.forEach((kampanje) => {
-      if (!kampanje.title || !kampanje.image || !kampanje.url) return;
+    // Filtrer kampanjer som ikke er utløpt
+const today = new Date();
+const aktiveKampanjer = kampanjer.filter(k => new Date(k.expiry) >= today);
 
-      const col = document.createElement("div");
-      col.className = "col-md-6 col-lg-4";
+// Sorter etter utløpsdato (tidligst først)
+aktiveKampanjer.sort((a, b) => new Date(a.expiry) - new Date(b.expiry));
 
-      const card = document.createElement("div");
-      card.className = "promo-card fade-in";
+// Vis kun den første gyldige kampanjen
+const kampanje = aktiveKampanjer[0];
+if (kampanje) {
+  const col = document.createElement("div");
+  col.className = "col-md-6 col-lg-4";
 
-      const img = document.createElement("img");
-      img.src = kampanje.image;
-      img.alt = kampanje.title;
-      img.className = "promo-image";
+  const card = document.createElement("div");
+  card.className = "promo-card fade-in";
 
-      const textDiv = document.createElement("div");
-      textDiv.className = "promo-text";
+  const img = document.createElement("img");
+  img.src = kampanje.image;
+  img.alt = kampanje.title;
+  img.className = "promo-image";
 
-      const title = document.createElement("div");
-      title.className = "promo-title";
-      title.textContent = kampanje.title;
+  const textDiv = document.createElement("div");
+  textDiv.className = "promo-text";
 
-      const desc = document.createElement("div");
-      desc.className = "promo-subtext";
-      desc.textContent = kampanje.description || "";
+  const title = document.createElement("div");
+  title.className = "promo-title";
+  title.textContent = kampanje.title;
 
-      const btn = document.createElement("a");
-      btn.href = kampanje.url;
-      btn.target = "_blank";
-      btn.rel = "noopener";
-      btn.className = "btn btn-sm btn-outline-primary mt-2";
-      btn.textContent = "Se tilbud";
+  const desc = document.createElement("div");
+  desc.className = "promo-subtext";
+  desc.textContent = kampanje.description || "";
 
-      textDiv.appendChild(title);
-      textDiv.appendChild(desc);
-      textDiv.appendChild(btn);
-      card.appendChild(img);
-      card.appendChild(textDiv);
-      col.appendChild(card);
-      kampanjeContainer.appendChild(col);
-    });
+  const btn = document.createElement("a");
+  btn.href = kampanje.url;
+  btn.target = "_blank";
+  btn.rel = "noopener";
+  btn.className = "btn btn-sm btn-outline-primary mt-2";
+  btn.textContent = "Se tilbud";
+
+  textDiv.appendChild(title);
+  textDiv.appendChild(desc);
+  textDiv.appendChild(btn);
+  card.appendChild(img);
+  card.appendChild(textDiv);
+  col.appendChild(card);
+  kampanjeContainer.appendChild(col);
+}
+
 
     // Trigger fade-in with animation
     setTimeout(() => {

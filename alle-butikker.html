@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="no" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alle nettbutikker – Butikkoversikt.no</title>
-    <meta name="description"
-      content="Se full oversikt over alle registrerte nettbutikker hos Butikkoversikt.no. Filtrér etter kategori og underkategori." />    
-    <meta name="keywords" content="nettbutikker, shopping, netthandel, tilbud, kampanjer, norske butikker" />
-    <meta name="author" content="Butikkoversikt.no" />
-  
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Butikkoversikt.no – Din guide til nettbutikker" />
-    <meta property="og:description"
-      content="Utforsk butikker etter kategori og finn aktuelle tilbud, guider og anbefalinger." />
-    <meta property="og:image" content="https://butikkoversikt.no/assets/images/hero/butikkoversikt-og-image.jpg" />
-    <meta property="og:url" content="https://butikkoversikt.no" />
-  
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Butikkoversikt.no – Din guide til nettbutikker" />
-    <meta name="twitter:description"
-      content="Finn relevante nettbutikker sortert etter kategori med søk og filtrering." />
-    <meta name="twitter:image" content="https://butikkoversikt.no/assets/images/hero/butikkoversikt-og-image.jpg" />
-  
-    <!-- Favicon -->
-    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
-  
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/assets/css/theme-tøff.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    </head>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alle nettbutikker – Butikkoversikt.no</title>
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+  <meta name="description"
+    content="Se full oversikt over alle registrerte nettbutikker hos Butikkoversikt.no. Filtrér etter kategori og underkategori." />
+  <meta name="keywords" content="nettbutikker, shopping, netthandel, tilbud, kampanjer, norske butikker" />
+  <meta name="author" content="Butikkoversikt.no" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Butikkoversikt.no – Din guide til nettbutikker" />
+  <meta property="og:description"
+    content="Utforsk butikker etter kategori og finn aktuelle tilbud, guider og anbefalinger." />
+  <meta property="og:image" content="https://butikkoversikt.no/assets/images/hero/butikkoversikt-og-image.jpg" />
+  <meta property="og:url" content="https://butikkoversikt.no" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Butikkoversikt.no – Din guide til nettbutikker" />
+  <meta name="twitter:description"
+    content="Finn relevante nettbutikker sortert etter kategori med søk og filtrering." />
+  <meta name="twitter:image" content="https://butikkoversikt.no/assets/images/hero/butikkoversikt-og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/assets/css/theme-tøff.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
   <body data-page="alle-butikker">
   <!-- Sticky Header -->
   <div class="sticky-top bg-white shadow-sm z-1030" id="stickyHeaderFull">
@@ -49,7 +53,6 @@
           <p class="lead text-muted">
             Filtrer og bla gjennom kategorier for å finne det du leter etter
           </p>
-        </div>
       </section>
 
       <section class="filter-section py-4">
@@ -91,20 +94,21 @@
           <div
             class="text-center mb-4 d-flex justify-content-center gap-3 flex-wrap"
           >
-            <button
-              id="nullstill-filter"
-              class="btn btn-outline-secondary btn-sm"
-            >
-              Nullstill filter
-            </button>
-          </div>
+          <button
+          id="nullstill-filter"
+          class="btn btn-outline-secondary btn-sm"
+          aria-label="Nullstill alle valgte filtre"
+          title="Nullstill alle valgte filtre"
+        >
+          🔄 Nullstill filter
+        </button>
 
-          <div
-            id="butikk-teller"
-            class="text-center text-muted mb-4 small"
-          ></div>
-        </div>
-      </section>
+        <div
+          id="butikk-teller"
+          class="text-center text-muted mb-4 small"
+        ></div>
+      </div>
+    </section>
 
       <section class="py-5">
         <div class="container">
@@ -113,10 +117,19 @@
           <div class="row g-4" id="butikk-container">
             <!-- Butikkort genereres her av JavaScript -->
           </div>
+          
+          <!--
           <div class="text-center mt-4">
-            <button id="vis-flere-butikker" class="btn btn-primary">Vis flere</button>
-            <button id="vis-færre-butikker" class="btn btn-outline-secondary">Vis færre</button>
-          </div>
+            <button id="vis-flere-butikker" class="btn btn-primary" aria-label="Vis flere butikker i listen"
+              title="Vis flere butikker">
+              ➕ Vis flere
+            </button>
+            <button id="vis-færre-butikker" class="btn btn-outline-secondary" aria-label="Vis færre butikker i listen"
+              title="Vis færre butikker">
+              ➖ Vis færre
+            </button>
+          </div>-->
+          
         </div>
       </section>
       
@@ -136,9 +149,9 @@
     <script src="assets/js/generate/alle-butikker/generate-alle-butikker-filter-tags-enhanced-toggle.js"></script>
 
   <!-- Hoved -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/footer.js"></script>
-  <script src="assets/js/header.js"></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/footer.js" defer></script>
+  <script src="assets/js/header.js" defer></script>
   <script src="assets/js/autocomplete-sok.js" defer></script>
   </body>
 </html>

@@ -43,34 +43,41 @@
     <div id="header-placeholder"></div>
 </div>
 
-        <!-- Hero seksjon -->
-        <section class="hero-banner text-center p-5 mb-5">
-            <h1>Ukens Anbefalte Butikker</h1>
-            <p class="lead">Hver uke velger vi ut de beste nettbutikkene med gode tilbud og kampanjer!</p>
-        </section>
+<main id="main-content">
 
-        <!-- Anbefalte butikker -->
-        <section class="container mb-5">
-            <div id="anbefalte-butikker" class="row row-cols-1 row-cols-md-3 g-4">
-                <!-- Butikkort blir generert her -->
-            </div>
-        </section>
-
-        <!-- Utvalgte kampanjer -->
-        <section class="container mb-5">
-            <h2 class="mb-4">Aktuelle Kampanjer</h2>
-            <div id="utvalgte-kampanjer" class="row row-cols-1 row-cols-md-2 g-4">
-                <!-- Kampanjekort blir generert her -->
-            </div>
-        </section>
-
-        <!-- Annonser og samarbeid -->
-        <section class="container mb-5">
-            <h2 class="mb-4">Annonser og Samarbeid</h2>
-            <div id="annonser-samarbeid" class="row row-cols-1 row-cols-md-2 g-4">
-                <!-- Annonsekort blir generert her -->
-            </div>
-        </section>
+    <!-- Hero seksjon -->
+    <section class="hero-banner text-center p-5 mb-5" aria-label="Introduksjon Ukens anbefalte butikker">
+      <h1>Ukens Anbefalte Butikker</h1>
+      <p class="lead">
+        Hver uke velger vi ut de beste nettbutikkene med gode tilbud og kampanjer!
+      </p>
+    </section>
+  
+    <!-- Anbefalte butikker -->
+    <section class="container mb-5" aria-label="Anbefalte nettbutikker denne uken">
+      <div id="anbefalte-butikker" class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Butikkort blir generert her -->
+      </div>
+    </section>
+  
+    <!-- Utvalgte kampanjer -->
+    <section class="container mb-5" aria-label="Utvalgte kampanjer">
+      <h2 class="mb-4">Aktuelle Kampanjer</h2>
+      <div id="utvalgte-kampanjer" class="row row-cols-1 row-cols-md-2 g-4">
+        <!-- Kampanjekort blir generert her -->
+      </div>
+    </section>
+  
+    <!-- Annonser og samarbeid -->
+    <section class="container mb-5" aria-label="Annonser og samarbeidspartnere">
+      <h2 class="mb-4">Annonser og Samarbeid</h2>
+      <div id="annonser-samarbeid" class="row row-cols-1 row-cols-md-2 g-4">
+        <!-- Annonsekort blir generert her -->
+      </div>
+    </section>
+  
+  </main>
+  
 
         <div id="footer-placeholder"></div>
 
@@ -84,8 +91,9 @@
 
 
         <script src="assets/js/generate/ukens-anbefalte/generate-ukens-anbefalte.js" defer></script>
-        <script src="assets/js/footer.js"></script>
-        <script src="assets/js/header.js"></script>
+        <script src="assets/js/footer.js" defer></script>
+        <script src="assets/js/header.js" defer></script>
+
     </body>
 
 </html>

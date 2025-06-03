@@ -89,3 +89,18 @@
 #kampanje-beskrivelse {
   font-size: 0.95rem;
 }
+.kampanje-info-boks {
+  background-color: var(--bg-highlight);
+  color: var(--text-base);
+  padding: 1rem;
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  text-align: center;
+}
+.kampanje-kort .kort-bilde img {
+  width: 850px;
+  height: 650px;
+  object-fit: fill;
+  object-position: center;
+  border-radius: 8px;
+}

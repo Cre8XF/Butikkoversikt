@@ -6152,5 +6152,209 @@
     "kampanje": false,
     "ukensAnbefalte": "",
     "rank": null
-  }
+  },
+    {
+      "name": "Bubbleroom",
+      "image": "assets/images/butikker-webp/bubbleroom.webp",
+      "alt": "Bubbleroom",
+      "category": "Klær og mote",
+      "subcategory": [
+        "Dameklær"
+      ],
+      "url": "https://www.bubbleroom.no",
+      "description": "Bubbleroom tilbyr trendy dameklær, sko og tilbehør med fokus på stil og pris.",
+      "topp25": false,
+      "forside": false,
+      "ny": true,
+      "annonse": false,
+      "tags": [
+        "mote",
+        "klær",
+        "kjoler",
+        "sko",
+        "dameklær",
+        "fashion",
+        "bubbleroom"
+      ],
+      "partner": false,
+      "affiliate": true,
+      "affiliateUrl": "https://pin.bubbleroom.no/t/t?a=1118337868&as=1978629723&t=2&tk=1",
+      "kampanje": false,
+      "ukensAnbefalte": "",
+      "rank": null
+    },
+    {
+      "name": "Fredrik & Louisa",
+      "image": "assets/images/butikker-webp/fredrikoglouisa.webp",
+      "alt": "Fredrik & Louisa",
+      "category": "Helse og skjønnhet",
+      "subcategory": [
+        "Sminke og parfyme"
+      ],
+      "url": "https://www.fredrikoglouisa.no",
+      "description": "Fredrik & Louisa er en ledende parfymerikjede med sminke, hudpleie og dufter.",
+      "topp25": false,
+      "forside": false,
+      "ny": true,
+      "annonse": false,
+      "tags": [
+        "parfyme",
+        "sminke",
+        "hudpleie",
+        "skjønnhet",
+        "fredrik louisa",
+        "kosmetikk"
+      ],
+      "partner": false,
+      "affiliate": true,
+      "affiliateUrl": "https://id.fredrikoglouisa.no/t/t?a=1536516430&as=1978629723&t=2&tk=1",
+      "kampanje": false,
+      "ukensAnbefalte": "",
+      "rank": null
+    },
+    {
+      "name": "Kitch'n",
+      "image": "assets/images/butikker-webp/kitchn.webp",
+      "alt": "Kitch'n",
+      "category": "Hjem og interiør",
+      "subcategory": [
+        "Kjøkken og servering"
+      ],
+      "url": "https://www.kitchn.no",
+      "description": "Kitch'n tilbyr kvalitetsprodukter til kjøkkenet, interiør og gaveartikler.",
+      "topp25": false,
+      "forside": false,
+      "ny": true,
+      "annonse": false,
+      "tags": [
+        "kjøkken",
+        "kjøkkenutstyr",
+        "interiør",
+        "gaver",
+        "kitch'n",
+        "gryter"
+      ],
+      "partner": false,
+      "affiliate": true,
+      "affiliateUrl": "https://ion.kitchn.no/t/t?a=1720340841&as=1978629723&t=2&tk=1",
+      "kampanje": false,
+      "ukensAnbefalte": "",
+      "rank": null
+    },
+    {
+      "name": "Lyko",
+      "image": "assets/images/butikker-webp/lyko.webp",
+      "alt": "Lyko",
+      "category": "Helse og skjønnhet",
+      "subcategory": [
+        "Sminke og parfyme"
+      ],
+      "url": "https://www.lyko.com/no",
+      "description": "Lyko er en av Nordens største aktører innen skjønnhet og hårpleie.",
+      "topp25": false,
+      "forside": false,
+      "ny": true,
+      "annonse": false,
+      "tags": [
+        "skjønnhet",
+        "hudpleie",
+        "sminke",
+        "hårpleie",
+        "parfyme",
+        "lyko"
+      ],
+      "partner": false,
+      "affiliate": true,
+      "affiliateUrl": "https://ion.lyko.com/t/t?a=1536992143&as=1978629723&t=2&tk=1",
+      "kampanje": false,
+      "ukensAnbefalte": "",
+      "rank": null
+    },
+    {
+      "name": "Netthandelen",
+      "image": "assets/images/butikker-webp/netthandelen.webp",
+      "alt": "Netthandelen",
+      "category": "Alt-mulig butikker",
+      "subcategory": [
+        "Deals og tilbud"
+      ],
+      "url": "https://www.netthandelen.no",
+      "description": "Netthandelen.no tilbyr et bredt sortiment av produkter til kampanjepriser.",
+      "topp25": false,
+      "forside": false,
+      "ny": true,
+      "annonse": false,
+      "tags": [
+        "tilbud",
+        "kampanje",
+        "nettbutikk",
+        "alt mulig",
+        "elektronikk",
+        "møbler"
+      ],
+      "partner": false,
+      "affiliate": true,
+      "affiliateUrl": "https://in.netthandelen.no/t/t?a=1786468606&as=1978629723&t=2&tk=1",
+      "kampanje": false,
+      "ukensAnbefalte": "",
+      "rank": null
+    },
+    {
+      "name": "Nextory",
+      "image": "assets/images/butikker-webp/nextory.webp",
+      "alt": "Nextory",
+      "category": "Bøker og underholdning",
+      "subcategory": [
+        "Lyd- og lydbøker"
+      ],
+      "url": "https://www.nextory.no",
+      "description": "Nextory er en abonnementstjeneste for e-bøker og lydbøker.",
+      "topp25": false,
+      "forside": false,
+      "ny": true,
+      "annonse": false,
+      "tags": [
+        "lydbøker",
+        "ebøker",
+        "nextory",
+        "underholdning",
+        "lesing",
+        "bøker"
+      ],
+      "partner": false,
+      "affiliate": true,
+      "affiliateUrl": "https://pin.nextory.no/t/t?a=1576770926&as=1978629723&t=2&tk=1",
+      "kampanje": false,
+      "ukensAnbefalte": "",
+      "rank": null
+    },
+    {
+      "name": "Strim",
+      "image": "assets/images/butikker-webp/strim.webp",
+      "alt": "Strim",
+      "category": "Bøker og underholdning",
+      "subcategory": [
+        "Strømmetjenester"
+      ],
+      "url": "https://www.strim.no",
+      "description": "Strim samler strømmetjenester og TV-kanaler i én app og ett abonnement.",
+      "topp25": false,
+      "forside": false,
+      "ny": true,
+      "annonse": false,
+      "tags": [
+        "strim",
+        "streaming",
+        "tv",
+        "underholdning",
+        "strømmetjeneste"
+      ],
+      "partner": false,
+      "affiliate": true,
+      "affiliateUrl": "https://ion.strim.no/t/t?a=1587005581&as=1978629723&t=2&tk=1",
+      "kampanje": false,
+      "ukensAnbefalte": "",
+      "rank": null
+    }
+    
 ]
