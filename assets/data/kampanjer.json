@@ -149,9 +149,9 @@
   },
   {
     "title": "Salg hos Clas Ohlson",
+    "description": "Spar opptil 50% på utvalgte varer innen hjem og fritid.",
     "image": "assets/images/kampanjer/clasohlson-salg.webp",
     "url": "https://www.clasohlson.com",
-    "description": "Spar opptil 50% på utvalgte varer innen hjem og fritid.",
     "expiry": "2025-06-10",
     "affiliate": false,
     "affiliateUrl": "",
@@ -159,51 +159,70 @@
     "priority": 0
   },
   {
-    "tittel": "🛋️ IKEA – Juni 2025: 20 % rabatt på utvalgte sofaer",
-    "beskrivelse": "Gjelder for IKEA Family-medlemmer i perioden 26. mai – 8. juni 2025, så langt lageret rekker.",
-    "bilde": "assets/images/kampanjer/ikea-sofa.webp",
-    "lenke": "https://www.ikea.com/no/no/campaigns/",
-    "butikk": "IKEA",
-    "periode": "26. mai – 8. juni 2025"
+    "title": "🛋️ IKEA – Juni 2025: 20 % rabatt på utvalgte sofaer",
+    "description": "Gjelder for IKEA Family-medlemmer i perioden 26. mai – 8. juni 2025, så langt lageret rekker.",
+    "image": "assets/images/kampanjer/ikea-sofa.webp",
+    "url": "https://www.ikea.com/no/no/campaigns/",
+    "expiry": "2025-06-08",
+    "affiliate": false,
+    "affiliateUrl": "",
+    "highlight": false,
+    "priority": 0
   },
   {
-    "tittel": "20 % rabatt på alle sprinkelsenger hos IKEA",
-    "beskrivelse": "Tilbudet gjelder 2. – 15. juni 2025 for IKEA Family-medlemmer.",
-    "bilde": "assets/images/kampanjer/ikea-seng.webp",
-    "lenke": "https://www.ikea.com/no/no/campaigns/",
-    "butikk": "IKEA",
-    "periode": "2. – 15. juni 2025"
+    "title": "20 % rabatt på alle sprinkelsenger hos IKEA",
+    "description": "Tilbudet gjelder 2. – 15. juni 2025 for IKEA Family-medlemmer.",
+    "image": "assets/images/kampanjer/ikea-seng.webp",
+    "url": "https://www.ikea.com/no/no/campaigns/",
+    "expiry": "2025-06-15",
+    "affiliate": false,
+    "affiliateUrl": "",
+    "highlight": false,
+    "priority": 0
   },
   {
-    "tittel": "🛒 Elkjøp – Sonos sommerkampanje",
-    "beskrivelse": "Kjøp kvalitetshøyttalere til lavere priser. Kampanjeperiode: 22. mai – 7. juni 2025.",
-    "bilde": "assets/images/kampanjer/elkjop-sonos.webp",
-    "lenke": "https://www.elkjop.no/cms/kampanjer/",
-    "butikk": "Elkjøp",
-    "periode": "22. mai – 7. juni 2025"
+    "title": "🛒 Elkjøp – Sonos sommerkampanje",
+    "description": "Kjøp kvalitetshøyttalere til lavere priser. Kampanjeperiode: 22. mai – 7. juni 2025.",
+    "image": "assets/images/kampanjer/elkjop-sonos.webp",
+    "url": "https://www.elkjop.no/cms/kampanjer/",
+    "expiry": "2025-06-07",
+    "affiliate": false,
+    "affiliateUrl": "",
+    "highlight": false,
+    "priority": 0
   },
   {
-    "tittel": "DOOM: The Dark Ages – Bundle hos Elkjøp",
-    "beskrivelse": "Kjøp et kvalifisert ASUS-produkt mellom 8. mai og 30. juni 2025 og få med DOOM: The Dark Ages Premium Edition.",
-    "bilde": "assets/images/kampanjer/elkjop-doom.webp",
-    "lenke": "https://www.elkjop.no/cms/kampanjer/",
-    "butikk": "Elkjøp",
-    "periode": "8. mai – 30. juni 2025"
+    "title": "🏃‍♂️ XXL – Opptil 50 % rabatt",
+    "description": "Gjelder utvalgte produkter i juni 2025.",
+    "image": "assets/images/kampanjer/xxl-juni.webp",
+    "url": "https://www.xxl.no/kampanje",
+    "expiry": "2025-06-30",
+    "affiliate": false,
+    "affiliateUrl": "",
+    "highlight": false,
+    "priority": 0
   },
   {
-    "tittel": "🏃‍♂️ XXL – Opptil 50 % rabatt",
-    "beskrivelse": "Gjelder utvalgte produkter i juni 2025.",
-    "bilde": "assets/images/kampanjer/xxl-juni.webp",
-    "lenke": "https://www.xxl.no/kampanje",
-    "butikk": "XXL",
-    "periode": "Juni 2025"
+    "title": "🔧 Jernia – Inntil 60 % rabatt på kjøkkenutstyr",
+    "description": "Gjelder utvalgte produkter i juni 2025.",
+    "image": "assets/images/kampanjer/jernia-kjokken.webp",
+    "url": "https://www.jernia.no/kampanjer",
+    "expiry": "2025-06-30",
+    "affiliate": false,
+    "affiliateUrl": "",
+    "highlight": false,
+    "priority": 0
   },
   {
-    "tittel": "🔧 Jernia – Inntil 60 % rabatt på kjøkkenutstyr",
-    "beskrivelse": "Gjelder utvalgte produkter i juni 2025.",
-    "bilde": "assets/images/kampanjer/jernia-kjokken.webp",
-    "lenke": "https://www.jernia.no/kampanjer",
-    "butikk": "Jernia",
-    "periode": "Juni 2025"
+    "title": "Jubileumskampanje hos Kitchn – opptil 50% rabatt!",
+    "description": "Feir jubileum med Kitchn og få opptil 50% på utvalgte produkter innen kjøkken, design og interiør.",
+    "image": "assets/images/kampanjer/kitchn-jubileum.webp",
+    "url": "https://www.kitchn.no/kampanje/jubileum/",
+    "expiry": "2025-06-16",
+    "affiliate": false,
+    "affiliateUrl": "",
+    "highlight": false,
+    "priority": 0
   }
+  
 ]
