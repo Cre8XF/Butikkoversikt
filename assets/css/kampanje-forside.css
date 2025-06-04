@@ -28,7 +28,7 @@
 }
 
 .kampanje-img {
-  width: 100%;
+  width: 100%; /* Fyller bredden av containeren */
   max-width: 320px; /* kan justeres, f.eks. 320px eller 400px */
   height: 160px; /* Fikser alle bilder til samme høyde */
   object-fit: cover; /* "Cropper" bildet slik at det alltid fyller rammen */
@@ -96,11 +96,4 @@
   border-left: 4px solid var(--accent);
   border-radius: var(--radius);
   text-align: center;
-}
-.kampanje-kort .kort-bilde img {
-  width: 850px;
-  height: 650px;
-  object-fit: fill;
-  object-position: center;
-  border-radius: 8px;
 }
