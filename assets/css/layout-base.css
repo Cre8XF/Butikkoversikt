@@ -51,7 +51,7 @@
   z-index: 1001;
 }
 
-#stickyHeader input[type="text"] {
+#stickyHeader input[type='text'] {
   max-width: 100%;
   border-radius: 0.5rem;
   border: 1px solid var(--border-color);
@@ -84,4 +84,22 @@
 
 .navbar-brand {
   font-size: 1.25rem;
+}
+.navbar {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.navbar-brand img {
+  height: 56px;
+  width: 56px;
+}
+
+#themeToggleBtn {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+}
+.logo-img {
+  max-height: 72px;
+  width: auto;
 }
