@@ -3,7 +3,7 @@
     "title": "Netthandel – Forbrukerrådet",
     "url": "https://www.forbrukerradet.no/forside/okonomi-og-betaling/netthandel-misfornoyd/",
     "description": "Sjekk kva du bør undersøke før du handler på nett, og hvordan du går frem dersom du ønsker å klage på kjøpet.",
-    "image": "assets/images/guides/guide-trygg-netthandel.png",
+    "image": "assets/images/guides/trygg-netthandel.webp",
     "forside": true
   },
   {
@@ -61,56 +61,56 @@
     "title": "Bruksanvisninger – finn manualen du savner",
     "url": "https://nett.nyttiginfo.no/bruksanvisninger/",
     "description": "Lenker til nettsteder med bruksanvisninger for alt fra TV-er til vaskemaskiner og mobiltelefoner.",
-    "image": "assets/images/guides/bruksanvisninger.webp",
+    "image": "assets/images/guides/bruksanvisninger.png",
     "forside": false
   },
   {
     "title": "Best på prissammenligning",
     "url": "https://www.dataporten.net/sammenligning-av-priser/",
     "description": "En oversikt over de beste tjenestene for å sammenligne priser på elektronikk og andre produkter.",
-    "image": "assets/images/guides/prissammenligning.webp",
+    "image": "assets/images/guides/prissammenligning.png",
     "forside": false
   },
   {
     "title": "Gratis treningsprogrammer",
     "url": "https://hardworkout.no/trening/treningsprogram-gratis/",
     "description": "Et stort utvalg av gratis treningsprogrammer for styrke, kondisjon og vektreduksjon.",
-    "image": "assets/images/guides/gratis-treningsprogram.webp",
+    "image": "assets/images/guides/trening-fritid.png",
     "forside": false
   },
   {
     "title": "Slanking på nett",
     "url": "https://nett.nyttiginfo.no/slanking-pa-nett/",
     "description": "Ressurser og tips for vektreduksjon, inkludert oversikt over kjente slankekurer og oppskrifter.",
-    "image": "assets/images/guides/slanking-pa-nett.webp",
+    "image": "assets/images/guides/slanking-pa-nett.png",
     "forside": false
   },
   {
     "title": "Digitale tjenester – Beste.no",
     "url": "https://beste.no/category/digitale-tjenester/",
     "description": "Tester og anbefalinger av digitale tjenester som antivirusprogrammer og skylagring.",
-    "image": "assets/images/guides/digitale-tjenester.webp",
+    "image": "assets/images/guides/digitale-tjenester.png",
     "forside": false
   },
   {
     "title": "Helse & Skjønnhet – Beste.no",
     "url": "https://beste.no/category/helse-skjonnhet/",
     "description": "Best i test guider for produkter innen helse og skjønnhet, som tannbleking og hårfjernere.",
-    "image": "assets/images/guides/helse-skjonnhet.webp",
+    "image": "assets/images/guides/helse-skjonnhet.png",
     "forside": false
   },
   {
     "title": "Trening & Fritid – Beste.no",
     "url": "https://beste.no/category/trening-fritid/",
     "description": "Anbefalinger og tester av utstyr for trening og fritid, inkludert pulsklokker og massasjepistoler.",
-    "image": "assets/images/guides/trening-fritid.webp",
+    "image": "assets/images/guides/trening-fritid.png",
     "forside": false
   },
   {
     "title": "Hjem & Hage – Beste.no",
     "url": "https://beste.no/category/hjem-hage/",
     "description": "Guider og tester for produkter til hjem og hage, som gatelys og robotstøvsugere.",
-    "image": "assets/images/guides/hjem-hage.webp",
+    "image": "assets/images/guides/hjem-hage.png",
     "forside": false
   }
 ]
