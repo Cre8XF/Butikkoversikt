@@ -3,14 +3,14 @@
     "title": "Netthandel – Forbrukerrådet",
     "url": "https://www.forbrukerradet.no/forside/okonomi-og-betaling/netthandel-misfornoyd/",
     "description": "Sjekk kva du bør undersøke før du handler på nett, og hvordan du går frem dersom du ønsker å klage på kjøpet.",
-    "image": "assets/images/guides/trygg-netthandel.webp",
+    "image": "assets/images/guides/trygg-netthandel.png",
     "forside": true
   },
   {
     "title": "Gamingguiden – Tips, tester og guider for gamere",
     "url": "https://www.gamingguiden.com/",
     "description": "En norsk nettside med guider, tester og anbefalinger for gamere. Dekker alt fra konsollvalg og spilltips til utstyr og plattformer.",
-    "image": "assets/images/guides/gamingguiden.webp",
+    "image": "assets/images/guides/gamingguiden.png",
     "alt": "Gamingguiden logo",
     "forside": true
   },
@@ -18,28 +18,28 @@
     "title": "DIGITALE VERKTØY – Koselig Organisering",
     "url": "https://www.koseligorganisering.no/verktoy",
     "description": "Tips til ryddigere hjem med ryddeguider, ryddekurs og enkle organiseringsteknikker.",
-    "image": "assets/images/guides/koselig-organisering.webp",
+    "image": "assets/images/guides/koselig-organisering.png",
     "forside": false
   },
   {
     "title": "Nyttig på nett – Tips til livets små og store utfordringer",
     "url": "https://nett.nyttiginfo.no/",
     "description": "Enkle triks og ideer for hverdag, bursdagsgaver, navnestatistikk og mye mer.",
-    "image": "assets/images/guides/nyttiginfo.webp",
+    "image": "assets/images/guides/nyttiginfo.png",
     "forside": false
   },
   {
     "title": "Hjelp Hjemme – Gjør-Det-Selv guider for bolig og oppussing",
     "url": "https://www.hjelphjemme.no/",
     "description": "Veiledninger for hjem, vedlikehold og oppussing – alt fra enkle gjør-det-selv-prosjekter til mer avanserte forbedringer.",
-    "image": "assets/images/guides/hjelp-hjemme.webp",
+    "image": "assets/images/guides/hjelp-hjemme.png",
     "forside": false
   },
   {
     "title": "Beste interiørbutikker på nett 2025",
     "url": "https://www.startsiden.no/bolig/interior-7-kule-interiorbutikker-pa-nett",
     "description": "Oppdag de beste nettbutikkene for interiør i 2025, inkludert Lunehjem, Kremmerhuset og Nordic Nest.",
-    "image": "assets/images/guides/guide-interior-2025.webp",
+    "image": "assets/images/guides/guide-interior-2025.png",
     "alt": "Guide for interiørbutikker 2025",
     "forside": true
   },
@@ -47,14 +47,14 @@
     "title": "81 ting alle mennesker bør eie",
     "url": "https://www.nettavisen.no/shoppingtips/81-ting-alle-mennesker-bor-eie/s/12-95-3423961161",
     "description": "En omfattende liste over smarte, morsomme og nyttige produkter som kan forbedre hverdagen din.",
-    "image": "assets/images/guides/81-ting-alle-bor-eie.webp",
+    "image": "assets/images/guides/81-ting-alle-bor-eie.png",
     "forside": false
   },
   {
     "title": "25 hverdagstips – life-hacks på norsk",
     "url": "https://nett.nyttiginfo.no/hverdagstips/",
     "description": "Små knep og triks som gjør hverdagen enklere, fra batteritriks til smarte løsninger i hjemmet.",
-    "image": "assets/images/guides/25-hverdagstips.webp",
+    "image": "assets/images/guides/25-hverdagstips.png",
     "forside": false
   },
   {
@@ -113,4 +113,3 @@
     "image": "assets/images/guides/hjem-hage.png",
     "forside": false
   }
-]
