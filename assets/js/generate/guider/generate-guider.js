@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const col = document.createElement("div");
         col.className = "col-12 col-md-6 col-lg-4 fade-in";
 
-        const link = guide.url || "#";
-        const target = guide.url ? "_blank" : "_self";
+        const link = guide.url;
+        const target = "_blank";      
         const rel = guide.url ? "noopener" : "";
 
         col.innerHTML = `
