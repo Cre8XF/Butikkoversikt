@@ -1,23 +1,55 @@
 [
   {
-    "slug": "guide-trygg-netthandel",
-    "title": "Hvordan handle trygt på nett",
-    "description": "Enkel guide til trygg betaling og hvordan du unngår svindel.",
+    "title": "Tips og rettigheter",
+    "url": "https://www.forbrukerradet.no/tips-og-rettigheter/",
+    "description": "Her finner du tips og råd om hva du bør tenke på før du kjøper en vare eller en tjeneste, og hvilke rettigheter du har hvis kjøpet ikke ble som forventet.",
     "image": "assets/images/guides/guide-trygg-netthandel.png",
     "forside": true
   },
   {
-    "slug": "guider-barn",
     "title": "10 beste nettbutikker for barn i 2025",
+    "url": "https://butikkoversikt.no/guide-barn.html",
     "description": "Se våre anbefalte butikker for barneklær, leker og utstyr.",
     "image": "assets/images/guides/guide-barn.png",
     "forside": true
   },
   {
-    "slug": "guide-billig-treningstoy",
     "title": "Billig treningstøy på nett",
+    "url": "https://butikkoversikt.no/guide-billig-treningstoy.html",
     "description": "Tips og nettbutikker med rimelige treningsklær for dame og herre.",
     "image": "assets/images/guides/guide-billig-treningstoy.png",
     "forside": false
+  },
+  {
+    "title": "Gamingguiden – Tips, tester og guider for gamere",
+    "url": "https://www.gamingguiden.com/",
+    "description": "En norsk nettside med guider, tester og anbefalinger for gamere. Dekker alt fra konsollvalg og spilltips til utstyr og plattformer.",
+    "image": "assets/images/guides/gamingguiden.webp",
+    "alt": "Gamingguiden logo",
+    "forside": true
+  },
+  {
+    "title": "Beste nettbutikker for mote 2025",
+    "url": "https://butikkoversikt.no/guide-mote-2025.html",
+    "description": "En oppdatert oversikt over de mest populære nettbutikkene for mote i 2025, inkludert Zalando, ASOS og Boozt.",
+    "image": "assets/images/guides/guide-mote-2025.webp",
+    "alt": "Guide for motebutikker 2025",
+    "forside": true
+  },
+  {
+    "title": "Beste nettbutikker for elektronikk 2025",
+    "url": "https://butikkoversikt.no/guide-elektronikk-2025.html",
+    "description": "En guide til de beste nettbutikkene for elektronikk i 2025, inkludert Komplett, Elkjøp og Power.",
+    "image": "assets/images/guides/guide-elektronikk-2025.webp",
+    "alt": "Guide for elektronikkbutikker 2025",
+    "forside": true
+  },
+  {
+    "title": "Beste interiørbutikker på nett 2025",
+    "url": "https://butikkoversikt.no/guide-interior-2025.html",
+    "description": "Oppdag de beste nettbutikkene for interiør i 2025, inkludert Lunehjem, Kremmerhuset og Nordic Nest.",
+    "image": "assets/images/guides/guide-interior-2025.webp",
+    "alt": "Guide for interiørbutikker 2025",
+    "forside": true
   }
 ]

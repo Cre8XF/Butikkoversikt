@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin – Kampanjeverktøy</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-top: 2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+            vertical-align: top;
+        }
+
+        th {
+            background: #f0f0f0;
+        }
+
+        input[type="text"],
+        input[type="url"],
+        input[type="date"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0.3rem;
+        }
+
+        button {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        form input,
+        form select {
+            margin-bottom: 0.5rem;
+            padding: 0.4rem;
+            width: 100%;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Kampanjeadministrasjon</h1>
+
+    <input type="file" id="jsonInput" accept="application/json">
+    <button onclick="lastNedJSON()">Last ned oppdatert JSON</button>
+
+    <h2>Eksisterende kampanjer</h2>
+    <table id="kampanjetabell">
+        <thead>
+            <tr>
+                <th>Tittel</th>
+                <th>Beskrivelse</th>
+                <th>URL</th>
+                <th>Bilde</th>
+                <th>Kategori</th>
+                <th>Utløp</th>
+                <th>Slett</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Legg til ny kampanje</h2>
+    <form id="kampanjeForm">
+        <label for="title">Tittel:</label>
+        <input type="text" id="title" required>
+
+        <label for="description">Beskrivelse:</label>
+        <input type="text" id="description">
+
+        <label for="url">URL:</label>
+        <input type="url" id="url" required>
+
+        <label for="image">Bildebane:</label>
+        <input type="text" id="image" placeholder="assets/images/kampanjer/...">
+
+        <label for="category">Kategori:</label>
+        <input type="text" id="category" required>
+
+        <label for="expiry">Utløpsdato:</label>
+        <input type="date" id="expiry">
+
+        <button type="submit">Legg til kampanje</button>
+    </form>
+
+    <script>
+        let kampanjer = [];
+
+        document.getElementById("jsonInput").addEventListener("change", function (e) {
+            const reader = new FileReader();
+            reader.onload = function () {
+                kampanjer = JSON.parse(reader.result);
+                visTabell();
+            };
+            reader.readAsText(e.target.files[0]);
+        });
+
+        function visTabell() {
+            const tbody = document.querySelector("#kampanjetabell tbody");
+            tbody.innerHTML = "";
+            kampanjer.forEach((k, index) => {
+                const rad = document.createElement("tr");
+                rad.innerHTML = `
+          <td><input type="text" value="${k.title || ""}" onchange="oppdater(${index}, 'title', this.value)"></td>
+          <td><input type="text" value="${k.description || ""}" onchange="oppdater(${index}, 'description', this.value)"></td>
+          <td><input type="url" value="${k.url || ""}" onchange="oppdater(${index}, 'url', this.value)"></td>
+          <td><input type="text" value="${k.image || ""}" onchange="oppdater(${index}, 'image', this.value)"></td>
+          <td><input type="text" value="${k.category || ""}" onchange="oppdater(${index}, 'category', this.value)"></td>
+          <td><input type="date" value="${k.expiry || ""}" onchange="oppdater(${index}, 'expiry', this.value)"></td>
+          <td><button onclick="slett(${index})">Slett</button></td>
+        `;
+                tbody.appendChild(rad);
+            });
+        }
+
+        function oppdater(index, felt, verdi) {
+            kampanjer[index][felt] = verdi;
+        }
+
+        function slett(index) {
+            kampanjer.splice(index, 1);
+            visTabell();
+        }
+
+        function lastNedJSON() {
+            const blob = new Blob([JSON.stringify(kampanjer, null, 2)], { type: "application/json" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "kampanjer_oppdatert.json";
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        document.getElementById("kampanjeForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const ny = {
+                title: document.getElementById("title").value,
+                description: document.getElementById("description").value,
+                url: document.getElementById("url").value,
+                image: document.getElementById("image").value,
+                category: document.getElementById("category").value,
+                expiry: document.getElementById("expiry").value,
+                store: "",
+                affiliate: false,
+                affiliateUrl: "",
+                highlight: false,
+                priority: 0
+            };
+            kampanjer.push(ny);
+            visTabell();
+            e.target.reset();
+        });
+    </script>
+</body>
+
+</html>

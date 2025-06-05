@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Legg til ny kampanje</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 600px;
+            margin: auto;
+            padding: 2rem;
+            background: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin: 1rem 0 .5rem;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            padding: 0.7rem 1.2rem;
+            font-size: 1rem;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        pre {
+            background: #eee;
+            padding: 1rem;
+            white-space: pre-wrap;
+            word-break: break-word;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Legg til ny kampanje</h2>
+    <form id="kampanjeForm">
+        <label for="title">Tittel:</label>
+        <input type="text" id="title" required>
+
+        <label for="url">URL:</label>
+        <input type="url" id="url" required>
+
+        <label for="image">Bilde (valgfritt):</label>
+        <input type="text" id="image" placeholder="assets/images/kampanjer/...">
+
+        <label for="description">Beskrivelse (valgfritt):</label>
+        <input type="text" id="description">
+
+        <label for="expiry">Utløpsdato (valgfritt):</label>
+        <input type="date" id="expiry">
+
+        <label for="category">Kategori:</label>
+        <select id="category">
+            <option>Elektronikk og data</option>
+            <option>Helse og egenpleie</option>
+            <option>Bøker og media</option>
+            <option>Digitale tjenester</option>
+            <option>Gaming og tilbehør</option>
+            <option>Gaver, gadgets og hobby</option>
+            <option>Klær og mote</option>
+            <option>Mat og drikke</option>
+            <option>Møbler og interiør</option>
+            <option>Reise og opplevelser</option>
+            <option>Sport og fritid</option>
+            <option>Underholdning og popkultur</option>
+            <option>Dyrebutikker</option>
+            <option>Barn og baby</option>
+            <option>Helse og skjønnhet</option>
+            <option>Hjem og interiør</option>
+            <option>Alt-mulig butikker</option>
+            <option>Bøker og underholdning</option>
+        </select>
+
+        <button type="submit">Generer JSON</button>
+    </form>
+
+    <pre id="output"></pre>
+
+    <script>
+        document.getElementById("kampanjeForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const kampanje = {
+                title: document.getElementById("title").value,
+                url: document.getElementById("url").value,
+                image: document.getElementById("image").value || "",
+                description: document.getElementById("description").value || "",
+                expiry: document.getElementById("expiry").value || "",
+                category: document.getElementById("category").value,
+                affiliate: false,
+                affiliateUrl: "",
+                highlight: false,
+                priority: 0
+            };
+            document.getElementById("output").textContent = JSON.stringify(kampanje, null, 2);
+        });
+    </script>
+</body>
+
+</html>
