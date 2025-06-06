@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Produktfeed-verktøy</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 2rem;
+            background: #f4f4f4;
+        }
+
+        input,
+        select,
+        button,
+        textarea {
+            margin-bottom: 1rem;
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        img {
+            max-width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TradeTracker feed-verktøy</h1>
+    <label for="feedUrl">Lim inn din produktfeed-URL fra TradeTracker</label>
+    <input type="url" id="feedUrl" placeholder="https://pf.tradetracker.net/?aid=...">
+    <button id="hentFeed">Hent produkter</button>
+
+    <div id="resultat"></div>
+
+    <h2>Generert kampanje JSON:</h2>
+    <textarea id="kampanjeOutput" rows="10"></textarea>
+
+    <script>
+        document.getElementById("hentFeed").addEventListener("click", async () => {
+            const url = document.getElementById("feedUrl").value;
+            const container = document.getElementById("resultat");
+            container.innerHTML = "Laster...";
+
+            try {
+                const res = await fetch(url);
+                const data = await res.json();
+                container.innerHTML = "";
+
+                data.slice(0, 10).forEach(item => {
+                    const card = document.createElement("div");
+                    card.className = "card";
+                    card.innerHTML = `
+            <strong>${item.productName}</strong><br>
+            <img src="${item.imageUrl}" alt="Produktbilde"><br>
+            <em>${item.description}</em><br>
+            Pris: ${item.price}<br>
+            <button class="velgBtn">Generer kampanje</button>
+          `;
+                    card.querySelector(".velgBtn").addEventListener("click", () => {
+                        const kampanje = {
+                            title: item.productName,
+                            image: item.imageUrl,
+                            url: item.productUrl,
+                            description: item.description,
+                            expiry: "",
+                            store: item.brand || "",
+                            category: item.category || "",
+                            affiliate: true,
+                            affiliateUrl: item.productUrl,
+                            ukensAnbefalte: false,
+                            highlight: false,
+                            priority: 0
+                        };
+                        document.getElementById("kampanjeOutput").value = JSON.stringify(kampanje, null, 2);
+                    });
+                    container.appendChild(card);
+                });
+            } catch (err) {
+                container.innerHTML = "Feil ved henting av feed. Sjekk URL eller prøv igjen.";
+                console.error(err);
+            }
+        });
+    </script>
+</body>
+
+</html>

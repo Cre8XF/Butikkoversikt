@@ -47,23 +47,24 @@
 </head>
 
 <body>
-    <h2>Legg til ny kampanje</h2>
+    <h2>Legg til TradeTracker-kampanje</h2>
     <form id="kampanjeForm">
-        <label for="title">Tittel:</label>
-        <input type="text" id="title" required>
-
-        <label for="url">URL:</label>
+        <label for="store">Butikknavn (Alt-tekst):</label>
+        <input type="text" id="store" required>
+    
+        <label for="url">Affiliate URL:</label>
         <input type="url" id="url" required>
-
-        <label for="image">Bilde (valgfritt):</label>
-        <input type="text" id="image" placeholder="assets/images/kampanjer/...">
-
+    
+        <label for="image">Bilde-URL:</label>
+        <input type="url" id="image" required>
+    
         <label for="description">Beskrivelse (valgfritt):</label>
         <input type="text" id="description">
-
-        <label for="expiry">Utløpsdato (valgfritt):</label>
+    
+        <label for="expiry">Utløpsdato:</label>
         <input type="date" id="expiry">
 
+        
         <label for="category">Kategori:</label>
         <select id="category">
             <option>Elektronikk og data</option>
@@ -94,18 +95,22 @@
     <script>
         document.getElementById("kampanjeForm").addEventListener("submit", function (e) {
             e.preventDefault();
+
             const kampanje = {
-                title: document.getElementById("title").value,
+                title: "Kampanje hos " + document.getElementById("store").value,
+                image: document.getElementById("image").value,
                 url: document.getElementById("url").value,
-                image: document.getElementById("image").value || "",
-                description: document.getElementById("description").value || "",
+                description: document.getElementById("description").value || "Sjekk ukens kampanje!",
                 expiry: document.getElementById("expiry").value || "",
+                store: document.getElementById("store").value,
                 category: document.getElementById("category").value,
-                affiliate: false,
-                affiliateUrl: "",
+                affiliate: true,
+                affiliateUrl: document.getElementById("url").value,
+                ukensAnbefalte: false,
                 highlight: false,
                 priority: 0
             };
+
             document.getElementById("output").textContent = JSON.stringify(kampanje, null, 2);
         });
     </script>

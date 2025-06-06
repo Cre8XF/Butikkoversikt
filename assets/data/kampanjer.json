@@ -865,5 +865,17 @@
     "highlight": false,
     "priority": 0,
     "ukensAnbefalte": false
+  },
+  {
+    "title": "Kampanje hos Elektroimportøren",
+    "image": "https://ti.tradetracker.net/?c=28120&m=1320154&a=490058&t=custom",
+    "url": "https://tc.tradetracker.net/?c=28120&m=1320154&a=490058",
+    "description": "Sjekk kampanjetilbud fra Elektroimportøren.",
+    "expiry": "",
+    "store": "Elektroimportøren",
+    "category": "Hjem og interiør",
+    "ukensAnbefalte": true,
+    "priority": 0
   }
+  
 ]
