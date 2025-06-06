@@ -81,28 +81,32 @@
         <p class="lead">Få med deg de beste tilbudene og kampanjene akkurat nå!</p>
     </section>
 
-    <!-- Filtrering og sortering -->
-    <section class="container mb-5" aria-label="Filtrering og sortering av kampanjer">
-        <div class="row mb-4">
-            <div class="col-md-6">
-                <label for="filterKategori" class="form-label">Velg kategori:</label>
-                <select id="filterKategori" class="form-select">
-                    <option value="alle">Alle kategorier</option>
-                    <option value="Elektronikk">Elektronikk</option>
-                    <option value="Klær og mote">Klær og mote</option>
-                    <option value="Helse og skjønnhet">Helse og skjønnhet</option>
-                </select>
-            </div>
-            <div class="col-md-6">
-                <label for="sortering" class="form-label">Sorter etter:</label>
-                <select id="sortering" class="form-select">
-                    <option value="nyeste">Nyeste først</option>
-                    <option value="eldste">Eldste først</option>
-                    <option value="populaere">Mest populære</option>
-                </select>
-            </div>
-        </div>
-    </section>
+<!-- Filter-knapper -->
+<section class="container mb-4" aria-label="Filtrering av kampanjer">
+    <div id="kampanje-filter" class="d-flex flex-wrap gap-2 mb-3">
+        <button class="btn btn-outline-primary active" data-filter="alle">Alle</button>
+        <button class="btn btn-outline-primary" data-filter="Elektronikk og data">Elektronikk og data</button>
+        <button class="btn btn-outline-primary" data-filter="Helse og egenpleie">Helse og egenpleie</button>
+        <button class="btn btn-outline-primary" data-filter="Bøker og media">Bøker og media</button>
+        <button class="btn btn-outline-primary" data-filter="Digitale tjenester">Digitale tjenester</button>
+        <button class="btn btn-outline-primary" data-filter="Gaming og tilbehør">Gaming og tilbehør</button>
+        <button class="btn btn-outline-primary" data-filter="Gaver, gadgets og hobby">Gaver, gadgets og hobby</button>
+        <button class="btn btn-outline-primary" data-filter="Klær og mote">Klær og mote</button>
+        <button class="btn btn-outline-primary" data-filter="Mat og drikke">Mat og drikke</button>
+        <button class="btn btn-outline-primary" data-filter="Møbler og interiør">Møbler og interiør</button>
+        <button class="btn btn-outline-primary" data-filter="Reise og opplevelser">Reise og opplevelser</button>
+        <button class="btn btn-outline-primary" data-filter="Sport og fritid">Sport og fritid</button>
+        <button class="btn btn-outline-primary" data-filter="Underholdning og popkultur">Underholdning og popkultur</button>
+        <button class="btn btn-outline-primary" data-filter="Dyrebutikker">Dyrebutikker</button>
+        <button class="btn btn-outline-primary" data-filter="Barn og baby">Barn og baby</button>
+        <button class="btn btn-outline-primary" data-filter="Helse og skjønnhet">Helse og skjønnhet</button>
+        <button class="btn btn-outline-primary" data-filter="Hjem og interiør">Hjem og interiør</button>
+        <button class="btn btn-outline-primary" data-filter="Alt-mulig butikker">Alt-mulig butikker</button>
+        <button class="btn btn-outline-primary" data-filter="Bøker og underholdning">Bøker og underholdning</button>
+    </div>
+      
+</section>
+  
 
     
     <!-- Kampanjeoversikt -->

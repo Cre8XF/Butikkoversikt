@@ -1,20 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   let kampanjerData = [];
   const container = document.getElementById('kampanje-list');
-  const categoryFilter = document.getElementById('filterKategori');
-  const sortFilter = document.getElementById('sortering');
   const bannerContainer = document.getElementById('annonse-banner');
-
-  function populateCategories() {
-    const categories = [...new Set(kampanjerData.map(k => k.category))];
-    categoryFilter.innerHTML = '<option value="alle">Alle kategorier</option>';
-    categories.forEach(category => {
-      const option = document.createElement('option');
-      option.value = category;
-      option.textContent = category;
-      categoryFilter.appendChild(option);
-    });
-  }
+  const filterButtons = document.querySelectorAll('#kampanje-filter button');
 
   function renderKampanjer(kampanjer) {
     container.innerHTML = '';
@@ -41,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const store = document.createElement('p');
       store.className = 'text-dempet mt-3 small';
-      store.textContent = kampanje.store ? kampanje.store : 'Ukjent butikk';
+      store.textContent = kampanje.store || 'Ukjent butikk';
 
       const expiry = document.createElement('p');
       expiry.className = 'text-dempet small';
@@ -99,24 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
     `;
   }
 
-  function filterAndSort() {
-    let filteredKampanjer = [...kampanjerData];
-
-    const selectedCategory = categoryFilter.value;
-    if (selectedCategory !== 'alle') {
-      filteredKampanjer = filteredKampanjer.filter(kampanje => kampanje.category === selectedCategory);
-    }
-
-    const sortOrder = sortFilter.value;
-    if (sortOrder === 'nyeste') {
-      filteredKampanjer.sort((a, b) => new Date(b.expiry) - new Date(a.expiry));
-    } else if (sortOrder === 'eldste') {
-      filteredKampanjer.sort((a, b) => new Date(a.expiry) - new Date(b.expiry));
-    }
-
-    renderKampanjer(filteredKampanjer);
-  }
-
   fetch('assets/data/kampanjer.json')
     .then(response => {
       if (!response.ok) {
@@ -126,8 +96,19 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     .then(kampanjer => {
       kampanjerData = kampanjer;
-      populateCategories();
       renderKampanjer(kampanjerData);
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const selected = button.dataset.filter;
+
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+
+          const filtered = selected === 'alle' ? kampanjerData : kampanjerData.filter(k => k.category === selected);
+          renderKampanjer(filtered);
+        });
+      });
     })
     .catch(error => {
       console.error('Feil ved lasting av kampanjer:', error);
@@ -138,7 +119,4 @@ document.addEventListener('DOMContentLoaded', function () {
     .then(response => response.json())
     .then(renderAnnonser)
     .catch(error => console.error('Feil ved lasting av annonser:', error));
-
-  categoryFilter.addEventListener('change', filterAndSort);
-  sortFilter.addEventListener('change', filterAndSort);
 });

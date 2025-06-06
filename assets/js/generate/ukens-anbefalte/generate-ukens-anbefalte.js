@@ -32,8 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
       fetch('assets/data/kampanjer.json')
         .then(response => response.json())
         .then(kampanjer => {
-          kampanjer.forEach(kampanje => {
-            const card = document.createElement('div');
+          kampanjer
+  .filter(k => k.ukensAnbefalte === true)
+  .forEach(kampanje => {
+    const card = document.createElement('div');
             card.className = 'col';
             card.innerHTML = `
               <div class='card h-100 shadow-sm'>

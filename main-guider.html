@@ -47,11 +47,27 @@
   <main class="container py-5">
     <h1 class="text-center mb-4">Guider, Tips og Råd</h1>
 
-  <!-- Seksjon: Guider -->
+  <!-- Seksjon: Guider med filter -->
   <section class="mb-5" aria-label="Våre guider">
     <h2 class="mb-3">Våre guider</h2>
+  
+    <div id="guide-filter" class="d-flex flex-wrap gap-2 mb-4">
+      <button class="btn btn-outline-primary active" data-filter="alle">Alle</button>
+      <button class="btn btn-outline-primary" data-filter="Trening">Trening</button>
+      <button class="btn btn-outline-primary" data-filter="Gaming">Gaming</button>
+      <button class="btn btn-outline-primary" data-filter="Helse">Helse</button>
+      <button class="btn btn-outline-primary" data-filter="Teknologi">Teknologi</button>
+      <button class="btn btn-outline-primary" data-filter="Interiør">Interiør</button>
+      <button class="btn btn-outline-primary" data-filter="Hverdagsliv">Hverdagsliv</button>
+      <button class="btn btn-outline-primary" data-filter="Smarthus">Smarthus</button>
+      <button class="btn btn-outline-primary" data-filter="Organisering">Organisering</button>
+      <button class="btn btn-outline-primary" data-filter="Shopping og gadgets">Shopping og gadgets</button>
+      <button class="btn btn-outline-primary" data-filter="Økonomi">Økonomi</button>
+      <button class="btn btn-outline-primary" data-filter="Bolig og oppussing">Bolig og oppussing</button>
+    </div>
+  
     <div class="row" id="guider-container">
-      <!-- Guider genereres automatisk fra guider.json -->
+      <!-- Guider vises her dynamisk -->
     </div>
   </section>
 
@@ -86,6 +102,7 @@
   <script src="assets/js/effects/menu-toggle.js"></script>
   <script src="assets/js/effects/theme-toggle.js"></script>
   <script src="assets/js/generate/guider/generate-guider.js" defer></script>
+  <script src="/assets/js/generate/guider/generate-guider-filter.js" defer></script>
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/header.js" defer></script>
   <script src="assets/js/footer.js" defer></script>
