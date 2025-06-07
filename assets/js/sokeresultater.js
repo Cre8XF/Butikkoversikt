@@ -46,7 +46,14 @@ fetch("assets/data/butikker.json")
 
       link.innerHTML = `
         <div class="store-card-img">
-          <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" />
+         <img 
+  src="${butikk.image}" 
+  alt="${butikk.alt || butikk.name}" 
+  width="400" 
+  height="250" 
+  loading="lazy" 
+  style="object-fit: contain;">
+
         </div>
         <div class="store-card-body">
           <h4>${butikk.name}</h4>

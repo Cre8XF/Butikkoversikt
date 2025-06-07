@@ -81,7 +81,15 @@ document.addEventListener("DOMContentLoaded", async () => {
                 card.className = "col-lg-3 col-md-4 col-sm-6 mb-4";
                 card.innerHTML = `
   <div class="card shadow-sm h-100 hover-zoom">
-    <img src="${butikk.image}" class="card-img-top p-2" alt="${butikk.alt}">
+    <img 
+  src="${butikk.image}" 
+  class="card-img-top p-2" 
+  alt="${butikk.alt}" 
+  width="400" 
+  height="250" 
+  loading="lazy" 
+  style="object-fit: contain;">
+
     <div class="card-body d-flex flex-column">
       <h5 class="card-title mb-2">${butikk.name}</h5>
       <p class="card-text mb-3">${butikk.description}</p>

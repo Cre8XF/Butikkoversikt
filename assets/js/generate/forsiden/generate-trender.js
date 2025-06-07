@@ -17,7 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         col.innerHTML = `
           <div class="card category-card h-100 border-0 shadow-sm">
-            <img src="${butikk.image}" class="card-img-top" alt="${butikk.name}" loading="lazy">
+            <img 
+  src="${butikk.image}" 
+  class="card-img-top" 
+  alt="${butikk.name}" 
+  width="400" 
+  height="250" 
+  loading="lazy" 
+  style="object-fit: contain;">
+
             <div class="card-body text-center d-flex flex-column">
               <h5 class="card-title">${butikk.name}</h5>
               <p>${butikk.description}</p>

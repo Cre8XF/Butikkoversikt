@@ -13,7 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
           card.className = 'col';
           card.innerHTML = `
           <div class='card h-100 shadow-sm'>
-            <img src='${butikk.image}' class='card-img-top' alt='${butikk.alt}'>
+            <img 
+  src='${butikk.image}' 
+  class='card-img-top' 
+  alt='${butikk.alt}' 
+  width="400" 
+  height="250" 
+  loading="lazy" 
+  style="object-fit: contain;">
+
             <div class='card-body'>
               <h5 class='card-title'>${butikk.name}</h5>
               <p class='card-text'>${butikk.description}</p>
@@ -39,7 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
             card.className = 'col';
             card.innerHTML = `
               <div class='card h-100 shadow-sm'>
-                <img src='${kampanje.image}' class='card-img-top' alt='${kampanje.alt}'>
+                <img 
+  src='${kampanje.image}' 
+  class='card-img-top' 
+  alt='${kampanje.alt}' 
+  width="400" 
+  height="250" 
+  loading="lazy" 
+  style="object-fit: contain;">
+
                 <div class='card-body'>
                   <h5 class='card-title'>${kampanje.title}</h5>
                   <p class='card-text'>${kampanje.description}</p>
@@ -68,7 +84,15 @@ document.addEventListener('DOMContentLoaded', () => {
             item.className = index === 0 ? 'carousel-item active' : 'carousel-item';
             item.innerHTML = `
               <a href='${annonse.url ? annonse.url : '#'}' target='_blank'>
-                <img src='${annonse.image}' class='d-block w-100' alt='${annonse.alt}'>
+               <img 
+  src='${annonse.image}' 
+  class='d-block w-100' 
+  alt='${annonse.alt}' 
+  width="800" 
+  height="300" 
+  loading="lazy" 
+  style="object-fit: contain;">
+
               </a>
             `;
             innerDiv.appendChild(item);

@@ -76,12 +76,19 @@ document.addEventListener("DOMContentLoaded", () => {
     card.className = "card mb-3 p-3";
     card.innerHTML = `
       <div class="d-flex align-items-center gap-3">
-        <img src="${b.image}" alt="${b.name}" style="width: 60px; height: 60px; object-fit: contain;">
-        <div>
-          <h6 class="mb-1">${b.name}</h6>
-          <p class="mb-0 text-muted small">${b.description}</p>
-        </div>
-      </div>
+  <img 
+    src="${b.image}" 
+    alt="${b.name}" 
+    width="60" 
+    height="60" 
+    loading="lazy" 
+    style="object-fit: contain;">
+  <div>
+    <h6 class="mb-1">${b.name}</h6>
+    <p class="mb-0 text-muted small">${b.description}</p>
+  </div>
+</div>
+
     `;
     resultsContainer.appendChild(card);
   }

@@ -127,7 +127,14 @@ badges.forEach(badge => {
         const a = document.createElement("a");
         a.href = ad.link;
         a.target = "_blank";
-        a.innerHTML = `<img src="${ad.image}" alt="${ad.alt}" loading="lazy" />`;
+        a.innerHTML = `<img 
+        src="${ad.image}" 
+        alt="${ad.alt}" 
+        width="400" 
+        height="250" 
+        loading="lazy" 
+        style="object-fit: contain;">`;
+      
         a.dataset.adId = ad.id;
 
         a.addEventListener("click", () => {

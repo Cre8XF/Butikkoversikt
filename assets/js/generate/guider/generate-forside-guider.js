@@ -14,13 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
         card.className = "guide-card d-block h-100";
 
         card.innerHTML = `
-          <div class="guide-img">
-            <img src="${guide.image}" alt="${guide.title}" />
-          </div>
-          <div class="guide-card-body">
-            <h4>${guide.title}</h4>
-            <p>${guide.description}</p>
-          </div>
+        <div class="guide-img">
+          <img 
+            src="${guide.image}" 
+            alt="${guide.title}" 
+            width="400" 
+            height="250" 
+            loading="lazy" 
+            style="object-fit: contain; width: 100%; height: 160px; background-color: #fff; border-radius: 0.5rem 0.5rem 0 0;">
+        </div>
+        <div class="guide-card-body">
+          <h4>${guide.title}</h4>
+          <p>${guide.description}</p>
+        </div>      
         `;
 
         col.appendChild(card);

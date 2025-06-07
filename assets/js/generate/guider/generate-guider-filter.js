@@ -34,7 +34,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       col.innerHTML = `
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/${guide.image}" class="guide-img" alt="${guide.alt || guide.title}" loading="lazy">
+        <img 
+  src="/${guide.image}" 
+  class="guide-img" 
+  alt="${guide.alt || guide.title}" 
+  width="400" 
+  height="250" 
+  loading="lazy" 
+  style="object-fit: contain; width: 100%; height: 160px; background-color: #fff; border-radius: 0.5rem 0.5rem 0 0;">
+
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">${guide.title}</h5>
             <p class="card-text">${guide.description}</p>

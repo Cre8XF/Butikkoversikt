@@ -10,12 +10,21 @@ document.addEventListener("DOMContentLoaded", function () {
           div.className = "kampanje-kort";
           div.innerHTML = `
             <a href="${kampanje.url}" class="text-decoration-none">
-              <div class="kort-bilde"><img src="${kampanje.image}" alt="${kampanje.title}" loading="lazy"></div>
-              <div class="kort-innhold">
-                <h3>${kampanje.title}</h3>
-                <p>${kampanje.description}</p>
-              </div>
-            </a>
+  <div class="kort-bilde">
+    <img 
+      src="${kampanje.image}" 
+      alt="${kampanje.title}" 
+      width="400" 
+      height="250" 
+      loading="lazy" 
+      style="object-fit: contain; width: 100%; height: 160px; background: #fff; border-radius: 0.5rem 0.5rem 0 0;">
+  </div>
+  <div class="kort-innhold">
+    <h3>${kampanje.title}</h3>
+    <p>${kampanje.description}</p>
+  </div>
+</a>
+
           `;
           kampanjeContainer.appendChild(div);
         });
@@ -33,12 +42,21 @@ document.addEventListener("DOMContentLoaded", function () {
           div.className = "guide-kort";
           div.innerHTML = `
             <a href="${guide.url}" class="text-decoration-none">
-              <div class="kort-bilde"><img src="${guide.image}" alt="${guide.title}" loading="lazy"></div>
-              <div class="kort-innhold">
-                <h3>${guide.title}</h3>
-                <p>${guide.description}</p>
-              </div>
-            </a>
+  <div class="kort-bilde">
+    <img 
+      src="${guide.image}" 
+      alt="${guide.title}" 
+      width="400" 
+      height="250" 
+      loading="lazy" 
+      style="object-fit: contain; width: 100%; height: 160px; background: #fff; border-radius: 0.5rem 0.5rem 0 0;">
+  </div>
+  <div class="kort-innhold">
+    <h3>${guide.title}</h3>
+    <p>${guide.description}</p>
+  </div>
+</a>
+
           `;
           guiderContainer.appendChild(div);
         });
@@ -56,12 +74,21 @@ document.addEventListener("DOMContentLoaded", function () {
           div.className = "annonse-kort";
           div.innerHTML = `
             <a href="${annonse.url}" class="text-decoration-none" target="_blank" rel="noopener">
-              <div class="kort-bilde"><img src="${annonse.image}" alt="${annonse.title}" loading="lazy"></div>
-              <div class="kort-innhold">
-                <h3>${annonse.title}</h3>
-                <p>${annonse.description}</p>
-              </div>
-            </a>
+  <div class="kort-bilde">
+    <img 
+      src="${annonse.image}" 
+      alt="${annonse.title}" 
+      width="400" 
+      height="250" 
+      loading="lazy" 
+      style="object-fit: contain; width: 100%; height: 160px; background: #fff; border-radius: 0.5rem 0.5rem 0 0;">
+  </div>
+  <div class="kort-innhold">
+    <h3>${annonse.title}</h3>
+    <p>${annonse.description}</p>
+  </div>
+</a>
+
           `;
           annonseContainer.appendChild(div);
         });

@@ -73,7 +73,14 @@ img.height = 250;
           ${annonser.map((annonse, index) => `
             <div class="carousel-item ${index === 0 ? 'active' : ''}">
               <a href="${annonse.url}" target="_blank">
-               <img src="${annonse.image}" class="d-block w-100" alt="${annonse.alt}" width="800" height="300">
+             <img 
+  src="${annonse.image}" 
+  class="d-block w-100" 
+  alt="${annonse.alt}" 
+  width="800" 
+  height="300" 
+  loading="lazy">
+
 
               </a>
             </div>

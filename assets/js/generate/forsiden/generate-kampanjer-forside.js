@@ -29,9 +29,14 @@ if (kampanje) {
   card.className = "promo-card fade-in";
 
   const img = document.createElement("img");
-  img.src = kampanje.image;
-  img.alt = kampanje.title;
-  img.className = "promo-image";
+img.src = kampanje.image;
+img.alt = kampanje.title;
+img.className = "promo-image";
+img.width = 400;
+img.height = 250;
+img.loading = "lazy";
+img.style.objectFit = "contain";
+
 
   const textDiv = document.createElement("div");
   textDiv.className = "promo-text";

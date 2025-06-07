@@ -22,11 +22,13 @@ fetch("assets/data/kampanjer-forside.json")
       card.className = "promo-card fade-in";
 
       const img = document.createElement("img");
-      img.src = kampanje.image;
-      img.alt = kampanje.title;
-      img.className = "promo-image";
-      img.width = 400;
-      img.height = 250;
+img.src = kampanje.image;
+img.alt = kampanje.title;
+img.className = "promo-image";
+img.width = 400;
+img.height = 250;
+img.loading = "lazy"; // legg til denne
+
 
 
       const textDiv = document.createElement("div");
