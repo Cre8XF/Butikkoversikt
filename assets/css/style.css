@@ -1,8 +1,6 @@
 /* Grunnleggende oppsett og variabler */
 @import url('base.css');
-@import url('theme-marine.css');
-@import url('theme-nordic.css');
-@import url('theme-soft.css');
+@import url('theme-tøff.css');
 
 /* Layout og struktur */
 @import url('layout-base.css');

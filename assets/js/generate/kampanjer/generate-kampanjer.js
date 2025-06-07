@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
       img.src = kampanje.image;
       img.alt = kampanje.title;
       img.className = 'card-img-top';
+img.width = 400;
+img.height = 250;
+
 
       const cardBody = document.createElement('div');
       cardBody.className = 'card-body';
@@ -70,7 +73,8 @@ document.addEventListener('DOMContentLoaded', function () {
           ${annonser.map((annonse, index) => `
             <div class="carousel-item ${index === 0 ? 'active' : ''}">
               <a href="${annonse.url}" target="_blank">
-                <img src="${annonse.image}" class="d-block w-100" alt="${annonse.alt}">
+               <img src="${annonse.image}" class="d-block w-100" alt="${annonse.alt}" width="800" height="300">
+
               </a>
             </div>
           `).join('')}

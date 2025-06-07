@@ -156,3 +156,8 @@
   border-radius: 8px;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .butikkoversikt-logo {
+    height: 48px;
+  }
+}

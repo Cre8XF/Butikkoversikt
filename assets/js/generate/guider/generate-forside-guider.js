@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.className = "guide-card d-block h-100";
 
         card.innerHTML = `
-          <div class="guide-card-img">
+          <div class="guide-img">
             <img src="${guide.image}" alt="${guide.title}" />
           </div>
           <div class="guide-card-body">

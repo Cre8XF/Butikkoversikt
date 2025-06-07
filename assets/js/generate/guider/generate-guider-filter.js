@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       col.innerHTML = `
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/${guide.image}" class="card-img-top" alt="${guide.alt || guide.title}" loading="lazy">
+          <img src="/${guide.image}" class="guide-img" alt="${guide.alt || guide.title}" loading="lazy">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">${guide.title}</h5>
             <p class="card-text">${guide.description}</p>

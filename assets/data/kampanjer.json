@@ -28,10 +28,10 @@
     "ukensAnbefalte": false
   },
   {
-    "title": "",
-    "description": "",
+    "title": "Ukens tilbud hos Elkjøp",
+    "description": "Her finner du denne ukens tilbud. Vi har et stort utvalg av bl.a. TV, data, gaming, mobil, hvitevarer og husholdningsprodukter. Du kan handle i butikk eller vår nettbutikk og få din ordre sendt til din valgte adresse, eller reservere varen i butikk og hente varen i valgt varehus etter bare 30 min.",
     "image": "assets/images/butikker-webp/elkjøp.webp",
-    "url": "https://www.elkjop.no",
+    "url": "https://www.elkjop.no/kampanje/ukens-tilbud",
     "store": "elkjøp",
     "expiry": "",
     "category": "Elektronikk og data",
@@ -39,13 +39,13 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": true
   },
   {
-    "title": "",
-    "description": "",
+    "title": "Tilbud hos HiFi Klubben",
+    "description": "Her finner du alle våre aktuelle tilbud samt andre produkter til skarpe priser. Utforsk de mange godbitene – kanskje finner du akkurat det du har drømt om.",
     "image": "assets/images/butikker-webp/hifiklubben.webp",
-    "url": "https://www.hifiklubben.no/",
+    "url": "https://www.hifiklubben.no/tilbud/",
     "store": "hifiklubben",
     "expiry": "",
     "category": "Elektronikk og data",
@@ -875,6 +875,20 @@
     "store": "Elektroimportøren",
     "category": "Hjem og interiør",
     "ukensAnbefalte": true,
+    "priority": 0
+  },
+  {
+    "title": "Kampanje hos Superkul",
+    "image": "https://ti.tradetracker.net/?c=12793&m=540099&a=490058&r=&t=custom",
+    "url": "https://www.superkul.no/tt/?tt=12793_540099_490058_&r=",
+    "description": "Sjekk ukens kampanje!",
+    "expiry": "",
+    "store": "Superkul",
+    "category": "Klær og mote",
+    "affiliate": true,
+    "affiliateUrl": "https://www.superkul.no/tt/?tt=12793_540099_490058_&r=",
+    "ukensAnbefalte": true,
+    "highlight": false,
     "priority": 0
   }
   

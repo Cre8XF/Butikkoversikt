@@ -81,12 +81,6 @@ h6 {
   width: auto;
   transition: all 0.3s ease-in-out;
 }
-
-@media (max-width: 768px) {
-  .butikkoversikt-logo {
-    height: 48px;
-  }
-}
 body {
   background-color: var(--bg-body);
   color: var(--text-base);

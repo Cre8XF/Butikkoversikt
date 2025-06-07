@@ -169,7 +169,7 @@ function visButikker(butikker) {
 
     card.innerHTML = `
   <div class="store-card-img">
-    <img src="${butikk.image}" alt="${butikk.alt || butikk.name}">
+   <img src="${butikk.image}" alt="${butikk.alt || butikk.name}" width="400" height="250" loading="lazy">
   </div>
   <div class="store-card-body">
     <h4>${butikk.name}</h4>

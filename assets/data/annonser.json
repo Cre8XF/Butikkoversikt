@@ -1,37 +1,23 @@
 [
   {
-    "image": "https://via.placeholder.com/728x90?text=Annonse+1",
-    "url": "https://example.com/produkt-1",
-    "alt": "Produkt 1 - Kjøp nå og spar!",
-    "title": "Produkt 1",
-    "description": "Kjøp nå og spar stort!"
+    "image": "https://ti.tradetracker.net/?c=12793&m=540101&a=490058&r=&t=custom",
+    "url": "https://ti.tradetracker.net/?c=12793&m=569296&a=490058&r=&t=custom",
+    "alt": "Superkul.no - Kjøp nå!",
+    "title": "Superkul.no",
+    "description": "Besøk Superkul.no for fantastiske tilbud på klær, sko og tilbehør. Kjøp nå og spar stort!"
   },
   {
-    "image": "https://via.placeholder.com/728x90?text=Annonse+2",
-    "url": "https://example.com/produkt-2",
-    "alt": "Produkt 2 - Begrenset tilbud!",
-    "title": "Produkt 2",
-    "description": "Begrenset tilbud, få den nå!"
+    "image": "https://ti.tradetracker.net/?c=19888&m=1984013&a=490058&r=&t=custom",
+    "url": "https://tc.tradetracker.net/?c=19888&m=1984013&a=490058&r=&u=",
+    "alt": "Kjapp.no - Rask levering!",
+    "title": "Ali Express",
+    "description": "Ali Express tilbyr rask levering på et stort utvalg av produkter. Besøk oss i dag!"
   },
   {
-    "image": "https://via.placeholder.com/728x90?text=Annonse+3",
-    "url": "https://example.com/produkt-3",
-    "alt": "Produkt 3 - Nyhet!",
-    "title": "Produkt 3",
-    "description": "Nyhet i sortimentet, sjekk ut nå!"
-  },
-  {
-    "image": "assets/images/annonser/sommer-tilbud.png",
-    "alt": "Sommer Tilbud",
-    "title": "Sommer Tilbud - 30% rabatt",
-    "description": "Spar stort på sommerens heteste produkter. Gjelder kun i en begrenset periode.",
-    "url": "https://butikkoversikt.no/tilbud/sommer-tilbud"
-  },
-  {
-    "image": "assets/images/annonser/nyhetsbrev-kampanje.png",
-    "alt": "Nyhetsbrev Kampanje",
-    "title": "Få eksklusive tilbud først",
-    "description": "Meld deg på vårt nyhetsbrev og få de beste tilbudene før alle andre.",
-    "url": "https://butikkoversikt.no/nyhetsbrev"
+    "image": "https://deals.lux-case.no/i?c=10526&m=854377&a=490058&r=&t=custom",
+    "url": "https://deals.lux-case.no/c?c=10526&m=854377&a=490058&r=&u=",
+    "alt": "Lux Case - Besøk oss!",
+    "title": "Kjøp billig tilbehør til mobilen din i dag - enkelt og trygt på nettet.",
+    "description": "Lux Case tilbyr et bredt utvalg av mobiltilbehør til lave priser. Besøk oss for gode tilbud!"
   }
 ]
