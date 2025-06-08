@@ -160,3 +160,10 @@
     height: 48px;
   }
 }
+@media (max-width: 768px) {
+  .fade-in {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
