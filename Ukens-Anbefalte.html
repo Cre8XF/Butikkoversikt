@@ -30,24 +30,31 @@
   <!-- Favicon -->
   <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
 
-  <!-- 🔁 Preconnect for ytelse -->
+  <!-- 🔁 Preconnect -->
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
 
-  <!-- 📦 Preload viktig bilde -->
+  <!-- 📦 Preload viktige bilder -->
   <link rel="preload" as="image" href="/assets/images/hero/butikkoversikt.webp" type="image/webp" />
-  <!-- Legg til flere preload-bilder her om nødvendig -->
+  <link rel="preload" as="image" href="/assets/images/kampanjer/fjellsport.webp" type="image/webp" />
 
-  <!-- 🎨 CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- 🎨 CSS – kritisk først, resten utsettes -->
   <link rel="stylesheet" href="/assets/css/theme-tøff.css" />
   <link rel="stylesheet" href="/assets/css/style.css" />
-  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css" />
 
-  <!-- 🆗 Font optimalisering (hvis du bruker Google Fonts direkte) -->
+  <!-- Utsatt lasting av ikke-kritisk CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" media="print"
+    onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print"
+    onload="this.media='all'" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css" media="print"
+    onload="this.media='all'" />
+  <link rel="stylesheet" href="/assets/css/footer.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/assets/css/global-overrides.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/assets/css/category-card.css" media="print" onload="this.media='all'" />
+
+  <!-- 🆗 Google Fonts (hvis aktuelt) -->
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap"> -->
 </head>
 
