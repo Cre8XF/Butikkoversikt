@@ -1,79 +1,123 @@
-fetch("assets/data/kampanjer-forside.json")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("Nettverksfeil: " + response.status);
-    }
-    return response.json();
-  })
-  .then((kampanjer) => {
-    const kampanjeContainer = document.getElementById("kampanje-seksjon");
-    if (!kampanjeContainer) {
-      console.error("Fant ikke elementet med ID 'kampanje-seksjon'");
-      return;
-    }
+document.addEventListener('DOMContentLoaded', function () {
+  let kampanjerData = [];
+  const container = document.getElementById('kampanje-list');
+  const bannerContainer = document.getElementById('annonse-banner');
+  const filterButtons = document.querySelectorAll('#kampanje-filter button');
 
-    kampanjer.forEach((kampanje) => {
-      if (!kampanje.title || !kampanje.image || !kampanje.url) return;
+  function renderKampanjer(kampanjer) {
+    container.innerHTML = '';
 
-      const col = document.createElement("div");
-      col.className = "col-md-6 col-lg-4";
+    kampanjer.forEach(kampanje => {
+      const col = document.createElement('div');
+      col.className = 'col';
 
-      const card = document.createElement("div");
-      card.className = "promo-card fade-in";
+      const card = document.createElement('div');
+      card.className = 'card store-card h-100 d-flex flex-column text-center fade-in';
+      card.style.transition = 'all 0.3s ease-in-out';
 
-      const img = document.createElement("img");
-img.src = kampanje.image;
-img.alt = kampanje.title;
-img.className = "promo-image";
-img.width = 400;
-img.height = 250;
-img.loading = "lazy"; // legg til denne
+      const img = document.createElement('img');
+      img.src = kampanje.image;
+      img.alt = kampanje.title;
+      img.className = 'card-img-top p-3';
+      img.loading = 'lazy';
+      img.width = 200;
+      img.height = 120;
+      img.style.objectFit = 'contain';
 
+      const cardBody = document.createElement('div');
+      cardBody.className = 'card-body d-flex flex-column justify-content-between';
 
-
-      const textDiv = document.createElement("div");
-      textDiv.className = "promo-text";
-
-      const title = document.createElement("div");
-      title.className = "promo-title";
+      const content = document.createElement('div');
+      const title = document.createElement('h6');
+      title.className = 'card-title';
       title.textContent = kampanje.title;
 
-      const desc = document.createElement("div");
-      desc.className = "promo-subtext";
+      const desc = document.createElement('p');
+      desc.className = 'card-text small text-muted';
       desc.textContent = kampanje.description || "";
 
-      const btn = document.createElement("a");
-      btn.href = kampanje.url;
-      btn.target = "_blank";
-      btn.rel = "noopener";
-      btn.className = "btn btn-sm btn-outline-primary mt-2";
-      btn.textContent = "Se tilbud";
+      content.appendChild(title);
+      content.appendChild(desc);
 
-      textDiv.appendChild(title);
-      textDiv.appendChild(desc);
-      textDiv.appendChild(btn);
+      const button = document.createElement('a');
+      button.href = kampanje.url;
+      button.target = '_blank';
+      button.rel = 'noopener';
+      button.className = 'btn btn-primary mt-3';
+      button.textContent = 'Se tilbud';
+
+      cardBody.appendChild(content);
+      cardBody.appendChild(button);
       card.appendChild(img);
-      card.appendChild(textDiv);
+      card.appendChild(cardBody);
       col.appendChild(card);
-      kampanjeContainer.appendChild(col);
+      container.appendChild(col);
+
+      // Fade-in effekt
+      setTimeout(() => {
+        card.style.opacity = 1;
+      }, 100);
+    });
+  }
+
+  function renderAnnonser(annonser) {
+    bannerContainer.innerHTML = `
+      <div id="annonseCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          ${annonser.map((annonse, index) => `
+            <div class="carousel-item ${index === 0 ? 'active' : ''}">
+              <a href="${annonse.url}" target="_blank" rel="noopener">
+                <img 
+                  src="${annonse.image}" 
+                  class="d-block w-100" 
+                  alt="${annonse.alt}" 
+                  width="800" 
+                  height="300" 
+                  loading="lazy">
+              </a>
+            </div>
+          `).join('')}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#annonseCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#annonseCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    `;
+  }
+
+  fetch('assets/data/kampanjer.json')
+    .then(response => {
+      if (!response.ok) throw new Error('Feil ved lasting av kampanjer.json');
+      return response.json();
+    })
+    .then(kampanjer => {
+      kampanjerData = kampanjer;
+      renderKampanjer(kampanjerData);
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const selected = button.dataset.filter;
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          const filtered = selected === 'alle'
+            ? kampanjerData
+            : kampanjerData.filter(k => k.category === selected);
+          renderKampanjer(filtered);
+        });
+      });
+    })
+    .catch(error => {
+      console.error('Feil ved lasting av kampanjer:', error);
+      container.innerHTML = '<p>Kunne ikke laste kampanjer. Prøv igjen senere.</p>';
     });
 
-    // Trigger fade-in with animation
-    setTimeout(() => {
-      document.querySelectorAll(".fade-in").forEach((el) => {
-        el.style.opacity = "1";
-        el.style.transform = "translateY(0)";
-      });
-    }, 50);
-
-    // "Se alle kampanjer"-knapp
-    const seAlleWrapper = document.createElement("div");
-    seAlleWrapper.className = "text-center mt-4";
-    seAlleWrapper.innerHTML = `
-      <a href="kampanjer.html" class="btn btn-outline-primary">Se alle kampanjer</a>
-    `;
-    kampanjeContainer.parentElement.appendChild(seAlleWrapper);
-  })
-  .catch((error) => {
-    console.error("Feil ved lasting av kampanjer-forside:", error);
-  });
+  fetch('assets/data/annonser.json')
+    .then(response => response.json())
+    .then(renderAnnonser)
+    .catch(error => console.error('Feil ved lasting av annonser:', error));
+});

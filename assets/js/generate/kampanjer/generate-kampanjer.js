@@ -12,57 +12,51 @@ document.addEventListener('DOMContentLoaded', function () {
       col.className = 'col';
 
       const card = document.createElement('div');
-      card.className = 'card h-100 shadow-sm fade-in';
+      card.className = 'card store-card h-100 d-flex flex-column text-center fade-in';
       card.style.transition = 'all 0.3s ease-in-out';
 
       const img = document.createElement('img');
       img.src = kampanje.image;
       img.alt = kampanje.title;
-      img.className = 'card-img-top';
-img.width = 400;
-img.height = 250;
-
+      img.className = 'card-img-top p-3';
+      img.loading = 'lazy';
+      img.width = 200;
+      img.height = 120;
+      img.style.objectFit = 'contain';
 
       const cardBody = document.createElement('div');
-      cardBody.className = 'card-body';
+      cardBody.className = 'card-body d-flex flex-column justify-content-between';
 
-      const title = document.createElement('h5');
+      const content = document.createElement('div');
+      const title = document.createElement('h6');
       title.className = 'card-title';
       title.textContent = kampanje.title;
 
-      const store = document.createElement('p');
-      store.className = 'text-dempet mt-3 small';
-      store.textContent = kampanje.store || 'Ukjent butikk';
+      const desc = document.createElement('p');
+      desc.className = 'card-text small text-muted';
+      desc.textContent = kampanje.description || "";
 
-      const expiry = document.createElement('p');
-      expiry.className = 'text-dempet small';
-      expiry.textContent = kampanje.expiry ? `Gyldig til: ${kampanje.expiry}` : 'Ukjent utløpsdato';
-
-      const description = document.createElement('p');
-      description.className = 'card-text';
-      description.textContent = kampanje.description;
+      content.appendChild(title);
+      content.appendChild(desc);
 
       const button = document.createElement('a');
       button.href = kampanje.url;
       button.target = '_blank';
-      button.className = 'btn btn-primary mt-2';
+      button.rel = 'noopener';
+      button.className = 'btn btn-primary mt-3';
       button.textContent = 'Se tilbud';
 
-      cardBody.appendChild(title);
-      cardBody.appendChild(store);
-      cardBody.appendChild(expiry);
-      cardBody.appendChild(description);
+      cardBody.appendChild(content);
       cardBody.appendChild(button);
-
       card.appendChild(img);
       card.appendChild(cardBody);
       col.appendChild(card);
+      container.appendChild(col);
 
+      // Fade-in
       setTimeout(() => {
         card.style.opacity = 1;
       }, 100);
-
-      container.appendChild(col);
     });
   }
 
@@ -72,16 +66,14 @@ img.height = 250;
         <div class="carousel-inner">
           ${annonser.map((annonse, index) => `
             <div class="carousel-item ${index === 0 ? 'active' : ''}">
-              <a href="${annonse.url}" target="_blank">
-             <img 
-  src="${annonse.image}" 
-  class="d-block w-100" 
-  alt="${annonse.alt}" 
-  width="800" 
-  height="300" 
-  loading="lazy">
-
-
+              <a href="${annonse.url}" target="_blank" rel="noopener">
+                <img 
+                  src="${annonse.image}" 
+                  class="d-block w-100" 
+                  alt="${annonse.alt}" 
+                  width="800" 
+                  height="300" 
+                  loading="lazy">
               </a>
             </div>
           `).join('')}
