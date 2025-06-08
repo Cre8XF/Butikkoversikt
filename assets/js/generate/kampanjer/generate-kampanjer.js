@@ -11,33 +11,38 @@ document.addEventListener('DOMContentLoaded', function () {
       const col = document.createElement('div');
       col.className = 'col';
 
-      const card = document.createElement('div');
-      card.className = 'card category-card h-100 text-center fade-in';
+      const card = document.createElement('a');
+      card.href = kampanje.url;
+      card.target = "_blank";
+      card.rel = "noopener";
+      card.className = 'store-card text-decoration-none fade-in';
+
+      const imageWrapper = document.createElement('div');
+      imageWrapper.className = 'store-card-img';
 
       const img = document.createElement('img');
       img.src = kampanje.image;
       img.alt = kampanje.title;
-      img.className = 'card-img-top p-3';
+      img.width = 400;
+      img.height = 250;
       img.loading = 'lazy';
-      img.width = 200;
-      img.height = 120;
-      img.style.objectFit = 'contain';
 
-      const cardBody = document.createElement('div');
-      cardBody.className = 'card-body';
+      imageWrapper.appendChild(img);
 
-      const title = document.createElement('h6');
-      title.className = 'card-title';
+      const body = document.createElement('div');
+      body.className = 'store-card-body';
+
+      const title = document.createElement('h4');
       title.textContent = kampanje.title;
 
       const desc = document.createElement('p');
-      desc.className = 'card-text small text-muted';
       desc.textContent = kampanje.description || "";
 
-      cardBody.appendChild(title);
-      cardBody.appendChild(desc);
-      card.appendChild(img);
-      card.appendChild(cardBody);
+      body.appendChild(title);
+      body.appendChild(desc);
+
+      card.appendChild(imageWrapper);
+      card.appendChild(body);
       col.appendChild(card);
       container.appendChild(col);
 
