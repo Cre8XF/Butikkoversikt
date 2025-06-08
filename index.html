@@ -71,6 +71,18 @@
       max-width: 700px;
       margin: 1rem auto;
     }
+    .hero-lcp-optimalisert {
+  font-size: 1.25rem;
+  color: #444;
+  max-width: 700px;
+  margin: 1rem auto;
+  font-family: system-ui, sans-serif;
+}
+@media (min-width: 768px) {
+  .hero-lcp-optimalisert {
+    font-size: 1.5rem;
+  }
+}
 
     /* 🔹 Critical CSS end */
   </style>
@@ -85,30 +97,35 @@
     <!-- Hero-seksjon -->
     <section class="hero-banner text-center p-5 mb-5">
       <h1>Finn nettbutikker du kan stole på</h1>
-      <p class="lead text-dempet">Utforsk norske og internasjonale butikker – med filtrering, guider og ukens
-        anbefalinger</p>
-
+    
+      <!-- Optimalisert tekst for LCP -->
+      <p class="hero-lcp-optimalisert">
+        Utforsk norske og internasjonale butikker – med filtrering, guider og ukens anbefalinger
+      </p>
+    
       <div class="container text-center">
         <h2 class="mb-4 fade-in">Hva ser du etter?</h2>
         <p class="text-dempet mt-3 fade-in">Skriv inn det du leter etter – vi finner butikker og guider for deg</p>
-        <!-- Legg denne HER, innenfor .container -->
+    
         <div class="text-center mt-3 fade-in" id="seAlleTreffWrapper">
           <button class="btn btn-primary w-80" id="visAlleTreff">🔎 Se alle treff</button>
         </div>
+    
         <div class="search-wrapper d-flex justify-content-center align-items-center gap-2 fade-in position-relative">
           <i class="bi bi-search fs-4 text-dempet"></i>
+    
           <!-- Autocomplete-wrapper -->
           <div class="position-relative w-100">
             <input class="form-control search-input text-dempet" id="autocompleteInput"
               placeholder="Søk etter butikk, kategori eller guide" type="text" />
-            <!-- Suggestions genereres dynamisk av JS -->
           </div>
         </div>
-        <!-- Interaktive tags -->
+    
         <div class="mt-4 d-flex flex-wrap justify-content-center gap-2 fade-in" id="search-subcategory-tags"></div>
         <div class="search-results mt-5 text-start fade-in" id="search-results"></div>
       </div>
     </section>
+
     <!-- Info-seksjon på forsiden -->
     <div class="info-highlight py-3 px-2 border-top border-bottom">
       <div class="container">
