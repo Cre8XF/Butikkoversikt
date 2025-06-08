@@ -12,8 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       col.className = 'col';
 
       const card = document.createElement('div');
-      card.className = 'card store-card h-100 d-flex flex-column text-center fade-in';
-      card.style.transition = 'all 0.3s ease-in-out';
+      card.className = 'card category-card h-100 text-center fade-in';
 
       const img = document.createElement('img');
       img.src = kampanje.image;
@@ -25,9 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
       img.style.objectFit = 'contain';
 
       const cardBody = document.createElement('div');
-      cardBody.className = 'card-body d-flex flex-column justify-content-between';
+      cardBody.className = 'card-body';
 
-      const content = document.createElement('div');
       const title = document.createElement('h6');
       title.className = 'card-title';
       title.textContent = kampanje.title;
@@ -36,18 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
       desc.className = 'card-text small text-muted';
       desc.textContent = kampanje.description || "";
 
-      content.appendChild(title);
-      content.appendChild(desc);
-
-      const button = document.createElement('a');
-      button.href = kampanje.url;
-      button.target = '_blank';
-      button.rel = 'noopener';
-      button.className = 'btn btn-primary mt-3';
-      button.textContent = 'Se tilbud';
-
-      cardBody.appendChild(content);
-      cardBody.appendChild(button);
+      cardBody.appendChild(title);
+      cardBody.appendChild(desc);
       card.appendChild(img);
       card.appendChild(cardBody);
       col.appendChild(card);
@@ -108,7 +96,10 @@ document.addEventListener('DOMContentLoaded', function () {
           filterButtons.forEach(btn => btn.classList.remove('active'));
           button.classList.add('active');
 
-          const filtered = selected === 'alle' ? kampanjerData : kampanjerData.filter(k => k.category === selected);
+          const filtered = selected === 'alle'
+            ? kampanjerData
+            : kampanjerData.filter(k => k.category === selected);
+
           renderKampanjer(filtered);
         });
       });
