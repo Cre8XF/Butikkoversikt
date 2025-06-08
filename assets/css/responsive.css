@@ -60,7 +60,6 @@
   #underkategori-tags {
     overflow-x: auto;
     flex-wrap: nowrap;
-    -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
     gap: 0.5rem;
   }
