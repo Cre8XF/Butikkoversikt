@@ -46,9 +46,10 @@
   padding: 0.75rem 1.5rem;
 }
 .hero-banner {
-  min-height: 380px; /* Reserver plass for layout */
-  content-visibility: auto;
-  contain-intrinsic-size: 380px;
+  min-height: 380px;
+}
+.info-highlight {
+  min-height: 90px;
 }
 
 .hero-heading {
