@@ -46,6 +46,5 @@
   padding: 0.75rem 1.5rem;
 }
 .hero-banner {
-  content-visibility: auto;
-  contain-intrinsic-size: 300px;
+  min-height: 300px;
 }
