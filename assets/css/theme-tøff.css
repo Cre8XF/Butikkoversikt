@@ -67,7 +67,7 @@
   --bg-highlight: #78350f;
 
   --text-base: #e2e8f0;
-  --text-muted: #d1d5db; /* lys nøytral grå */
+  --text-muted: #141414; /* lys nøytral grå */
 
   --text-inverse: #ffffff;
   --text-accent: var(--primary-light);
