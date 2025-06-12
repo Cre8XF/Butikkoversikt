@@ -104,7 +104,7 @@
 }
 .store-card {
   display: block;
-  background: var(--store-card-bg, #8490fc75); /* lys grå fallback */
+  background: var(--store-card-bg, #aab1ee49); /* lys grå fallback */
   border-radius: 16px;
   overflow: hidden;
   text-decoration: none;

@@ -1,13 +1,14 @@
 [
-    {
-      "id": "fjellsport-uke23",
-      "title": "Fjellsport Sommerkampanje",
-      "description": "Opptil 60 % på turutstyr – Klar for sommerens turer?",
-      "image": "assets/images/kampanjer/fjellsport.webp",
-      "url": "https://www.fjellsport.no/kampanjer",
-      "startDate": "2025-06-01",
-      "endDate": "2025-06-22",
-      "ukensKampanje": true
-    }
-  ]
+  {
+    "id": "gina-tricot-salg-uke24",
+    "title": "Gina Tricot – alle salgsvarer 30–50 %",
+    "description": "Gjelder både i butikk og på nett! Spar 30–50 % på alle salgsvarer – kampanjen er aktiv nå.",
+    "image": "assets/images/butikker-webp/gina-tricot.webp",
+    "url": "https://do.ginatricot.com/t/t?a=1858255980&as=1978629723&t=2&tk=1",
+    "startDate": "2025-06-10",
+    "endDate": "",
+    "ukensKampanje": true
+  }
+]
+
   

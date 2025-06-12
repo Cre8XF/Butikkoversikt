@@ -208,5 +208,15 @@
     "image": "assets/images/guides/okonomi.webp",
     "forside": false,
     "kategori": "Økonomi"
+  },
+  {
+    
+    "title": "Norges største nettside innen forbrukertester og prissammenligning.",
+    "description": "På Spillhandel.no finner du aktuelle, relevante og grundige tester av produkter som ikke bare presterer, men som også er lett tilgjengelige i markedet.",
+    "image": "assets/images/butikker-webp/spillhandel.webp",
+    "url": "https://www.spillhandel.no",
+    "expiry": "",
+    "category": "Gaming og tilbehør",
+    "forside": true
   }
 ]
