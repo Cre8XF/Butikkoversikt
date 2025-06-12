@@ -1,87 +1,133 @@
 <!DOCTYPE html>
-<html lang="no" data-theme="light">
+
+<html data-theme="light" lang="no">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Butikkoversikt.no – Finn trygge nettbutikker</title>
-  <meta name="description"
-    content="Utforsk Norges beste nettbutikker organisert etter kategori. Finn tilbud, kampanjer og guider – alt på ett sted." />
-  <meta name="keywords" content="nettbutikker, shopping, netthandel, tilbud, kampanjer, norske butikker" />
-  <meta name="author" content="Butikkoversikt.no" />
-  <meta name="theme-color" content="#ffffff">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-
+  <meta
+    content="Utforsk Norges beste nettbutikker organisert etter kategori. Finn tilbud, kampanjer og guider – alt på ett sted."
+    name="description" />
+  <meta content="nettbutikker, shopping, netthandel, tilbud, kampanjer, norske butikker" name="keywords" />
+  <meta content="Butikkoversikt.no" name="author" />
+  <meta content="#ffffff" name="theme-color" />
+  <meta content="default" name="apple-mobile-web-app-status-bar-style" />
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Butikkoversikt.no – Din guide til nettbutikker" />
-  <meta property="og:description"
-    content="Utforsk butikker etter kategori og finn aktuelle tilbud, guider og anbefalinger." />
-  <meta property="og:image" content="https://butikkoversikt.no/assets/images/hero/butikkoversikt-og-image.jpg" />
-  <meta property="og:url" content="https://butikkoversikt.no" />
-
+  <meta content="website" property="og:type" />
+  <meta content="Butikkoversikt.no – Din guide til nettbutikker" property="og:title" />
+  <meta content="Utforsk butikker etter kategori og finn aktuelle tilbud, guider og anbefalinger."
+    property="og:description" />
+  <meta content="https://butikkoversikt.no/assets/images/hero/butikkoversikt-og-image.jpg" property="og:image" />
+  <meta content="https://butikkoversikt.no" property="og:url" />
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Butikkoversikt.no – Din guide til nettbutikker" />
-  <meta name="twitter:description"
-    content="Finn relevante nettbutikker sortert etter kategori med søk og filtrering." />
-  <meta name="twitter:image" content="https://butikkoversikt.no/assets/images/hero/butikkoversikt-og-image.jpg" />
-
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="Butikkoversikt.no – Din guide til nettbutikker" name="twitter:title" />
+  <meta content="Finn relevante nettbutikker sortert etter kategori med søk og filtrering."
+    name="twitter:description" />
+  <meta content="https://butikkoversikt.no/assets/images/hero/butikkoversikt-og-image.jpg" name="twitter:image" />
   <!-- Favicon -->
-  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+  <link href="/assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+  <!-- 🔁 Preconnect -->
+  <link crossorigin="" href="https://cdnjs.cloudflare.com" rel="preconnect" />
+  <link crossorigin="" href="https://cdn.jsdelivr.net" rel="preconnect" />
+  <link crossorigin="" href="https://www.googletagmanager.com" rel="preconnect" />
+  <!-- 📦 Preload viktige bilder -->
+  <link as="image" href="/assets/images/hero/butikkoversikt.webp" rel="preload" type="image/webp" />
+  <link as="image" href="/assets/images/kampanjer/fjellsport.webp" rel="preload" type="image/webp" />
+  <!-- 🎨 CSS – kritisk først, resten utsettes -->
+  <link href="/assets/css/theme-tøff.css" rel="stylesheet" />
+  <link href="/assets/css/style.css" rel="stylesheet" />
+  <!-- Utsatt lasting av ikke-kritisk CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" media="print"
+    onload="this.media='all'" rel="stylesheet" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/assets/css/theme-tøff.css" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+  <link href="https://sibforms.com/forms/end-form/build/sib-styles.css" media="print" onload="this.media='all'"
+    rel="stylesheet" />
+  <!-- 🆗 Google Fonts (hvis aktuelt) -->
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap"> -->
+  <style>
+    /* 🔹 Critical CSS start */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, sans-serif;
+      background-color: #f9f9f9;
+      color: #111;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .lead {
+      font-size: 1.25rem;
+      color: #444;
+      max-width: 700px;
+      margin: 1rem auto;
+    }
+    .hero-lcp-optimalisert {
+  font-size: 1.25rem;
+  color: #444;
+  max-width: 700px;
+  margin: 1rem auto;
+  font-family: system-ui, sans-serif;
+}
+@media (min-width: 768px) {
+  .hero-lcp-optimalisert {
+    font-size: 1.5rem;
+  }
+}
+
+    /* 🔹 Critical CSS end */
+  </style>
 </head>
-
 
 <body data-page="index">
   <main id="main-content">
-
     <!-- Sticky Header -->
     <div class="sticky-top bg-white shadow-sm z-1030" id="stickyHeaderFull">
       <div id="header-placeholder"></div>
     </div>
 
-
+   
     <!-- Hero-seksjon -->
-    <section class="hero-banner text-center p-5 mb-5">
-      <h1>Finn nettbutikker du kan stole på</h1>
-      <p class="lead text-dempet">Utforsk norske og internasjonale butikker – med filtrering, guider og ukens
-        anbefalinger</p>
+<section class="hero-banner text-center p-5 mb-5">
+  <div class="container text-center">
+
+    <!-- Reserve space for heading to avoid layout shift -->
+    <h1 class="hero-heading">Finn nettbutikker du kan stole på</h1>
+
+    <!-- Forbedret heading og tekst -->
+    <h2 class="hero-subheading">Hva ser du etter?</h2>
+    <p class="hero-subtext">Skriv inn det du leter etter – vi finner butikker og guider for deg</p>
+
+    <!-- Se alle treff-knapp -->
+    <div class="text-center mt-3" id="seAlleTreffWrapper">
+      <button class="btn btn-primary w-80" id="visAlleTreff">🔎 Se alle treff</button>
+    </div>
+
+    <!-- Søkefelt -->
+    <div class="search-wrapper d-flex justify-content-center align-items-center gap-2 position-relative mt-3">
+      <i class="bi bi-search fs-4 text-dempet"></i>
+      <div class="position-relative w-100">
+        <input class="form-control search-input text-dempet" id="autocompleteInput"
+          placeholder="Søk etter butikk, kategori eller guide" type="text" />
       </div>
-      <div class="container text-center">
-        <h2 class="mb-4 fade-in">Hva ser du etter?</h2>
-        <p class="text-dempet mt-3 fade-in">Skriv inn det du leter etter – vi finner butikker og guider for deg</p>
+    </div>
 
-        <!-- Legg denne HER, innenfor .container -->
-        <div id="seAlleTreffWrapper" class="text-center mt-3 fade-in">
-          <button id="visAlleTreff" class="btn btn-primary w-80">🔎 Se alle treff</button>
-        </div>
-        <div class="search-wrapper d-flex justify-content-center align-items-center gap-2 fade-in position-relative">
-          <i class="bi bi-search fs-4 text-dempet"></i>
+    <!-- Tags og resultater -->
+    <div class="mt-4 d-flex flex-wrap justify-content-center gap-2" id="search-subcategory-tags"></div>
+    <div class="search-results mt-5 text-start" id="search-results"></div>
 
-          <!-- Autocomplete-wrapper -->
-          <div class="position-relative w-100">
-            <input type="text" id="autocompleteInput" placeholder="Søk etter butikk, kategori eller guide"
-              class="form-control search-input text-dempet" />
-            <!-- Suggestions genereres dynamisk av JS -->
-          </div>
-        </div>
+  </div>
+</section>
 
-        <!-- Interaktive tags -->
-        <div id="search-subcategory-tags" class="mt-4 d-flex flex-wrap justify-content-center gap-2 fade-in"></div>
-
-        <div id="search-results" class="search-results mt-5 text-start fade-in"></div>
-
-
-      </div>
-    </section>
 
     <!-- Info-seksjon på forsiden -->
     <div class="info-highlight py-3 px-2 border-top border-bottom">
@@ -93,61 +139,53 @@
         </div>
         <div class="row justify-content-center text-center text-dempet mb-4">
           <div class="col-6 col-md-3 mb-2">
-            <p class="info-icon"><i class="fas fa-flag"></i><br><strong>Fokus på norske nettbutikker</strong></p>
+            <p class="info-icon"><i class="bi bi-flag"></i><br /><strong>Fokus på norske nettbutikker</strong></p>
           </div>
           <div class="col-6 col-md-3 mb-2">
-            <p class="info-icon"><i class="fas fa-globe-europe"></i><br><strong>Utenlandske butikker merkes
+            <p class="info-icon"><i class="bi bi-globe-europe-africa"></i><br /><strong>Utenlandske butikker merkes
                 tydelig</strong></p>
           </div>
           <div class="col-6 col-md-3 mb-2">
-            <p class="info-icon"><i class="fas fa-book-open"></i><br><strong>Praktiske guider og kjøpsråd</strong></p>
+            <p class="info-icon"><i class="bi bi-journal-bookmark"></i><br /><strong>Praktiske guider og
+                kjøpsråd</strong></p>
           </div>
           <div class="col-6 col-md-3 mb-2">
-            <p class="info-icon"><i class="fas fa-filter"></i><br><strong>Filtrer etter kategori og tags</strong></p>
+            <p class="info-icon"><i class="bi bi-funnel"></i><br /><strong>Filtrer etter kategori og tags</strong></p>
           </div>
         </div>
-
       </div>
     </div>
-
-
-
-    <section id="ukens-kampanje" class="campaign-banner fade-in py-4">
+    <section class="campaign-banner fade-in py-4" id="ukens-kampanje">
       <div class="container">
         <span class="campaign-badge">Ukens kampanje</span>
         <div class="campaign-content">
-          <img id="kampanje-bilde" src="" alt="Kampanjebilde" class="kampanje-img" />
+          <img alt="Kampanjebilde" class="kampanje-img" height="250" id="kampanje-bilde" loading="lazy" src=""
+            style="object-fit: fill;" width="400" />
           <div class="text-content">
             <h5 id="kampanje-tittel"></h5>
             <p id="kampanje-beskrivelse"></p>
-            <a id="kampanje-lenke" href="#" target="_blank" rel="noopener" class="kampanje-knapp">Se tilbud</a>
+            <a class="kampanje-knapp" href="#" id="kampanje-lenke" rel="noopener" target="_blank">Se tilbud</a>
           </div>
         </div>
       </div>
     </section>
-
-
-
-
     <!-- Anbefalte butikker -->
     <section class="section section-light py-5">
       <div class="container">
         <h2 class="text-center mb-4 fade-in">Anbefalte nettbutikker</h2>
-        <div id="ukens-anbefalte" class="row g-4 justify-content-center fade-in"></div>
+        <div class="row g-4 justify-content-center fade-in" id="ukens-anbefalte"></div>
         <div class="text-center mt-4">
-          <button id="vis-flere-butikker" class="btn btn-outline-primary me-2">Vis flere</button>
-          <button id="vis-færre-butikker" class="btn btn-outline-secondary">Vis færre</button>
+          <button class="btn btn-outline-primary me-2" id="vis-flere-butikker">Vis flere</button>
+          <button class="btn btn-outline-secondary" id="vis-færre-butikker">Vis færre</button>
         </div>
       </div>
     </section>
-
     <section class="py-5 bg-section">
       <div class="container">
         <h2 class="text-center mb-5">Utforsk populære kategorier</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-center">
-
           <div class="col">
-            <a href="kategori.html?kategori=Gaver, gadgets og hobby" class="image-card-link">
+            <a class="image-card-link" href="kategori.html?kategori=Gaver, gadgets og hobby">
               <div class="image-card" style="background-image: url('assets/images/kategorikort/gadget-og-gaver.webp')">
                 <div class="card-overlay">
                   <h3>Gaver, gadgets og hobby</h3>
@@ -156,9 +194,8 @@
               </div>
             </a>
           </div>
-
           <div class="col">
-            <a href="kategori.html?kategori=Barn og baby" class="image-card-link">
+            <a class="image-card-link" href="kategori.html?kategori=Barn og baby">
               <div class="image-card" style="background-image: url('assets/images/kategorikort/barn-og-baby.webp')">
                 <div class="card-overlay">
                   <h3>Barn og baby</h3>
@@ -167,9 +204,8 @@
               </div>
             </a>
           </div>
-
           <div class="col">
-            <a href="kategori.html?kategori=Bøker og media" class="image-card-link">
+            <a class="image-card-link" href="kategori.html?kategori=Bøker og media">
               <div class="image-card" style="background-image: url('assets/images/kategorikort/boker-og-media.webp')">
                 <div class="card-overlay">
                   <h3>Bøker og media</h3>
@@ -178,9 +214,8 @@
               </div>
             </a>
           </div>
-
           <div class="col">
-            <a href="kategori.html?kategori=Digitale tjenester" class="image-card-link">
+            <a class="image-card-link" href="kategori.html?kategori=Digitale tjenester">
               <div class="image-card"
                 style="background-image: url('assets/images/kategorikort/digitale-tjenester.webp')">
                 <div class="card-overlay">
@@ -190,9 +225,8 @@
               </div>
             </a>
           </div>
-
           <div class="col">
-            <a href="kategori.html?kategori=Dyrebutikker" class="image-card-link">
+            <a class="image-card-link" href="kategori.html?kategori=Dyrebutikker">
               <div class="image-card" style="background-image: url('assets/images/kategorikort/dyrebutikker.webp')">
                 <div class="card-overlay">
                   <h3>Dyrebutikker</h3>
@@ -201,9 +235,8 @@
               </div>
             </a>
           </div>
-
           <div class="col">
-            <a href="kategori.html?kategori=Elektronikk og data" class="image-card-link">
+            <a class="image-card-link" href="kategori.html?kategori=Elektronikk og data">
               <div class="image-card"
                 style="background-image: url('assets/images/kategorikort/elektronikk-og-data.webp')">
                 <div class="card-overlay">
@@ -213,9 +246,8 @@
               </div>
             </a>
           </div>
-
           <div class="col">
-            <a href="kategori.html?kategori=Gaming og tilbehør" class="image-card-link">
+            <a class="image-card-link" href="kategori.html?kategori=Gaming og tilbehør">
               <div class="image-card" style="background-image: url('assets/images/kategorikort/Gamers.webp')">
                 <div class="card-overlay">
                   <h3>Gaming og tilbehør</h3>
@@ -224,9 +256,8 @@
               </div>
             </a>
           </div>
-
           <div class="col">
-            <a href="kategori.html?kategori=Helse og egenpleie" class="image-card-link">
+            <a class="image-card-link" href="kategori.html?kategori=Helse og egenpleie">
               <div class="image-card"
                 style="background-image: url('assets/images/kategorikort/helse-og-egenpleie.webp')">
                 <div class="card-overlay">
@@ -236,9 +267,8 @@
               </div>
             </a>
           </div>
-
           <div class="col">
-            <a href="kategori.html?kategori=Klær og mote" class="image-card-link">
+            <a class="image-card-link" href="kategori.html?kategori=Klær og mote">
               <div class="image-card" style="background-image: url('assets/images/kategorikort/klaer-og-mote.webp')">
                 <div class="card-overlay">
                   <h3>Klær og mote</h3>
@@ -247,9 +277,8 @@
               </div>
             </a>
           </div>
-
           <div class="col">
-            <a href="kategori.html?kategori=Mat og drikke" class="image-card-link">
+            <a class="image-card-link" href="kategori.html?kategori=Mat og drikke">
               <div class="image-card" style="background-image: url('assets/images/kategorikort/mat-og-drikke.webp')">
                 <div class="card-overlay">
                   <h3>Mat og drikke</h3>
@@ -258,9 +287,8 @@
               </div>
             </a>
           </div>
-
           <div class="col">
-            <a href="kategori.html?kategori=Møbler og interiør" class="image-card-link">
+            <a class="image-card-link" href="kategori.html?kategori=Møbler og interiør">
               <div class="image-card"
                 style="background-image: url('assets/images/kategorikort/mobler-og-interior.webp')">
                 <div class="card-overlay">
@@ -270,9 +298,8 @@
               </div>
             </a>
           </div>
-
           <div class="col">
-            <a href="kategori.html?kategori=Reise og opplevelser" class="image-card-link">
+            <a class="image-card-link" href="kategori.html?kategori=Reise og opplevelser">
               <div class="image-card"
                 style="background-image: url('assets/images/kategorikort/reise-og-opplevelser.webp')">
                 <div class="card-overlay">
@@ -282,9 +309,8 @@
               </div>
             </a>
           </div>
-
           <div class="col">
-            <a href="kategori.html?kategori=Sport og fritid" class="image-card-link">
+            <a class="image-card-link" href="kategori.html?kategori=Sport og fritid">
               <div class="image-card" style="background-image: url('assets/images/kategorikort/sport-og-fritid.webp')">
                 <div class="card-overlay">
                   <h3>Sport og fritid</h3>
@@ -293,9 +319,8 @@
               </div>
             </a>
           </div>
-
           <div class="col">
-            <a href="kategori.html?kategori=Underholdning og popkultur" class="image-card-link">
+            <a class="image-card-link" href="kategori.html?kategori=Underholdning og popkultur">
               <div class="image-card"
                 style="background-image: url('assets/images/kategorikort/spill-og-underholdning.webp')">
                 <div class="card-overlay">
@@ -305,79 +330,60 @@
               </div>
             </a>
           </div>
-
         </div>
       </div>
     </section>
-
-
     <!-- CTA til kategorier -->
     <section class="text-center py-5">
       <div class="container">
         <h3 class="mb-4">Leter du etter noe spesielt?</h3>
-        <a href="alle-butikker.html" class="btn btn-lg btn-primary shadow">Se alle butikker</a>
+        <a class="btn btn-lg btn-primary shadow" href="alle-butikker.html">Se alle butikker</a>
       </div>
     </section>
-
     <section class="py-5 bg-section">
       <div class="container">
         <h2 class="text-center mb-4">🔥 Aktuelle kampanjer</h2>
-        <section id="forside-kampanjer" class="row gy-4"></section>
-        <div class="text-center mt-4"><a href="kampanjer.html" class="btn btn-primary">Se alle kampanjer</a></div>
+        <section class="row gy-4" id="forside-kampanjer"></section>
+        <div class="text-center mt-4"><a class="btn btn-primary" href="kampanjer.html">Se alle kampanjer</a></div>
       </div>
     </section>
-
     <section class="py-5 bg-section-alt">
       <div class="container">
         <h2 class="text-center mb-4">📘 Nyttige guider</h2>
-        <section id="forside-guider" class="row gy-4"></section>
-        <div class="text-center mt-4"><a href="/main-guider.html" class="btn btn-secondary">Les alle guider</a></div>
+        <section class="row gy-4" id="forside-guider"></section>
+        <div class="text-center mt-4"><a class="btn btn-secondary" href="/main-guider.html">Les alle guider</a></div>
       </div>
     </section>
-
     <section class="py-5 section-white">
       <div class="container">
         <h2 class="text-center mb-2">💎 Eksklusive tilbud</h2>
         <p class="text-center text-dempet mb-4 small">
           Tilbud og kampanjer fra utvalgte samarbeidspartnere – håndplukket for deg.
         </p>
-        <section id="forside-annonser" class="row gy-4"></section>
+        <section class="row gy-4" id="forside-annonser"></section>
       </div>
     </section>
-
-
     <!-- Din dynamiske footer -->
   </main>
-
   <!-- Din dynamiske footer -->
   <div id="footer-placeholder"></div>
-
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+  <!-- Bootstrap JS (utsettes) -->
+  <script defer="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Effekter og interaksjon -->
-  <script src="assets/js/effects/fade-in.js"></script>
-
+  <script defer="" src="assets/js/effects/fade-in.js"></script>
   <!-- Forsidegeneratorer -->
-  <script src="assets/js/generate/forsiden/generate-forside-anbefalte.js"></script>
-  <script src="assets/js/generate/forsiden/generate-kampanjer-forside.js"></script>
-  <script src="assets/js/generate/forsiden/generate-trender.js"></script>
-  <script src="assets/js/generate/forsiden/generate-forside-innhold.js"></script>
-  <script src="assets/js/generate/forsiden/generate-ukens-kampanje.js"></script>
-
-
+  <script defer="" src="assets/js/generate/forsiden/generate-forside-anbefalte.js"></script>
+  <script defer="" src="assets/js/generate/forsiden/generate-kampanjer-forside.js"></script>
+  <script defer="" src="assets/js/generate/forsiden/generate-trender.js"></script>
+  <script defer="" src="assets/js/generate/forsiden/generate-forside-innhold.js"></script>
+  <script defer="" src="assets/js/generate/forsiden/generate-ukens-kampanje.js"></script>
   <!-- Fellesfunksjoner -->
-  <script src="assets/js/load-ads.js"></script>
-
+  <script defer="" src="assets/js/load-ads.js"></script>
   <!-- Hoved -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/footer.js"></script>
-  <script src="assets/js/header.js"></script>
-  <script src="assets/js/autocomplete-sok.js" defer></script>
-
-
-
+  <script defer="" src="assets/js/main.js"></script>
+  <script defer="" src="assets/js/footer.js"></script>
+  <script defer="" src="assets/js/header.js"></script>
+  <script defer="" src="assets/js/autocomplete-sok.js"></script>
 </body>
 
 </html>
