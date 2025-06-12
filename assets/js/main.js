@@ -1,6 +1,6 @@
 // 📊 Google Analytics 4-sporing
 (function () {
-  const GA_MEASUREMENT_ID = 'G-H7E9JLM5J1'; // ← BYTT UT denne med din ekte ID fra GA4
+  const GA_MEASUREMENT_ID = 'G-H7E9JLM5J1'; 
 
   const script = document.createElement('script');
   script.async = true;

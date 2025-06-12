@@ -1,0 +1,28 @@
+<!-- Eksempel: Butikkort -->
+<a href="https://eksempelbutikk.no" 
+   target="_blank" 
+   rel="noopener" 
+   class="store-card"
+   data-track-click
+   data-track-category="butikk"
+   data-track-label="Eksempelbutikk">
+   <img src="assets/images/eksempelbutikk.webp" alt="Eksempelbutikk">
+   <span>Eksempelbutikk</span>
+</a>
+
+<!-- Eksempel: Kampanjeknapp -->
+<a href="https://eksempel.no/kampanje" 
+   class="kampanje-knapp"
+   target="_blank" 
+   rel="noopener"
+   data-track-click
+   data-track-category="kampanje"
+   data-track-label="Kampanje: Fjellsport juni">
+   Se tilbud
+</a>
+
+<!-- Eksempel: Nyhetsbrev-skjema -->
+<form onsubmit="gtag('event', 'submit', {event_category: 'nyhetsbrev'});">
+  <input type="email" required placeholder="Din e-post">
+  <button type="submit">Meld deg på</button>
+</form>
