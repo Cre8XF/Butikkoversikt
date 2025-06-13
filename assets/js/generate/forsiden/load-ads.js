@@ -1,4 +1,5 @@
 // Dynamisk lasting av annonser fra JSON
+console.log("🟢 Annonsescript kjører");
 fetch("assets/data/ads.json")
   .then((response) => response.json())
   .then((ads) => {
