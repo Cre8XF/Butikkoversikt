@@ -11,10 +11,12 @@ fetch("assets/data/ads.json")
       adElement.classList.add("ad-banner", "mb-4");
 
       adElement.innerHTML = `
-        <a href="${ad.link}" target="_blank" rel="noopener noreferrer">
-          <img src="${ad.image}" alt="${ad.alt}" />
-        </a>
-      `;
+  <a href="${ad.link}" target="_blank" rel="noopener noreferrer">
+    <img src="${ad.image}" alt="${ad.alt}" class="img-fluid mb-2" />
+  </a>
+  ${ad.text ? `<p class="small text-muted">${ad.text}</p>` : ""}
+`;
+
 
       adContainer.appendChild(adElement);
     });
