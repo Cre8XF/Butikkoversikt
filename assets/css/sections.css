@@ -53,11 +53,7 @@
 /* ✅ Kampanjer */
 /* 🔥 Ukens kampanje seksjon */
 .campaign-banner {
-  background: linear-gradient(
-    90deg,
-    var(--hero-gradient-start),
-    var(--hero-gradient-end)
-  );
+  background: linear-gradient(90deg, var(--hero-gradient-start), var(--hero-gradient-end));
   color: var(--campaign-text);
   padding: 2rem 1.5rem;
   border-radius: 1rem;
@@ -125,6 +121,12 @@
   margin-top: 5px;
 }
 .info-highlight i.fas {
-  font-family: "Font Awesome 6 Free" !important;
+  font-family: 'Font Awesome 6 Free' !important;
   font-weight: 900;
+}
+#dynamicAds img {
+  display: block;
+  max-width: 300px;
+  margin: 2rem auto;
+  border: 1px solid #ccc;
 }
