@@ -53,6 +53,39 @@
     <link rel="stylesheet" href="/assets/css/footer.css" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="/assets/css/global-overrides.css" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="/assets/css/category-card.css" media="print" onload="this.media='all'" />
+
+    <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": "Aktuelle kampanjer fra nettbutikker",
+              "description": "Ukentlige tilbud og kampanjer fra norske nettbutikker – spar penger på elektronikk, mote, sport og mer.",
+              "url": "https://butikkoversikt.no/kampanjer.html",
+              "numberOfItems": 12,
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Kampanje hos Fjellsport",
+                  "url": "https://www.fjellsport.no/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Tilbud hos Blivakker",
+                  "url": "https://www.blivakker.no/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Rabattkode hos Komplett",
+                  "url": "https://www.komplett.no/"
+                }
+              ]
+            }
+            </script>
+        
+
 </head>
   
 
@@ -100,6 +133,7 @@
         <h1>Ukens Kampanjer</h1>
         <p class="lead">Få med deg de beste tilbudene og kampanjene akkurat nå!</p>
     </section>
+    
 
 <!-- Filter-knapper -->
 <section class="container mb-4" aria-label="Filtrering av kampanjer">
@@ -148,6 +182,8 @@
     <script defer src="assets/js/header.js"></script>
     <script defer src="assets/js/generate/kampanjer/generate-kampanjer.js"></script>
     <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/generate/kampanjer/generate-kampanjer-schema.js"></script>
+
 
 </body>
 
