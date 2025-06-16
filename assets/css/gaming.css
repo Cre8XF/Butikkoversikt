@@ -419,3 +419,53 @@ body.gaming-page {
   border-radius: 6px;
   margin-bottom: 0.75rem;
 }
+/* ===== RESPONSIV STIL FOR MOBIL ===== */
+@media (max-width: 768px) {
+  .gaming-hero h1,
+  .gaming-hero h2,
+  .gaming-hero p {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .game-grid,
+  .review-list,
+  .toplist,
+  .equipment-grid,
+  .tip-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .game-card,
+  .review-card,
+  .equipment-card,
+  .tip-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .game-card img,
+  .equipment-card img,
+  .tip-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  nav.navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
+  nav.navbar a {
+    font-size: 1rem;
+  }
+
+  .content-wrapper {
+    padding: 1rem;
+  }
+}
