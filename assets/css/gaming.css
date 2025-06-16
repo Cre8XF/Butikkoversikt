@@ -469,3 +469,14 @@ body.gaming-page {
     padding: 1rem;
   }
 }
+.gaming-hero h1 {
+  font-size: 1.75rem;
+}
+
+.gaming-hero h2 {
+  font-size: 1.25rem;
+}
+
+.gaming-hero p {
+  font-size: 1rem;
+}
