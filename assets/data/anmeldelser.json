@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Senua’s Saga: Hellblade II",
+      "platform": "Xbox",
+      "score": "8/10",
+      "description": "Et visuelt mesterverk med dyp historie og intense øyeblikk.",
+      "source": "Gamer.no",
+      "url": "https://www.gamer.no/artikler/anmeldelse-senuas-saga-hellblade-ii/549740",
+      "image": "assets/images/gaming/anmeldelser/hellblade2.webp"
+    },
+    {
+      "title": "Star Wars Outlaws",
+      "platform": "PC",
+      "score": "Forhåndstitt",
+      "description": "Ubisoft gir oss en åpen verden i Star Wars-universet. Kan dette bli årets eventyr?",
+      "source": "Gamereactor.no",
+      "url": "https://www.gamereactor.no/star-wars-outlaws-forhandstitt/",
+      "image": "assets/images/gaming/anmeldelser/starwars-outlaws.webp"
+    },
+    {
+      "title": "Final Fantasy VII Rebirth",
+      "platform": "PS5",
+      "score": "9/10",
+      "description": "Et nostalgisk og moderne rollespill med masse innhold og hjerte.",
+      "source": "Pressfire.no",
+      "url": "https://www.pressfire.no/anmeldelser/FinalFantasy7-Rebirth",
+      "image": "assets/images/gaming/anmeldelser/ff7-rebirth.webp"
+    },
+    {
+      "title": "Hades II",
+      "platform": "PC",
+      "score": "Early Access",
+      "description": "Et verdig oppfølger som allerede føles polert og spennende.",
+      "source": "PC Gamer",
+      "url": "https://www.pcgamer.com/hades-2-early-access-review/",
+      "image": "assets/images/gaming/anmeldelser/hades2.webp"
+    }
+  ]

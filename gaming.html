@@ -99,15 +99,7 @@
         <h2>🆕 Nye spill</h2>
         <div class="game-grid">
           <div class="game-card">
-            <img src="assets/images/spill/starfield.webp" alt="Starfield cover" />
-            <h4>Starfield</h4>
-            <p>Et episk romeventyr fra Bethesda. Utforsk over 1000 planeter!</p>
-            <small>Lansering: 6. september 2023 | Plattform: PC, Xbox</small><br />
-            <a href="https://www.xbox.com/starfield" target="_blank" rel="noopener">👉 Les mer</a>
-          </div>
-
-          <div class="game-card">
-            <img src="assets/images/spill/assassins-creed-shadows.webp" alt="Assassin's Creed Shadows" />
+            <img src="assets/images/gaming/spill/assasin-creed-shadow.webp" alt="Assassin's Creed Shadows" />
             <h4>Assassin's Creed Shadows</h4>
             <p>Utforsk feudal-Japan med to unike karakterer i Ubisofts siste open world-spill.</p>
             <small>Lansering: 20. mars 2025 | Plattform: PC, PS5, Xbox</small><br />
@@ -115,7 +107,7 @@
           </div>
 
           <div class="game-card">
-            <img src="assets/images/spill/avowed.webp" alt="Avowed" />
+            <img src="assets/images/gaming/spill/avowed.webp" alt="Avowed" />
             <h4>Avowed</h4>
             <p>Førstepersons RPG fra Obsidian satt i samme univers som Pillars of Eternity.</p>
             <small>Lansering: 18. februar 2025 | Plattform: PC, Xbox</small><br />
@@ -123,7 +115,7 @@
           </div>
 
           <div class="game-card">
-            <img src="assets/images/spill/doom-dark-ages.webp" alt="Doom: The Dark Ages" />
+            <img src="assets/images/gaming/spill/doom-dark-ages.webp" alt="Doom: The Dark Ages" />
             <h4>Doom: The Dark Ages</h4>
             <p>En brutal prequel i Doom-universet med ny setting og taktisk gameplay.</p>
             <small>Lansering: 15. mai 2025 | Plattform: PC, PS5, Xbox</small><br />
@@ -131,7 +123,7 @@
           </div>
 
           <div class="game-card">
-            <img src="assets/images/spill/death-stranding-2.webp" alt="Death Stranding 2" />
+            <img src="assets/images/gaming/spill/death-stranding-2.webp" alt="Death Stranding 2" />
             <h4>Death Stranding 2: On the Beach</h4>
             <p>Kojimas neste kapittel er tilbake med dyp historie og visuell innovasjon.</p>
             <small>Lansering: 26. juni 2025 | Plattform: PS5</small><br />
@@ -140,34 +132,35 @@
         </div>
       </section>
 
-      <!-- 📝 Spillomtaler -->
-      <section class="gaming-section" id="spillomtaler">
-        <h2>📝 Spillomtaler og tester</h2>
-        <div class="review-list">
-          <article class="review-card">
-            <h4>Baldur’s Gate 3</h4>
-            <p>Et episk CRPG fra Larian Studios. Full frihet, enormt innhold og tung vekt på valg og konsekvenser.</p>
-            <ul>
-              <li>🎮 Plattform: PC, PS5</li>
-              <li>⭐ Vurdering: 9.5 / 10 (Gamer.no)</li>
-              <li>📰 Anmeldelse: <a href="https://www.gamer.no/artikler/anmeldelse-baldurs-gate-iii/542684" target="_blank" rel="noopener">Gamer.no</a></li>
-            </ul>
-          </article>
-          <article class="review-card">
-            <h4>Helldivers II</h4>
-            <p>Et intenst samarbeidsspill med brutal action, svart humor og kaotiske oppdrag. Perfekt for co-op!</p>
-            <ul>
-              <li>🎮 Plattform: PC, PS5</li>
-              <li>⭐ Vurdering: 8 / 10 (Gamereactor)</li>
-              <li>📰 Anmeldelse: <a href="https://www.gamereactor.no/helldivers-ii-123456/" target="_blank" rel="noopener">Gamereactor</a></li>
-            </ul>
-          </article>
-        </div>
-        <div class="featured-reviews-link">
-          <p>🔍 Vil du lese flere spillomtaler?</p>
-          <a href="https://www.gamer.no/anmeldelser/spill" target="_blank" rel="noopener" class="review-button"> Besøk Gamer.no for flere anmeldelser </a>
-        </div>
-      </section>
+  <!-- Seksjon: Spillomtaler -->
+  <section class="gaming-section">
+    <h2>📝 Spillomtaler og tester</h2>
+  
+    <!-- 🎮 Filterknapper -->
+    <div id="anmeldelse-filters" class="filter-buttons">
+      <button data-filter="alle">🎮 Alle</button>
+      <button data-filter="PC">💻 PC</button>
+      <button data-filter="PS5">🎮 PS5</button>
+      <button data-filter="Xbox">🟢 Xbox</button>
+      <button data-filter="Switch">🔴 Switch</button>
+    </div>
+  
+    <p class="filter-info">Filtrer spillomtaler etter plattform.</p>
+  
+    <!-- 🗂️ Anmeldelser -->
+    <div id="anmeldelse-list" class="tips-grid"></div>
+  
+    <!-- 🔗 Lenke til mer -->
+    <div class="featured-reviews-link">
+      <p>🔍 Vil du lese flere spillomtaler?</p>
+      <a href="https://www.gamer.no/anmeldelser/spill" target="_blank" rel="noopener" class="review-button">
+        Besøk Gamer.no for flere anmeldelser
+      </a>
+    </div>
+  </section>
+
+
+
 
       <!-- 📈 Topplister -->
       <section class="gaming-section" id="topplister">
@@ -179,6 +172,7 @@
           <li><strong>EA FC 24</strong> – Fotballfeber med nye kort og klubber</li>
         </ol>
       </section>
+      
 
       <!-- 🎥 Video og stream-anbefalinger -->
       <section class="gaming-section" id="video-anmeldelser">
@@ -369,6 +363,7 @@
 
     <script src="assets/js/generate/gaming/generate-gaming.js"></script>
     <script src="assets/js/generate/gaming/generate-tips.js"></script>
+    <script src="assets/js/generate/gaming/generate-anmeldelser.js"></script>
 
     <script type="application/ld+json">
           {

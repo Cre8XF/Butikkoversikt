@@ -419,6 +419,123 @@ body.gaming-page {
   border-radius: 6px;
   margin-bottom: 0.75rem;
 }
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.review-card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: #fff;
+  align-items: flex-start;
+  transition: background 0.3s ease;
+}
+
+.review-card:hover {
+  background: #222;
+}
+
+.review-card img.review-image {
+  width: 100px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.review-content {
+  flex: 1;
+}
+
+.review-content h4 {
+  margin: 0 0 0.5rem;
+}
+
+.review-content h4 a {
+  color: #66ccff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.review-content h4 a:hover {
+  text-decoration: underline;
+}
+.review-content p {
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+.review-meta {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.platform-tag,
+.score-tag {
+  background-color: #333;
+  color: #ccc;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+.platform-tag[data-platform='PC'] {
+  background-color: #2a2a2a;
+  color: #d1bf1e;
+}
+.platform-tag[data-platform='PS5'] {
+  background-color: #2a2a2a;
+  color: #417aa8;
+}
+.platform-tag[data-platform='Xbox'] {
+  background-color: #2a2a2a;
+  color: #44d62c;
+}
+.platform-tag[data-platform='Switch'] {
+  background-color: #2a2a2a;
+  color: #e60012;
+}
+/* Gjør anmeldelsene til kortvisning med wrap */
+.review-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.review-card {
+  flex: 1 1 280px;
+  max-width: 300px;
+  background: #181818;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.review-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+#anmeldelse-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
 /* ===== RESPONSIV STIL FOR MOBIL ===== */
 @media (max-width: 768px) {
   .gaming-hero h1,
@@ -479,4 +596,43 @@ body.gaming-page {
 
 .gaming-hero p {
   font-size: 1rem;
+}
+.review-card {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #2a2a2a;
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #fff;
+  flex-wrap: wrap;
+}
+.review-card img.review-image {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.review-card .review-content {
+  flex: 1;
+}
+.review-card h4 a {
+  color: #99ccff;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .review-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .review-card img.review-image {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .review-meta {
+    justify-content: center;
+  }
 }
