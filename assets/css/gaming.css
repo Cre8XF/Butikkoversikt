@@ -1,0 +1,421 @@
+body.gaming-page {
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  background: linear-gradient(to bottom, #0f0f0f, #1a1a2e);
+}
+
+.gaming-hero {
+  background-image: url('../images/backgrounds/gaming-hero.webp');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+}
+
+.gaming-hero .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gaming-section {
+  padding: 2rem;
+  background-color: #121212;
+  border-bottom: 2px solid #222;
+}
+
+.gaming-section h2,
+.gaming-section p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.store-grid,
+.campaign-grid,
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.guide-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.guide-list a {
+  color: #66f;
+  text-decoration: none;
+}
+
+.guide-list a:hover {
+  text-decoration: underline;
+}
+
+.game-card,
+.review-card {
+  background-color: #1c1c1c;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #222;
+  color: #eee;
+  max-width: 340px;
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.review-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.toplist {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.toplist li {
+  margin-bottom: 0.5rem;
+}
+.featured-reviews-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.review-button {
+  display: inline-block;
+  background: #ff3366;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.review-button:hover {
+  background: #cc0044;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.video-tile {
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 10px #111;
+  text-align: center;
+}
+
+.video-tile iframe {
+  width: 100%;
+  height: 160px;
+  border: none;
+  border-radius: 8px;
+}
+
+.video-tile p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.equipment-card {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px #111;
+}
+
+.equipment-card img {
+  max-width: 100%;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+}
+
+.equipment-card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.equipment-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.equipment-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #66f;
+  text-decoration: underline;
+}
+.shop-links {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.shop-links a {
+  color: #66f;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.shop-links a:hover {
+  color: #8af;
+  text-decoration: none;
+}
+
+.equipment-card small {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #888;
+}
+.shop-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.shop-links a img {
+  max-height: 38px;
+  max-width: 100px;
+  object-fit: contain;
+  background-color: #1f1d1d;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.shop-links a img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+}
+.gaming-store-card {
+  background-color: #1c1c1c;
+  color: #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gaming-store-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+}
+
+.gaming-store-card img {
+  max-height: 50px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  background: #fff;
+  padding: 4px;
+  border-radius: 6px;
+}
+/* Sticky navbar */
+.gaming-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0d0d0d;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid #222;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.gaming-navbar .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gaming-navbar .logo img {
+  height: 42px;
+}
+
+.gaming-navbar .nav-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.gaming-navbar .nav-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.gaming-navbar .nav-links a:hover {
+  color: #1e90ff;
+}
+
+/* Hero beholdes som før */
+.gaming-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/gaming/gaming-hero.webp') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+}
+
+.gaming-hero .overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.gaming-hero .overlay p {
+  font-size: 1.25rem;
+  color: #ccc;
+}
+.gaming-nav-highlight {
+  font-size: 1.1rem;
+  background: linear-gradient(90deg, #111 0%, #1a1a1a 100%);
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.gaming-nav-highlight a:hover {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+.gaming-hero .tagline {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1e90ff;
+  margin-top: 1rem;
+}
+
+.gaming-hero .lead {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-top: 0.75rem;
+}
+
+.gaming-hero .info {
+  font-size: 1rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+.dark-section {
+  background-color: #181818;
+  color: #eee;
+  padding: 2.5rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #222;
+}
+
+.dark-section h3 {
+  color: #1e90ff;
+  margin-bottom: 1rem;
+}
+
+.dark-section .small {
+  margin-top: 1rem;
+  color: #aaa;
+}
+.guide-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.guide-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.guide-list li a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.guide-list li a:hover {
+  color: #66f;
+}
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.filter-buttons button {
+  background: #222;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.filter-buttons button:hover {
+  background: #1e90ff;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.tip-card {
+  background: #1b1b1b;
+  color: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+.tip-card a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+.tip-card a:hover {
+  text-decoration: underline;
+}
+.tip-card small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #888;
+  font-size: 0.85rem;
+}
+.tip-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}

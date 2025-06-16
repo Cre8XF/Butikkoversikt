@@ -1,222 +1,338 @@
 [
   {
     "title": "Netthandel – Forbrukerrådet",
-    "url": "https://www.forbrukerradet.no/forside/okonomi-og-betaling/netthandel-misfornoyd/",
     "description": "Sjekk kva du bør undersøke før du handler på nett, og hvordan du går frem dersom du ønsker å klage på kjøpet.",
     "image": "assets/images/guides/trygg-netthandel.webp",
+    "alt": "Forbrukerrådet guide om netthandel",
+    "url": "https://www.forbrukerradet.no/forside/okonomi-og-betaling/netthandel-misfornoyd/",
+    "category": "Sikker netthandel",
+    "tags": ["netthandel", "rettigheter", "angrerett", "klage"],
+    "highlight": false,
     "forside": true,
-    "kategori": "Sikker netthandel"
+    "published": "2024-09-10"
   },
   {
     "title": "GamerGuide.no – Test og anbefalinger av gamingutstyr",
-    "url": "https://www.gamerguide.no/",
     "description": "En ledende aktør innen testing av gamingprodukter. GamerGuide gir deg ærlige og grundige vurderinger basert på egne tester, spesifikasjoner og brukererfaringer.",
     "image": "assets/images/guides/gamingguiden.webp",
     "alt": "GamerGuide – Gamingutstyr test og vurdering",
+    "url": "https://www.gamerguide.no/",
+    "category": "Gaming og tilbehør",
+    "tags": ["gamingutstyr", "tester", "anmeldelser", "tastatur", "headset"],
+    "highlight": false,
     "forside": true,
-    "kategori": "Gaming"
+    "published": "2024-08-01"
   },
   {
     "title": "DIGITALE VERKTØY – Koselig Organisering",
-    "url": "https://www.koseligorganisering.no/verktoy",
     "description": "Tips til ryddigere hjem med ryddeguider, ryddekurs og enkle organiseringsteknikker.",
     "image": "assets/images/guides/koselig-organisering.webp",
+    "alt": "Digital organisering og ryddeverktøy",
+    "url": "https://www.koseligorganisering.no/verktoy",
+    "category": "Organisering",
+    "tags": ["organisering", "rydding", "verktøy", "struktur"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Organisering"
+    "published": "2023-11-20"
   },
   {
     "title": "Nyttig på nett – Tips til livets små og store utfordringer",
-    "url": "https://nett.nyttiginfo.no/",
     "description": "Enkle triks og ideer for hverdag, bursdagsgaver, navnestatistikk og mye mer.",
     "image": "assets/images/guides/hverdagsliv.webp",
+    "alt": "Tips for hverdagen",
+    "url": "https://nett.nyttiginfo.no/",
+    "category": "Hverdagsliv",
+    "tags": ["tips", "gaver", "hverdag", "ideer"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Hverdagsliv"
+    "published": "2024-05-01"
   },
   {
     "title": "Hjelp Hjemme – Gjør-Det-Selv guider for bolig og oppussing",
-    "url": "https://www.hjelphjemme.no/",
     "description": "Veiledninger for hjem, vedlikehold og oppussing – alt fra enkle gjør-det-selv-prosjekter til mer avanserte forbedringer.",
     "image": "assets/images/guides/hjelp-hjemme.webp",
+    "alt": "Guide for oppussing og bolig",
+    "url": "https://www.hjelphjemme.no/",
+    "category": "Bolig og oppussing",
+    "tags": ["gjør-det-selv", "oppussing", "vedlikehold", "bolig"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Bolig og oppussing"
+    "published": "2024-03-15"
   },
   {
     "title": "Beste interiørbutikker på nett 2025",
-    "url": "https://www.startsiden.no/bolig/interior-7-kule-interiorbutikker-pa-nett",
     "description": "Oppdag de beste nettbutikkene for interiør i 2025, inkludert Lunehjem, Kremmerhuset og Nordic Nest.",
     "image": "assets/images/guides/guide-interior.webp",
     "alt": "Guide for interiørbutikker 2025",
+    "url": "https://www.startsiden.no/bolig/interior-7-kule-interiorbutikker-pa-nett",
+    "category": "Interiør",
+    "tags": ["interiør", "nettbutikker", "nettshopping", "hjem"],
+    "highlight": false,
     "forside": true,
-    "kategori": "Interiør"
+    "published": "2025-02-01"
   },
   {
     "title": "81 ting alle mennesker bør eie",
-    "url": "https://www.nettavisen.no/shoppingtips/81-ting-alle-mennesker-bor-eie/s/12-95-3423961161",
     "description": "En omfattende liste over smarte, morsomme og nyttige produkter som kan forbedre hverdagen din.",
     "image": "assets/images/guides/81-ting-alle-bor-eie.webp",
+    "alt": "Produktguide 81 ting",
+    "url": "https://www.nettavisen.no/shoppingtips/81-ting-alle-mennesker-bor-eie/s/12-95-3423961161",
+    "category": "Shopping og gadgets",
+    "tags": ["gadgets", "shopping", "nyttig", "hverdag"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Shopping og gadgets"
+    "published": "2025-05-15"
   },
   {
     "title": "25 hverdagstips – life-hacks på norsk",
-    "url": "https://nett.nyttiginfo.no/hverdagstips/",
     "description": "Små knep og triks som gjør hverdagen enklere, fra batteritriks til smarte løsninger i hjemmet.",
     "image": "assets/images/guides/hverdagsliv.webp",
+    "alt": "Hverdagstips og triks",
+    "url": "https://nett.nyttiginfo.no/hverdagstips/",
+    "category": "Hverdagsliv",
+    "tags": ["life-hacks", "hverdag", "triks", "smarte løsninger"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Hverdagsliv"
+    "published": "2024-04-22"
   },
   {
     "title": "Bruksanvisninger – finn manualen du savner",
-    "url": "https://nett.nyttiginfo.no/bruksanvisninger/",
     "description": "Lenker til nettsteder med bruksanvisninger for alt fra TV-er til vaskemaskiner og mobiltelefoner.",
     "image": "assets/images/guides/bruksanvisninger.webp",
+    "alt": "Bruksanvisninger og manualer",
+    "url": "https://nett.nyttiginfo.no/bruksanvisninger/",
+    "category": "Praktiske verktøy",
+    "tags": ["manual", "bruksanvisning", "husholdning", "elektronikk"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Praktiske verktøy"
+    "published": "2023-10-01"
   },
   {
     "title": "Best på prissammenligning",
-    "url": "https://www.dataporten.net/sammenligning-av-priser/",
     "description": "En oversikt over de beste tjenestene for å sammenligne priser på elektronikk og andre produkter.",
     "image": "assets/images/guides/prissammenligning.webp",
+    "alt": "Guide for prissammenligning",
+    "url": "https://www.dataporten.net/sammenligning-av-priser/",
+    "category": "Sparetips",
+    "tags": ["prissammenligning", "shopping", "elektronikk", "spar penger"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Sparetips"
+    "published": "2023-09-20"
   },
   {
     "title": "Gratis treningsprogrammer",
-    "url": "https://hardworkout.no/trening/treningsprogram-gratis/",
     "description": "Et stort utvalg av gratis treningsprogrammer for styrke, kondisjon og vektreduksjon.",
     "image": "assets/images/guides/trening-fritid.webp",
+    "alt": "Gratis treningsprogrammer",
+    "url": "https://hardworkout.no/trening/treningsprogram-gratis/",
+    "category": "Trening",
+    "tags": ["trening", "styrke", "kondisjon", "gratis program"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Trening"
+    "published": "2024-01-10"
   },
   {
     "title": "Slanking på nett",
-    "url": "https://nett.nyttiginfo.no/slanking-pa-nett/",
     "description": "Ressurser og tips for vektreduksjon, inkludert oversikt over kjente slankekurer og oppskrifter.",
     "image": "assets/images/guides/slanking-pa-nett.webp",
+    "alt": "Slanking og vekttap på nett",
+    "url": "https://nett.nyttiginfo.no/slanking-pa-nett/",
+    "category": "Helse",
+    "tags": ["slanking", "kosthold", "helse", "vekttap"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Helse"
+    "published": "2024-04-05"
   },
   {
     "title": "Helse & Skjønnhet – Beste.no",
-    "url": "https://beste.no/category/helse-skjonnhet/",
     "description": "Best i test guider for produkter innen helse og skjønnhet, som tannbleking og hårfjernere.",
     "image": "assets/images/guides/helse-skjonnhet.webp",
+    "alt": "Helse og skjønnhet guider",
+    "url": "https://beste.no/category/helse-skjonnhet/",
+    "category": "Helse",
+    "tags": ["skjønnhet", "tester", "helseprodukter", "best i test"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Helse"
+    "published": "2024-02-12"
   },
   {
     "title": "Trening & Fritid – Beste.no",
-    "url": "https://beste.no/category/trening-fritid/",
     "description": "Anbefalinger og tester av utstyr for trening og fritid, inkludert pulsklokker og massasjepistoler.",
     "image": "assets/images/guides/trening-fritid.webp",
+    "alt": "Trening og fritid utstyrstips",
+    "url": "https://beste.no/category/trening-fritid/",
+    "category": "Trening",
+    "tags": ["trening", "fritid", "utstyr", "pulsklokke"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Trening"
+    "published": "2024-03-05"
   },
   {
     "title": "Hjem & Hage – Beste.no",
-    "url": "https://beste.no/category/hjem-hage/",
     "description": "Guider og tester for produkter til hjem og hage, som gatelys og robotstøvsugere.",
     "image": "assets/images/guides/hjem-hage.webp",
+    "alt": "Hjem og hage produkter",
+    "url": "https://beste.no/category/hjem-hage/",
+    "category": "Hjem og hage",
+    "tags": ["hage", "hjem", "robotstøvsuger", "belysning"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Hjem og hage"
+    "published": "2024-02-20"
   },
   {
     "title": "Data & IT – Best i test Guiden",
-    "url": "https://www.bestitestguiden.com/",
     "description": "Oppdag de beste produktene innen data og IT, inkludert bærbare PC-er, nettbrett og tilbehør, basert på grundige tester og vurderinger.",
     "image": "assets/images/guides/teknologi.webp",
+    "alt": "Data og IT testguide",
+    "url": "https://www.bestitestguiden.com/",
+    "category": "Teknologi",
+    "tags": ["data", "laptop", "nettbrett", "tilbehør", "tester"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Teknologi"
+    "published": "2024-01-28"
   },
   {
     "title": "Helse og velvære – Best i test Guiden",
-    "url": "https://www.bestitestguiden.com/helse.html",
     "description": "Finn de beste produktene for helse og velvære, som antirynkekremer, øyevippeserum og barbermaskiner, basert på omfattende tester.",
     "image": "assets/images/guides/helse-velvaere.webp",
+    "alt": "Test av helse- og velværeprodukter",
+    "url": "https://www.bestitestguiden.com/helse.html",
+    "category": "Helse",
+    "tags": ["helse", "velvære", "hudpleie", "barbering"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Helse"
+    "published": "2024-04-10"
   },
   {
     "title": "Hjem og husholdning – Best i test Guiden",
-    "url": "https://www.bestitestguiden.com/",
     "description": "Utforsk de beste produktene for hjem og husholdning, inkludert vaskemaskiner, kjøleskap og støvsugere, basert på nøye vurderinger.",
     "image": "assets/images/guides/hjem-husholdning.webp",
+    "alt": "Husholdningsprodukter testet",
+    "url": "https://www.bestitestguiden.com/",
+    "category": "Hjem og hage",
+    "tags": ["vaskemaskin", "kjøleskap", "husholdning", "støvsuger"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Hjem og hage"
+    "published": "2024-02-01"
   },
   {
     "title": "Lyd & bilde – Best i test Guiden",
-    "url": "https://www.bestitestguiden.com/lyd-bilde.html",
     "description": "Få oversikt over de beste lyd- og bildeproduktene, som TV-er, høyttalere og hodetelefoner, basert på ekspertanmeldelser og tester.",
     "image": "assets/images/guides/teknologi.webp",
+    "alt": "Test av lyd og bildeprodukter",
+    "url": "https://www.bestitestguiden.com/lyd-bilde.html",
+    "category": "Teknologi",
+    "tags": ["tv", "høyttalere", "hodetelefoner", "lyd og bilde"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Teknologi"
+    "published": "2024-03-10"
   },
   {
     "title": "Motor & tilbehør – Best i test Guiden",
-    "url": "https://www.bestitestguiden.com/motor.html",
     "description": "Finn de beste produktene for bil og motor, inkludert dekk, el-sparkesykler og annet tilbehør, basert på grundige tester.",
     "image": "assets/images/guides/motor-tilbehor.webp",
+    "alt": "Best i test motor og biltilbehør",
+    "url": "https://www.bestitestguiden.com/motor.html",
+    "category": "Bil og motor",
+    "tags": ["bil", "motor", "dekk", "tilbehør"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Bil og motor"
+    "published": "2024-03-25"
   },
   {
     "title": "Smarte hjem – Best i test Guiden",
-    "url": "https://www.bestitestguiden.com/smartehjem/smartehjem.html",
     "description": "Oppdag de beste smarthjem-produktene, som smarte lys, termostater og sikkerhetssystemer, for et mer automatisert hjem.",
     "image": "assets/images/guides/smarte-hjem.webp",
+    "alt": "Test av smarthjem-løsninger",
+    "url": "https://www.bestitestguiden.com/smartehjem/smartehjem.html",
+    "category": "Smarthus",
+    "tags": ["smarthjem", "automatisering", "smartlys", "sikkerhet"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Smarthus"
+    "published": "2024-04-08"
   },
   {
     "title": "Låne penger med lav rente – Best i test Guiden",
-    "url": "https://www.bestitestguiden.com/okonomi.html",
     "description": "Sammenlign de beste forbrukslånene med lav rente, og få tips til hvordan du kan få bedre kontroll over privatøkonomien.",
     "image": "assets/images/guides/okonomi.webp",
+    "alt": "Guide til lav rente lån",
+    "url": "https://www.bestitestguiden.com/okonomi.html",
+    "category": "Økonomi",
+    "tags": ["lån", "økonomi", "rente", "sparetips"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Økonomi"
+    "published": "2024-04-15"
   },
   {
     "title": "Digitale tjenester – Beste.no",
-    "url": "https://beste.no/category/digitale-tjenester/",
     "description": "Finn testvinnere og anbefalte produkter innen digitale tjenester som skylagring, VPN og antivirus.",
     "image": "assets/images/guides/teknologi.webp",
+    "alt": "Digitale tjenester testet",
+    "url": "https://beste.no/category/digitale-tjenester/",
+    "category": "Teknologi",
+    "tags": ["VPN", "skylagring", "digitale tjenester", "antivirus"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Teknologi"
+    "published": "2024-03-28"
   },
   {
     "title": "Soverom – Beste.no",
-    "url": "https://beste.no/category/soverom/",
     "description": "Se hvilke produkter til soverommet som er kåret til best i test, inkludert senger, dyner og puter.",
     "image": "assets/images/guides/soverom.webp",
+    "alt": "Best i test soveromsprodukter",
+    "url": "https://beste.no/category/soverom/",
+    "category": "Hjem og hage",
+    "tags": ["soverom", "dyner", "seng", "puter"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Hjem og hage"
+    "published": "2024-01-10"
   },
   {
     "title": "Smarthus – Beste.no",
-    "url": "https://beste.no/category/smarthus/",
     "description": "De beste smarthus-produktene for hjemmet ditt – alt fra smartlys og sensorer til smarte låser og overvåking.",
     "image": "assets/images/guides/smarte-hjem.webp",
+    "alt": "Smarthus produkter testet",
+    "url": "https://beste.no/category/smarthus/",
+    "category": "Smarthus",
+    "tags": ["smarthus", "sensor", "smartlys", "smarte låser"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Smarthus"
+    "published": "2024-02-17"
   },
   {
     "title": "Forsikring – Beste.no",
-    "url": "https://beste.no/category/forsikring/",
     "description": "Finn ut hvilke forsikringer som gir deg mest verdi for pengene – fra reiseforsikring til innboforsikring.",
     "image": "assets/images/guides/okonomi.webp",
+    "alt": "Guide til beste forsikringer",
+    "url": "https://beste.no/category/forsikring/",
+    "category": "Økonomi",
+    "tags": ["forsikring", "reiseforsikring", "innboforsikring", "dekning"],
+    "highlight": false,
     "forside": false,
-    "kategori": "Økonomi"
+    "published": "2024-04-20"
   },
   {
-    
     "title": "Norges største nettside innen forbrukertester og prissammenligning.",
     "description": "På Spillhandel.no finner du aktuelle, relevante og grundige tester av produkter som ikke bare presterer, men som også er lett tilgjengelige i markedet.",
     "image": "assets/images/butikker-webp/spillhandel.webp",
+    "alt": "Spillhandel – forbrukertester",
     "url": "https://www.spillhandel.no",
-    "expiry": "",
     "category": "Gaming og tilbehør",
-    "forside": true
+    "tags": ["spilltester", "gaming", "prissammenligning", "forbrukertester"],
+    "highlight": false,
+    "forside": true,
+    "published": "2024-06-01"
+  },
+  {
+    "title": "Guide: Apotek på nett – trygt og enkelt",
+    "image": "assets/images/guider/komplettapotek-guide.webp",
+    "alt": "KomplettApotek guide",
+    "url": "guider/apotek-pa-nett.html",
+    "category": "Helse og velvære",
+    "tags": ["apotek", "resept", "medisin", "nettapotek", "frakt", "egenandel", "trygg handel", "helse"],
+    "description": "Hva er et nettapotek, og hvordan fungerer det? Vi forklarer hvordan du bestiller reseptbelagte og reseptfrie legemidler enkelt og trygt fra KomplettApotek og lignende tjenester.",
+    "highlight": true,
+    "published": "2025-06-16"
   }
+  
 ]

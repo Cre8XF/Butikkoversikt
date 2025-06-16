@@ -17,6 +17,7 @@
 /* Komponenter */
 @import url('interface-ui.css');
 @import url('kampanje-forside.css');
+@import url('gaming.css');
 
 /* Ekstra og tilpasninger */
 @import url('responsive.css');

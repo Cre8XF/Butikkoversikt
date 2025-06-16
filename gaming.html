@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming | Butikkoversikt.no</title>
+    <link rel="stylesheet" href="assets/css/gaming.css" />
+
+  </head>
+
+  <body class="gaming-page">
+    <!-- Sticky mørk navbar -->
+    <header class="gaming-navbar">
+      <div class="nav-container">
+        <a href="/" class="logo">
+          <img src="assets/images/hero/butikkoversikt.webp" alt="Butikkoversikt logo" />
+        </a>
+        <nav class="nav-links">
+          <a href="/">🏠 Forside</a>
+          <a href="/alle-butikker.html">🛍️ Alle Butikker</a>
+          <a href="/ukens-anbefalte.html">⭐ Ukens Anbefalte</a>
+          <a href="/kampanjer.html">🔥 Kampanjer</a>
+          <a href="/guider.html">📚 Guider</a>
+          <a href="/kontakt.html">✉️ Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero-seksjon -->
+    <section class="intro-info dark-section">
+      <div class="container text-center">
+        <h3>🔎 En smartere måte å finne de beste spillene og utstyret på</h3>
+        <p>
+          På Gaming-siden vår samler vi inn og kuraterer innhold fra flere av Norges og verdens mest troverdige nettsteder. I stedet for å lete rundt selv, får du her en oversikt over de mest nyttige
+          testene, de beste butikkene og det nyeste innen spill og utstyr – alt på ett sted.
+        </p>
+        <p class="small text-muted fst-italic">Vi skriver ikke testene selv, men henviser til pålitelige kilder og vurderinger fra erfarne eksperter og nettsider.</p>
+      </div>
+    </section>
+
+    <main class="content-wrapper">
+      <!-- Seksjon 1: Populære gaming-butikker -->
+      <section class="gaming-section" id="butikker">
+        <h2>🎯 Populære gamingbutikker</h2>
+        <div id="gamingButikker" class="store-grid"></div>
+      </section>
+
+      <!-- Seksjon 2: Ukens kampanjer -->
+      <section class="gaming-section" id="kampanjer">
+        <h2>🔥 Ukens Gaming-kampanjer</h2>
+        <div id="gamingKampanjer" class="campaign-grid"></div>
+      </section>
+
+      <!-- Seksjon 3: Guider -->
+    <!-- 🔍 Filterknapper -->
+    <section class="gaming-section">
+        <h2>💡 Tips & guider</h2>
+        <div id="tips-filters" class="filter-buttons">
+            <button data-filter="alle">Alle</button>
+            <button data-filter="utstyr">🎮 Utstyr</button>
+            <button data-filter="spill">🕹️ Spillskolen</button>
+            <button data-filter="ytelse">⚙️ Ytelse</button>
+            <button data-filter="komfort">🪑 Komfort</button>
+            <button data-filter="optimalisering">🧠 Optimalisering</button>
+        </div>
+    
+        <!-- 🎯 Tips container -->
+        <div id="tips-container" class="tips-grid"></div>
+        </section>
+
+      <!-- 🆕 Nye spill -->
+      <section class="gaming-section" id="nye-spill">
+        <h2>🆕 Nye spill</h2>
+        <div class="game-grid">
+          <div class="game-card">
+            <img src="assets/images/spill/starfield.webp" alt="Starfield cover" />
+            <h4>Starfield</h4>
+            <p>Et episk romeventyr fra Bethesda. Utforsk over 1000 planeter!</p>
+            <small>Lansering: 6. september 2023 | Plattform: PC, Xbox</small><br />
+            <a href="https://www.xbox.com/starfield" target="_blank" rel="noopener">👉 Les mer</a>
+          </div>
+
+          <div class="game-card">
+            <img src="assets/images/spill/assassins-creed-shadows.webp" alt="Assassin's Creed Shadows" />
+            <h4>Assassin's Creed Shadows</h4>
+            <p>Utforsk feudal-Japan med to unike karakterer i Ubisofts siste open world-spill.</p>
+            <small>Lansering: 20. mars 2025 | Plattform: PC, PS5, Xbox</small><br />
+            <a href="#" target="_blank">👉 Les mer</a>
+          </div>
+
+          <div class="game-card">
+            <img src="assets/images/spill/avowed.webp" alt="Avowed" />
+            <h4>Avowed</h4>
+            <p>Førstepersons RPG fra Obsidian satt i samme univers som Pillars of Eternity.</p>
+            <small>Lansering: 18. februar 2025 | Plattform: PC, Xbox</small><br />
+            <a href="#" target="_blank">👉 Les mer</a>
+          </div>
+
+          <div class="game-card">
+            <img src="assets/images/spill/doom-dark-ages.webp" alt="Doom: The Dark Ages" />
+            <h4>Doom: The Dark Ages</h4>
+            <p>En brutal prequel i Doom-universet med ny setting og taktisk gameplay.</p>
+            <small>Lansering: 15. mai 2025 | Plattform: PC, PS5, Xbox</small><br />
+            <a href="#" target="_blank">👉 Les mer</a>
+          </div>
+
+          <div class="game-card">
+            <img src="assets/images/spill/death-stranding-2.webp" alt="Death Stranding 2" />
+            <h4>Death Stranding 2: On the Beach</h4>
+            <p>Kojimas neste kapittel er tilbake med dyp historie og visuell innovasjon.</p>
+            <small>Lansering: 26. juni 2025 | Plattform: PS5</small><br />
+            <a href="#" target="_blank">👉 Les mer</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 📝 Spillomtaler -->
+      <section class="gaming-section" id="spillomtaler">
+        <h2>📝 Spillomtaler og tester</h2>
+        <div class="review-list">
+          <article class="review-card">
+            <h4>Baldur’s Gate 3</h4>
+            <p>Et episk CRPG fra Larian Studios. Full frihet, enormt innhold og tung vekt på valg og konsekvenser.</p>
+            <ul>
+              <li>🎮 Plattform: PC, PS5</li>
+              <li>⭐ Vurdering: 9.5 / 10 (Gamer.no)</li>
+              <li>📰 Anmeldelse: <a href="https://www.gamer.no/artikler/anmeldelse-baldurs-gate-iii/542684" target="_blank" rel="noopener">Gamer.no</a></li>
+            </ul>
+          </article>
+          <article class="review-card">
+            <h4>Helldivers II</h4>
+            <p>Et intenst samarbeidsspill med brutal action, svart humor og kaotiske oppdrag. Perfekt for co-op!</p>
+            <ul>
+              <li>🎮 Plattform: PC, PS5</li>
+              <li>⭐ Vurdering: 8 / 10 (Gamereactor)</li>
+              <li>📰 Anmeldelse: <a href="https://www.gamereactor.no/helldivers-ii-123456/" target="_blank" rel="noopener">Gamereactor</a></li>
+            </ul>
+          </article>
+        </div>
+        <div class="featured-reviews-link">
+          <p>🔍 Vil du lese flere spillomtaler?</p>
+          <a href="https://www.gamer.no/anmeldelser/spill" target="_blank" rel="noopener" class="review-button"> Besøk Gamer.no for flere anmeldelser </a>
+        </div>
+      </section>
+
+      <!-- 📈 Topplister -->
+      <section class="gaming-section" id="topplister">
+        <h2>📈 Mest populære spill</h2>
+        <ol class="toplist">
+          <li><strong>Helldivers 2</strong> – Intenst co-op kaos og taktisk action (PC, PS5)</li>
+          <li><strong>Palworld</strong> – Pokémon møter våpen og overlevelse (PC, Xbox)</li>
+          <li><strong>Call of Duty: MW3</strong> – Den nyeste i serien, med full kampanjemodus</li>
+          <li><strong>EA FC 24</strong> – Fotballfeber med nye kort og klubber</li>
+        </ol>
+      </section>
+
+      <!-- 🎥 Video og stream-anbefalinger -->
+      <section class="gaming-section" id="video-anmeldelser">
+        <h2>🎥 Videoanmeldelser av populære spill</h2>
+        <div class="video-grid">
+          <div class="video-tile">
+            <iframe src="https://www.youtube.com/embed/gwSYHqPLnhs" allowfullscreen></iframe>
+            <p>Helldivers II</p>
+          </div>
+          <div class="video-tile">
+            <iframe src="https://www.youtube.com/embed/Wv4EMKAC5VM" allowfullscreen></iframe>
+            <p>Palworld</p>
+          </div>
+          <div class="video-tile">
+            <iframe src="https://www.youtube.com/embed/eVNQ-T6blIA" allowfullscreen></iframe>
+            <p>Call of Duty: MW3</p>
+          </div>
+          <div class="video-tile">
+            <iframe src="https://www.youtube.com/embed/dIynuCeLOoc" allowfullscreen></iframe>
+            <p>Baldur’s Gate 3</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 💬 Diskusjon og tips -->
+      <section class="gaming-section" id="diskusjon">
+        <h2>💬 Diskusjon og tips</h2>
+        <p>Bli med i fellesskapet! Diskuter på vår <a href="#">Discord-server</a> eller les våre tips for spill som Elden Ring og Fortnite.</p>
+      </section>
+
+      <!-- 💰 Gaming-deals og rabattkoder -->
+      <section class="gaming-section" id="deals">
+        <h2>💰 Gaming-deals og rabattkoder</h2>
+        <p>Sjekk ut våre <a href="/kampanjer">🔥 kampanjer</a> og tilbud på Steam-nøkler, konsoller og mer!</p>
+      </section>
+
+      <!-- 🖥️ Gaming-utstyr -->
+      <section class="gaming-section" id="utstyr">
+        <h2>🖥️ Anbefalt gaming-utstyr</h2>
+        <div class="equipment-grid">
+          <div class="equipment-card">
+            <img src="assets/images/gaming/headset.webp" alt="Gaming headset" />
+            <h4>🎧 Headset</h4>
+            <p>Oppnå krystallklare lydopplevelser i spillene dine med headset som får deg til å føle deg midt i den virtuelle verdenen.</p>
+            <div class="shop-links">
+              <a href="https://sharkgaming.no/gamingutstyr/hodetelefoner" target="_blank" rel="noopener">
+                <img src="assets/images/butikker-webp/sharkgaming.webp" alt="Shark Gaming" height="24" />
+              </a>
+              <a href="https://www.komplett.no/category/21640/gaming/gaming-utstyr/gamingheadset?list_view=list" target="_blank" rel="noopener">
+                <img src="assets/images/gaming/komplett-dark.webp" alt="Komplett" height="24" />
+              </a>
+              <a href="https://www.elkjop.no/gaming/gaming-tilbehor/gaming-headset" target="_blank" rel="noopener">
+                <img src="assets/images/gaming/elkjop-dark.webp" alt="Elkjøp" height="24" />
+              </a>
+              <a href="https://www.power.no/c/2232/gaming/pc-og-tilbehoer/gaming-headset/" target="_blank" rel="noopener">
+                <img src="assets/images/butikker-webp/power.webp" alt="Power" height="24" />
+              </a>
+            </div>
+          </div>
+
+          <div class="equipment-card">
+            <img src="assets/images/gaming/tastatur.webp" alt="Gaming tastatur" />
+            <h4>⌨️ Tastatur</h4>
+            <p>Oppgrader spillet, og skaff deg et skikkelig gamertastatur med RGB og hurtigrespons.</p>
+            <div class="shop-links">
+              <a href="https://sharkgaming.no/gamingutstyr/tastatur" target="_blank" rel="noopener">
+                <img src="assets/images/butikker-webp/sharkgaming.webp" alt="Shark Gaming" height="24" />
+              </a>
+              <a href="https://www.komplett.no/category/21635/gaming/gaming-utstyr/gamingtastatur?list_view=list" target="_blank" rel="noopener">
+                <img src="assets/images/gaming/komplett-dark.webp" alt="Komplett" height="24" />
+              </a>
+              <a href="https://www.elkjop.no/gaming/gamingtastatur" target="_blank" rel="noopener">
+                <img src="assets/images/gaming/elkjop-dark.webp" alt="Elkjøp" height="24" />
+              </a>
+              <a href="https://www.power.no/c/5365/gaming/pc-og-tilbehoer/gaming-mus-og-tastatur/gamingtastatur/" target="_blank" rel="noopener">
+                <img src="assets/images/butikker-webp/power.webp" alt="Power" height="24" />
+              </a>
+            </div>
+          </div>
+
+          <div class="equipment-card">
+            <img src="assets/images/gaming/mus.webp" alt="Gaming mus" />
+            <h4>🖱️ Mus</h4>
+            <p>Optimaliser ditt spill med mus som har justerbar DPI, RGB-belysning og ergonomisk design.</p>
+            <div class="shop-links">
+              <a href="https://sharkgaming.no/gamingutstyr/mus" target="_blank" rel="noopener">
+                <img src="assets/images/butikker-webp/sharkgaming.webp" alt="Shark Gaming" height="24" />
+              </a>
+              <a href="https://www.komplett.no/category/21605/gaming/gaming-utstyr/gamingmus?list_view=list" target="_blank" rel="noopener">
+                <img src="assets/images/gaming/komplett-dark.webp" alt="Komplett" height="24" />
+              </a>
+              <a href="https://www.elkjop.no/gaming/gaming-mus" target="_blank" rel="noopener">
+                <img src="assets/images/gaming/elkjop-dark.webp" alt="Elkjøp" height="24" />
+              </a>
+              <a href="https://www.power.no/c/5366/gaming/pc-og-tilbehoer/gaming-mus-og-tastatur/gamingmus/" target="_blank" rel="noopener">
+                <img src="assets/images/butikker-webp/power.webp" alt="Power" height="24" />
+              </a>
+            </div>
+          </div>
+
+          <div class="equipment-card">
+            <img src="assets/images/gaming/skjerm.webp" alt="Gaming skjerm" />
+            <h4>🖥️ Skjermer</h4>
+            <p>Gaming-skjermer med høy oppdateringsfrekvens og lav responstid gir deg konkurransefortrinn i alle spill.</p>
+            <div class="shop-links">
+              <a href="https://sharkgaming.no/gamingutstyr/skjerm" target="_blank" rel="noopener">
+                <img src="assets/images/butikker-webp/sharkgaming.webp" alt="Shark Gaming" height="24" />
+              </a>
+              <a href="https://www.komplett.no/category/21656/gaming/gaming-utstyr/gamingskjermer?list_view=list" target="_blank" rel="noopener">
+                <img src="assets/images/gaming/komplett-dark.webp" alt="Komplett" height="24" />
+              </a>
+              <a href="https://www.elkjop.no/gaming/gamingskjermer" target="_blank" rel="noopener">
+                <img src="assets/images/gaming/elkjop-dark.webp" alt="Elkjøp" height="24" />
+              </a>
+              <a href="https://www.power.no/c/6630/data-og-tilbehoer/skjermer/gamingskjerm/" target="_blank" rel="noopener">
+                <img src="assets/images/butikker-webp/power.webp" alt="Power" height="24" />
+              </a>
+            </div>
+          </div>
+
+          <div class="equipment-card">
+            <img src="assets/images/gaming/stol.webp" alt="Gaming stol" />
+            <h4>🪑 Stoler</h4>
+            <p>Sitt komfortabelt i lange spilløkter med ergonomiske gaming-stoler i høy kvalitet.</p>
+            <div class="shop-links">
+              <a href="https://sharkgaming.no/gamingutstyr/stol" target="_blank" rel="noopener">
+                <img src="assets/images/butikker-webp/sharkgaming.webp" alt="Shark Gaming" height="24" />
+              </a>
+              <a href="https://www.komplett.no/category/11075/gaming/gaming-utstyr/gamingstoler?list_view=list" target="_blank" rel="noopener">
+                <img src="assets/images/gaming/komplett-dark.webp" alt="Komplett" height="24" />
+              </a>
+              <a href="https://www.elkjop.no/gaming/gamingstol-og-gamingpult/gamingstol" target="_blank" rel="noopener">
+                <img src="assets/images/gaming/elkjop-https://www.elkjop.no/gaming/gamingstol-og-gamingpult/gamingstoldark.webp" alt="Elkjøp" height="24" />
+              </a>
+              <a href="https://www.power.no/c/4581/gaming/gaming-moebler/gamingstol/" target="_blank" rel="noopener">
+                <img src="assets/images/butikker-webp/power.webp" alt="Power" height="24" />
+              </a>
+            </div>
+          </div>
+
+          <div class="equipment-card">
+            <img src="assets/images/gaming/gaming-pc.webp" alt="Gaming PC" />
+            <h4>🖥️ Gaming-PC</h4>
+            <p>Få best mulig ytelse med kraftige gaming-PCer for alt fra esport til 4K-spilling.</p>
+            <div class="shop-links">
+              <a href="https://sharkgaming.no" target="_blank" rel="noopener">
+                <img src="assets/images/butikker-webp/sharkgaming.webp" alt="Shark Gaming" height="24" />
+              </a>
+              <a href="https://www.komplett.no/category/21659/gaming/gaming-pc?list_view=list" target="_blank" rel="noopener">
+                <img src="assets/images/gaming/komplett-dark.webp" alt="Komplett" height="24" />
+              </a>
+              <a href="https://www.elkjop.no/gaming/gaming-pc" target="_blank" rel="noopener">
+                <img src="assets/images/gaming/elkjop-dark.webp" alt="Elkjøp" height="24" />
+              </a>
+              <a href="https://www.power.no/c/3689/gaming/pc-og-tilbehoer/gaming-stasjonaer-pc/" target="_blank" rel="noopener">
+                <img src="assets/images/butikker-webp/power.webp" alt="Power" height="24" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gaming-section" id="konsoller">
+        <h2>🎮 Spillkonsoller og tilbehør</h2>
+        <p>Konsoller og tilbehør til PlayStation, Xbox, Nintendo og mer – kommer i egen seksjon.</p>
+      </section>
+
+      <!-- 📅 Spillkalender -->
+      <section class="gaming-section" id="kalender">
+        <h2>📅 Kommende spillutgivelser</h2>
+        <p>Hold deg oppdatert på kommende spill for PC, konsoll og mobil – kalender kommer!</p>
+      </section>
+
+      <!-- 🧠 Fun-fakta og nostalgi -->
+      <section class="gaming-section" id="funfact">
+        <h2>🧠 Fun-fakta og nostalgi</h2>
+        <ul class="guide-list">
+          <li>🕹️ Visste du at Nintendo ble grunnlagt i 1889?</li>
+          <li>🎮 NES og SNES la grunnlaget for moderne plattformspill.</li>
+          <li>❓ Test deg selv: Hva kan du om Half-Life eller Minecraft?</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Butikkoversikt.no - Gaming-seksjon</p>
+    </footer>
+
+    <script src="assets/js/generate/gaming/generate-gaming.js"></script>
+    <script src="assets/js/generate/gaming/generate-tips.js"></script>
+  </body>
+</html>
