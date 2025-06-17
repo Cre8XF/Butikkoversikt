@@ -567,6 +567,169 @@ body.gaming-page {
 .game-calendar td a:hover {
   text-decoration: underline;
 }
+/* 🎮 Spillfilter styling */
+#spillkalender-container .form-label {
+  font-weight: 500;
+  color: var(--text-color, #fff);
+}
+
+#spillkalender-container select.form-select {
+  padding: 0.375rem 0.75rem;
+  background-color: var(--bg-secondary, #222);
+  color: var(--text-color, #fff);
+  border: 1px solid #444;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+#spillkalender-container select.form-select:focus {
+  border-color: var(--accent-color, #007bff);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+#spillkalender-container .filter-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#spillkalender-container .filter-box > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* 🎮 Spillfilter-knapper */
+#spillkalender-container button {
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+/* Nullstill-knapp */
+#spillkalender-container #nullstillFilter {
+  background-color: var(--bg-secondary, #333);
+  color: var(--text-color, #fff);
+  border: 1px solid #666;
+}
+#spillkalender-container #nullstillFilter:hover {
+  background-color: #444;
+}
+
+/* Vis alle-knapp */
+#spillkalender-container .vis-alle-knapp {
+  display: inline-block;
+  margin-top: 1rem;
+  background: transparent;
+  color: var(--text-color, #fff);
+  border: 1px solid #777;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+#spillkalender-container .vis-alle-knapp:hover {
+  background-color: #2a2a2a;
+}
+
+/* Plattform-tagger */
+#spillkalender-container .tag {
+  display: inline-block;
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  margin-right: 4px;
+  white-space: nowrap;
+}
+/* 🎯 Tips & guider – kortoppsett */
+#tips-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.tip-card {
+  background-color: var(--bg-secondary, #1e1e1e);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tip-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.tip-card h4 {
+  font-size: 1.1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color, #fff);
+}
+
+.tip-card a {
+  color: var(--accent-color, #4ea9ff);
+  text-decoration: none;
+}
+.tip-card a:hover {
+  text-decoration: underline;
+}
+
+.tip-card p {
+  font-size: 0.95rem;
+  color: var(--text-light, #ccc);
+  flex-grow: 1;
+}
+
+.tip-card .tip-image {
+  width: 100%;
+  border-radius: 6px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* 🔘 Filterknapper */
+#tips-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#tips-filters button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  background-color: var(--bg-secondary, #2c2c2c);
+  color: var(--text-color, #fff);
+  border: 1px solid #444;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#tips-filters button:hover,
+#tips-filters button.active {
+  background-color: var(--accent-color, #4ea9ff);
+  color: #fff;
+  border-color: var(--accent-color, #4ea9ff);
+}
+
+/* 🧭 Vis alle-knapp */
+#tips-container .btn {
+  grid-column: 1 / -1;
+  justify-self: center;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  margin-top: 2rem; /* flytter knappen litt ned */
+}
 
 /* ===== RESPONSIV STIL FOR MOBIL ===== */
 @media (max-width: 768px) {
@@ -666,5 +829,33 @@ body.gaming-page {
 
   .review-meta {
     justify-content: center;
+  }
+}
+#tips-filters {
+  justify-content: center;
+}
+
+#tips-container .btn {
+  margin-inline: auto;
+  display: block;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #tips-filters {
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+
+  .filter-buttons button,
+  #tips-filters button {
+    width: auto;
+    flex: 1 1 auto;
+    min-width: 120px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .tip-card {
+    padding: 0.75rem;
   }
 }

@@ -134,6 +134,29 @@
             link.click();
         });
     </script>
+
+<script>
+    async function validateUrls(spillListe) {
+        const results = await Promise.all(spillListe.map(async (spill) => {
+            if (!spill.url) return { title: spill.title, status: "❌ Mangler URL" };
+            try {
+                const res = await fetch(spill.url, { method: 'HEAD' });
+                return {
+                    title: spill.title,
+                    status: res.ok ? "✅ OK" : `❌ ${res.status}`
+                };
+            } catch (err) {
+                return {
+                    title: spill.title,
+                    status: "❌ Feil ved henting"
+                };
+            }
+        }));
+
+        console.table(results);
+    }
+</script>
+    
 </body>
 
 </html>
