@@ -6421,7 +6421,7 @@
       {
         "name": "Kids-world",
         "url": "https://www.kids-world.com/no-no/",
-        "image": "assets/images/butikker-webp/kids-world.webp",
+        "image": "assets/images/butikker-webp/123friluft-no.webp",
         "alt": "Kids‑World logo",
         "category": "Barn og baby",
         "subcategory": ["Barneklær", "Leker", "Sko"],
@@ -6429,7 +6429,7 @@
         "tags": ["barneklær", "babyklær", "sko", "leker", "interiør", "skolesekker", "gratis frakt"],
         "affiliate": true,
         "affiliateNetworks": ["Sovrn Commerce", "MyLead", "Daisycon"],
-        "affiliateUrl": "",      
+        "affiliateUrl": "https://sovrn.co/b79kmw7",      
         "partner": false,
         "kampanje": false,
         "ukensAnbefalte": false,
