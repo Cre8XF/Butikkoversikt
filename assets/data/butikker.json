@@ -6422,22 +6422,24 @@
         "name": "Kids-world",
         "url": "https://www.kids-world.com/no-no/",
         "image": "assets/images/butikker-webp/kids-world.webp",
-        "alt": "Kids-world logo",
+        "alt": "Kids‑World logo",
         "category": "Barn og baby",
         "subcategory": ["Barneklær", "Leker", "Sko"],
-        "description": "Stort utvalg av barneklær, sko og leker fra kjente merker. Gratis frakt over 999 kr og rask levering fra Danmark.",
+        "description": "Stort utvalg av barneklær, sko og leker fra kjente merker. Gratis frakt over 999 kr og rask levering fra Danmark.",
         "tags": ["barneklær", "babyklær", "sko", "leker", "interiør", "skolesekker", "gratis frakt"],
-        "affiliate": false,
-        "affiliateUrl": "",
+        "affiliate": true,
+        "affiliateNetworks": ["Sovrn Commerce", "MyLead", "Daisycon"],
+        "affiliateUrl": "",      
         "partner": false,
         "kampanje": false,
-        "ukensAnbefalte": "",
+        "ukensAnbefalte": false,
         "topp25": false,
         "forside": false,
         "ny": true,
         "annonse": false,
         "rank": null
       }
+      
       
         
     
