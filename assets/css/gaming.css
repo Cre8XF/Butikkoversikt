@@ -1,8 +1,16 @@
-body.gaming-page {
+/* === 📌 Base Layout === */
+
+.gaming-page {
   font-family: 'Orbitron', sans-serif;
   color: #fff;
-  background: linear-gradient(to bottom, #0f0f0f, #1a1a2e);
+  background: linear-gradient(to bottom, #272626, #262642);
 }
+
+.content-wrapper {
+  padding: 1rem;
+}
+
+/* === 🎮 Hero & Header === */
 
 .gaming-hero {
   background-image: url('../images/backgrounds/gaming-hero.webp');
@@ -12,30 +20,76 @@ body.gaming-page {
   position: relative;
 }
 
-.gaming-hero .overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 100%;
+.gaming-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/gaming/gaming-hero.webp') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+}
+
+.gaming-hero-section {
+  background: linear-gradient(to bottom, #0f0f0f, #1c1c1c);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #222;
+}
+
+.dark-section {
+  background-color: #181818;
+  color: #eee;
+  padding: 2.5rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #222;
+}
+
+/* === 🧭 Navigasjon === */
+
+.gaming-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0d0d0d;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid #222;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.nav-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: space-between;
 }
 
-.gaming-section {
-  padding: 2rem;
-  background-color: #121212;
-  border-bottom: 2px solid #222;
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
 }
 
-.gaming-section h2,
-.gaming-section p {
-  text-align: center;
-  margin-bottom: 1.5rem;
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
 }
 
-.store-grid,
-.campaign-grid,
+.gaming-navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.gaming-navbar .logo-text {
+  display: none;
+  line-height: 1.2;
+}
+
+.gaming-navbar .logo-text {
+  display: block;
+}
+
+/* === 🏪 Butikker & Grid === */
+
 .game-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -43,23 +97,116 @@ body.gaming-page {
   margin-top: 1rem;
 }
 
-.guide-list {
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.equipment-card {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px #111;
+}
+
+.shop-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.gaming-store-card {
+  background-color: #1c1c1c;
+  color: #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* === 📝 Tips & Guider === */
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.tip-card {
+  background: #1b1b1b;
+  color: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.tip-card {
+  background-color: var(--bg-secondary, #1e1e1e);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100%;
+}
+
+.tip-card {
+  max-width: 100%;
+  width: 100%;
+}
+
+.tip-card {
+  padding: 0.75rem;
+}
+
+#tips-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+#tips-filters {
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.guide-list a {
-  color: #66f;
-  text-decoration: none;
+#tips-filters {
+  justify-content: center;
 }
 
-.guide-list a:hover {
-  text-decoration: underline;
+#tips-filters {
+  gap: 0.75rem;
+  margin-top: 1.25rem;
 }
 
-.game-card,
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+/* === 🧠 Spillomtaler === */
+
+.review-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
 .review-card {
   background-color: #1c1c1c;
   padding: 1rem;
@@ -69,18 +216,140 @@ body.gaming-page {
   max-width: 340px;
 }
 
-.game-card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
+.review-card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: #fff;
+  align-items: flex-start;
+  transition: background 0.3s ease;
 }
 
-.review-list {
+.review-card {
+  flex: 1 1 280px;
+  max-width: 300px;
+  background: #181818;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
 }
+
+.review-card {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #2a2a2a;
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.review-content {
+  flex: 1;
+}
+
+.review-content {
+  flex: 1;
+}
+
+.score-tag {
+  background-color: #333;
+  color: #ccc;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+#anmeldelse-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* === 🗓️ Spillkalender === */
+
+.game-calendar {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #181818;
+  color: #eee;
+  margin-top: 1rem;
+}
+
+.tag {
+  background-color: #2a2a2a;
+  color: #ccc;
+  padding: 2px 6px;
+  margin: 2px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  margin-right: 4px;
+  white-space: nowrap;
+}
+
+/* === 📺 Video Tiles === */
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.video-tile {
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 10px #111;
+  text-align: center;
+}
+
+/* === 🔔 Banner === */
+
+.gaming-banner {
+  background: linear-gradient(to right, #ffef00, #b4a700);
+  color: #000;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+  border-bottom: 2px solid #888;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gaming-banner-alt {
+  background: #111;
+  color: #eee;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* === 🎯 Topplister & Diverse === */
 
 .toplist {
   list-style: decimal;
@@ -90,9 +359,19 @@ body.gaming-page {
   text-align: left;
 }
 
-.toplist li {
-  margin-bottom: 0.5rem;
+.guide-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
+
+.guide-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
 .featured-reviews-link {
   text-align: center;
   margin-top: 2rem;
@@ -109,22 +388,50 @@ body.gaming-page {
   transition: background 0.3s;
 }
 
-.review-button:hover {
-  background: #cc0044;
-}
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
+/* === 📦 Øvrig CSS (ikke kategorisert) === */
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.video-tile {
-  background: #1c1c1c;
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 0 10px #111;
+.gaming-section {
+  padding: 2rem;
+  background-color: #121212;
+  border-bottom: 2px solid #222;
+}
+
+.gaming-section p {
   text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.guide-list a {
+  color: #66f;
+  text-decoration: none;
+}
+
+.guide-list a:hover {
+  text-decoration: underline;
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.toplist li {
+  margin-bottom: 0.5rem;
+}
+
+.review-button:hover {
+  background: #cc0044;
 }
 
 .video-tile iframe {
@@ -137,20 +444,6 @@ body.gaming-page {
 .video-tile p {
   margin-top: 0.5rem;
   font-weight: bold;
-}
-.equipment-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
-}
-
-.equipment-card {
-  background-color: #1c1c1c;
-  border-radius: 12px;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 0 10px #111;
 }
 
 .equipment-card img {
@@ -175,14 +468,6 @@ body.gaming-page {
   color: #66f;
   text-decoration: underline;
 }
-.shop-links {
-  margin-top: 0.75rem;
-  font-size: 0.95rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
 
 .shop-links a {
   color: #66f;
@@ -201,13 +486,6 @@ body.gaming-page {
   font-size: 0.8rem;
   color: #888;
 }
-.shop-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 0.75rem;
-}
 
 .shop-links a img {
   max-height: 38px;
@@ -222,86 +500,83 @@ body.gaming-page {
   transform: scale(1.05);
   box-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
 }
-.gaming-store-card {
-  background-color: #1c1c1c;
-  color: #ddd;
-  border-radius: 12px;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
 
 .gaming-store-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.15);
 }
-
+#gamingButikker {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
 .gaming-store-card img {
-  max-height: 50px;
-  object-fit: contain;
-  margin-bottom: 0.5rem;
+  max-width: 140px;
+  height: auto;
+  margin-bottom: 0.75rem;
+  border-radius: 6px;
   background: #fff;
   padding: 4px;
-  border-radius: 6px;
 }
-/* Sticky navbar */
-.gaming-navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: #0d0d0d;
-  padding: 0.75rem 1.5rem;
-  border-bottom: 1px solid #222;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+.gaming-store-card h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
 }
 
-.gaming-navbar .nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.gaming-store-card h4 a {
+  color: var(--accent-color, #4ea9ff);
+  text-decoration: none;
 }
 
-.gaming-navbar .logo img {
+.gaming-store-card h4 a:hover {
+  text-decoration: underline;
+}
+
+.gaming-store-card p {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+.gaming-store-card p a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.gaming-store-card p a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.logo img {
   height: 42px;
 }
 
-.gaming-navbar .nav-links {
-  display: flex;
-  gap: 1.2rem;
-}
-
-.gaming-navbar .nav-links a {
+.nav-links a {
   color: #ddd;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
-.gaming-navbar .nav-links a:hover {
+.nav-links a:hover {
   color: #1e90ff;
 }
 
-/* Hero beholdes som før */
-.gaming-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/gaming/gaming-hero.webp') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 4rem 1rem 3rem;
-}
-
-.gaming-hero .overlay h1 {
+.overlay h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
-.gaming-hero .overlay p {
+.overlay p {
   font-size: 1.25rem;
   color: #ccc;
 }
+
 .gaming-nav-highlight {
   font-size: 1.1rem;
-  background: linear-gradient(90deg, #111 0%, #1a1a1a 100%);
+  background: linear-gradient(90deg, #e7eb09 0%, #757306 100%);
   border-top: 1px solid #222;
   border-bottom: 1px solid #222;
 }
@@ -310,31 +585,25 @@ body.gaming-page {
   color: #1e90ff;
   text-decoration: underline;
 }
-.gaming-hero .tagline {
+
+.tagline {
   font-size: 1.8rem;
   font-weight: 600;
   color: #1e90ff;
   margin-top: 1rem;
 }
 
-.gaming-hero .lead {
+.lead {
   font-size: 1.1rem;
   color: #ccc;
   margin-top: 0.75rem;
 }
 
-.gaming-hero .info {
+.info {
   font-size: 1rem;
   color: #aaa;
   margin-top: 0.5rem;
   font-style: italic;
-}
-.dark-section {
-  background-color: #181818;
-  color: #eee;
-  padding: 2.5rem 1rem;
-  margin-top: 2rem;
-  border-top: 1px solid #222;
 }
 
 .dark-section h3 {
@@ -342,14 +611,9 @@ body.gaming-page {
   margin-bottom: 1rem;
 }
 
-.dark-section .small {
+.small {
   margin-top: 1rem;
   color: #aaa;
-}
-.guide-list {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
 }
 
 .guide-list li {
@@ -367,12 +631,7 @@ body.gaming-page {
 .guide-list li a:hover {
   color: #66f;
 }
-.filter-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 1rem 0;
-}
+
 .filter-buttons button {
   background: #222;
   border: none;
@@ -382,77 +641,44 @@ body.gaming-page {
   border-radius: 4px;
   transition: background 0.2s;
 }
+
 .filter-buttons button:hover {
   background: #1e90ff;
 }
 
-.tips-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
-}
-
-.tip-card {
-  background: #1b1b1b;
-  color: #eee;
-  padding: 1rem;
-  border-radius: 8px;
-  border: 1px solid #333;
-}
 .tip-card a {
   color: #1e90ff;
   text-decoration: none;
 }
+
 .tip-card a:hover {
   text-decoration: underline;
 }
+
 .tip-card small {
   display: block;
   margin-top: 0.5rem;
   color: #888;
   font-size: 0.85rem;
 }
+
 .tip-image {
   width: 100%;
   height: auto;
   border-radius: 6px;
   margin-bottom: 0.75rem;
 }
-.review-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.review-card {
-  background: #1a1a1a;
-  border: 1px solid #2a2a2a;
-  border-radius: 10px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  color: #fff;
-  align-items: flex-start;
-  transition: background 0.3s ease;
-}
 
 .review-card:hover {
   background: #222;
 }
 
-.review-card img.review-image {
+.review-image {
   width: 100px;
   height: auto;
   border-radius: 6px;
   object-fit: cover;
   flex-shrink: 0;
-}
-
-.review-content {
-  flex: 1;
 }
 
 .review-content h4 {
@@ -468,10 +694,12 @@ body.gaming-page {
 .review-content h4 a:hover {
   text-decoration: underline;
 }
+
 .review-content p {
   margin-bottom: 0.75rem;
   line-height: 1.4;
 }
+
 .review-meta {
   margin-top: 0.5rem;
   font-size: 0.9rem;
@@ -480,47 +708,24 @@ body.gaming-page {
   flex-wrap: wrap;
 }
 
-.platform-tag,
-.score-tag {
-  background-color: #333;
-  color: #ccc;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-}
 .platform-tag[data-platform='PC'] {
   background-color: #2a2a2a;
   color: #d1bf1e;
 }
+
 .platform-tag[data-platform='PS5'] {
   background-color: #2a2a2a;
   color: #417aa8;
 }
+
 .platform-tag[data-platform='Xbox'] {
   background-color: #2a2a2a;
   color: #44d62c;
 }
+
 .platform-tag[data-platform='Switch'] {
   background-color: #2a2a2a;
   color: #e60012;
-}
-/* Gjør anmeldelsene til kortvisning med wrap */
-.review-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-}
-
-.review-card {
-  flex: 1 1 280px;
-  max-width: 300px;
-  background: #181818;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
 }
 
 .review-image {
@@ -529,51 +734,32 @@ body.gaming-page {
   border-radius: 0.5rem;
   margin-bottom: 0.75rem;
 }
-#anmeldelse-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  justify-items: center;
-}
-.game-calendar {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #181818;
-  color: #eee;
-  margin-top: 1rem;
-}
-.game-calendar th,
+
 .game-calendar td {
   padding: 0.75rem;
   border: 1px solid #333;
   text-align: left;
 }
+
 .game-calendar th {
   background-color: #1e1e1e;
 }
-.tag {
-  background-color: #2a2a2a;
-  color: #ccc;
-  padding: 2px 6px;
-  margin: 2px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  display: inline-block;
-}
+
 .game-calendar td a {
   color: #66ccff;
   text-decoration: none;
 }
+
 .game-calendar td a:hover {
   text-decoration: underline;
 }
-/* 🎮 Spillfilter styling */
-#spillkalender-container .form-label {
+
+.form-label {
   font-weight: 500;
   color: var(--text-color, #fff);
 }
 
-#spillkalender-container select.form-select {
+.form-select {
   padding: 0.375rem 0.75rem;
   background-color: var(--bg-secondary, #222);
   color: var(--text-color, #fff);
@@ -582,25 +768,25 @@ body.gaming-page {
   transition: all 0.2s ease;
 }
 
-#spillkalender-container select.form-select:focus {
+.form-select:focus {
   border-color: var(--accent-color, #007bff);
   outline: none;
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
 }
 
-#spillkalender-container .filter-box {
+.filter-box {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-#spillkalender-container .filter-box > div {
+.filter-box > div {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-/* 🎮 Spillfilter-knapper */
+
 #spillkalender-container button {
   padding: 0.4rem 0.75rem;
   border-radius: 6px;
@@ -608,18 +794,17 @@ body.gaming-page {
   cursor: pointer;
 }
 
-/* Nullstill-knapp */
 #spillkalender-container #nullstillFilter {
   background-color: var(--bg-secondary, #333);
   color: var(--text-color, #fff);
   border: 1px solid #666;
 }
+
 #spillkalender-container #nullstillFilter:hover {
   background-color: #444;
 }
 
-/* Vis alle-knapp */
-#spillkalender-container .vis-alle-knapp {
+.vis-alle-knapp {
   display: inline-block;
   margin-top: 1rem;
   background: transparent;
@@ -628,38 +813,9 @@ body.gaming-page {
   border-radius: 6px;
   padding: 0.5rem 1rem;
 }
-#spillkalender-container .vis-alle-knapp:hover {
+
+.vis-alle-knapp:hover {
   background-color: #2a2a2a;
-}
-
-/* Plattform-tagger */
-#spillkalender-container .tag {
-  display: inline-block;
-  background-color: #2d2d2d;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 0.75rem;
-  margin-right: 4px;
-  white-space: nowrap;
-}
-/* 🎯 Tips & guider – kortoppsett */
-#tips-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.tip-card {
-  background-color: var(--bg-secondary, #1e1e1e);
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 1rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }
 
 .tip-card:hover {
@@ -678,6 +834,7 @@ body.gaming-page {
   color: var(--accent-color, #4ea9ff);
   text-decoration: none;
 }
+
 .tip-card a:hover {
   text-decoration: underline;
 }
@@ -688,20 +845,11 @@ body.gaming-page {
   flex-grow: 1;
 }
 
-.tip-card .tip-image {
+.tip-image {
   width: 100%;
   border-radius: 6px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-}
-
-/* 🔘 Filterknapper */
-#tips-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
 }
 
 #tips-filters button {
@@ -714,15 +862,13 @@ body.gaming-page {
   transition: all 0.2s ease;
 }
 
-#tips-filters button:hover,
-#tips-filters button.active {
+.active {
   background-color: var(--accent-color, #4ea9ff);
   color: #fff;
   border-color: var(--accent-color, #4ea9ff);
 }
 
-/* 🧭 Vis alle-knapp */
-#tips-container .btn {
+.btn {
   grid-column: 1 / -1;
   justify-self: center;
   padding: 0.5rem 1.2rem;
@@ -731,56 +877,130 @@ body.gaming-page {
   margin-top: 2rem; /* flytter knappen litt ned */
 }
 
-/* ===== RESPONSIV STIL FOR MOBIL ===== */
-@media (max-width: 768px) {
-  .gaming-hero h1,
-  .gaming-hero h2,
-  .gaming-hero p {
-    text-align: center;
-    padding: 0 1rem;
-  }
-
-  .game-grid,
-  .review-list,
-  .toplist,
-  .equipment-grid,
-  .tip-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .game-card,
-  .review-card,
-  .equipment-card,
-  .tip-card {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .game-card img,
-  .equipment-card img,
-  .tip-card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  nav.navbar {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    align-items: flex-start;
-  }
-
-  nav.navbar a {
-    font-size: 1rem;
-  }
-
-  .content-wrapper {
-    padding: 1rem;
-  }
+.gaming-hero-content h1 {
+  font-size: 2rem;
+  color: #4ea9ff;
+  margin-bottom: 1rem;
 }
+
+.lead {
+  font-size: 1.1rem;
+  color: #ddd;
+  max-width: 720px;
+  margin: 0 auto 0.75rem;
+}
+
+.sub-note {
+  font-size: 0.95rem;
+  color: #999;
+  font-style: italic;
+}
+
+.gaming-hero-content h1 {
+  font-size: 1.5rem;
+}
+
+.lead {
+  font-size: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo-text {
+  display: none;
+  line-height: 1.2;
+}
+
+.logo-text strong {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.logo-text small {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.gaming-navbar .logo-text {
+  display: block;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  background-color: #1e1e1e;
+  color: #1e90ff;
+}
+
+.gaming-banner a {
+  color: #0047ff;
+  text-decoration: underline;
+}
+
+.gaming-banner a:hover {
+  text-decoration: none;
+  color: #1e90ff;
+}
+
+.gaming-btn {
+  background: #4ea9ff;
+  color: #fff;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.gaming-btn:hover {
+  background: #2a8dd8;
+}
+
+.gaming-hero h1,
+.gaming-hero h2,
+.gaming-hero p {
+  text-align: center;
+  padding: 0 1rem;
+}
+.tip-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tip-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.navbar {
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: flex-start;
+}
+
+.navbar a {
+  font-size: 1rem;
+}
+
 .gaming-hero h1 {
   font-size: 1.75rem;
 }
@@ -792,70 +1012,143 @@ body.gaming-page {
 .gaming-hero p {
   font-size: 1rem;
 }
-.review-card {
-  display: flex;
-  gap: 1rem;
-  border: 1px solid #2a2a2a;
-  background: #1a1a1a;
-  padding: 1rem;
-  border-radius: 10px;
-  color: #fff;
-  flex-wrap: wrap;
-}
-.review-card img.review-image {
+
+.review-image {
   width: 120px;
   height: auto;
   object-fit: cover;
   border-radius: 6px;
 }
-.review-card .review-content {
-  flex: 1;
-}
+
 .review-card h4 a {
   color: #99ccff;
   text-decoration: none;
 }
-@media (max-width: 768px) {
-  .review-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 
-  .review-card img.review-image {
-    width: 80%;
-    max-width: 250px;
-  }
-
-  .review-meta {
-    justify-content: center;
-  }
+.review-card {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  max-width: 250px;
 }
-#tips-filters {
+
+.review-meta {
   justify-content: center;
 }
 
-#tips-container .btn {
+.btn {
   margin-inline: auto;
   display: block;
   text-align: center;
 }
+
+#tips-filters {
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+#tips-filters button {
+  width: auto;
+  flex: 1 1 auto;
+  min-width: 120px;
+  text-align: center;
+}
+
+.tip-card {
+  padding: 0.75rem;
+}
+/* === 📱 Mobiloptimalisering === */
 @media (max-width: 768px) {
-  #tips-filters {
-    gap: 0.75rem;
-    margin-top: 1.25rem;
+  .gaming-navbar .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
   }
 
-  .filter-buttons button,
-  #tips-filters button {
-    width: auto;
-    flex: 1 1 auto;
-    min-width: 120px;
-    text-align: center;
+  .gaming-navbar .logo {
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .gaming-navbar .logo img {
+    height: 36px;
+  }
+
+  .gaming-navbar .logo-text {
+    display: block;
+    text-align: left;
+  }
+
+  .gaming-navbar .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .gaming-navbar .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 0.4rem 0;
   }
 }
-@media (max-width: 480px) {
-  .tip-card {
-    padding: 0.75rem;
+
+@media (max-width: 768px) {
+  .gaming-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .gaming-hero {
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .gaming-hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .gaming-hero-content p,
+  .lead {
+    font-size: 1rem;
+  }
+
+  .review-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .tips-grid,
+  .equipment-grid,
+  .game-grid,
+  #anmeldelse-list,
+  #tips-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gaming-store-card {
+    padding: 1rem;
+  }
+
+  .gaming-store-card img {
+    max-width: 100px;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #tips-filters {
+    flex-direction: column;
   }
 }
