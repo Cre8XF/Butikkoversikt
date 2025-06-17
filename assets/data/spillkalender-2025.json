@@ -1,0 +1,962 @@
+[
+  {
+    "title": "Destiny 2: The Final Shape",
+    "release": "2025-06-04",
+    "platforms": ["PS5", "PS4", "Xbox Series X|S", "Xbox One", "PC"],
+    "url": "https://www.monsterhunter.com/stories2/us/"
+  },
+  {
+    "title": "Killer Klowns From Outer Space: The Game",
+    "release": "2025-06-04",
+    "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X"],
+    "url": "https://www.snk-corp.co.jp/us/games/metalslug_attack_reloaded/"
+  },
+  {
+    "title": "Rocket Knight Adventures: Re-Sparked Collection",
+    "release": "2025-06-11",
+    "platforms": ["PS4", "PS5", "Switch"],
+    "url": "https://www.stillwakesthedeep.com/"
+  },
+  {
+    "title": "V Rising",
+    "release": "2025-06-11",
+    "platforms": ["PS5"],
+    "url": "https://store.steampowered.com/app/1658150/Moonstone_Island/"
+  },
+  {
+    "title": "Monster Hunter Stories",
+    "release": "2025-06-14",
+    "platforms": ["PC", "PS4", "Switch"],
+    "url": "https://en.bandainamcoent.eu/elden-ring/elden-ring-shadow-erdtree"
+  },
+  {
+    "title": "Monster Hunter Stories 2: Wings of Ruin",
+    "release": "2025-06-14",
+    "platforms": ["PS4"],
+    "url": "https://www.atlus.com/smt5v/"
+  },
+  {
+    "title": "Blud",
+    "release": "2025-06-18",
+    "platforms": ["PS4", "Xbox One", "Switch", "PC"],
+    "url": "https://cyan.com/games/riven/"
+  },
+  {
+    "title": "METAL SLUG ATTACK RELOADED",
+    "release": "2025-06-18",
+    "platforms": ["Switch"],
+    "url": "https://supermonkeyball.sega.com/banana-rumble/"
+  },
+  {
+    "title": "Still Wakes the Deep",
+    "release": "2025-06-18",
+    "platforms": ["PC", "PS5", "Xbox Series X", "Gamepass"],
+    "url": "https://www.nintendo.com/us/store/products/luigis-mansion-2-hd-switch/"
+  },
+  {
+    "title": "Moonstone Island",
+    "release": "2025-06-19",
+    "platforms": ["Switch"],
+    "url": "https://www.atari.com/products/neosprint"
+  },
+  {
+    "title": "Elden Ring: Shadow of the Erdtree",
+    "release": "2025-06-21",
+    "platforms": ["PS5", "PS4", "Xbox Series X|S", "Xbox One", "PC"],
+    "url": "https://spyxanya.bn-ent.net/en/"
+  },
+  {
+    "title": "Shin Megami Tensei V: Vengeance",
+    "release": "2025-06-21",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox One", "Xbox Series X"],
+    "url": "https://na.finalfantasyxiv.com/dawntrail/"
+  },
+  {
+    "title": "Riven remake",
+    "release": "2025-06-25",
+    "platforms": ["PC", "Quest"],
+    "url": "https://tfd.nexon.com/"
+  },
+  {
+    "title": "Super Monkey Ball Banana Rumble",
+    "release": "2025-06-25",
+    "platforms": ["Switch"],
+    "url": "https://zenless.hoyoverse.com/en-us/"
+  },
+  {
+    "title": "Luigi's Mansion 2 HD",
+    "release": "2025-06-27",
+    "platforms": ["Switch"],
+    "url": "https://www.nisamerica.com/games/legend-of-heroes-trails-through-daybreak/"
+  },
+  {
+    "title": "NeoSprint",
+    "release": "2025-06-27",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox Series X"],
+    "url": "https://www.oncehuman.game/"
+  },
+  {
+    "title": "Spy x Anya: Operation Memories",
+    "release": "2025-06-28",
+    "platforms": ["PC", "PS4", "PS5", "Switch"],
+    "url": "https://en.bandainamcoent.eu/ace-combat/ace-combat-7-skies-unknown"
+  },
+  {
+    "title": "Final Fantasy 14: Dawntrail",
+    "release": "2025-07-02",
+    "platforms": ["PC", "PS4", "PS5", "Xbox Series X"],
+    "url": "https://store.steampowered.com/app/1978590/Anger_Foot/"
+  },
+  {
+    "title": "The First Descendant",
+    "release": "2025-07-02",
+    "platforms": ["PS5", "PS4", "Xbox Series X|S", "Xbox One", "PC"],
+    "url": "https://neonwhite.iam8bit.com/"
+  },
+  {
+    "title": "Zenless Zone Zero",
+    "release": "2025-07-04",
+    "platforms": ["Android", "iOS", "PC", "PS5"],
+    "url": "https://www.darkestdungeon.com/darkest-dungeon-ii/"
+  },
+  {
+    "title": "The Legend of Heroes: Trails Through Daybreak",
+    "release": "2025-07-05",
+    "platforms": ["PC", "PS4", "PS5", "Switch"],
+    "url": "https://www.aerialknight.com/we-never-yield-press.html"
+  },
+  {
+    "title": "Once Human",
+    "release": "2025-07-09",
+    "platforms": ["PC"],
+    "url": "https://store.steampowered.com/app/1422440/Cataclismo/"
+  },
+  {
+    "title": "Ace Combat 7: Skies Unknown",
+    "release": "2025-07-11",
+    "platforms": ["Switch"],
+    "url": "https://www.nintendo.com/us/store/products/deliver-us-the-moon-switch/"
+  },
+  {
+    "title": "Anger Foot",
+    "release": "2025-07-11",
+    "platforms": ["PC"],
+    "url": "https://store.steampowered.com/app/2424110/Demon_Slayer_Kimetsu_no_Yaiba_Sweep_the_Board/"
+  },
+  {
+    "title": "Neon White",
+    "release": "2025-07-11",
+    "platforms": ["Xbox One", "Xbox Series X", "Gamepass"],
+    "url": "https://store.steampowered.com/app/2395730/EvilVEvil/"
+  },
+  {
+    "title": "Darkest Dungeon 2",
+    "release": "2025-07-15",
+    "platforms": ["PS4", "PS5"],
+    "url": "https://store.steampowered.com/app/1818570/Flock/"
+  },
+  {
+    "title": "Aerial_Knight's We Never Yield",
+    "release": "2025-07-16",
+    "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X"],
+    "url": "https://store.steampowered.com/app/1245560/Gestalt_Steam__Cinder/"
+  },
+  {
+    "title": "Cataclismo",
+    "release": "2025-07-16",
+    "platforms": ["PC"],
+    "url": "https://store.steampowered.com/app/2827180/Nobody_Wants_To_Die/"
+  },
+  {
+    "title": "Deliver Us The Moon",
+    "release": "2025-07-16",
+    "platforms": ["Switch"],
+    "url": "https://www.nintendo.com/store/products/teenage-mutant-ninja-turtles-splintered-fate-switch/"
+  },
+  {
+    "title": "Demon Slayer -Kimetsu no Yaiba- Sweep the Board!",
+    "release": "2025-07-16",
+    "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X"],
+    "url": "https://www.pathoftheteallotus.com/"
+  },
+  {
+    "title": "EvilVEvil",
+    "release": "2025-07-16",
+    "platforms": ["PS5", "Xbox Series X|S", "PC"],
+    "url": "https://www.dungeons-of-hinterberg.com/"
+  },
+  {
+    "title": "Flock",
+    "release": "2025-07-16",
+    "platforms": ["PS5", "Xbox Series X/S", "PS4", "Xbox One", "PC", "Gamepass"],
+    "url": "https://www.flintlockgame.com/"
+  },
+  {
+    "title": "Gestalt: Steam & Cinder",
+    "release": "2025-07-16",
+    "platforms": ["PC"],
+    "url": "https://www.nintendo.com/store/products/nintendo-world-championships-nes-edition-switch/"
+  },
+  {
+    "title": "Nobody Wants to Die",
+    "release": "2025-07-17",
+    "platforms": ["PS5", "Xbox Series X|S", "PC"],
+    "url": "https://store.steampowered.com/app/1626490/Schim/"
+  },
+  {
+    "title": "Teenage Mutant Ninja Turtles: Splintered Fate",
+    "release": "2025-07-17",
+    "platforms": ["Switch"],
+    "url": "https://www.ea.com/games/college-football/college-football-25"
+  },
+  {
+    "title": "Bō: Path of the Teal Lotus",
+    "release": "2025-07-18",
+    "platforms": ["PC", "PS5", "Switch", "Xbox Series X"],
+    "url": "https://www.xbox.com/en-US/games/kunitsu-gami-path-of-the-goddess"
+  },
+  {
+    "title": "Dungeons of Hinterberg",
+    "release": "2025-07-18",
+    "platforms": ["Xbox Series X|S", "PC", "Gamepass"],
+    "url": "https://www.f1manager.com/2024"
+  },
+  {
+    "title": "Flintlock: The Siege of Dawn",
+    "release": "2025-07-18",
+    "platforms": ["PS5", "Xbox Series X|S", "Xbox One", "PC", "Gamepass"],
+    "url": "https://www.flintlockgame.com/"
+  },
+  {
+    "title": "Nintendo World Championships: NES Edition",
+    "release": "2025-07-18",
+    "platforms": ["Switch"],
+    "url": "https://www.nintendo.com/store/products/nintendo-world-championships-nes-edition-switch/"
+  },
+  {
+    "title": "Schim",
+    "release": "2025-07-18",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox One"],
+    "url": "https://store.steampowered.com/app/1626490/Schim/"
+  },
+  {
+    "title": "EA Sports College Football 25",
+    "release": "2025-07-19",
+    "platforms": ["PS5", "Xbox Series X"],
+    "url": "https://www.ea.com/games/college-football/college-football-25"
+  },
+  {
+    "title": "Kunitsu-Gami: Path of the Goddess",
+    "release": "2025-07-19",
+    "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X", "Gamepass"],
+    "url": "https://www.xbox.com/en-US/games/kunitsu-gami-path-of-the-goddess"
+  },
+  {
+    "title": "F1 Manager 2024",
+    "release": "2025-07-23",
+    "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X"],
+    "url": "https://www.f1manager.com/2024"
+  },
+  {
+    "title": "Valley Peaks",
+    "release": "2025-07-24",
+    "platforms": ["PC"],
+    "url": "https://store.steampowered.com/app/2127810/Valley_Peaks/"
+  },
+  {
+    "title": "Arranger: A Role-Puzzling Adventure",
+    "release": "2025-07-25",
+    "platforms": ["Mac", "PC", "PS5", "Switch"],
+    "url": "https://store.steampowered.com/app/2416100/Arranger_A_RolePuzzling_Adventure/"
+  },
+  {
+    "title": "Earth Defense Force 6",
+    "release": "2025-07-25",
+    "platforms": ["PC", "PS4", "PS5"],
+    "url": "https://www.d3p.co.jp/edf6/en/"
+  },
+  {
+    "title": "The Star Named EOS",
+    "release": "2025-07-25",
+    "platforms": ["PC", "PS5", "Switch", "Xbox Series X"],
+    "url": "https://store.steampowered.com/app/1837330/The_Star_Named_EOS/"
+  },
+  {
+    "title": "Thrasher",
+    "release": "2025-07-25",
+    "platforms": ["PC VR", "Quest"],
+    "url": "https://store.steampowered.com/app/2617650/THRASHER/"
+  },
+  {
+    "title": "Valorant",
+    "release": "2025-07-26",
+    "platforms": ["PS5", "Xbox Series X"],
+    "url": "https://playvalorant.com/"
+  },
+  {
+    "title": "One Piece Odyssey",
+    "release": "2025-07-26",
+    "platforms": ["Switch"],
+    "url": "https://en.bandainamcoent.eu/one-piece/one-piece-odyssey"
+  },
+  {
+    "title": "The New Denpa Men",
+    "release": "2025-07-27",
+    "platforms": ["Switch"],
+    "url": "https://store-jp.nintendo.com/list/software/70010000068237.html"
+  },
+  {
+    "title": "Star Wars: Bounty Hunter remaster",
+    "release": "2025-08-01",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox One", "Xbox Series X"],
+    "url": "https://www.nintendo.com/store/products/star-wars-bounty-hunter-switch/"
+  },
+  {
+    "title": "Thank Goodness You're Here!",
+    "release": "2025-08-01",
+    "platforms": ["PC", "PS5", "Switch"],
+    "url": "https://store.steampowered.com/app/2229780/Thank_Goodness_Youre_Here/"
+  },
+  {
+    "title": "Tomba! Special Edition",
+    "release": "2025-08-01",
+    "platforms": ["PC", "Switch", "PS5"],
+    "url": "https://limitedrungames.com/products/tomba-physical-switch"
+  },
+  {
+    "title": "World of Goo 2",
+    "release": "2025-08-02",
+    "platforms": ["PC", "Switch"],
+    "url": "https://2dboy.com/world-of-goo-2/"
+  },
+  {
+    "title": "Pepper Grinder",
+    "release": "2025-08-06",
+    "platforms": ["PS4", "PS5", "Xbox One", "Xbox Series X"],
+    "url": "https://peppergrinder.com/"
+  },
+  {
+    "title": "Creatures of Ava",
+    "release": "2025-08-07",
+    "platforms": ["PC", "Xbox Series X", "Gamepass"],
+    "url": "https://www.creaturesofava.com/"
+  },
+  {
+    "title": "Cat Quest 3",
+    "release": "2025-08-08",
+    "platforms": ["PS5", "PS4", "Xbox Series X|S", "Xbox One", "Switch", "PC"],
+    "url": "https://thegentlebros.com/catquest3/"
+  },
+  {
+    "title": "SteamWorld Heist 2",
+    "release": "2025-08-08",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox One", "Xbox Series X"],
+    "url": "https://store.steampowered.com/app/2110770/SteamWorld_Heist_II/"
+  },
+  {
+    "title": "The Crush House",
+    "release": "2025-08-09",
+    "platforms": ["PC"],
+    "url": "https://store.steampowered.com/app/2334730/The_Crush_House/"
+  },
+  {
+    "title": "Stormgate",
+    "release": "2025-08-13",
+    "platforms": ["PC"],
+    "url": "https://www.stormgategame.com/"
+  },
+  {
+    "title": "Hunt: Showdown",
+    "release": "2025-08-15",
+    "platforms": ["PS5", "Xbox Series X"],
+    "url": "https://www.huntshowdown.com/"
+  },
+  {
+    "title": "Madden NFL 25",
+    "release": "2025-08-16",
+    "platforms": ["PC", "PS5", "Xbox Series X"],
+    "url": "https://www.ea.com/games/madden-nfl/madden-nfl-25"
+  },
+  {
+    "title": "Black Myth: Wukong",
+    "release": "2025-08-20",
+    "platforms": ["PS5", "PC"],
+    "url": "https://www.heishenhua.com/"
+  },
+  {
+    "title": "Dustborn",
+    "release": "2025-08-20",
+    "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X"],
+    "url": "https://www.dustborn.com/"
+  },
+  {
+    "title": "Tactical Breach Wizards",
+    "release": "2025-08-22",
+    "platforms": ["PC"],
+    "url": "https://www.suspiciousdevelopments.com/tacticalbreachwizards/"
+  },
+  {
+    "title": "Concord",
+    "release": "2025-08-23",
+    "platforms": ["PC", "PS5"],
+    "url": "https://www.playstation.com/en-us/games/concord/"
+  },
+  {
+    "title": "Endzone 2",
+    "release": "2025-08-26",
+    "platforms": ["PC"],
+    "url": "https://store.steampowered.com/app/1700330/Endzone_2/"
+  },
+  {
+    "title": "World of Warcraft: The War Within",
+    "release": "2025-08-26",
+    "platforms": ["Mac", "PC"],
+    "url": "https://worldofwarcraft.blizzard.com/en-us/the-war-within"
+  },
+  {
+    "title": "Core Keeper",
+    "release": "2025-08-27",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox One", "Xbox Series X"],
+    "url": "https://corekeeper.se/"
+  },
+  {
+    "title": "Peglin",
+    "release": "2025-08-27",
+    "platforms": ["Switch"],
+    "url": "https://store.steampowered.com/app/1296610/Peglin/"
+  },
+  {
+    "title": "Pico Park 2",
+    "release": "2025-08-27",
+    "platforms": ["Switch", "Xbox"],
+    "url": "https://picopark2-nyamakop.hatenablog.com/"
+  },
+  {
+    "title": "Akimbot",
+    "release": "2025-08-29",
+    "platforms": ["PS5", "Xbox Series X|S", "PC"],
+    "url": "https://store.steampowered.com/app/2378280/Akimbot/"
+  },
+  {
+    "title": "Emio - The Smiling Man: Famicom Detective Club",
+    "release": "2025-08-29",
+    "platforms": ["Switch"],
+    "url": "https://www.nintendo.com/us/store/products/emio-the-smiling-man-famicom-detective-club-switch/"
+  },
+  {
+    "title": "Gundam Breaker 4",
+    "release": "2025-08-29",
+    "platforms": ["PC", "PS4", "PS5", "Switch"],
+    "url": "https://en.gundam.info/about-gundam/series-pages/gundambreaker4/"
+  },
+  {
+    "title": "Shadow of the Ninja — Reborn",
+    "release": "2025-08-29",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox Series X"],
+    "url": "https://natsumeatari.co.jp/tnsr/en/"
+  },
+  {
+    "title": "Squirrel With A Gun",
+    "release": "2025-08-29",
+    "platforms": ["PC"],
+    "url": "https://store.steampowered.com/app/2419260/Squirrel_With_A_Gun/"
+  },
+  {
+    "title": "Visions of Mana",
+    "release": "2025-08-29",
+    "platforms": ["PS5", "PS4", "Xbox Series X|S", "Xbox One", "PC"],
+    "url": "https://mana.square-enix-games.com/en-us/games/visions-of-mana"
+  },
+  {
+    "title": "Star Wars Outlaws",
+    "release": "2025-08-30",
+    "platforms": ["PS5", "Xbox Series X|S", "PC"],
+    "url": "https://www.ubisoft.com/en-us/game/star-wars/outlaws"
+  },
+  {
+    "title": "Parcel Corps",
+    "release": "2025-09-03",
+    "platforms": ["PS5", "Xbox Series X|S", "PC"],
+    "url": "https://www.annapurna.pictures/interactive/parcel-corps"
+  },
+  {
+    "title": "Prison Architect 2",
+    "release": "2025-09-03",
+    "platforms": ["PC", "PS5", "Xbox Series X"],
+    "url": "https://store.steampowered.com/app/2165000/Prison_Architect_2/"
+  },
+  {
+    "title": "The Casting of Frank Stone",
+    "release": "2025-09-03",
+    "platforms": ["PC", "PS5", "Xbox Series X"],
+    "url": "https://www.tothedeadgame.com/the-casting-of-frank-stone"
+  },
+  {
+    "title": "Age of Mythology: Retold",
+    "release": "2025-09-04",
+    "platforms": ["PC", "Xbox Series X"],
+    "url": "https://www.ageofempires.com/games/aom-retold/"
+  },
+  {
+    "title": "Ace Attorney Investigations Collection",
+    "release": "2025-09-06",
+    "platforms": ["PC", "PS4", "Switch", "Xbox One"],
+    "url": "https://www.capcom-games.com/product/en-us/aceattorney-i_collection/"
+  },
+  {
+    "title": "Astro Bot",
+    "release": "2025-09-06",
+    "platforms": ["PS5"],
+    "url": "https://www.playstation.com/en-us/games/astro-bot/"
+  },
+  {
+    "title": "NBA 2K25",
+    "release": "2025-09-06",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox One", "Xbox Series X"],
+    "url": "https://nba.2k.com/2k25/"
+  },
+  {
+    "title": "Warhammer 40,000: Space Marine 2",
+    "release": "2025-09-09",
+    "platforms": ["PC", "PS5", "Xbox Series X"],
+    "url": "https://www.focus-entmt.com/en/games/warhammer-40000-space-marine-2"
+  },
+  {
+    "title": "What The Car?",
+    "release": "2025-09-09",
+    "platforms": ["PC"],
+    "url": "https://www.triband.net/what-the-car"
+  },
+  {
+    "title": "I Am Your Beast",
+    "release": "2025-09-10",
+    "platforms": ["PC"],
+    "url": "https://store.steampowered.com/app/2525240/I_Am_Your_Beast/"
+  },
+  {
+    "title": "The Elder Scrolls: Castles",
+    "release": "2025-09-10",
+    "platforms": ["Android", "iOS"],
+    "url": "https://elderscrollscastles.bethesda.net/"
+  },
+  {
+    "title": "Towerborne",
+    "release": "2025-09-10",
+    "platforms": ["PC"],
+    "url": "https://www.xbox.com/en-US/games/towerborne"
+  },
+  {
+    "title": "Yars Rising",
+    "release": "2025-09-10",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox One", "Xbox Series X"],
+    "url": "https://www.yarsrising.com/"
+  },
+  {
+    "title": "Caravan SandWitch",
+    "release": "2025-09-12",
+    "platforms": ["PC", "PS5", "Switch"],
+    "url": "https://www.caravansandwitch.com/"
+  },
+  {
+    "title": "Marvel vs. Capcom Fighting Collection: Arcade Classics",
+    "release": "2025-09-12",
+    "platforms": ["PS4", "Switch", "PC"],
+    "url": "https://www.capcom-games.com/mvsc_fighting_collection/"
+  },
+  {
+    "title": "Pico Park 2",
+    "release": "2025-09-12",
+    "platforms": ["PC"],
+    "url": "https://picopark2-nyamakop.hatenablog.com/"
+  },
+  {
+    "title": "Test Drive Unlimited Solar Crown",
+    "release": "2025-09-12",
+    "platforms": ["PC", "PS5", "Xbox Series X"],
+    "url": "https://tdusolarcrown.com/"
+  },
+  {
+    "title": "Wild Bastards",
+    "release": "2025-09-12",
+    "platforms": ["PC", "PS5", "Switch", "Xbox Series X"],
+    "url": "https://store.steampowered.com/app/1902410/Wild_Bastards/"
+  },
+  {
+    "title": "Funko Fusion",
+    "release": "2025-09-13",
+    "platforms": ["PC", "PS5", "Xbox Series X"],
+    "url": "https://funkofusion.com/"
+  },
+  {
+    "title": "The Plucky Squire",
+    "release": "2025-09-17",
+    "platforms": ["PC", "PS5", "Switch", "Xbox Series X"],
+    "url": "https://www.devolverdigital.com/games/the-plucky-squire"
+  },
+  {
+    "title": "UFO 50",
+    "release": "2025-09-18",
+    "platforms": ["PC"],
+    "url": "http://ufo50.com/"
+  },
+  {
+    "title": "God of War Ragnarök",
+    "release": "2025-09-19",
+    "platforms": ["PC"],
+    "url": "https://www.playstation.com/en-us/games/god-of-war-ragnarok/"
+  },
+  {
+    "title": "Dead Rising Deluxe Remaster",
+    "release": "2025-09-19",
+    "platforms": ["PC", "PS5", "Xbox Series X"],
+    "url": "https://www.capcom-games.com/deadrising/en-us/"
+  },
+  {
+    "title": "Frostpunk 2",
+    "release": "2025-09-20",
+    "platforms": ["PC"],
+    "url": "https://www.frostpunk2.com/"
+  },
+  {
+    "title": "The Karate Kid: Street Rumble",
+    "release": "2025-09-20",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox One", "Xbox Series X"],
+    "url": "https://gamevision.ae/the-karate-kid-street-rumble/"
+  },
+  {
+    "title": "Harry Potter: Quidditch Champions",
+    "release": "2025-09-23",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox One", "Xbox Series X"],
+    "url": "https://www.harrypotterquiddichchampions.com/"
+  },
+  {
+    "title": "Ara: History Untold",
+    "release": "2025-09-24",
+    "platforms": ["PC"],
+    "url": "https://www.arahistoryuntold.com/"
+  },
+  {
+    "title": "Disney Epic Mickey: Rebrushed",
+    "release": "2025-09-24",
+    "platforms": ["PS4", "PS5", "Switch", "Xbox One", "Xbox Series X"],
+    "url": "https://www.thqnordic.com/games/disney-epic-mickey-rebrushed"
+  },
+  {
+    "title": "GreedFall 2: The Dying World",
+    "release": "2025-09-24",
+    "platforms": ["PC"],
+    "url": "https://www.nacon.fr/en-US/games/greedfall-2"
+  },
+  {
+    "title": "Lollipop Chainsaw RePOP",
+    "release": "2025-09-25",
+    "platforms": ["PS5", "Xbox Series X|S", "Switch", "PC"],
+    "url": "https://dragami.games/en/product/lollipop-chainsaw-repop/"
+  },
+  {
+    "title": "Earth Defense Force: World Brothers 2",
+    "release": "2025-09-26",
+    "platforms": ["PS4", "PS5", "Switch"],
+    "url": "https://www.d3p.co.jp/edfwb2/en/"
+  },
+  {
+    "title": "The Legend of Zelda: Echoes of Wisdom",
+    "release": "2025-09-26",
+    "platforms": ["Switch"],
+    "url": "https://www.nintendo.com/store/products/the-legend-of-zelda-echoes-of-wisdom-switch/"
+  },
+  {
+    "title": "Reynatis",
+    "release": "2025-09-29",
+    "platforms": ["PC", "PS4", "PS5", "Switch"],
+    "url": "https://www.nisamerica.com/games/reynatis/"
+  },
+  {
+    "title": "Starfield Shattered Space",
+    "release": "2025-09-30",
+    "platforms": ["PC", "Xbox Series X|S"],
+    "url": "https://bethesda.net/en/game/starfield"
+  },
+  {
+    "title": "MechWarrior 5: Clans",
+    "release": "2025-10-03",
+    "platforms": ["PC", "PS5", "Xbox Series X"],
+    "url": "https://mw5mercs.com/clans"
+  },
+  {
+    "title": "Victory Heat Rally",
+    "release": "2025-10-03",
+    "platforms": ["PC"],
+    "url": "https://store.steampowered.com/app/1385300/Victory_Heat_Rally/"
+  },
+  {
+    "title": "Spongebob Squarepants: The Patrick Star Game",
+    "release": "2025-10-04",
+    "platforms": ["PS4", "PS5", "Switch", "Xbox One", "Xbox Series X|S", "PC"],
+    "url": "https://www.thqnordic.com/games/spongebob-squarepants-the-patrick-star-show"
+  },
+  {
+    "title": "Sword Art Online Fractured Daydream",
+    "release": "2025-10-04",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox Series X"],
+    "url": "https://sao-game.bandainamco.com/daydream/"
+  },
+  {
+    "title": "Until Dawn",
+    "release": "2025-10-04",
+    "platforms": ["PC", "PS5"],
+    "url": "https://www.playstation.com/en-us/games/until-dawn/"
+  },
+  {
+    "title": "Diablo 4: Vessel of Hatred",
+    "release": "2025-10-08",
+    "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X"],
+    "url": "https://diablo4.blizzard.com/en-us/vessel-of-hatred"
+  },
+  {
+    "title": "Silent Hill 2 Remake",
+    "release": "2025-10-08",
+    "platforms": ["PS5", "PC"],
+    "url": "https://www.konami.com/games/silenthill/2/"
+  },
+  {
+    "title": "Fantasy Life i: The Girl Who Steals Time",
+    "release": "2025-10-10",
+    "platforms": ["Switch"],
+    "url": "https://www.level5.com/eng/news/detail/20240229/"
+  },
+  {
+    "title": "Dragon Ball: Sparking! Zero",
+    "release": "2025-10-11",
+    "platforms": ["PC", "PS5", "Xbox Series X"],
+    "url": "https://dbsz.bn-ent.net/"
+  },
+  {
+    "title": "Metaphor: ReFantazio",
+    "release": "2025-10-11",
+    "platforms": ["PS5", "PS4", "Xbox Series X|S", "PC"],
+    "url": "https://atlus.com/metaphor/"
+  },
+  {
+    "title": "Starship Troopers: Extermination",
+    "release": "2025-10-11",
+    "platforms": ["PC", "PS5", "Xbox Series X"],
+    "url": "https://www.offworldind.com/starship-troopers-extermination"
+  },
+  {
+    "title": "Transformers: Galactic Trials",
+    "release": "2025-10-11",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox One", "Xbox Series X"],
+    "url": "https://transformers.hasbro.com/en-us/brands/transformers-galactic-trials"
+  },
+  {
+    "title": "Undisputed",
+    "release": "2025-10-11",
+    "platforms": ["PC", "PS5", "Xbox Series X"],
+    "url": "https://playundisputed.com/"
+  },
+  {
+    "title": "Neva",
+    "release": "2025-10-15",
+    "platforms": ["PS5", "Xbox Series X/S", "Switch", "PC"],
+    "url": "https://store.steampowered.com/app/2248040/Neva/"
+  },
+  {
+    "title": "A Quiet Place: The Road Ahead",
+    "release": "2025-10-17",
+    "platforms": ["PC", "PS5", "Xbox Series X"],
+    "url": "https://aquietplace.game/"
+  },
+  {
+    "title": "Super Mario Party Jamboree",
+    "release": "2025-10-17",
+    "platforms": ["Switch"],
+    "url": "https://www.nintendo.com/store/products/super-mario-party-jamboree-switch/"
+  },
+  {
+    "title": "Teenage Mutant Ninja Turtles: Mutants Unleashed",
+    "release": "2025-10-18",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox One", "Xbox Series X"],
+    "url": "https://www.gameinformer.com/product/teenage-mutant-ninja-turtles-mutants-unleashed"
+  },
+  {
+    "title": "Unknown 9: Awakening",
+    "release": "2025-10-18",
+    "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X"],
+    "url": "https://unknown9.com/awakening/"
+  },
+  {
+    "title": "Lynked: Banner of the Spark",
+    "release": "2025-10-22",
+    "platforms": ["PC"],
+    "url": "https://store.steampowered.com/app/2437170/Lynked_Banner_of_the_Spark/"
+  },
+  {
+    "title": "Date Everything",
+    "release": "2025-10-24",
+    "platforms": ["Switch", "PS5", "Xbox Series X|S", "PC"],
+    "url": "https://store.steampowered.com/app/2627370/Date_Everything/"
+  },
+  {
+    "title": "Romancing SaGa 2: Revenge of the Seven",
+    "release": "2025-10-24",
+    "platforms": ["PC", "PS4", "PS5", "Switch"],
+    "url": "https://www.jp.square-enix.com/saga_revengeoftheseven/"
+  },
+  {
+    "title": "Terminator: Survivors",
+    "release": "2025-10-24",
+    "platforms": ["PC"],
+    "url": "https://www.nacon.fr/en-US/games/terminator-survivors"
+  },
+  {
+    "title": "Yakuza Kiwami",
+    "release": "2025-10-24",
+    "platforms": ["Switch"],
+    "url": "https://www.sega.com/games/yakuza-kiwami"
+  },
+  {
+    "title": "Call of Duty: Black Ops 6",
+    "release": "2025-10-25",
+    "platforms": ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X"],
+    "url": "https://www.callofduty.com/blackops6"
+  },
+  {
+    "title": "Sonic X Shadow Generations",
+    "release": "2025-10-25",
+    "platforms": ["PC", "PS4", "PS5", "Switch", "Xbox One", "Xbox Series X"],
+    "url": "https://www.sonicthehedgehog.com/games/sonic-x-shadow-generations"
+  },
+  {
+    "title": "Life Is Strange: Double Exposure",
+    "release": "2025-10-29",
+    "platforms": ["PC", "PS5", "Xbox Series X"],
+    "url": "https://lifeisstrange.square-enix-games.com/en-us/games/double-exposure/"
+  },
+  {
+    "title": "Dragon Age: The Veilguard",
+    "release": "2025-10-31",
+    "platforms": ["PS5", "Xbox Series X|S", "PC"],
+    "url": "https://www.ea.com/games/dragon-age/dragon-age-the-veilguard"
+  },
+  {
+    "title": "Shadows of the Damned: Hella Remastered",
+    "release": "2025-10-31",
+    "platforms": ["PS5", "Xbox Series X|S", "PS4", "Xbox One", "Switch", "PC"],
+    "url": "https://store.steampowered.com/app/2680020/Shadows_of_the_Damned_Hella_Remastered/"
+  },
+  {
+    "title": "Batman Arkham Shadow",
+    "release": "2024-10-31",
+    "platforms": ["Quest"],
+    "url": "https://www.meta.com/experiences/8257797064215927/"
+  },
+  {
+    "title": "Farmagia",
+    "release": "2025-11-01",
+    "platforms": ["Switch"],
+    "url": "https://www.nintendo.com/store/products/farmagia-switch/"
+  },
+  {
+    "title": "Empire of the Ants",
+    "release": "2025-11-07",
+    "platforms": ["PC", "PS5", "Xbox Series X"],
+    "url": "https://store.steampowered.com/app/1607100/Empire_of_the_Ants/"
+  },
+  {
+    "title": "Mario & Luigi Brothership",
+    "release": "2025-11-07",
+    "platforms": ["Switch"],
+    "url": "https://www.nintendo.com/store/products/mario-and-luigi-brothership-switch/"
+  },
+  {
+    "title": "Slitterhead",
+    "release": "2025-11-08",
+    "platforms": ["PS5", "PS4", "Xbox Series X|S", "PC"],
+    "url": "https://store.steampowered.com/app/2170020/SLITTERHEAD/"
+  },
+  {
+    "title": "Antonblast",
+    "release": "2025-11-12",
+    "platforms": ["PC", "Switch"],
+    "url": "https://store.steampowered.com/app/1759490/ANTONBLAST/"
+  },
+  {
+    "title": "Dragon Quest 3 HD-2D Remake",
+    "release": "2025-11-14",
+    "platforms": ["PC", "PS5", "Switch", "Xbox Series X"],
+    "url": "https://dragonquest.square-enix-games.com/dq3-hd2d/en-us/"
+  },
+  {
+    "title": "Assassin's Creed Shadows",
+    "release": "2025-11-15",
+    "platforms": ["PS5", "Xbox Series X|S", "PC"],
+    "url": "https://www.ubisoft.com/en-us/game/assassins-creed/shadows"
+  },
+  {
+    "title": "Path of Exile 2",
+    "release": "2025-11-15",
+    "platforms": ["PS5", "Xbox Series X|S", "PC"],
+    "url": "https://www.pathofexile.com/poe2"
+  },
+  {
+    "title": "Microsoft Flight Simulator 2024",
+    "release": "2025-11-19",
+    "platforms": ["PC", "Xbox Series X"],
+    "url": "https://www.flightsimulator.com/microsoft-flight-simulator-2024/"
+  },
+  {
+    "title": "Genshin Impact",
+    "release": "2025-11-20",
+    "platforms": ["Xbox Series X|S", "Gamepass"],
+    "url": "https://genshin.hoyoverse.com/en/home"
+  },
+  {
+    "title": "Stalker 2: Heart of Chernobyl",
+    "release": "2025-11-20",
+    "platforms": ["Xbox Series X|S", "PC"],
+    "url": "https://www.stalker2.com/"
+  },
+  {
+    "title": "On Your Tail",
+    "release": "2025-11-21",
+    "platforms": ["Switch", "PC"],
+    "url": "https://store.steampowered.com/app/2189350/On_Your_Tail/"
+  },
+  {
+    "title": "Marvel vs. Capcom Fighting Collection: Arcade Classics",
+    "release": "2025-11-22",
+    "platforms": ["PlayStation 4", "Switch"],
+    "url": "https://www.capcom-games.com/mvsc_fighting_collection/"
+  },
+  {
+    "title": "Fitness Boxing 3: Your Perosnal Trainer",
+    "release": "2025-12-05",
+    "platforms": ["Switch"],
+    "url": "https://www.nintendo.com/store/products/fitness-boxing-3-your-personal-trainer-switch/"
+  },
+  {
+    "title": "Marvel Rivals",
+    "release": "2025-12-06",
+    "platforms": ["PS5", "Xbox Series X|S", "PC"],
+    "url": "https://marvelrivals.com/"
+  },
+  {
+    "title": "Indiana Jones and The Great Circle",
+    "release": "2025-12-09",
+    "platforms": ["PC", "Xbox Series X|S", "Gamepass"],
+    "url": "https://www.xbox.com/en-US/games/indiana-jones-and-the-great-circle"
+  },
+  {
+    "title": "Monument Valley 3",
+    "release": "2025-12-10",
+    "platforms": ["Android", "iOS"],
+    "url": "https://www.ustwo.com/games/monument-valley-3"
+  },
+  {
+    "title": "Alien: Rogue Incursion",
+    "release": "2025-12-19",
+    "platforms": ["PC VR", "PSVR 2", "Quest 3"],
+    "url": "https://www.alienrogueincursion.com/"
+  }
+]

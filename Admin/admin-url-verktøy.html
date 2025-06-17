@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Admin: Fyll inn URL</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 6px;
+            text-align: left;
+        }
+
+        input.url-input {
+            width: 100%;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Adminverktøy: Fyll inn manglende URL</h1>
+    <input type="file" id="jsonFileInput" accept="application/json">
+    <button onclick="autoUtfyllURL()">✨ Fyll inn URL automatisk</button>
+    <button id="generateBtn">📥 Generer oppdatert JSON</button>
+    <button id="downloadBtn" style="display:none">💾 Last ned JSON</button>
+    <table id="gameTable"></table>
+    <textarea id="output" placeholder="Oppdatert JSON vil vises her..."></textarea>
+
+    <script>
+        let gameData = [];
+
+        const urlListe = {
+            "Super Mario Party Jamboree": "https://www.nintendo.com/store/products/super-mario-party-jamboree-switch/",
+            "Teenage Mutant Ninja Turtles: Mutants Unleashed": "https://www.gameinformer.com/product/teenage-mutant-ninja-turtles-mutants-unleashed",
+            "Unknown 9: Awakening": "https://unknown9.com/awakening/",
+            "Lynked: Banner of the Spark": "https://store.steampowered.com/app/2437170/Lynked_Banner_of_the_Spark/",
+            "Date Everything": "https://store.steampowered.com/app/2627370/Date_Everything/",
+            "Romancing SaGa 2: Revenge of the Seven": "https://www.jp.square-enix.com/saga_revengeoftheseven/",
+            "Terminator: Survivors": "https://www.nacon.fr/en-US/games/terminator-survivors",
+            "Yakuza Kiwami": "https://www.sega.com/games/yakuza-kiwami",
+            "Call of Duty: Black Ops 6": "https://www.callofduty.com/blackops6",
+            "Sonic X Shadow Generations": "https://www.sonicthehedgehog.com/games/sonic-x-shadow-generations",
+            "Life Is Strange: Double Exposure": "https://lifeisstrange.square-enix-games.com/en-us/games/double-exposure/",
+            "Dragon Age: The Veilguard": "https://www.ea.com/games/dragon-age/dragon-age-the-veilguard",
+            "Shadows of the Damned: Hella Remastered": "https://store.steampowered.com/app/2680020/Shadows_of_the_Damned_Hella_Remastered/",
+            "Batman Arkham Shadow": "https://www.meta.com/experiences/8257797064215927/",
+            "Farmagia": "https://www.nintendo.com/store/products/farmagia-switch/",
+            "Empire of the Ants": "https://store.steampowered.com/app/1607100/Empire_of_the_Ants/",
+            "Mario & Luigi Brothership": "https://www.nintendo.com/store/products/mario-and-luigi-brothership-switch/",
+            "Slitterhead": "https://store.steampowered.com/app/2170020/SLITTERHEAD/",
+            "Antonblast": "https://store.steampowered.com/app/1759490/ANTONBLAST/",
+            "Dragon Quest 3 HD-2D Remake": "https://dragonquest.square-enix-games.com/dq3-hd2d/en-us/",
+            "Assassin's Creed Shadows": "https://www.ubisoft.com/en-us/game/assassins-creed/shadows",
+            "Path of Exile 2": "https://www.pathofexile.com/poe2",
+            "Microsoft Flight Simulator 2024": "https://www.flightsimulator.com/microsoft-flight-simulator-2024/",
+            "Genshin Impact": "https://genshin.hoyoverse.com/en/home",
+            "Stalker 2: Heart of Chernobyl": "https://www.stalker2.com/",
+            "On Your Tail": "https://store.steampowered.com/app/2189350/On_Your_Tail/"
+
+        };
+
+
+        function renderTable() {
+            const table = document.getElementById("gameTable");
+            table.innerHTML = '<tr><th>#</th><th>Tittel</th><th>Lansering</th><th>Plattformer</th><th>URL</th></tr>';
+            gameData.forEach((game, i) => {
+                const row = document.createElement("tr");
+                row.dataset.index = i;
+                row.innerHTML = `
+      <td>${i + 1}</td>
+      <td class="title-cell">${game.title}</td>
+      <td>${game.release}</td>
+      <td>${game.platforms}</td>
+      <td><input class="url-input" data-index="${i}" value="${game.url || ''}"></td>
+    `;
+                table.appendChild(row);
+            });
+        }
+
+        function autoUtfyllURL() {
+            let antall = 0;
+            for (let game of gameData) {
+                if ((!game.url || game.url.trim() === "") && urlListe[game.title]) {
+                    game.url = urlListe[game.title];
+                    antall++;
+                }
+            }
+            alert(`✅ Automatisk oppdatert ${antall} spill med URL`);
+            renderTable();
+        }
+
+        document.getElementById("jsonFileInput").addEventListener("change", (e) => {
+            const reader = new FileReader();
+            reader.onload = function () {
+                gameData = JSON.parse(reader.result);
+                renderTable();
+            };
+            reader.readAsText(e.target.files[0]);
+        });
+
+        document.getElementById("generateBtn").addEventListener("click", () => {
+            document.querySelectorAll(".url-input").forEach(input => {
+                const idx = parseInt(input.dataset.index, 10);
+                if (gameData[idx]) {
+                    gameData[idx].url = input.value.trim() || null;
+                }
+            });
+            const json = JSON.stringify(gameData, null, 2);
+            document.getElementById("output").value = json;
+            document.getElementById("downloadBtn").style.display = "inline-block";
+        });
+
+        document.getElementById("downloadBtn").addEventListener("click", () => {
+            const blob = new Blob([document.getElementById("output").value], { type: "application/json" });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "oppdatert-spillkalender.json";
+            link.click();
+        });
+    </script>
+</body>
+
+</html>

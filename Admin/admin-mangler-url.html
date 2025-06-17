@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spill uten URL</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 2rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #eee;
+        }
+
+        input.url-input {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🕹️ Spill uten URL</h1>
+    <table id="missing-url-table">
+        <thead>
+            <tr>
+                <th>Tittel</th>
+                <th>Lansering</th>
+                <th>Plattformer</th>
+                <th>URL (tom)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        fetch("../assets/data/spillkalender-2025.json")
+            .then(res => res.json())
+            .then(data => {
+                const tbody = document.querySelector("#missing-url-table tbody");
+                data
+                    .filter(spill => !spill.url || spill.url.trim() === "")
+                    .forEach(spill => {
+                        const tr = document.createElement("tr");
+                        tr.innerHTML = `
+              <td>${spill.title}</td>
+              <td>${new Date(spill.release).toLocaleDateString()}</td>
+              <td>${spill.platforms.join(", ")}</td>
+              <td><input class="url-input" type="text" placeholder="Lim inn URL her..." /></td>
+            `;
+                        tbody.appendChild(tr);
+                    });
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+[
+    {
+      "title": "Assassin's Creed Shadows",
+      "image": "assets/images/gaming/spill/assasin-creed-shadow.webp",
+      "description": "Utforsk feudal-Japan med to unike karakterer i Ubisofts siste open world-spill.",
+      "platform": "PC, PS5, Xbox",
+      "release": "20. mars 2025",
+      "url": "https://www.ubisoft.com/en-us/game/assassins-creed/shadows"
+    },
+    {
+      "title": "Avowed",
+      "image": "assets/images/gaming/spill/avowed.webp",
+      "description": "Førstepersons RPG fra Obsidian satt i samme univers som Pillars of Eternity.",
+      "platform": "PC, Xbox",
+      "release": "18. februar 2025",
+      "url": "https://avowed.obsidian.net/"
+    },
+    {
+      "title": "Doom: The Dark Ages",
+      "image": "assets/images/gaming/spill/doom-dark-ages.webp",
+      "description": "En brutal prequel i Doom-universet med ny setting og taktisk gameplay.",
+      "platform": "PC, PS5, Xbox",
+      "release": "15. mai 2025",
+      "url": "https://doom.bethesda.net/"
+    },
+    {
+      "title": "Death Stranding 2: On the Beach",
+      "image": "assets/images/gaming/spill/death-stranding-2.webp",
+      "description": "Kojimas neste kapittel er tilbake med dyp historie og visuell innovasjon.",
+      "platform": "PS5",
+      "release": "26. juni 2025",
+      "url": "https://www.kojimaproductions.jp/en/death-stranding-2"
+    },
+    {
+      "title": "Hollow Knight: Silksong",
+      "image": "assets/images/gaming/spill/hollow-knight.webp",
+      "description": "Det etterlengtede oppfølgeren til Hollow Knight med Hornet som hovedperson.",
+      "platform": "PC, Switch, PS5, Xbox",
+      "release": "før 25. desember 2025",
+      "url": "https://hollowknightsilksong.com/"
+    },
+    {
+      "title": "Metroid Prime 4: Beyond",
+      "image": "assets/images/gaming/spill/metroid-prime4.webp",
+      "description": "Nintendos ikoniske romeventyr er tilbake med nye utfordringer og utforskning.",
+      "platform": "Switch",
+      "release": "2025",
+      "url": "https://metroid.nintendo.com/"
+    },
+    {
+      "title": "Star Wars: Knights of the Old Republic Remake",
+      "image": "assets/images/gaming/spill/starwars-remake.webp",
+      "description": "Gjenopplev det klassiske RPG-eventyret i en fullstendig oppdatert versjon.",
+      "platform": "PC, PS5",
+      "release": "annonsering 2021 – fortsatt under utvikling",
+      "url": "https://www.starwars.com/news/knights-of-the-old-republic-remake"
+    }
+  ]
+  

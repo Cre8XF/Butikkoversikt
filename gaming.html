@@ -97,40 +97,10 @@
       <!-- 🆕 Nye spill -->
       <section class="gaming-section" id="nye-spill">
         <h2>🆕 Nye spill</h2>
-        <div class="game-grid">
-          <div class="game-card">
-            <img src="assets/images/gaming/spill/assasin-creed-shadow.webp" alt="Assassin's Creed Shadows" />
-            <h4>Assassin's Creed Shadows</h4>
-            <p>Utforsk feudal-Japan med to unike karakterer i Ubisofts siste open world-spill.</p>
-            <small>Lansering: 20. mars 2025 | Plattform: PC, PS5, Xbox</small><br />
-            <a href="#" target="_blank">👉 Les mer</a>
-          </div>
-
-          <div class="game-card">
-            <img src="assets/images/gaming/spill/avowed.webp" alt="Avowed" />
-            <h4>Avowed</h4>
-            <p>Førstepersons RPG fra Obsidian satt i samme univers som Pillars of Eternity.</p>
-            <small>Lansering: 18. februar 2025 | Plattform: PC, Xbox</small><br />
-            <a href="#" target="_blank">👉 Les mer</a>
-          </div>
-
-          <div class="game-card">
-            <img src="assets/images/gaming/spill/doom-dark-ages.webp" alt="Doom: The Dark Ages" />
-            <h4>Doom: The Dark Ages</h4>
-            <p>En brutal prequel i Doom-universet med ny setting og taktisk gameplay.</p>
-            <small>Lansering: 15. mai 2025 | Plattform: PC, PS5, Xbox</small><br />
-            <a href="#" target="_blank">👉 Les mer</a>
-          </div>
-
-          <div class="game-card">
-            <img src="assets/images/gaming/spill/death-stranding-2.webp" alt="Death Stranding 2" />
-            <h4>Death Stranding 2: On the Beach</h4>
-            <p>Kojimas neste kapittel er tilbake med dyp historie og visuell innovasjon.</p>
-            <small>Lansering: 26. juni 2025 | Plattform: PS5</small><br />
-            <a href="#" target="_blank">👉 Les mer</a>
-          </div>
-        </div>
+        <div id="nyeSpillContainer" class="game-grid"></div>
       </section>
+      <script src="assets/js/generate/generate-nye-spill.js"></script>
+    
 
   <!-- Seksjon: Spillomtaler -->
   <section class="gaming-section">
@@ -341,9 +311,9 @@
       </section>
 
       <!-- 📅 Spillkalender -->
-      <section class="gaming-section" id="kalender">
-        <h2>📅 Kommende spillutgivelser</h2>
-        <p>Hold deg oppdatert på kommende spill for PC, konsoll og mobil – kalender kommer!</p>
+      <section class="gaming-section" id="spillkalender">
+        <h2>🗓️ Kommende spillutgivelser 2025</h2>
+        <div id="spillkalender-container"></div>
       </section>
 
       <!-- 🧠 Fun-fakta og nostalgi -->
@@ -364,6 +334,8 @@
     <script src="assets/js/generate/gaming/generate-gaming.js"></script>
     <script src="assets/js/generate/gaming/generate-tips.js"></script>
     <script src="assets/js/generate/gaming/generate-anmeldelser.js"></script>
+    <script src="assets/js/generate/gaming/generate-nye-spill.js"></script>
+    <script src="assets/js/generate/gaming/generate-spillkalender.js"></script>
 
     <script type="application/ld+json">
           {

@@ -535,6 +535,38 @@ body.gaming-page {
   gap: 1.5rem;
   justify-items: center;
 }
+.game-calendar {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #181818;
+  color: #eee;
+  margin-top: 1rem;
+}
+.game-calendar th,
+.game-calendar td {
+  padding: 0.75rem;
+  border: 1px solid #333;
+  text-align: left;
+}
+.game-calendar th {
+  background-color: #1e1e1e;
+}
+.tag {
+  background-color: #2a2a2a;
+  color: #ccc;
+  padding: 2px 6px;
+  margin: 2px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+.game-calendar td a {
+  color: #66ccff;
+  text-decoration: none;
+}
+.game-calendar td a:hover {
+  text-decoration: underline;
+}
 
 /* ===== RESPONSIV STIL FOR MOBIL ===== */
 @media (max-width: 768px) {
