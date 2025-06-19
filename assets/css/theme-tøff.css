@@ -40,8 +40,8 @@
   --font-base: 'Inter', sans-serif;
   --border-base: var(--gray-300);
 
-  --hero-gradient-start: #f9faad;
-  --hero-gradient-end: #f7f1cd6c;
+  --hero-gradient-start: #adc1fa;
+  --hero-gradient-end: #cdd7f76c;
   --hero-bg: linear-gradient(to bottom, var(--hero-gradient-start), var(--hero-gradient-end));
 
   --header-gradient-start: var(--primary);

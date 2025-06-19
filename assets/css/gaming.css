@@ -593,12 +593,6 @@
   margin-top: 1rem;
 }
 
-.lead {
-  font-size: 1.1rem;
-  color: #ccc;
-  margin-top: 0.75rem;
-}
-
 .info {
   font-size: 1rem;
   color: #aaa;
@@ -885,7 +879,7 @@
 
 .lead {
   font-size: 1.1rem;
-  color: #ddd;
+  color: #141414;
   max-width: 720px;
   margin: 0 auto 0.75rem;
 }
@@ -898,10 +892,6 @@
 
 .gaming-hero-content h1 {
   font-size: 1.5rem;
-}
-
-.lead {
-  font-size: 1rem;
 }
 
 .logo {

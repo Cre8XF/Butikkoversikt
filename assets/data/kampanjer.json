@@ -11,7 +11,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Clas Ohlson – Prisreduserte produkter",
@@ -25,7 +28,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Ukens tilbud hos Elkjøp",
@@ -39,7 +45,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": true
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Tilbud hos HiFi Klubben",
@@ -52,7 +61,11 @@
     "affiliate": false,
     "affiliateUrl": "",
     "highlight": false,
-    "ukensAnbefalte": true
+    "ukensAnbefalte": false,
+    "priority": 0,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "apotek1",
@@ -66,7 +79,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "vitusapotek",
@@ -80,7 +96,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "blush",
@@ -94,7 +113,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "coverbrands",
@@ -108,7 +130,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "storytel",
@@ -122,7 +147,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "akademika",
@@ -136,7 +164,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "kindle",
@@ -150,7 +181,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "bokkilden",
@@ -164,7 +198,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "nike-training-club",
@@ -178,7 +215,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "expressvpn",
@@ -192,7 +232,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "utdannet",
@@ -206,7 +249,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "nordvpn",
@@ -220,7 +266,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "hyperx",
@@ -234,7 +283,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "maxgaming",
@@ -248,7 +300,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "outland-no",
@@ -262,7 +317,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "temu",
@@ -276,7 +334,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "aliexpress",
@@ -290,7 +351,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "gina-tricot",
@@ -304,7 +368,10 @@
     "affiliateUrl": "https://do.ginatricot.com/t/t?a=1858255980&as=1978629723&t=2&tk=1",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "boozt",
@@ -318,7 +385,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "cubus",
@@ -332,7 +402,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "ellos-copy",
@@ -346,7 +419,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "vinmonopolet",
@@ -360,7 +436,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "barlife",
@@ -374,7 +453,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "brewshop",
@@ -388,7 +470,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "hellofresh",
@@ -402,7 +487,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "ikea",
@@ -416,7 +504,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "kid",
@@ -430,7 +521,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "lampegiganten",
@@ -444,7 +538,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "chilli",
@@ -458,7 +555,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "kart-butikken",
@@ -472,7 +572,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "morris",
@@ -486,7 +589,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "nomaden",
@@ -500,7 +606,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "framsport-no",
@@ -514,7 +623,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "stormberg",
@@ -528,7 +640,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "store": "chillout",
@@ -542,7 +657,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Platekompaniet – 3 for 299 på film",
@@ -556,7 +674,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "CDKeys – Daglige rabatter på spill",
@@ -570,7 +691,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "EMP – 15 % rabatt og festivaltilbud",
@@ -584,7 +708,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Epic Games Store – MEGA Sale 2025",
@@ -598,7 +725,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Buddy – Sommerkampanje 2025",
@@ -612,7 +742,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Dyrekassen – Kampanjer på fôr og utstyr",
@@ -626,7 +759,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Musti – Tilbud for medlemmer",
@@ -640,7 +776,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Lekeakademiet – Outlet og lagersalg",
@@ -654,7 +793,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Lekekassen – Sommertilbud og medlemstilbud",
@@ -668,7 +810,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Extra Leker – Outlet og sommersalg",
@@ -682,7 +827,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Lekia – Kampanjeblad og sommersalg",
@@ -696,7 +844,10 @@
     "affiliateUrl": "",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Fredrik & Louisa – 35 % rabatt på parfyme",
@@ -710,7 +861,10 @@
     "affiliateUrl": "https://id.fredrikoglouisa.no/t/t?a=1536516430&as=1978629723&t=2&tk=1",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Lyko",
@@ -724,7 +878,10 @@
     "affiliateUrl": "https://ion.lyko.com/t/t?a=1536992143&as=1978629723&t=2&tk=1",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Jubileum 2025 – bli med på feiringen!",
@@ -738,7 +895,10 @@
     "affiliateUrl": "https://ion.kitchn.no/t/t?a=1720340841&as=1978629723&t=2&tk=1",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Hagemøbbelsalg hos Netthandelen. Alt skal ut",
@@ -752,7 +912,10 @@
     "affiliateUrl": "https://in.netthandelen.no/t/t?a=1786468606&as=1978629723&t=2&tk=1",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Trippel prøveperiode i sommer!",
@@ -766,7 +929,10 @@
     "affiliateUrl": "https://pin.nextory.no/t/t?a=1576770926&as=1978629723&t=2&tk=1",
     "highlight": false,
     "priority": 0,
-    "ukensAnbefalte": false
+    "ukensAnbefalte": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Kampanje hos Elektroimportøren",
@@ -776,8 +942,14 @@
     "expiry": "",
     "store": "Elektroimportøren",
     "category": "Hjem og interiør",
-    "ukensAnbefalte": true,
-    "priority": 0
+    "ukensAnbefalte": false,
+    "priority": 0,
+    "affiliate": false,
+    "affiliateUrl": "",
+    "highlight": false,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
   },
   {
     "title": "Kampanje hos Superkul",
@@ -789,9 +961,113 @@
     "category": "Klær og mote",
     "affiliate": true,
     "affiliateUrl": "https://www.superkul.no/tt/?tt=12793_540099_490058_&r=",
-    "ukensAnbefalte": true,
+    "ukensAnbefalte": false,
     "highlight": false,
-    "priority": 0
+    "priority": 0,
+    "alwaysOn": false,
+    "startDate": "",
+    "id": ""
+  },
+  {
+    "title": "Ukens kampanje hos Blivakker – uke 25",
+    "description": "Se ukens skjønnhetstilbud hos Blivakker – gyldig i uke 25.",
+    "image": "assets/images/butikker-webp/blivakker.webp",
+    "url": "https://go.blivakker.no/t/t?a=1786465255&as=1978629723&t=2&tk=1",
+    "store": "Blivakker",
+    "category": "Skjønnhet og velvære",
+    "affiliate": true,
+    "affiliateUrl": "https://go.blivakker.no/t/t?a=1786465255&as=1978629723&t=2&tk=1",
+    "highlight": false,
+    "priority": 0,
+    "ukensAnbefalte": true,
+    "alwaysOn": true,
+    "startDate": "2025-06-18",
+    "expiry": "2025-06-24",
+    "id": "blivakker-ukens-kampanje"
+  },
+  {
+    "title": "Ukens kampanje hos Lyko – uke 25",
+    "description": "Oppdag ukens utvalgte hår- og hudpleieprodukter hos Lyko.",
+    "image": "assets/images/butikker-webp/lyko.webp",
+    "url": "https://ion.lyko.com/t/t?a=1536992143&as=1978629723&t=2&tk=1",
+    "store": "Lyko",
+    "category": "Skjønnhet og velvære",
+    "affiliate": true,
+    "affiliateUrl": "https://ion.lyko.com/t/t?a=1536992143&as=1978629723&t=2&tk=1",
+    "highlight": false,
+    "priority": 0,
+    "ukensAnbefalte": true,
+    "alwaysOn": true,
+    "startDate": "2025-06-18",
+    "expiry": "2025-06-24",
+    "id": "lyko-ukens-kampanje"
+  },
+  {
+    "title": "Ukens kampanje hos Gina Tricot – uke 25",
+    "description": "Utforsk ukens moteplagg og tilbud hos Gina Tricot.",
+    "image": "assets/images/butikker-webp/gina-tricot.webp",
+    "url": "https://do.ginatricot.com/t/t?a=1858255980&as=1978629723&t=2&tk=1",
+    "store": "Gina Tricot",
+    "category": "Klær og mote",
+    "affiliate": true,
+    "affiliateUrl": "https://do.ginatricot.com/t/t?a=1858255980&as=1978629723&t=2&tk=1",
+    "highlight": false,
+    "priority": 0,
+    "ukensAnbefalte": true,
+    "alwaysOn": true,
+    "startDate": "2025-06-18",
+    "expiry": "2025-06-24",
+    "id": "gina-tricot-ukens-kampanje"
+  },
+  {
+    "title": "Ukens kampanje hos Fredrik & Louisa – uke 25",
+    "description": "Luksuriøse skjønnhetsprodukter på kampanje denne uken!",
+    "image": "assets/images/butikker-webp/fredrik-louisa.webp",
+    "url": "https://id.fredrikoglouisa.no/t/t?a=1536516430&as=1978629723&t=2&tk=1",
+    "store": "Fredrik & Louisa",
+    "category": "Skjønnhet og velvære",
+    "affiliate": true,
+    "affiliateUrl": "https://id.fredrikoglouisa.no/t/t?a=1536516430&as=1978629723&t=2&tk=1",
+    "highlight": false,
+    "priority": 0,
+    "ukensAnbefalte": true,
+    "alwaysOn": true,
+    "startDate": "2025-06-18",
+    "expiry": "2025-06-24",
+    "id": "fredrik-louisa-ukens-kampanje"
+  },
+  {
+    "title": "Ukens kampanje hos Shark Gaming – uke 25",
+    "description": "Perfekt tid for nytt gamingutstyr – sjekk ukens deals!",
+    "image": "assets/images/butikker-webp/sharkgaming.webp",
+    "url": "https://id.sharkgaming.no/t/t?a=1638787590&as=1978629723&t=2&tk=1",
+    "store": "Shark Gaming",
+    "category": "Gaming og tilbehør",
+    "affiliate": true,
+    "affiliateUrl": "https://id.sharkgaming.no/t/t?a=1638787590&as=1978629723&t=2&tk=1",
+    "highlight": false,
+    "priority": 0,
+    "ukensAnbefalte": true,
+    "alwaysOn": true,
+    "startDate": "2025-06-18",
+    "expiry": "2025-06-24",
+    "id": "sharkgaming-ukens-kampanje"
+  },
+  {
+    "title": "Ukens kampanje hos Netthandelen – uke 25",
+    "description": "Netthandelen har alltid nye tilbud på alt fra kjøkken til hage!",
+    "image": "assets/images/butikker-webp/netthandelen.webp",
+    "url": "https://in.netthandelen.no/t/t?a=1786468606&as=1978629723&t=2&tk=1",
+    "store": "Netthandelen",
+    "category": "Hjem og interiør",
+    "affiliate": true,
+    "affiliateUrl": "https://in.netthandelen.no/t/t?a=1786468606&as=1978629723&t=2&tk=1",
+    "highlight": false,
+    "priority": 0,
+    "ukensAnbefalte": true,
+    "alwaysOn": true,
+    "startDate": "2025-06-18",
+    "expiry": "2025-06-24",
+    "id": "netthandelen-ukens-kampanje"
   }
-  
 ]

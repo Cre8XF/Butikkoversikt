@@ -2904,25 +2904,6 @@
     "ukensAnbefalte": ""
   },
   {
-    "name": "jollyroom",
-    "image": "assets/images/butikker-webp/jollyroom.webp",
-    "alt": "Jollyroom",
-    "category": "Barn og baby",
-    "subcategory": ["Babyutstyr"],
-    "url": "https://www.jollyroom.no",
-    "description": "Jollyroom har et enormt sortiment av babyutstyr, barnevogner, bilstoler, interiør og leker.",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "tags": ["baby", "smokk", "flaske", "bleier", "stelleveske", "vogn", "barnesete", "amme", "babyshower"],
-    "tagCount": 9,
-    "partner": false,
-    "affiliate": false,
-    "kampanje": false,
-    "ukensAnbefalte": ""
-  },
-  {
     "name": "babycare",
     "image": "assets/images/butikker-webp/babycare.webp",
     "alt": "Babycare",
@@ -3751,10 +3732,10 @@
     "image": "assets/images/butikker-webp/jollyroom.webp",
     "alt": "Jollyroom",
     "description": "Jollyroom tilbyr alt av utstyr, klær og leker til barn og baby – med hyppige kampanjer.",
-    "topp25": true,
-    "forside": true,
+    "topp25": false,
+    "forside": false,
     "ny": false,
-    "annonse": true,
+    "annonse": false,
     "tags": [
       "baby",
       "smokk",
@@ -3780,7 +3761,7 @@
     "affiliate": false,
     "affiliateUrl": "",
     "kampanje": true,
-    "ukensAnbefalte": true,
+    "ukensAnbefalte": false,
     "eksternFrakt": false
   },
   {
@@ -4305,26 +4286,7 @@
     "affiliate": false,
     "kampanje": ""
   },
-  {
-    "name": "fredrik",
-    "alt": "Fredrik og Louisa",
-    "subcategory": ["Hud- og kroppspleie"],
-    "url": "https://fredrikoglouisa.no",
-    "description": "Hudpleieprodukter fra luksusmerker som Chanel, Dior og Lancôme.",
-    "tags": ["hudpleie", "parfyme", "kosmetikk", "skjønnhet", "luksus"],
-    "image": "assets/images/butikker-webp/fredrik.webp",
-    "category": "Helse og egenpleie",
-    "topp25": false,
-    "forside": false,
-    "ny": false,
-    "annonse": false,
-    "rank": "",
-    "ukensAnbefalte": "",
-    "partner": false,
-    "affiliate": false,
-    "kampanje": ""
-  },
-  {
+   {
     "name": "raa",
     "alt": "RÅ SHOP",
     "subcategory": ["Hud- og kroppspleie"],
@@ -6166,27 +6128,21 @@
       "rank": null
     },
     {
-      "name": "Fredrik & Louisa",
-      "image": "assets/images/butikker-webp/fredrikoglouisa.webp",
+      "name": "fredrik-louisa",
+      "image": "assets/images/butikker-webp/fredrik-louisa.webp",
       "alt": "Fredrik & Louisa",
       "category": "Helse og skjønnhet",
       "subcategory": [
-        "Sminke og parfyme"
+        "Sminke og parfyme",
+        "Hud- og kroppspleie"
       ],
       "url": "https://www.fredrikoglouisa.no",
-      "description": "Fredrik & Louisa er en ledende parfymerikjede med sminke, hudpleie og dufter.",
+      "description": "Fredrik & Louisa er en ledende parfymerikjede med sminke, hudpleie og dufter fra luksusmerker som Chanel, Dior og Lancôme.",
       "topp25": false,
       "forside": false,
       "ny": true,
       "annonse": false,
-      "tags": [
-        "parfyme",
-        "sminke",
-        "hudpleie",
-        "skjønnhet",
-        "fredrik louisa",
-        "kosmetikk"
-      ],
+      "tags": ["parfyme", "sminke", "hudpleie", "skjønnhet", "fredrik louisa", "kosmetikk", "luksus"],
       "partner": false,
       "affiliate": true,
       "affiliateUrl": "https://id.fredrikoglouisa.no/t/t?a=1536516430&as=1978629723&t=2&tk=1",

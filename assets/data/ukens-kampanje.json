@@ -6,9 +6,25 @@
     "image": "assets/images/butikker-webp/gina-tricot.webp",
     "url": "https://do.ginatricot.com/t/t?a=1858255980&as=1978629723&t=2&tk=1",
     "startDate": "2025-06-10",
-    "endDate": "",
-    "ukensKampanje": true
-  }
+    "endDate": "2025-06-16",
+    "ukensKampanje": false
+  },
+  {
+  "id": "sharkgaming-summer-2024",
+  "title": "Gamer Summer hos Shark Gaming 🎮🌴",
+  "description": "Opplev Gamer Summer hos Shark Gaming – kampanjer på gaming-PCer, gear og stasjonære systemer til sommerpris!",
+  "image": "assets/images/kampanjer/shark-gaming-summer.webp",
+  "url": "https://sharkgaming.no/?utm_source=adtraction&utm_medium=affiliate&utm_campaign=adtraction&at_gd=36DB30E7D772286F27013701546177F6A5DBC297",
+  "startDate": "2025-06-17",
+  "expiry": "2025-06-30",
+  "affiliate": true,
+  "affiliateUrl": "https://sharkgaming.no/?utm_source=adtraction&utm_medium=affiliate&utm_campaign=adtraction&at_gd=36DB30E7D772286F27013701546177F6A5DBC297",
+  "highlight": true,
+  "priority": 1,
+  "ukensKampanje": true
+}
+
+  
 ]
 
   
