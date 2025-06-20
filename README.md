@@ -1,32 +1,43 @@
-# 👋 Hei, jeg er Roger – aka **CodeXFrame**
+# 👋 Hei, jeg er Roger – også kjent som **Cre8XF**
 
-Velkommen til profilen min! Jeg er en norsk utvikler med lidenskap for strukturert kode, brukervennlige løsninger og visuell presisjon.
+Velkommen til profilen min!  
+Jeg er en norsk utvikler med lidenskap for **strukturert kode**, **brukervennlige løsninger** og **visuell presisjon**.
+
+---
 
 ## 💻 Hva jeg jobber med
 
-- Skaper og vedlikeholder [butikkoversikt.no](https://butikkoversikt.no) – en oversikt over norske nettbutikker
-- Bygger webapper med HTML, CSS, JavaScript og JSON
-- Jobber med filtrering, dynamiske visninger og god UX
-- Liker rene strukturer, PWA-optimalisering og mobiltilpasning
+- 🚀 Skaper og vedlikeholder [butikkoversikt.no](https://butikkoversikt.no) – en guide til norske nettbutikker
+- 🧠 Bygger webapper med **HTML, CSS, JavaScript og JSON**
+- 🧩 Jobber med **filtrering, dynamiske visninger og god UX**
+- 📱 Fokuserer på **ren struktur, mobiltilpasning og PWA-optimalisering**
+- 🎓 **Utvikler kurs** om koding, AI og digitale verktøy for nybegynnere og skapere
+
+---
 
 ## 🛠️ Teknologi jeg bruker
 
-- `HTML` / `CSS` / `JavaScript`
-- `Bootstrap` / `jQuery` / `GitHub Pages`
-- `Netlify`, `VS Code`, `Git`
-- JSON- og datadrevet frontend
+- **HTML / CSS / JavaScript**
+- **Bootstrap / jQuery / GitHub Pages**
+- **Netlify**, **VS Code**, **Git**
+- **Datadrevet frontend** med **JSON**
+
+---
 
 ## 🌐 Nettsteder og prosjekter
 
 - 🔗 [butikkoversikt.no](https://butikkoversikt.no)
-- 🌱 Planlegger en porteføljeside: `codexframe.dev`
-
-## 📬 Kontakt
-
-Du kan kontakte meg på [kontakt@butikkoversikt.no](mailto:kontakt@butikkoversikt.no) om du har spørsmål, forslag eller samarbeid i tankene!
-
-> “Structure isn't restrictive. It's what sets creativity free.”
+- 🌱 Planlegger: `Cre8XF.dev` – portefølje og kursplattform
 
 ---
 
-<img src="assets/images/cre8-logo.png" alt="Cre8XF Banner" width="600">
+## 📬 Kontakt
+
+Har du spørsmål, forslag eller vil samarbeide?  
+Ta kontakt på: **kontakt@butikkoversikt.no**
+
+---
+
+<img src="assets/images/cre8xf-logo.png" alt="Cre8XF Banner" width="600">
+> _“Structure isn't restrictive. It's what sets creativity free.”_  
+> — Cre8XF
