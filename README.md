@@ -38,6 +38,8 @@ Ta kontakt på: **kontakt@butikkoversikt.no**
 
 ---
 
-<img src="assets/images/cre8xf-logo.png" alt="Cre8XF Banner" width="600">
+<div allign="center">
+  <img src="assets/images/cre8xf-logo.png" alt="Cre8XF Banner" width="400" />
+</div>
 > _“Structure isn't restrictive. It's what sets creativity free.”_  
 > — Cre8XF
