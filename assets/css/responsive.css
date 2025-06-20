@@ -167,3 +167,9 @@
     transition: none !important;
   }
 }
+@media (max-width: 480px) {
+  h1,
+  .main-title {
+    font-size: 1.4rem;
+  }
+}

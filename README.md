@@ -3,31 +3,30 @@
 Velkommen til profilen min! Jeg er en norsk utvikler med lidenskap for strukturert kode, brukervennlige løsninger og visuell presisjon.
 
 ## 💻 Hva jeg jobber med
+
 - Skaper og vedlikeholder [butikkoversikt.no](https://butikkoversikt.no) – en oversikt over norske nettbutikker
 - Bygger webapper med HTML, CSS, JavaScript og JSON
 - Jobber med filtrering, dynamiske visninger og god UX
 - Liker rene strukturer, PWA-optimalisering og mobiltilpasning
 
 ## 🛠️ Teknologi jeg bruker
+
 - `HTML` / `CSS` / `JavaScript`
 - `Bootstrap` / `jQuery` / `GitHub Pages`
 - `Netlify`, `VS Code`, `Git`
 - JSON- og datadrevet frontend
 
 ## 🌐 Nettsteder og prosjekter
+
 - 🔗 [butikkoversikt.no](https://butikkoversikt.no)
 - 🌱 Planlegger en porteføljeside: `codexframe.dev`
 
 ## 📬 Kontakt
+
 Du kan kontakte meg på [kontakt@butikkoversikt.no](mailto:kontakt@butikkoversikt.no) om du har spørsmål, forslag eller samarbeid i tankene!
 
-> “Structure isn't restrictive. It's what sets creativity free.” 
+> “Structure isn't restrictive. It's what sets creativity free.”
 
 ---
 
-<img src="assets/images/CodeXframe.png" alt="CodeXFrame Banner" width="600">
-
-
-
-
-
+<img src="assets/images/cre8-logo.png" alt="Cre8XF Banner" width="600">

@@ -344,9 +344,32 @@
 .gaming-banner-alt {
   background: #111;
   color: #eee;
-  padding: 0.75rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .gaming-banner-alt {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.gaming-banner-alt a {
+  padding: 0.4rem 0.8rem;
+  font-weight: 600;
+  background-color: #2d8cff;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+}
+
+.gaming-banner-alt a:hover {
+  background-color: #1c6edc;
 }
 
 /* === 🎯 Topplister & Diverse === */
