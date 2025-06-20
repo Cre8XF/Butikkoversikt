@@ -1,5 +1,9 @@
 # 👋 Hei, jeg er Roger – også kjent som **Cre8XF**
 
+🔖 **CRE8XF**  
+_Creation X-Force_  
+_"Create the force that drives the future."_
+
 Velkommen til profilen min!  
 Jeg er en norsk utvikler med lidenskap for **strukturert kode**, **brukervennlige løsninger** og **visuell presisjon**.
 
