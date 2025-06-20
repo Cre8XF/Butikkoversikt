@@ -1,8 +1,14 @@
-# 👋 Hei, jeg er Roger – også kjent som **Cre8XF**
+<p align="center">
+  <img src="assets/images/cre8xf-logo.png" alt="Cre8XF Banner" width="320" />
+</p>
 
-🔖 **CRE8XF**  
-_Creation X-Force_  
-_"Create the force that drives the future."_
+<h1 align="center">🔖 CRE8XF</h1>
+<h3 align="center"><em>Creation X-Force</em></h3>
+<p align="center"><strong>“Create the force that drives the future.”</strong></p>
+
+---
+
+## 👋 Hei, jeg er Roger – også kjent som **Cre8XF**
 
 Velkommen til profilen min!  
 Jeg er en norsk utvikler med lidenskap for **strukturert kode**, **brukervennlige løsninger** og **visuell presisjon**.
@@ -38,13 +44,9 @@ Jeg er en norsk utvikler med lidenskap for **strukturert kode**, **brukervennlig
 ## 📬 Kontakt
 
 Har du spørsmål, forslag eller vil samarbeide?  
-Ta kontakt på: **kontakt@butikkoversikt.no**
+📧 **kontakt@butikkoversikt.no**
 
 ---
-
-<p allign="center">
-  <img src="assets/images/cre8xf-logo.png" alt="Cre8XF Banner" width="300" />
-</p>
 
 > _“Structure isn't restrictive. It's what sets creativity free.”_  
 > — Cre8XF
