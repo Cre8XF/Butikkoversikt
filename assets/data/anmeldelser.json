@@ -34,5 +34,95 @@
       "source": "PC Gamer",
       "url": "https://www.pcgamer.com/hades-2-early-access-review/",
       "image": "assets/images/gaming/anmeldelser/hades2.webp"
+    },
+    {
+      "title": "Bravely Default Flying Fairy HD Remaster",
+      "platform": "Nintendo Switch 2",
+      "score": "9/10",
+      "description": "Ei nydeleg restaurering av eit fantastisk spel.",
+      "source": "gamer.no",
+      "url": "https://www.gamer.no/artikler/ein-klassikar-berga-fra-avgrunnen/518907",
+      "image": "assets/images/gaming/anmeldelser/bravely-default.webp"
+    },
+    {
+      "title": "Mario Kart World",
+      "platform": "Nintendo Switch 2",
+      "score": "9/10",
+      "description": "Spelet vi har venta på",
+      "source": "gamer.no",
+      "url": "https://www.gamer.no/artikler/kongen-er-tilbake/518858",
+      "image": "assets/images/gaming/anmeldelser/mario-kart-world.webp"
+    },
+    {
+      "title": "Elden Ring Nightreign",
+      "platform": "PlayStation 5",
+      "score": "9/10",
+      "description": "Forrykande flerspillermoro fra FromSoftware.",
+      "source": "gamer.no",
+      "url": "https://www.gamer.no/artikler/forrykende-flerspillermoro-fra-fromsoftware/518790",
+      "image": "assets/images/gaming/anmeldelser/elden-ring-nightreign.webp"
+    },
+    {
+      "title": "The Midnight Walk",
+      "platform": "PlayStation 5",
+      "score": "9/10",
+      "description": "Ei fantastisk oppleving som må opplevast",
+      "source": "gamer.no",
+      "url": "https://www.gamer.no/artikler/eit-makelaust-kunststykke/518706",
+      "image": "assets/images/gaming/anmeldelser/the-midnight-walk.webp"
+    },
+    {
+      "title": "The Elder Scrolls IV: Oblivion Remastered",
+      "platform": "PlayStation 5",
+      "score": "10/10",
+      "description": "Ikke bare et spill, men en aldeles magisk opplevelse.",
+      "source": "gamer.no",
+      "url": "https://www.gamer.no/artikler/gir-meg-hakeslepp-helt-pa-nytt/518650",
+      "image": "assets/images/gaming/anmeldelser/oblivion-remastered.webp"
+    },
+    {
+      "title": "Clair Obscur: Expedition 33",
+      "platform": "Xbox Series X",
+      "score": "9/10",
+      "description": "På høgde med dei beste i sjangeren.",
+      "source": "gamer.no",
+      "url": "https://www.gamer.no/artikler/nesten-for-godt-til-a-vere-sant/518630",
+      "image": "assets/images/gaming/anmeldelser/expedition-33.webp"
+    },
+    {
+      "title": "Blue Prince",
+      "platform": "Windows",
+      "score": "10/10",
+      "description": "Soleklar kandidat til «årets spill»",
+      "source": "gamer.no",
+      "url": "https://www.gamer.no/artikler/apenbar-kandidat-til-arets-spill/518594",
+      "image": "assets/images/gaming/anmeldelser/blue-prince.webp"
+    },
+    {
+      "title": "Monster Hunter Wilds",
+      "platform": "Windows",
+      "score": "9/10",
+      "description": "Spillunderholdning fra øverste hylle.",
+      "source": "gamer.no",
+      "url": "https://www.gamer.no/artikler/monsterjakt-fra-overste-hylle/518368",
+      "image": "assets/images/gaming/anmeldelser/monster-hunter-wilds.webp"
+    },
+    {
+      "title": "Kingdom Come: Deliverance II",
+      "platform": "Xbox Series X",
+      "score": "9/10",
+      "description": "Eit av tidenes viktigaste rollespel.",
+      "source": "gamer.no",
+      "url": "https://www.gamer.no/artikler/ei-bragd-av-dimensjonar/518283",
+      "image": "assets/images/gaming/anmeldelser/kingdom-come-2.webp"
+    },
+    {
+      "title": "Indiana Jones and the Great Circle",
+      "platform": "Xbox Series X",
+      "score": "9/10",
+      "description": "En historie som er Indiana Jones verdig.",
+      "source": "gamer.no",
+      "url": "https://www.gamer.no/artikler/en-historie-som-er-indiana-jones-verdig/518089",
+      "image": "assets/images/gaming/anmeldelser/indiana-jones.webp"
     }
   ]
