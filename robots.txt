@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
-Sitemap: https://butikkoversikt.no/sitemap.xml
 Disallow: /admin/
+
+User-agent: facebookexternalhit
+Allow: /
+
+Sitemap: https://butikkoversikt.no/sitemap.xml
