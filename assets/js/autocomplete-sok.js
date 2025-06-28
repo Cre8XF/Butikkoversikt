@@ -164,7 +164,7 @@ searchInput.addEventListener("input", () => {
   const query = searchInput.value.trim();
 
   if (query.length >= 2) {
-    visAlleKnapp.textContent = `🔎 klikk her å se alle treff for “${query}”`;
+    visAlleKnapp.textContent = `🔎 klikk her for å se alle treff for “${query}”`;
     visAlleWrapper.style.display = "block";
   } else {
     visAlleWrapper.style.display = "none";
