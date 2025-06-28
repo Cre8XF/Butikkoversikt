@@ -179,5 +179,4 @@ visAlleKnapp?.addEventListener("click", () => {
   }
 });
 
-// <-- Add this closing brace to end the DOMContentLoaded event listener function
 });
