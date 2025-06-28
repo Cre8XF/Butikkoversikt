@@ -41,6 +41,17 @@ Jeg er en norsk utvikler med lidenskap for **strukturert kode**, **brukervennlig
 
 ---
 
+## 🧪 Testing
+
+For å kjøre de automatiske testene av Flask-serveren bruker du [pytest](https://pytest.pypi.org/).
+Installer eventuelt avhengigheter og kjør deretter:
+
+```bash
+pytest
+```
+
+---
+
 ## 📬 Kontakt
 
 Har du spørsmål, forslag eller vil samarbeide?  
