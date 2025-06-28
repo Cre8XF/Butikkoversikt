@@ -38,6 +38,16 @@ Jeg er en norsk utvikler med lidenskap for **strukturert kode**, **brukervennlig
 
 - 🔗 [butikkoversikt.no](https://butikkoversikt.no)
 - 🌱 Planlegger: `Cre8XF.dev` – portefølje og kursplattform
+---
+
+## 🧪 Kjøre tester
+
+Installer avhengighetene og kjør testene med [pytest](https://pytest.org):
+
+```bash
+pip install flask requests beautifulsoup4 flask-cors pytest
+pytest
+```
 
 ---
 
