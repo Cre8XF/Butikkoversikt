@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
       filterBox.className = "filter-box";
       filterBox.innerHTML = `
         <div>
-          <label for="plattformVelger" class="form-label mb-0 me-2">Plattform:</label>
-          <select id="plattformVelger" class="form-select d-inline-block w-auto">
+          <label for="plattformVelger" class="form-label">Plattform:</label>
+          <select id="plattformVelger" class="form-select">
             <option value="alle">Alle</option>
             <option value="PC">PC</option>
             <option value="PS5">PS5</option>
@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
           </select>
         </div>
         <div>
-          <label for="maanedVelger" class="form-label mb-0 me-2">Måned:</label>
-          <select id="maanedVelger" class="form-select d-inline-block w-auto">
+          <label for="maanedVelger" class="form-label">Måned:</label>
+          <select id="maanedVelger" class="form-select">
             <option value="alle">Alle</option>
             ${[...Array(12)].map((_, i) => {
               const m = String(i + 1).padStart(2, "0");
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </select>
         </div>
         <div>
-          <button id="nullstillFilter" class="btn btn-sm btn-secondary">Nullstill filter</button>
+          <button id="nullstillFilter">Nullstill filter</button>
         </div>
       `;
       container.appendChild(filterBox);
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
           spillSomVises = dataToRender.slice(0, maksAntall);
 
           const visAlleKnapp = document.createElement("button");
-          visAlleKnapp.className = "btn btn-outline-light mt-3 vis-alle-knapp";
+          visAlleKnapp.className = "vis-alle-knapp";
           visAlleKnapp.textContent = `Vis alle (${dataToRender.length}) spill`;
           visAlleKnapp.addEventListener("click", () => render(dataToRender, false));
           container.appendChild(visAlleKnapp);

@@ -6,7 +6,7 @@ fetch("assets/data/tips.json")
     const buttons = document.querySelectorAll("#tips-filters button");
 
     const visMerKnapp = document.createElement("button");
-    visMerKnapp.className = "btn btn-outline-light mt-3";
+    visMerKnapp.className = "btn";
     visMerKnapp.textContent = "Vis alle";
     visMerKnapp.style.display = "none";
 

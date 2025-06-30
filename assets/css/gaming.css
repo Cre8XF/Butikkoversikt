@@ -290,6 +290,11 @@
   flex-wrap: wrap;
 }
 
+.highlight {
+  font-weight: bold;
+  color: var(--accent-color, #ff3366);
+}
+
 .review-content {
   display: flex;
   flex-direction: column;
