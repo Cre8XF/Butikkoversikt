@@ -129,6 +129,45 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+.game-grid .game-card {
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0 0 10px #111;
+}
+
+.game-grid .game-card h4 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #4ea9ff;
+}
+
+.game-grid .game-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.game-grid .game-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+}
+#nyeSpillContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
 
 /* === 📝 Tips & Guider === */
 
@@ -200,69 +239,98 @@
 
 /* === 🧠 Spillomtaler === */
 
-.review-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
+#anmeldelse-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+  align-items: stretch;
 }
 
 .review-card {
-  background-color: #1c1c1c;
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
   border-radius: 12px;
-  box-shadow: 0 0 10px #222;
-  color: #eee;
-  max-width: 340px;
+  box-shadow: 0 0 10px #111;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  text-align: left;
 }
 
-.review-card {
-  background: #1a1a1a;
-  border: 1px solid #2a2a2a;
-  border-radius: 10px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  color: #fff;
-  align-items: flex-start;
-  transition: background 0.3s ease;
+.review-card img.tip-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
 }
 
-.review-card {
-  flex: 1 1 280px;
-  max-width: 300px;
-  background: #181818;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
+.review-card h4 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0.25rem;
+  color: #66ccff;
 }
 
-.review-card {
+.review-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 0.75rem;
+  flex-grow: 1;
+}
+
+.tip-meta {
+  font-size: 0.85rem;
+  color: #999;
   display: flex;
-  gap: 1rem;
-  border: 1px solid #2a2a2a;
-  background: #1a1a1a;
-  padding: 1rem;
-  border-radius: 10px;
-  color: #fff;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-.review-card {
+.review-content {
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.review-content {
   flex: 1;
 }
 
-.review-content {
-  flex: 1;
+.review-content h4 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.review-content h4 a {
+  color: #66ccff;
+  text-decoration: none;
+}
+
+.review-content h4 a:hover {
+  text-decoration: underline;
+}
+
+.review-content p {
+  font-size: 0.95rem;
+  color: #ccc;
+  flex-grow: 1;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.review-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #999;
+}
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
 }
 
 .score-tag {

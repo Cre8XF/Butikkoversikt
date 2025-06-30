@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
           container.innerHTML = "";
           dataToRender.forEach((anmeldelse) => {
             const card = document.createElement("div");
-            card.className = "tip-card"; // Bruk samme stil som tips
+            card.className = "review-card"; // Bruk samme stil som tips
   
             card.innerHTML = `
               <img src="${anmeldelse.image}" alt="${anmeldelse.title}" class="tip-image">
