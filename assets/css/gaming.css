@@ -12,7 +12,6 @@
 
 /* === 🎮 Hero & Header === */
 
-
 .gaming-hero-section {
   background: linear-gradient(to bottom, #0f0f0f, #1c1c1c);
   padding: 3rem 1.5rem;
@@ -59,7 +58,6 @@
   gap: 0.75rem;
   text-decoration: none;
 }
-
 
 /* === 🏪 Butikker & Grid === */
 
@@ -159,13 +157,13 @@
   color: #eee;
   border: 1px solid #333;
   border-radius: 8px;
-  padding: 0.75rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
   height: 100%;
   max-width: 100%;
   width: 100%;
+  padding: 0.75rem; /* Trygg padding uten å forstyrre grid */
 }
 
 #tips-container {
@@ -211,10 +209,10 @@
   border: 1px solid #2a2a2a;
   border-radius: 12px;
   box-shadow: 0 0 10px #111;
-  padding: 1rem;
   height: 100%;
-  width: 80%;
+  width: 100%;
   max-width: 250px;
+  padding: 0.75rem 1rem; /* Mindre og mer kontrollert */
 }
 
 .review-card img.tip-image {
@@ -293,6 +291,11 @@
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
   align-items: stretch;
+}
+.review-card,
+.tip-card {
+  box-sizing: border-box;
+  padding: 0.5rem; /* eller 0.75rem om du ønsker litt mer luft */
 }
 
 /* === 🗓️ Spillkalender === */
@@ -415,7 +418,6 @@
 }
 
 /* === 📦 Øvrig CSS (ikke kategorisert) === */
-
 
 .gaming-section {
   padding: 2rem;
@@ -581,17 +583,6 @@
   color: #1e90ff;
 }
 
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-  font-size: 1.25rem;
-  color: #ccc;
-}
-  color: #1e90ff;
-  text-decoration: underline;
-}
-
 .tagline {
   font-size: 1.8rem;
   font-weight: 600;
@@ -681,7 +672,6 @@
   flex-shrink: 0;
 }
 
-
 .review-content p {
   margin-bottom: 0.75rem;
   line-height: 1.4;
@@ -694,7 +684,6 @@
   gap: 0.75rem;
   flex-wrap: wrap;
 }
-
 
 .review-image {
   width: 100%;
@@ -935,12 +924,6 @@
 .gaming-btn:hover {
   background: #2a8dd8;
 }
-
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
 .tip-card img {
   width: 100%;
   height: auto;
@@ -956,12 +939,6 @@
 
 .navbar a {
   font-size: 1rem;
-}
-
-  width: 120px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 6px;
 }
 
 .review-card h4 a {
@@ -1028,7 +1005,6 @@
     align-items: flex-start;
     gap: 0.5rem;
   }
-
 
   .gaming-hero-content h1 {
     font-size: 1.5rem;
