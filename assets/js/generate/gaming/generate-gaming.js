@@ -6,7 +6,7 @@ fetch("assets/data/butikker.json")
 
     gamingStores.forEach(store => {
       const card = document.createElement("div");
-      card.className = "store-card gaming-store-card";
+      card.className = "gaming-store-card";
       card.innerHTML = `
         <a href="${store.url}" target="_blank" rel="noopener">
           <img src="${store.image}" alt="${store.alt}" />
