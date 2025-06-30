@@ -12,20 +12,6 @@
 
 /* === 🎮 Hero & Header === */
 
-.gaming-hero {
-  background-image: url('../images/backgrounds/gaming-hero.webp');
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  position: relative;
-}
-
-.gaming-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/gaming/gaming-hero.webp') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 4rem 1rem 3rem;
-}
 
 .gaming-hero-section {
   background: linear-gradient(to bottom, #0f0f0f, #1c1c1c);
@@ -110,6 +96,9 @@
   padding: 1rem;
   text-align: center;
   box-shadow: 0 0 10px #111;
+  display: flex;
+  flex-direction: column;
+  min-height: 340px;
 }
 
 .shop-links {
@@ -242,7 +231,7 @@
 #anmeldelse-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
   margin-top: 1.5rem;
   align-items: stretch;
 }
@@ -329,23 +318,8 @@
 .review-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  align-items: stretch;
-}
-
-.score-tag {
-  background-color: #333;
-  color: #ccc;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-}
-
-#anmeldelse-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
-  justify-items: center;
+  align-items: stretch;
 }
 
 /* === 🗓️ Spillkalender === */
@@ -481,15 +455,6 @@
 
 /* === 📦 Øvrig CSS (ikke kategorisert) === */
 
-.overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 .gaming-section {
   padding: 2rem;
@@ -655,24 +620,13 @@
   color: #1e90ff;
 }
 
-.overlay h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
-.overlay p {
   font-size: 1.25rem;
   color: #ccc;
 }
-
-.gaming-nav-highlight {
-  font-size: 1.1rem;
-  background: linear-gradient(90deg, #e7eb09 0%, #757306 100%);
-  border-top: 1px solid #222;
-  border-bottom: 1px solid #222;
-}
-
-.gaming-nav-highlight a:hover {
   color: #1e90ff;
   text-decoration: underline;
 }
@@ -793,25 +747,6 @@
   flex-wrap: wrap;
 }
 
-.platform-tag[data-platform='PC'] {
-  background-color: #2a2a2a;
-  color: #d1bf1e;
-}
-
-.platform-tag[data-platform='PS5'] {
-  background-color: #2a2a2a;
-  color: #417aa8;
-}
-
-.platform-tag[data-platform='Xbox'] {
-  background-color: #2a2a2a;
-  color: #44d62c;
-}
-
-.platform-tag[data-platform='Switch'] {
-  background-color: #2a2a2a;
-  color: #e60012;
-}
 
 .review-image {
   width: 100%;
@@ -1053,13 +988,6 @@
   background: #2a8dd8;
 }
 
-.gaming-hero h1,
-.gaming-hero h2,
-.gaming-hero p {
-  text-align: center;
-  padding: 0 1rem;
-}
-.tip-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -1082,19 +1010,6 @@
   font-size: 1rem;
 }
 
-.gaming-hero h1 {
-  font-size: 1.75rem;
-}
-
-.gaming-hero h2 {
-  font-size: 1.25rem;
-}
-
-.gaming-hero p {
-  font-size: 1rem;
-}
-
-.review-image {
   width: 120px;
   height: auto;
   object-fit: cover;
@@ -1189,10 +1104,6 @@
     gap: 0.5rem;
   }
 
-  .gaming-hero {
-    padding: 2rem 1rem;
-    height: auto;
-  }
 
   .gaming-hero-content h1 {
     font-size: 1.5rem;
@@ -1214,6 +1125,7 @@
   #anmeldelse-list,
   #tips-container {
     grid-template-columns: 1fr !important;
+    gap: 1.5rem;
   }
 
   .gaming-store-card {
