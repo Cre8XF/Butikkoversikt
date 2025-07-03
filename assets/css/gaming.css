@@ -1196,3 +1196,11 @@ html:has(header.gaming-navbar) {
   font-size: 0.95rem;
   color: #ccc;
 }
+.nav-bar-sticky {
+  position: sticky;
+  top: 60px; /* juster etter headerens høyde */
+  z-index: 999;
+  background-color: #0d0d0d;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #222;
+}
