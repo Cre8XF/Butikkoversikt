@@ -995,6 +995,11 @@ html:has(header.gaming-navbar) {
     padding: 0.6rem 1rem;
   }
 }
+@media (max-width: 600px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+}
 
 @media (max-width: 768px) {
   .gaming-navbar .nav-container {
