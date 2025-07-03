@@ -46,15 +46,15 @@
           </div>
         </a>
     
-        <nav class="nav-links">
-          <a href="/">🏠 Forside</a>
-          <a href="/alle-butikker.html">🛍️ Alle Butikker</a>
-          <a href="/ukens-anbefalte.html">⭐ Ukens Anbefalte</a>
-          <a href="/kampanjer.html">🔥 Kampanjer</a>
-          <a href="/guider.html">📚 Guider</a>
-          <a href="/kontakt.html">✉️ Kontakt</a>
+        <nav class="gaming-nav-shortcut">
+          <a href="/">🏠 Til forsiden</a>
+          <a href="#butikker">🎯 Butikker</a>
+          <a href="#kampanjer">🔥 Kampanjer</a>
+          <a href="#guider">💡 Guider</a>
+          <a href="#nye-spill">🆕 Nye spill</a>
+          <a href="#omtaler">📝 Omtaler</a>
         </nav>
-      </div>
+        
     </header>
     
 
@@ -80,13 +80,16 @@
 
       <!-- Seksjon 2: Ukens kampanjer -->
       <section class="gaming-section" id="kampanjer">
-        <h2>🔥 Ukens Gaming-kampanjer</h2>
+        <h2>🔥 Kampanjer og tilbud på gamingutstyr</h2>
+        <p>Se aktuelle tilbud og kampanjer fra populære gamingbutikker.</p>
         <div id="gamingKampanjer" class="campaign-grid"></div>
       </section>
+      
+      
 
       <!-- Seksjon 3: Guider -->
     <!-- 🔍 Filterknapper -->
-    <section class="gaming-section">
+    <section class="gaming-section" id="guider">
         <h2>💡 Tips & guider</h2>
         <div id="tips-filters" class="filter-buttons">
           <button data-filter="alle">📚 Alle</button>
@@ -98,7 +101,7 @@
         </div>
         <p class="filter-info">Klikk på knappene for å filtrere tips og guider.</p>
         <!-- 🎯 Tips container -->
-        <div id="tips-container" class="tips-grid"></div>
+        <div class="tips-grid" id="tips-container"></div>
         </section>
 
       <!-- 🆕 Nye spill -->
@@ -109,7 +112,7 @@
     
 
   <!-- Seksjon: Spillomtaler -->
-  <section class="gaming-section">
+  <section class="gaming-section" id="omtaler">
     <h2>📝 Spillomtaler og tester</h2>
   
     <!-- 🎮 Filterknapper -->
@@ -172,18 +175,7 @@
           </div>
         </div>
       </section>
-
-      <!-- 💬 Diskusjon og tips -->
-      <section class="gaming-section" id="diskusjon">
-        <h2>💬 Diskusjon og tips</h2>
-        <p>Bli med i fellesskapet! Diskuter på vår <a href="#">Discord-server</a> eller les våre tips for spill som Elden Ring og Fortnite.</p>
-      </section>
-
-      <!-- 💰 Gaming-deals og rabattkoder -->
-      <section class="gaming-section" id="deals">
-        <h2>💰 Gaming-deals og rabattkoder</h2>
-        <p>Sjekk ut våre <a href="/kampanjer">🔥 kampanjer</a> og tilbud på Steam-nøkler, konsoller og mer!</p>
-      </section>
+      
 
       <!-- 🖥️ Gaming-utstyr -->
       <section class="gaming-section" id="utstyr">
@@ -338,11 +330,13 @@
       <p>&copy; Butikkoversikt.no - Gaming-seksjon</p>
     </footer>
 
-    <script src="assets/js/generate/gaming/generate-gaming.js"></script>
-    <script src="assets/js/generate/gaming/generate-tips.js"></script>
-    <script src="assets/js/generate/gaming/generate-anmeldelser.js"></script>
-    <script src="assets/js/generate/gaming/generate-nye-spill.js"></script>
-    <script src="assets/js/generate/gaming/generate-spillkalender.js"></script>
+    <script src="assets/js/generate/gaming/generate-gaming.js" defer></script>
+    <script src="assets/js/generate/gaming/generate-tips.js" defer></script>
+    <script src="assets/js/generate/gaming/generate-anmeldelser.js" defer></script>
+    <script src="assets/js/generate/gaming/generate-nye-spill.js" defer></script>
+    <script src="assets/js/generate/gaming/generate-spillkalender.js" defer></script>
+    <script src="assets/js/generate/gaming/generate-gaming-kampanjer.js" defer></script>
+
 
     <script type="application/ld+json">
           {

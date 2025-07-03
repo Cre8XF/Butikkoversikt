@@ -9,6 +9,9 @@
 .content-wrapper {
   padding: 1rem;
 }
+html:has(header.gaming-navbar) {
+  scroll-padding-top: 100px;
+}
 
 /* === 🎮 Hero & Header === */
 
@@ -45,18 +48,38 @@
   justify-content: space-between;
 }
 
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  align-items: center;
-}
-
 .gaming-navbar .logo {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   text-decoration: none;
+}
+
+/* === 🚀 Ny lokal meny kun for gaming-siden === */
+
+.gaming-nav-shortcut {
+  background-color: #0d0d0d;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 1px solid #222;
+}
+
+.gaming-nav-shortcut a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.gaming-nav-shortcut a:hover {
+  background-color: #1e1e1e;
+  color: #4ea9ff;
 }
 
 /* === 🏪 Butikker & Grid === */
@@ -958,6 +981,21 @@
 }
 
 /* === 📱 Mobiloptimalisering === */
+@media (max-width: 600px) {
+  .gaming-nav-shortcut {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .gaming-nav-shortcut a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .gaming-navbar .nav-container {
     flex-direction: column;
@@ -1046,4 +1084,44 @@
   #tips-filters {
     flex-direction: column;
   }
+}
+.kampanje-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.kampanje-card {
+  background-color: #1d1d1d;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+  color: #eee;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kampanje-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+.kampanje-card img {
+  width: 100%;
+  border-radius: 6px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+}
+
+.kampanje-card h4 {
+  font-size: 1.05rem;
+  color: #4ea9ff;
+  margin: 0.5rem 0;
+}
+
+.kampanje-card p {
+  font-size: 0.95rem;
+  color: #ccc;
 }

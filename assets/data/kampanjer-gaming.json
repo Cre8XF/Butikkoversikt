@@ -1,0 +1,39 @@
+[
+    {
+      "butikk": "MaxGaming",
+      "tittel": "🎮 Opptil 50% rabatt hos MaxGaming",
+      "beskrivelse": "Spar stort på populære produkter hos MaxGaming",
+      "url": "https://www.maxgaming.no",
+      "kategori": ["gaming"],
+      "affiliate": false,
+      "image": "assets/images/rabattkoder/maxgaming-50.webp"
+    },
+    {
+      "butikk": "MaxGaming",
+      "tittel": "📱 30% rabatt på mobiltilbehør",
+      "beskrivelse": "Gjør gamingopplevelsen bedre med tilbehør fra MaxGaming",
+      "url": "https://www.maxgaming.no",
+      "kategori": ["gaming"],
+      "affiliate": false,
+      "image": "assets/images/rabattkoder/maxgaming-mobil.webp"
+    },
+    {
+      "butikk": "MaxGaming",
+      "tittel": "🎧 30% rabatt på hodetelefoner",
+      "beskrivelse": "Finn headset og lydutstyr til rabattert pris",
+      "url": "https://www.maxgaming.no",
+      "kategori": ["gaming"],
+      "affiliate": false,
+      "image": "assets/images/rabattkoder/maxgaming-headset.webp"
+    },
+    {
+      "butikk": "MaxGaming",
+      "tittel": "🎁 Gavekort på opptil 5000 kr",
+      "beskrivelse": "Gi bort en gave til en gamer du kjenner!",
+      "url": "https://www.maxgaming.no",
+      "kategori": ["gaming"],
+      "affiliate": false,
+      "image": "assets/images/rabattkoder/maxgaming-gavekort.webp"
+    }
+  ]
+  
