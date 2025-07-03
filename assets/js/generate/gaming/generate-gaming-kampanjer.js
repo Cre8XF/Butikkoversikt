@@ -24,3 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Feil ved innlasting av kampanjer:", err);
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("navToggle");
+  const links = document.getElementById("navLinks");
+
+  toggle.addEventListener("click", () => {
+    links.classList.toggle("active");
+  });
+
+  // Lukk menyen når en lenke trykkes
+  links.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      links.classList.remove("active");
+    });
+  });
+});
